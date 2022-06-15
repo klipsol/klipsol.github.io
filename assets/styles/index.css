@@ -1,0 +1,97 @@
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #13197c;
+    --secondary-color: #66BAFF; 
+    --action-color: #F8C800;
+    --base-font-family: 'Montserrat';
+    --base-font-size: 16px;
+}
+
+body {
+  font-family: var(--base-font-family, sans-serif);
+  font-size: var(--base-font-size);
+  background: var(--primary-color);
+  color: #ffffff;
+}
+
+header {
+    padding: 35px;
+}
+
+main {
+    padding: 20px;
+}
+
+.logo-wrap {
+    max-width: 250px;
+}
+
+.landing-title {
+    font-family: var(--base-font-family, sans-serif);
+    font-weight: bold;
+    font-size: 41px;
+    line-height: 1.2;
+}
+
+.landing-subtitle {
+    font-family: var(--base-font-family, sans-serif);
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.4;
+}
+
+.highlight-text {
+    color: var(--action-color);
+}
+
+.actions-breakup {
+    background: transparent linear-gradient(169deg, #00156A 0%, #00104E 57%, #000B35 100%) 0% 0% no-repeat padding-box;
+    border-radius: 16px 16px 0px 0px;
+    padding: 40px 20px;
+}
+
+.user-type {
+    padding: 20px;
+    text-align: center;
+}
+
+.title {
+    font-family: var(--base-font-family, sans-serif);
+    font-size: 1.75rem;
+    font-weight: 700;
+    margin: 0;
+}
+
+.subtitle {
+    font-family: var(--base-font-family, sans-serif);
+    font-size: 1.3125rem;
+    font-style: italic;
+    color: var(--secondary-color);
+    margin: 0;
+}
+
+.content {
+    font-family: var(--base-font-family, sans-serif);
+    font-size: 0.875rem;
+}
+
+.extra-content {
+    font-family: var(--base-font-family, sans-serif);
+    font-size: 1.75rem;
+}
+
+.text-left {
+    text-align: left;
+}
+.text-center {
+    text-align: center;
+}
+
+.user-info {
+    padding-top: 40px;
+}
