@@ -17,6 +17,7 @@ body {
   font-size: var(--base-font-size);
   background: var(--primary-color);
   color: #ffffff;
+  overflow-x: hidden;
 }
 
 header {
@@ -28,6 +29,12 @@ main {
     max-width: 1366px;
     margin: 0 auto;
     position: relative;
+}
+
+@media screen and (max-width: 767px){
+    main {
+        overflow: hidden;
+    }
 }
 
 .logo-wrap {
