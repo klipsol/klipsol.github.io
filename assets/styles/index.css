@@ -17,6 +17,7 @@ body {
   font-size: var(--base-font-size);
   background: var(--primary-color);
   color: #ffffff;
+  overflow-x: hidden;
 }
 
 header {
@@ -34,9 +35,11 @@ main {
 }
 
 .page-banner {
+    position: relative;
     display: flex;
     align-items: center;
     flex-direction: column;
+    padding: 25px 0;
 }
 
 .banner-content {
@@ -167,6 +170,8 @@ main {
     font-family: var(--base-font-family, sans-serif);
     font-weight: 500;
     text-align: center;
+    z-index: 1;
+    position: relative;
 }
 
 .features-offered .feature {
@@ -228,12 +233,9 @@ main {
 .usp-section-wrap {
     padding-bottom: 50px;
     padding: 100px 0 0;
-    margin-top: 100px;
 }
 
 .usp-quick-setup {
-    /* padding: 100px 0 0;
-    margin-top: 100px; */
     position: relative;
     overflow: hidden;
 }
@@ -257,42 +259,48 @@ main {
     margin: 0
 }
 
+.design-circle {
+    position: absolute;
+    z-index: -1;    
+    border-radius: 50%;
+    opacity: 0.13;
+}
+
+.design-circle-1 {
+    background-color: #66BAFF;
+}
+
+.design-circle-2 {
+    background: rgb(102,186,255);
+    background: linear-gradient(131deg, rgba(102,186,255,1) 0%, rgba(74,135,186,1) 50%, rgba(51,93,128,1) 100%);
+}
+
+.banner-design-circle-1{
+    width: 575px;
+    height: 575px;
+    top: 100px;
+    left: 70px;
+}
+
+.banner-design-circle-2{
+    width: 694px;
+    height: 694px;
+    top: 40px;
+    left: 0px;
+}
+
 .usp-bg-design-circle-1 {
-    /* position: absolute;
-    background-color: #fff;
-    opacity: 0.09;
     height: 479px;
     width: 479px;
-    border-radius: 50%;
     margin-left: -172px;
-    margin-top: 80px; */
-    position: absolute;
-    background-color: #fff;
-    opacity: 0.09;
-    height: 85vw;
-    width: 85vw;
-    border-radius: 50%;
-    margin-left: -19%;
-    margin-top: 30%;
+    margin-top: 80px;
 }
 
 .usp-bg-design-circle-2 {
-    /* position: absolute;
-    background-color: #fff;
-    opacity: 0.05;
     height: 577px;
     width: 577px;
-    border-radius: 50%;
     margin-left: -219px;
-    margin-top: 35px; */
-    position: absolute;
-    background-color: #fff;
-    opacity: 0.05;
-    height: 100vw;
-    width: 100vw;
-    border-radius: 50%;
-    margin-left: -25%;
-    margin-top: 23%;
+    margin-top: 35px;
 }
 
 .usp {
@@ -327,16 +335,12 @@ main {
 }
 
 .industry-exp, .partner-brands-wrap {
-    padding: 50px 30px;
-    background-color: #08104d;
+    padding: 50px 30px 120px;
+    position: relative;
 }
 
 .exp-img-wrap {
     padding: 0 30px;
-}
-
-.brand-bg-box-design {
-
 }
 
 .brand-logo-wrap {
@@ -347,6 +351,18 @@ main {
     align-items: center;
     justify-content: center;
     padding: 25px;
+    z-index: 1;
+}
+
+.brand-bg-box-design {
+    background-color: #003996;
+    border-radius: 44px;
+    position: absolute;
+    top: 0;
+    left: -40px;
+    width: 80vw;
+    height: 58vh;
+    opacity: 0.7;
 }
 
 .brand-logos-wrap {
@@ -355,9 +371,61 @@ main {
     grid-gap: 25px;
 }
 
+footer {
+    background-color: #C2D3EE;
+    padding: 38px 38px 0;
+}
+
+footer .about > div {
+    max-width: 200px;
+}
+
+footer p {
+    color: var(--primary-color);
+    font-size: 1.125rem;
+    font-weight: 500;
+    line-height: 1.22;
+    margin-top: 30px;
+}
+
+footer h5 {
+    color: var(--primary-color);
+    font-size: 1.75rem;
+    margin: 30px 0 20px;
+}
+
+footer a {
+    color: var(--primary-color);
+    font-size: 1.22rem;
+    text-decoration: none;
+    display: block;
+    padding: 5px 0;
+    width: max-content;
+}
+
+footer .copyright p {
+    color: #000E46;
+    font-size: 0.875rem;
+    border: 0;
+    padding-bottom: 0;
+    margin: 0;
+    text-align: center;
+}
+
+footer > div {
+    padding-bottom: 30px;
+    border-bottom: 1px solid #bbb;
+}
+
+footer .copyright {
+    padding: 30px 0;
+    border: 0;
+}
+
 @media screen and (min-width: 768px){
     .page-banner {
         flex-direction: row;
+        padding: 100px 0;
     }
 
     .banner-product-flow {
@@ -426,8 +494,23 @@ main {
         justify-content: center;
     }
 
-    .usp-section-wrap {
+    .industry-exp > div:last-child {
         display: flex;
+        max-width: 980px;
+        margin: 0 auto;
+    }
+
+    .exp-img-wrap {
+        padding: 0 10px;
+    }
+
+    .usp-section-wrap {
+        margin-top: 100px;
+    }
+
+    .usp-section-wrap > div:last-child {
+        display: flex;
+        padding: 175px 0;
     }
 
     .usp-content-wrap {
@@ -444,10 +527,70 @@ main {
     }
 
     .usp-bg-design-circle-1 {
-        margin-top: 9%;
+        margin-top: 5%;
+        height: 60vw;
+        width: 60vw;
     }
-
+    
     .usp-bg-design-circle-2 {
         margin-top: 0;
+        height: 70vw;
+        width: 70vw;
+        margin-left: -247px;
+    }
+
+    .banner-design-circle-1{
+        width: 1200px;
+        height: 1200px;
+        top: -40%;
+        left: 50%;
+    }
+
+    .banner-design-circle-2{
+        width: 1450px;
+        height: 1450px;
+        top: -58%;
+        left: 38%;
+    }
+
+    .brand-logos-wrap {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    
+    .partner-brands-wrap > div:last-child {
+        max-width: 980px;
+        margin: 0 auto;
+    }
+
+    .section-title {
+        font-weight: 500;
+        font-size: 3.125rem;
+        margin-bottom: 4.5rem;
+    }
+
+    .brand-bg-box-design {
+        width: 60vw;
+        height: 40vw;
+    }
+
+    .brand-logo-wrap {
+        height: 120px;
+    }
+
+    footer {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-column-gap: 60px;
+            padding: 60px 90px 0;
+    }
+
+    footer > div {
+        padding-bottom: 30px;
+        border-bottom: 0;
+    }
+
+    footer .copyright {
+        grid-column: 1/-1;
+        border-top: 1px solid #bbb;
     }
 }
