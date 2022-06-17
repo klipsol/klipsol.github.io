@@ -432,7 +432,7 @@ footer .copyright {
 @media screen and (min-width: 768px){
     .page-banner {
         flex-direction: row;
-        padding: 100px 0;
+        padding: 20px 0 100px;
     }
 
     .banner-product-flow {
