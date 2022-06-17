@@ -435,6 +435,10 @@ footer .copyright {
         padding: 20px 0 100px;
     }
 
+    .landing-title {
+        font-size: 4rem;
+    }
+
     .banner-product-flow {
         justify-content: flex-start;
     }
