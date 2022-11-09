@@ -72,6 +72,7 @@ nav a {
 }
 
 nav a:hover {
+    color: #003046;
     background: #EDBB40;
 }
 
