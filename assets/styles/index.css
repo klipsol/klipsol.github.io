@@ -50,30 +50,52 @@ a:hover {
     grid-column: span 4;
 }
 
+.hamburge_menu_icon {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+
+.hamburge_menu_icon>span {
+    width: 100%;
+    height: 5px;
+    margin-bottom: 3px;
+    background: #fff;
+    display: block;
+}
+
+.hamburge_menu_icon>span:last-child {
+    margin-bottom: 0px;
+}
+
 nav {
     margin: 0;
     padding: 0px;
-    width: calc(100vw - 50px);
-    height: 100vh;
+    width: calc(100vw - 70px);
+    height: 100%;
     overflow-y: auto;
-    background: #ffffff;
+    background: #daeff8;
     position: fixed;
     left: 0;
     top: 0;
-
+    z-index: 1;
+    transform: translate(-100%, 0px);
+    transition: all 750ms ;
     display: grid;
     grid-template-rows: repeat(12, 1fr);
-    display: none;
 }
 
 nav a {
     font-weight: 600;
     font-size: 1.125rem;
-    line-height: 22px;
+    line-height: 45px;
     color: #003046;
     text-decoration: none;
     padding: 5px 20px;
     background: #DAEFF8;
+    border-bottom: solid 1px #baced6;
 }
 
 nav a:hover {
@@ -692,6 +714,10 @@ footer .copyright {
 
     header {}
 
+    .hamburge_menu_icon {
+        display: none;
+    }
+
     .wrap {
         grid-template-columns: repeat(15, 1fr);
         align-items: end;
@@ -713,6 +739,7 @@ footer .copyright {
         overflow: initial;
         background: transparent;
         position: unset;
+        transform: unset;
     }
 
     nav a {

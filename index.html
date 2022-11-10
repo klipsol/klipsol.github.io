@@ -18,7 +18,12 @@
             <div class="logo">
                 <a href="index.html"><img src="./assets/images/logo.png" alt="Dpanda" title="Dpanda" /></a>
             </div>
-            <nav>
+            <a href="javascript:void('0');" class="hamburge_menu_icon" id="hamburge_menu_icon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </a>
+            <nav id="hamburge_menu">
                 <a href="javascript:void('0');">Publishers</a>
                 <a href="javascript:void('0');">Brands</a>
                 <a href="javascript:void('0');">Buyer</a>
@@ -237,6 +242,13 @@
             <p>© Dpanda 2021, All rights reserved.</p>
         </div>
     </footer>
+    <script>
+        const hamburge_menu_icon = document.getElementById("hamburge_menu_icon");
+        hamburge_menu_icon.addEventListener("click", function () {
+            const hamburge_menu = document.getElementById("hamburge_menu");
+            hamburge_menu.style.transform = "unset";
+        });
+    </script>
 </body>
 
 </html>
