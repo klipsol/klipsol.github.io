@@ -24,14 +24,19 @@ body {
 
 header {}
 
-a{
+a {
     color: #000000;
     text-decoration: none;
 }
 
-a:hover{
+a:hover {
     color: #2d6af6;
 }
+
+:focus {
+    outline: 0;
+}
+
 .wrap {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
@@ -749,11 +754,11 @@ footer .copyright {
         display: block;
     }
 
-    .publisher_brand address iframe{
+    .publisher_brand address iframe {
         display: block;
         width: 400px;
         height: 220px;
-       }
+    }
 
     .publisher_brand .form {
         grid-template-columns: repeat(3, 1fr);
@@ -772,8 +777,8 @@ footer .copyright {
     .publisher_brand .form>a:hover,
     .publisher_brand .form>a.active {}
 
-    .publisher_brand .form>a.active+a+form,
-    .publisher_brand .form>a.active+form {}
+    .publisher_brand .form>a.active+a+form#publisher_form,
+    .publisher_brand .form>a.active+form+#brand_form {}
 
     .publisher_brand form {}
 
