@@ -1,0 +1,54 @@
+section.breadcrumb {background: #F7F7F7;    padding: 81px 0px 0px 0px;}
+section.breadcrumb .wrap {display: block;width: 100%;}
+ul.br-box {margin: 0;padding: 0;margin-bottom: 8px;}
+ul.br-box li {list-style: none; display: inline;}
+ul.br-box li a {font-weight: 500;text-transform: capitalize;font-size: 15px; }
+ .who-we-are-heading { display: flex;position: relative; border-bottom: 5px solid #072222;}
+.who-we-are-heading span {color: #263237;font-weight: 800;font-size: 2.8rem;margin-bottom: 15px;float: left;}
+div#d_logo {position: absolute;bottom: -16px;left: 14%;} 
+
+.who-we-arebox {
+    display: grid;
+     
+    background: #fff;    padding-top:84px;
+}
+.who-we-arebox .wrap {
+    width: 100% !important;
+    float: left;
+}
+.who-box-inner {
+    width: 32%;
+    float: left;
+}
+.right-box {
+    float: left;
+    width: 60%;
+    padding: 0px 0px 0px 130px;
+} 
+
+.breadcrumb .wrap {
+    margin-bottom: 0px;
+}
+
+
+.right-box h3 {
+    color: #263237;
+    font-size: 2.8rem;
+    vertical-align: top;
+    padding-top: 0;
+    margin-top: 0;
+    line-height: 1.8rem;
+} 
+
+.right-box p {
+    color: #263237;
+    font-size: 1rem;
+    line-height: 24px;
+    text-align: left;
+    font-weight: 400;
+}
+
+
+.meet-dpanda-box-main {
+    background: #F7F7F7;
+} 
