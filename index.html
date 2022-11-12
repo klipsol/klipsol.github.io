@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DPanda Website</title>
+    <title>DPanda | Direct from brands</title>
+    <link rel="shortcut icon" href="./assets/images/favicon.png" type="image/x-icon">
+    <link rel="icon" href="./assets/images/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="./assets/styles/normalize.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,7 +14,7 @@
     <link rel="stylesheet" href="./assets/styles/index.css">
 </head>
 
-<body style="background-color: #13197c;">
+<body style="background-color: #ffffff;">
     <header>
         <div class="wrap">
             <div class="logo">
@@ -23,15 +25,61 @@
                 <span></span>
                 <span></span>
             </a>
+            <a href="#" class="close" id="hamburge_menu_close"></a>
             <nav id="hamburge_menu">
-                <a href="javascript:void('0');">Publishers</a>
-                <a href="javascript:void('0');">Brands</a>
-                <a href="javascript:void('0');">Buyer</a>
-                <a href="contact.html">Contact</a>
+                <a href="contact.html">Publishers</a>
+                <a href="contact.html">Brands</a>
+                <a href="about.html">About Us</a>
+                <!-- <a href="contact.html">Buyer</a> -->
             </nav>
         </div>
     </header>
     <main>
+        <section class="hero-banner">
+            <div class="wrap">
+                <img src="./assets/images/hero-banner.png" class="order-lg-1" alt="">
+                <div class="content">
+                    <h1 class="title">The future of shopping is Decentralised</h1>
+                    <h2 class="sub-title">Make any digital surface interactive.</h2>
+                    <a class="link-btn active" href="contact.html">Publisher</a>
+                    <a class="link-btn" href="contact.html">Brand</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="publishers">
+            <div class="wrap">
+                <img src="./assets/images/publishers.png" alt="">
+                <div class="content">
+                    <h1 class="title">PUBLISHERS</h1>
+                    <h2 class="sub-title">Turn your site into a micro e-commerce site</h2>
+                    <p class="para">Why leave your shoppers half curious? Sell her the product she wants.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="brands">
+            <div class="wrap">
+                <div class="content">
+                    <h1 class="title">BRANDS</h1>
+                    <h2 class="sub-title">Sell on more channels & Increase your sales.</h2>
+                    <p class="para">No Effort | Full Control | Zero Headache</p>
+                </div>
+                <img src="./assets/images/brands.png" alt="">
+            </div>
+        </section>
+
+        <section class="shoppers">
+            <div class="wrap">
+                <img src="./assets/images/publishers.png" alt="">
+                <div class="content">
+                    <h1 class="title">SHOPPERS</h1>
+                    <h2 class="sub-title">You see. You Like. You Buy. No Ads.</h2>
+                    <p class="para">Buy whenever you want, wherever you want and leave rest to us.</p>
+                </div>
+            </div>
+        </section>
+
         <section class="page-banner">
             <div class="banner-design-circle-1 design-circle design-circle-1"></div>
             <div class="banner-design-circle-2 design-circle design-circle-2"></div>
@@ -247,6 +295,16 @@
         hamburge_menu_icon.addEventListener("click", function () {
             const hamburge_menu = document.getElementById("hamburge_menu");
             hamburge_menu.style.transform = "unset";
+            hamburge_menu_icon.style.display = "none";
+            hamburge_menu_close.style.display = "block";
+        });
+
+        const hamburge_menu_close = document.getElementById("hamburge_menu_close");
+        hamburge_menu_close.addEventListener("click", function () {
+            const hamburge_menu = document.getElementById("hamburge_menu");
+            hamburge_menu.style.transform = "translate(-100%, 0px)";
+            hamburge_menu_icon.style.display = "block";
+            hamburge_menu_close.style.display = "none";
         });
     </script>
 </body>
