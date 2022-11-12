@@ -1,365 +1,49 @@
-section.breadcrumb {background: #F7F7F7;    padding: 81px 0px 0px 0px;}
-section.breadcrumb .wrap {display: block;width: 100%;}
-ul.br-box {margin: 0;padding: 0;margin-bottom: 8px;}
-ul.br-box li {list-style: none; display: inline;}
-ul.br-box li a {font-weight: 500;text-transform: capitalize;font-size: 15px; }
- .who-we-are-heading { display: flex;position: relative; border-bottom: 5px solid #072222;}
-.who-we-are-heading span {color: #263237;font-weight: 800;font-size: 2.8rem;margin-bottom: 15px;float: left;}
-div#d_logo {position: absolute;bottom: -16px;left: 14%;} 
 
-.who-we-arebox {
-    display: grid;
-     
-    background: #fff;    padding-top:84px;
-}
-.who-we-arebox .wrap {
-    width: 100% !important;
-    float: left;
-}
-.who-box-inner {
-    width: 32%;
-    float: left;
-}
-.right-box {
-    float: left;
-    width: 60%;
-    padding: 0px 0px 0px 130px;
+/* Who are we? end here start here */
+section.who-we-are{background: #fff;}
+.who-we-are .wrap {
+    margin-bottom: 0;
+    border: 3px solid #ff0000;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    padding-bottom: 85px;
+    align-items: flex-start;
 } 
 
-.breadcrumb .wrap {
-    margin-bottom: 0px;
-}
-
-
-.right-box h3 {
+.who-we-are-top-right {
     color: #263237;
-    font-size: 2.8rem;
-    vertical-align: top;
-    padding-top: 0;
-    margin-top: 0;
-    line-height: 1.8rem;
-} 
-
-.right-box p {
-    color: #263237;
-    font-size: 1rem;
-    line-height: 24px;
-    text-align: left;
-    font-weight: 400;
+}
+.who-we-are-top-right h4 {
+    font-size: 2.813rem;
+    margin: 0px;
+    font-weight: 800;
 }
 
 
-.meet-dpanda-box-main {
-    background: #F7F7F7;    display: flex;
-} 
-
-.meet-dpanda-box-main-inner h4 {
-    color: #263237;
-    font-size: 2.25rem;
-    margin-bottom: 42px;
-    padding-top: 36px;
-    /* padding-bottom: 0px; */
-} 
-
-.meet-dpanda-box-main-inner {
-
-        /* border: 4px solid #009dff;*/
-    width: 100%;
-    margin-bottom: 60px;
-    display: table;
-}   
-
-.meet-dpanda-left {
-    background: red;
-    float: left;
-     width:27%;
-}
-.meet-dpanda-right {
- 
-    float: left;    width: 73%;padding-left: 16px;
- 
-}
-
-.meet-box {
-    background: #102F44;
-    width: 100%;
-    height: 516px;
-    padding: 50px 39px 0px 27px;
-}
-
-
-.meet-box p {
-    color: #F5B719;
-    font-size: 24px;
-    font-weight: 700;
-    line-height: 34px;
-}
-
-button#join-btn {
-    background: #f5b719;
-    width: 235px;
-    height: 41px;
-    border-radius: 40px;
-    font-weight: bold;
-    font-size: 22px;
-    font-weight: 700;
-    border: none;
-    color: #263237;
-    border: none;
-    outline: none;
-}
-
-.team-box span {
-    font-size: 14px;
-    font-weight: 800; color: #263237;margin-top: 11px;display: block;
-}
-
-.team-box img {
-    margin: 0;
-    width: 100%;
-}
-
-.team-box {
-    display: inline-block;
-    background: #fff;
-    width: 23%;
-    margin-bottom: 10px;
-    margin: 0px 8px 15px;
-    float: right;
-} 
-
-.team-box p {
-    font-size: 12px;
-    font-weight: 400;
-    color: #263237;
-    font-weight: 400;
-    display: block;
-    margin: 3px 0px 0px 0px;
-} 
-.emp-name {
-    margin: 0px 10px 12px 13px;
-    display: block;
-    padding-bottom: 5px;
-}
-
-
+/* Who are we? end here end here */
 /* join-us-box start here */
+.join-us-main .wrap{margin-bottom: 0px;}
+section.join-us-box { background: #fff;}
+.join-us-box .wrap {grid-template-columns: repeat(2, 1fr);grid-gap: 20px;padding-bottom: 85px;}
+.join-us-box .wrap h2{    font-size: 2.25rem; font-weight: 800;margin: 90px 0px 16px 0px;}
+.join-us-box h2, .join-us-box p, .join-us-box h3 {grid-column: span 2; text-align: center;color: #263237;    margin: 0;}
+.join-us-box h3{    margin: 0px 0px 30px 0px;}
+.join-us-box .box {border-radius: 12px;    padding: 67px;text-align: center;}
+.join-us-box .box span {color: #263237;font-size: 1.75rem;padding-bottom: 1.3rem;display: block;}  
+.join-us-box .box p {line-height: 1.75rem;    font-size: 1rem;}
+.box.box_1{background: #DBF0FA;}
+.box.box_2{background: #D2D9FD;}
+.box.box_3{background: #FAEDC3;}
+.box.box_4{background: #D2FDF3;}
+
+/* join-us-box end here */
 
 
-.join-us-box {
-    background: #FFFFFF;
-}
+/* Perks and benifits start here */
+.pandas-benifits-box h2{    margin: 52px 0px 42px 0px !important;}
+.pandas-benifits-box{background: #f7f7f7 !important;}
+.pandas-benifits-box .box.Perks span{padding-bottom: 0.75rem;} 
+.pandas-benifits-box .box.Perks {background: #fff;      padding: 45px 0px 36px 0px;}
+.pandas-benifits-box .box.Perks p {font-size: 1.375rem;font-weight: 500;}
 
-.join-inner {
-   
-    display: block;
-}
-.join-inner h4 {
-    color: #263237;
-    font-size: 2.25rem;
-    text-align: center;
-    padding-top: 60px;
-    font-weight: 800;
-    margin-bottom: 0px;
-    margin-top: 0;
-} 
-.join-inner p {
-    color: #263237;
-    text-align: center;
-    margin-top: 16px;
-    font-weight: 400;
-} 
-
- 
-
-.join-inner span {
-    color: #263237;
-    display: block;
-    text-align: center;
-    padding-bottom: 28px;
-    font-size: 22px;
-    font-weight: 500;
-}
-
-.join-us-content {
-   
-    margin: 0 auto; 
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    align-items: baseline;
-    align-content: stretch;
-} 
-.join-us-left-top {
-    background: #DBF0FA;
-    width: 49.4%;
-    border-radius: 12px; 
-    float: left;
-}
-
-.join-us-top-right {
-    background: #D2D9FD;
-    width: 49.4%;
-    float: left;
-    border-radius: 12px;
-}
-
-
-.join-us-content h4 {
-    color: #263237;
-    margin: 0;
-    text-align: center;
-    padding-top: 26px;
-    font-size: 1.75rem;
-    font-weight: 600;
-} 
-
-.join-us-content p {
-    color: #263237;
-    padding: 0px 39px 67px 39px;
-    font-size: 16px;
-    line-height: 27px;
-    color: #263237;
-    font-weight: 400; 
-    text-align: center;
-} 
-
-div#join-content-box2 {
-    padding-top: 15px;
-    padding-bottom: 76px;
-}
-
-div#joint-left-box {
-    background: #FAEDC3;
-}
-
-div#joint-right-box {
-    background: #D2FDF3;
-}
-
-
-/* join-us-box start here  */
-
-/* Glimpses of life at Dpanda start here  */
-
-.Glimpses-Dpanda-box {
-    background: #fff;
-    padding: 132px 0px;display: flex;
- 
-}
-
-.glisp-left {
-    width: 27%;
-    float: left;
-}
-
-.glisp-right {
-    width: 73%;
-    float: left;    padding-left: 22px;
-}
-
-.glisp-inner {
-    float: left;
-    display: block;
-    margin: 0;padding: 4px;
-    width: 33%;
-} 
-
-.glisp-inner img:nth-child(1) {
-    margin-bottom: 9px;
-}
-
-
-.glisp-inner img {
-    width: 100%;
-}
-
-.glisp-left span {
-    font-size: 36px;
-    font-weight: 800;
-    color: #263237;float: left; padding-right: 72px;
-}
-
-/* Glimpses of life at Dpanda end here  */
-
-/* benifits-section start here  */
-
-.benifits-section {
-    background: #F7F7F7;   
-     padding-bottom: 68px;
-}
-
-.benifits-section h4 {
-    color: #263237;
-    font-size: 35px;
-    text-align: center;
-    font-weight: 800;
-    margin: 52px 0px 42px 0px;
-} 
-
-.benfit-inner {
-    background: #FFFFFF;
-    border-radius: 8px;
-    text-align: center;
-    padding: 50px 40px 47px 41px;
-} 
-
-.benfit-inner img { 
-    padding-bottom: 12px;
-}
-
- 
-
-.benfit-inner span {
-    display: table;
-    width: 100%;
-    text-align: center;
-    font-size: 22px;
-    color: #263237;
-    font-weight: 600;
-} 
-
-.benfit-inner p {
-    color: #263237;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 29px;
-    text-align: center;
-    margin-top: 18px;
-}
-
-
-.grid-container {
-    display: grid;
-    gap: 5px;
-    grid-template-columns: auto auto auto auto;
-    background-color: #2196F3; 
-    padding: 0px;
-  }
-  
-  .grid-item {
-    background-color:#fff; 
-    padding: 0px; 
-    text-align: center;
-  }
-  
-/* benifits-section start here  */
-
- 
-
-/* responsive start here  */
-
-@media only screen and (min-width: 320px) and (max-width:667px) 
-{
-.join-us-content{    display: block;} 
-.join-us-left-top,.join-us-top-right{width: 100%;float: none;}
-.benifits-content{    display: block !important;}
-.benfit-inner{    margin-bottom: 13px;}
-.benifits-section h4{    margin: 18px 0px 12px 0px;} 
-.join-us-content p
-div#join-content-box2{    padding-top: 0px;padding-bottom: 20px;}
-}
-
-/* responsive end here  */
-
+/* Perks and benifits end here */
