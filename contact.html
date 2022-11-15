@@ -29,98 +29,104 @@
       </a>
       <a href="#" class="close" id="hamburge_menu_close"></a>
       <nav id="hamburge_menu">
-        <a href="contact.html">Publishers</a>
-        <a href="contact.html">Brands</a>
-        <!-- <a href="contact.html">Buyer</a> -->
+        <a href="contact.html" class="active">Contact Us</a>
+        <a href="about.html">About Us</a>
       </nav>
     </div>
   </header>
   <main>
     <section class="publisher_brand">
-      <address>
-        <h1><span>Are you ready to</span> Experience the <br />Future of E-commerce?</h1>
-        <p>241, Udyog Vihar Phase 1, Udyog Vihar, Sector 20, Gurugram, Haryana 122016</p>
-        <a href="tel:+91 9560888146">+91 9560888146</a>
-        <a href="mailto:support@dpanda.in">support@dpanda.in</a>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24183.711939869132!2d77.09053084038473!3d28.507613958527617!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d194055422937%3A0x17b1ca2f38ec9c1a!2sNimble%20Cowork%20Gurgaon!5e0!3m2!1sen!2sin!4v1667998986426!5m2!1sen!2sin" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-      </address>
+      <div class="wrap">
+        <address>
+          <h1><span>Are you ready to</span> Experience the <br />Future of E-commerce?</h1>
+          <p><img src="./assets/images/location.png" alt="" title="" />241, Udyog Vihar Phase 1, Udyog Vihar, Sector 20, Gurugram, Haryana 122016</p>
+          <a href="tel:+91 9560888146"><img src="./assets/images/phone.png" alt="" title="" /> +91 9560888146</a>
+          <a href="mailto:support@dpanda.in"><img src="./assets/images/mail.png" alt="" title="" /> support@dpanda.in</a>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24183.711939869132!2d77.09053084038473!3d28.507613958527617!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d194055422937%3A0x17b1ca2f38ec9c1a!2sNimble%20Cowork%20Gurgaon!5e0!3m2!1sen!2sin!4v1667998986426!5m2!1sen!2sin" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </address>
 
-      <div class="form">
-        <a href="javascript:void('0');" class="publisher active" id="publisher">Publisher</a>
-        <a href="javascript:void('0');" class="brand" id="brand">Brand</a>
-        <form id="publisher_form" method="post" action="https://sheetdb.io/api/v1/2k4fbs7m6hm3n" class="wp-user-form" autocomplete="off">
-          <div class="row platform_link validate" id="platform-link">
-            <label for="platform_link">Platform Link</label>
-            <input type="url" name="data[link]" id="platform_link" value="" placeholder="" required>
-            <span>Please enter your platform link</span>
-          </div>
-          <div class="row validate">
-            <label for="publisher_phone_number">Phone Number</label>
-            <input type="number" name="data[number]" id="publisher_phone_number" value="" minlength="10" maxlength="10" size="10" placeholder="" required oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);">
-            <span>Please enter your mobile no.</span>
-          </div>
-          <div class="row validate">
-            <label for="publisher_e_mail">E-mail address</label>
-            <input type="email" name="data[email]" id="publisher_e_mail" value="" placeholder="" required>
-            <span>Please enter your email</span>
-          </div>
-          <div class="row validate" id="captcha">
-            <div class="g-recaptcha" data-sitekey="6LdD4foiAAAAAOPnMS4G4FeA3MrJm331WSyHXd5C"></div>
-            <span>Please verify captcha</span>
-          </div>
-          <input type="submit" id="publisher_submit" name="publisher_submit" value="Submit" class="" />
-          <p>By continuing, you agree to accept our <a href="#">Privacy Policy</a> & <a href="#">Terms of Service</a>.</p>
-        </form>
-        <!-- <form style="display: none;" id="brand_form" method="post" action="#" class="wp-user-form" autocomplete="off">
-          <div class="row website_link validate" id="website-link">
-            <label for="website_link">Website link</label>
-            <input type="url" name="website_link" id="website_link" value="" placeholder="" required>
-            <span>Please enter your website link</span>
-          </div>
-          <div class="row validate">
-            <label for="brand_phone_number">Phone Number</label>
-            <input type="number" name="brand_phone_number" id="brand_phone_number" value="" minlength="10" maxlength="10" size="10" placeholder="" required oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);">
-            <span>Please enter your mobile no.</span>
-          </div>
-          <div class="row validate">
-            <label for="brand_e_mail">E-mail address</label>
-            <input type="email" name="brand_e_mail" id="brand_e_mail" value="" placeholder="" required>
-            <span>Please enter your email</span>
-          </div>
-          <div class="row tnc validate">
-            <label for="brand_tnc">Opt in to receive news and updates. Terms.</label>
-            <input type="checkbox" name="brand_tnc" id="brand_tnc" required>
-            <span>Please check T&C</span>
-          </div>
-          <input type="submit" id="brand_submit" name="brand_submit" value="Submit" class="" />
-          <p>By continuing, you agree to accept our <a href="#">Privacy Policy</a> & <a href="#">Terms of Service</a>.</p>
-        </form> -->
+        <div class="form">
+          <a href="javascript:void('0');" class="publisher active" id="publisher">Publisher</a>
+          <a href="javascript:void('0');" class="brand" id="brand">Brand</a>
+          <form id="publisher_brand_form" method="post" action="https://sheetdb.io/api/v1/2k4fbs7m6hm3n" class="wp-user-form" autocomplete="off">
+            <div class="row platform_link validate" id="platform-link">
+              <label for="platform_link">Platform Link</label>
+              <input type="url" name="data[link]" id="platform_link" value="" placeholder="http:" required>
+              <span>Please enter your platform link</span>
+            </div>
+            <div class="row website_link validate" id="website-link">
+              <label for="website_link">Website link</label>
+              <input type="url" name="website_link" id="website_link" value="" placeholder="" required>
+              <span>Please enter your website link</span>
+            </div>
+            <div class="row validate">
+              <label for="publisher_phone_number">Phone Number</label>
+              <input type="number" name="data[number]" id="publisher_phone_number" value="" minlength="10" maxlength="10" size="10" placeholder="" required oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);">
+              <span>Please enter your mobile no.</span>
+            </div>
+            <div class="row validate">
+              <label for="publisher_e_mail">E-mail address</label>
+              <input type="email" name="data[email]" id="publisher_e_mail" value="" placeholder="" required>
+              <span>Please enter your email</span>
+            </div>
+            <div class="row validate" id="captcha">
+              <div class="g-recaptcha" data-sitekey="6LdD4foiAAAAAOPnMS4G4FeA3MrJm331WSyHXd5C"></div>
+              <span>Please verify captcha</span>
+            </div>
+            <input type="submit" id="publisher_submit" name="publisher_submit" value="Submit" class="" />
+            <p>By continuing, you agree to accept our <a href="#">Privacy Policy</a> & <a href="#">Terms of Service</a>.</p>
+          </form>
+          <!-- <form style="display: none;" id="brand_form" method="post" action="#" class="wp-user-form" autocomplete="off">
+            <div class="row website_link validate" id="website-link">
+              <label for="website_link">Website link</label>
+              <input type="url" name="website_link" id="website_link" value="" placeholder="" required>
+              <span>Please enter your website link</span>
+            </div>
+            <div class="row validate">
+              <label for="brand_phone_number">Phone Number</label>
+              <input type="number" name="brand_phone_number" id="brand_phone_number" value="" minlength="10" maxlength="10" size="10" placeholder="" required oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);">
+              <span>Please enter your mobile no.</span>
+            </div>
+            <div class="row validate">
+              <label for="brand_e_mail">E-mail address</label>
+              <input type="email" name="brand_e_mail" id="brand_e_mail" value="" placeholder="" required>
+              <span>Please enter your email</span>
+            </div>
+             <div class="row tnc validate">
+              <label for="brand_tnc">Opt in to receive news and updates. Terms.</label>
+              <input type="checkbox" name="brand_tnc" id="brand_tnc" required>
+              <span>Please check T&C</span>
+            </div>
+            <input type="submit" id="brand_submit" name="brand_submit" value="Submit" class="" />
+            <p>By continuing, you agree to accept our <a href="#">Privacy Policy</a> & <a href="#">Terms of Service</a>.</p>
+          </form> -->
+        </div>
       </div>
     </section>
   </main>
   <footer>
-    <div class="about">
-      <div>
-        <img src="./assets/images/logo_h_white.png" alt="logo">
+    <div class="wrap">
+      <div class="about">
+        <a href="index.html"><img src="./assets/images/logo.png" alt="Dpanda" title="Dpanda" /></a>
       </div>
-      <p>Dpanda drives commerce everywhere. Our technology enables platforms to offer their shoppers an instant
-        shopping experience without leaving the host site.</p>
-    </div>
-    <div class="contact">
-      <h5>Contact Us</h5>
-      <p>In case of any queries or concerns, you can contact us at:</p>
-      <a href="mailto:support@dpanda.in" style="font-weight:700">support@dpanda.in</a>
-      <a href="tel:+91-9560888146" style="font-weight:700">+91 9560888146</a>
-    </div>
-    <div class="policy">
-      <h5>Need Help ?</h5>
-      <a href="#">Privacy Policy</a>
-      <a href="#">Refund Policy</a>
-      <a href="#">Shipping Policy</a>
-      <a href="#">Cancellation Policy</a>
+      <div class="phone">
+        <img src="./assets/images/phone.png" alt="Dpanda" title="Dpanda" />
+        <strong>Phone</strong>
+        <a href="tel:+91-9560888146">+91 9560888146</a>
+      </div>
+      <div class="email">
+        <img src="./assets/images/mail.png" alt="Dpanda" title="Dpanda" />
+        <strong>Email</strong>
+        <a href="mailto:support@dpanda.in">support@dpanda.in</a>
+      </div>
+      <div class="address">
+        <img src="./assets/images/location.png" alt="Dpanda" title="Dpanda" />
+        <strong>Address</strong>
+        <p>241, Udyog Vihar Phase 1, Udyog Vihar, Sector 20, Gurugram, Haryana 122016</p>
+      </div>
     </div>
     <div class="copyright">
-      <p>© Dpanda 2021, All rights reserved.</p>
+      <p>© Dpanda 2022, All rights reserved.</p>
     </div>
   </footer>
 
@@ -149,10 +155,15 @@
       brand.classList.add('active');
       publisher.classList.remove('active');
 
-      const brand_form = document.getElementById("brand_form");
-      brand_form.style.display = "grid";
-      const publisher_form = document.getElementById("publisher_form");
-      publisher_form.style.display = "none";
+      const website_link = document.getElementById("website-link");
+      website_link.style.display = "grid";
+      const platform_link = document.getElementById("platform-link");
+      platform_link.style.display = "none";
+
+      // const brand_form = document.getElementById("brand_form");
+      // brand_form.style.display = "grid";
+      // const publisher_form = document.getElementById("publisher_form");
+      // publisher_form.style.display = "none";
     });
 
     const publisher = document.getElementById("publisher");
@@ -160,17 +171,22 @@
       publisher.classList.add('active');
       brand.classList.remove('active');
 
-      const publisher_form = document.getElementById("publisher_form");
-      publisher_form.style.display = "grid";
-      const brand_form = document.getElementById("brand_form");
-      brand_form.style.display = "none";
+      const platform_link = document.getElementById("platform-link");
+      platform_link.style.display = "grid";
+      const website_link = document.getElementById("website-link");
+      website_link.style.display = "none";
+
+      // const publisher_form = document.getElementById("publisher_form");
+      // publisher_form.style.display = "grid";
+      // const brand_form = document.getElementById("brand_form");
+      // brand_form.style.display = "none";
     });
 
     // Publisher Form Start
-    const publisher_form = document.getElementById("publisher_form");
-    publisher_form.noValidate = true;
-    publisher_form.addEventListener("submit", validateForm);
-    publisher_form.addEventListener("submit", (e) => {
+    const publisher_brand_form = document.getElementById("publisher_brand_form");
+    publisher_brand_form.noValidate = true;
+    publisher_brand_form.addEventListener("submit", validateForm);
+    publisher_brand_form.addEventListener("submit", (e) => {
       e.preventDefault();
       const fd = new FormData(e.target);
       for (const [name, value] of fd.entries()) {
@@ -270,12 +286,12 @@
     // Brand From End
 
     //Data Save sheet Start
-    var form = document.getElementById('publisher_form');
+    var form = document.getElementById('publisher_brand_form');
     form.addEventListener("submit", e => {
       e.preventDefault();
       fetch(form.action, {
         method: "POST",
-        body: new FormData(document.getElementById("publisher_form")),
+        body: new FormData(document.getElementById("publisher_brand_form")),
       }).then(
         response => response.json()
       ).then((html) => {

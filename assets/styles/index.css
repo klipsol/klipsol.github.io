@@ -5,7 +5,7 @@
 }
 
 :root {
-    --primary-color: #102f44;
+    --primary-color: #ffffff;
     --secondary-color: #66baff;
     --action-color: #f8c800;
     --base-font-family: 'Montserrat';
@@ -16,6 +16,7 @@
     --width-large: 960px;
     --width-xlarge: 1140px;
     --width-xxlarge: 1320px;
+    --width-xxlarge: 1120px;
     --margin-auto: auto;
     --transition: all 750ms;
 }
@@ -45,6 +46,7 @@ p {
     padding: 0 16px;
     margin: 0 auto;
     max-width: var(--width-xsmall);
+    /* box-shadow: inset 0px 0px 1px 1px #f00; */
 }
 
 .title {
@@ -198,7 +200,8 @@ nav a {
     border-bottom: solid 1px #baced6;
 }
 
-nav a:hover {
+nav a:hover,
+nav a.active {
     color: #003046;
     background: #EDBB40;
 }
@@ -210,13 +213,13 @@ main>section {
 }
 
 .hero-banner .title {
-    margin: 0 0 10px;
+    margin: 10px 0 10px;
 }
 
 .hero-banner .sub-title {
     font-size: 1rem;
     line-height: 20px;
-    margin: 0 0 30px;
+    margin: 0 0 0px;
 }
 
 .publishers .wrap,
@@ -363,6 +366,7 @@ main>section {
     grid-template-columns: repeat(1, 1fr);
     grid-gap: 8px 0;
     justify-items: center;
+    max-width: var(--width-xsmall);
 }
 
 .industry-exp .graphic {
@@ -423,7 +427,7 @@ main>section {
 
 .partner-brands .title {
     padding: 0 1rem;
-    margin: 0 0 0px;
+    margin: 0 0 16px;
     grid-column-end: span 2;
 }
 
@@ -439,7 +443,7 @@ main>section {
 .partner-brands .wrap {
     padding: 0;
     grid-template-columns: repeat(2, 1fr);
-    grid-gap: 16px 0;
+    grid-gap: 0px 0;
     justify-items: center;
 }
 
@@ -451,7 +455,7 @@ main>section {
 .partner-brands .partner-logo {
     display: flex;
     overflow: auto;
-    padding: 30px 0;
+    padding: 16px 0 40px;
 }
 
 .partner-brands .partner-logo::-webkit-scrollbar {
@@ -520,7 +524,7 @@ footer>div>div>strong {
     color: #334755;
 }
 
-footer>div>div>a, 
+footer>div>div>a,
 footer>div>div>p {
     font-weight: 500;
     font-size: .75rem;
@@ -528,8 +532,7 @@ footer>div>div>p {
     color: #334755;
 }
 
-footer>div>div>p {
-}
+footer>div>div>p {}
 
 footer .about {
     padding-top: 16px;
@@ -576,28 +579,15 @@ footer .copyright p {
         width: 106px;
         width: 200px;
     }
+
+    .partner-brands .wrap {
+        padding: 0 16px;
+    }
 }
 
 @media screen and (min-width: 768px) {
     .wrap {
         max-width: var(--width-medium);
-    }
-
-    footer {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-column-gap: 60px;
-        padding: 60px 90px 0;
-    }
-
-    footer>div {
-        padding-bottom: 30px;
-        border-bottom: 0;
-    }
-
-    footer .copyright {
-        grid-column: 1/-1;
-        border-top: 1px solid #bbb;
     }
 }
 
@@ -636,14 +626,12 @@ footer .copyright p {
         display: none;
     }
 
-    .logo {
-        padding-bottom: 0;
-    }
+    .logo {}
 
     nav {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        grid-column-gap: 18px;
+        grid-column-gap: 0px;
         grid-template-rows: auto;
         width: auto;
         height: auto;
@@ -675,27 +663,59 @@ footer .copyright p {
     }
 
     .hero-banner .title {
+        max-width: 416px;
         margin: 0 0 7px;
     }
 
     .hero-banner .sub-title {
-        margin: 0 0 85px;
+        font-size: 1.375rem;
+        line-height: 28px;
+        max-width: 330px;
     }
 
     .hero-banner>.wrap {
         grid-template-columns: 2fr 3fr;
-        grid-column-gap: 50px;
+        grid-column-gap: 36px;
         justify-content: space-between;
         align-items: center;
     }
 
     .publishers .wrap,
     .brands .wrap,
+    .shoppers .wrap {
+        grid-column-gap: 100px;
+    }
+
+    .publishers .wrap {}
+
+    .publishers .sub-title {
+        max-width: 300px;
+    }
+
+    .publishers .para {
+        max-width: 380px;
+    }
+
+    .brands .wrap {
+        max-width: 940px;
+    }
+
+    .brands .sub-title {
+        max-width: 270px;
+    }
+
+    .brands .para {
+        max-width: 420px;
+    }
+
     .shoppers .wrap {}
 
-    .brands .wrap {}
+    .shoppers .sub-title {
+    }
 
-    .shoppers .wrap {}
+    .shoppers .para {
+        max-width: 370px;
+    }
 
     .sq-cards {}
 
@@ -746,14 +766,16 @@ footer .copyright p {
         margin: 0;
         grid-column-end: initial;
         grid-row: span 1;
+        max-width: 350px;
     }
 
     .instant-setup .sub-title {
-        font-weight: 500;
+        font-weight: 400;
         font-size: 1.75rem;
         line-height: 36px;
         grid-column-end: initial;
         grid-row: span 1;
+        margin: 0 0 30px;
     }
 
     .instant-setup .wrap {
@@ -762,16 +784,24 @@ footer .copyright p {
     }
 
     .instant-setup .content {
+        grid-gap: 16px;
         grid-column-end: initial;
     }
 
     .instant-setup .card {
+        min-height: 106px;
         grid-row: span 1;
     }
 
-    .instant-setup .card img {}
+    .instant-setup .card img {
+        min-width: 52px;
+    }
 
-    .instant-setup .card p {}
+    .instant-setup .card p {
+        font-weight: 500;
+        font-size: 1.375rem;
+        line-height: 28px;
+    }
 
     .industry-exp {}
 
@@ -832,12 +862,11 @@ footer .copyright p {
         max-width: 700px;
     }
 
-    .partner-brands .wrap {
-        max-width: var(--width-xsmall);
-        grid-gap: 0px 0;
-    }
+    .partner-brands .wrap {}
 
-    .partner-brands .content {}
+    .partner-brands .content {
+        width: 951px;
+    }
 
     .partner-brands .partner-logo {
         /* max-width: 700;
@@ -861,15 +890,18 @@ footer .copyright p {
         /* margin-right: 0px; */
     }
 
-    .publishers .wrap {
-        grid-template-columns: 1fr 1fr;
+    .publisher_brand .wrap {
+        padding: 0 16px;
         grid-column-gap: 96px;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: start;
     }
 
     .publisher_brand {
         grid-template-columns: repeat(2, 1fr);
         grid-column-gap: 100px;
         align-items: start;
+        padding-bottom: 45px;
     }
 
     .publisher_brand address {
@@ -881,17 +913,17 @@ footer .copyright p {
     .publisher_brand address h1 span {}
 
     .publisher_brand address p {
-        display: block;
+        display: flex;
     }
 
     .publisher_brand address a {
-        display: block;
+        display: flex;
     }
 
     .publisher_brand address iframe {
         display: block;
-        width: 400px;
         height: 220px;
+        margin: 0;
     }
 
     .publisher_brand .form {
@@ -911,12 +943,14 @@ footer .copyright p {
     .publisher_brand .form>a:hover,
     .publisher_brand .form>a.active {}
 
-    .publisher_brand .form>a.active+a+form#publisher_form,
-    .publisher_brand .form>a.active+form+#brand_form {}
+    .publisher_brand .form>a.active+a+#publisher_brand_form,
+    .publisher_brand .form>a.active+#publisher_brand_form {}
 
     .publisher_brand form {}
 
-    .publisher_brand form>.row {}
+    .publisher_brand form>.row {
+        margin: 0 0 10px;
+    }
 
     .publisher_brand form>.row>label {}
 
@@ -932,22 +966,48 @@ footer .copyright p {
 
     .publisher_brand form>p {}
 
-    footer {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-column-gap: 60px;
-        padding: 60px 90px 0;
+    footer {}
+
+    footer .wrap {
+        grid-template-columns: repeat(5, 1fr);
+        align-items: center;
     }
 
-    footer>div {
-        padding-bottom: 30px;
-        border-bottom: 0;
+    footer>div>div {
+        align-items: center;
+        padding: 16px 0;
     }
 
-    footer .copyright {
-        grid-column: 1/-1;
-        border-top: 1px solid #bbb;
+    footer>div>div>img {}
+
+    footer>div>div>strong {}
+
+    footer>div>div>a,
+    footer>div>div>p {}
+
+    footer>div>div>p {}
+
+    footer .about {
+        grid-column-end: span 1;
     }
+
+    footer .about a {}
+
+    footer .phone {
+        grid-column-end: span 1;
+    }
+
+    footer .email {
+        grid-column-end: span 1;
+    }
+
+    footer .address {
+        grid-column-end: span 2;
+    }
+
+    footer .copyright {}
+
+    footer .copyright p {}
 }
 
 @media screen and (min-width: 1200px) {
@@ -961,10 +1021,12 @@ footer .copyright p {
 
     .publisher_brand form {
         padding: 60px 100px;
+        padding: 40px 60px;
     }
 
     .publisher_brand address h1 {
         font-size: 2.875rem;
+        font-size: 2.475rem;
         line-height: 59px;
     }
 
