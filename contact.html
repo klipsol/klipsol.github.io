@@ -73,7 +73,7 @@
               <div class="g-recaptcha" data-sitekey="6LdD4foiAAAAAOPnMS4G4FeA3MrJm331WSyHXd5C"></div>
               <span>Please verify captcha</span>
             </div>
-            <input type="submit" id="publisher_submit" name="publisher_submit" value="Submit" class="" />
+            <input type="submit" id="publisher_brand_submit" name="publisher_brand_submit" value="Submit" class="" />
             <p>By continuing, you agree to accept our <a href="#">Privacy Policy</a> & <a href="#">Terms of Service</a>.</p>
           </form>
           <!-- <form style="display: none;" id="brand_form" method="post" action="#" class="wp-user-form" autocomplete="off">
@@ -182,7 +182,7 @@
       // brand_form.style.display = "none";
     });
 
-    // Publisher Form Start
+    // Publisher And Brand Form Start
     const publisher_brand_form = document.getElementById("publisher_brand_form");
     publisher_brand_form.noValidate = true;
     publisher_brand_form.addEventListener("submit", validateForm);
@@ -199,7 +199,7 @@
           alert("Thank you");
           const captcha = document.getElementById("captcha")
           captcha.classList.remove("error");
-          const thanks = document.getElementById("publisher_submit")
+          const thanks = document.getElementById("publisher_brand_submit")
           thanks.value = "submitted successfully";
           thanks.style.background = 'green';
           thanks.style.borderColor = 'green';
@@ -241,7 +241,7 @@
         // input.classList.add("success");
       });
     });
-    // Publisher From End
+    // Publisher And Brand From End
 
     // Brand Form Start
     // const brand_form = document.getElementById("brand_form");
