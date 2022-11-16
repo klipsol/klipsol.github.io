@@ -198,12 +198,14 @@ nav a {
     text-decoration: none;
     padding: 5px 20px;
     border-bottom: solid 1px #baced6;
+    transition: background ease 0.5s;
 }
 
 nav a:hover,
 nav a.active {
     color: #003046;
     background: #EDBB40;
+    transition: background ease 0.5s;
 }
 
 main {}
