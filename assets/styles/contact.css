@@ -122,6 +122,7 @@
 .publisher_brand form>.row>input[type='text'],
 .publisher_brand form>.row>input[type='url'],
 .publisher_brand form>.row>input[type='number'],
+.publisher_brand form>.row>input[type='tel'],
 .publisher_brand form>.row>input[type='email'] {
  font-weight: 500;
  font-size: 12px;
@@ -241,3 +242,11 @@
 .publisher_brand form .validate.success>span {
  color: green;
 }
+
+
+
+
+
+.form .err-txt{display: none;padding:10px 5px;margin-bottom: 15px;color:#f20;}
+.form .input-holder.error{border-color:#f20;}
+.form .input-holder.error .err-txt{display: block}

@@ -48,10 +48,75 @@
         <div class="form">
           <a href="javascript:void('0');" class="publisher active" id="publisher">Publisher</a>
           <a href="javascript:void('0');" class="brand" id="brand">Brand</a>
-          <form id="publisher_brand_form" method="post" action="https://sheetdb.io/api/v1/2k4fbs7m6hm3n" class="wp-user-form" autocomplete="off">
+
+          <form id="form" method="post" action="https://sheetdb.io/api/v1/2k4fbs7m6hm3n" class="">
+
             <div class="row platform_link validate" id="platform-link">
               <label for="platform_link">Platform Link</label>
-              <input type="url" name="data[link]" id="platform_link" value="" placeholder="http:" required>
+              <input type="url" name="data[platform_link]" placeholder="http://" class="form-control" data-name="name" value="" id="platform_link">
+              <span>Valid platform link is required!</span>
+            </div>
+
+            <div class="row website_link validate" id="website-link">
+              <label for="website_link">Website link</label>
+              <input type="url" name="data[website_link]" placeholder="http://" class="form-control" data-name="name" value="" id="website_link">
+              <span>Valid website link is required!</span>
+            </div>
+
+            <div class="row validate">
+              <label for="email">Phone Number</label>
+              <input type="tel" name="phone" placeholder="9999999999" class="form-control">
+              <span>Valid phone number is required!</span>
+            </div>
+
+            <div class="row validate">
+              <label for="email">E-mail address</label>
+              <input type="email" name="email" placeholder="mail@gmail.com" class="form-control">
+              <span>Valid e-mail is required!</span>
+            </div>
+
+            <div class="row validate" id="captcha">
+              <div class="g-recaptcha" data-sitekey="6LdD4foiAAAAAOPnMS4G4FeA3MrJm331WSyHXd5C"></div>
+              <span>Captcha is required!</span>
+            </div>
+            <input type="submit" id="publisher_brand_submit" name="publisher_brand_submit" value="Submit" class="" />
+            <p>By continuing, you agree to accept our <a href="#">Privacy Policy</a> & <a href="#">Terms of Service</a>.</p>
+
+            <!-- <div class="input-holder checkbox">
+              <input type="checkbox" name="checkbox" id="check1" class="form-control" value="Checkbox1">
+              <label for="check1">Checkbox 1</label>
+              <br>
+              <input type="checkbox" name="checkbox" id="check2" class="form-control" value="Checkbox2	">
+              <label for="check2">Checkbox 2</label>
+              <span class="err-txt">Please check one option</span>
+            </div>
+            <div class="input-holder radiocheck">
+              <input type="radio" name="radio" id="radio1" class="form-control" value="radio1">
+              <label for="radio1">Radio 1</label>
+              <br>
+              <input type="radio" name="radio" id="radio2" class="form-control" value="radio2">
+              <label for="radio2">Radio 2</label>
+              <span class="err-txt">Please check one option</span>
+            </div> 
+            <div class="input-holder">
+              <select name="select" id="select" class="form-control">
+                <option value="" disabled="disabled" selected="selected">Select </option>
+                <option value="1">Option 1</option>
+                <option value="2">Option 2</option>
+                <option value="3">Option 3</option>
+              </select>
+              <span class="err-txt">Please select one option</span>
+            </div>
+          </div>-->
+            <!-- <div class="input-holder">
+              <input type="submit" value="Send" class="btn-submit">
+            </div> -->
+          </form>
+
+          <!-- <form id="publisher_brand_form" method="post" action="https://sheetdb.io/api/v1/2k4fbs7m6hm3n" class="" autocomplete="off">
+            <div class="row platform_link validate input-holder" id="platform-link">
+              <label for="platform_link">Platform Link</label>
+              <input type="url" name="data[link]" id="platform_link" class="form-control" value="" placeholder="http:" required>
               <span>Please enter your platform link</span>
             </div>
             <div class="row website_link validate" id="website-link">
@@ -61,12 +126,12 @@
             </div>
             <div class="row validate">
               <label for="publisher_phone_number">Phone Number</label>
-              <input type="number" name="data[number]" id="publisher_phone_number" value="" minlength="10" maxlength="10" size="10" placeholder="" required oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);">
+              <input type="number" name="data[number]" id="publisher_phone_number" class="form-control" value="" minlength="10" maxlength="10" size="10" placeholder="" required oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);">
               <span>Please enter your mobile no.</span>
             </div>
             <div class="row validate">
               <label for="publisher_e_mail">E-mail address</label>
-              <input type="email" name="data[email]" id="publisher_e_mail" value="" placeholder="" required>
+              <input type="email" name="data[email]" id="publisher_e_mail" class="form-control" value="" placeholder="" required>
               <span>Please enter your email</span>
             </div>
             <div class="row validate" id="captcha">
@@ -74,8 +139,9 @@
               <span>Please verify captcha</span>
             </div>
             <input type="submit" id="publisher_brand_submit" name="publisher_brand_submit" value="Submit" class="" />
+            <input type="submit" value="Send" class="btn-submit">
             <p>By continuing, you agree to accept our <a href="#">Privacy Policy</a> & <a href="#">Terms of Service</a>.</p>
-          </form>
+          </form> -->
           <!-- <form style="display: none;" id="brand_form" method="post" action="#" class="wp-user-form" autocomplete="off">
             <div class="row website_link validate" id="website-link">
               <label for="website_link">Website link</label>
@@ -183,65 +249,201 @@
     });
 
     // Publisher And Brand Form Start
-    const publisher_brand_form = document.getElementById("publisher_brand_form");
-    publisher_brand_form.noValidate = true;
-    publisher_brand_form.addEventListener("submit", validateForm);
-    publisher_brand_form.addEventListener("submit", (e) => {
+    var form = document.getElementById('form');
+    form.addEventListener('submit', function (e) {
       e.preventDefault();
-      const fd = new FormData(e.target);
-      for (const [name, value] of fd.entries()) {
-        console.log(name + ": " + value);
-        if (grecaptcha.getResponse() == "") {
-          alert("You can't proceed!");
-          const captcha = document.getElementById("captcha")
-          captcha.classList.add("error");
+      var checkValid = validatInputs();
+      if (checkValid) {
+        // console.log('No Error');
+        form.submit();
+      } else {
+        // console.log('Error');
+      }
+    });
+    function validatInputs() {
+      var inputs = form.querySelectorAll('.form-control');
+      var valid = [];
+      // var radioCheck = false;
+      // var checkboxCheck = false;
+      inputs.forEach(function (i, j) {
+        if (i.getAttribute('type')) {
+          var checkAttr = i.getAttribute('type');
         } else {
-          alert("Thank you");
-          const captcha = document.getElementById("captcha")
-          captcha.classList.remove("error");
-          const thanks = document.getElementById("publisher_brand_submit")
-          thanks.value = "submitted successfully";
-          thanks.style.background = 'green';
-          thanks.style.borderColor = 'green';
+          var checkAttr = i.tagName;
         }
 
-      }
-    });
-    function validateForm(e) {
-      const form = e.target,
-        field = Array.from(form.elements);
-      field.forEach((i) => {
-        i.parentElement.classList.remove("error");
-        i.parentElement.classList.add("success");
+        switch (checkAttr) {
+          // case 'radio':
+          //   // console.log(i.checked);
+          //   if (!radioCheck) {
+          //     if (!i.checked) {
+          //       // i.parentNode.classList.add("error");
+          //       radioCheck = false;
+          //     } else {
+          //       // i.parentNode.classList.remove("error");
+          //       radioCheck = true;
+          //     }
+          //   }
+          //   break;
+          // case 'checkbox':
+          //   if (!checkboxCheck) {
+          //     if (!i.checked) {
+          //       // i.parentNode.classList.add("error");
+          //       checkboxCheck = false;
+          //     } else {
+          //       // i.parentNode.classList.remove("error");
+          //       checkboxCheck = true;
+          //     }
+          //   }
+
+          //   break;
+          case 'text':
+            var _thisVal = i.value;
+            if (i.getAttribute('data-name') == 'name') {
+              if (!isNaN(i.value)) {
+                _thisVal = '';
+              }
+            }
+            if (_thisVal == '') {
+              i.parentNode.classList.add("error");
+              i.parentNode.classList.remove("success");
+              valid.push(i.getAttribute('name'));
+            } else {
+              i.parentNode.classList.remove("error");
+              i.parentNode.classList.add("success");
+            }
+            break;
+          case 'tel':
+            var regMobile = /^[6-9]\d{9}$/;
+            if (i.value == '' || isNaN(i.value) || !regMobile.test(i.value)) {
+              i.parentNode.classList.add("error");
+              i.parentNode.classList.remove("success");
+              valid.push(i.getAttribute('name'));
+            } else {
+              i.parentNode.classList.remove("error");
+              i.parentNode.classList.add("success");
+            }
+            break;
+          case 'email':
+            var regEmail = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+            if (i.value == '' || !regEmail.test(i.value)) {
+              i.parentNode.classList.add("error");
+              i.parentNode.classList.remove("success");
+              valid.push(i.getAttribute('name'));
+            } else {
+              i.parentNode.classList.remove("error");
+              i.parentNode.classList.add("success");
+            }
+            break;
+          // case 'select':
+          //   if (i[select.selectedIndex].value == '') {
+          //     i.parentNode.classList.add("error");
+          //     i.parentNode.classList.remove("success");
+          //     valid.push(i.getAttribute('name'));
+          //   } else {
+          //     i.parentNode.classList.remove("error");
+          //     i.parentNode.classList.add("success");
+          //   }
+          //   break;
+          default:
+            if (i.value == '') {
+              i.parentNode.classList.add("error");
+              i.parentNode.classList.remove("success");
+              valid.push(i.getAttribute('name'));
+            } else {
+              i.parentNode.classList.remove("error");
+              i.parentNode.classList.add("success");
+            }
+            break;
+        }
       });
-      if (!form.checkValidity()) {
-        e.preventDefault();
-        e.stopImmediatePropagation();
-        field.forEach((i) => {
-          if (!i.checkValidity()) {
-            i.parentElement.classList.add("error");
-            i.parentElement.classList.remove("success");
-          }
-        });
-      }
-      // if (grecaptcha.getResponse() == "") {
-      //   // alert("You can't proceed!");
-      //   const captcha = document.getElementById("captcha")
-      //   captcha.classList.add("error");
+      // if (!checkboxCheck) {
+      //   // console.log(document.getElementsByClassName('checkbox')[0].classList);
+      //   document.getElementsByClassName('checkbox')[0].classList.add("error");
+      //   valid.push('checkbox');
       // } else {
-      //   // alert("Thank you");
-      //   const captcha = document.getElementById("captcha")
-      //   captcha.classList.remove("error");
+      //   document.getElementsByClassName('checkbox')[0].classList.remove("error");
       // }
+      // if (!radioCheck) {
+      //   // console.log(document.getElementsByClassName('radiocheck')[0].classList);
+      //   document.getElementsByClassName('radiocheck')[0].classList.add("error");
+      //   valid.push('radio');
+      // } else {
+      //   document.getElementsByClassName('radiocheck')[0].classList.remove("error");
+      // }
+
+      if (valid.length > 0) {
+        // console.log(valid.length);
+        return false;
+      } else {
+        return true;
+      }
+
     }
-    const formInputs = document.querySelectorAll(".validate");
-    formInputs.forEach((input) => {
-      input.addEventListener("keydown", () => {
-        // input.classList.remove("error");
-        // input.classList.add("success");
-      });
-    });
-    // Publisher And Brand From End
+    // Publisher And Brand Form End
+
+
+
+    // // Publisher And Brand Form Start
+    // const publisher_brand_form = document.getElementById("publisher_brand_form");
+    // publisher_brand_form.noValidate = true;
+    // publisher_brand_form.addEventListener("submit", validateForm);
+    // publisher_brand_form.addEventListener("submit", (e) => {
+    //   e.preventDefault();
+    //   const fd = new FormData(e.target);
+    //   for (const [name, value] of fd.entries()) {
+    //     console.log(name + ": " + value);
+    //     if (grecaptcha.getResponse() == "") {
+    //       alert("You can't proceed!");
+    //       const captcha = document.getElementById("captcha")
+    //       captcha.classList.add("error");
+    //     } else {
+    //       alert("Thank you");
+    //       const captcha = document.getElementById("captcha")
+    //       captcha.classList.remove("error");
+    //       const thanks = document.getElementById("publisher_brand_submit")
+    //       thanks.value = "submitted successfully";
+    //       thanks.style.background = 'green';
+    //       thanks.style.borderColor = 'green';
+    //     }
+
+    //   }
+    // });
+    // function validateForm(e) {
+    //   const form = e.target,
+    //     field = Array.from(form.elements);
+    //   field.forEach((i) => {
+    //     i.parentElement.classList.remove("error");
+    //     i.parentElement.classList.add("success");
+    //   });
+    //   if (!form.checkValidity()) {
+    //     e.preventDefault();
+    //     e.stopImmediatePropagation();
+    //     field.forEach((i) => {
+    //       if (!i.checkValidity()) {
+    //         i.parentElement.classList.add("error");
+    //         i.parentElement.classList.remove("success");
+    //       }
+    //     });
+    //   }
+    //   // if (grecaptcha.getResponse() == "") {
+    //   //   // alert("You can't proceed!");
+    //   //   const captcha = document.getElementById("captcha")
+    //   //   captcha.classList.add("error");
+    //   // } else {
+    //   //   // alert("Thank you");
+    //   //   const captcha = document.getElementById("captcha")
+    //   //   captcha.classList.remove("error");
+    //   // }
+    // }
+    // const formInputs = document.querySelectorAll(".validate");
+    // formInputs.forEach((input) => {
+    //   input.addEventListener("keydown", () => {
+    //     // input.classList.remove("error");
+    //     // input.classList.add("success");
+    //   });
+    // });
+    // // Publisher And Brand From End
 
     // Brand Form Start
     // const brand_form = document.getElementById("brand_form");
@@ -285,22 +487,24 @@
     // });
     // Brand From End
 
-    //Data Save sheet Start
-    var form = document.getElementById('publisher_brand_form');
-    form.addEventListener("submit", e => {
-      e.preventDefault();
-      fetch(form.action, {
-        method: "POST",
-        body: new FormData(document.getElementById("publisher_brand_form")),
-      }).then(
-        response => response.json()
-      ).then((html) => {
-        // you can put any JS code here
-        // alert('success')
-      });
-    });
-    //Data Save sheet Start
+    // //Data Save sheet Start
+    // var form = document.getElementById('publisher_brand_form');
+    // form.addEventListener("submit", e => {
+    //   e.preventDefault();
+    //   fetch(form.action, {
+    //     method: "POST",
+    //     body: new FormData(document.getElementById("publisher_brand_form")),
+    //   }).then(
+    //     response => response.json()
+    //   ).then((html) => {
+    //     // you can put any JS code here
+    //     // alert('success')
+    //   });
+    // });
+    // //Data Save sheet Start
+
     //Form End
+
     // var onloadCallback = function () {
     //   alert("grecaptcha is ready!");
     // };
