@@ -1,3 +1,5 @@
+main>section{    padding: 0px 0px !important;}
+section.join-us-box.pandas-benifits-box .wrap{    padding-bottom: 77px;}
 section.breadcrumb {
  background: #f7f7f7;
  padding: 81px 0px 0px 0px;
@@ -120,7 +122,7 @@ section.glimpses-box {
 }
 
 .left-box {
- width: 28%;
+ width: 33%;
  float: left;
 }
 
@@ -134,7 +136,7 @@ section.glimpses-box {
 
 .right {
  background-color: #fff;
- width: 72%;
+ width: 67%;
  overflow-x: auto;
  overflow-y: hidden;
  white-space: nowrap;
@@ -234,7 +236,7 @@ section.join-us-box {
 
 .join-us-box .box {
  border-radius: 12px;
- padding: 67px;
+ padding: 52px;
  text-align: center;
 }
 
@@ -371,7 +373,7 @@ section.meet-panda-box .wrap h4 {
 }
 
 .box.c {
- height: 650px;
+ height: 782px;
 }
 
 .box.c span.join-heading {
