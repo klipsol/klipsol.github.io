@@ -93,8 +93,8 @@
  background: #EDBB40;
 }
 
-.publisher_brand .form>a.active+a+#publisher_brand_form,
-.publisher_brand .form>a.active+#publisher_brand_form {
+.publisher_brand .form>a.active+a+#form,
+.publisher_brand .form>a.active+#form {
  border-color: #EDBB40;
 }
 
@@ -178,8 +178,8 @@
 }
 
 .publisher_brand form>input[type='submit']:hover {
- border: solid 1px #66BAFF;
- background: #66BAFF;
+ /* border: solid 1px #66BAFF;
+ background: #66BAFF; */
 }
 
 .publisher_brand form>p {

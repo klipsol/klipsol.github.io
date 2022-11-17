@@ -16,7 +16,7 @@
     --width-large: 960px;
     --width-xlarge: 1140px;
     --width-xxlarge: 1320px;
-    --width-xxlarge: 1120px;
+    /* --width-xxlarge: 1120px; */
     --margin-auto: auto;
     --transition: all 750ms;
 }
@@ -111,6 +111,10 @@ body {
 }
 
 header {
+    position: sticky;
+    background: #fff;
+    z-index: 1;
+    top: 0;
     border-bottom: solid 1px #E6E6E6;
 }
 
@@ -571,13 +575,43 @@ footer .copyright p {
 
 /*Responsive*/
 @media screen and (min-width: 576px) {
-    .wrap {
-        max-width: var(--width-small);
+    header {
+        border-bottom: 0;
     }
 
-    .logo {
-        width: 106px;
-        width: 200px;
+    .hamburge_menu_icon {
+        display: none;
+    }
+
+    .logo {}
+
+    nav {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-column-gap: 10px;
+        grid-template-rows: auto;
+        width: auto;
+        height: auto;
+        margin: 0 0 0px;
+        overflow: initial;
+        background: transparent;
+        position: unset;
+        transform: unset;
+    }
+
+    nav a {
+        font-weight: 600;
+        font-size: 1.075rem;
+        line-height: 28px;
+        color: #003046;
+        text-decoration: none;
+        padding: 5px 20px;
+        border-radius: 48px;
+        white-space: nowrap;
+        border-bottom: 0;
+    }
+    .wrap {
+        max-width: var(--width-small);
     }
 
     .partner-brands .wrap {
@@ -618,40 +652,16 @@ footer .copyright p {
         line-height: 24px;
     }
 
-    header {
-        border-bottom: 0;
+    .logo {
+        width: 106px;
+        width: 200px;
     }
-
-    .hamburge_menu_icon {
-        display: none;
-    }
-
-    .logo {}
 
     nav {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-column-gap: 0px;
-        grid-template-rows: auto;
-        width: auto;
-        height: auto;
-        margin: 0 0 0px;
-        overflow: initial;
-        background: transparent;
-        position: unset;
-        transform: unset;
     }
 
     nav a {
-        font-weight: 600;
         font-size: 1.375rem;
-        line-height: 28px;
-        color: #003046;
-        text-decoration: none;
-        padding: 5px 20px;
-        border-radius: 48px;
-        white-space: nowrap;
-        border-bottom: 0;
     }
 
     .wrap {
@@ -684,6 +694,10 @@ footer .copyright p {
     .brands .wrap,
     .shoppers .wrap {
         grid-column-gap: 100px;
+    }
+
+    .publishers{
+        padding: 0;
     }
 
     .publishers .wrap {}
@@ -943,8 +957,8 @@ footer .copyright p {
     .publisher_brand .form>a:hover,
     .publisher_brand .form>a.active {}
 
-    .publisher_brand .form>a.active+a+#publisher_brand_form,
-    .publisher_brand .form>a.active+#publisher_brand_form {}
+    .publisher_brand .form>a.active+a+#form,
+    .publisher_brand .form>a.active+#form {}
 
     .publisher_brand form {}
 
