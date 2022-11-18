@@ -16,7 +16,7 @@
     --width-large: 960px;
     --width-xlarge: 1140px;
     --width-xxlarge: 1320px;
-    /* --width-xxlarge: 1120px; */
+    --width-xxlarge: 1120px;
     --margin-auto: auto;
     --transition: all 750ms;
 }
@@ -49,26 +49,31 @@ p {
     /* box-shadow: inset 0px 0px 1px 1px #f00; */
 }
 
-.title {
+.title,
+.sub-title {
     font-weight: 800;
-    font-size: 1.375rem;
-    line-height: 28px;
-    color: #263237;
-    margin: 0 0 2px;
+    font-size: 1.875rem;
+    line-height: 2.125rem;
+    color: #1957F5;
+    margin: 0 0 0px;
 }
 
 .sub-title {
-    font-weight: 500;
-    font-size: .875rem;
-    line-height: 19px;
-    color: #263237;
-    margin: 0 0 6px;
+    font-size: 1.375rem;
+    line-height: 1.75rem;
 }
 
 .para {
     font-weight: 500;
+    font-size: .875rem;
+    line-height: 1.125rem;
+    margin: 0 0 10px;
+}
+
+.strong {
+    font-weight: 800;
     font-size: .6875rem;
-    line-height: 16px;
+    line-height: 1rem;
 }
 
 .text-start {
@@ -112,7 +117,7 @@ body {
 
 header {
     position: sticky;
-    background: #fff;
+    background: #f3f7fd;
     z-index: 1;
     top: 0;
     border-bottom: solid 1px #E6E6E6;
@@ -213,18 +218,30 @@ nav a.active {
 main {}
 
 main>section {
-    padding: 25px 0;
+    padding: 20px 0;
 }
+
+.hero-banner {
+    background-image: linear-gradient(180deg, rgb(209 222 246 / 25%) 0%, rgb(255 255 255 / 0%));
+    /* url(../images/hero-bg.png); */
+    background-position: left bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.hero-banner .wrap {}
+
+.hero-banner .graphic {
+    margin: 0 0 30px;
+}
+
+.hero-banner .content {}
 
 .hero-banner .title {
-    margin: 10px 0 10px;
+    margin: 0 0 16px;
 }
 
-.hero-banner .sub-title {
-    font-size: 1rem;
-    line-height: 20px;
-    margin: 0 0 0px;
-}
+.hero-banner .para {}
 
 .publishers .wrap,
 .brands .wrap,
@@ -235,24 +252,68 @@ main>section {
     align-items: center;
 }
 
+.publishers {
+    background: url(../images/publisher-top-bg.jpg) left top / contain no-repeat,
+        url(../images/publisher-botton-bg.jpg) left bottom / contain no-repeat;
+    background-color: #f5f8fd;
+}
+
+.publishers .wrap {}
+
+.publishers .content {
+    padding: 30px 0;
+}
+
+.publishers .sub-title {}
+
+.publishers .para {}
+
+.brands {}
+
 .brands .wrap {}
+
+.brands .content {
+    padding: 10px 0;
+}
+
+
+.shoppers {
+    background: url(../images/shoppers-top-bg.jpg) left top / contain no-repeat,
+        url(../images/shoppers-bottom-bg.jpg) left bottom / contain no-repeat;
+    background-color: #f5f8fd;
+}
 
 .shoppers .wrap {}
 
-.sq-cards {}
+.shoppers .graphic {
+    
+}
 
-.sq-cards .title {
+.shoppers .content {
+    padding: 0px 0;
+}
+
+.shoppers .sub-title {}
+
+.shoppers .para {}
+
+.sq-cards {
+    padding-bottom: 40px;
+    background: url(../images/sq-card-bg.jpg) left bottom / contain no-repeat;
+}
+
+.sq-cards .sub-title {
     grid-column-end: span 2;
     margin: 0 0 17px;
     padding: 0 12px;
     text-align: center;
 }
 
-.sq-cards .sub-title {
+/* .sq-cards .sub-title {
     font-size: 1rem;
     line-height: 20px;
     margin: 0 0 30px;
-}
+} */
 
 .sq-cards .wrap {
     grid-template-columns: repeat(2, 1fr);
@@ -288,18 +349,19 @@ main>section {
     color: #263237;
 }
 
-.instant-setup {}
+.instant-setup {padding: 40px 0;}
 
 .instant-setup .small-icon {
     grid-column-end: span 2;
 }
 
 .instant-setup .title {
+    text-align: center;
     margin: 0 0 0px;
     grid-column-end: span 2;
 }
 
-.instant-setup .sub-title {
+.instant-setup .para {
     grid-column-end: span 2;
 }
 
@@ -323,7 +385,7 @@ main>section {
     grid-column-gap: 20px;
     align-items: center;
     padding: 13px 16px;
-    background: #ffffff;
+    background: #F6F8FD;
     box-shadow: 0px 15px 40px #11171D1A;
     width: 100%;
     min-height: 64px;
@@ -481,6 +543,7 @@ main>section {
 .partner-brands .card {
     display: grid;
     align-items: center;
+    justify-items: center;
     margin: 0 0 0 10px;
     padding: 10px;
     background: #ffffff;
@@ -610,6 +673,7 @@ footer .copyright p {
         white-space: nowrap;
         border-bottom: 0;
     }
+
     .wrap {
         max-width: var(--width-small);
     }
@@ -630,21 +694,27 @@ footer .copyright p {
         order: 1;
     }
 
-    .title {
+    .title,
+    .sub-title {
         font-size: 2.8125rem;
-        line-height: 52px;
-        margin: 0 0 7px;
+        line-height: 3.25rem;
     }
 
     .sub-title {
-        font-size: 1.375rem;
-        line-height: 28px;
-        margin: 0 0 18px;
+        margin: 0 0 10px;
     }
 
     .para {
-        font-size: 1rem;
-        line-height: 24px;
+        font-weight: 400;
+        font-size: 2rem;
+        line-height: 2.25rem;
+        margin: 0 0 20px;
+    }
+    
+    .strong {
+        font-weight: 800;
+        font-size: 1.3125rem;
+        line-height: 2rem;
     }
 
     .link-btn {
@@ -657,11 +727,10 @@ footer .copyright p {
         width: 200px;
     }
 
-    nav {
-    }
+    nav {}
 
     nav a {
-        font-size: 1.375rem;
+        font-size: 1.125rem;
     }
 
     .wrap {
@@ -672,15 +741,32 @@ footer .copyright p {
         padding: 45px 0;
     }
 
-    .hero-banner .title {
-        max-width: 416px;
-        margin: 0 0 7px;
+    .hero-banner {
+        padding-bottom: 0;
+        background-image: linear-gradient(180deg, rgb(209 222 246 / 25%) 0%, rgb(255 255 255 / 0%)),
+            url(../images/hero-bg.png);
+        background-position: left bottom;
+        background-repeat: no-repeat;
+        background-size: contain;
     }
 
-    .hero-banner .sub-title {
+    .hero-banner .wrap {}
+
+    .hero-banner .graphic {
+        margin: 0 0 0px;
+    }
+
+    .hero-banner .content {}
+
+    .hero-banner .title {
+        max-width: 416px;
+    }
+
+    .hero-banner .para {
+        max-width: 370px;
+        font-weight: 500;
         font-size: 1.375rem;
-        line-height: 28px;
-        max-width: 330px;
+        line-height: 1.75rem;
     }
 
     .hero-banner>.wrap {
@@ -692,15 +778,23 @@ footer .copyright p {
 
     .publishers .wrap,
     .brands .wrap,
-    .shoppers .wrap {
+    .shoppers .wrap, 
+    .industry-exp .wrap {
+        max-width: 940px;
         grid-column-gap: 100px;
     }
 
-    .publishers{
-        padding: 0;
+    .publishers {
+        padding-top: 0;
+        background-image: none,
+            url(../images/publisher-botton-bg.jpg);
     }
 
     .publishers .wrap {}
+
+    .publishers .content {
+        padding: 0px 0;
+    }
 
     .publishers .sub-title {
         max-width: 300px;
@@ -711,7 +805,7 @@ footer .copyright p {
     }
 
     .brands .wrap {
-        max-width: 940px;
+        
     }
 
     .brands .sub-title {
@@ -724,8 +818,11 @@ footer .copyright p {
 
     .shoppers .wrap {}
 
-    .shoppers .sub-title {
+    .shoppers .graphic {
+        width: 340px;
     }
+
+    .shoppers .sub-title {}
 
     .shoppers .para {
         max-width: 370px;
@@ -733,7 +830,7 @@ footer .copyright p {
 
     .sq-cards {}
 
-    .sq-cards .title {
+    .sq-cards .sub-title {
         font-size: 2.25rem;
         line-height: 44px;
         grid-column-end: span 4;
@@ -777,13 +874,14 @@ footer .copyright p {
     }
 
     .instant-setup .title {
+        text-align: left;
         margin: 0;
         grid-column-end: initial;
         grid-row: span 1;
         max-width: 350px;
     }
 
-    .instant-setup .sub-title {
+    .instant-setup .para {
         font-weight: 400;
         font-size: 1.75rem;
         line-height: 36px;
@@ -817,7 +915,9 @@ footer .copyright p {
         line-height: 28px;
     }
 
-    .industry-exp {}
+    .industry-exp {
+        background: url(../images/connectivity.png) left center / contain no-repeat;
+    }
 
     .industry-exp .title {
         font-size: 2.25rem;
@@ -829,12 +929,17 @@ footer .copyright p {
     }
 
     .industry-exp .wrap {
-        max-width: var(--width-xsmall);
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
     }
 
     .industry-exp .graphic {
         min-height: 417px;
-        margin: 0 0 32px;
+        margin: 0 0 0px;
+    }
+
+    .industry-exp .graphic > img {
+        display: none;
     }
 
     .industry-exp .blue-circle {
@@ -843,6 +948,7 @@ footer .copyright p {
     }
 
     .industry-exp .content {
+        grid-template-columns: repeat(2, 0fr);
         grid-gap: 30px;
     }
 
@@ -853,6 +959,7 @@ footer .copyright p {
 
     .industry-exp .card:first-child,
     .industry-exp .card:last-child {
+        position: initial;
         top: -50px;
         left: -200px;
     }
@@ -892,7 +999,7 @@ footer .copyright p {
         margin: 0 0 0 16px;
         padding: 16px;
         min-width: 170px;
-        min-height: 80px;
+        min-height: 50px;
         border-radius: 20px;
     }
 
