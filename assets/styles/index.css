@@ -54,7 +54,7 @@ p {
     font-weight: 800;
     font-size: 1.875rem;
     line-height: 2.125rem;
-    color: #1957F5;
+    color: #003344;
     margin: 0 0 0px;
 }
 
@@ -287,9 +287,7 @@ main>section {
 
 .shoppers .wrap {}
 
-.shoppers .graphic {
-    
-}
+.shoppers .graphic {}
 
 .shoppers .content {
     padding: 0px 0;
@@ -351,7 +349,9 @@ main>section {
     color: #263237;
 }
 
-.instant-setup {padding: 40px 0;}
+.instant-setup {
+    padding: 40px 0;
+}
 
 .instant-setup .small-icon {
     grid-column-end: span 2;
@@ -506,6 +506,7 @@ main>section {
     text-align: center;
     padding: 0 2rem;
     grid-column-end: span 2;
+    display: none;
 }
 
 .partner-brands .wrap {
@@ -683,6 +684,10 @@ footer .copyright p {
     .partner-brands .wrap {
         padding: 0 16px;
     }
+
+    .partner-brands .card {
+        box-shadow: 0px 5px 5px #11171d1a;
+    }
 }
 
 @media screen and (min-width: 768px) {
@@ -712,7 +717,7 @@ footer .copyright p {
         line-height: 2.25rem;
         margin: 0 0 20px;
     }
-    
+
     .strong {
         font-weight: 800;
         font-size: 1.3125rem;
@@ -780,7 +785,7 @@ footer .copyright p {
 
     .publishers .wrap,
     .brands .wrap,
-    .shoppers .wrap, 
+    .shoppers .wrap,
     .industry-exp .wrap {
         max-width: 940px;
         grid-column-gap: 100px;
@@ -806,9 +811,7 @@ footer .copyright p {
         max-width: 380px;
     }
 
-    .brands .wrap {
-        
-    }
+    .brands .wrap {}
 
     .brands .sub-title {
         max-width: 270px;
@@ -830,7 +833,9 @@ footer .copyright p {
         max-width: 370px;
     }
 
-    .sq-cards {}
+    .sq-cards {
+        background-size: cover;
+    }
 
     .sq-cards .sub-title {
         font-size: 2.25rem;
@@ -940,7 +945,7 @@ footer .copyright p {
         margin: 0 0 0px;
     }
 
-    .industry-exp .graphic > img {
+    .industry-exp .graphic>img {
         display: none;
     }
 
@@ -1162,5 +1167,16 @@ footer .copyright p {
 @media screen and (min-width: 1400px) {
     .wrap {
         max-width: var(--width-xxlarge);
+    }
+    .hero-banner{
+        background-size: cover;
+    }
+    .shoppers {
+        background: url(../images/shoppers-top-bg.jpg) center top / cover no-repeat, 
+        url(../images/shoppers-bottom-bg.jpg) center bottom / cover no-repeat;
+        background-color: transparent;
+    }
+    .industry-exp{
+        background-size: cover;
     }
 }
