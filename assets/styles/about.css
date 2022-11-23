@@ -3,7 +3,7 @@ main>section {
 }
 
 section.join-us-box.pandas-benifits-box .wrap {
-  padding-bottom: 77px;
+  padding-bottom: 35px;
 }
 
 section.breadcrumb {
@@ -17,6 +17,25 @@ section.breadcrumb {
 .who-we-are-heading {
   display: flex;
   position: relative;
+}
+
+section.join-us-box.join-us-main.btn-box span.join-us-team {
+  margin-left: 0px;
+}
+section.join-us-box.join-us-main.btn-box .wrap {
+  padding-bottom: 28px !important;
+  padding-top: 28px !important;
+}
+
+span.join-us-team:hover {
+  background: #f3c95b;
+
+}
+span.join-heading~a{margin: 0px 0px 0px 20px;}
+
+section.join-us-box.join-us-main.btn-box .wrap {
+  display: block;
+  text-align: center;
 }
 
 .who-we-are-heading span {
@@ -426,7 +445,6 @@ span.join-us-team {
   margin: 0 auto;
   width: 270px;
   text-align: center;
-  margin: 0px 0px 0px 20px;
   height: 50px;
 }
 
