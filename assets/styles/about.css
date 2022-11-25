@@ -1,16 +1,23 @@
-main>section {
-  padding: 0px 0px !important;
-}
+section.about-us {background: #fcfdff;padding: 45px 0px 0px 0px !important;} 
+.about-us .wrap {grid-template-columns: repeat(2, 1fr); grid-column-gap: 77px;} 
+.about-box span {color: #003344;font-weight: 800;font-size: 39px;line-height: 52px;    margin-top: 50px;    float: left;}
+section.about-content-box p {color: #003344;line-height: 28px;margin-bottom: 34px;font-size: 18px;}
+.about-content-box .wrap {max-width: 944px;text-align: center;position: relative; padding-top: 130px;z-index: 9;}
+section.about-content-box {background: url(../images/publisher-bg-top_f.jpg) left top / contain no-repeat; background-color: #f5f8fd;position: relative; background-size: 100%;}
+section.about-content-box:after { position: absolute; content: "";bottom: -79px;width: 100%;height: 100%;z-index: 0;background: url(../images/publisher-botton-bg.jpg) left bottom / contain no-repeat;background-size: 100%; }
+.industry-exp1 {background: url(../images/connectivity.png) left center / contain no-repeat;background-size: 98%;min-height: 472px;margin-bottom: 20px;    margin-top: 73px;background-size: 100%;} 
+.industry-exp1 .wrap {grid-template-columns: repeat(1, 1fr);align-items: center;padding-top: 90px;display: table;}
+.industry-exp1 .wrap h2 {font-size: 34px;font-weight: 700;color:#003344; margin-bottom: 58px;text-align: center;}
+.brand-logo-box .card-box1 {margin: 0 0 0 16px;padding: 16px;min-width: 187px;min-height:65px;border-radius: 20px;background: #F6F8FD;box-shadow: 0px 15px 40px #11171D1A;text-align: center;}
+.brand-logo-box {width: 100%; display: flex;margin: 0 auto;} 
 
-section.join-us-box.pandas-benifits-box .wrap {
-  padding-bottom: 35px;
-}
-
+main>section {padding: 0px 0px !important;}
+section.join-us-box.pandas-benifits-box .wrap {padding-bottom: 35px;}
 section.breadcrumb {
   background: #f7f7f7;
   padding: 81px 0px 0px 0px;
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: 1fr; 
   border-bottom: 6px solid #000;
 }
 
@@ -449,6 +456,10 @@ span.join-us-team {
 }
 
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .industry-exp1 .wrap{padding-top: 40px;}
+  .industry-exp1 .wrap{display: block;}
+  .brand-logo-box{width: 100%;display: table;}
+  .brand-logo-box .card-box1{    width: 45%;float: left;    margin-bottom: 30px;}
   section.glimpses-box {
     margin-top: 40px;
   }
@@ -492,6 +503,19 @@ span.join-us-team {
 }
 
 @media only screen and (min-width: 320px) and (max-width: 768px) {
+  section.about-content-box:after{    bottom: -29px;} 
+  section.about-us .wrap {grid-template-columns: repeat(1, 1fr);display: block;}
+  .about-box.about-heading {text-align: center;    margin-bottom: 30px;}
+  .about-box span{margin-top:0px;}
+  .about-box.about-heading span {font-size: 21px;line-height: 31px;}
+  .about-content-box .wrap{max-width:90%;    padding-top: 54px;}
+  section.about-content-box p{    font-size: 12px;line-height: 18px;    margin-bottom: 21px;}
+  .industry-exp1 .wrap h2{font-size: 24px;    margin-bottom: 35px;}
+  .industry-exp1 .wrap{    padding-top: 0px;}
+  .brand-logo-box{width: 100%;  display: table;}
+  .brand-logo-box .card-box1 {margin: 0px 0px 11px 0px;min-width: inherit;min-height: auto;float: left;width: 45%; margin: 2%;} 
+.industry-exp1{background-size: 100%;min-height: inherit;    margin-top: 40px;}
+
   section.glimpses-box {
     margin-top: 30px;
   }
