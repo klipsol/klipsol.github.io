@@ -89,17 +89,19 @@
               <input type="email" name="data[E-mail ID]" placeholder="mail@gmail.com" class="form-control">
               <span>Valid e-mail is required!</span>
             </div>
-            <div class="row validate" id="captcha">
+            <!-- <div class="row validate" id="captcha">
               <div class="g-recaptcha" data-sitekey="AIzaSyA665BepoNVDb0Rrqi6s7PhBzV-zwYNOBA" data-expired-callback="recaptchaExpired"></div>
               <span>Captcha is required!</span>
-            </div>
+            </div> -->
             <!-- <div class="row tnc validate">
               <label for="brand_tnc">Opt in to receive news and updates. Terms.</label>
               <input type="checkbox" name="brand_tnc" id="brand_tnc" required>
               <span>Please check T&C</span>
             </div> -->
-            <input type="submit" value="Submit" class="" />
+            <button class="g-recaptcha" data-sitekey="AIzaSyA665BepoNVDb0Rrqi6s7PhBzV-zwYNOBA" data-callback='onSubmit'
+              data-action='submit'>Submit</button>
             <p>By continuing, you agree to accept our <a href="privacy-policy.html" target="_blank">Privacy Policy</a> & <a href="terms-of-service.html" target="_blank">Terms of Service</a>.</p>
+            <!-- <input type="submit" value="Submit" class="" /> -->
           </form>
         </div>
       </div>
