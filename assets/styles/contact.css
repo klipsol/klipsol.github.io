@@ -162,7 +162,7 @@
  border-radius: 2px;
 }
 
-.publisher_brand form>input[type='submit'] {
+.publisher_brand form>.g-recaptcha {
  font-weight: 700;
  font-size: 12px;
  line-height: 15px;

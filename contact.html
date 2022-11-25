@@ -181,6 +181,9 @@
 
     // Publisher And Brand Form Start
     var form = document.getElementById('form');
+    function onSubmit(token) {
+      document.getElementById("form").submit();
+    }
     form.addEventListener('submit', function (e) {
       e.preventDefault();
       if (document.getElementById('publisher_radio').checked == true) {
