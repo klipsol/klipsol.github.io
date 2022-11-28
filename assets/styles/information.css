@@ -15,8 +15,14 @@
 }
 
 .information p {
- font-size: .6875rem;
+ font-size: 1rem;
  margin: 0 0 20px;
+ line-height: 1.6875rem;
+}
+
+.privacy-policy strong {
+    margin: 12px 0px 4px 0px;
+    display: block;
 }
 
 .information p:last-child {

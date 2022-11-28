@@ -13,7 +13,7 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap">
   <link rel="stylesheet" href="./assets/styles/contact.css">
   <link rel="stylesheet" href="./assets/styles/index.css">
-  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+  <script src="https://www.google.com/recaptcha/api.js?render=AIzaSyA665BepoNVDb0Rrqi6s7PhBzV-zwYNOBA"></script>
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-P992MCN0HM"></script>
   <script>
@@ -89,17 +89,19 @@
               <input type="email" name="data[E-mail ID]" placeholder="mail@gmail.com" class="form-control">
               <span>Valid e-mail is required!</span>
             </div>
-            <div class="row validate" id="captcha">
+            <!-- <div class="row validate" id="captcha">
               <div class="g-recaptcha" data-sitekey="AIzaSyA665BepoNVDb0Rrqi6s7PhBzV-zwYNOBA" data-expired-callback="recaptchaExpired"></div>
               <span>Captcha is required!</span>
-            </div>
+            </div> -->
             <!-- <div class="row tnc validate">
               <label for="brand_tnc">Opt in to receive news and updates. Terms.</label>
               <input type="checkbox" name="brand_tnc" id="brand_tnc" required>
               <span>Please check T&C</span>
             </div> -->
-            <input type="submit" value="Submit" class="" />
-            <p>By continuing, you agree to accept our <a href="privacy-policy.html" target="_blank">Privacy Policy</a> & <a href="terms-of-service.html" target="_blank">Terms of Service</a>.</p>
+            <button class="g-recaptcha" data-sitekey="AIzaSyA665BepoNVDb0Rrqi6s7PhBzV-zwYNOBA" data-callback='onSubmit'
+              data-action='submit'>Submit</button>
+            <!-- <p>By continuing, you agree to accept our <a href="privacy-policy.html" target="_blank" style>Privacy Policy</a> & <a href="terms-of-service.html" target="_blank">Terms of Service</a>.</p> -->
+            <!-- <input type="submit" value="Submit" class="" /> -->
           </form>
         </div>
       </div>
@@ -110,21 +112,34 @@
       <div class="about">
         <a href="index.html"><img src="./assets/images/logo.png" alt="Dpanda" title="Dpanda" /></a>
       </div>
-      <div class="phone">
-        <img src="./assets/images/phone.png" alt="Dpanda" title="Dpanda" />
-        <strong>Phone</strong>
-        <a href="tel:+91-9560888146">+91 9560888146</a>
+      <div class="address">
+        <img src="./assets/images/location.png" alt="Dpanda" title="Dpanda" />
+        <strong>Address</strong>
+        <p>
+          Nimble Cowork 250, Udyog Vihar Phase IV, Gurugram, Haryana - 122015 (Basement)
+        </p>
       </div>
+       
       <div class="email">
         <img src="./assets/images/mail.png" alt="Dpanda" title="Dpanda" />
         <strong>Email</strong>
         <a href="mailto:support@dpanda.in">support@dpanda.in</a>
       </div>
-      <div class="address">
-        <img src="./assets/images/location.png" alt="Dpanda" title="Dpanda" />
-        <strong>Address</strong>
-        <p>Nimble Cowork 250, Udyog Vihar Phase IV, Gurugram, Haryana - 122015 (Basement)</p>
+      <div  class="Information-link">
+        <ul class="info-link">
+          <strong>Information</strong>
+          <li><a href="privacy-policy.html"> Privacy Policy</a></li>
+          <li><a href="refund-policy.html">Refund Policy</a></li>
+          <li><a href="shipping-policy.html"> Shipping Policy</a></li>
+          <li><a href="terms-of-service.html">Terms-of Service</a></li> 
+         </ul>
       </div>
+      <div class="phone">
+        <img src="./assets/images/phone.png" alt="Dpanda" title="Dpanda" />
+        <strong>Phone</strong>
+        <a href="tel:+91-9560888146">+91 9560888146</a>
+      </div>
+      
     </div>
     <div class="copyright">
       <p>© Dpanda 2022, All rights reserved.</p>
@@ -179,6 +194,10 @@
 
     // Publisher And Brand Form Start
     var form = document.getElementById('form');
+    function onSubmit(token) {
+      console.log(token);
+      document.getElementById("form").submit();
+    }
     form.addEventListener('submit', function (e) {
       e.preventDefault();
       if (document.getElementById('publisher_radio').checked == true) {
