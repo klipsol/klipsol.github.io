@@ -118,13 +118,13 @@ body {
 header {
     position: sticky;
     background: #f3f7fd;
-    z-index:99; 
+    z-index: 99;
     top: 0;
     border-bottom: solid 1px #E6E6E6;
 }
 
 header .wrap {
-    grid-template-columns: repeat(2, 0fr);
+    grid-template-columns: repeat(3, 0fr);
     justify-content: space-between;
     align-items: center;
 }
@@ -132,6 +132,15 @@ header .wrap {
 .logo {
     width: 150px;
     padding: 16px 0;
+}
+
+.quick-contact-link {
+    background: #EDBB40;
+    border-radius: 5px;
+    padding: 5px 10px;
+    white-space: nowrap;
+    font-weight: 600;
+    font-size: .75rem;
 }
 
 .hamburge_menu_icon {
@@ -210,11 +219,18 @@ nav a {
     transition: background ease 0.5s;
 }
 
-nav a:hover,
-nav a.active {
+nav a:hover {
     color: #003046;
-    background: #EDBB40;
-    transition: background ease 0.5s;
+    border-bottom: 1px solid #003046;
+    border-radius: 0px;
+    border-bottom: none;
+}
+
+
+
+nav#hamburge_menu a:hover {
+    
+    border-radius: 0px;
 }
 
 main {}
@@ -349,6 +365,14 @@ main>section {
     color: #263237;
 }
 
+section.partner-brands.dpanda-news{
+    margin-bottom: 0px;    padding-top: 60px;
+
+}
+section.partner-brands.dpanda-news .partner-logo{
+    padding: 30px 0px;
+}
+
 .instant-setup {
     padding: 40px 0;
 }
@@ -405,7 +429,9 @@ main>section {
     color: #263237;
 }
 
-.industry-exp {}
+.industry-exp {
+    padding: 0px  
+}
 
 .industry-exp .title {
     font-weight: 700;
@@ -461,7 +487,7 @@ main>section {
 .industry-exp .content {
     display: grid;
     grid-template-columns: repeat(2, 0fr);
-    grid-gap: 10px;
+    grid-gap: 12px;
     position: relative;
 }
 
@@ -472,25 +498,26 @@ main>section {
     padding: 5;
     background: #ffffff;
     box-shadow: 0px 15px 40px #11171D1A;
-    width: 60px;
-    min-height: 60px;
+    width: 80px;
+    min-height: 80px;
     border-radius: 100%;
+
 }
 
 .industry-exp .card:first-child,
 .industry-exp .card:last-child {
     position: absolute;
     top: -20px;
-    left: -70px;
+    left: -80px;
 }
 
 .industry-exp .card:last-child {
     left: auto;
-    right: -70px;
+    right: -80px;
 }
 
 .partner-brands {
-    padding-bottom: 0;
+    padding-bottom: 60px;
 }
 
 .partner-brands .title {
@@ -564,11 +591,16 @@ main>section {
     margin-right: 16px;
 }
 
-ul.info-link {padding: 0; margin: 0px;}
-  ul.info-link li {list-style: none;
-    line-height: 23px; font-size: .75rem;
-     
-  } 
+ul.info-link {
+    margin: 0px;
+}
+
+ul.info-link li {
+    list-style: none;
+    line-height: 23px;
+    font-size: .75rem;
+
+}
 
 footer {
     background-color: #EFF8FC;
@@ -645,11 +677,29 @@ footer .copyright p {
     text-align: center;
 }
 
+
 /*Responsive*/
 @media screen and (min-width: 576px) {
-   
+
+    nav a.active {
+        color: #003046;
+        background: #EDBB40;
+        transition: background ease 0.5s;
+        border-radius: 48px !important;
+        text-decoration: none !important;
+    
+    }
+    nav#hamburge_menu a:hover{
+        text-decoration: underline;
+       
+    }
+    
     header {
         border-bottom: 0;
+    }
+
+    header .wrap {
+        grid-template-columns: repeat(2, 0fr);
     }
 
     .hamburge_menu_icon {
@@ -658,9 +708,13 @@ footer .copyright p {
 
     .logo {}
 
+    .quick-contact-link{
+        display: none;
+    }
+
     nav {
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(4, 1fr);
         grid-column-gap: 10px;
         grid-template-rows: auto;
         width: auto;
@@ -674,11 +728,11 @@ footer .copyright p {
 
     nav a {
         font-weight: 600;
-        font-size: 1.075rem;
+        font-size: .75rem;
         line-height: 28px;
         color: #003046;
         text-decoration: none;
-        padding: 5px 20px;
+        padding: 5px 5px;
         border-radius: 48px;
         white-space: nowrap;
         border-bottom: 0;
@@ -698,12 +752,32 @@ footer .copyright p {
 }
 
 @media screen and (min-width: 768px) {
+
     .wrap {
         max-width: var(--width-medium);
+    }
+
+    .sq-cards .wrap {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    nav a {
+        font-size: 1.075rem;
+        padding: 5px 20px;
     }
 }
 
 @media screen and (min-width: 992px) {
+
+
+    .partner-brands {
+        padding-bottom: 0px;
+    }
+
+    .industry-exp {
+        padding: 0px;
+    }
+
     .order-lg-1 {
         order: 1;
     }
@@ -741,7 +815,7 @@ footer .copyright p {
         width: 200px;
     }
 
-    nav {}
+    nav {    grid-template-columns: repeat(4, 1fr);}
 
     nav a {
         font-size: 1.125rem;
@@ -758,7 +832,7 @@ footer .copyright p {
     .hero-banner {
         padding-bottom: 0;
         background-image: linear-gradient(180deg, rgb(209 222 246 / 25%) 0%, rgb(255 255 255 / 0%)),
-            url(../images/hero-bg.png);
+            url(../images/hero-bg-1.png);
         background-position: left bottom;
         background-repeat: no-repeat;
         background-size: contain;
@@ -969,6 +1043,7 @@ footer .copyright p {
     .industry-exp .card {
         width: 170px;
         min-height: 170px;
+
     }
 
     .industry-exp .card:first-child,
@@ -983,6 +1058,9 @@ footer .copyright p {
         left: auto;
     }
 
+    section.partner-brands.dpanda-news{
+        margin-bottom:60px;
+    }
     .partner-brands {}
 
     .partner-brands .title {
@@ -1106,7 +1184,7 @@ footer .copyright p {
     footer .wrap {
         grid-template-columns: repeat(5, 1fr);
         grid-template-rows: 49px 52px 1fr;
-        
+
     }
 
     footer>div>div {
@@ -1184,15 +1262,18 @@ footer .copyright p {
     .wrap {
         max-width: var(--width-xxlarge);
     }
-    .hero-banner{
-        background-size: cover;
+
+    .hero-banner {
+        /* background-size: cover; */
     }
+
     .shoppers {
-        background: url(../images/shoppers-top-bg.jpg) center top / cover no-repeat, 
-        url(../images/shoppers-bottom-bg.jpg) center bottom / cover no-repeat;
+        background: url(../images/shoppers-top-bg.jpg) center top / cover no-repeat,
+            url(../images/shoppers-bottom-bg.jpg) center bottom / cover no-repeat;
         background-color: transparent;
     }
-    .industry-exp{
+
+    .industry-exp {
         background-size: cover;
     }
 }
