@@ -13,7 +13,7 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap">
   <link rel="stylesheet" href="./assets/styles/contact.css">
   <link rel="stylesheet" href="./assets/styles/index.css">
-  <script src="https://www.google.com/recaptcha/api.js"></script>
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>
 
 <body>
@@ -80,8 +80,7 @@
               <span>Valid e-mail is required!</span>
             </div>
             <div class="row validate" id="captcha">
-              <button class="g-recaptcha" data-sitekey="reCAPTCHA_site_key" data-callback='onSubmit' data-action='submit'>Submit</button>
-              <div class="g-recaptcha" data-sitekey="AIzaSyA665BepoNVDb0Rrqi6s7PhBzV-zwYNOBA" data-expired-callback="recaptchaExpired"></div>
+              <div class="g-recaptcha" data-sitekey="6LdD4foiAAAAAOPnMS4G4FeA3MrJm331WSyHXd5C" data-expired-callback="recaptchaExpired"></div>
               <span>Captcha is required!</span>
             </div>
             <!-- <div class="row tnc validate">
@@ -382,9 +381,6 @@
       }
     });
     // Publisher And Brand Form End
-    function onSubmit(token) {
-      document.getElementById("demo-form").submit();
-    }
     //Form End
   </script>
 </body>
