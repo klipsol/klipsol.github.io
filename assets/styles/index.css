@@ -21,6 +21,59 @@
     --transition: all 750ms;
 }
 
+section.partner-brands.dpanda-news{
+    margin-bottom: 0px;    padding-top: 60px;
+    background: #1957F5;
+
+}
+section.partner-brands.dpanda-news .partner-logo{
+    padding: 26px 0px 72px 0px;
+}
+
+section.partner-brands.dpanda-news h2.title{color:#fff;}
+section.partner-brands.dpanda-news h2.title span{
+    color: f5b719;
+}
+.swiper {
+    width: 100%;
+    height:auto;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background:#F6F8FD;
+    box-shadow: 0px 5px 5px #11171d1a;
+    border-radius: 20px;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+
+  .swiper-slide .card {
+    background: transparent;
+    box-shadow: none;
+    padding: 12px;
+} 
+
+  .swiper-slide img {
+    display: block;
+    padding: 12px;
+    
+  }
+   
+
 a {
     color: #000000;
     text-decoration: none;
@@ -365,13 +418,6 @@ main>section {
     color: #263237;
 }
 
-section.partner-brands.dpanda-news{
-    margin-bottom: 0px;    padding-top: 60px;
-
-}
-section.partner-brands.dpanda-news .partner-logo{
-    padding: 30px 0px;
-}
 
 .instant-setup {
     padding: 40px 0;
@@ -430,7 +476,9 @@ section.partner-brands.dpanda-news .partner-logo{
 }
 
 .industry-exp {
-    padding: 0px  
+    padding: 0px;      
+    margin: 106px 0px 100px 0px;
+    
 }
 
 .industry-exp .title {
@@ -592,15 +640,16 @@ section.partner-brands.dpanda-news .partner-logo{
 }
 
 ul.info-link {
-    margin: 0px;
+    padding:0px;
 }
-
+ 
 ul.info-link li {
     list-style: none;
-    line-height: 23px;
-    font-size: .75rem;
-
-}
+    line-height: 16px;
+    font-size: 12px;
+    display: inline-block;
+    margin: 0 20px 0px 0px;
+} 
 
 footer {
     background-color: #EFF8FC;
@@ -677,10 +726,21 @@ footer .copyright p {
     text-align: center;
 }
 
+.copyright .wrap{
+    grid-template-columns: 2fr 1fr;
+    grid-column-gap: 36px;
+    justify-content: space-between;
+    align-items: center; 
+}
+
+.copyright .text {
+    text-align: right;
+    font-size: .75rem;
+}
 
 /*Responsive*/
 @media screen and (min-width: 576px) {
-
+    
     nav a.active {
         color: #003046;
         background: #EDBB40;
@@ -749,6 +809,8 @@ footer .copyright p {
     .partner-brands .card {
         box-shadow: 0px 5px 5px #11171d1a;
     }
+    .industry-exp{    margin: 0px 0px 49px 0px;} 
+     
 }
 
 @media screen and (min-width: 768px) {
@@ -776,6 +838,7 @@ footer .copyright p {
 
     .industry-exp {
         padding: 0px;
+        margin: 106px 0px 100px 0px;
     }
 
     .order-lg-1 {
@@ -1036,13 +1099,13 @@ footer .copyright p {
     }
 
     .industry-exp .content {
-        grid-template-columns: repeat(2, 0fr);
+        grid-template-columns: repeat(3, 0fr);
         grid-gap: 30px;
     }
 
     .industry-exp .card {
-        width: 170px;
-        min-height: 170px;
+        width: 140px;
+        min-height: 140px;
 
     }
 
@@ -1202,19 +1265,19 @@ footer .copyright p {
     footer>div>div>p {}
 
     footer .about {
-        grid-column-end: span 5;
+        grid-column-end: span 1;
     }
 
     footer .about a {}
 
     footer .phone {
-        grid-column-end: span 2;
+        grid-column-end: span 1;
         grid-column-start: 3;
     }
 
     footer .email {
-        grid-column-end: span 2;
-        height: 50px;
+        grid-column-end: span 1;
+         
     }
 
     footer .address {
@@ -1231,6 +1294,7 @@ footer .copyright p {
 
     footer .copyright p {}
 }
+
 
 @media screen and (min-width: 1200px) {
     .wrap {
