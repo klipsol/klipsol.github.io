@@ -247,6 +247,47 @@
 
 
 
-.form .err-txt{display: none;padding:10px 5px;margin-bottom: 15px;color:#f20;}
-.form .input-holder.error{border-color:#f20;}
-.form .input-holder.error .err-txt{display: block}
+.form .err-txt {
+ display: none;
+ padding: 10px 5px;
+ margin-bottom: 15px;
+ color: #f20;
+}
+
+.form .input-holder.error {
+ border-color: #f20;
+}
+
+.form .input-holder.error .err-txt {
+ display: block
+}
+
+.publisher_brand .form #success_msg {
+ display: none;
+ border: solid 4px #EDBB40;
+ padding: 1.375rem 1.25rem 1.875rem;
+ grid-column: span 12;
+ min-height: 498px;
+ justify-items: center;
+ align-content: center;
+}
+
+.publisher_brand .form #success_msg img{
+ max-width: 40%;
+ margin: 0 0 10px;
+}
+
+.publisher_brand .form #success_msg h2 {
+ font-size: 24px;
+ margin: 0 0 10px;
+}
+
+.publisher_brand .form #success_msg strong {
+ font-size: 14px;
+ margin: 0 0 5px;
+ text-align: center;
+}
+
+.publisher_brand .form #success_msg p {
+ font-size: 14px;
+}

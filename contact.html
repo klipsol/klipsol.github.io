@@ -81,16 +81,17 @@
             </div>
             <div class="row validate">
               <label for="email">Phone Number</label>
-              <input type="tel" name="data[Mobile Number]" placeholder="9999999999" class="form-control">
+              <input type="tel" name="data[Mobile Number]" placeholder="9999999999" class="form-control" id="mobile_no">
               <span>Valid phone number is required!</span>
             </div>
             <div class="row validate">
               <label for="email">E-mail address</label>
-              <input type="email" name="data[E-mail ID]" placeholder="mail@gmail.com" class="form-control">
+              <input type="email" name="data[E-mail ID]" placeholder="mail@gmail.com" class="form-control" id="email_id">
               <span>Valid e-mail is required!</span>
             </div>
             <div class="row validate" id="captcha">
-              <div class="g-recaptcha" data-sitekey="6Le9TT0jAAAAAB75IY7XMXyjTTQEab31fr6jl1Hm" data-expired-callback="recaptchaExpired"></div>
+              <!-- 6Le9TT0jAAAAAB75IY7XMXyjTTQEab31fr6jl1Hm -->
+              <div class="g-recaptcha" data-sitekey="6LdD4foiAAAAAOPnMS4G4FeA3MrJm331WSyHXd5C" data-expired-callback="recaptchaExpired"></div>
               <span>Captcha is required!</span>
             </div>
             <!-- <div class="row tnc validate">
@@ -101,6 +102,12 @@
             <input type="submit" value="Submit" class="" />
             <p>By continuing, you agree to accept our <a href="privacy-policy.html" target="_blank">Privacy Policy</a> & <a href="terms-of-service.html" target="_blank">Terms of Service</a>.</p>
           </form>
+          <div id="success_msg">
+            <img src="assets/images/tick-success.svg" alt="" />
+            <h2>Thank you!</h2>
+            <strong>Your application was successfully submitted.</strong>
+            <p>We'll contact you shortly.</p>
+          </div>
         </div>
       </div>
     </section>
@@ -117,27 +124,27 @@
           Nimble Cowork 250, Udyog Vihar Phase IV, Gurugram, Haryana - 122015 (Basement)
         </p>
       </div>
-       
+
       <div class="email">
         <img src="./assets/images/mail.png" alt="Dpanda" title="Dpanda" />
         <strong>Email</strong>
         <a href="mailto:support@dpanda.in">support@dpanda.in</a>
       </div>
-      <div  class="Information-link">
+      <div class="Information-link">
         <ul class="info-link">
           <strong>Information</strong>
           <li><a href="privacy-policy.html"> Privacy Policy</a></li>
           <li><a href="refund-policy.html">Refund Policy</a></li>
           <li><a href="shipping-policy.html"> Shipping Policy</a></li>
-          <li><a href="terms-of-service.html">Terms-of Service</a></li> 
-         </ul>
+          <li><a href="terms-of-service.html">Terms-of Service</a></li>
+        </ul>
       </div>
       <div class="phone">
         <img src="./assets/images/phone.png" alt="Dpanda" title="Dpanda" />
         <strong>Phone</strong>
         <a href="tel:+91-9560888146">+91 9560888146</a>
       </div>
-      
+
     </div>
     <div class="copyright">
       <p>© Dpanda 2022, All rights reserved.</p>
@@ -175,6 +182,17 @@
       website_link.style.display = "grid";
       const platform_link = document.getElementById("platform-link");
       platform_link.style.display = "none";
+
+      form.style.display = "block";
+      success_msg.style.display = "none";
+
+      website_link.classList.remove("error");
+      var mobile_no = document.getElementById("mobile_no")
+      mobile_no.parentNode.classList.remove("error");
+      var email_id = document.getElementById("email_id")
+      email_id.parentNode.classList.remove("error");
+      var captcha = document.getElementById("captcha")
+      captcha.classList.remove("error");
     });
 
     const publisher_anchor = document.getElementById("publisher_anchor");
@@ -188,6 +206,17 @@
       platform_link.style.display = "grid";
       const website_link = document.getElementById("website-link");
       website_link.style.display = "none";
+
+      form.style.display = "block";
+      success_msg.style.display = "none";
+
+      platform_link.classList.remove("error");
+      var mobile_no = document.getElementById("mobile_no")
+      mobile_no.parentNode.classList.remove("error");
+      var email_id = document.getElementById("email_id")
+      email_id.parentNode.classList.remove("error");
+      var captcha = document.getElementById("captcha")
+      captcha.classList.remove("error");
     });
 
     // Publisher And Brand Form Start
@@ -218,8 +247,17 @@
                 method: "POST",
                 body: new FormData(form),
               }).then(response => response.json()).then((html) => {
+                const success_msg = document.getElementById("success_msg");
+                form.style.display = "none";
+                success_msg.style.display = "grid";
                 // alert('success')
-                // form.submit();
+                form.reset();
+                platform_link.parentNode.classList.remove("success");
+                var mobile_no = document.getElementById("mobile_no")
+                mobile_no.parentNode.classList.remove("success");
+                var email_id = document.getElementById("email_id")
+                email_id.parentNode.classList.remove("success");
+                grecaptcha.reset();
               });
             }
           }
@@ -322,8 +360,17 @@
                 method: "POST",
                 body: new FormData(form),
               }).then(response => response.json()).then((html) => {
+                const success_msg = document.getElementById("success_msg");
+                form.style.display = "none";
+                success_msg.style.display = "grid";
                 // alert('success')
-                // form.submit();
+                form.reset();
+                website_link.parentNode.classList.remove("success");
+                var mobile_no = document.getElementById("mobile_no")
+                mobile_no.parentNode.classList.remove("success");
+                var email_id = document.getElementById("email_id")
+                email_id.parentNode.classList.remove("success");
+                grecaptcha.reset();
               });
             }
           }
