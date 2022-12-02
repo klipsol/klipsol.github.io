@@ -24,19 +24,20 @@
   </script>
 </head>
 <style>
-.who-we-are-top-right strong {
-  color: #fff;
-  margin-bottom: 20px;
-  display: block;
-  font-weight: bold;
-}
-.who-we-are-top-right p {
+  .who-we-are-top-right strong {
+    color: #fff;
+    margin-bottom: 20px;
+    display: block;
+    font-weight: bold;
+  }
+
+  .who-we-are-top-right p {
     font-weight: normal;
     margin-bottom: 20px;
     text-align: justify;
-}
-
+  }
 </style>
+
 <body>
   <header>
     <div class="wrap">
@@ -63,23 +64,23 @@
     <section class="about-us">
       <div class="wrap">
         <div class="about-box about-heading"> <span>We are committed to driving e-commerce everywhere</span> </div>
-        <div class="about-box image-box"><img src="./assets/images/about-img.svg" alt="Ecommerce"> </div>  
+        <div class="about-box image-box"><img src="./assets/images/about-img.svg" alt="Ecommerce"> </div>
       </div>
-    </section> 
+    </section>
 
     <section class="about-content-box">
       <div class="wrap">
         <p>It all started with a simple question - How do we make e-commerce more accessible and effortless for everyone?</p>
-        <p>  Dpanda drives e-commerce everywhere. We help convert platforms into micro-ecommerce sites and monetize the platform’s traffic meaningfully. We empower publishers to add shopping experiences for their audiences and enable them to earn incremental revenue. Our easy-to-use 
+        <p> Dpanda drives e-commerce everywhere. We help convert platforms into micro-ecommerce sites and monetize the platform’s traffic meaningfully. We empower publishers to add shopping experiences for their audiences and enable them to earn incremental revenue. Our easy-to-use
           technology and quick plugins offer a delightful experience for all, with minimum effort to start.</p>
-          <p>  We’re opening up a new world of opportunities for brands to market their products in thousands of contextual places. Now brands can serve shoppers right at the point of inspiration, boosting sales and conversions.</p>
-          <p>  Dpanda strives to make a holistic ecosystem that merges content with e-commerce using advanced APIs (Application Programming Interfaces) and ML (Machine Learning). Being at the intersection of publishers - brands - shoppers, we aim to infuse all three, perfectly, delivering purposeful experiences tailor-made for each.</p>
+        <p> We’re opening up a new world of opportunities for brands to market their products in thousands of contextual places. Now brands can serve shoppers right at the point of inspiration, boosting sales and conversions.</p>
+        <p> Dpanda strives to make a holistic ecosystem that merges content with e-commerce using advanced APIs (Application Programming Interfaces) and ML (Machine Learning). Being at the intersection of publishers - brands - shoppers, we aim to infuse all three, perfectly, delivering purposeful experiences tailor-made for each.</p>
       </div>
     </section>
-   
-    <section class="industry-exp1"> 
+
+    <section class="industry-exp1">
       <div class="wrap">
-      <h2>We’re Backed by incredible investors</h2>
+        <h2>We’re Backed by incredible investors</h2>
         <div class="brand-logo-box">
           <div class="card-box1">
             <img src="./assets/images/Accel_logo.png" alt="Accel_logo">
@@ -95,56 +96,63 @@
           </div>
         </div>
       </div>
-    </section>  
+    </section>
   </main>
   <footer>
-    <div class="wrap">
-        <div class="about">
+    <div class="footer">
+      <div class="wrap">
+        <div class="grid about">
           <a href="index.html"><img src="./assets/images/logo.png" alt="Dpanda" title="Dpanda" /></a>
         </div>
-        <div class="email">
-          <img src="./assets/images/mail.png" alt="Dpanda" title="Dpanda" />
-          <strong>Email</strong>
-          <a href="mailto:support@dpanda.in">support@dpanda.in</a>
-        </div>
-
-        <div class="phone">
+        <div class="grid phone">
           <img src="./assets/images/phone.png" alt="Dpanda" title="Dpanda" />
           <strong>Phone</strong>
           <a href="tel:+91-9560888146">+91 9560888146</a>
         </div>
-        <div class="address">
-            <img src="./assets/images/location.png" alt="Dpanda" title="Dpanda" />
-            <strong>Address</strong>
-            <p>
-              Nimble Cowork 250, Udyog Vihar Phase IV, Gurugram, Haryana - 122015 (Basement)
-            </p>
-          </div> 
+        <div class="grid email">
+          <img src="./assets/images/mail.png" alt="Dpanda" title="Dpanda" />
+          <strong>Email</strong>
+          <a href="mailto:support@dpanda.in">support@dpanda.in</a>
+        </div>
+        <div class="grid address">
+          <img src="./assets/images/location.png" alt="Dpanda" title="Dpanda" />
+          <strong>Address</strong>
+          <p>
+            Nimble Cowork 250, Udyog Vihar Phase IV, Gurugram, Haryana - 122015
+            (Basement)
+          </p>
+        </div>
       </div>
-      <div class="copyright">
+    </div>
+    <div class="copyright">
+      <div class="wrap">
+        <a href="privacy-policy.html"> Privacy Policy</a>
+        <a href="refund-policy.html">Refund Policy</a>
+        <a href="shipping-policy.html"> Shipping Policy</a>
+        <a href="terms-of-service.html">Terms-of Service</a>
         <p>© Dpanda 2022, All rights reserved.</p>
       </div>
-      
-</footer> 
+    </div>
+  </footer>
   <script>
     const hamburge_menu_icon = document.getElementById('hamburge_menu_icon');
     hamburge_menu_icon.addEventListener('click', function () {
-        const hamburge_menu = document.getElementById('hamburge_menu');
-        hamburge_menu.style.transform = 'unset';
-        hamburge_menu_icon.style.display = 'none';
-        hamburge_menu_close.style.display = 'block';
+      const hamburge_menu = document.getElementById('hamburge_menu');
+      hamburge_menu.style.transform = 'unset';
+      hamburge_menu_icon.style.display = 'none';
+      hamburge_menu_close.style.display = 'block';
     });
 
     const hamburge_menu_close = document.getElementById(
-        'hamburge_menu_close'
+      'hamburge_menu_close'
     );
     hamburge_menu_close.addEventListener('click', function () {
-        const hamburge_menu = document.getElementById('hamburge_menu');
-        hamburge_menu.style.transform = 'translate(-100%, 0px)';
-        hamburge_menu_icon.style.display = 'block';
-        hamburge_menu_close.style.display = 'none';
+      const hamburge_menu = document.getElementById('hamburge_menu');
+      hamburge_menu.style.transform = 'translate(-100%, 0px)';
+      hamburge_menu_icon.style.display = 'block';
+      hamburge_menu_close.style.display = 'none';
     });
-</script>
+  </script>
 </body>
 
 </html>
