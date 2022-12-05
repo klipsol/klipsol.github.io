@@ -13,17 +13,15 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap">
   <link rel="stylesheet" href="./assets/styles/contact.css">
   <link rel="stylesheet" href="./assets/styles/index.css">
-  <script src="https://www.google.com/recaptcha/api.js?render=AIzaSyA665BepoNVDb0Rrqi6s7PhBzV-zwYNOBA"></script>
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-P992MCN0HM"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag() { dataLayer.push(arguments); }
     gtag('js', new Date());
-
     gtag('config', 'G-P992MCN0HM');
   </script>
-  <!-- <script src="https://www.google.com/recaptcha/enterprise.js?render=6Lc-Ww4jAAAAALbFuGQ3U3yW5XDb5mnrQpDk_MsI"></script> -->
 </head>
 
 <body>
@@ -83,61 +81,73 @@
             </div>
             <div class="row validate">
               <label for="email">Phone Number</label>
-              <input type="tel" name="data[Mobile Number]" placeholder="9999999999" class="form-control">
+              <input type="tel" name="data[Mobile Number]" placeholder="9999999999" class="form-control" id="mobile_no">
               <span>Valid phone number is required!</span>
             </div>
             <div class="row validate">
               <label for="email">E-mail address</label>
-              <input type="email" name="data[E-mail ID]" placeholder="mail@gmail.com" class="form-control">
+              <input type="email" name="data[E-mail ID]" placeholder="mail@gmail.com" class="form-control" id="email_id">
               <span>Valid e-mail is required!</span>
             </div>
-            <!-- <div class="row validate" id="captcha">
-              <div class="g-recaptcha" data-sitekey="AIzaSyA665BepoNVDb0Rrqi6s7PhBzV-zwYNOBA" data-expired-callback="recaptchaExpired"></div>
+            <div class="row validate" id="captcha">
+              <!-- 6Le9TT0jAAAAAB75IY7XMXyjTTQEab31fr6jl1Hm -->
+              <div class="g-recaptcha" data-sitekey="6Le9TT0jAAAAAB75IY7XMXyjTTQEab31fr6jl1Hm" data-expired-callback="recaptchaExpired"></div>
               <span>Captcha is required!</span>
-            </div> -->
+            </div>
             <!-- <div class="row tnc validate">
               <label for="brand_tnc">Opt in to receive news and updates. Terms.</label>
               <input type="checkbox" name="brand_tnc" id="brand_tnc" required>
               <span>Please check T&C</span>
             </div> -->
-            <button class="g-recaptcha" data-sitekey="AIzaSyA665BepoNVDb0Rrqi6s7PhBzV-zwYNOBA" data-callback='onSubmit'
-              data-action='submit'>Submit</button>
-            <!-- <p>By continuing, you agree to accept our <a href="privacy-policy.html" target="_blank" style>Privacy Policy</a> & <a href="terms-of-service.html" target="_blank">Terms of Service</a>.</p> -->
-            <!-- <input type="submit" value="Submit" class="" /> -->
+            <input type="submit" value="Submit" class="" />
+            <p>By continuing, you agree to accept our <a href="privacy-policy.html" target="_blank">Privacy Policy</a> & <a href="terms-of-service.html" target="_blank">Terms of Service</a>.</p>
           </form>
+          <div id="success_msg">
+            <img src="assets/images/tick-success.svg" alt="" />
+            <h2>Thank you!</h2>
+            <strong>Your application was successfully submitted.</strong>
+            <p>We'll contact you shortly.</p>
+          </div>
         </div>
       </div>
     </section>
   </main>
   <footer>
-    <div class="wrap">
-        <div class="about">
-          <a href="index.html"><img src="./assets/images/logo.png" alt="Dpanda" title="Dpanda" /></a>
+    <div class="footer">
+        <div class="wrap">
+            <div class="grid about">
+                <a href="index.html"><img src="./assets/images/logo.png" alt="Dpanda" title="Dpanda" /></a>
+            </div>
+            <div class="grid phone">
+                <img src="./assets/images/phone.png" alt="Dpanda" title="Dpanda" />
+                <strong>Phone</strong>
+                <a href="tel:+91-9560888146">+91 9560888146</a>
+            </div>
+            <div class="grid email">
+                <img src="./assets/images/mail.png" alt="Dpanda" title="Dpanda" />
+                <strong>Email</strong>
+                <a href="mailto:support@dpanda.in">support@dpanda.in</a>
+            </div>
+            <div class="grid address">
+                <img src="./assets/images/location.png" alt="Dpanda" title="Dpanda" />
+                <strong>Address</strong>
+                <p>
+                    Nimble Cowork 250, Udyog Vihar Phase IV, Gurugram, Haryana - 122015
+                    (Basement)
+                </p>
+            </div> 
         </div>
-        <div class="email">
-          <img src="./assets/images/mail.png" alt="Dpanda" title="Dpanda" />
-          <strong>Email</strong>
-          <a href="mailto:support@dpanda.in">support@dpanda.in</a>
+    </div>
+    <div class="copyright">
+        <div class="wrap">
+            <a href="privacy-policy.html"> Privacy Policy</a>
+            <a href="refund-policy.html">Refund Policy</a>
+            <a href="shipping-policy.html"> Shipping Policy</a>
+            <a href="terms-of-service.html">Terms-of Service</a>
+            <p>© Dpanda 2022, All rights reserved.</p>
         </div>
-
-        <div class="phone">
-          <img src="./assets/images/phone.png" alt="Dpanda" title="Dpanda" />
-          <strong>Phone</strong>
-          <a href="tel:+91-9560888146">+91 9560888146</a>
-        </div>
-        <div class="address">
-            <img src="./assets/images/location.png" alt="Dpanda" title="Dpanda" />
-            <strong>Address</strong>
-            <p>
-              Nimble Cowork 250, Udyog Vihar Phase IV, Gurugram, Haryana - 122015 (Basement)
-            </p>
-          </div> 
-      </div>
-      <div class="copyright">
-        <p>© Dpanda 2022, All rights reserved.</p>
-      </div>
-      
-</footer> 
+    </div>
+</footer>
 
   <script>
     //Hamburge Icon Start
@@ -170,6 +180,17 @@
       website_link.style.display = "grid";
       const platform_link = document.getElementById("platform-link");
       platform_link.style.display = "none";
+
+      form.style.display = "block";
+      success_msg.style.display = "none";
+
+      website_link.classList.remove("error");
+      var mobile_no = document.getElementById("mobile_no")
+      mobile_no.parentNode.classList.remove("error");
+      var email_id = document.getElementById("email_id")
+      email_id.parentNode.classList.remove("error");
+      var captcha = document.getElementById("captcha")
+      captcha.classList.remove("error");
     });
 
     const publisher_anchor = document.getElementById("publisher_anchor");
@@ -183,14 +204,21 @@
       platform_link.style.display = "grid";
       const website_link = document.getElementById("website-link");
       website_link.style.display = "none";
+
+      form.style.display = "block";
+      success_msg.style.display = "none";
+
+      platform_link.classList.remove("error");
+      var mobile_no = document.getElementById("mobile_no")
+      mobile_no.parentNode.classList.remove("error");
+      var email_id = document.getElementById("email_id")
+      email_id.parentNode.classList.remove("error");
+      var captcha = document.getElementById("captcha")
+      captcha.classList.remove("error");
     });
 
     // Publisher And Brand Form Start
     var form = document.getElementById('form');
-    function onSubmit(token) {
-      console.log(token);
-      document.getElementById("form").submit();
-    }
     form.addEventListener('submit', function (e) {
       e.preventDefault();
       if (document.getElementById('publisher_radio').checked == true) {
@@ -217,8 +245,17 @@
                 method: "POST",
                 body: new FormData(form),
               }).then(response => response.json()).then((html) => {
-                alert('success')
-                // form.submit();
+                const success_msg = document.getElementById("success_msg");
+                form.style.display = "none";
+                success_msg.style.display = "grid";
+                // alert('success')
+                form.reset();
+                platform_link.parentNode.classList.remove("success");
+                var mobile_no = document.getElementById("mobile_no")
+                mobile_no.parentNode.classList.remove("success");
+                var email_id = document.getElementById("email_id")
+                email_id.parentNode.classList.remove("success");
+                grecaptcha.reset();
               });
             }
           }
@@ -321,8 +358,17 @@
                 method: "POST",
                 body: new FormData(form),
               }).then(response => response.json()).then((html) => {
-                alert('success')
-                // form.submit();
+                const success_msg = document.getElementById("success_msg");
+                form.style.display = "none";
+                success_msg.style.display = "grid";
+                // alert('success')
+                form.reset();
+                website_link.parentNode.classList.remove("success");
+                var mobile_no = document.getElementById("mobile_no")
+                mobile_no.parentNode.classList.remove("success");
+                var email_id = document.getElementById("email_id")
+                email_id.parentNode.classList.remove("success");
+                grecaptcha.reset();
               });
             }
           }
