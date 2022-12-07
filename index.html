@@ -11,19 +11,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" />
-    <link rel="stylesheet" href="./assets/styles/index.css" />
+    <link rel="stylesheet" href="./assets/styles/animate.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
-    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-P992MCN0HM"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-        gtag('js', new Date());
-        gtag('config', 'G-P992MCN0HM');
-    </script>
+    <link rel="stylesheet" href="./assets/styles/index.css" />
 </head>
 
 <body>
@@ -90,7 +80,6 @@
         <section class="shoppers">
             <div class="wrap">
                 <div class="graphic">
-                    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
                     <lottie-player src="./assets/json/shoppers.json" background="transparent" speed="1" loop autoplay></lottie-player>
                 </div>
                 <div class="content wow bounceInUp">
@@ -109,7 +98,6 @@
         <section class="instant-setup">
             <div class="wrap">
                 <div class="graphic small-icon">
-                    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
                     <lottie-player src="./assets/json/panda-watch.json" background="transparent" speed="1" loop autoplay></lottie-player>
                 </div>
                 <h2 class="title wow slideInLeft">All this in under 5 mins</h2>
@@ -134,48 +122,43 @@
                 </div>
             </div>
         </section>
-        <section class="partner-brands dpanda-news">
+
+        <section class="dpanda-news">
             <div class="wrap">
-                <h2 class="title wow bounceIn"><span>Dpanda</span> in the news</h2>
-                <div class="content">
-                    <div class="partner-logo">
-                        <div class="swiper mySwiper">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide">
-                                    <div class="swiper-card">
-                                        <a href="https://economictimes.indiatimes.com/small-biz/entrepreneurship/accel-atoms-introduces-its-second-cohort-of-10-disruptive-startups/articleshow/95846957.cms" target="_blank"><img src="./assets/images/eco-time.png" alt="economictimes" /></a>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="swiper-card">
-                                        <a href="https://www.livemint.com/companies/start-ups/accel-india-selects-10-startups-for-second-cohort-of-atoms-programme-11669704884393.html" target="_blank"><img src="./assets/images/livemint-logo-v2.png" alt="livemint-logo-v2" /></a>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="swiper-card">
-                                        <a href="https://www.thehindubusinessline.com/companies/accel-announces-second-cohort-of-accel-atoms/article66195820.ece" target="_blank">
-                                            <img src="./assets/images/businessline.svg" alt="thehindubusinessline" /></a>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="swiper-card">
-                                        <a href="https://yourstory.com/2022/11/funding-accel-second-cohort-atom-early-stage?utm_source=piano&utm_medium=email&utm_campaign=11741&pnespid=oveCj4VQ7vPArbfvpBqvvvUW.kscqHIqhxd0ARc8uVCVH0jxfPDwigVPGe6rPDvcdXjeHhsE" target="_blank">
-                                            <img src="./assets/images/logo_yourstory.png" alt="thehindubusinessline" /></a>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="swiper-card">
-                                        <a href="https://inc42.com/buzz/meet-the-10-startups-in-second-cohort-of-accels-accelerator-programme-atoms/" target="_blank">
-                                            <img src="./assets/images/inc42-logo_n.png" alt="inc42" /></a>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="swiper-card">
-                                        <a href="https://www.forbes.com/sites/davidprosser/2022/11/27/helping-founders-to-help-each-other-with-accel-atoms/?sh=4f0bc97f320f" target="_blank">
-                                            <img src="./assets/images/forbs.png" alt="forbs" /></a>
-                                    </div>
-                                </div>
-                            </div>
+                <h2 class="title wow bounceIn">
+                    <span>Dpanda</span> in the news
+                </h2>
+                <div class="swiper-container swiper-news">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <a href="https://economictimes.indiatimes.com/small-biz/entrepreneurship/accel-atoms-introduces-its-second-cohort-of-10-disruptive-startups/articleshow/95846957.cms" target="_blank">
+                                <img src="./assets/images/eco-time.png" alt="" />
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="https://www.livemint.com/companies/start-ups/accel-india-selects-10-startups-for-second-cohort-of-atoms-programme-11669704884393.html" target="_blank">
+                                <img src="./assets/images/livemint-logo-v2.png" alt="" />
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="https://www.thehindubusinessline.com/companies/accel-announces-second-cohort-of-accel-atoms/article66195820.ece" target="_blank">
+                                <img src="./assets/images/businessline.svg" alt="" />
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="https://yourstory.com/2022/11/funding-accel-second-cohort-atom-early-stage?utm_source=piano&utm_medium=email&utm_campaign=11741&pnespid=oveCj4VQ7vPArbfvpBqvvvUW.kscqHIqhxd0ARc8uVCVH0jxfPDwigVPGe6rPDvcdXjeHhsE" target="_blank">
+                                <img src="./assets/images/logo_yourstory.png" alt="" />
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="https://inc42.com/buzz/meet-the-10-startups-in-second-cohort-of-accels-accelerator-programme-atoms/" target="_blank">
+                                <img src="./assets/images/inc42-logo_n.png" alt="" />
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="https://www.forbes.com/sites/davidprosser/2022/11/27/helping-founders-to-help-each-other-with-accel-atoms/?sh=4f0bc97f320f" target="_blank">
+                                <img src="./assets/images/forbs.png" alt="" />
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -225,13 +208,14 @@
                 </div>
             </div>
         </section>
+
         <section class="partner-brands">
             <div class="wrap">
                 <h2 class="title wow bounceIn">Our Partner Brands</h2>
                 <p class="para wow bounceIn">100+ trusted brands to curate from</p>
-                <div class="content">
-                    <div class="partner-logo">
-                        <div class="card">
+                <div class="swiper-container swiper-brands content">
+                    <div class="swiper-wrapper partner-logo">
+                        <div class="swiper-slide card">
                             <img src="./assets/images/perfora-logo.webp" alt="" />
                         </div>
                         <div class="card">
@@ -344,57 +328,52 @@
         </div>
     </footer>
 
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script src="./assets/js/wow.min.js"></script>
-    <link rel="stylesheet" href="./assets/styles/animate.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-P992MCN0HM"></script>
 
     <script>
+        //
         wow = new WOW({
-            boxClass: 'wow', // default
-            animateClass: 'animated', // default
-            offset: 0, // default
+            boxClass: 'wow',
+            animateClass: 'animated',
+            offset: 0,
             mobile: true,
-            live: true, // default
+            live: true,
         });
         wow.init();
-    </script>
-
-    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-
-    <!-- Initialize Swiper -->
-    <script>
-        var swiper = new Swiper('.mySwiper', {
-            slidesPerView: 1,
-            spaceBetween: 10,
-            pagination: {
-                el: '.swiper-pagination',
-                clickable: true,
-            },
-            breakpoints: {
-                '@0.00': {
-                    slidesPerView: 2,
-                    spaceBetween: 10,
-                },
-                '@0.75': {
-                    slidesPerView: 2,
-                    spaceBetween: 20,
-                },
-                '@1.00': {
-                    slidesPerView: 3,
-                    spaceBetween: 10,
-                },
-                '@1.50': {
-                    slidesPerView: 5,
-                    spaceBetween: 10,
-                },
-            },
+        
+        //
+        let SwiperNews = new Swiper('.swiper-news', {
+            spaceBetween: 0,
+            centeredSlides: true,
+            speed: 2000,
             autoplay: {
-                delay: 2000,
+                delay: 1,
             },
+            loop: true,
+            slidesPerView: 'auto',
+            allowTouchMove: false,
+            disableOnInteraction: true
         });
-    </script>
 
-    <script>
+        //
+        let SwiperBrands = new Swiper('.swiper-brands', {
+            spaceBetween: 0,
+            centeredSlides: true,
+            speed: 0,
+            autoplay: {
+                delay: 1,
+            },
+            loop: true,
+            slidesPerView: 'auto',
+            allowTouchMove: false,
+            disableOnInteraction: true
+        });
+
+        //
         const hamburge_menu_icon = document.getElementById('hamburge_menu_icon');
         hamburge_menu_icon.addEventListener('click', function () {
             const hamburge_menu = document.getElementById('hamburge_menu');
@@ -412,6 +391,14 @@
             hamburge_menu_icon.style.display = 'block';
             hamburge_menu_close.style.display = 'none';
         });
+
+        //Google tag (gtag.js)
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+        gtag('config', 'G-P992MCN0HM');
     </script>
 </body>
 
