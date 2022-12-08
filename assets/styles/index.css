@@ -738,7 +738,7 @@ footer {}
 }
 
 .copyright {
-    padding: 10px 0;
+    padding: 24px 0;
     background: #FFFFFF;
 }
 
@@ -750,6 +750,7 @@ footer {}
 
 .copyright a {
     font-size: .625rem;
+    font-size: .75rem;
     line-height: 16px;
     color: #263237;
     white-space: nowrap;
@@ -757,6 +758,7 @@ footer {}
 
 .copyright p {
     font-size: .5625rem;
+    font-size: .75rem;
     line-height: 16px;
     color: #263237;
     text-align: center;
