@@ -309,58 +309,6 @@ main>section {
 
 .shoppers .para {}
 
-.sq-cards {
-    padding-bottom: 40px;
-    background: url(../images/sq-card-bg.jpg) left bottom / contain no-repeat;
-}
-
-.sq-cards .sub-title {
-    grid-column-end: span 2;
-    margin: 0 0 17px;
-    padding: 0 12px;
-    text-align: center;
-}
-
-/* .sq-cards .sub-title {
-    font-size: 1rem;
-    line-height: 20px;
-    margin: 0 0 30px;
-} */
-
-.sq-cards .wrap {
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 8px;
-    justify-content: space-between;
-    padding: 0 8px;
-}
-
-.sq-cards .card {
-    padding: 28px 8px 16px 16px;
-    background: #ffffff;
-    box-shadow: 0px 15px 40px #11171D26;
-    min-height: 184px;
-}
-
-.sq-cards .card img {
-    width: 40px;
-    margin: 0 0 7px;
-}
-
-.sq-cards .card h3 {
-    font-weight: 800;
-    font-size: .875rem;
-    line-height: 20px;
-    color: #263237;
-    margin: 0 0 6px;
-}
-
-.sq-cards .card p {
-    font-weight: 600;
-    font-size: .75rem;
-    line-height: 16px;
-    color: #263237;
-}
-
 .instant-setup {
     padding: 40px 0;
 }
@@ -467,10 +415,111 @@ main>section {
     border-radius: 10px;
 }
 
-.industry-exp {
-    padding: 0px;
-    margin: 106px 0px 100px 0px;
+.sq-cards {
+    padding: 40px 0;
+    background: url(../images/sq-card-bg.jpg) left bottom / contain no-repeat;
+}
 
+.sq-cards .sub-title {
+    grid-column-end: span 2;
+    margin: 0 0 17px;
+    padding: 0 12px;
+    text-align: center;
+}
+
+/* .sq-cards .sub-title {
+    font-size: 1rem;
+    line-height: 20px;
+    margin: 0 0 30px;
+} */
+
+.sq-cards .wrap {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 8px;
+    justify-content: space-between;
+    padding: 0 8px;
+}
+
+.sq-cards .card {
+    padding: 28px 8px 16px 16px;
+    background: #ffffff;
+    box-shadow: 0px 15px 40px #11171D26;
+    min-height: 184px;
+}
+
+.sq-cards .card img {
+    width: 40px;
+    margin: 0 0 7px;
+}
+
+.sq-cards .card h3 {
+    font-weight: 800;
+    font-size: .875rem;
+    line-height: 20px;
+    color: #263237;
+    margin: 0 0 6px;
+}
+
+.sq-cards .card p {
+    font-weight: 600;
+    font-size: .75rem;
+    line-height: 16px;
+    color: #263237;
+}
+
+.partner-brands {
+    padding: 60px 0;
+}
+
+.partner-brands .title {
+    font-size: 1.375rem;
+    grid-column: span 2;
+}
+
+.partner-brands .para {
+    font-size: .875rem;
+    line-height: 20px;
+    color: #263237;
+    text-align: center;
+    margin: 0 0 25px;
+    grid-column: span 2;
+}
+
+.partner-brands .wrap {
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    justify-items: center;
+    overflow: hidden;
+}
+
+.partner-brands .swiper-container {
+    width: 100%;
+    position: relative;
+}
+
+.partner-brands .swiper-wrapper {
+    transition-timing-function: linear !important;
+    position: relative;
+    height: auto;
+}
+
+.partner-brands .swiper-slide {
+    text-align: center;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    min-height: 50px;
+    position: relative;
+    padding: 10px 15px;
+    margin: 0 0 0 20px;
+    box-shadow: 0px 15px 40px #11171D1A;
+    border-radius: 10px;
+}
+
+.industry-exp {
+    padding-bottom: 60px;
 }
 
 .industry-exp .title {
@@ -554,95 +603,6 @@ main>section {
 .industry-exp .card:last-child {
     left: auto;
     right: -80px;
-}
-
-.partner-brands {
-    padding-bottom: 60px;
-}
-
-.partner-brands .title {
-    padding: 0 1rem;
-    margin: 0 0 16px;
-    grid-column-end: span 2;
-}
-
-.partner-brands .para {
-    font-size: .875rem;
-    line-height: 20px;
-    color: #263237;
-    text-align: center;
-    padding: 0 2rem;
-    grid-column-end: span 2;
-    font-size: 1.2rem;
-}
-
-.partner-brands .wrap {
-    /* padding: 0;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 0px 0;
-    justify-items: center; */
-    grid-template-columns: repeat(1, 0fr);
-    justify-content: center;
-    justify-items: center;
-    gap: 25px 0px;
-    overflow: hidden;
-}
-
-.partner-brands .content {
-    /* grid-column-end: span 2; */
-    /* width: 100%; */
-}
-
-.partner-brands .partner-logo {
-    /* display: flex; */
-    /* overflow: auto; */
-    /* padding: 16px 0 40px; */
-}
-
-.partner-brands .card {
-    /* display: grid;
-    align-items: center;
-    justify-items: center; */
-    /* margin: 0 0 0 10px;
-    padding: 10px;
-    background: #ffffff;
-    box-shadow: 0px 15px 40px #11171D1A; */
-    /* min-width: 100px;
-    min-height: 50px; */
-    /* border-radius: 10px; */
-}
-
-.partner-brands .card:first-child {
-    /* margin-left: 16px; */
-}
-
-.partner-brands .card:last-child {
-    /* margin-right: 16px; */
-}
-
-.partner-brands .swiper-container {
-    width: 100%;
-    height: 100%;
-    position: relative;
-    grid-column: span 1;
-}
-
-.partner-brands .swiper-wrapper {
-    transition-timing-function: linear !important;
-    position: relative;
-}
-
-.partner-brands .swiper-slide {
-    text-align: center;
-    background: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100px;
-    position: relative;
-    padding: 10px 15px;
-    margin: 0 0 0 20px;
-    border-radius: 10px;
 }
 
 footer {}
@@ -892,11 +852,6 @@ footer {}
 
 @media screen and (min-width: 992px) {
 
-    .industry-exp {
-        padding: 0px;
-        margin: 106px 0px 100px 0px;
-    }
-
     .order-lg-1 {
         order: 1;
     }
@@ -1035,46 +990,6 @@ footer {}
         max-width: 370px;
     }
 
-    .sq-cards {
-        background-size: cover;
-    }
-
-    .sq-cards .sub-title {
-        font-size: 2.25rem;
-        line-height: 44px;
-        grid-column-end: span 4;
-        margin: 0 0 35px;
-    }
-
-    .sq-cards .wrap {
-        grid-template-columns: repeat(4, 1fr);
-        grid-gap: 0 16px;
-        justify-content: center;
-        padding: 0 16px;
-    }
-
-    .sq-cards .card {
-        padding: 46px 16px 16px 25px;
-        min-height: 280px;
-    }
-
-    .sq-cards .card img {
-        width: 60px;
-        margin: 0 0 16px;
-    }
-
-    .sq-cards .card h3 {
-        font-size: 1.375rem;
-        line-height: 28px;
-        margin: 0 0 20px;
-    }
-
-    .sq-cards .card p {
-        font-weight: 500;
-        font-size: .875rem;
-        line-height: 20px;
-    }
-
     .instant-setup {}
 
     .instant-setup .small-icon {
@@ -1151,6 +1066,74 @@ footer {}
         border-radius: 20px;
     }
 
+    .sq-cards {
+        background-size: cover;
+    }
+
+    .sq-cards .sub-title {
+        font-size: 2.25rem;
+        line-height: 44px;
+        grid-column-end: span 4;
+        margin: 0 0 35px;
+    }
+
+    .sq-cards .wrap {
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 0 16px;
+        justify-content: center;
+        padding: 0 16px;
+    }
+
+    .sq-cards .card {
+        padding: 46px 16px 16px 25px;
+        min-height: 280px;
+    }
+
+    .sq-cards .card img {
+        width: 60px;
+        margin: 0 0 16px;
+    }
+
+    .sq-cards .card h3 {
+        font-size: 1.375rem;
+        line-height: 28px;
+        margin: 0 0 20px;
+    }
+
+    .sq-cards .card p {
+        font-weight: 500;
+        font-size: .875rem;
+        line-height: 20px;
+    }
+
+    .partner-brands {
+    }
+
+    .partner-brands .title {
+        font-size: 2.25rem;
+        line-height: 44px;
+        margin: 0 0 10px;
+    }
+
+    .partner-brands .para {
+        max-width: 700px;
+    }
+
+    .partner-brands .wrap {}
+
+    .partner-brands .swiper-container {
+    }
+    
+    .partner-brands .swiper-wrapper {
+    }
+    
+    .partner-brands .swiper-slide {
+        width: 150px;
+        min-height: 80px;
+        padding: 10px 15px;
+        margin: 0 0 0 20px;
+    }
+
     .industry-exp {
         background: url(../images/connectivity.png) left center / contain no-repeat;
     }
@@ -1204,50 +1187,6 @@ footer {}
     .industry-exp .card:last-child {
         right: -200px;
         left: auto;
-    }
-
-    .partner-brands {
-        padding-bottom: 0;
-    }
-
-    .partner-brands .title {
-        font-size: 2.25rem;
-        line-height: 44px;
-        padding: 0;
-        margin: 0 0 9px;
-    }
-
-    .partner-brands .para {
-        padding: 0;
-        max-width: 700px;
-    }
-
-    .partner-brands .wrap {}
-
-    .partner-brands .content {
-        /* width: 951px; */
-    }
-
-    .partner-brands .partner-logo {
-        /* max-width: 700;
-        margin: auto;*/
-        padding: 50px 0;
-    }
-
-    .partner-brands .card {
-        margin: 0 0 0 16px;
-        padding: 16px;
-        /* min-width: 170px;
-        min-height: 50px; */
-        border-radius: 20px;
-    }
-
-    .partner-brands .card:first-child {
-        /* margin-left: 0px; */
-    }
-
-    .partner-brands .card:last-child {
-        /* margin-right: 0px; */
     }
 
     .publisher_brand .wrap {
@@ -1328,7 +1267,6 @@ footer {}
 
     /*footer S*/
 }
-
 
 @media screen and (min-width: 1200px) {
     .wrap {
