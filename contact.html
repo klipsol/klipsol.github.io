@@ -13,15 +13,6 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap">
   <link rel="stylesheet" href="./assets/styles/contact.css">
   <link rel="stylesheet" href="./assets/styles/index.css">
-  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-P992MCN0HM"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
-    gtag('config', 'G-P992MCN0HM');
-  </script>
 </head>
 
 <body>
@@ -90,15 +81,15 @@
               <span>Valid e-mail is required!</span>
             </div>
             <div class="row validate" id="captcha">
-              <!-- 6Le9TT0jAAAAAB75IY7XMXyjTTQEab31fr6jl1Hm -->
               <div class="g-recaptcha" data-sitekey="6Le9TT0jAAAAAB75IY7XMXyjTTQEab31fr6jl1Hm" data-expired-callback="recaptchaExpired"></div>
               <span>Captcha is required!</span>
             </div>
             <!-- <div class="row tnc validate">
-              <label for="brand_tnc">Opt in to receive news and updates. Terms.</label>
-              <input type="checkbox" name="brand_tnc" id="brand_tnc" required>
-              <span>Please check T&C</span>
-            </div> -->
+                <label for="brand_tnc">Opt in to receive news and updates. Terms.</label>
+                <input type="checkbox" name="brand_tnc" id="brand_tnc" required>
+                <span>Please check T&C</span>
+                </div>
+             -->
             <input type="submit" value="Submit" class="" />
             <p>By continuing, you agree to accept our <a href="privacy-policy.html" target="_blank">Privacy Policy</a> & <a href="terms-of-service.html" target="_blank">Terms of Service</a>.</p>
           </form>
@@ -114,60 +105,47 @@
   </main>
   <footer>
     <div class="footer">
-        <div class="wrap">
-            <div class="grid about">
-                <a href="index.html"><img src="./assets/images/logo.png" alt="Dpanda" title="Dpanda" /></a>
-            </div>
-            <div class="grid phone">
-                <img src="./assets/images/phone.png" alt="Dpanda" title="Dpanda" />
-                <strong>Phone</strong>
-                <a href="tel:+91-9560888146">+91 9560888146</a>
-            </div>
-            <div class="grid email">
-                <img src="./assets/images/mail.png" alt="Dpanda" title="Dpanda" />
-                <strong>Email</strong>
-                <a href="mailto:support@dpanda.in">support@dpanda.in</a>
-            </div>
-            <div class="grid address">
-                <img src="./assets/images/location.png" alt="Dpanda" title="Dpanda" />
-                <strong>Address</strong>
-                <p>
-                    Nimble Cowork 250, Udyog Vihar Phase IV, Gurugram, Haryana - 122015
-                    (Basement)
-                </p>
-            </div>
+      <div class="wrap">
+        <div class="grid about">
+          <a href="index.html"><img src="./assets/images/logo.png" alt="Dpanda" title="Dpanda" /></a>
         </div>
+        <div class="grid phone">
+          <img src="./assets/images/phone.png" alt="Dpanda" title="Dpanda" />
+          <strong>Phone</strong>
+          <a href="tel:+91-9560888146">+91 9560888146</a>
+        </div>
+        <div class="grid email">
+          <img src="./assets/images/mail.png" alt="Dpanda" title="Dpanda" />
+          <strong>Email</strong>
+          <a href="mailto:support@dpanda.in">support@dpanda.in</a>
+        </div>
+        <div class="grid address">
+          <img src="./assets/images/location.png" alt="Dpanda" title="Dpanda" />
+          <strong>Address</strong>
+          <p>
+            Nimble Cowork 250, Udyog Vihar Phase IV, Gurugram, Haryana - 122015
+            (Basement)
+          </p>
+        </div>
+      </div>
     </div>
     <div class="copyright">
-        <div class="wrap">
-            <a href="privacy-policy.html"> Privacy Policy</a>
-            <a href="refund-policy.html">Refund Policy</a>
-            <a href="shipping-policy.html"> Shipping Policy</a>
-            <a href="terms-of-service.html">Terms-of Service</a>
-            <p>© Dpanda 2022, All rights reserved.</p>
-        </div>
+      <div class="wrap">
+        <a href="privacy-policy.html"> Privacy Policy</a>
+        <a href="refund-policy.html">Refund Policy</a>
+        <a href="shipping-policy.html"> Shipping Policy</a>
+        <a href="terms-of-service.html">Terms-of Service</a>
+        <p>© Dpanda 2022, All rights reserved.</p>
+      </div>
     </div>
-</footer>
+  </footer>
+
+  <script src="./assets/js/toggle-menu.js"></script>
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-P992MCN0HM"></script>
+  <script src="./assets/js/gtag.js"></script>
 
   <script>
-    //Hamburge Icon Start
-    const hamburge_menu_icon = document.getElementById("hamburge_menu_icon");
-    hamburge_menu_icon.addEventListener("click", function () {
-      const hamburge_menu = document.getElementById("hamburge_menu");
-      hamburge_menu.style.transform = "unset";
-      hamburge_menu_icon.style.display = "none";
-      hamburge_menu_close.style.display = "block";
-    });
-
-    const hamburge_menu_close = document.getElementById("hamburge_menu_close");
-    hamburge_menu_close.addEventListener("click", function () {
-      const hamburge_menu = document.getElementById("hamburge_menu");
-      hamburge_menu.style.transform = "translate(-100%, 0px)";
-      hamburge_menu_icon.style.display = "block";
-      hamburge_menu_close.style.display = "none";
-    });
-    //Hamburge Icon End
-
     //Form Start
     const brand_anchor = document.getElementById("brand_anchor");
     brand_anchor.addEventListener("click", function () {
@@ -448,8 +426,8 @@
         }
       }
     });
-    // Publisher And Brand Form End
-    //Form End
+// Publisher And Brand Form End
+//Form End
   </script>
 </body>
 

@@ -219,37 +219,37 @@
                     <div class="swiper-slide">
                         <img src="./assets/images/perfora-logo.webp" alt="" />
                     </div>
-                    <div class="swiper-slide card">
+                    <div class="swiper-slide">
                         <img src="./assets/images/boult-audio-logo.png" alt="" />
                     </div>
-                    <div class="swiper-slide card">
+                    <div class="swiper-slide">
                         <img src="./assets/images/chumbak-logo.png" alt="" />
                     </div>
-                    <div class="swiper-slide card">
+                    <div class="swiper-slide">
                         <img src="./assets/images/slurrp-farm-logo.png" alt="" />
                     </div>
-                    <div class="swiper-slide card">
+                    <div class="swiper-slide">
                         <img src="./assets/images/supertails-logo.png" alt="" />
                     </div>
-                    <div class="swiper-slide card">
+                    <div class="swiper-slide">
                         <img src="./assets/images/ahdam-logo.png" alt="" />
                     </div>
-                    <div class="swiper-slide card">
+                    <div class="swiper-slide">
                         <img src="./assets/images/dove-logo.png" alt="" />
                     </div>
-                    <div class="swiper-slide card">
+                    <div class="swiper-slide">
                         <img src="./assets/images/lakme-logo.png" alt="" />
                     </div>
-                    <div class="swiper-slide card">
+                    <div class="swiper-slide">
                         <img src="./assets/images/fabelle-logo.png" alt="" />
                     </div>
-                    <div class="swiper-slide card">
+                    <div class="swiper-slide">
                         <img src="./assets/images/fiama-logo.png" alt="" />
                     </div>
-                    <div class="swiper-slide card">
+                    <div class="swiper-slide">
                         <img src="./assets/images/engage-logo.png" alt="" />
                     </div>
-                    <div class="swiper-slide card">
+                    <div class="swiper-slide">
                         <img src="./assets/images/saffola-fittify-logo.png" alt="" />
                     </div>
                 </div>
@@ -258,34 +258,49 @@
 
         <section class="industry-exp">
             <div class="wrap">
-                <div class="graphic">
-                    <img src="./assets/images/connectivity.png" class="" alt="" />
-                    <div class="blue-circle">
-                        <h2 class="title">
-                            We come<br />
-                            from <br />
-                            experience
-                        </h2>
+                <div class="blue-circle">
+                    <h2 class="title">
+                        We come<br />
+                        from <br />
+                        experience
+                    </h2>
+                </div>
+                <div class="swiper-container swiper-industry">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="./assets/images/amazon_logo.svg" alt="" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./assets/images/hul_logo.svg" alt="" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./assets/images/bijnis_logo.png" alt="" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./assets/images/healthians_logo.png" alt="" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./assets/images/meesho_logo.png" alt="" />
+                        </div>
                     </div>
                 </div>
-                <div class="content">
-                    <div class="card">
-                        <img src="./assets/images/amazon_logo.svg" alt="" />
-                    </div>
-                    <div class="card">
-                        <img src="./assets/images/hul_logo.svg" alt="" />
-                    </div>
-                    <div class="card">
-                        <img src="./assets/images/amazon_logo.svg" alt="" />
-                    </div>
-                    <div class="card">
-                        <img src="./assets/images/google_logo.svg" alt="" />
-                    </div>
-                    <div class="card">
-                        <img src="./assets/images/share_chat_logo.svg" alt="" />
-                    </div>
-                    <div class="card">
-                        <img src="./assets/images/hul_logo.svg" alt="" />
+                <div class="swiper-container swiper-industry">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="./assets/images/google_logo.svg" alt="" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./assets/images/share_chat_logo.svg" alt="" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./assets/images/shiprocket_logo.png" alt="" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./assets/images/mastercard_logo.png" alt="" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./assets/images/sagoon_logo.png" alt="" />
+                        </div>
                     </div>
                 </div>
             </div>
@@ -328,14 +343,15 @@
         </div>
     </footer>
 
-    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-    <script src="./assets/js/wow.min.js"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="./assets/js/toggle-menu.js"></script>
+    <script src="./assets/js/wow.min.js"></script>
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-P992MCN0HM"></script>
-
+    <script src="./assets/js/gtag.js"></script>
     <script>
-        //
+        //Animation
         wow = new WOW({
             boxClass: 'wow',
             animateClass: 'animated',
@@ -345,7 +361,7 @@
         });
         wow.init();
 
-        //
+        //Swiper
         let SwiperNews = new Swiper('.swiper-news', {
             spaceBetween: 0,
             centeredSlides: true,
@@ -359,7 +375,7 @@
             disableOnInteraction: true
         });
 
-        //
+        //Swiper
         let SwiperBrands = new Swiper('.swiper-brands', {
             spaceBetween: 0,
             centeredSlides: true,
@@ -373,32 +389,19 @@
             disableOnInteraction: true
         });
 
-        //
-        const hamburge_menu_icon = document.getElementById('hamburge_menu_icon');
-        hamburge_menu_icon.addEventListener('click', function () {
-            const hamburge_menu = document.getElementById('hamburge_menu');
-            hamburge_menu.style.transform = 'unset';
-            hamburge_menu_icon.style.display = 'none';
-            hamburge_menu_close.style.display = 'block';
+        //Swiper
+        let SwiperIndustry = new Swiper('.swiper-industry', {
+            spaceBetween: 0,
+            centeredSlides: true,
+            speed: 2000,
+            autoplay: {
+                delay: 1,
+            },
+            loop: true,
+            slidesPerView: 'auto',
+            allowTouchMove: false,
+            disableOnInteraction: true
         });
-
-        const hamburge_menu_close = document.getElementById(
-            'hamburge_menu_close'
-        );
-        hamburge_menu_close.addEventListener('click', function () {
-            const hamburge_menu = document.getElementById('hamburge_menu');
-            hamburge_menu.style.transform = 'translate(-100%, 0px)';
-            hamburge_menu_icon.style.display = 'block';
-            hamburge_menu_close.style.display = 'none';
-        });
-
-        //Google tag (gtag.js)
-        window.dataLayer = window.dataLayer || [];
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-        gtag('js', new Date());
-        gtag('config', 'G-P992MCN0HM');
     </script>
 </body>
 

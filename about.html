@@ -13,15 +13,6 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap">
   <link rel="stylesheet" href="./assets/styles/about.css">
   <link rel="stylesheet" href="./assets/styles/index.css">
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-P992MCN0HM"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
-
-    gtag('config', 'G-P992MCN0HM');
-  </script>
 </head>
 <style>
   .who-we-are-top-right strong {
@@ -60,7 +51,6 @@
     </div>
   </header>
   <main>
-
     <section class="about-us">
       <div class="wrap">
         <div class="about-box about-heading"> <span>We are committed to driving e-commerce everywhere</span> </div>
@@ -134,25 +124,10 @@
       </div>
     </div>
   </footer>
-  <script>
-    const hamburge_menu_icon = document.getElementById('hamburge_menu_icon');
-    hamburge_menu_icon.addEventListener('click', function () {
-      const hamburge_menu = document.getElementById('hamburge_menu');
-      hamburge_menu.style.transform = 'unset';
-      hamburge_menu_icon.style.display = 'none';
-      hamburge_menu_close.style.display = 'block';
-    });
 
-    const hamburge_menu_close = document.getElementById(
-      'hamburge_menu_close'
-    );
-    hamburge_menu_close.addEventListener('click', function () {
-      const hamburge_menu = document.getElementById('hamburge_menu');
-      hamburge_menu.style.transform = 'translate(-100%, 0px)';
-      hamburge_menu_icon.style.display = 'block';
-      hamburge_menu_close.style.display = 'none';
-    });
-  </script>
+  <script src="./assets/js/toggle-menu.js"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-P992MCN0HM"></script>
+  <script src="./assets/js/gtag.js"></script>
 </body>
 
 </html>
