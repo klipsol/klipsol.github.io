@@ -22,7 +22,7 @@
             <div class="logo">
                 <a href="index.html"><img src="./assets/images/logo.png" alt="Dpanda" title="Dpanda" /></a>
             </div>
-            <a href="/contact.html" class="quick-contact-link">Contact Us</a>
+            <a href="contact.html" class="quick-contact-link">Contact Us</a>
             <a href="javascript:void('0');" class="hamburge_menu_icon" id="hamburge_menu_icon" alt="">
                 <span></span>
                 <span></span>
@@ -54,7 +54,7 @@
         <section class="publishers">
             <div class="wrap">
                 <img src="./assets/images/publishers.png" alt="" />
-                <div class="content">
+                <div class="content  wow fadeInUp" data-wow-duration="2s">
                     <h2 class="sub-title">PUBLISHERS</h2>
                     <p class="para">Turn your site into a micro-ecommerce site</p>
                     <p class="para strong">
@@ -66,7 +66,7 @@
 
         <section class="brands">
             <div class="wrap">
-                <div class="content">
+                <div class="content wow fadeInUp" data-wow-duration="2s">
                     <h2 class="sub-title">BRANDS</h2>
                     <p class="para">Sell on more channels, at the right places.</p>
                     <p class="para strong">
@@ -82,7 +82,7 @@
                 <div class="graphic">
                     <lottie-player src="./assets/json/shoppers.json" background="transparent" speed="1" loop autoplay></lottie-player>
                 </div>
-                <div class="content wow bounceInUp">
+                <div class="content  wow fadeInUp" data-wow-duration="2s">
                     <h2 class="sub-title">SHOPPERS</h2>
                     <p class="para">
                         You see. You Like. You Buy.
@@ -100,22 +100,22 @@
                 <div class="graphic small-icon">
                     <lottie-player src="./assets/json/panda-watch.json" background="transparent" speed="1" loop autoplay></lottie-player>
                 </div>
-                <h2 class="title wow slideInLeft">All this in under 5 mins</h2>
-                <p class="para wow fadeInRight">Instant plug-in for go-live</p>
+                <h2 class="title wow fadeInUp" data-wow-duration="2s">All this in under 5 mins</h2>
+                <p class="para   wow fadeInUp" data-wow-duration="2.1s">Instant plug-in for go-live</p>
                 <div class="content">
-                    <div class="card wow fadeInRight">
+                    <div class="card  wow fadeInUp" data-wow-duration="2.1s">
                         <img src="./assets/images/engineering.svg" alt="" />
                         <p>Near Zero Operations</p>
                     </div>
-                    <div class="card wow fadeInRight">
+                    <div class="card  wow fadeInUp" data-wow-duration="2.1s">
                         <img src="./assets/images/customer-service.svg" alt="" />
                         <p>Customer Services</p>
                     </div>
-                    <div class="card wow fadeInRight">
+                    <div class="card  wow fadeInUp" data-wow-duration="2.1s">
                         <img src="./assets/images/truck-delivery.svg" alt="" />
                         <p>Delivery</p>
                     </div>
-                    <div class="card wow fadeInRight">
+                    <div class="card  wow fadeInUp" data-wow-duration="2.1s">
                         <img src="./assets/images/payment-card.svg" alt="" />
                         <p>Payments</p>
                     </div>
@@ -125,7 +125,7 @@
 
         <section class="dpanda-news">
             <div class="wrap">
-                <h2 class="title wow bounceIn">
+                <h2 class="title   wow fadeInUp" data-wow-duration="2s">
                     <span>Dpanda</span> in the news
                 </h2>
                 <div class="swiper-container swiper-news">
@@ -167,7 +167,7 @@
 
         <section class="sq-cards">
             <div class="wrap">
-                <h2 class="sub-title wow bounceIn">
+                <h2 class="sub-title  wow fadeInUp" data-wow-duration="2s">
                     Are you ready for the next <br />wave of E-commerce?
                 </h2>
                 <div class="card">
@@ -211,8 +211,8 @@
 
         <section class="partner-brands">
             <div class="wrap">
-                <h2 class="title wow bounceIn">Our Partner Brands</h2>
-                <p class="para wow bounceIn">100+ trusted brands to curate from</p>
+                <h2 class="title  wow fadeInUp" data-wow-duration="2s">Our Partner Brands</h2>
+                <p class="para  wow fadeInUp" data-wow-duration="2s">100+ trusted brands to curate from</p>
             </div>
             <div class="swiper-container swiper-brands">
                 <div class="swiper-wrapper">
@@ -279,13 +279,13 @@
                         <div class="swiper-slide">
                             <img src="./assets/images/healthians_logo.png" alt="" />
                         </div>
-                        <div class="swiper-slide">
+                        <div class="swiper-slide" >
                             <img src="./assets/images/meesho_logo.png" alt="" />
                         </div>
                     </div>
                 </div>
-                <div class="swiper-container swiper-industry">
-                    <div class="swiper-wrapper">
+                <div class="swiper-container swiper-industry" >
+                    <div class=" slider swiper-wrapper">
                         <div class="swiper-slide">
                             <img src="./assets/images/google_logo.svg" alt="" />
                         </div>
@@ -379,7 +379,7 @@
         let SwiperBrands = new Swiper('.swiper-brands', {
             spaceBetween: 0,
             centeredSlides: true,
-            speed: 2000,
+            speed: 4000,
             autoplay: {
                 delay: 1,
             },
@@ -391,18 +391,22 @@
 
         //Swiper
         let SwiperIndustry = new Swiper('.swiper-industry', {
-            spaceBetween: 0,
-            centeredSlides: true,
-            speed: 2000,
-            autoplay: {
-                delay: 1,
-            },
-            loop: true,
-            slidesPerView: 'auto',
-            allowTouchMove: false,
-            disableOnInteraction: true
+        spaceBetween: 0,
+        centeredSlides: true,
+        speed: 500,
+        autoplay: {
+        delay: 1,
+        },
+        loop: true,
+        slidesPerView: 'auto',
+        allowTouchMove: false,
+        disableOnInteraction: true
+
         });
-    </script>
+ 
+</script>
+
+ 
 </body>
 
 </html>
