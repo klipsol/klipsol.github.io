@@ -11,34 +11,30 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" />
+    <link rel="stylesheet" href="./assets/styles/animate.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./assets/styles/index.css" />
-    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-P992MCN0HM"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
 
-        gtag('config', 'G-P992MCN0HM');
-    </script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.17/dist/js/splide.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-auto-scroll@0.5.3/dist/js/splide-extension-auto-scroll.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.17/dist/css/splide.min.css">
+
 </head>
 
-<body style="background-color: #ffffff">
+<body>
     <header>
         <div class="wrap">
             <div class="logo">
                 <a href="index.html"><img src="./assets/images/logo.png" alt="Dpanda" title="Dpanda" /></a>
             </div>
-            <a href="/contact.html" class="quick-contact-link">Contact Us</a>
-            <a href="javascript:void('0');" class="hamburge_menu_icon" id="hamburge_menu_icon">
+            <a href="contact.html" class="quick-contact-link">Contact Us</a>
+            <a href="javascript:void('0');" class="hamburge_menu_icon" id="hamburge_menu_icon" alt="">
                 <span></span>
                 <span></span>
                 <span></span>
             </a>
             <a href="#" class="close" id="hamburge_menu_close"></a>
             <nav id="hamburge_menu">
-                
                 <a href="about.html">About Us</a>
                 <a href="hiring.html">Careers</a>
                 <a href="contact.html" class="active">Contact Us</a>
@@ -52,9 +48,9 @@
                     <lottie-player src="./assets/json/banner.json" background="transparent" speed="1" loop autoplay></lottie-player>
                 </div>
                 <div class="content">
-                    <h1 class="title">Your Gateway to <br/>E-Commerce</h1>
-                    <p class="para">
-                        Enable contextual E-commerce <br/>everywhere, within minutes.
+                    <h1 class="title wow fadeInUp" data-wow-duration="3s">Your Gateway to <br />E-Commerce</h1>
+                    <p class="para wow fadeInUp" data-wow-duration="4s">
+                        Enable contextual E-commerce <br />everywhere, within minutes.
                     </p>
                 </div>
             </div>
@@ -63,11 +59,9 @@
         <section class="publishers">
             <div class="wrap">
                 <img src="./assets/images/publishers.png" alt="" />
-                <div class="content">
+                <div class="content   wow fadeInUp" data-wow-duration="3s">
                     <h2 class="sub-title">PUBLISHERS</h2>
-                    <p class="para">
-                        Turn your site into a micro-ecommerce site
-                    </p>
+                    <p class="para">Turn your site into a micro-ecommerce site</p>
                     <p class="para strong">
                         Easy Monetisation | Simple Plug-in | No Redirections
                     </p>
@@ -77,11 +71,9 @@
 
         <section class="brands">
             <div class="wrap">
-                <div class="content">
+                <div class="content wow fadeInUp" data-wow-duration="2s">
                     <h2 class="sub-title">BRANDS</h2>
-                    <p class="para">
-                        Sell on more channels, at the right places.
-                    </p>
+                    <p class="para">Sell on more channels, at the right places.</p>
                     <p class="para strong">
                         Easy Set-up | Incremental Sales | Seamless Checkout
                     </p>
@@ -93,10 +85,9 @@
         <section class="shoppers">
             <div class="wrap">
                 <div class="graphic">
-                    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
                     <lottie-player src="./assets/json/shoppers.json" background="transparent" speed="1" loop autoplay></lottie-player>
                 </div>
-                <div class="content">
+                <div class="content  wow fadeInUp" data-wow-duration="2s">
                     <h2 class="sub-title">SHOPPERS</h2>
                     <p class="para">
                         You see. You Like. You Buy.
@@ -112,25 +103,24 @@
         <section class="instant-setup">
             <div class="wrap">
                 <div class="graphic small-icon">
-                    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
                     <lottie-player src="./assets/json/panda-watch.json" background="transparent" speed="1" loop autoplay></lottie-player>
                 </div>
-                <h2 class="title">All this in under 5 mins</h2>
-                <p class="para">Instant plug-in for go-live</p>
+                <h2 class="title wow fadeInUp" data-wow-duration="2s">All this in under 5 mins</h2>
+                <p class="para   wow fadeInUp" data-wow-duration="2.1s">Instant plug-in for go-live</p>
                 <div class="content">
-                    <div class="card">
+                    <div class="card  wow fadeInUp" data-wow-duration="2.1s">
                         <img src="./assets/images/engineering.svg" alt="" />
                         <p>Near Zero Operations</p>
                     </div>
-                    <div class="card">
+                    <div class="card  wow fadeInUp" data-wow-duration="2.1s">
                         <img src="./assets/images/customer-service.svg" alt="" />
                         <p>Customer Services</p>
                     </div>
-                    <div class="card">
+                    <div class="card  wow fadeInUp" data-wow-duration="2.1s">
                         <img src="./assets/images/truck-delivery.svg" alt="" />
                         <p>Delivery</p>
                     </div>
-                    <div class="card">
+                    <div class="card  wow fadeInUp" data-wow-duration="2.1s">
                         <img src="./assets/images/payment-card.svg" alt="" />
                         <p>Payments</p>
                     </div>
@@ -138,10 +128,52 @@
             </div>
         </section>
 
+        <section class="dpanda-news">
+            <div class="wrap">
+                <h2 class="title">
+                    <span>Dpanda</span> in the news
+                </h2>
+                <div class="swiper-container swiper-news">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <a href="https://economictimes.indiatimes.com/small-biz/entrepreneurship/accel-atoms-introduces-its-second-cohort-of-10-disruptive-startups/articleshow/95846957.cms" target="_blank">
+                                <img src="./assets/images/eco-time.png" alt="" />
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="https://www.livemint.com/companies/start-ups/accel-india-selects-10-startups-for-second-cohort-of-atoms-programme-11669704884393.html" target="_blank">
+                                <img src="./assets/images/livemint-logo-v2.png" alt="" />
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="https://www.thehindubusinessline.com/companies/accel-announces-second-cohort-of-accel-atoms/article66195820.ece" target="_blank">
+                                <img src="./assets/images/businessline.svg" alt="" />
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="https://yourstory.com/2022/11/funding-accel-second-cohort-atom-early-stage?utm_source=piano&utm_medium=email&utm_campaign=11741&pnespid=oveCj4VQ7vPArbfvpBqvvvUW.kscqHIqhxd0ARc8uVCVH0jxfPDwigVPGe6rPDvcdXjeHhsE" target="_blank">
+                                <img src="./assets/images/logo_yourstory.png" alt="" />
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="https://inc42.com/buzz/meet-the-10-startups-in-second-cohort-of-accels-accelerator-programme-atoms/" target="_blank">
+                                <img src="./assets/images/inc42-logo_n.png" alt="" />
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="https://www.forbes.com/sites/davidprosser/2022/11/27/helping-founders-to-help-each-other-with-accel-atoms/?sh=4f0bc97f320f" target="_blank">
+                                <img src="./assets/images/forbs.png" alt="" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <section class="sq-cards">
             <div class="wrap">
-                <h2 class="sub-title">
-                    Are you ready for the next <br/>wave of E-commerce?
+                <h2 class="sub-title  wow fadeInUp" data-wow-duration="2s">
+                    Are you ready for the next <br />wave of E-commerce?
                 </h2>
                 <div class="card">
                     <img src="./assets/images/icon-shopping.svg" alt="" />
@@ -182,107 +214,90 @@
             </div>
         </section>
 
-        <section class="partner-brands dpanda-news">
+        <section class="partner-brands">
             <div class="wrap">
-                <h2 class="title">Dpanda in the news</h2>
-                <div class="content">
-                    <div class="partner-logo">
-                        <div class="card">
-                            <a href="https://economictimes.indiatimes.com/small-biz/entrepreneurship/accel-atoms-introduces-its-second-cohort-of-10-disruptive-startups/articleshow/95846957.cms" target="_blank"><img src="./assets/images/eco-time.png" alt="economictimes" /></a>
-                        </div>
-                        <div class="card">
-                            <a href="https://www.livemint.com/companies/start-ups/accel-india-selects-10-startups-for-second-cohort-of-atoms-programme-11669704884393.html" target="_blank"><img src="./assets/images/livemint-logo-v2.png" alt="livemint-logo-v2" /></a>
-                        </div>
-                        <div class="card">
-                            <a href="https://www.thehindubusinessline.com/companies/accel-announces-second-cohort-of-accel-atoms/article66195820.ece" target="_blank">  <img src="./assets/images/businessline.svg" alt="thehindubusinessline" /></a>
-                        </div>
-                    
-                       
-                        <div class="card">
-                            <a href="https://yourstory.com/2022/11/funding-accel-second-cohort-atom-early-stage?utm_source=piano&utm_medium=email&utm_campaign=11741&pnespid=oveCj4VQ7vPArbfvpBqvvvUW.kscqHIqhxd0ARc8uVCVH0jxfPDwigVPGe6rPDvcdXjeHhsE" target="_blank">  <img src="./assets/images/logo_yourstory.png" alt="thehindubusinessline" /></a>
-                        </div>
-                        <div class="card">
-                            <a href="https://inc42.com/buzz/meet-the-10-startups-in-second-cohort-of-accels-accelerator-programme-atoms/" target="_blank">  <img src="./assets/images/inc42-logo_n.png" alt="inc42" /></a>
-                        </div>
-                        <div class="card">
-                            <a href="https://www.forbes.com/sites/davidprosser/2022/11/27/helping-founders-to-help-each-other-with-accel-atoms/?sh=4f0bc97f320f" target="_blank">  <img src="./assets/images/forbs.png" alt="forbs" /></a>
-                        </div>
-
-                        
-                    </div>
-                </div>
+                <h2 class="title">Our Partner Brands</h2>
+                <p class="para">100+ trusted brands to curate from</p>
             </div>
-        </section>        
-        <section class="industry-exp">
-            <div class="wrap">
-                <div class="graphic">
-                    <img src="./assets/images/connectivity.png" class="" alt="" />
-                    <div class="blue-circle">
-                        <h2 class="title">
-                            We come<br />
-                             from <br />
-                            experience
-                        </h2>
+            <div class="swiper-container swiper-brands">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="./assets/images/perfora-logo.webp" alt="" />
                     </div>
-                </div>
-                <div class="content">
-                    <div class="card">
-                        <img src="./assets/images/amazon_logo.svg" alt="" />
+                    <div class="swiper-slide">
+                        <img src="./assets/images/boult-audio-logo.png" alt="" />
                     </div>
-                    <div class="card">
-                        <img src="./assets/images/google_logo.svg" alt="" />
+                    <div class="swiper-slide">
+                        <img src="./assets/images/chumbak-logo.png" alt="" />
                     </div>
-                    <div class="card">
-                        <img src="./assets/images/share_chat_logo.svg" alt="" />
+                    <div class="swiper-slide">
+                        <img src="./assets/images/slurrp-farm-logo.png" alt="" />
                     </div>
-                    <div class="card">
-                        <img src="./assets/images/hul_logo.svg" alt="" />
+                    <div class="swiper-slide">
+                        <img src="./assets/images/supertails-logo.png" alt="" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./assets/images/ahdam-logo.png" alt="" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./assets/images/dove-logo.png" alt="" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./assets/images/lakme-logo.png" alt="" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./assets/images/fabelle-logo.png" alt="" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./assets/images/fiama-logo.png" alt="" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./assets/images/engage-logo.png" alt="" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./assets/images/saffola-fittify-logo.png" alt="" />
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="partner-brands">
+        <section class="industry-exp">
             <div class="wrap">
-                <h2 class="title">Our Partner Brands</h2>
-                <p class="para">100+ trusted brands to curate from</p>
-                <div class="content">
-                    <div class="partner-logo">
-                        <div class="card">
-                            <img src="./assets/images/perfora-logo.webp" alt="" />
-                        </div>
-                        <div class="card">
-                            <img src="./assets/images/boult-audio-logo.png" alt="" />
-                        </div>
-                        <div class="card">
-                            <img src="./assets/images/chumbak-logo.png" alt="" />
-                        </div>
-                        <div class="card">
-                            <img src="./assets/images/slurrp-farm-logo.png" alt="" />
-                        </div>
-                        <div class="card">
-                            <img src="./assets/images/supertails-logo.png" alt="" />
-                        </div>
-                        <div class="card">
-                            <img src="./assets/images/ahdam-logo.png" alt="" />
-                        </div>
-                        <div class="card">
-                            <img src="./assets/images/dove-logo.png" alt="" />
-                        </div>
-                        <div class="card">
-                            <img src="./assets/images/lakme-logo.png" alt="" />
-                        </div>
-                        <div class="card">
-                            <img src="./assets/images/fabelle-logo.png" alt="" />
-                        </div>
-                        <div class="card">
-                            <img src="./assets/images/fiama-logo.png" alt="" />
-                        </div>
-                        <div class="card">
-                            <img src="./assets/images/engage-logo.png" alt="" />
-                        </div>
-                        <div class="card">
-                            <img src="./assets/images/saffola-fittify-logo.png" alt="" />
+                <div class="blue-circle">
+                    <h2 class="title">
+                        We come<br />
+                        from <br />
+                        experience
+                    </h2>
+                </div>
+                <div class="swiper-container swiper-industry">
+                    <div class="slider swiper-wrapper">
+                        <div id="new-product" class="splide">
+                            <div class="splide__track">
+                              <ul class="splide__list">
+                                <li class="splide__slide"><img src="./assets/images/meesho_logo.png" alt="" /></li>
+                                
+                                <li class="splide__slide"> <img src="./assets/images/healthians_logo.png" alt="" /></li>
+                                <li class="splide__slide"> <img src="./assets/images/hul_logo.svg" alt="" /></li>
+                                <li class="splide__slide"> <img src="./assets/images/amazon_logo.svg" alt="" /></li>
+                              </ul>
+                            </div>
+                            </div>
+                    </div> 
+                </div>         
+           
+                <div class="swiper-container swiper-industry dd" >
+                    <div class=" slider swiper-wrapper">
+                        <div id="featured-product" class="splide">
+                            <div class="splide__track">
+                              <ul class="splide__list">
+                                <li class="splide__slide"> <img src="./assets/images/sagoon_logo.png" alt="" /></li>
+                                <li class="splide__slide"><img src="./assets/images/share_chat_logo.svg" alt="" /></li>
+                                <li class="splide__slide"><img src="./assets/images/shiprocket_logo.png" alt="" /></li>
+                                <li class="splide__slide"><img src="./assets/images/mastercard_logo.png" alt="" /></li>
+                                <li class="splide__slide"><img src="./assets/images/google_logo.svg" alt="" /></li>
+                              </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -290,62 +305,140 @@
         </section>
     </main>
     <footer>
-        <div class="wrap">
-            <div class="about">
-              <a href="index.html"><img src="./assets/images/logo.png" alt="Dpanda" title="Dpanda" /></a>
+        <div class="footer">
+            <div class="wrap">
+                <div class="grid about">
+                    <a href="index.html"><img src="./assets/images/logo.png" alt="Dpanda" title="Dpanda" /></a>
+                </div>
+                <div class="grid phone">
+                    <img src="./assets/images/phone.png" alt="Dpanda" title="Dpanda" />
+                    <strong>Phone</strong>
+                    <a href="tel:+91-9560888146">+91 9560888146</a>
+                </div>
+                <div class="grid email">
+                    <img src="./assets/images/mail.png" alt="Dpanda" title="Dpanda" />
+                    <strong>Email</strong>
+                    <a href="mailto:support@dpanda.in">support@dpanda.in</a>
+                </div>
+                <div class="grid address">
+                    <img src="./assets/images/location.png" alt="Dpanda" title="Dpanda" />
+                    <strong>Address</strong>
+                    <p>
+                        Nimble Cowork 250, Udyog Vihar Phase IV, Gurugram, Haryana - 122015
+                        (Basement)
+                    </p>
+                </div>
             </div>
-            <div class="address">
-              <img src="./assets/images/location.png" alt="Dpanda" title="Dpanda" />
-              <strong>Address</strong>
-              <p>
-                Nimble Cowork 250, Udyog Vihar Phase IV, Gurugram, Haryana - 122015 (Basement)
-              </p>
-            </div>
-
-            <div class="email">
-              <img src="./assets/images/mail.png" alt="Dpanda" title="Dpanda" />
-              <strong>Email</strong>
-              <a href="mailto:support@dpanda.in">support@dpanda.in</a>
-            </div>
-            <div  class="Information-link">
-              <ul class="info-link">
-                <strong>Information</strong>
-                <li><a href="privacy-policy.html"> Privacy Policy</a></li>
-                <li><a href="refund-policy.html">Refund Policy</a></li>
-                <li><a href="shipping-policy.html"> Shipping Policy</a></li>
-                <li><a href="terms-of-service.html">Terms-of Service</a></li>
-               </ul>
-            </div>
-            <div class="phone">
-              <img src="./assets/images/phone.png" alt="Dpanda" title="Dpanda" />
-              <strong>Phone</strong>
-              <a href="tel:+91-9560888146">+91 9560888146</a>
-            </div>
-
-          </div>
+        </div>
         <div class="copyright">
-            <p>© Dpanda 2022, All rights reserved.</p>
+            <div class="wrap">
+                <a href="privacy-policy.html"> Privacy Policy</a>
+                <a href="refund-policy.html">Refund Policy</a>
+                <a href="shipping-policy.html"> Shipping Policy</a>
+                <a href="terms-of-service.html">Terms-of Service</a>
+                <p>© Dpanda 2022, All rights reserved.</p>
+            </div>
         </div>
     </footer>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="./assets/js/toggle-menu.js"></script>
+    <script src="./assets/js/wow.min.js"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-P992MCN0HM"></script>
+    <script src="./assets/js/gtag.js"></script>
     <script>
-        const hamburge_menu_icon = document.getElementById('hamburge_menu_icon');
-        hamburge_menu_icon.addEventListener('click', function () {
-            const hamburge_menu = document.getElementById('hamburge_menu');
-            hamburge_menu.style.transform = 'unset';
-            hamburge_menu_icon.style.display = 'none';
-            hamburge_menu_close.style.display = 'block';
+        //Animation
+        wow = new WOW({
+            boxClass: 'wow',
+            animateClass: 'animated',
+            offset: 0,
+            mobile: true,
+            live: true,
+        });
+        wow.init();
+
+        //Swiper
+        let SwiperNews = new Swiper('.swiper-news', {
+            spaceBetween: 0,
+            centeredSlides: true,
+            speed: 2000,
+            autoplay: {
+                delay: 1,
+            },
+            loop: true,
+            slidesPerView: 'auto',
+            allowTouchMove: false,
+            disableOnInteraction: true
         });
 
-        const hamburge_menu_close = document.getElementById(
-            'hamburge_menu_close'
-        );
-        hamburge_menu_close.addEventListener('click', function () {
-            const hamburge_menu = document.getElementById('hamburge_menu');
-            hamburge_menu.style.transform = 'translate(-100%, 0px)';
-            hamburge_menu_icon.style.display = 'block';
-            hamburge_menu_close.style.display = 'none';
+        //Swiper
+        let SwiperBrands = new Swiper('.swiper-brands', {
+            spaceBetween: 0,
+            centeredSlides: true,
+            speed: 4000,
+            autoplay: {
+                delay: 1,
+            },
+            loop: true,
+            slidesPerView: 'auto',
+            allowTouchMove: false,
+            disableOnInteraction: true
         });
+
+        //Swiper
+        let SwiperIndustry = new Swiper('.swiper-industry', {
+        spaceBetween: 0,
+        centeredSlides: true,
+        speed: 5000,
+        autoplay: {
+        delay: 1,
+        },
+        loop: true,
+        slidesPerView: 'auto',
+        allowTouchMove: false,
+        disableOnInteraction: true
+
+        }); 
+ 
+</script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+      new Splide('#featured-product', {
+        type   : 'loop',
+        drag   : 'free',
+        focus  : 'center',
+        interval: 8000,
+        perPage: 3,
+        width: '100%',
+        autoScroll: {
+          speed: 1,
+        },
+        
+      }).mount( window.splide.Extensions );
+    }); 
     </script>
+
+<script>
+    
+    document.addEventListener('DOMContentLoaded', function () {
+      new Splide('#new-product', {
+        type   : 'loop',
+        drag   : 'free',
+        focus  : 'center',
+        interval: 8000,
+        perPage: 3,
+        width: '100%',
+        autoScroll: {
+          speed: 1,
+        },
+        
+      }).mount( window.splide.Extensions );
+    }); 
+</script>
+    
 </body>
 
 </html>
