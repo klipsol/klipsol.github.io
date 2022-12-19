@@ -408,7 +408,7 @@ main>section {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 130px;
+    max-width: 130px;
     position: relative;
     padding: 10px 15px;
     margin: 0 0 0 20px;
@@ -486,6 +486,7 @@ main>section {
     grid-column: span 2;
 }
 
+ 
 .partner-brands .wrap {
     grid-template-columns: repeat(2, 1fr);
     justify-content: center;
@@ -510,12 +511,12 @@ main>section {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100px;
+    max-width:100px;
     min-height: 50px;
     position: relative;
     padding: 10px 15px;
     margin: 0 0 0 20px;
-    box-shadow: 0px 15px 40px #11171D1A;
+    /* box-shadow: 0px 15px 40px #11171D1A; */
     border-radius: 10px;
 }
 
@@ -905,7 +906,7 @@ footer {}
     }
 
     .sq-cards .wrap {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
     }
 
     nav a {
@@ -1208,7 +1209,7 @@ footer {}
     .dpanda-news .swiper-wrapper {}
 
     .dpanda-news .swiper-slide {
-        width: 200px;
+         max-width: 200px; 
         padding: 15px 20px;
         margin: 0 0 0 24px;
         border-radius: 20px;
@@ -1273,7 +1274,7 @@ footer {}
     .partner-brands .swiper-wrapper {}
 
     .partner-brands .swiper-slide {
-        width: 150px;
+        max-width: 150px;
         min-height: 80px;
         padding: 10px 15px;
         margin: 0 0 0 20px;
