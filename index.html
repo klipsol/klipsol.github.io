@@ -18,7 +18,7 @@
     <meta property="twitter:url" content="https://www.dpanda.in/">
     <meta property="twitter:title" content="DPanda | Direct from brands">
     <meta property="twitter:description"content="Dpanda offer Your Gateway to E-Commerce. Enable contextual E-commerce everywhere, within minutes. Publisher can turn their site into a micro-ecommerce site.">
-    <meta property="twitter:image" content="https://www.dpanda.in/assets/images/Meta_tag_logo.png"> 
+    <meta property="twitter:image" content="https://www.dpanda.in/assets/images/Meta_tag_logo.png">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DPanda | Direct from brands</title> 
@@ -393,6 +393,9 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
     <script src="./assets/js/toggle-menu.js"></script>
     <script src="./assets/js/wow.min.js"></script>
+    <script src="./assets/js/splide-extension-url-hash.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-url-hash@0.3.0/dist/js/splide-extension-url-hash.min.js"></script>
+    
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-P992MCN0HM"></script>
     <script src="./assets/js/gtag.js"></script>
     <script>
@@ -499,8 +502,15 @@
                     speed: 1,
                 },
 
+
             }).mount(window.splide.Extensions);
+            
+
         }); 
+        splide.mount( { URLHash });
+
+  
+
     </script>
 
     <script>
