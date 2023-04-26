@@ -702,7 +702,7 @@ footer {}
     grid-column: span 4;
     padding-bottom: 16px;
 }
-
+.footer .address br{display: none;}
 .copyright {
     padding: 10px 0;
     background: #ffffff;
@@ -1399,6 +1399,8 @@ footer {}
      height: 140px !important;
      width: 140px !important;
     } 
+
+    .footer .address br{display: block;}
 
 }
 
