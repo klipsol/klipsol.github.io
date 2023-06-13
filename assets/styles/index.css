@@ -633,7 +633,7 @@ main>section {
 section.testimonial-section{background: #1957F5;padding: 24px 0px 40px;}
 section.testimonial-section h2.title{margin-bottom: 20px;text-align: center;color: #fff;font-size: 16px;}
 div#testimonial-inner{background:#fff;border-radius:10px; display: block;padding:16px 11px 24px;box-shadow: 0px 3px 6px #00000029; width: 80%;  position: relative;margin: 0 0 0 40px;pointer-events:none;}
-div#testimonial-inner:before {position: absolute; content: "";width: 0;height: 0; border-style: solid;border-width: 15px 44px 44px 37px;border-color: transparent transparent #ffffff transparent;transform: rotate(179deg);left: -28px;z-index: -4;top: 52px; }
+div#testimonial-inner:before {position: absolute;content: "";width: 50px;height: 59px;background: url(../images/tringle.png) no-repeat;top: 70px;left: -43px;z-index: -1;top:58px;}
 #testimonial-inner >img {width: 46px;position: absolute;left: -60px;top: 0px;}
 div#testimonial-inner p { color: #606F7A; font-size: 12px;text-align: justify;line-height: 21px;margin-bottom: 10px;height:167px;}
 div#testimonial-inner p~img {width: 58px;}
@@ -961,7 +961,7 @@ footer {}
     section.testimonial-section{ }
     section.testimonial-section h2.title{margin-bottom: 40px;text-align: center;color: #fff;font-size: 36px;}
     div#testimonial-inner{background:#fff;border-radius:10px; display: block;padding: 35px 20px 46px;box-shadow: 0px 3px 6px #00000029;    width: 80%;    position: relative;margin: 0 0 0 40px;}
-    div#testimonial-inner:before {position: absolute; content: "";width: 0;height: 0; border-style: solid;border-width: 15px 44px 44px 37px;border-color: transparent transparent #ffffff transparent;transform: rotate(179deg);left: -39px;z-index: -4;top: 81px;}
+    div#testimonial-inner:before {position: absolute;content: "";width: 50px;height: 59px;background: url(../images/tringle.png) no-repeat;top: 70px;left: -48px;z-index: -1;top: 80px;}
     #testimonial-inner >img {width: 66px;position: absolute;left: -80px;top: 0px;}
     div#testimonial-inner p { color: #606F7A; font-size: 14px;text-align: left;line-height: 22px;margin-bottom: 30px; height: 158px;}
     div#testimonial-inner p~img {width: 58px;}
