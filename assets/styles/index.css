@@ -1489,3 +1489,8 @@ footer {}
     div#testimonial-inner{width:350px;height:310px;}
     div#testimonial-inner p{height:160px;}
 }
+
+#banner-lottie,
+#panda-lottie{
+    width: 100%;
+}
