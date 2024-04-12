@@ -65,8 +65,9 @@
         <section class="hero-banner">
             <div class="wrap">
                 <div class="graphic order-lg-1">
-                    <lottie-player src="./assets/json/banner.json" background="transparent" speed="1" loop
-                        autoplay></lottie-player>
+                    <canvas id="banner-lottie" width="auto"></canvas>
+                    <!-- <lottie-player src="./assets/json/DrVector_insurance.json" background="transparent" speed="1" loop
+                        autoplay></lottie-player> -->
                 </div>
                 <div class="content">
                     <h1 class="title wow fadeInUp" data-wow-duration="3s">Your Gateway to <br />E-Commerce</h1>
@@ -106,8 +107,9 @@
         <section class="shoppers">
             <div class="wrap">
                 <div class="graphic">
-                    <lottie-player src="./assets/json/shoppers.json" background="transparent" speed="1" loop
-                        autoplay></lottie-player>
+                    <canvas id="panda-lottie" width="auto"></canvas>
+                    <!-- <lottie-player src="./assets/json/panda-watch.json" background="transparent" speed="1" loop
+                        autoplay></lottie-player> -->
                 </div>
                 <div class="content  wow fadeInUp" data-wow-duration="2s">
                     <h2 class="sub-title">SHOPPERS</h2>
@@ -463,7 +465,24 @@
     </footer>
 
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script type="module">
+        import { DotLottie } from "https://cdn.jsdelivr.net/npm/@lottiefiles/dotlottie-web/+esm";
+  
+        new DotLottie({
+          autoplay: true,
+          loop: true,
+          fit: "fill",
+          canvas: document.getElementById("banner-lottie"),
+          src: "https://dpanda-assets.s3.ap-south-1.amazonaws.com/dpanda-lottie1.json", // or .json file
+        });
+        new DotLottie({
+          autoplay: true,
+          loop: true,
+          fit: "fill",
+          canvas: document.getElementById("panda-lottie"),
+          src: "https://dpanda-assets.s3.ap-south-1.amazonaws.com/dpanda-lottie2.json", // or .json file
+        });
+      </script>
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
     <script src="./assets/js/toggle-menu.js"></script>
     <script src="./assets/js/wow.min.js"></script>
