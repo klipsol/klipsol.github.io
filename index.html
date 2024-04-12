@@ -107,7 +107,7 @@
         <section class="shoppers">
             <div class="wrap">
                 <div class="graphic">
-                    <canvas id="panda-lottie" width="auto"></canvas>
+                    <canvas id="shoppers-lottie" width="100%"></canvas>
                     <!-- <lottie-player src="./assets/json/panda-watch.json" background="transparent" speed="1" loop
                         autoplay></lottie-player> -->
                 </div>
@@ -127,29 +127,30 @@
         <section class="instant-setup">
             <div class="wrap">
                 <div class="graphic small-icon">
-                    <lottie-player src="./assets/json/panda-watch.json" background="transparent" speed="1" loop
-                        autoplay></lottie-player>
+                    <canvas id="panda-lottie" width="auto"></canvas>
+                    <!-- <lottie-player src="./assets/json/panda-watch.json" background="transparent" speed="1" loop
+                        autoplay></lottie-player> -->
                 </div>
-                <h2 class="title wow fadeInUp" data-wow-duration="2s">All this in under 5 mins</h2>
-                <p class="para   wow fadeInUp" data-wow-duration="2.1s">Instant plug-in for go-live</p>
-                <div class="content">
-                    <div class="card  wow fadeInUp" data-wow-duration="2.1s">
-                        <img src="./assets/images/engineering.svg" alt="" />
-                        <p>Near Zero Operations</p>
-                    </div>
-                    <div class="card  wow fadeInUp" data-wow-duration="2.1s">
-                        <img src="./assets/images/customer-service.svg" alt="" />
-                        <p>Customer Services</p>
-                    </div>
-                    <div class="card  wow fadeInUp" data-wow-duration="2.1s">
-                        <img src="./assets/images/truck-delivery.svg" alt="" />
-                        <p>Delivery</p>
-                    </div>
-                    <div class="card  wow fadeInUp" data-wow-duration="2.1s">
-                        <img src="./assets/images/payment-card.svg" alt="" />
-                        <p>Payments</p>
-                    </div>
-                </div>
+                    <h2 class="title wow fadeInUp" data-wow-duration="2s">All this in under 5 mins</h2>
+                    <p class="para   wow fadeInUp" data-wow-duration="2.1s">Instant plug-in for go-live</p>
+                    <div class="content">
+                        <div class="card  wow fadeInUp" data-wow-duration="2.1s">
+                            <img src="./assets/images/engineering.svg" alt="" />
+                            <p>Near Zero Operations</p>
+                        </div>
+                        <div class="card  wow fadeInUp" data-wow-duration="2.1s">
+                            <img src="./assets/images/customer-service.svg" alt="" />
+                            <p>Customer Services</p>
+                        </div>
+                        <div class="card  wow fadeInUp" data-wow-duration="2.1s">
+                            <img src="./assets/images/truck-delivery.svg" alt="" />
+                            <p>Delivery</p>
+                        </div>
+                        <div class="card  wow fadeInUp" data-wow-duration="2.1s">
+                            <img src="./assets/images/payment-card.svg" alt="" />
+                            <p>Payments</p>
+                        </div>
+                    </div>             
             </div>
         </section>
 
@@ -481,6 +482,13 @@
           fit: "fill",
           canvas: document.getElementById("panda-lottie"),
           src: "https://dpanda-assets.s3.ap-south-1.amazonaws.com/dpanda-lottie2.json", // or .json file
+        });
+        new DotLottie({
+          autoplay: true,
+          loop: true,
+          fit: "fill",
+          canvas: document.getElementById("shoppers-lottie"),
+          src: "https://dpanda-assets.s3.ap-south-1.amazonaws.com/dpanda-lottie3.json", // or .json file
         });
       </script>
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
