@@ -3,14 +3,10 @@ import DPVideo from "../DPVideo/DPVideo";
 
 export default function FirstParty() {
   return (
-    <section className="bg-[#003046] h-screen flex justify-center items-center px-20 overflow-hidden relative">
-      <div className="h-[80%] mx-16 flex gap-x-8 relative z-20">
+    <section className="bg-[#003046] h-screen flex justify-center  px-20 overflow-hidden relative">
+      <div className="h-[65%] mx-16 flex gap-x-8 relative z-20 mt-[5%]">
         <div className="h-full flex items-center">
-          <div className=" "></div>
-          <DPVideo className="h-full object-cover" src="/left.mp4" />
-        </div>
-        <div className="h-full flex items-center">
-          <DPVideo className="h-full object-cover" src="/right.mp4" />
+          <DPVideo className="h-full object-cover" src="/vid2.mp4" />
           <div className=" ">
             <h2 className="text-primaryTextColor text-3xl font-extrabold ml-4">
               Higher User:
@@ -24,7 +20,7 @@ export default function FirstParty() {
           </div>
         </div>
       </div>
-      <h2 className="capitalize opacity-70 -bottom-3 text-center text-9xl absolute font-bold w-full text-[#FFEFB9]">
+      <h2 className="capitalize opacity-70 -bottom-7 text-center text-9xl absolute font-bold w-full text-[#274653]">
         FIRST-PARTY DATA
       </h2>
     </section>

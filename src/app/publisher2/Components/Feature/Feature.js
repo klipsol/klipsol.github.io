@@ -45,9 +45,9 @@ export default function Feature() {
     <section
       ref={sectionRef}
       id="feature"
-      className="h-screen section bg-secondaryBg px-20 flex items-center justify-center relative overflow-hidden"
+      className="h-screen section bg-secondaryBg px-20 flex  justify-center relative overflow-hidden"
     >
-      <div className="h-[80%] mx-16 flex gap-x-8 relative z-20">
+      <div className="h-[65%] mx-16 flex gap-x-8 relative z-20 mt-[5%]">
         <div className="h-full flex items-center" id="leftDelight">
           <div className=" ">
             <h2 className="text-white text-3xl font-extrabold mr-4">

@@ -25,7 +25,7 @@ const SmoothScroll = ({ children }) => {
 
       gsap.to(scroll, {
         y: -currentScroll,
-        duration: 1.2,
+        duration: 1.5,
         ease: "power4.out",
       });
     };
