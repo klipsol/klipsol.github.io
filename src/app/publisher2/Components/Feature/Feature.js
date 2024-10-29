@@ -45,7 +45,7 @@ export default function Feature() {
     <section
       ref={sectionRef}
       id="feature"
-      className="h-screen section bg-secondaryBg px-20 flex items-center justify-center relative"
+      className="h-screen section bg-secondaryBg px-20 flex items-center justify-center relative overflow-hidden"
     >
       <div className="h-[80%] mx-16 flex gap-x-8 relative z-20">
         <div className="h-full flex items-center" id="leftDelight">
@@ -77,7 +77,7 @@ export default function Feature() {
           </div>
         </div>
       </div>
-      <h2 className="capitalize opacity-70 -bottom-3 text-center text-9xl absolute font-bold w-full text-[#274653]">
+      <h2 className="capitalize opacity-70 -bottom-6 text-center text-9xl absolute font-bold w-full text-[#274653]">
         User Delight
       </h2>
     </section>
