@@ -91,9 +91,9 @@ export default function Hero() {
               </button>
               <div
                 ref={logoRef}
-                className="p-4 rounded-full shadow-lg bg-white"
+                // className="p-4 rounded-full shadow-lg bg-white"
               >
-                <img src="/DpandaLogoS.svg" className="h-6" alt="logo" />
+                {/* <img src="/DpandaLogoS.svg" className="h-6" alt="logo" /> */}
               </div>
             </div>
           </div>
