@@ -18,13 +18,14 @@ export default function Hero() {
     });
 
     tl.fromTo(
-      ["#left", "#right", "#switch"],
+      ["#left", "#right", "#switch", "#videoDiv"],
       {
         opacity: 0,
         x: function (index) {
           // Left element moves from left, right from right, switch no horizontal movement
           if (index === 0) return -500;
           if (index === 1) return 500;
+          if (index === 3) return 1000;
           return 0;
         },
         y: function (index) {
@@ -80,13 +81,13 @@ export default function Hero() {
         <Navbar />
         {/* Hero section starts */}
         <div className="flex justify-between flex-col md:flex-row">
-          <div className="w-1/2 md:pl-8  px-5" id="left">
-            <h2 className="text-primaryTextColor text-2xl md:text-4xl font-extrabold mt-[25%]">
+          <div className="w-1/2 md:pl-[10%]  px-5" id="left">
+            <h2 className="text-primaryTextColor text-2xl md:text-5xl font-extrabold mt-[25%]">
               Drive Monetization By Enabling{" "}
-              <span className="text-[#F5BA0B]">On-Site Checkout</span>
+              <span className="text-[#F5BA0B] pt-3">On-Site Checkout</span>
             </h2>
-            <div className="flex gap-x-4">
-              <button className="bg-[#FFDF74] rounded-[30px] px-4 py-3 font-semibold text-primaryTextColor">
+            <div className="flex gap-x-4 mt-3">
+              <button className="bg-[#FFDF74] rounded-[30px] text-lg px-6 py-3 font-semibold text-primaryTextColor">
                 Drive User Delight
               </button>
               <div
@@ -100,9 +101,10 @@ export default function Hero() {
           <div className="w-1/2 pt-5">
             <div className="relative w-full pb-[100%]" id="right">
               <div className="absolute inset-0">
-                <div className="w-full ml-10 h-full rounded-full bg-[#013046] relative overflow-hidden">
+                <div className="w-full ml-5 h-full rounded-full bg-[#013046] relative overflow-hidden">
                   <div className="absolute top-[15%] left-[20%] w-[150%] h-[150%]">
                     <DPVideo
+                      id="videoDiv"
                       className="h-[40%] object-cover"
                       src="/HeroVideo.mp4"
                     />

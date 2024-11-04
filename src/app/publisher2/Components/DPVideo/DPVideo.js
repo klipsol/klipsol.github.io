@@ -22,10 +22,14 @@ const DPVideo = ({
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
           // Play when 40% or more is visible
+          //   console.log("] visible---", videoRef.current);
+          //   setTimeout(() => {
           videoRef.current?.play().catch((error) => {
             console.warn("Video autoplay failed:", error);
           });
+          //   }, 1000);
         } else {
+          //   console.log("] hidden---", videoRef.current);
           // Pause when less than 40% is visible
           videoRef.current?.pause();
         }
