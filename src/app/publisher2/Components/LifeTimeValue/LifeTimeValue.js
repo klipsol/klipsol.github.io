@@ -5,6 +5,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 export default function LifeTimeValue() {
   const sectionRef = useRef(null);
+  const listItems = ["Conversion", "Sessions", "Repeat"];
 
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
@@ -55,19 +56,44 @@ export default function LifeTimeValue() {
           </div>
           <div className=" " id="L-text-banner">
             <h2 className="text-primaryTextColor text-3xl font-extrabold ml-4">
-              Higher User:
+              Higher
             </h2>
             <div className="text-primaryTextColor font-semibold text-4xl bg-[#EEBC11] px-8 py-4 rounded-r-[42px] mt-4">
-              <ul className="list-disc pl-5">
-                <li>Conversion</li>
-                <li>Sessions / visit</li>
-                <li>Repeat</li>
+              <ul className="space-y-2">
+                {listItems.map((item, index) => (
+                  <li key={index} className="flex items-center gap-3">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      className="w-6 h-6 flex-shrink-0"
+                    >
+                      <path
+                        d="M3 12.5l6 6 12-12"
+                        stroke="#22c55e"
+                        strokeWidth="3"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        fill="none"
+                      />
+                    </svg>
+                    {item}
+                  </li>
+                ))}
               </ul>
             </div>
           </div>
         </div>
       </div>
-      <h2 className="capitalize opacity-70 -bottom-6 text-center text-9xl absolute font-bold w-full text-[#FFEFB9]">
+      <h2
+        className="capitalize opacity-70 -bottom-6 text-center text-9xl absolute font-bold w-full text-[#FFEFB9]"
+        style={{
+          fontSize: "min(12vw, 9rem)", // Responsive font size
+          lineHeight: "1",
+          bottom: "-0.1em", // Adjust based on your needs
+          letterSpacing: "-0.02em",
+        }}
+      >
+        {" "}
         LIFETIME VALUE
       </h2>
     </section>

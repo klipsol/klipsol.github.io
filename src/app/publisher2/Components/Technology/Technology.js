@@ -47,10 +47,10 @@ export default function Technology() {
       ref={sectionRef}
       className="bg-[#FFFAEA] h-screen flex justify-between  overflow-hidden relative"
     >
-      <div className="h-[70%] flex items-center  text-7xl font-extrabold  w-1/2 pl-[10%] mt-[5%]">
-        <h2 className="text-black">
-          We Deliver <br /> Everything:
-          <br /> <span className="text-[#F7B801] mt-2">Free & Fast</span>
+      <div className="h-[70%] flex items-center  text-6xl font-extrabold  w-1/2 pl-[10%] mt-[5%]">
+        <h2 className="text-[#003046]">
+          <span className="text-[#F7B801] mt-2">One-Step</span>
+          <br /> Technology
         </h2>
       </div>
       <div className="h-[70%] w-1/2 pl-[5%]  z-20 mt-[5%]">
@@ -106,7 +106,16 @@ export default function Technology() {
           <img className="h-full" src="/phone2.png" alt="phone" />
         </div>
       </div>
-      <h2 className="capitalize opacity-70 -bottom-6 text-center text-9xl z-10 absolute font-bold w-full text-[#FFEFB9]">
+      <h2
+        className="capitalize opacity-70 -bottom-6 text-center text-9xl z-10 absolute font-bold w-full text-[#FFEFB9]"
+        style={{
+          fontSize: "min(12vw, 9rem)", // Responsive font size
+          lineHeight: "1",
+          bottom: "-0.1em", // Adjust based on your needs
+          letterSpacing: "-0.02em",
+        }}
+      >
+        {" "}
         TECHNOLOGY
       </h2>
     </section>

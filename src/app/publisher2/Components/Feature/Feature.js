@@ -26,10 +26,14 @@ export default function Feature() {
           if (index === 1) return 500;
           return 0;
         },
+        y: function (index) {
+          return 500;
+        },
       },
       {
         opacity: 1,
         x: 0,
+        y: 0,
       },
       "<"
     );
@@ -48,36 +52,49 @@ export default function Feature() {
       className="h-screen section bg-secondaryBg px-20 flex  justify-center relative overflow-hidden"
     >
       <div className="h-[70%] mx-16 flex gap-x-8 relative z-20 mt-[5%]">
-        <div className="h-full flex items-center" id="leftDelight">
+        <div
+          className="h-full flex items-center bg-[#EEF0F8] px-4 py-2 rounded-2xl"
+          id="leftDelight"
+        >
           <div className=" ">
-            <h2 className="text-white text-3xl font-extrabold mr-4">
+            <h2 className="text-[#EFBA09] text-3xl font-extrabold mr-4">
               Conventional
             </h2>
-            <div className="text-white font-semibold text-4xl bg-[#EEBC11] pl-8 py-4 rounded-l-[42px] mt-4">
+            <div className="text-[#013046] font-semibold text-4xl bg-[#F8F8FC] pl-8 py-4 rounded-l-[42px] mt-4">
               {" "}
               <h2 className="">
-                Click & <br />{" "}
-                <span className="font-extrabold text-[#013046]">Redirect</span>
+                Click & <br /> <span className="font-extrabold ">Redirect</span>
               </h2>
             </div>
           </div>
           <DPVideo className="h-full object-cover" src="/left.mp4" />
         </div>
-        <div className="h-full flex items-center" id="rightDelight">
+        <div
+          className="h-full flex items-center bg-[#EFBA09] px-4 py-2 rounded-2xl"
+          id="rightDelight"
+        >
           <DPVideo className="h-full object-cover" src="/right.mp4" />
           <div className=" ">
             <h2 className="text-white text-3xl font-extrabold ml-4">Dpanda:</h2>
-            <div className="text-white font-semibold text-4xl bg-[#EEBC11] px-8 py-4 rounded-r-[42px] mt-4">
+            <div className="text-[#013046] font-semibold text-4xl bg-[#F8F8FC] px-8 py-4 rounded-r-[42px] mt-4">
               {" "}
               <h2 className="">
-                Click & <br />{" "}
-                <span className="font-extrabold text-[#013046]">Convert</span>
+                Click & <br /> <span className="font-extrabold ">Convert</span>
               </h2>
             </div>
           </div>
         </div>
       </div>
-      <h2 className="capitalize opacity-70 -bottom-6 text-center text-9xl absolute font-bold w-full text-[#274653]">
+      <h2
+        className="capitalize opacity-70 -bottom-6 text-center text-9xl absolute font-bold w-full text-[#274653]"
+        style={{
+          fontSize: "min(12vw, 9rem)", // Responsive font size
+          lineHeight: "1",
+          bottom: "-0.1em", // Adjust based on your needs
+          letterSpacing: "-0.02em",
+        }}
+      >
+        {" "}
         User Delight
       </h2>
     </section>

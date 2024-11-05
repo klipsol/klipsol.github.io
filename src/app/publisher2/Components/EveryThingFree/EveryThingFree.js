@@ -11,7 +11,7 @@ export default function EveryThingFree() {
     const tl = gsap.timeline({
       scrollTrigger: {
         trigger: sectionRef.current,
-        start: "top 10%",
+        start: "top center",
         toggleActions: "play none none reverse",
       },
     });
@@ -63,13 +63,13 @@ export default function EveryThingFree() {
             alt="arrow"
           />
         </div>
-        <div id="E-paid" className="absolute -bottom-10 left-48">
+        <div id="E-paid" className="absolute -bottom-10 left-48 z-[100]">
           <img
             className="h-16 w-16 ml-28 z-10 relative -mt-4"
             src="/arrow-b-l.png"
             alt="arrow"
           />
-          <div className="rounded-3xl w-fit bg-[#F5BA0C] text-primaryTextColor font-extrabold text-base px-5 py-3 left-0">
+          <div className="rounded-3xl w-fit bg-[#F5BA0C] text-primaryTextColor font-extrabold text-base px-5 py-3 left-0 ">
             You Get Paid
           </div>
         </div>
@@ -85,7 +85,16 @@ export default function EveryThingFree() {
         </div>
         <img src="/dollar.png" className="w-[45%] " alt="dollar" />
       </div>
-      <h2 className="capitalize opacity-70 -bottom-6 text-center text-9xl absolute font-bold w-full text-[#FFEFB9]">
+      <h2
+        className="capitalize opacity-70 -bottom-6 text-center text-9xl absolute font-bold w-full text-[#FFEFB9]"
+        style={{
+          fontSize: "min(12vw, 9rem)", // Responsive font size
+          lineHeight: "1",
+          bottom: "-0.1em", // Adjust based on your needs
+          letterSpacing: "-0.02em",
+        }}
+      >
+        {" "}
         EVERYTHING FREE
       </h2>
     </section>

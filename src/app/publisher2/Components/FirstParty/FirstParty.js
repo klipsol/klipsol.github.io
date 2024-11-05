@@ -5,6 +5,12 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 export default function FirstParty() {
   const sectionRef = useRef(null);
+  const listItems = [
+    "Real Time Data",
+    <>
+      Future Proof <br /> CPMs{" "}
+    </>,
+  ];
 
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
@@ -57,10 +63,30 @@ export default function FirstParty() {
             <h2 className="text-white text-3xl font-extrabold ml-4">
               Higher User:
             </h2>
-            <div className="text-primaryTextColor font-semibold text-4xl bg-[#EEBC11] px-8 py-4 rounded-r-[42px] mt-4">
-              <ul className="list-disc pl-5">
-                <li>Better Targeting</li>
-                <li>Higher CPMs</li>
+            <div className="text-primaryTextColor font-semibold text-3xl bg-[#EEBC11] px-8 py-4 rounded-r-[42px] mt-4">
+              <ul className="space-y-2">
+                {listItems.map((item, index) => (
+                  <li
+                    key={index}
+                    className="flex items-center gap-3 whitespace-nowrap"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      className="w-6 h-6 flex-shrink-0"
+                    >
+                      <path
+                        d="M3 12.5l6 6 12-12"
+                        stroke="white"
+                        strokeWidth="3"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        fill="none"
+                      />
+                    </svg>
+                    {item}
+                  </li>
+                ))}
               </ul>
             </div>
           </div>

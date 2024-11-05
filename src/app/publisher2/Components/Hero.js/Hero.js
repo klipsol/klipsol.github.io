@@ -80,47 +80,89 @@ export default function Hero() {
       <section className="bg-[#FFFAEA] h-screen overflow-hidden relative section">
         <Navbar />
         {/* Hero section starts */}
-        <div className="flex justify-between flex-col md:flex-row">
+        <div className="flex flex-col md:flex-row gap-x-8">
           <div className="w-1/2 md:pl-[10%]  px-5" id="left">
-            <h2 className="text-primaryTextColor text-2xl md:text-5xl font-extrabold mt-[25%]">
-              Drive Monetization By Enabling{" "}
-              <span className="text-[#F5BA0B] pt-3">On-Site Checkout</span>
+            <h2 className="text-primaryTextColor text-2xl md:text-4xl font-extrabold mt-[10%]">
+              <span className="text-[#F5BA0B] pt-3">On-Site Checkout</span> to
+              Drive Monetization and:
             </h2>
-            <div className="flex gap-x-4 mt-3">
-              <button className="bg-[#FFDF74] rounded-[30px] text-lg px-6 py-3 font-semibold text-primaryTextColor">
-                Drive User Delight
-              </button>
-              <div
-                ref={logoRef}
-                // className="p-4 rounded-full shadow-lg bg-white"
-              >
-                {/* <img src="/DpandaLogoS.svg" className="h-6" alt="logo" /> */}
+            <div className="flex gap-x-4 mt-12 justify-start text-primaryTextColor">
+              <div className="bg-white rounded-2xl p-4 whitespace-nowrap text-xl relative">
+                <h1
+                  className="absolute -top-7 text-5xl left-1/2 text-[#dddad3]"
+                  style={{ transform: "translate(-50%)" }}
+                >
+                  01
+                </h1>
+                <h1>
+                  User <br />
+                  Experience
+                </h1>
+              </div>
+              <div className="bg-white rounded-2xl p-4 whitespace-nowrap text-xl relative">
+                <h1
+                  className="absolute -top-7 text-5xl left-1/2 text-[#dddad3]"
+                  style={{ transform: "translate(-50%)" }}
+                >
+                  02
+                </h1>
+                <h1>
+                  Lifetime <br />
+                  Value
+                </h1>
+              </div>
+              <div className="bg-white rounded-2xl p-4 whitespace-nowrap text-xl relative">
+                <h1
+                  className="absolute -top-7 text-5xl left-1/2 text-[#dddad3]"
+                  style={{ transform: "translate(-50%)" }}
+                >
+                  03
+                </h1>
+                <h1>
+                  First-Party <br />
+                  Data
+                </h1>
               </div>
             </div>
           </div>
-          <div className="w-1/2 pt-5">
-            <div className="relative w-full pb-[100%]" id="right">
-              <div className="absolute inset-0">
-                <div className="w-full ml-5 h-full rounded-full bg-[#013046] relative overflow-hidden">
-                  <div className="absolute top-[15%] left-[20%] w-[150%] h-[150%]">
-                    <DPVideo
-                      id="videoDiv"
-                      className="h-[40%] object-cover"
-                      src="/HeroVideo.mp4"
-                    />
-                  </div>
-                </div>
-              </div>
+          <div className="w-[48%] relative z-0">
+            {/* <div className="w-full h-full relative overflow-hidden"> */}
+            <img className="w-full -mt-16" src="/circle.svg" alt="circle" />
+            <div className="absolute top-[15%] left-[20%]  ">
+              <DPVideo
+                id="videoDiv"
+                className="h-[50vh] object-cover"
+                src="/HeroVideo.mp4"
+              />
             </div>
+            {/* </div> */}
           </div>
         </div>
         <div
           className="absolute xs:bottom-10 bottom-4 w-full flex justify-center items-center cursor-pointer"
           id="switch"
-          onClick={() => scroll(document.getElementById("feature"))}
         >
-          <div className="w-[35px] h-[60px] rounded-3xl border-4 border-gray-800 flex justify-center items-start p-2">
+          <div
+            className="w-[35px] h-[60px] rounded-3xl border-4 border-gray-800 flex justify-center items-start p-2"
+            onClick={() => scroll(document.getElementById("feature"))}
+          >
             <div className="w-1 h-2.5 rounded-full bg-gray-800 mb-1 animate-scroll-mouse" />
+          </div>
+        </div>
+        <div className="absolute bg-[#FFF4D0] rounded-r-3xl top-[70%] px-8 w-[45%] flex justify-end">
+          <div className="text-primaryTextColor">
+            <h1 className="py-4 text-2xl ">One Stop Solutions</h1>
+            <div className="flex gap-x-3 font-semibold md:text-base lg:text-lg 2xl:text-2xl text-center">
+              <div className="bg-[#FFDF73] px-4 py-3 rounded-t-xl ">
+                Technology <br /> Operations
+              </div>
+              <div className="bg-[#FFDF73] px-4 py-3 rounded-t-xl">
+                Direct From <br /> Brand
+              </div>
+              <div className="bg-[#FFDF73] px-4 py-3 rounded-t-xl">
+                Less than 5 Days <br /> Go Live
+              </div>
+            </div>
           </div>
         </div>
       </section>
