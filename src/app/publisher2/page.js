@@ -20,7 +20,7 @@ export default function Publisher2() {
         <LifeTimeValue />
         <FirstParty />
         <Technology />
-        <Operations />
+        {/* <Operations /> */}
         <EveryThingFree />
         <Final />
       </SmoothScroll>

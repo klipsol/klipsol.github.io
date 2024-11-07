@@ -6,97 +6,77 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 export default function Feature() {
   const sectionRef = useRef(null);
 
-  useEffect(() => {
-    gsap.registerPlugin(ScrollTrigger);
-    const tl = gsap.timeline({
-      scrollTrigger: {
-        trigger: sectionRef.current,
-        start: "top center", // Triggers when the top of the section hits the center of the viewport
-        toggleActions: "play none none reverse", // play on enter, reverse on leave
-      },
-      defaults: { duration: 2, ease: "power3.out" },
-    });
+  // useEffect(() => {
+  //   gsap.registerPlugin(ScrollTrigger);
+  //   const tl = gsap.timeline({
+  //     scrollTrigger: {
+  //       trigger: sectionRef.current,
+  //       start: "top center", // Triggers when the top of the section hits the center of the viewport
+  //       toggleActions: "play none none reverse", // play on enter, reverse on leave
+  //     },
+  //     defaults: { duration: 2, ease: "power3.out" },
+  //   });
 
-    tl.fromTo(
-      ["#leftDelight", "#rightDelight"],
-      {
-        opacity: 0,
-        x: function (index) {
-          if (index === 0) return -500;
-          if (index === 1) return 500;
-          return 0;
-        },
-        y: function (index) {
-          return 500;
-        },
-      },
-      {
-        opacity: 1,
-        x: 0,
-        y: 0,
-      },
-      "<"
-    );
+  //   tl.fromTo(
+  //     ["#leftDelight", "#rightDelight"],
+  //     {
+  //       opacity: 0,
+  //       x: function (index) {
+  //         if (index === 0) return -500;
+  //         if (index === 1) return 500;
+  //         return 0;
+  //       },
+  //       y: function (index) {
+  //         return 500;
+  //       },
+  //     },
+  //     {
+  //       opacity: 1,
+  //       x: 0,
+  //       y: 0,
+  //     },
+  //     "<"
+  //   );
 
-    // Cleanup
-    return () => {
-      tl.kill();
-      ScrollTrigger.getAll().forEach((trigger) => trigger.kill());
-    };
-  }, []);
+  //   // Cleanup
+  //   return () => {
+  //     tl.kill();
+  //     ScrollTrigger.getAll().forEach((trigger) => trigger.kill());
+  //   };
+  // }, []);
 
   return (
     <section
-      ref={sectionRef}
+      className="sec-container h-screen relative flex  w-full"
       id="feature"
-      className="h-screen section bg-secondaryBg px-20 flex  justify-center relative overflow-hidden"
     >
-      <div className="h-[70%] mx-16 flex gap-x-8 relative z-20 mt-[5%]">
-        <div
-          className="h-full flex items-center bg-[#EEF0F8] px-4 py-2 rounded-2xl"
-          id="leftDelight"
-        >
-          <div className=" ">
-            <h2 className="text-[#EFBA09] text-3xl font-extrabold mr-4">
-              Conventional
-            </h2>
-            <div className="text-[#013046] font-semibold text-4xl bg-[#F8F8FC] pl-8 py-4 rounded-l-[42px] mt-4">
-              {" "}
-              <h2 className="">
-                Click & <br /> <span className="font-extrabold ">Redirect</span>
-              </h2>
-            </div>
+      <div className="w-[60%] flex gap-x-3">
+        <div className="h-screen bg-[#EEF0F8] rounded-t-3xl overflow-hidden w-[50%]">
+          <div className=" bg-[#C4C7D5] h-[10%] text-[#234651] py-3 text-3xl font-semibold flex justify-center">
+            Conventional
           </div>
-          <DPVideo className="h-full object-cover" src="/left.mp4" />
+          <div className="flex h-[90%] items-center justify-center">
+            <DPVideo className="h-[80%]" src={"/left.mp4"} />
+          </div>
         </div>
-        <div
-          className="h-full flex items-center bg-[#EFBA09] px-4 py-2 rounded-2xl"
-          id="rightDelight"
-        >
-          <DPVideo className="h-full object-cover" src="/right.mp4" />
-          <div className=" ">
-            <h2 className="text-white text-3xl font-extrabold ml-4">Dpanda:</h2>
-            <div className="text-[#013046] font-semibold text-4xl bg-[#F8F8FC] px-8 py-4 rounded-r-[42px] mt-4">
-              {" "}
-              <h2 className="">
-                Click & <br /> <span className="font-extrabold ">Convert</span>
-              </h2>
-            </div>
+        <div className="h-screen bg-[#FEF4D3] rounded-t-3xl overflow-hidden w-[50%]">
+          <div className=" bg-[#FFE89B] h-[10%] text-[#234651] py-3 text-3xl font-semibold flex justify-center">
+            Dpanda
+          </div>
+          <div className="flex h-[90%] items-center justify-center">
+            <DPVideo className="h-[80%]" src={"/right.mp4"} />
           </div>
         </div>
       </div>
-      <h2
-        className="capitalize opacity-70 -bottom-6 text-center text-9xl absolute font-bold w-full text-[#274653]"
-        style={{
-          fontSize: "min(12vw, 9rem)", // Responsive font size
-          lineHeight: "1",
-          bottom: "-0.1em", // Adjust based on your needs
-          letterSpacing: "-0.02em",
-        }}
-      >
-        {" "}
-        User Delight
-      </h2>
+      <div className="w-[40%] flex flex-col justify-center px-8 gap-y-3">
+        <h1 className="text-[#023046]/20 text-6xl font-bold">01</h1>
+        <h1 className="text-5xl  text-[#1D234E] font-medium">User Delight</h1>
+        <p className="text-base text-[#505C6E]">
+          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+          nonumy eirmod tempo
+        </p>
+      </div>
+      <hr className="bottom-0 absolute w-full custom-hr" />
     </section>
   );
 }

@@ -19,3 +19,35 @@ body {
   background: var(--background);
   font-family: Poppins, Arial, Helvetica, sans-serif;
 }
+
+@layer base {
+  .sec-container {
+    @apply lg:max-w-[1000px] mx-auto w-full 2xl:max-w-7xl xxl:max-w-[1640px];
+  }
+  .custom-hr {
+    height: 12px; /* Set the height of the <hr> */
+    background-image: linear-gradient(
+      to right,
+      black 33%,
+      rgba(255, 255, 255, 0) 0%
+    );
+    background-position: bottom;
+    background-size: 12px 1.5px; /* Adjust this for dash size and spacing */
+    background-repeat: repeat-x;
+    border: none; /* Remove default border */
+  }
+
+  .custom-vr {
+    width: 12px; /* Set the width of the vertical line */
+    height: 100%; /* This will make it fill the container height */
+    background-image: linear-gradient(
+      to bottom,
+      /* Change direction to bottom */ black 33%,
+      rgba(255, 255, 255, 0) 0%
+    );
+    background-position: right;
+    background-size: 1.5px 12px; /* Swap width and height values */
+    background-repeat: repeat-y; /* Change to repeat-y for vertical repetition */
+    border: none;
+  }
+}

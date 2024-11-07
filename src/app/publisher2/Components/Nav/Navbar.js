@@ -9,13 +9,13 @@ export default function Navbar() {
     });
     tl.fromTo(
       "#nav",
-      { y: -40, opacity: 0 }, // Start from y: 0 and opacity 0
-      { y: 0, opacity: 1, duration: 2, ease: "power3.out" } // Animate to y: 40 and opacity 1
+      { y: 0, opacity: 0 }, // Start from y: 0 and opacity 0
+      { y: 0, opacity: 1, duration: 2, ease: "power1.out" } // Animate to y: 40 and opacity 1
     );
   }, []);
   return (
-    <div className="px-[20%] w-full opacity-0 mt-8 relative z-20 " id="nav">
-      <div className="px-4 md:px-8 py-4 flex justify-between items-center flex-col md:flex-row bg-[#FFDF73] rounded-3xl relative ">
+    <div className="sec-container opacity-0 mt-6 relative z-20 pr-10 " id="nav">
+      <div className="flex justify-between items-center flex-col md:flex-row bg-transparent rounded-3xl relative ">
         <img src="/DpandaLogo.png" alt="logo" className="max-h-10" />
 
         <div className="flex md:gap-x-6 items-center pt-4 w-full md:w-fit md:pt-0 justify-between">

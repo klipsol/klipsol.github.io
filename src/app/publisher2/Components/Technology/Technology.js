@@ -1,123 +1,176 @@
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import React, { useEffect, useRef } from "react";
+import { Chip } from "../UI/Chip/Chip";
 
 export default function Technology() {
   const sectionRef = useRef(null);
 
-  useEffect(() => {
-    gsap.registerPlugin(ScrollTrigger);
+  // useEffect(() => {
+  //   gsap.registerPlugin(ScrollTrigger);
 
-    const tl = gsap.timeline({
-      scrollTrigger: {
-        trigger: sectionRef.current,
-        start: "top center",
-        toggleActions: "play none none reverse",
-      },
-    });
+  //   const tl = gsap.timeline({
+  //     scrollTrigger: {
+  //       trigger: sectionRef.current,
+  //       start: "top center",
+  //       toggleActions: "play none none reverse",
+  //     },
+  //   });
 
-    // Pop animation for each element
-    ["#T-end", "#T-ai", "#T-data", "#T-retarget"].forEach((target, index) => {
-      tl.fromTo(
-        target,
-        {
-          opacity: 0,
-          scale: 0.5,
-          y: 50,
-        },
-        {
-          opacity: 1,
-          scale: 1,
-          y: 0,
-          duration: 0.7,
-          ease: "back.out(1.7)", // This creates the pop-out elastic effect
-        },
-        index * 0.4 // Stagger the animations by 0.3 seconds
-      );
-    });
+  //   // Pop animation for each element
+  //   ["#T-end", "#T-ai", "#T-data", "#T-retarget"].forEach((target, index) => {
+  //     tl.fromTo(
+  //       target,
+  //       {
+  //         opacity: 0,
+  //         scale: 0.5,
+  //         y: 50,
+  //       },
+  //       {
+  //         opacity: 1,
+  //         scale: 1,
+  //         y: 0,
+  //         duration: 0.7,
+  //         ease: "back.out(1.7)", // This creates the pop-out elastic effect
+  //       },
+  //       index * 0.4 // Stagger the animations by 0.3 seconds
+  //     );
+  //   });
 
-    return () => {
-      tl.kill();
-      ScrollTrigger.getAll().forEach((trigger) => trigger.kill());
-    };
-  }, []);
+  //   return () => {
+  //     tl.kill();
+  //     ScrollTrigger.getAll().forEach((trigger) => trigger.kill());
+  //   };
+  // }, []);
+
+  const leftPhoneChipData = [
+    {
+      icon: "/end-to-end-tech.png",
+      label: (
+        <>
+          End-to-End <br /> Technology
+        </>
+      ),
+      className: "absolute top-[15%] -left-[60%]",
+    },
+    {
+      icon: "/data_and_analytics.png",
+      label: (
+        <>
+          Data & <br />
+          Analytics
+        </>
+      ),
+      className: "absolute bottom-[25%] -left-[60%]",
+    },
+    {
+      icon: "/ai.png",
+      label: (
+        <>
+          AI Based <br /> Recommendation
+        </>
+      ),
+      className: "absolute top-[15%] -right-[80%]",
+    },
+    {
+      icon: "/retargeting.png",
+      label: (
+        <>
+          Retargeting & <br /> Loyalty
+        </>
+      ),
+      className: "absolute bottom-[35%] -right-[60%]",
+    },
+  ];
+
+  const rightPhoneChipData = [
+    {
+      icon: "/brand.png",
+      label: (
+        <>
+          Brand <br /> Supply
+        </>
+      ),
+      className: "absolute top-[15%] -left-[60%] bg-[#033046] text-white",
+    },
+    {
+      icon: "/payment.png",
+      label: (
+        <>
+          Payments & <br /> Settlements
+        </>
+      ),
+      className: "absolute bottom-[25%] -left-[60%] bg-[#033046] text-white",
+    },
+    {
+      icon: "/cata.png",
+      label: (
+        <>
+          Catalogue & <br /> Pricing
+        </>
+      ),
+      className: "absolute top-[15%] -right-[80%] bg-[#033046] text-white",
+    },
+    {
+      icon: "/cust.png",
+      label: (
+        <>
+          Customer <br /> Service
+        </>
+      ),
+      className: "absolute bottom-[35%] -right-[60%] bg-[#033046] text-white",
+    },
+  ];
 
   return (
-    <section
-      ref={sectionRef}
-      className="bg-[#FFFAEA] h-screen flex justify-between  overflow-hidden relative"
-    >
-      <div className="h-[70%] flex items-center  text-6xl font-extrabold  w-1/2 pl-[10%] mt-[5%]">
-        <h2 className="text-[#003046]">
-          <span className="text-[#F7B801] mt-2">One-Step</span>
-          <br /> Technology
-        </h2>
-      </div>
-      <div className="h-[70%] w-1/2 pl-[5%]  z-20 mt-[5%]">
-        <div className="relative w-fit h-full">
-          <div
-            id="T-end"
-            className="flex items-center px-6 py-2 bg-[#FFDF74] gap-x-3 rounded-3xl absolute top-14 w-fit -left-32 "
-          >
-            <img
-              className="h-8 w-8"
-              src="/end-to-end-tech.png"
-              alt="end to end"
-            />
-            <p className="text-black text-sm font-semibold ">
-              End-to-End <br /> Technology
-            </p>
-          </div>
-          <div
-            id="T-data"
-            className="flex items-center px-6 py-2 bg-[#FFDF74] gap-x-3 rounded-3xl absolute bottom-14 w-fit -left-24 "
-          >
-            <img
-              className="h-8 w-8"
-              src="/data_and_analytics.png"
-              alt="end to end"
-            />
-            <p className="text-black text-sm font-semibold ">
-              Data & <br /> Analytics
+    <section className="h-screen relative w-full" id="feature">
+      {/* bg */}
+      <div className="h-[50vh] bg-[#F7BB30] w-full"></div>
+      <div className="h-[50vh] bg-transparent w-full"></div>
+
+      {/* actual content starts here */}
+      <div className="absolute inset-0 sec-container">
+        <div className="h-[15%] relative">
+          <h1 className="text-[#1D234E] text-5xl text-center font-medium absolute top-1/2 left-1/2 -translate-x-1/2 whitespace-nowrap -translate-y-1/2">
+            One-Stop Technology
+          </h1>
+        </div>
+        <div className="h-[70%] flex justify-around">
+          <div className="w-fit h-[80%] flex flex-col items-center relative ">
+            <h1 className="text-3xl mb-[5%] text-[#1D234E] font-medium">
+              Technology
+            </h1>
+            <div className="relative h-full w-fit">
+              {leftPhoneChipData.map((data) => (
+                <Chip key={data.icon} {...data} />
+              ))}
+              <img className="h-full" src="/phone2.png" alt="phone" />
+            </div>
+            <p className="text-center max-w-[60%] text-[#505C6E] mt-4">
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+              nonumy eirmod tempor
             </p>
           </div>
 
-          <div
-            id="T-ai"
-            className="flex items-center px-6 py-2 bg-[#FFDF74] gap-x-3 rounded-3xl absolute top-10 w-fit  -right-44"
-          >
-            <img className="h-8 w-8" src="/ai.png" alt="end to end" />
-            <p className="text-black text-sm font-semibold ">
-              AI Based <br /> Recommendation{" "}
-            </p>
-          </div>
+          <div className="custom-vr"></div>
 
-          <div
-            id="T-retarget"
-            className="flex items-center px-6 py-2 bg-[#FFDF74] gap-x-3 rounded-3xl absolute bottom-32 w-fit -right-32 "
-          >
-            <img className="h-8 w-8" src="/retargeting.png" alt="end to end" />
-            <p className="text-black text-sm font-semibold ">
-              Retargeting &
-              <br />
-              Loyalty
+          <div className="w-fit h-[80%] flex flex-col items-center relative ">
+            <h1 className="text-3xl mb-[5%] text-[#1D234E] font-medium">
+              Operations
+            </h1>
+            <div className="relative h-full w-fit">
+              {rightPhoneChipData.map((data) => (
+                <Chip key={data.icon} {...data} />
+              ))}
+              <img className="h-full" src="/phone2.png" alt="phone" />
+            </div>
+            <p className="max-w-[60%] text-center text-[#505C6E] mt-4">
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+              nonumy eirmod tempor
             </p>
           </div>
-          <img className="h-full" src="/phone2.png" alt="phone" />
         </div>
       </div>
-      <h2
-        className="capitalize opacity-70 -bottom-6 text-center text-9xl z-10 absolute font-bold w-full text-[#FFEFB9]"
-        style={{
-          fontSize: "min(12vw, 9rem)", // Responsive font size
-          lineHeight: "1",
-          bottom: "-0.1em", // Adjust based on your needs
-          letterSpacing: "-0.02em",
-        }}
-      >
-        {" "}
-        TECHNOLOGY
-      </h2>
     </section>
   );
 }
