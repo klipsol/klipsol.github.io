@@ -100,7 +100,7 @@ export default function Hero() {
             <div className="flex gap-x-4 mt-[15%] justify-start text-primaryTextColor">
               <div className="bg-[#FFF9E6] rounded-2xl p-4 whitespace-nowrap text-xl relative">
                 <h1
-                  className="absolute -z-10 -top-9 font-medium text-5xl left-1/2 text-black/20 "
+                  className="absolute -top-7 font-medium text-5xl left-1/2 text-[#9E8637] "
                   style={{ transform: "translate(-50%)" }}
                 >
                   01
@@ -112,7 +112,7 @@ export default function Hero() {
               </div>
               <div className="bg-[#FFF9E6] rounded-2xl font-medium p-4 whitespace-nowrap text-xl relative">
                 <h1
-                  className="absolute -z-10 -top-9 text-5xl left-1/2 text-black/20"
+                  className="absolute -top-7 text-5xl left-1/2 text-[#9E8637]"
                   style={{ transform: "translate(-50%)" }}
                 >
                   02
@@ -124,7 +124,7 @@ export default function Hero() {
               </div>
               <div className="bg-[#FFF9E6] rounded-2xl p-4 whitespace-nowrap text-xl relative">
                 <h1
-                  className="absolute -z-10 -top-9 font-medium text-5xl left-1/2 text-black/20"
+                  className="absolute -top-7 font-medium text-5xl left-1/2 text-[#9E8637]"
                   style={{ transform: "translate(-50%)" }}
                 >
                   03
@@ -138,16 +138,21 @@ export default function Hero() {
 
             {/* bottome section */}
             <div className="text-primaryTextColor absolute bottom-7">
-              <h1 className="py-4 text-3xl ">One Stop Solutions</h1>
+              <h1 className="py-4 text-2xl xxl:text-3xl">
+                Everything To Embed Brands On Your Site
+              </h1>
               <div className="flex gap-x-3  md:text-base lg:text-lg 2xl:text-2xl ">
-                <div className="bg-[#FEF4D3] p-2 py-3 rounded-lg ">
+                <div className="bg-[#FEF4D3] p-3 py-1.5 rounded-lg  relative">
                   Technology <br /> Operations
+                  <div className="absolute h-full bg-[#F7BB30] w-1.5 left-0 top-0"></div>
                 </div>
-                <div className="bg-[#FEF4D3] p-2 py-3 rounded-lg">
+                <div className="bg-[#FEF4D3] p-3 py-1.5 rounded-lg relative">
                   Direct From <br /> Brand
+                  <div className="absolute h-full bg-[#F7BB30] w-1.5 left-0 top-0"></div>
                 </div>
-                <div className="bg-[#FEF4D3] p-2 py-3 rounded-lg">
+                <div className="bg-[#FEF4D3] p-3 py-1.5 rounded-lg relative">
                   Less than 5 Days <br /> Go Live
+                  <div className="absolute h-full bg-[#F7BB30] w-1.5 left-0 top-0"></div>
                 </div>
               </div>
             </div>

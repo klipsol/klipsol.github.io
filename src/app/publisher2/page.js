@@ -10,6 +10,8 @@ import Technology from "./Components/Technology/Technology";
 import Operations from "./Components/Operation/Operation";
 import EveryThingFree from "./Components/EveryThingFree/EveryThingFree";
 import Final from "./Components/Final/Final";
+import { Testimonial } from "./Components/Testimonial/Testimonial";
+import { DirectRelationShip } from "./Components/DirectRelationShip/DirectRelationShip";
 
 export default function Publisher2() {
   return (
@@ -20,9 +22,11 @@ export default function Publisher2() {
         <LifeTimeValue />
         <FirstParty />
         <Technology />
-        <Operations />
+        {/* <Operations /> */}
+        <DirectRelationShip />
         <EveryThingFree />
         <Final />
+        <Testimonial />
       </SmoothScroll>
     </main>
   );

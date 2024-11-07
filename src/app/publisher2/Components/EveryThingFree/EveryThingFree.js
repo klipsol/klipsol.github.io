@@ -41,5 +41,43 @@ export default function EveryThingFree() {
   //     ScrollTrigger.getAll().forEach((trigger) => trigger.kill());
   //   };
   // }, []);
-  return <section ref={sectionRef} className="h-screen  relative"></section>;
+  return (
+    <section ref={sectionRef} className="h-screen flex relative">
+      {/* background */}
+      <div className="h-full w-1/2 bg-white"></div>
+      <div className="h-full w-1/2 bg-[#EEF0F8]"></div>
+
+      {/* actual content begins here */}
+
+      <div className="absolute inset-0 sec-container flex">
+        <div className="w-1/2 h-full flex-col flex items-center ">
+          <div className="flex flex-col items-center h-[80%]">
+            <h1 className="text-4xl text-[#1D234E] my-[10%] text-center font-medium">
+              We Earn <br /> After You Do
+            </h1>
+            <div className="pb-10">
+              <img src="/laptop.png" className="h-[85%]" alt="laptop" />
+            </div>
+          </div>
+          <p className="text-[#505C6E] text-center max-w-[60%] text-lg">
+            No Upfront Costs. You win, we win.
+          </p>
+        </div>
+        <div className="w-1/2 h-full flex-col flex items-center">
+          <div className="flex flex-col items-center h-[80%]">
+            <h1 className="text-4xl text-[#1D234E] my-[10%] text-center font-medium">
+              Go Live Within Go <br />{" "}
+              <span className="font-bold">1-5 Days</span>
+            </h1>
+            <div className="h-[70%]">
+              <img src="/phone2.png" className="h-[90%]" alt="laptop" />
+            </div>
+          </div>
+          <p className="text-[#505C6E] text-center max-w-[60%] text-lg">
+            Plug & play widgets for website and app.
+          </p>
+        </div>
+      </div>
+    </section>
+  );
 }

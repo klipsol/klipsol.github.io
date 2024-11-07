@@ -5,44 +5,6 @@ import React, { useEffect, useRef } from "react";
 export default function Operations() {
   const sectionRef = useRef(null);
 
-  useEffect(() => {
-    gsap.registerPlugin(ScrollTrigger);
-
-    const tl = gsap.timeline({
-      scrollTrigger: {
-        trigger: sectionRef.current,
-        start: "top center",
-        toggleActions: "play none none reverse",
-      },
-    });
-
-    // Pop animation for each element
-    ["#O-brand", "#O-catalogue", "#O-payments", "#O-customer"].forEach(
-      (target, index) => {
-        tl.fromTo(
-          target,
-          {
-            opacity: 0,
-            scale: 0.5,
-            y: 50,
-          },
-          {
-            opacity: 1,
-            scale: 1,
-            y: 0,
-            duration: 0.7,
-            ease: "back.out(1.7)",
-          },
-          index * 0.4
-        );
-      }
-    );
-
-    return () => {
-      tl.kill();
-      ScrollTrigger.getAll().forEach((trigger) => trigger.kill());
-    };
-  }, []);
   return (
     <section
       ref={sectionRef}

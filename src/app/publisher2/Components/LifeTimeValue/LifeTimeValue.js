@@ -64,11 +64,10 @@ export default function LifeTimeValue() {
       <div className="w-[40%] flex flex-col justify-center px-8 gap-y-3">
         <h1 className="text-[#023046]/20 text-6xl font-bold">02</h1>
         <h1 className="text-5xl whitespace-nowrap text-[#1D234E] font-medium">
-          Lifetime Value
+          Higher <br /> Lifetime Value
         </h1>
         <p className="text-base text-[#505C6E]">
-          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-          nonumy eirmod tempo
+          5-10x higher conversion and deeper user engagement.
         </p>
 
         <ul className="space-y-2 text-[#505C6E] text-base">

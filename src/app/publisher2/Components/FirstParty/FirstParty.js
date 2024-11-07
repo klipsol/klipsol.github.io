@@ -69,11 +69,10 @@ export default function FirstParty() {
       <div className="w-[40%] flex flex-col justify-center px-8 gap-y-3">
         <h1 className="text-[#023046]/20 text-6xl font-bold">03</h1>
         <h1 className="text-5xl whitespace-nowrap text-[#1D234E] font-medium">
-          First-Party Data
+          Better <br /> First-Party Data
         </h1>
         <p className="text-base text-[#505C6E]">
-          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-          nonumy eirmod tempo
+          First party access to customers, behaviour and order data
         </p>
 
         <ul className="space-y-2 text-[#505C6E] text-base">

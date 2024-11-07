@@ -70,10 +70,11 @@ export default function Feature() {
       </div>
       <div className="w-[40%] flex flex-col justify-center px-8 gap-y-3">
         <h1 className="text-[#023046]/20 text-6xl font-bold">01</h1>
-        <h1 className="text-5xl  text-[#1D234E] font-medium">User Delight</h1>
+        <h1 className="text-5xl  text-[#1D234E] font-medium">
+          Better <br /> User Experience
+        </h1>
         <p className="text-base text-[#505C6E]">
-          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-          nonumy eirmod tempo
+          Complete browsing and checkout within your site.
         </p>
       </div>
       <hr className="bottom-0 absolute w-full custom-hr" />
