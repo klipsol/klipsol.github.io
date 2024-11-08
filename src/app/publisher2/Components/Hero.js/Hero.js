@@ -81,6 +81,7 @@ export default function Hero() {
       <section className="h-screen relative overflow-hidden bg-white">
         <Navbar />
         {/* yellow image layout  */}
+
         <img
           src="/yellow-layout.svg"
           className="absolute -top-[10%] w-full xxl:top-0 z-10"
@@ -91,14 +92,21 @@ export default function Hero() {
           {/* left section */}
           <div className="z-10">
             <h2 className="text-white text-xl md:text-3xl mt-[25%] xxl:text-5xl">
-              <span className="text-[#023046] text-2xl xxl:text-6xl md:text-4xl font-extrabold pt-3">
-                On-Site Checkout
+              <span className="text-white text-2xl xxl:text-6xl md:text-4xl  pt-3">
+                <span className="text-[#023046] font-extrabold">Monetize</span>{" "}
+                By Embedding
+                <br /> Brands Within Your Site
               </span>
-              <br /> to Drive Monetization &:
             </h2>
 
             {/* description */}
-            <div className="flex gap-x-4 mt-[15%] justify-start text-primaryTextColor">
+            <h2 className="text-2xl text-[#023046] font-extrabold mt-[5%]">
+              <HighlightedText
+                text="Drive"
+                wrapperClass="bg-[#FEF4D4] bottom-1"
+              />
+            </h2>
+            <div className="flex gap-x-4 mt-[8%] justify-start text-primaryTextColor">
               <div className="bg-[#FFF9E6] rounded-2xl p-4 whitespace-nowrap text-xl relative">
                 <h1
                   className="absolute -top-7 font-medium text-5xl left-1/2 text-[#9E8637] "
@@ -161,11 +169,11 @@ export default function Hero() {
           </div>
 
           {/* right section */}
-          <div className="h-full rounded-b-full bg-red z-10 w-[51%] bg-[#003045]">
-            <div className="mt-[20%] ml-[13%]">
+          <div className="h-[90%] rounded-b-full bg-red z-10 w-[51%] bg-[#003045]">
+            <div className="flex justify-center items-center h-full">
               <DPVideo
                 id="videoDiv"
-                className="h-[60vh] object-cover"
+                className="h-[60%] w-fit object-cover"
                 src="/HeroVideo.mp4"
               />
             </div>

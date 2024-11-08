@@ -1,10 +1,11 @@
+import Marquee from "../Marquee/Marquee";
+
 export const Testimonial = () => (
-  <section className="h-screen sec-container w-full">
-    <div className="h-[60%] ">
-      <h1 className="mt-[10%] text-5xl font-medium">
-        Largest Publishers & 1500+ Brands
-      </h1>
-    </div>
-    <div className="h-[40%]"></div>
+  <section className="h-screen w-full bg-[#EEF0F8] pt-[5%]">
+    <h1 className=" mb-[3%] sec-container text-[#013046] text-5xl font-bold">
+      Brands <span className="font-medium">&</span> Publishers
+    </h1>
+
+    <Marquee className="bg-[#FEF4D4] px-3 py-3" />
   </section>
 );

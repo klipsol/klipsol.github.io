@@ -1,6 +1,7 @@
 import React from "react";
+import { twMerge } from "tailwind-merge";
 
-const Marquee = () => {
+const Marquee = ({ className }) => {
   const brands = [
     {
       name: "Unilever",
@@ -33,7 +34,7 @@ const Marquee = () => {
   ];
 
   return (
-    <div className="pb-12  bg-white">
+    <div className="pb-12">
       {/* Heading Section */}
       {/* <div className="text-center mb-12">
         <h2 className="text-2xl md:text-3xl font-bold text-gray-800 inline">
@@ -61,7 +62,12 @@ const Marquee = () => {
         <div className="flex animate-marquee whitespace-nowrap">
           {brands.map((brand, index) => (
             <div key={index} className="flex items-center justify-center mx-4">
-              <div className="bg-[#FFFDF5] rounded-3xl px-5 py-4 shadow-sm  transition-shadow">
+              <div
+                className={twMerge(
+                  "bg-[#FFFDF5] rounded-3xl px-5 py-4 shadow-sm  transition-shadow",
+                  className
+                )}
+              >
                 <img
                   src={brand.img}
                   alt={brand.name}
@@ -76,7 +82,12 @@ const Marquee = () => {
         <div className="absolute top-0 flex animate-marquee2 whitespace-nowrap">
           {brands.map((brand, index) => (
             <div key={index} className="flex items-center justify-center mx-4">
-              <div className="bg-[#FFFDF5] rounded-3xl px-5 py-4 shadow-sm  transition-shadow">
+              <div
+                className={twMerge(
+                  "bg-[#FFFDF5] rounded-3xl px-5 py-4 shadow-sm  transition-shadow",
+                  className
+                )}
+              >
                 <img
                   src={brand.img}
                   alt={brand.name}

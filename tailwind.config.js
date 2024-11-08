@@ -29,11 +29,26 @@ module.exports = {
           "50%": { transform: "translateY(24px)" },
           "100%": { transform: "translateY(-0)" },
         },
+        ping: {
+          "0%": {
+            transform: "scale(1)",
+            opacity: 1,
+          },
+          "25%": { transform: "scale(1.2)", opacity: 1 },
+          "50%": { transform: "scale(1.4)", opacity: 1 },
+          "75%": { transform: "scale(1.5)", opacity: 0.8 },
+          "100%": {
+            transform: "scale(1.7)",
+            opacity: 0,
+          },
+        },
       },
       animation: {
         "scroll-mouse": "scroll-mouse 1.5s infinite",
         marquee: "marquee 25s linear infinite",
         marquee2: "marquee2 25s linear infinite",
+        "ping-slow": "ping 3s cubic-bezier(0, 0, 0.2, 1) infinite",
+        fade: "fade 0.5s ease-in-out",
       },
       colors: {
         background: "var(--background)",

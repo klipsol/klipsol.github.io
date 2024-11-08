@@ -9,14 +9,23 @@ export default function Navbar() {
         <img src="/DpandaLogo.png" alt="logo" className="max-h-10" />
 
         <div className="flex md:gap-x-6 items-center pt-4 w-full md:w-fit md:pt-0 justify-between">
-          <button className="rounded-[24px] bg-primaryBg px-4 py-1 text-primaryTextColor font-semibold">
-            Free Demo
-          </button>
+          <div className="flex flex-col cursor-pointer">
+            <div className="flex gap-x-2 items-center">
+              <span className="bg-green-400 w-2 h-2 rounded-full animate-ping"></span>
+              <span className="text-white font-medium">Live Preview</span>
+            </div>
+            <p className="text-[#29D96D] text-[10px] text-center">
+              for pinterest
+            </p>
+          </div>
           <button
-            className="rounded-[24px] bg-secondaryBg px-4 py-1 text-white font-semibold"
+            className="rounded-[24px] bg-secondaryBg px-4 py-1 text-white font-medium"
             variant="primary"
           >
-            Book a call
+            ROI Calculator
+          </button>
+          <button className="rounded-[24px] bg-primaryBg px-4 py-1 text-primaryTextColor font-medium">
+            Talk to us
           </button>
         </div>
       </div>
