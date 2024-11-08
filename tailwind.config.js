@@ -16,6 +16,14 @@ module.exports = {
         xxl: "1800px", // Custom: screens larger than 1800px
       },
       keyframes: {
+        marquee: {
+          "0%": { transform: "translateX(0%)" },
+          "100%": { transform: "translateX(-100%)" },
+        },
+        marquee2: {
+          "0%": { transform: "translateX(100%)" },
+          "100%": { transform: "translateX(0%)" },
+        },
         "scroll-mouse": {
           "0%": { transform: "translateY(0)" },
           "50%": { transform: "translateY(24px)" },
@@ -24,6 +32,8 @@ module.exports = {
       },
       animation: {
         "scroll-mouse": "scroll-mouse 1.5s infinite",
+        marquee: "marquee 25s linear infinite",
+        marquee2: "marquee2 25s linear infinite",
       },
       colors: {
         background: "var(--background)",

@@ -2,6 +2,7 @@ import React, { useEffect, useRef } from "react";
 import DPVideo from "../DPVideo/DPVideo";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import HighlightedText from "../HighlightedText/HighlightedText";
 
 export default function FirstParty() {
   const sectionRef = useRef(null);
@@ -56,20 +57,27 @@ export default function FirstParty() {
     >
       <div className="w-[60%] flex gap-x-3">
         <div className="h-screen bg-[#EEF0F8] overflow-hidden w-[50%]">
-          <div className="flex h-full items-center justify-center">
-            <DPVideo className="h-full" src={"/vid2.mp4"} />
+          <div className="flex h-full  justify-center flex-col">
+            <DPVideo className="h-fit" src={"/fl.mp4"} />
+            <p className="text-center text-[#254652] text-lg font-medium">
+              Data Blackbox
+            </p>
           </div>
         </div>
         <div className="h-screen bg-[#FEF4D3] overflow-hidden w-[50%]">
-          <div className="flex h-full items-center justify-center">
-            <DPVideo className="h-full" src={"/vid3.mp4"} />
+          <div className="flex h-full  justify-center flex-col">
+            <DPVideo className="h-fit" src={"/fr.mp4"} />
+            <p className="text-center text-[#254652] text-lg font-medium">
+              Full Data Access
+            </p>
           </div>
         </div>
       </div>
       <div className="w-[40%] flex flex-col justify-center px-8 gap-y-3">
         <h1 className="text-[#023046]/20 text-6xl font-bold">03</h1>
-        <h1 className="text-5xl whitespace-nowrap text-[#1D234E] font-medium">
-          Better <br /> First-Party Data
+        <h1 className="text-4xl whitespace-nowrap text-[#1D234E] font-medium">
+          <HighlightedText text="Better" wrapperClass="bottom-2 h-[30%]" />{" "}
+          <br /> First-Party Data
         </h1>
         <p className="text-base text-[#505C6E]">
           First party access to customers, behaviour and order data
@@ -100,7 +108,7 @@ export default function FirstParty() {
           ))}
         </ul>
       </div>
-      <hr className="bottom-0 absolute w-full custom-hr" />
+      {/* <hr className="bottom-0 absolute w-full custom-hr" /> */}
     </section>
   );
 }

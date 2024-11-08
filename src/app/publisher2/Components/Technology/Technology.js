@@ -2,6 +2,7 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import React, { useEffect, useRef } from "react";
 import { Chip } from "../UI/Chip/Chip";
+import HighlightedText from "../HighlightedText/HighlightedText";
 
 export default function Technology() {
   const sectionRef = useRef(null);
@@ -132,7 +133,12 @@ export default function Technology() {
       <div className="absolute inset-0 sec-container">
         <div className="h-[15%] relative my-5">
           <h1 className="text-[#1D234E] text-4xl text-center font-medium absolute top-1/2 left-1/2 -translate-x-1/2 whitespace-nowrap -translate-y-1/2">
-            Everything To Embed Brands <br /> On Your Site
+            Everything To{" "}
+            <HighlightedText
+              text="Embed Brands"
+              wrapperClass="bg-[#ffdf74] bottom-2 h-[35%]"
+            />{" "}
+            <br /> On Your Site
           </h1>
         </div>
         <div className="h-[70%] flex justify-around">

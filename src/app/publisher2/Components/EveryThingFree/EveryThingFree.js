@@ -1,6 +1,7 @@
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import React, { useEffect, useRef } from "react";
+import HighlightedText from "../HighlightedText/HighlightedText";
 
 export default function EveryThingFree() {
   const sectionRef = useRef(null);
@@ -53,7 +54,11 @@ export default function EveryThingFree() {
         <div className="w-1/2 h-full flex-col flex items-center ">
           <div className="flex flex-col items-center h-[80%]">
             <h1 className="text-4xl text-[#1D234E] my-[10%] text-center font-medium">
-              We Earn <br /> After You Do
+              We Earn <br />{" "}
+              <HighlightedText
+                wrapperClass="bottom-2 h-[30%]"
+                text="when You Do"
+              />
             </h1>
             <div className="pb-10">
               <img src="/laptop.png" className="h-[85%]" alt="laptop" />
@@ -66,8 +71,8 @@ export default function EveryThingFree() {
         <div className="w-1/2 h-full flex-col flex items-center">
           <div className="flex flex-col items-center h-[80%]">
             <h1 className="text-4xl text-[#1D234E] my-[10%] text-center font-medium">
-              Go Live Within Go <br />{" "}
-              <span className="font-bold">1-5 Days</span>
+              Go <HighlightedText wrapperClass="bottom-2 h-[30%]" text="Live" />{" "}
+              Within <br /> <span className="font-bold">1-5 Days</span>
             </h1>
             <div className="h-[70%]">
               <img src="/phone2.png" className="h-[90%]" alt="laptop" />

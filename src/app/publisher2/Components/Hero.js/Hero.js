@@ -6,6 +6,7 @@ import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import DPVideo from "../DPVideo/DPVideo";
+import HighlightedText from "../HighlightedText/HighlightedText";
 
 export default function Hero() {
   const scroll = useScrollTo();
@@ -139,7 +140,8 @@ export default function Hero() {
             {/* bottome section */}
             <div className="text-primaryTextColor absolute bottom-7">
               <h1 className="py-4 text-2xl xxl:text-3xl">
-                Everything To Embed Brands On Your Site
+                <HighlightedText text={"Everything"} /> To Embed Brands On Your
+                Site
               </h1>
               <div className="flex gap-x-3  md:text-base lg:text-lg 2xl:text-2xl ">
                 <div className="bg-[#FEF4D3] p-3 py-1.5 rounded-lg  relative">

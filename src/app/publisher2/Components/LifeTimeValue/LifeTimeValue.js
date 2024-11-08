@@ -2,6 +2,7 @@ import React, { useEffect, useRef } from "react";
 import DPVideo from "../DPVideo/DPVideo";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import HighlightedText from "../HighlightedText/HighlightedText";
 
 export default function LifeTimeValue() {
   const sectionRef = useRef(null);
@@ -51,20 +52,27 @@ export default function LifeTimeValue() {
     >
       <div className="w-[60%] flex gap-x-3">
         <div className="h-screen bg-[#EEF0F8] overflow-hidden w-[50%]">
-          <div className="flex h-full items-center justify-center">
-            <DPVideo className="h-full" src={"/vid2.mp4"} />
+          <div className="flex h-full  justify-center flex-col">
+            <DPVideo className="h-fit" src={"/vid2.mp4"} />
+            <p className="text-center text-[#254652] text-lg font-medium">
+              Limited User Control
+            </p>
           </div>
         </div>
         <div className="h-screen bg-[#FEF4D3] overflow-hidden w-[50%]">
-          <div className="flex h-full items-center justify-center">
-            <DPVideo className="h-full" src={"/vid3.mp4"} />
+          <div className="flex h-full  justify-center flex-col">
+            <DPVideo className="h-fit" src={"/vid3.mp4"} />
+            <p className="text-center text-[#254652] text-lg font-medium">
+              Full User Control
+            </p>
           </div>
         </div>
       </div>
       <div className="w-[40%] flex flex-col justify-center px-8 gap-y-3">
         <h1 className="text-[#023046]/20 text-6xl font-bold">02</h1>
-        <h1 className="text-5xl whitespace-nowrap text-[#1D234E] font-medium">
-          Higher <br /> Lifetime Value
+        <h1 className="text-4xl whitespace-nowrap text-[#1D234E] font-medium">
+          <HighlightedText text="Higher" wrapperClass="bottom-2 h-[30%]" />{" "}
+          <br /> Lifetime Value
         </h1>
         <p className="text-base text-[#505C6E]">
           5-10x higher conversion and deeper user engagement.

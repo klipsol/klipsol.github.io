@@ -1,4 +1,5 @@
 import DPVideo from "../DPVideo/DPVideo";
+import HighlightedText from "../HighlightedText/HighlightedText";
 
 const listItems = [
   "Personalised Targeting",
@@ -17,7 +18,11 @@ export const DirectRelationShip = () => (
         </div>
         <div className="h-full rounded-3xl w-1/2 flex flex-col justify-center">
           <h2 className="text-4xl text-[#1D234E] font-medium">
-            Direct Relationship <br /> With Brands
+            Direct Relationship <br />{" "}
+            <HighlightedText
+              text="With Brands"
+              wrapperClass="bottom-2 h-[35%]"
+            />
           </h2>
 
           <ul className="space-y-2 text-[#505C6E] text-lg mt-[5%]">

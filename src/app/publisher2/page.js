@@ -12,12 +12,14 @@ import EveryThingFree from "./Components/EveryThingFree/EveryThingFree";
 import Final from "./Components/Final/Final";
 import { Testimonial } from "./Components/Testimonial/Testimonial";
 import { DirectRelationShip } from "./Components/DirectRelationShip/DirectRelationShip";
+import { BrandList } from "./Components/BrandList/BrandList";
 
 export default function Publisher2() {
   return (
     <main>
       <SmoothScroll>
         <Hero />
+        <BrandList />
         <Feature />
         <LifeTimeValue />
         <FirstParty />
