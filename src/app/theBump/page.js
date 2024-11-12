@@ -1,7 +1,54 @@
 'use client';
+import gsap from 'gsap';
 import Script from 'next/script';
+import { useEffect, useRef } from 'react';
 
 const Page = () => {
+  const buttonRef = useRef(null); // Reference to the button
+  const sectionRef = useRef(null);
+  const imageRef = useRef(null);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const sectionPosition = sectionRef.current.getBoundingClientRect().top;
+      const button = buttonRef.current;
+      const image = imageRef.current;
+      const windowHeight = window.innerHeight;
+
+      if (sectionPosition <= windowHeight && sectionPosition > 0) {
+        // If the section is visible in the viewport
+        gsap.to(button, {
+          zIndex: 20,
+          position: 'fixed',
+          bottom: '20px',
+          left: '50%',
+          opacity: 1,
+          x: '-50%',
+          ease: 'power1.out',
+        });
+        gsap.to(image, { opacity: 0.1, duration: 0.5, ease: 'power1.out' });
+      } else {
+        // Revert to normal flow
+        gsap.to(button, {
+          position: 'relative',
+          bottom: 'auto',
+          left: 'auto',
+          opacity: 0,
+          ease: 'power1.out',
+        });
+        gsap.to(image, { opacity: 1, duration: 0.5, ease: 'power1.out' });
+      }
+    };
+
+    // Add scroll event listener
+    window.addEventListener('scroll', handleScroll);
+
+    // Clean up the event listener on component unmount
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   const groupPurchase = () => {
     document.getElementById('dpw-recipe-btn').click();
   };
@@ -166,22 +213,8 @@ const Page = () => {
           <div className="max-w-3xl mx-auto p-6 border-2 border-black rounded-2xl my-10">
             <div className="content">
               <h3 className="text-2xl font-semibold">
-                A Step Change in Your Monetization Strategy
+                Dpanda Widget Key Features:
               </h3>
-              <p className="mt-4 leading-relaxed">
-                Dpanda embeds multi-brand checkout within your site, delivering
-                better user experiences, full control over first-party data, and
-                higher monetization. This drives unmatched personalization and
-                increases customer lifetime value while making traditional
-                monetization models obsolete.
-              </p>
-              <p className="mt-4 leading-relaxed">
-                Trusted by 1,500+ brands and 20 publishers reaching over 200
-                million users, Dpanda provides all the technology and
-                operational support needed for seamless integration.
-              </p>
-
-              <strong className="block mt-4">Key Features:</strong>
               <ul className="list-disc pl-6 mt-4 space-y-2">
                 <li>
                   Live Product Sync: Inventory, pricing, and images are synced
@@ -267,12 +300,15 @@ const Page = () => {
                   Product PDP
                 </button>
                 <button
-                  onClick={toggleCategory}
+                  onClick={toggleProductsSheet}
                   className="bg-blue-500 text-white py-2 px-6 rounded-md cursor-pointer flex-1"
                 >
                   Category
                 </button>
-                <button className="bg-blue-500 text-white py-2 px-6 rounded-md cursor-pointer flex-1">
+                <button
+                  onClick={toggleCategory}
+                  className="bg-blue-500 text-white py-2 px-6 rounded-md cursor-pointer flex-1"
+                >
                   Category Hierarchy
                 </button>
               </div>
@@ -296,6 +332,179 @@ const Page = () => {
                 {/* <p className="mt-4 text-center">3.2: Group Purchase</p> */}
               </div>
 
+              {/* Floating CTA */}
+              <p className="mt-8">
+                4. Our widget is designed to take up minimum possible space as
+                required. You can add a floating icon as your CTA. You can even
+                hyperlink shoppable texts as done{' '}
+                <span
+                  className="relative"
+                  dpw-commerce="true"
+                  data-dpa-widget-type="product"
+                  data-dpa-widget-theme="product-link"
+                  data-dpa-product-id="300082"
+                  data-dpa-element-text="on this one"
+                >
+                  <span className="hidden md:block absolute -right-24 top-4">
+                    <img src="https://imagekit.dpanda.in/publisher-banner/1731330410_arrow1.png" />
+                    <span className="absolute font-semibold -top-10 left-20 w-40">
+                      4. Text based CTA
+                    </span>
+                  </span>
+                </span>
+              </p>
+
+              <p className="mt-4">
+                5. We can add callouts above the fold after a certain depth
+              </p>
+              {/* Above the Fold Button */}
+              <div className="relative section mt-8" id="above-the-fold">
+                <span className="hidden md:block absolute right-24 top-16">
+                  <img src="https://imagekit.dpanda.in/publisher-banner/1731330410_arrow1.png" />
+                  <span className="absolute font-semibold -top-10 left-16 w-40">
+                    5. Floating Callouts
+                  </span>
+                </span>
+                {/* <button className="bg-blue-500 text-white py-2 px-16 rounded-md cursor-pointer block mx-auto">
+                  Above the Fold
+                </button> */}
+                <div
+                  ref={imageRef}
+                  className="img-blog"
+                  onClick={toggleShopStory}
+                >
+                  <img
+                    className="m-auto"
+                    src="https://imagekit.dpanda.in/publisher-banner/1719488194_Practic-b1.gif"
+                  />
+                </div>
+              </div>
+              <div
+                className="section mt-8"
+                id="above-the-fold"
+                ref={sectionRef}
+              >
+                <div
+                  ref={buttonRef}
+                  onClick={() => console.log('Toggle Shop Story')}
+                >
+                  <img
+                    src="https://imagekit.dpanda.in/publisher-banner/1719488194_Practic-b1.gif"
+                    alt="Blog"
+                  />
+                </div>
+              </div>
+              <p className="mt-4">
+                6. We can also add an entire shopping website inside - as you
+                can see using the shop CTA.
+              </p>
+              <p className="my-4 relative w-fit">
+                <a
+                  href="https://myfitness.dpanda.online/"
+                  target="_blank"
+                  className="bg-blue-500 text-white rounded-md p-2 hover:underline"
+                >
+                  Shop
+                </a>
+                <span className="hidden md:block absolute -left-24 top-0">
+                  <img src="https://imagekit.dpanda.in/publisher-banner/1731332697_arrow2.png" />
+                  <span className="absolute font-semibold -top-10 -left-16 w-40">
+                    6. Dedicated microsite for you
+                  </span>
+                </span>
+              </p>
+
+              <p>
+                7. We have built an intelligent system that leverages ML & AI to
+                scrape and find shoppable keywords within your blogs/articles
+                and map products to each keyword from the catalogue. The end
+                result looks as follows.
+              </p>
+
+              <div className="max-w-3xl mx-auto p-6">
+                {/* <!-- Recipe Header --> */}
+                <header className="text-center mb-8">
+                  <h2 className="text-2xl font-bold text-purple-600 mb-2">
+                    Crunchy Spiderweb Treats
+                  </h2>
+                  <p className="text-sm text-gray-700">
+                    Crunchy, sweet, and salty, these spiderwebs do it all. See
+                    how to make them!
+                  </p>
+                </header>
+
+                {/* <!-- Yield and Time --> */}
+                <div className="flex justify-between items-center mb-6">
+                  <div className="text-sm text-gray-500">
+                    <strong>Yield:</strong> 4 spiderwebs
+                  </div>
+                  <div className="text-sm text-gray-500">
+                    <strong>Total Time:</strong> 30 minutes
+                  </div>
+                </div>
+
+                {/* <!-- Ingredients Section --> */}
+                <section className="relative">
+                  <h2 className="text-2xl font-semibold text-purple-600 mb-4">
+                    Ingredients
+                  </h2>
+                  <ul className="list-disc pl-5 space-y-2">
+                    <li>32 pretzel sticks</li>
+                    <li>1 cup white chocolate chips</li>
+                    <li>1-2 lollipops or sprinkles (optional)</li>
+                  </ul>
+                  <span className="hidden md:block absolute -left-28 top-24">
+                    <img src="https://imagekit.dpanda.in/publisher-banner/1731332697_arrow2.png" />
+                    <span className="absolute font-semibold -top-12 -left-20 w-40">
+                      7. Shoppable keywords powered by ML & AI algorithms
+                    </span>
+                  </span>
+                </section>
+
+                {/* <!-- Instructions Section --> */}
+                <section className="mt-8">
+                  <h2 className="text-2xl font-semibold text-purple-600 mb-4">
+                    Instructions
+                  </h2>
+                  <p className="text-gray-700 mb-4">
+                    Follow these easy steps to create your spiderweb treats:
+                  </p>
+                  <ol className="list-decimal pl-6 space-y-1 text-gray-700">
+                    <li>
+                      Break pretzel sticks into smaller pieces and arrange them
+                      into spiderweb shapes on a parchment-lined baking sheet.
+                    </li>
+                    <li>
+                      Melt white chocolate chips in the microwave, stirring
+                      every 30 seconds until smooth.
+                    </li>
+                    <li>
+                      If desired, sprinkle lollipops or sprinkles on top for
+                      added fun and color.
+                    </li>
+                  </ol>
+                </section>
+              </div>
+
+              <h3 className="mt-8 text-2xl font-semibold">
+                A Step Change in Your Monetization Strategy
+              </h3>
+              <p className="mt-4 leading-relaxed">
+                Dpanda embeds multi-brand checkout within your site, delivering
+                better user experiences, full control over first-party data, and
+                higher monetization. This drives unmatched personalization and
+                increases customer lifetime value while making traditional
+                monetization models obsolete.
+              </p>
+              <p className="mt-4 leading-relaxed">
+                Trusted by 1,500+ brands and 20 publishers reaching over 200
+                million users, Dpanda provides all the technology and
+                operational support needed for seamless integration.
+              </p>
+
+              <h4 className="mt-8 text-2xl font-semibold">
+                Widget Integration Summary
+              </h4>
               <table className="w-full my-4 border-separate border-spacing-0 rounded-lg overflow-hidden shadow-lg">
                 <thead className="bg-gray-100">
                   <tr>
@@ -375,137 +584,6 @@ const Page = () => {
                   </tr>
                 </tbody>
               </table>
-
-              {/* Floating CTA */}
-              <p className="mt-8">
-                4. Our widget is designed to take up minimum possible space as
-                required. You can add a floating icon as your CTA. You can even
-                hyperlink shoppable texts as done{' '}
-                <span
-                  dpw-commerce="true"
-                  data-dpa-widget-type="product"
-                  data-dpa-widget-theme="product-link"
-                  data-dpa-product-id="300082"
-                  data-dpa-element-text="on this one"
-                ></span>
-              </p>
-
-              <p className="mt-4">
-                5. We can add callouts above the fold after a certain depth
-              </p>
-              <p className="mt-4">
-                6. We can also add an entire shopping website inside - as you
-                can see using the shop CTA.
-              </p>
-              <p className="my-4 relative w-fit">
-                <a
-                  href="https://myfitness.dpanda.online/"
-                  target="_blank"
-                  className="bg-blue-500 text-white rounded-md p-2 hover:underline"
-                >
-                  Shop
-                </a>
-                <span className="hidden md:block absolute -left-24 top-0">
-                  <img src="https://imagekit.dpanda.in/publisher-banner/1731332697_arrow2.png" />
-                  <span className="absolute font-semibold -top-10 -left-16 w-40">
-                    4. Dedicated microsite for you
-                  </span>
-                </span>
-              </p>
-
-              <p>
-                7. We have built an intelligent system that leverages ML & AI to
-                scrape and find shoppable keywords within your blogs/articles
-                and map products to each keyword from the catalogue. The end
-                result looks as follows.
-              </p>
-
-              <div className="max-w-3xl mx-auto p-6">
-                {/* <!-- Recipe Header --> */}
-                <header className="text-center mb-8">
-                  <h1 className="text-3xl font-bold text-purple-600 mb-2">
-                    Crunchy Spiderweb Treats
-                  </h1>
-                  <p className="text-lg text-gray-700">
-                    Crunchy, sweet, and salty, these spiderwebs do it all. See
-                    how to make them!
-                  </p>
-                </header>
-
-                {/* <!-- Yield and Time --> */}
-                <div className="flex justify-between items-center mb-6">
-                  <div className="text-sm text-gray-500">
-                    <strong>Yield:</strong> 4 spiderwebs
-                  </div>
-                  <div className="text-sm text-gray-500">
-                    <strong>Total Time:</strong> 30 minutes
-                  </div>
-                </div>
-
-                {/* <!-- Ingredients Section --> */}
-                <section className="relative">
-                  <h2 className="text-2xl font-semibold text-purple-600 mb-4">
-                    Ingredients
-                  </h2>
-                  <ul className="list-disc pl-5 space-y-2">
-                    <li>32 pretzel sticks</li>
-                    <li>1 cup white chocolate chips</li>
-                    <li>1-2 lollipops or sprinkles (optional)</li>
-                  </ul>
-                  <span className="hidden md:block absolute -left-28 top-24">
-                    <img src="https://imagekit.dpanda.in/publisher-banner/1731332697_arrow2.png" />
-                    <span className="absolute font-semibold -top-12 -left-20 w-40">
-                      5. Shoppable keywords powered by ML & AI algorithms
-                    </span>
-                  </span>
-                </section>
-
-                {/* <!-- Instructions Section --> */}
-                <section className="mt-8">
-                  <h2 className="text-2xl font-semibold text-purple-600 mb-4">
-                    Instructions
-                  </h2>
-                  <p className="text-gray-700 mb-4">
-                    Follow these easy steps to create your spiderweb treats:
-                  </p>
-                  <ol className="list-decimal pl-6 space-y-3 text-gray-700">
-                    <li>
-                      Break pretzel sticks into smaller pieces and arrange them
-                      into spiderweb shapes on a parchment-lined baking sheet.
-                    </li>
-                    <li>
-                      Melt white chocolate chips in the microwave, stirring
-                      every 30 seconds until smooth.
-                    </li>
-                    <li>
-                      Drizzle the melted white chocolate over the pretzel webs,
-                      creating a spiderweb pattern.
-                    </li>
-                    <li>
-                      If desired, sprinkle lollipops or sprinkles on top for
-                      added fun and color.
-                    </li>
-                    <li>
-                      Allow the chocolate to set for about 15 minutes at room
-                      temperature, or refrigerate to speed up the process.
-                    </li>
-                    <li>
-                      Once set, carefully remove the spiderwebs from the
-                      parchment paper and enjoy!
-                    </li>
-                  </ol>
-                </section>
-              </div>
-
-              {/* Above the Fold Button */}
-              <div className="section mt-8" id="above-the-fold">
-                <button className="bg-blue-500 text-white py-2 px-16 rounded-md cursor-pointer block mx-auto">
-                  Above the Fold
-                </button>
-                <div className="img-blog" onClick={toggleShopStory}>
-                  <img src="https://imagekit.dpanda.in/publisher-banner/1719488194_Practic-b1.gif" />
-                </div>
-              </div>
             </div>
           </div>
         </div>
