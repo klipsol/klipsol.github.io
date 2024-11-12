@@ -14,6 +14,7 @@ import { Testimonial } from "./Components/Testimonial/Testimonial";
 import { DirectRelationShip } from "./Components/DirectRelationShip/DirectRelationShip";
 import { BrandList } from "./Components/BrandList/BrandList";
 import InstantRoi from "./Components/InstantRoi/InstantRoi";
+import Footer from "./Components/Footer/Footer";
 
 export default function Publisher2() {
   return (
@@ -31,6 +32,7 @@ export default function Publisher2() {
         <EveryThingFree />
         <Final />
         <Testimonial />
+        <Footer />
       </SmoothScroll>
     </main>
   );

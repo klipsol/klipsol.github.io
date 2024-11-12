@@ -16,19 +16,19 @@ export default function InstantRoi() {
           <div className="mt-[20%] flex flex-col w-full gap-y-10 items-end text-[#505C6E]">
             <div className="flex justify-end w-[80%] gap-x-10 items-center">
               <h2 className="font-semibold">Cost</h2>
-              <div className="text-center py-1.5 px-4 min-w-[80%] inline-flex items-center justify-center h-[43px] bg-white rounded-l-3xl  text-[#505C6E]">
+              <div className="text-center  min-w-[80%] inline-flex items-center justify-center h-10 justify-center  bg-white rounded-l-3xl  text-[#505C6E]">
                 1M + per year
               </div>
             </div>
             <div className="flex justify-end w-[80%] gap-x-10 items-center">
               <h2 className="font-semibold">Time</h2>
-              <div className="text-center py-1.5 px-4 min-w-[80%] inline-flex items-center justify-center h-[43px] bg-white rounded-l-3xl  text-[#505C6E]">
+              <div className="text-center  min-w-[80%] inline-flex items-center justify-center h-10 justify-center  bg-white rounded-l-3xl  text-[#505C6E]">
                 1 + Year
               </div>
             </div>
             <div className="flex justify-end w-[80%] gap-x-10 items-center">
               <h2 className="font-semibold">Risk</h2>
-              <div className="text-center py-2 h-[60px] px-4 min-w-[80%] inline-flex items-center justify-center bg-white rounded-l-3xl  text-[#505C6E]">
+              <div className="text-center min-w-[80%] inline-flex items-center justify-center h-10 justify-center bg-white rounded-l-3xl  text-[#505C6E]">
                 Uncertain Quality & Output
               </div>
             </div>
@@ -41,20 +41,18 @@ export default function InstantRoi() {
           </div>
           <div className="mt-[20%] flex flex-col w-full gap-y-10 items-start text-[#505C6E]">
             <div className="flex justify-start w-[80%] gap-x-10 items-center">
-              <div className="text-center font-bold text-[#1ABE5A] custom-text-sm-medium  py-1.5 px-4 min-w-[80%] bg-[#FFE89C] rounded-r-3xl  text-[#505C6E]">
+              <div className="text-center font-bold text-[#9B771F] custom-text-sm-medium h-10 justify-center inline-flex items-center   min-w-[80%] bg-[#FFE89C] rounded-r-3xl  ">
                 Free
               </div>
             </div>
             <div className="flex justify-start w-[80%] gap-x-10 items-center">
-              <div className="text-center font-bold text-[#1ABE5A] custom-text-sm-medium  py-1.5 px-4 min-w-[80%] bg-[#FFE89C] rounded-r-3xl  text-[#505C6E]">
+              <div className="text-center font-bold text-[#9B771F] custom-text-sm-medium h-10 justify-center inline-flex items-center   min-w-[80%] bg-[#FFE89C] rounded-r-3xl  ">
                 {"< 5 Days"}
               </div>
             </div>
             <div className="flex justify-start w-[80%] gap-x-10 items-center">
-              <div className="text-center font-bold text-[#1ABE5A] custom-text-sm-medium h-[60px]  py-1.5 px-4 min-w-[80%] bg-[#FFE89C] rounded-r-3xl  text-[#505C6E]">
+              <div className="text-center font-bold text-[#9B771F] custom-text-sm-medium h-10 justify-center inline-flex items-center    min-w-[80%] bg-[#FFE89C] rounded-r-3xl  ">
                 Delivered Upfront
-                <br />
-                <br />
               </div>
             </div>
           </div>

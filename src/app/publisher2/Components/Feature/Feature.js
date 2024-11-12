@@ -6,6 +6,7 @@ import HighlightedText from "../HighlightedText/HighlightedText";
 
 export default function Feature() {
   const sectionRef = useRef(null);
+  const listItems = ["Higher Conversion"];
 
   // useEffect(() => {
   //   gsap.registerPlugin(ScrollTrigger);
@@ -84,6 +85,31 @@ export default function Feature() {
         <p className="custom-text-sm text-[#505C6E]">
           Complete browsing and checkout within your site.
         </p>
+
+        <ul className="space-y-2 text-[#505C6E] custom-text-sm">
+          {listItems.map((item, index) => (
+            <li
+              key={index}
+              className="flex items-center gap-3 whitespace-nowrap"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                className="w-5 h-5 flex-shrink-0"
+              >
+                <path
+                  d="M3 12.5l6 6 12-12"
+                  stroke="#22c55e"
+                  strokeWidth="3"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  fill="none"
+                />
+              </svg>
+              {item}
+            </li>
+          ))}
+        </ul>
       </div>
       <hr className="bottom-0 absolute w-full custom-hr" />
     </section>

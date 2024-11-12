@@ -6,12 +6,7 @@ import HighlightedText from "../HighlightedText/HighlightedText";
 
 export default function FirstParty() {
   const sectionRef = useRef(null);
-  const listItems = [
-    "Real Time Data",
-    <>
-      Future Proof <br /> CPMs{" "}
-    </>,
-  ];
+  const listItems = ["Brand & User Relationships", "Unmatched Personalisation"];
 
   // useEffect(() => {
   //   gsap.registerPlugin(ScrollTrigger);

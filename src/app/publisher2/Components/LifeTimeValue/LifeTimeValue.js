@@ -6,7 +6,7 @@ import HighlightedText from "../HighlightedText/HighlightedText";
 
 export default function LifeTimeValue() {
   const sectionRef = useRef(null);
-  const listItems = ["Conversion", "Sessions", "Repeat"];
+  const listItems = ["Higher Engagement", "Higher Retention"];
 
   // useEffect(() => {
   //   gsap.registerPlugin(ScrollTrigger);
