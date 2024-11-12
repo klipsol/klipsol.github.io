@@ -45,7 +45,7 @@ const Page = () => {
               // Fetch the product text on the page from the server
               const fetchProductsOnPagePerWidget = async () => {
                 const url = \`https://brand-images-dpanda.s3.ap-south-1.amazonaws.com/widget/shop_dpanda_in.json\`;
-                const currentPageUrl = 'https://shop.dpanda.in/blogs/blog/5-best-headphones-under-2000-with-limited-time-deals-1';
+                const currentPageUrl = 'https://thrivemarket.dpanda-buy-widget.pages.dev';
                 const response = await fetch(url);
                 const data = await response.json();
                 return data[currentPageUrl] || [];
