@@ -52,7 +52,7 @@ export default function Technology() {
           End-to-End <br /> Technology
         </>
       ),
-      className: "absolute top-[15%] -left-[60%]",
+      className: "absolute top-[15%] -left-[60%] ",
     },
     {
       icon: "/data_and_analytics.png",
@@ -92,7 +92,7 @@ export default function Technology() {
           Brand <br /> Supply
         </>
       ),
-      className: "absolute top-[15%] -left-[60%] bg-[#033046] text-white",
+      className: "absolute top-[15%] -left-[45%] bg-[#033046] text-white",
     },
     {
       icon: "/payment.png",
@@ -110,7 +110,7 @@ export default function Technology() {
           Catalogue & <br /> Pricing
         </>
       ),
-      className: "absolute top-[15%] -right-[80%] bg-[#033046] text-white",
+      className: "absolute top-[15%] -right-[60%] bg-[#033046] text-white",
     },
     {
       icon: "/cust.png",
@@ -119,7 +119,7 @@ export default function Technology() {
           Customer <br /> Service
         </>
       ),
-      className: "absolute bottom-[35%] -right-[60%] bg-[#033046] text-white",
+      className: "absolute bottom-[35%] -right-[50%] bg-[#033046] text-white",
     },
   ];
 
@@ -132,7 +132,7 @@ export default function Technology() {
       {/* actual content starts here */}
       <div className="absolute inset-0 sec-container">
         <div className="h-[15%] relative my-5">
-          <h1 className="text-[#1D234E] text-4xl text-center font-medium absolute top-1/2 left-1/2 -translate-x-1/2 whitespace-nowrap -translate-y-1/2">
+          <h1 className="text-[#1D234E] title text-center font-medium absolute top-1/2 left-1/2 -translate-x-1/2 whitespace-nowrap -translate-y-1/2">
             Everything To{" "}
             <HighlightedText
               text="Embed Brands"
@@ -143,16 +143,16 @@ export default function Technology() {
         </div>
         <div className="h-[70%] flex justify-around">
           <div className="w-fit h-[80%] flex flex-col items-center relative ">
-            <h1 className="text-3xl mb-[8%] text-[#1D234E] font-medium">
+            <h1 className="subtitle mb-[8%] text-[#1D234E] font-medium">
               Technology
             </h1>
-            <div className="relative h-full w-fit">
+            <div className="relative h-full  w-fit">
               {leftPhoneChipData.map((data) => (
                 <Chip key={data.icon} {...data} />
               ))}
               <img className="h-full" src="/phone2.png" alt="phone" />
             </div>
-            <p className="text-center max-w-[60%] text-[#505C6E] mt-4">
+            <p className="text-center max-w-[60%] custom-text-sm text-[#505C6E] mt-4">
               Highly configurable and 100% White-labelled.
             </p>
           </div>
@@ -160,7 +160,7 @@ export default function Technology() {
           <div className="custom-vr"></div>
 
           <div className="w-fit h-[80%] flex flex-col items-center relative ">
-            <h1 className="text-3xl mb-[8%] text-[#1D234E] font-medium">
+            <h1 className="subtitle mb-[8%] text-[#1D234E] font-medium">
               Operations
             </h1>
             <div className="relative h-full w-fit">
@@ -169,7 +169,7 @@ export default function Technology() {
               ))}
               <img className="h-full" src="/phone2.png" alt="phone" />
             </div>
-            <p className="max-w-[60%] text-center text-[#505C6E] mt-4">
+            <p className="max-w-[60%] text-center custom-text-sm text-[#505C6E] mt-4">
               For your complete peace of mind.
             </p>
           </div>

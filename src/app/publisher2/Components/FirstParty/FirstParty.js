@@ -55,7 +55,7 @@ export default function FirstParty() {
       className="sec-container h-screen relative flex  w-full"
       id="feature"
     >
-      <div className="w-[60%] flex gap-x-3">
+      <div className="w-[70%] flex gap-x-3">
         <div className="h-screen bg-[#EEF0F8] overflow-hidden w-[50%]">
           <div className="flex h-full  justify-center flex-col">
             <DPVideo className="h-fit" src={"/fl.mp4"} />
@@ -73,17 +73,17 @@ export default function FirstParty() {
           </div>
         </div>
       </div>
-      <div className="w-[40%] flex flex-col justify-center px-8 gap-y-3">
+      <div className="w-[30%] flex flex-col justify-center px-8 gap-y-3">
         <h1 className="text-[#023046]/20 text-6xl font-bold">03</h1>
         <h1 className="text-4xl whitespace-nowrap text-[#1D234E] font-medium">
           <HighlightedText text="Better" wrapperClass="bottom-2 h-[30%]" />{" "}
           <br /> First-Party Data
         </h1>
-        <p className="text-base text-[#505C6E]">
+        <p className=" text-[#505C6E] custom-text-sm">
           First party access to customers, behaviour and order data
         </p>
 
-        <ul className="space-y-2 text-[#505C6E] text-base">
+        <ul className="space-y-2 text-[#505C6E] custom-text-sm">
           {listItems.map((item, index) => (
             <li
               key={index}
@@ -108,7 +108,7 @@ export default function FirstParty() {
           ))}
         </ul>
       </div>
-      {/* <hr className="bottom-0 absolute w-full custom-hr" /> */}
+      <hr className="bottom-0 absolute w-full custom-hr" />
     </section>
   );
 }

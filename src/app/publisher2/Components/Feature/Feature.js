@@ -51,9 +51,9 @@ export default function Feature() {
       className="sec-container h-screen relative flex  w-full"
       id="feature"
     >
-      <div className="w-[60%] flex gap-x-3">
+      <div className="w-[70%] flex gap-x-3">
         <div className="h-screen bg-[#EEF0F8] rounded-t-3xl overflow-hidden w-[50%]">
-          <div className=" bg-[#C4C7D5] h-[10%] text-[#234651] py-3 text-3xl font-semibold flex justify-center">
+          <div className=" bg-[#C4C7D5] h-[10%] text-[#234651] py-3 subtitle font-semibold flex justify-center">
             Conventional
           </div>
           <div className="flex h-[80%] items-center justify-center">
@@ -64,7 +64,7 @@ export default function Feature() {
           </p>
         </div>
         <div className="h-screen bg-[#FEF4D3] rounded-t-3xl overflow-hidden w-[50%] ">
-          <div className=" bg-[#FFE89B] h-[10%] text-[#234651] py-3 text-3xl font-semibold flex justify-center">
+          <div className=" bg-[#FFE89B] h-[10%] text-[#234651] py-3 subtitle font-semibold flex justify-center">
             Dpanda
           </div>
           <div className="flex h-[80%] items-center justify-center">
@@ -75,13 +75,13 @@ export default function Feature() {
           </p>
         </div>
       </div>
-      <div className="w-[40%] flex flex-col justify-center px-8 gap-y-3">
+      <div className="w-[30%] flex flex-col justify-center px-8 gap-y-3">
         <h1 className="text-[#023046]/20 text-6xl font-bold">01</h1>
-        <h1 className="text-4xl  text-[#1D234E] font-medium">
+        <h1 className="title  text-[#1D234E] font-medium">
           <HighlightedText text="Better" wrapperClass="bottom-2 h-[30%]" />{" "}
           <br /> User Experience
         </h1>
-        <p className="text-base text-[#505C6E]">
+        <p className="custom-text-sm text-[#505C6E]">
           Complete browsing and checkout within your site.
         </p>
       </div>

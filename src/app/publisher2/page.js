@@ -13,6 +13,7 @@ import Final from "./Components/Final/Final";
 import { Testimonial } from "./Components/Testimonial/Testimonial";
 import { DirectRelationShip } from "./Components/DirectRelationShip/DirectRelationShip";
 import { BrandList } from "./Components/BrandList/BrandList";
+import InstantRoi from "./Components/InstantRoi/InstantRoi";
 
 export default function Publisher2() {
   return (
@@ -23,9 +24,10 @@ export default function Publisher2() {
         <Feature />
         <LifeTimeValue />
         <FirstParty />
+        <InstantRoi />
         <Technology />
         {/* <Operations /> */}
-        <DirectRelationShip />
+        {/* <DirectRelationShip /> */}
         <EveryThingFree />
         <Final />
         <Testimonial />

@@ -91,8 +91,8 @@ export default function Hero() {
         <div className="absolute inset-0 sec-container flex justify-between">
           {/* left section */}
           <div className="z-10">
-            <h2 className="text-white text-xl md:text-3xl mt-[25%] xxl:text-5xl">
-              <span className="text-white text-2xl xxl:text-6xl md:text-4xl  pt-3">
+            <h2 className="text-white lg:mt-[20%] 2xl:mt-[25%] ">
+              <span className="text-white title pt-3">
                 <span className="text-[#023046] font-extrabold">Monetize</span>{" "}
                 By Embedding
                 <br /> Brands Within Your Site
@@ -100,45 +100,36 @@ export default function Hero() {
             </h2>
 
             {/* description */}
-            <h2 className="text-2xl text-[#023046] font-extrabold mt-[5%]">
+            <h2 className="custom-text-sm-medium text-[#023046] font-extrabold mt-[5%]">
               <HighlightedText
                 text="Drive"
                 wrapperClass="bg-[#FEF4D4] bottom-1"
               />
             </h2>
             <div className="flex gap-x-4 mt-[8%] justify-start text-primaryTextColor">
-              <div className="bg-[#FFF9E6] rounded-2xl p-4 whitespace-nowrap text-xl relative">
-                <h1
-                  className="absolute -top-7 font-medium text-5xl left-1/2 text-[#9E8637] "
-                  style={{ transform: "translate(-50%)" }}
-                >
+              <div className="bg-[#FFF9E6] rounded-2xl lg:p-3 xxl:p-4 whitespace-nowrap text-xl relative h-fit">
+                <h1 className="absolute -top-4 font-medium title left-4 text-[#9E8637] ">
                   01
                 </h1>
-                <h1 className="font-medium">
+                <h1 className="font-medium custom-text-sm">
                   User <br />
                   Experience
                 </h1>
               </div>
-              <div className="bg-[#FFF9E6] rounded-2xl font-medium p-4 whitespace-nowrap text-xl relative">
-                <h1
-                  className="absolute -top-7 text-5xl left-1/2 text-[#9E8637]"
-                  style={{ transform: "translate(-50%)" }}
-                >
+              <div className="bg-[#FFF9E6] rounded-2xl font-medium lg:p-3 xxl:p-4 whitespace-nowrap text-xl relative h-fit">
+                <h1 className="absolute -top-4 title left-4 text-[#9E8637]">
                   02
                 </h1>
-                <h1 className="font-medium">
+                <h1 className="font-medium custom-text-sm">
                   Lifetime <br />
                   Value
                 </h1>
               </div>
-              <div className="bg-[#FFF9E6] rounded-2xl p-4 whitespace-nowrap text-xl relative">
-                <h1
-                  className="absolute -top-7 font-medium text-5xl left-1/2 text-[#9E8637]"
-                  style={{ transform: "translate(-50%)" }}
-                >
+              <div className="bg-[#FFF9E6] rounded-2xl lg:p-3 xxl:p-4 whitespace-nowrap text-xl relative w-fit h-fit">
+                <h1 className="absolute -top-4 font-medium title left-4 text-[#9E8637]">
                   03
                 </h1>
-                <h1 className="font-medium">
+                <h1 className="font-medium custom-text-sm">
                   First-Party <br />
                   Data
                 </h1>
@@ -147,21 +138,23 @@ export default function Hero() {
 
             {/* bottome section */}
             <div className="text-primaryTextColor absolute bottom-7">
-              <h1 className="py-4 text-2xl xxl:text-3xl">
-                <HighlightedText text={"Everything"} /> To Embed Brands On Your
-                Site
+              <h1 className="py-4 custom-text-sm-medium xxl:text-3xl">
+                <HighlightedText text={"Everything"} /> To Transact Brands On
+                Your Site Site
               </h1>
-              <div className="flex gap-x-3  md:text-base lg:text-lg 2xl:text-2xl ">
-                <div className="bg-[#FEF4D3] p-3 py-1.5 rounded-lg  relative">
-                  Technology <br /> Operations
+              <div className="flex gap-x-3  custom-text-xs">
+                <div className="bg-[#FEF4D3] p-5 py-1.5 rounded-lg  relative">
+                  Direct Relationship <br />
+                  With Brands
                   <div className="absolute h-full bg-[#F7BB30] w-1.5 left-0 top-0"></div>
                 </div>
-                <div className="bg-[#FEF4D3] p-3 py-1.5 rounded-lg relative">
-                  Direct From <br /> Brand
+                <div className="bg-[#FEF4D3] p-5 py-1.5 rounded-lg relative">
+                  Complete Tech & <br /> Operations Support
                   <div className="absolute h-full bg-[#F7BB30] w-1.5 left-0 top-0"></div>
                 </div>
-                <div className="bg-[#FEF4D3] p-3 py-1.5 rounded-lg relative">
-                  Less than 5 Days <br /> Go Live
+                <div className="bg-[#FEF4D3] p-5 py-1.5 rounded-lg relative">
+                  Plug & <br />
+                  Play Setup
                   <div className="absolute h-full bg-[#F7BB30] w-1.5 left-0 top-0"></div>
                 </div>
               </div>
@@ -169,7 +162,7 @@ export default function Hero() {
           </div>
 
           {/* right section */}
-          <div className="h-[90%] rounded-b-full bg-red z-10 w-[51%] bg-[#003045]">
+          <div className="h-[95%] rounded-b-full bg-red z-10 w-[45%] bg-[#003045]">
             <div className="flex justify-center items-center h-full">
               <DPVideo
                 id="videoDiv"

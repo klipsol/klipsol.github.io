@@ -35,33 +35,12 @@ const Marquee = ({ className }) => {
 
   return (
     <div className="pb-12">
-      {/* Heading Section */}
-      {/* <div className="text-center mb-12">
-        <h2 className="text-2xl md:text-3xl font-bold text-gray-800 inline">
-          Trusted by{" "}
-          <span className="relative">
-            <span className="relative z-10">1500+ Brands</span>
-            <span className="absolute bottom-0 left-0 w-full h-3 bg-yellow-200 -z-0"></span>
-          </span>
-          , Publishers with{" "}
-          <span className="relative">
-            <span className="relative z-10">200M+ Users</span>
-            <span className="absolute bottom-0 left-0 w-full h-3 bg-yellow-200 -z-0"></span>
-          </span>{" "}
-          and{" "}
-          <span className="relative">
-            <span className="relative z-10">Marquee Investors</span>
-            <span className="absolute bottom-0 left-0 w-full h-3 bg-yellow-200 -z-0"></span>
-          </span>
-        </h2>
-      </div> */}
-
       {/* Marquee Section */}
       <div className="relative flex overflow-hidden">
         {/* First Animation */}
         <div className="flex animate-marquee whitespace-nowrap">
           {brands.map((brand, index) => (
-            <div key={index} className="flex items-center justify-center mx-4">
+            <div key={index} className="flex items-center justify-center mx-1">
               <div
                 className={twMerge(
                   "bg-[#FFFDF5] rounded-3xl px-5 py-4 shadow-sm  transition-shadow",
@@ -71,7 +50,7 @@ const Marquee = ({ className }) => {
                 <img
                   src={brand.img}
                   alt={brand.name}
-                  className="h-12 object-contain"
+                  className="h-8 object-contain"
                 />
               </div>
             </div>
@@ -81,7 +60,7 @@ const Marquee = ({ className }) => {
         {/* Second Animation (duplicate) */}
         <div className="absolute top-0 flex animate-marquee2 whitespace-nowrap">
           {brands.map((brand, index) => (
-            <div key={index} className="flex items-center justify-center mx-4">
+            <div key={index} className="flex items-center justify-center mx-1">
               <div
                 className={twMerge(
                   "bg-[#FFFDF5] rounded-3xl px-5 py-4 shadow-sm  transition-shadow",
@@ -91,7 +70,7 @@ const Marquee = ({ className }) => {
                 <img
                   src={brand.img}
                   alt={brand.name}
-                  className="h-12 object-contain"
+                  className="h-8 object-contain"
                 />
               </div>
             </div>

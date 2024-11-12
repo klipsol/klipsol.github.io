@@ -50,7 +50,7 @@ export default function LifeTimeValue() {
       className="sec-container h-screen relative flex  w-full"
       id="feature"
     >
-      <div className="w-[60%] flex gap-x-3">
+      <div className="w-[70%] flex gap-x-3">
         <div className="h-screen bg-[#EEF0F8] overflow-hidden w-[50%]">
           <div className="flex h-full  justify-center flex-col">
             <DPVideo className="h-fit" src={"/vid2.mp4"} />
@@ -68,17 +68,17 @@ export default function LifeTimeValue() {
           </div>
         </div>
       </div>
-      <div className="w-[40%] flex flex-col justify-center px-8 gap-y-3">
+      <div className="w-[30%] flex flex-col justify-center px-8 gap-y-3">
         <h1 className="text-[#023046]/20 text-6xl font-bold">02</h1>
         <h1 className="text-4xl whitespace-nowrap text-[#1D234E] font-medium">
           <HighlightedText text="Higher" wrapperClass="bottom-2 h-[30%]" />{" "}
           <br /> Lifetime Value
         </h1>
-        <p className="text-base text-[#505C6E]">
+        <p className="custom-text-sm text-[#505C6E]">
           5-10x higher conversion and deeper user engagement.
         </p>
 
-        <ul className="space-y-2 text-[#505C6E] text-base">
+        <ul className="space-y-2 text-[#505C6E] custom-text-sm">
           {listItems.map((item, index) => (
             <li
               key={index}
