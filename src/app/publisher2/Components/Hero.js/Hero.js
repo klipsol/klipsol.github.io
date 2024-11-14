@@ -1,12 +1,8 @@
-import React, { useRef } from "react";
-import Navbar from "../Nav/Navbar";
-import Button from "../UI/Buttons/Button";
-import { useScrollTo } from "@/app/hooks/useSmoothScroll";
-import { useGSAP } from "@gsap/react";
-import gsap from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-import DPVideo from "../DPVideo/DPVideo";
-import HighlightedText from "../HighlightedText/HighlightedText";
+import { useScrollTo } from '@/app/hooks/useSmoothScroll';
+import { useRef } from 'react';
+import DPVideo from '../DPVideo/DPVideo';
+import HighlightedText from '../HighlightedText/HighlightedText';
+import Navbar from '../Nav/Navbar';
 
 export default function Hero() {
   const scroll = useScrollTo();
@@ -91,7 +87,7 @@ export default function Hero() {
           <div className="h-[90%] w-1/2 relative ">
             <div className="text-primaryTextColor absolute bottom-0">
               <h1 className="py-4 custom-text-sm-medium xxl:text-3xl">
-                <HighlightedText text={"Everything"} /> To Transact Brands On
+                <HighlightedText text={'Everything'} /> To Transact Brands On
                 Your Site Site
               </h1>
               <div className="flex gap-x-3  custom-text-xs">
@@ -119,7 +115,7 @@ export default function Hero() {
           <div className="z-10">
             <h2 className="text-white lg:mt-[20%] 2xl:mt-[15%] ">
               <span className="text-white title pt-3">
-                <span className="text-[#023046] font-extrabold">Monetize</span>{" "}
+                <span className="text-[#023046] font-extrabold">Monetize</span>{' '}
                 By Embedding
                 <br /> Brands Within Your Site
               </span>
