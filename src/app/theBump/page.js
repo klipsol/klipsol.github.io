@@ -1,73 +1,12 @@
-'use client';
-import gsap from 'gsap';
 import Script from 'next/script';
-import { useEffect, useRef } from 'react';
+import CTAsSection from './Components/CTAsSection';
+import FloatingCallout from './Components/FloatingCallout';
+import WidgetSummaryTable from './Components/WidgetSummaryTable';
 
 const Page = () => {
-  const buttonRef = useRef(null); // Reference to the button
-  const sectionRef = useRef(null);
-  const imageRef = useRef(null);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      const sectionPosition = sectionRef.current.getBoundingClientRect().top;
-      const button = buttonRef.current;
-      const image = imageRef.current;
-      const windowHeight = window.innerHeight;
-
-      if (sectionPosition <= windowHeight && sectionPosition > 0) {
-        // If the section is visible in the viewport
-        gsap.to(button, {
-          zIndex: 20,
-          position: 'fixed',
-          bottom: '20px',
-          left: '50%',
-          opacity: 1,
-          x: '-50%',
-          ease: 'power1.out',
-        });
-        gsap.to(image, { opacity: 0.1, duration: 0.5, ease: 'power1.out' });
-      } else {
-        // Revert to normal flow
-        gsap.to(button, {
-          position: 'relative',
-          bottom: 'auto',
-          left: 'auto',
-          opacity: 0,
-          ease: 'power1.out',
-        });
-        gsap.to(image, { opacity: 1, duration: 0.5, ease: 'power1.out' });
-      }
-    };
-
-    // Add scroll event listener
-    window.addEventListener('scroll', handleScroll);
-
-    // Clean up the event listener on component unmount
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
-
-  const groupPurchase = () => {
-    document.getElementById('dpw-recipe-btn').click();
-  };
-  const togglePDP = () => {
-    window.DPWidget.togglePDP();
-  };
-  const toggleProductsSheet = () => {
-    window.DPWidget.toggleProductList();
-  };
-  const toggleCategory = () => {
-    window.DPWidget.toggleCategoryModal();
-  };
-  const toggleShopStory = () => {
-    window.DPWidget.toggleShopStory();
-  };
-
   return (
     <>
-      <div className="bg-[#fdfcfa]">
+      <div className="bg-[#fdfcfa] text-black">
         {/* <Script id="theBump-widget" strategy="afterInteractive">
           {`(function (d, s, id) {
              const js = d.createElement(s);
@@ -210,47 +149,27 @@ const Page = () => {
             Click To Experience Yourself
           </h1> */}
 
-          <div className="max-w-3xl mx-auto p-6 border-2 border-black rounded-2xl my-10">
+          <div className="max-w-3xl mx-auto p-6 border-2 border-gray-500 rounded-2xl my-10">
             <div className="content">
-              <h3 className="text-2xl font-semibold">
-                Dpanda Widget Key Features:
-              </h3>
-              <ul className="list-disc pl-6 mt-4 space-y-2">
-                <li>
-                  Live Product Sync: Inventory, pricing, and images are synced
-                  directly from brands, ensuring real-time accuracy. Orders are
-                  fulfilled by brands, enhancing authenticity and trust.
-                </li>
-                <li>
-                  Persistent Cart: Users can browse freely without losing their
-                  cart across sessions. You can thus retarget them in the same
-                  session or during repeat visits.
-                </li>
-                <li>
-                  Flexible Tech: Adaptable layouts, from subtle links to bold
-                  banners in prime site positions. A lightweight JS code ensures
-                  no impact on site speed or metrics.
-                </li>
-              </ul>
-
-              <h4 className="text-xl font-semibold mt-8">
+              <h4 className="text-2xl font-semibold">
                 Below Are Some Examples of CTAs and User Journeys
               </h4>
-              <div className="mt-4">
+              <div className="bg-[#04133a] h-[1px] mt-1 mb-4"></div>
+              <div>
                 <p>
                   1. We can attach a simple “Buy Now” button against any product
                   review.{' '}
                 </p>
                 <span
-                  className="relative flex justify-end mt-2"
+                  className="relative flex justify-start mt-2"
                   dpw-commerce="true"
                   data-dpa-widget-type="product"
                   data-dpa-widget-theme="91mobiles"
                   data-dpa-product-id="300082"
                 >
-                  <span className="hidden md:block absolute -right-24 top-0">
-                    <img src="https://imagekit.dpanda.in/publisher-banner/1731330410_arrow1.png" />
-                    <span className="absolute font-semibold -top-8 left-20 w-40">
+                  <span className="hidden md:block absolute -left-24 top-0">
+                    <img src="https://imagekit.dpanda.in/publisher-banner/1731332697_arrow2.png" />
+                    <span className="absolute font-semibold -top-8 -left-20 w-40">
                       1. Buy Now
                     </span>
                   </span>
@@ -277,77 +196,24 @@ const Page = () => {
                 />
               </div>
 
-              {/* Banner Buttons */}
-              <div className="relative">
-                <img
-                  onClick={toggleProductsSheet}
-                  className="cursor-pointer"
-                  src="https://publisher-banner.dpanda.in/1726056945_Belavita.png"
-                  alt="bellavita-banner"
-                />
-                <span className="hidden md:block absolute -right-24 top-16">
-                  <img src="https://imagekit.dpanda.in/publisher-banner/1731330410_arrow1.png" />
-                  <span className="absolute font-semibold -top-10 left-20 w-40">
-                    3. Targetted Banners
-                  </span>
-                </span>
-              </div>
-              <div className="banner-buttons flex gap-4 mt-8 flex-wrap">
-                <button
-                  onClick={togglePDP}
-                  className="bg-blue-500 text-white py-2 px-6 rounded-md cursor-pointer flex-1"
-                >
-                  Product PDP
-                </button>
-                <button
-                  onClick={toggleProductsSheet}
-                  className="bg-blue-500 text-white py-2 px-6 rounded-md cursor-pointer flex-1"
-                >
-                  Category
-                </button>
-                <button
-                  onClick={toggleCategory}
-                  className="bg-blue-500 text-white py-2 px-6 rounded-md cursor-pointer flex-1"
-                >
-                  Category Hierarchy
-                </button>
-              </div>
-
-              {/* Group Purchase Section */}
-              <div className="section mt-8" id="group-purchase">
-                <button
-                  onClick={groupPurchase}
-                  className="bg-blue-500 text-white py-2 px-16 rounded-md cursor-pointer block mx-auto"
-                >
-                  Group Purchase
-                </button>
-                <div
-                  className="hidden"
-                  dpw-commerce="true"
-                  data-dpa-widget-type="product"
-                  data-dpa-widget-theme="recipe"
-                  data-dpa-product-id="300082,300081"
-                ></div>
-
-                {/* <p className="mt-4 text-center">3.2: Group Purchase</p> */}
-              </div>
+              <CTAsSection />
 
               {/* Floating CTA */}
               <p className="mt-8">
                 4. Our widget is designed to take up minimum possible space as
                 required. You can add a floating icon as your CTA. You can even
-                hyperlink shoppable texts as done{' '}
+                hyperlink shoppable texts as done below: <br />
                 <span
                   className="relative"
                   dpw-commerce="true"
                   data-dpa-widget-type="product"
                   data-dpa-widget-theme="product-link"
                   data-dpa-product-id="300082"
-                  data-dpa-element-text="on this one"
+                  data-dpa-element-text="custom text"
                 >
-                  <span className="hidden md:block absolute -right-24 top-4">
-                    <img src="https://imagekit.dpanda.in/publisher-banner/1731330410_arrow1.png" />
-                    <span className="absolute font-semibold -top-10 left-20 w-40">
+                  <span className="hidden md:block absolute -left-24 top-3">
+                    <img src="https://imagekit.dpanda.in/publisher-banner/1731332697_arrow2.png" />
+                    <span className="absolute font-semibold -top-8 -left-20 w-40">
                       4. Text based CTA
                     </span>
                   </span>
@@ -357,43 +223,8 @@ const Page = () => {
               <p className="mt-4">
                 5. We can add callouts above the fold after a certain depth
               </p>
-              {/* Above the Fold Button */}
-              <div className="relative section mt-8" id="above-the-fold">
-                <span className="hidden md:block absolute right-24 top-16">
-                  <img src="https://imagekit.dpanda.in/publisher-banner/1731330410_arrow1.png" />
-                  <span className="absolute font-semibold -top-10 left-16 w-40">
-                    5. Floating Callouts
-                  </span>
-                </span>
-                {/* <button className="bg-blue-500 text-white py-2 px-16 rounded-md cursor-pointer block mx-auto">
-                  Above the Fold
-                </button> */}
-                <div
-                  ref={imageRef}
-                  className="img-blog"
-                  onClick={toggleShopStory}
-                >
-                  <img
-                    className="m-auto"
-                    src="https://imagekit.dpanda.in/publisher-banner/1719488194_Practic-b1.gif"
-                  />
-                </div>
-              </div>
-              <div
-                className="section mt-8"
-                id="above-the-fold"
-                ref={sectionRef}
-              >
-                <div
-                  ref={buttonRef}
-                  onClick={() => console.log('Toggle Shop Story')}
-                >
-                  <img
-                    src="https://imagekit.dpanda.in/publisher-banner/1719488194_Practic-b1.gif"
-                    alt="Blog"
-                  />
-                </div>
-              </div>
+              <FloatingCallout />
+
               <p className="mt-4">
                 6. We can also add an entire shopping website inside - as you
                 can see using the shop CTA.
@@ -408,7 +239,7 @@ const Page = () => {
                 </a>
                 <span className="hidden md:block absolute -left-24 top-0">
                   <img src="https://imagekit.dpanda.in/publisher-banner/1731332697_arrow2.png" />
-                  <span className="absolute font-semibold -top-10 -left-16 w-40">
+                  <span className="absolute font-semibold -top-12 -left-[72px] w-40">
                     6. Dedicated microsite for you
                   </span>
                 </span>
@@ -421,7 +252,7 @@ const Page = () => {
                 result looks as follows.
               </p>
 
-              <div className="max-w-3xl mx-auto p-6">
+              <div className="max-w-3xl mx-auto p-6 border bg-slate-50">
                 {/* <!-- Recipe Header --> */}
                 <header className="text-center mb-8">
                   <h2 className="text-2xl font-bold text-purple-600 mb-2">
@@ -455,136 +286,61 @@ const Page = () => {
                   </ul>
                   <span className="hidden md:block absolute -left-28 top-24">
                     <img src="https://imagekit.dpanda.in/publisher-banner/1731332697_arrow2.png" />
-                    <span className="absolute font-semibold -top-12 -left-20 w-40">
+                    <span className="absolute font-semibold -top-12 -left-24 w-40">
                       7. Shoppable keywords powered by ML & AI algorithms
                     </span>
                   </span>
                 </section>
-
-                {/* <!-- Instructions Section --> */}
-                <section className="mt-8">
-                  <h2 className="text-2xl font-semibold text-purple-600 mb-4">
-                    Instructions
-                  </h2>
-                  <p className="text-gray-700 mb-4">
-                    Follow these easy steps to create your spiderweb treats:
-                  </p>
-                  <ol className="list-decimal pl-6 space-y-1 text-gray-700">
-                    <li>
-                      Break pretzel sticks into smaller pieces and arrange them
-                      into spiderweb shapes on a parchment-lined baking sheet.
-                    </li>
-                    <li>
-                      Melt white chocolate chips in the microwave, stirring
-                      every 30 seconds until smooth.
-                    </li>
-                    <li>
-                      If desired, sprinkle lollipops or sprinkles on top for
-                      added fun and color.
-                    </li>
-                  </ol>
-                </section>
               </div>
-
-              <h3 className="mt-8 text-2xl font-semibold">
-                A Step Change in Your Monetization Strategy
-              </h3>
-              <p className="mt-4 leading-relaxed">
-                Dpanda embeds multi-brand checkout within your site, delivering
-                better user experiences, full control over first-party data, and
-                higher monetization. This drives unmatched personalization and
-                increases customer lifetime value while making traditional
-                monetization models obsolete.
-              </p>
-              <p className="mt-4 leading-relaxed">
-                Trusted by 1,500+ brands and 20 publishers reaching over 200
-                million users, Dpanda provides all the technology and
-                operational support needed for seamless integration.
-              </p>
-
-              <h4 className="mt-8 text-2xl font-semibold">
-                Widget Integration Summary
-              </h4>
-              <table className="w-full my-4 border-separate border-spacing-0 rounded-lg overflow-hidden shadow-lg">
-                <thead className="bg-gray-100">
-                  <tr>
-                    <th className="text-center text-sm font-semibold text-gray-700 py-3 px-6">
-                      Type
-                    </th>
-                    <th className="text-center text-sm font-semibold text-gray-700 py-3 px-6">
-                      Rendered Results
-                    </th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr className="bg-white hover:bg-gray-50 transition-colors duration-300">
-                    <td className="text-center text-sm text-gray-600 py-3 px-6 border-t border-gray-200">
-                      Product PDP
-                    </td>
-                    <td className="inline-flex gap-4 justify-center items-center text-center py-3 px-6 border-t border-gray-200">
-                      <button
-                        onClick={togglePDP}
-                        className="bg-[#af19a3] font-medium rounded-md text-sm text-white py-2 px-6 cursor-pointer flex-1 hover:bg-[#9d1789] transition-colors"
-                      >
-                        Product PDP
-                      </button>
-                      <span
-                        dpw-commerce="true"
-                        data-dpa-widget-type="product"
-                        data-dpa-widget-theme="flip"
-                        data-dpa-product-id="300082"
-                      ></span>
-                      <span
-                        className="-mt-0.5"
-                        dpw-commerce="true"
-                        data-dpa-widget-type="product"
-                        data-dpa-widget-theme="product-link"
-                        data-dpa-product-id="300082"
-                      ></span>
-                    </td>
-                  </tr>
-                  <tr className="bg-white hover:bg-gray-50 transition-colors duration-300">
-                    <td className="text-center text-sm text-gray-600 py-3 px-6 border-t border-gray-200">
-                      Selected Product Ids
-                    </td>
-                    <td className="text-center py-3 px-6 border-t border-gray-200">
-                      <button
-                        onClick={toggleProductsSheet}
-                        className="bg-[#af19a3] font-medium rounded-md text-sm text-white py-2 px-6 cursor-pointer hover:bg-[#9d1789] transition-colors"
-                      >
-                        Shop Now
-                      </button>
-                    </td>
-                  </tr>
-                  <tr className="bg-white hover:bg-gray-50 transition-colors duration-300">
-                    <td className="text-center text-sm text-gray-600 py-3 px-6 border-t border-gray-200">
-                      Group/Recipe Purchase
-                    </td>
-                    <td className="text-center py-3 px-6 border-t border-gray-200">
-                      <div
-                        dpw-commerce="true"
-                        data-dpa-widget-type="product"
-                        data-dpa-widget-theme="recipe"
-                        data-dpa-product-id="300082,300081"
-                      ></div>
-                    </td>
-                  </tr>
-                  <tr className="bg-white hover:bg-gray-50 transition-colors duration-300">
-                    <td className="text-center text-sm text-gray-600 py-3 px-6 border-t border-gray-200">
-                      Category Modal
-                    </td>
-                    <td className="text-center py-3 px-6 border-t border-gray-200">
-                      <button
-                        onClick={toggleCategory}
-                        className="bg-[#af19a3] font-medium rounded-md text-sm text-white py-2 px-6 cursor-pointer hover:bg-[#9d1789] transition-colors"
-                      >
-                        Shop Now
-                      </button>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
             </div>
+          </div>
+          <div className="max-w-3xl mx-auto p-6 border-2 border-gray-500 rounded-2xl my-10">
+            <h3 className="text-2xl font-semibold">
+              Dpanda Widget Key Features:
+            </h3>
+            <div className="bg-[#04133a] h-[1px] mt-1 mb-4"></div>
+            <ul className="list-disc pl-6 space-y-2">
+              <li>
+                Live Product Sync: Inventory, pricing, and images are synced
+                directly from brands, ensuring real-time accuracy. Orders are
+                fulfilled by brands, enhancing authenticity and trust.
+              </li>
+              <li>
+                Persistent Cart: Users can browse freely without losing their
+                cart across sessions. You can thus retarget them in the same
+                session or during repeat visits.
+              </li>
+              <li>
+                Flexible Tech: Adaptable layouts, from subtle links to bold
+                banners in prime site positions. A lightweight JS code ensures
+                no impact on site speed or metrics.
+              </li>
+            </ul>
+
+            <h3 className="mt-8 text-2xl font-semibold">
+              A Step Change in Your Monetization Strategy
+            </h3>
+            <div className="bg-[#04133a] h-[1px] mt-1 mb-4"></div>
+
+            <p className="mt-4 leading-relaxed">
+              Dpanda embeds multi-brand checkout within your site, delivering
+              better user experiences, full control over first-party data, and
+              higher monetization. This drives unmatched personalization and
+              increases customer lifetime value while making traditional
+              monetization models obsolete.
+            </p>
+            <p className="mt-4 leading-relaxed">
+              Trusted by 1,500+ brands and 20 publishers reaching over 200
+              million users, Dpanda provides all the technology and operational
+              support needed for seamless integration.
+            </p>
+          </div>
+          <div className="max-w-3xl mx-auto p-6 border-2 border-gray-500 rounded-2xl my-10">
+            <h4 className="text-2xl font-semibold">
+              Widget Integration Summary
+            </h4>
+            <div className="bg-[#04133a] h-[1px] mt-1 mb-4"></div>
+            <WidgetSummaryTable />
           </div>
         </div>
       </div>
