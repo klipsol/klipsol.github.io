@@ -78,9 +78,7 @@ const LivePreviewLinks = () => {
             Microsite
           </button> */}
           <button
-            onClick={() =>
-              openModal('https://the-bump.dpanda-buy-widget.pages.dev/')
-            }
+            onClick={() => openModal('https://test-dpanda.pages.dev/theBump')}
             className="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors"
           >
             Widget
