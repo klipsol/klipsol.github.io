@@ -57,23 +57,27 @@ export default function Feature() {
           <div className=" bg-[#C4C7D5] h-[10%] text-[#234651] py-3 subtitle font-semibold flex justify-center">
             Conventional
           </div>
-          <div className="flex h-[80%] items-center justify-center">
-            <DPVideo className="h-[80%]" src={"/left.mp4"} />
+          <div className="h-[80%] flex justify-center flex-col items-center">
+            <div className="flex h-[80%] items-center justify-center">
+              <DPVideo className="h-[90%]" src={"/left.mp4"} />
+            </div>
+            <p className="text-center text-[#254652] text-lg font-medium 2xl:text-2xl">
+              Click & <span className="font-bold"> Redirect </span>
+            </p>
           </div>
-          <p className="text-center text-[#254652] text-lg font-medium 2xl:text-2xl">
-            Click & <span className="font-bold"> Redirect </span>
-          </p>
         </div>
         <div className="h-screen bg-[#FEF4D3] rounded-t-3xl overflow-hidden w-[50%] ">
           <div className=" bg-[#FFE89B] h-[10%] text-[#234651] py-3 subtitle font-semibold flex justify-center">
             Dpanda
           </div>
-          <div className="flex h-[80%] items-center justify-center">
-            <DPVideo className="h-[80%]" src={"/right.mp4"} />
+          <div className="h-[80%] flex justify-center flex-col items-center">
+            <div className="flex h-[80%] items-center justify-center">
+              <DPVideo className="h-[90%]" src={"/right.mp4"} />
+            </div>
+            <p className="text-center text-[#254652] text-lg font-medium 2xl:text-2xl">
+              Click & <span className="font-bold">Convert</span>
+            </p>
           </div>
-          <p className="text-center text-[#254652] text-lg font-medium 2xl:text-2xl">
-            Click & <span className="font-bold">Convert</span>
-          </p>
         </div>
       </div>
       <div className="w-[35%] flex flex-col justify-center px-8 gap-y-3 ">
