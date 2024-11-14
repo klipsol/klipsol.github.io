@@ -80,7 +80,7 @@ export default function Hero() {
 
         <img
           src="/yellow-layout.svg"
-          className="absolute -top-[10%] 2xl:-top-[9%] w-full  z-10"
+          className="absolute -top-[10%] 2xl:-top-[7%] w-full  z-10"
           alt="bg"
         />
         <div className="absolute inset-0 bg-transparent h-full w-full z-10 sec-container">
