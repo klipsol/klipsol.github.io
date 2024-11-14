@@ -72,7 +72,7 @@ export default function LifeTimeValue() {
         <h1 className="text-[#023046]/20 title font-semibold leading-[1]">
           02
         </h1>
-        <h1 className="title leading-[3rem] whitespace-nowrap text-[#1D234E] font-medium">
+        <h1 className="title leading-[3rem] xxl:leading-[5rem] whitespace-nowrap text-[#1D234E] font-medium">
           <HighlightedText text="Higher" wrapperClass="bottom-2 h-[30%]" />{" "}
           <br /> Lifetime Value
         </h1>

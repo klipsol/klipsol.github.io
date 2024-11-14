@@ -59,7 +59,7 @@ export default function InstantRoi() {
         </div>
       </div>
       <div className="w-[35%] flex flex-col justify-center px-8 gap-y-3">
-        <h1 className="text-4xl whitespace-nowrap text-[#1D234E] font-medium">
+        <h1 className="title whitespace-nowrap text-[#1D234E] font-medium">
           Instant <HighlightedText text="ROI" wrapperClass="bottom-2 h-[30%]" />{" "}
         </h1>
         <p className="2xl:text-2xl text-[#505C6E]">

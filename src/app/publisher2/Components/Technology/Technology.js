@@ -52,7 +52,7 @@ export default function Technology() {
           End-to-End <br /> Technology
         </>
       ),
-      className: "absolute top-[15%] -left-[115px] 2xl:-left-[160px]",
+      className: "absolute top-[15%] -left-[115px] 2xl:-left-[120px]",
     },
     {
       icon: "/data_and_analytics.png",
@@ -62,7 +62,7 @@ export default function Technology() {
           Analytics
         </>
       ),
-      className: "absolute bottom-[25%] -left-[100px] 2xl:-left-[140px]",
+      className: "absolute bottom-[25%] -left-[100px] 2xl:-left-[110px]",
     },
     {
       icon: "/ai.png",
@@ -71,7 +71,7 @@ export default function Technology() {
           AI Based <br /> Recommendation
         </>
       ),
-      className: "absolute top-[15%] -right-[140px] 2xl:-right-[210px]",
+      className: "absolute top-[15%] -right-[140px] 2xl:-right-[170px]",
     },
     {
       icon: "/retargeting.png",
@@ -80,7 +80,7 @@ export default function Technology() {
           Retargeting & <br /> Loyalty
         </>
       ),
-      className: "absolute bottom-[35%] -right-[120px] 2xl:-right-[180px]",
+      className: "absolute bottom-[35%] -right-[120px] 2xl:-right-[140px]",
     },
   ];
 
@@ -93,7 +93,7 @@ export default function Technology() {
         </>
       ),
       className:
-        "absolute top-[15%] -left-[80px] bg-[#033046] text-white 2xl:-left-[120px]",
+        "absolute top-[15%] -left-[80px] bg-[#033046] text-white 2xl:-left-[100px]",
     },
     {
       icon: "/payment.png",
@@ -103,7 +103,7 @@ export default function Technology() {
         </>
       ),
       className:
-        "absolute bottom-[25%] -left-[100px] bg-[#033046] 2xl:-left-[150px] text-white",
+        "absolute bottom-[25%] -left-[100px] bg-[#033046] 2xl:-left-[130px] text-white",
     },
     {
       icon: "/cata.png",
@@ -113,7 +113,7 @@ export default function Technology() {
         </>
       ),
       className:
-        "absolute top-[15%] -right-[120px] bg-[#033046] 2xl:-right-[180px] text-white",
+        "absolute top-[15%] -right-[120px] bg-[#033046] 2xl:-right-[120px] text-white",
     },
     {
       icon: "/cust.png",
@@ -123,7 +123,7 @@ export default function Technology() {
         </>
       ),
       className:
-        "absolute bottom-[35%] -right-[100px] bg-[#033046] 2xl:-right-[150px] text-white",
+        "absolute bottom-[35%] -right-[100px] bg-[#033046] 2xl:-right-[130px] text-white",
     },
   ];
 
@@ -135,7 +135,7 @@ export default function Technology() {
 
       {/* actual content starts here */}
       <div className="absolute inset-0 sec-container">
-        <div className="h-[15%] relative my-5">
+        <div className="h-[15%] relative my-5 xxl:mt-[5%]">
           <h1 className="text-[#1D234E] title text-center font-medium absolute top-1/2 left-1/2 -translate-x-1/2 whitespace-nowrap -translate-y-1/2">
             Everything To{" "}
             <HighlightedText
@@ -146,7 +146,7 @@ export default function Technology() {
           </h1>
         </div>
         <div className="h-[70%] flex justify-around">
-          <div className="w-fit h-[80%] flex flex-col items-center relative ">
+          <div className="w-fit h-[80%] xxl:h-[70%] flex flex-col items-center relative ">
             <h1 className="subtitle mb-[8%] text-[#1D234E] font-medium">
               Technology
             </h1>
@@ -163,7 +163,7 @@ export default function Technology() {
 
           <div className="custom-vr"></div>
 
-          <div className="w-fit h-[80%] flex flex-col items-center relative ">
+          <div className="w-fit h-[80%]   xxl:h-[70%]   flex flex-col items-center relative ">
             <h1 className="subtitle mb-[8%] text-[#1D234E] font-medium">
               Operations
             </h1>
@@ -171,7 +171,7 @@ export default function Technology() {
               {rightPhoneChipData.map((data) => (
                 <Chip key={data.icon} {...data} />
               ))}
-              <img className="h-full" src="/phone2.png" alt="phone" />
+              <img className="h-full" src="/phone4.png" alt="phone" />
             </div>
             <p className="max-w-[60%] text-center custom-text-sm text-[#505C6E] mt-4">
               For your complete peace of mind.

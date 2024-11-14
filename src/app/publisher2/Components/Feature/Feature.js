@@ -84,7 +84,7 @@ export default function Feature() {
         <h1 className="text-[#023046]/20 title font-semibold leading-[1]">
           01
         </h1>
-        <h1 className="title text-5xl  text-[#1D234E] font-medium leading-[3rem]">
+        <h1 className="title text-[#1D234E] font-medium leading-[3rem] xxl:leading-[5rem]">
           <HighlightedText text="Better" wrapperClass="bottom-3 h-[30%]" />{" "}
           <br /> User Experience
         </h1>

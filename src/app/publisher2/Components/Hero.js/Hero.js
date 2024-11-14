@@ -1,8 +1,8 @@
-import { useScrollTo } from '@/app/hooks/useSmoothScroll';
-import { useRef } from 'react';
-import DPVideo from '../DPVideo/DPVideo';
-import HighlightedText from '../HighlightedText/HighlightedText';
-import Navbar from '../Nav/Navbar';
+import { useScrollTo } from "@/app/hooks/useSmoothScroll";
+import { useRef } from "react";
+import DPVideo from "../DPVideo/DPVideo";
+import HighlightedText from "../HighlightedText/HighlightedText";
+import Navbar from "../Nav/Navbar";
 
 export default function Hero() {
   const scroll = useScrollTo();
@@ -80,14 +80,14 @@ export default function Hero() {
 
         <img
           src="/yellow-layout.svg"
-          className="absolute -top-[10%] 2xl:-top-[5%] w-full  z-10"
+          className="absolute -top-[10%] 2xl:-top-[9%] w-full  z-10"
           alt="bg"
         />
         <div className="absolute inset-0 bg-transparent h-full w-full z-10 sec-container">
-          <div className="h-[90%] w-1/2 relative ">
+          <div className="h-[90%] 2xl:h-[95%] w-1/2 relative ">
             <div className="text-primaryTextColor absolute bottom-0">
               <h1 className="py-4 custom-text-sm-medium xxl:text-3xl">
-                <HighlightedText text={'Everything'} /> To Transact Brands On
+                <HighlightedText text={"Everything"} /> To Transact Brands On
                 Your Site Site
               </h1>
               <div className="flex gap-x-3  custom-text-xs">
@@ -115,7 +115,7 @@ export default function Hero() {
           <div className="z-10">
             <h2 className="text-white lg:mt-[20%] 2xl:mt-[15%] ">
               <span className="text-white title pt-3">
-                <span className="text-[#023046] font-extrabold">Monetize</span>{' '}
+                <span className="text-[#023046] font-extrabold">Monetize</span>{" "}
                 By Embedding
                 <br /> Brands Within Your Site
               </span>
@@ -128,9 +128,9 @@ export default function Hero() {
                 wrapperClass="bg-[#FEF4D4] bottom-1"
               />
             </h2>
-            <div className="flex gap-x-4 mt-[5%] justify-start text-primaryTextColor">
-              <div className="bg-[#FFF9E6] rounded-2xl lg:p-3 2xl:p-4 lg:pt-4 whitespace-nowrap custom-text-sm relative 2xl:min-w-[168px] lg:w-[120px] ">
-                <h1 className="absolute -top-[35%] font-medium title left-4 text-[#9E8637] ">
+            <div className="flex gap-x-4 mt-[5%] xxl:mt-[7%] justify-start text-primaryTextColor">
+              <div className="bg-[#FFF9E6] rounded-2xl lg:p-3 2xl:p-4 xxl:pt-8 lg:pt-4 whitespace-nowrap custom-text-sm relative 2xl:min-w-[188px] lg:w-[120px] ">
+                <h1 className="absolute -top-[35%] xxl:top-[-50%] font-medium title left-4 text-[#9E8637] ">
                   01
                 </h1>
                 <h1 className="font-medium custom-text-sm">
@@ -138,8 +138,8 @@ export default function Hero() {
                   Experience
                 </h1>
               </div>
-              <div className="bg-[#FFF9E6] rounded-2xl font-medium lg:p-3 lg:pt-4 2xl:p-4 whitespace-nowrap custom-text-sm 2xl:min-w-[168px] relative h-fit lg:w-[120px]">
-                <h1 className="absolute -top-[35%] title left-4 text-[#9E8637]">
+              <div className="bg-[#FFF9E6] rounded-2xl font-medium lg:p-3 lg:pt-4 2xl:p-4 xxl:pt-8 whitespace-nowrap custom-text-sm 2xl:min-w-[188px] relative h-fit lg:w-[120px]">
+                <h1 className="absolute -top-[35%] xxl:top-[-50%] title left-4 text-[#9E8637]">
                   02
                 </h1>
                 <h1 className="font-medium custom-text-sm">
@@ -147,8 +147,8 @@ export default function Hero() {
                   Value
                 </h1>
               </div>
-              <div className="bg-[#FFF9E6] rounded-2xl lg:p-3 2xl:p-4 lg:pt-4 whitespace-nowrap custom-text-sm 2xl:min-w-[168px] relative w-fit h-fit lg:w-[120px]">
-                <h1 className="absolute -top-[35%] font-medium title left-4 text-[#9E8637]">
+              <div className="bg-[#FFF9E6] rounded-2xl lg:p-3 2xl:p-4  xxl:pt-8 lg:pt-4 whitespace-nowrap custom-text-sm 2xl:min-w-[188px] relative w-fit h-fit lg:w-[120px]">
+                <h1 className="absolute -top-[35%] xxl:top-[-50%] font-medium title left-4 text-[#9E8637]">
                   03
                 </h1>
                 <h1 className="font-medium custom-text-sm">
@@ -160,7 +160,7 @@ export default function Hero() {
           </div>
 
           {/* right section */}
-          <div className="h-[90%] rounded-b-full bg-red z-10 w-[45%] bg-[#003045]">
+          <div className="h-[90%] xxl:h-[95%] rounded-b-full bg-red z-10 w-[45%] bg-[#003045]">
             <div className="flex justify-center items-center h-full">
               <DPVideo
                 id="videoDiv"

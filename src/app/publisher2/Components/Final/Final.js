@@ -39,7 +39,7 @@ export default function Final() {
           </div>
         </div>
         <div className="mt-[4%] 2xl:mt-[10%] flex gap-x-8 title items-center text-[#1D234E] ">
-          <div className="font-bold ml-[3%] ">
+          <div className="font-bold ">
             Backed <span className="font-medium">By</span>
           </div>
           <div className="flex gap-x-4">

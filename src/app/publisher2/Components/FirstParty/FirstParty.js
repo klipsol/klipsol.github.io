@@ -72,7 +72,7 @@ export default function FirstParty() {
         <h1 className="text-[#023046]/20 title font-semibold leading-[1]">
           03
         </h1>
-        <h1 className=" whitespace-nowrap text-[#1D234E] font-medium title">
+        <h1 className=" whitespace-nowrap text-[#1D234E] font-medium title leading-[3rem] xxl:leading-[5rem]">
           <HighlightedText text="Better" wrapperClass="bottom-2 h-[30%]" />{" "}
           <br /> First-Party Data
         </h1>

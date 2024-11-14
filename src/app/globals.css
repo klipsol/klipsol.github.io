@@ -37,7 +37,7 @@ body {
     @apply text-[1.5em] sm:text-[1.3em] 2xl:text-[1.9em]  xxl:text-[2.25em];
   }
   .custom-text-sm {
-    @apply sm:text-[1em] 2xl:text-[1.2em]   xxl:text-[1.87em];
+    @apply sm:text-[1em] 2xl:text-[1.2em]   xxl:text-[1.3em];
   }
   .custom-text-xs {
     @apply sm:text-[1em] 2xl:text-[1.2em]   xxl:text-[1.37em];
