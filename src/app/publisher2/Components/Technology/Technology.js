@@ -52,7 +52,7 @@ export default function Technology() {
           End-to-End <br /> Technology
         </>
       ),
-      className: "absolute top-[15%] -left-[60%] ",
+      className: "absolute top-[15%] -left-[115px] 2xl:-left-[160px]",
     },
     {
       icon: "/data_and_analytics.png",
@@ -62,7 +62,7 @@ export default function Technology() {
           Analytics
         </>
       ),
-      className: "absolute bottom-[25%] -left-[60%]",
+      className: "absolute bottom-[25%] -left-[100px] 2xl:-left-[140px]",
     },
     {
       icon: "/ai.png",
@@ -71,7 +71,7 @@ export default function Technology() {
           AI Based <br /> Recommendation
         </>
       ),
-      className: "absolute top-[15%] -right-[80%]",
+      className: "absolute top-[15%] -right-[140px] 2xl:-right-[210px]",
     },
     {
       icon: "/retargeting.png",
@@ -80,7 +80,7 @@ export default function Technology() {
           Retargeting & <br /> Loyalty
         </>
       ),
-      className: "absolute bottom-[35%] -right-[60%]",
+      className: "absolute bottom-[35%] -right-[120px] 2xl:-right-[180px]",
     },
   ];
 
@@ -92,7 +92,8 @@ export default function Technology() {
           Brand <br /> Supply
         </>
       ),
-      className: "absolute top-[15%] -left-[45%] bg-[#033046] text-white",
+      className:
+        "absolute top-[15%] -left-[80px] bg-[#033046] text-white 2xl:-left-[120px]",
     },
     {
       icon: "/payment.png",
@@ -101,7 +102,8 @@ export default function Technology() {
           Payments & <br /> Settlements
         </>
       ),
-      className: "absolute bottom-[25%] -left-[60%] bg-[#033046] text-white",
+      className:
+        "absolute bottom-[25%] -left-[100px] bg-[#033046] 2xl:-left-[150px] text-white",
     },
     {
       icon: "/cata.png",
@@ -110,7 +112,8 @@ export default function Technology() {
           Catalogue & <br /> Pricing
         </>
       ),
-      className: "absolute top-[15%] -right-[60%] bg-[#033046] text-white",
+      className:
+        "absolute top-[15%] -right-[120px] bg-[#033046] 2xl:-right-[180px] text-white",
     },
     {
       icon: "/cust.png",
@@ -119,7 +122,8 @@ export default function Technology() {
           Customer <br /> Service
         </>
       ),
-      className: "absolute bottom-[35%] -right-[50%] bg-[#033046] text-white",
+      className:
+        "absolute bottom-[35%] -right-[100px] bg-[#033046] 2xl:-right-[150px] text-white",
     },
   ];
 
@@ -146,7 +150,7 @@ export default function Technology() {
             <h1 className="subtitle mb-[8%] text-[#1D234E] font-medium">
               Technology
             </h1>
-            <div className="relative h-full  w-fit">
+            <div className="relative h-full  w-fit ">
               {leftPhoneChipData.map((data) => (
                 <Chip key={data.icon} {...data} />
               ))}

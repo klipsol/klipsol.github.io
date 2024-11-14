@@ -28,3 +28,44 @@ export const brands = [
     img: "/truecaller.png",
   },
 ];
+
+export const brands2 = [
+  {
+    name: "happilo",
+    img: "/happilo.png",
+  },
+  {
+    name: "paisa",
+    img: "/paisa.png",
+  },
+  {
+    name: "marico",
+    img: "/marico.png",
+  },
+];
+export const news = [
+  {
+    name: "bussinessline",
+    img: "/bussinessline.png",
+  },
+  {
+    name: "forbes",
+    img: "/forbes.png",
+  },
+  {
+    name: "mint",
+    img: "/mint.png",
+  },
+  {
+    name: "yourstory",
+    img: "/yourstory.png",
+  },
+  {
+    name: "tet",
+    img: "/tet.png",
+  },
+  {
+    name: "inc",
+    img: "/inc.png",
+  },
+];

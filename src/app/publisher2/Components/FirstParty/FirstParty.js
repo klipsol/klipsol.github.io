@@ -50,11 +50,11 @@ export default function FirstParty() {
       className="sec-container h-screen relative flex  w-full"
       id="feature"
     >
-      <div className="w-[70%] flex gap-x-3">
+      <div className="w-[65%] flex gap-x-3">
         <div className="h-screen bg-[#EEF0F8] overflow-hidden w-[50%]">
           <div className="flex h-full  justify-center flex-col">
             <DPVideo className="h-fit" src={"/fl.mp4"} />
-            <p className="text-center text-[#254652] text-lg font-medium">
+            <p className="text-center text-[#254652] text-lg font-medium 2xl:text-2xl">
               Data Blackbox
             </p>
           </div>
@@ -62,23 +62,25 @@ export default function FirstParty() {
         <div className="h-screen bg-[#FEF4D3] overflow-hidden w-[50%]">
           <div className="flex h-full  justify-center flex-col">
             <DPVideo className="h-fit" src={"/fr.mp4"} />
-            <p className="text-center text-[#254652] text-lg font-medium">
+            <p className="text-center text-[#254652] text-lg font-medium 2xl:text-2xl">
               Full Data Access
             </p>
           </div>
         </div>
       </div>
-      <div className="w-[30%] flex flex-col justify-center px-8 gap-y-3">
-        <h1 className="text-[#023046]/20 text-6xl font-bold">03</h1>
-        <h1 className="text-4xl whitespace-nowrap text-[#1D234E] font-medium">
+      <div className="w-[35%] flex flex-col justify-center px-8 gap-y-3">
+        <h1 className="text-[#023046]/20 title font-semibold leading-[1]">
+          03
+        </h1>
+        <h1 className=" whitespace-nowrap text-[#1D234E] font-medium title">
           <HighlightedText text="Better" wrapperClass="bottom-2 h-[30%]" />{" "}
           <br /> First-Party Data
         </h1>
-        <p className=" text-[#505C6E] custom-text-sm">
+        <p className=" text-[#505C6E] custom-text-sm 2xl:text-2xl">
           First party access to customers, behaviour and order data
         </p>
 
-        <ul className="space-y-2 text-[#505C6E] custom-text-sm">
+        <ul className="space-y-2 text-[#505C6E] custom-text-sm 2xl:text-2xl">
           {listItems.map((item, index) => (
             <li
               key={index}

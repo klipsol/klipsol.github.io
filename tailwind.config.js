@@ -12,7 +12,7 @@ module.exports = {
         md: "768px", // Medium screens and up
         lg: "1024px", // Large screens and up
         xl: "1280px", // Extra large screens and up
-        "2xl": "1536px", // 2X large screens and up
+        "2xl": "1490px", // 2X large screens and up
         xxl: "1800px", // Custom: screens larger than 1800px
       },
       keyframes: {

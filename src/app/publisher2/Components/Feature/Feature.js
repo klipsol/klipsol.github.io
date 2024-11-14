@@ -52,7 +52,7 @@ export default function Feature() {
       className="sec-container h-screen relative flex  w-full"
       id="feature"
     >
-      <div className="w-[70%] flex gap-x-3">
+      <div className="w-[65%] flex gap-x-3">
         <div className="h-screen bg-[#EEF0F8] rounded-t-3xl overflow-hidden w-[50%]">
           <div className=" bg-[#C4C7D5] h-[10%] text-[#234651] py-3 subtitle font-semibold flex justify-center">
             Conventional
@@ -60,7 +60,7 @@ export default function Feature() {
           <div className="flex h-[80%] items-center justify-center">
             <DPVideo className="h-[80%]" src={"/left.mp4"} />
           </div>
-          <p className="text-center text-[#254652] text-lg font-medium">
+          <p className="text-center text-[#254652] text-lg font-medium 2xl:text-2xl">
             Click & <span className="font-bold"> Redirect </span>
           </p>
         </div>
@@ -71,22 +71,24 @@ export default function Feature() {
           <div className="flex h-[80%] items-center justify-center">
             <DPVideo className="h-[80%]" src={"/right.mp4"} />
           </div>
-          <p className="text-center text-[#254652] text-lg font-medium">
+          <p className="text-center text-[#254652] text-lg font-medium 2xl:text-2xl">
             Click & <span className="font-bold">Convert</span>
           </p>
         </div>
       </div>
-      <div className="w-[30%] flex flex-col justify-center px-8 gap-y-3">
-        <h1 className="text-[#023046]/20 text-6xl font-bold">01</h1>
-        <h1 className="title  text-[#1D234E] font-medium">
-          <HighlightedText text="Better" wrapperClass="bottom-2 h-[30%]" />{" "}
+      <div className="w-[35%] flex flex-col justify-center px-8 gap-y-3 ">
+        <h1 className="text-[#023046]/20 title font-semibold leading-[1]">
+          01
+        </h1>
+        <h1 className="title text-5xl  text-[#1D234E] font-medium leading-[3rem]">
+          <HighlightedText text="Better" wrapperClass="bottom-3 h-[30%]" />{" "}
           <br /> User Experience
         </h1>
-        <p className="custom-text-sm text-[#505C6E]">
+        <p className="custom-text-sm text-[#505C6E] 2xl:text-[1.4em]">
           Complete browsing and checkout within your site.
         </p>
 
-        <ul className="space-y-2 text-[#505C6E] custom-text-sm">
+        <ul className="space-y-2 text-[#505C6E] custom-text-sm 2xl:text-[1.4em]">
           {listItems.map((item, index) => (
             <li
               key={index}

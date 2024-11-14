@@ -50,11 +50,11 @@ export default function LifeTimeValue() {
       className="sec-container h-screen relative flex  w-full"
       id="feature"
     >
-      <div className="w-[70%] flex gap-x-3">
+      <div className="w-[65%] flex gap-x-3">
         <div className="h-screen bg-[#EEF0F8] overflow-hidden w-[50%]">
           <div className="flex h-full  justify-center flex-col">
             <DPVideo className="h-fit" src={"/vid2.mp4"} />
-            <p className="text-center text-[#254652] text-lg font-medium">
+            <p className="text-center text-[#254652] text-lg font-medium 2xl:text-2xl">
               Limited User Control
             </p>
           </div>
@@ -62,23 +62,25 @@ export default function LifeTimeValue() {
         <div className="h-screen bg-[#FEF4D3] overflow-hidden w-[50%]">
           <div className="flex h-full  justify-center flex-col">
             <DPVideo className="h-fit" src={"/vid3.mp4"} />
-            <p className="text-center text-[#254652] text-lg font-medium">
+            <p className="text-center text-[#254652] text-lg font-medium 2xl:text-2xl">
               Full User Control
             </p>
           </div>
         </div>
       </div>
-      <div className="w-[30%] flex flex-col justify-center px-8 gap-y-3">
-        <h1 className="text-[#023046]/20 text-6xl font-bold">02</h1>
-        <h1 className="text-4xl whitespace-nowrap text-[#1D234E] font-medium">
+      <div className="w-[35%] flex flex-col justify-center px-8 gap-y-3">
+        <h1 className="text-[#023046]/20 title font-semibold leading-[1]">
+          02
+        </h1>
+        <h1 className="title leading-[3rem] whitespace-nowrap text-[#1D234E] font-medium">
           <HighlightedText text="Higher" wrapperClass="bottom-2 h-[30%]" />{" "}
           <br /> Lifetime Value
         </h1>
-        <p className="custom-text-sm text-[#505C6E]">
+        <p className="custom-text-sm text-[#505C6E] 2xl:text-[1.4em]">
           5-10x higher conversion and deeper user engagement.
         </p>
 
-        <ul className="space-y-2 text-[#505C6E] custom-text-sm">
+        <ul className="space-y-2 text-[#505C6E] custom-text-sm 2xl:text-[1.4em]">
           {listItems.map((item, index) => (
             <li
               key={index}

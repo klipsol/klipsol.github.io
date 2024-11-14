@@ -45,13 +45,13 @@ export default function EveryThingFree() {
   return (
     <section ref={sectionRef} className="h-screen flex relative">
       {/* background */}
-      <div className="h-full w-1/2 bg-[#FEF4D4]"></div>
-      <div className="h-full w-1/2 bg-[#EEF0F8]"></div>
+      <div className="h-full w-[60%] bg-[#FEF4D4]"></div>
+      <div className="h-full w-[40%] bg-[#EEF0F8]"></div>
 
       {/* actual content begins here */}
 
       <div className="absolute inset-0 sec-container flex">
-        <div className="w-1/2 h-full flex-col flex items-center">
+        <div className="w-[60%] h-full flex-col flex items-center">
           <div className="flex flex-col items-center h-[80%]">
             <h1 className="title text-[#1D234E] my-[10%] text-center font-medium">
               Zero Cost. We Earn <br />
@@ -65,11 +65,11 @@ export default function EveryThingFree() {
               <img src="/laptop.png" className="h-[90%]" alt="laptop" />
             </div>
           </div>
-          <p className="text-[#505C6E] text-center max-w-[60%] text-lg">
+          <p className="text-[#505C6E] text-center max-w-[60%] custom-text-sm 2xl:text-2xl">
             No Upfront Costs. You win, we win.
           </p>
         </div>
-        <div className="w-1/2 h-full flex-col flex items-center">
+        <div className="w-[40%] h-full flex-col flex items-center">
           <div className="flex flex-col items-center h-[80%]">
             <h1 className="title text-[#1D234E] my-[10%] text-center font-medium">
               Go <HighlightedText wrapperClass="bottom-2 h-[30%]" text="Live" />{" "}
@@ -79,7 +79,7 @@ export default function EveryThingFree() {
               <img src="/phone2.png" className="h-[90%]" alt="laptop" />
             </div>
           </div>
-          <p className="text-[#505C6E] text-center max-w-[60%] text-lg">
+          <p className="text-[#505C6E] text-center max-w-[60%] custom-text-sm 2xl:text-2xl">
             Plug & play widgets for website and app.
           </p>
         </div>

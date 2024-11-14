@@ -25,7 +25,7 @@ body {
     @apply lg:max-w-[1150px] mx-auto w-full 2xl:max-w-7xl xxl:max-w-[1640px];
   }
   .title {
-    @apply text-[2em] md:text-[2.2em] 2xl:text-[2.5em]  xxl:text-[3.875em];
+    @apply text-[2em] md:text-[2.2em] 2xl:text-[45px]  xxl:text-[3.875em];
   }
   .subtitle {
     @apply text-[1.6em] md:text-[1.8em] 2xl:text-[2em]  xxl:text-[2.625em];
@@ -34,10 +34,10 @@ body {
     @apply lg:text-[1em] 2xl:text-[1.1em]  xxl:text-[1.5em];
   }
   .custom-text-sm-medium {
-    @apply text-[1.5em] sm:text-[1.3em] 2xl:text-[1.8em]  xxl:text-[2.25em];
+    @apply text-[1.5em] sm:text-[1.3em] 2xl:text-[1.9em]  xxl:text-[2.25em];
   }
   .custom-text-sm {
-    @apply sm:text-[0.8em] 2xl:text-[1.4em]   xxl:text-[1.87em];
+    @apply sm:text-[1em] 2xl:text-[1.2em]   xxl:text-[1.87em];
   }
   .custom-text-xs {
     @apply sm:text-[1em] 2xl:text-[1.2em]   xxl:text-[1.37em];
