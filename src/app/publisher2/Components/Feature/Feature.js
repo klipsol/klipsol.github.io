@@ -1,9 +1,11 @@
-import React from "react";
-import DPVideo from "../DPVideo/DPVideo";
-import HighlightedText from "../HighlightedText/HighlightedText";
+'use client';
+import { useRef } from 'react';
+import DPVideo from '../DPVideo/DPVideo';
+import HighlightedText from '../HighlightedText/HighlightedText';
 
 export default function Feature() {
-  const listItems = ["Higher Conversion"];
+  const sectionRef = useRef(null);
+  const listItems = ['Higher Conversion'];
 
   return (
     <section className="sec-container h-fit lg:h-screen sm:pb-5 relative flex  lg:flex-row sm:flex-col-reverse  w-full">
@@ -14,7 +16,7 @@ export default function Feature() {
           </div>
           <div className="h-[80%] flex justify-center flex-col items-center">
             <div className="flex h-[80%] items-center justify-center">
-              <DPVideo className="h-[90%]" src={"/left.mp4"} />
+              <DPVideo className="h-[90%]" src={'/left.mp4'} />
             </div>
             <p className="text-center text-[#254652] sm:w-[80%] lg:w-full text-lg font-medium 2xl:text-2xl">
               Click & <span className="font-bold"> Redirect </span>
@@ -27,7 +29,7 @@ export default function Feature() {
           </div>
           <div className="h-[80%] flex justify-center flex-col items-center">
             <div className="flex h-[80%] items-center justify-center">
-              <DPVideo className="h-[90%]" src={"/right.mp4"} />
+              <DPVideo className="h-[90%]" src={'/right.mp4'} />
             </div>
             <p className="text-center text-[#254652] subtitle sm:w-[80%] lg:w-full font-medium 2xl:text-2xl">
               Click & <span className="font-bold">Convert</span>
@@ -41,7 +43,7 @@ export default function Feature() {
         </h1>
         <div>
           <h1 className="title text-[#1D234E] font-medium sm:leading-[2rem] lg:leading-[3rem] xxl:leading-[5rem]">
-            <HighlightedText text="Better" wrapperClass="bottom-3 h-[30%]" />{" "}
+            <HighlightedText text="Better" wrapperClass="bottom-3 h-[30%]" />{' '}
             <br /> User Experience
           </h1>
           <p className="custom-text-sm text-[#505C6E] 2xl:text-[1.4em]">
