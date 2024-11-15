@@ -1,6 +1,7 @@
 'use client';
 import Script from 'next/script';
 import { useEffect, useState } from 'react';
+import ContactForm from './ContactForm';
 
 const CalendlyModal = ({ isOpen, onClose }) => {
   const [loaded, setLoaded] = useState(false);
@@ -56,12 +57,11 @@ const CalendlyModal = ({ isOpen, onClose }) => {
         onLoad={handleCalendlyLoad}
         strategy="lazyOnload"
       />
-
       {/* Modal Overlay */}
       {isOpen && (
         <div className="absolute min-h-screen min-w-full inset-0 z-50 overflow-auto bg-black bg-opacity-50 flex items-center justify-center p-4">
           {/* Modal Content */}
-          <div className="relative min-h-[600px] bg-white rounded-lg w-full max-w-5xl mx-auto">
+          <div className="relative min-h-[600px] max-h-[600px] overflow-auto bg-white rounded-lg w-full max-w-5xl mx-auto">
             {/* Close Button */}
             <button
               onClick={onClose}
@@ -80,6 +80,10 @@ const CalendlyModal = ({ isOpen, onClose }) => {
               </svg>
             </button>
 
+            <ContactForm />
+            <h2 className="my-4 sm:mt-12 sm:mb-0 text-2xl font-bold text-center text-gray-800">
+              Or schedule a meeting
+            </h2>
             {/* Calendly Widget Container */}
             <div id="calendly-inline-widget" className="w-full h-[680px]" />
           </div>

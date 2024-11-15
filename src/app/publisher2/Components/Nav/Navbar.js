@@ -33,7 +33,6 @@ export default function Navbar() {
             >
               ROI Calculator
             </button>
-
             <button
               onClick={openModal}
               className="rounded-[24px] bg-primaryBg px-4 py-1 text-primaryTextColor font-medium"

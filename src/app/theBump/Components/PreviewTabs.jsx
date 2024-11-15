@@ -127,7 +127,7 @@ const TabContent1 = () => (
         </p>
         <p className="my-4 relative w-fit">
           <a
-            href="https://myfitness.dpanda.online/"
+            href="https://yourstore.dpanda.online/"
             target="_blank"
             className="bg-blue-500 text-white rounded-md p-2 hover:underline"
           >
@@ -247,7 +247,7 @@ const TabContent2 = () => (
       Experience the microsite by clicking on the button bellow:
     </p>
     <a
-      href="https://myfitness.dpanda.online/"
+      href="https://yourstore.dpanda.online/"
       target="_blank"
       className="bg-blue-500 text-white rounded-md p-2 hover:underline"
     >
