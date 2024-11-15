@@ -6,10 +6,7 @@ export default function FirstParty() {
   const listItems = ["Brand & User Relationships", "Unmatched Personalisation"];
 
   return (
-    <section
-      className="sec-container lg:h-screen sm:h-fit relative flex  lg:flex-row sm:flex-col-reverse  w-full"
-      id="feature"
-    >
+    <section className="sec-container lg:h-screen sm:pb-5 sm:h-fit relative flex  lg:flex-row sm:flex-col-reverse  w-full">
       <div className="lg:w-[65%] h-[50vh] sm:w-full flex gap-x-3">
         <div className="lg:h-screen sm:h-full bg-[#EEF0F8] rounded-t-3xl overflow-hidden w-[50%]">
           <div className="flex h-full  justify-center flex-col">
@@ -66,7 +63,7 @@ export default function FirstParty() {
           </ul>
         </div>
       </div>
-      <hr className="bottom-0 absolute w-full custom-hr sm:hidden lg:block" />
+      <hr className="bottom-0 absolute w-full custom-hr lg:block" />
     </section>
   );
 }

@@ -128,7 +128,7 @@ export default function Technology() {
   ];
 
   return (
-    <section className="h-screen relative w-full" id="feature">
+    <section className="h-screen relative w-full">
       {/* bg */}
       <div className="h-[50vh] bg-[#F7BB30] w-full"></div>
       <div className="h-[50vh] bg-transparent w-full"></div>

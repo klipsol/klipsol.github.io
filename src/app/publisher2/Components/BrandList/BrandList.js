@@ -9,7 +9,7 @@ export const BrandList = () => {
   ];
 
   return (
-    <div className="text-[#1D234E] my-14 sm:bg-[#EEF0F8] sm:py-5 lg:bg-white lg:pb-12">
+    <div className="text-[#1D234E] my-14 sm:bg-[#EEF0F8] sm:pb-5 lg:bg-white lg:pb-12">
       <h1 className="custom-text-sm-medium font-medium text-center mb-7 sec-container">
         Trusted by <span className="font-semibold">1500+ Brands</span>,
         Publishers with <span className="font-semibold">200M+ Users </span> and

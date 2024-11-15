@@ -3,10 +3,7 @@ import HighlightedText from "../HighlightedText/HighlightedText";
 
 export default function InstantRoi() {
   return (
-    <section
-      className="sec-container lg:h-screen sm:h-fit relative flex lg:flex-row sm:flex-col-reverse  w-full"
-      id="feature"
-    >
+    <section className="sec-container lg:h-screen sm:h-fit sm:pb-5 relative flex lg:flex-row sm:flex-col-reverse  w-full">
       <div className="lg:w-[65%] h-[50vh] sm:w-full flex gap-x-3">
         <div className="lg:h-screen sm:h-full bg-[#EEF0F8] rounded-t-3xl overflow-hidden w-[50%]">
           <div className=" bg-[#C4C7D5] h-[10%] text-[#234651] rounded-t-3xl mt-10 items-center subtitle font-semibold flex justify-center">
@@ -66,7 +63,7 @@ export default function InstantRoi() {
           <span className="font-semibold"> Fast and Free.</span>
         </p>
       </div>
-      <hr className="bottom-0 absolute w-full custom-hr sm:hidden lg:block" />
+      {/* <hr className="bottom-0 absolute w-full custom-hr  lg:block" /> */}
     </section>
   );
 }
