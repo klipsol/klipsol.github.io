@@ -1,57 +1,17 @@
-import React, { useEffect, useRef } from "react";
+import React from "react";
 import DPVideo from "../DPVideo/DPVideo";
-import gsap from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
 import HighlightedText from "../HighlightedText/HighlightedText";
 
 export default function LifeTimeValue() {
-  const sectionRef = useRef(null);
   const listItems = ["Higher Engagement", "Higher Retention"];
 
-  // useEffect(() => {
-  //   gsap.registerPlugin(ScrollTrigger);
-  //   const tl = gsap.timeline({
-  //     scrollTrigger: {
-  //       trigger: sectionRef.current,
-  //       start: "top center",
-  //       toggleActions: "play none none reverse",
-  //     },
-  //     defaults: { duration: 2, ease: "power3.out" },
-  //   });
-
-  //   tl.fromTo(
-  //     ["#L-demo-video", "#L-text-banner"],
-  //     {
-  //       opacity: 0,
-  //       x: function (index) {
-  //         if (index === 0) return -500;
-  //         return 0;
-  //       },
-  //       y: function (index) {
-  //         return index === 1 ? 500 : 0;
-  //       },
-  //     },
-  //     {
-  //       opacity: 1,
-  //       x: 0,
-  //       y: 0,
-  //     },
-  //     "<"
-  //   );
-
-  //   // Cleanup
-  //   return () => {
-  //     tl.kill();
-  //     ScrollTrigger.getAll().forEach((trigger) => trigger.kill());
-  //   };
-  // }, []);
   return (
     <section
-      className="sec-container h-screen relative flex  w-full"
+      className="sec-container lg:h-screen sm:h-fit relative flex  lg:flex-row sm:flex-col-reverse  w-full"
       id="feature"
     >
-      <div className="w-[65%] flex gap-x-3">
-        <div className="h-screen bg-[#EEF0F8] overflow-hidden w-[50%]">
+      <div className="lg:w-[65%] h-[50vh] sm:w-full flex gap-x-3">
+        <div className="lg:h-screen sm:h-full bg-[#EEF0F8] rounded-t-3xl overflow-hidden w-[50%]">
           <div className="flex h-full  justify-center flex-col">
             <DPVideo className="h-fit" src={"/vid2.mp4"} />
             <p className="text-center text-[#254652] text-lg font-medium 2xl:text-2xl">
@@ -59,7 +19,7 @@ export default function LifeTimeValue() {
             </p>
           </div>
         </div>
-        <div className="h-screen bg-[#FEF4D3] overflow-hidden w-[50%]">
+        <div className="lg:h-screen sm:h-full bg-[#FEF4D3] rounded-t-3xl overflow-hidden w-[50%]">
           <div className="flex h-full  justify-center flex-col">
             <DPVideo className="h-fit" src={"/vid3.mp4"} />
             <p className="text-center text-[#254652] text-lg font-medium 2xl:text-2xl">
@@ -68,44 +28,45 @@ export default function LifeTimeValue() {
           </div>
         </div>
       </div>
-      <div className="w-[35%] flex flex-col justify-center px-8 gap-y-3">
-        <h1 className="text-[#023046]/20 title font-semibold leading-[1]">
+      <div className="lg:w-[35%] flex lg:flex-col sm:my-4 lg:my-0 sm:flex-row sm:gap-x-2 lg:justify-center lg:px-8 gap-y-3 sm:p-0 sm:w-full">
+        <h1 className="text-[#023046]/20 title font-semibold leading-[1] sm:mt-1 lg:m-0">
           02
         </h1>
-        <h1 className="title leading-[3rem] xxl:leading-[5rem] whitespace-nowrap text-[#1D234E] font-medium">
-          <HighlightedText text="Higher" wrapperClass="bottom-2 h-[30%]" />{" "}
-          <br /> Lifetime Value
-        </h1>
-        <p className="custom-text-sm text-[#505C6E] 2xl:text-[1.4em]">
-          5-10x higher conversion and deeper user engagement.
-        </p>
-
-        <ul className="space-y-2 text-[#505C6E] custom-text-sm 2xl:text-[1.4em]">
-          {listItems.map((item, index) => (
-            <li
-              key={index}
-              className="flex items-center gap-3 whitespace-nowrap"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-                className="w-5 h-5 flex-shrink-0"
+        <div>
+          <h1 className="title text-[#1D234E] font-medium sm:leading-[2rem] lg:leading-[3rem] xxl:leading-[5rem]">
+            <HighlightedText text="Higher" wrapperClass="bottom-2 h-[30%]" />{" "}
+            <br /> Lifetime Value
+          </h1>
+          <p className="custom-text-sm text-[#505C6E] 2xl:text-[1.4em]">
+            5-10x higher conversion and deeper user engagement.
+          </p>
+          <ul className="lg:space-y-2 sm:my-2  text-[#505C6E] custom-text-sm 2xl:text-[1.4em]">
+            {listItems.map((item, index) => (
+              <li
+                key={index}
+                className="flex items-center gap-3 whitespace-nowrap"
               >
-                <path
-                  d="M3 12.5l6 6 12-12"
-                  stroke="#22c55e"
-                  strokeWidth="3"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  fill="none"
-                />
-              </svg>
-              {item}
-            </li>
-          ))}
-        </ul>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  className="w-5 h-5 flex-shrink-0"
+                >
+                  <path
+                    d="M3 12.5l6 6 12-12"
+                    stroke="#22c55e"
+                    strokeWidth="3"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    fill="none"
+                  />
+                </svg>
+                {item}
+              </li>
+            ))}
+          </ul>
+        </div>
       </div>
-      <hr className="bottom-0 absolute w-full custom-hr" />
+      <hr className="bottom-0 absolute w-full custom-hr sm:hidden lg:block" />
     </section>
   );
 }

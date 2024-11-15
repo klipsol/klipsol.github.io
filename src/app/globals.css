@@ -22,25 +22,25 @@ body {
 
 @layer base {
   .sec-container {
-    @apply lg:max-w-[1150px] mx-auto w-full 2xl:max-w-7xl xxl:max-w-[1640px];
+    @apply sm:max-w-[85%] lg:max-w-[1150px] mx-auto w-full 2xl:max-w-7xl xxl:max-w-[1640px];
   }
   .title {
-    @apply text-[2em] md:text-[2.2em] 2xl:text-[45px]  xxl:text-[3.875em];
+    @apply sm:text-[1.5em] md:text-[2.2em] 2xl:text-[45px]  xxl:text-[3.875em];
   }
   .subtitle {
-    @apply text-[1.6em] md:text-[1.8em] 2xl:text-[2em]  xxl:text-[2.625em];
+    @apply text-[1.125em] md:text-[1.8em] 2xl:text-[2em]  xxl:text-[2.625em];
   }
   .custom-text-base {
     @apply lg:text-[1em] 2xl:text-[1.1em]  xxl:text-[1.5em];
   }
   .custom-text-sm-medium {
-    @apply text-[1.5em] sm:text-[1.3em] 2xl:text-[1.9em]  xxl:text-[2.25em];
+    @apply text-[1.5em] sm:text-[1.125em] 2xl:text-[1.9em]  xxl:text-[2.25em];
   }
   .custom-text-sm {
     @apply sm:text-[1em] 2xl:text-[1.2em]   xxl:text-[1.3em];
   }
   .custom-text-xs {
-    @apply sm:text-[1em] 2xl:text-[1.2em]   xxl:text-[1.37em];
+    @apply sm:text-[0.687em] lg:text-[1em] 2xl:text-[1.2em]   xxl:text-[1.37em];
   }
 
   .custom-hr {

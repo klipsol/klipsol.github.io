@@ -1,6 +1,6 @@
-import { useState } from 'react';
-import CalendlyModal from '../Calendly/CalendlyModal';
-import LivePreviewLinks from './LivePreviewLinks';
+import { useState } from "react";
+import CalendlyModal from "../Calendly/CalendlyModal";
+import LivePreviewLinks from "./LivePreviewLinks";
 
 export default function Navbar() {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -11,12 +11,12 @@ export default function Navbar() {
   return (
     <>
       <div
-        className="sec-container opacity-1 mt-6 relative z-20 pr-10 "
+        className="sec-container opacity-1 mt-6 relative z-50 lg:pr-10 "
         id="nav"
       >
-        <div className="flex justify-between items-center flex-col md:flex-row bg-transparent rounded-3xl relative custom-text-base ">
+        <div className="lg:flex justify-between items-center flex-col md:flex-row bg-transparent rounded-3xl relative custom-text-base ">
           <img src="/DpandaLogo.png" alt="logo" className="max-h-10" />
-          <div className="flex md:gap-x-6 items-center pt-4 w-full md:w-fit md:pt-0 justify-between">
+          <div className=" md:gap-x-6 items-center pt-4 w-full md:w-fit md:pt-0 justify-between sm:hidden lg:flex">
             <LivePreviewLinks />
             {/* <div className="flex flex-col cursor-pointer">
               <div className="flex gap-x-2 items-center relative">
