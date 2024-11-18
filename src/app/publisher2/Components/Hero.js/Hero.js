@@ -1,8 +1,9 @@
-import { useScrollTo } from "@/app/hooks/useSmoothScroll";
-import { useRef } from "react";
-import DPVideo from "../DPVideo/DPVideo";
-import HighlightedText from "../HighlightedText/HighlightedText";
-import Navbar from "../Nav/Navbar";
+'use client';
+import { useScrollTo } from '@/app/hooks/useSmoothScroll';
+import { useRef } from 'react';
+import DPVideo from '../DPVideo/DPVideo';
+import HighlightedText from '../HighlightedText/HighlightedText';
+import Navbar from '../Nav/Navbar';
 
 export default function Hero() {
   const scroll = useScrollTo();
@@ -102,7 +103,7 @@ export default function Hero() {
           <div className="lg:h-[90%] sm:h-full 2xl:h-[95%] w-1/2 sm:w-full relative ">
             <div className="text-primaryTextColor absolute bottom-0 ">
               <h1 className="py-4 custom-text-sm-medium xxl:text-3xl sm:text-xl ">
-                <HighlightedText text={"Everything"} /> To Transact Brands On
+                <HighlightedText text={'Everything'} /> To Transact Brands On
                 Your Site Site
               </h1>
               <div className="flex gap-x-3 custom-text-xs ">
@@ -130,7 +131,7 @@ export default function Hero() {
           <div className="lg:z-10 sm:z-30">
             <h2 className="text-white lg:mt-[20%] 2xl:mt-[15%] sm:mt-[85px] ">
               <span className="text-white title pt-3">
-                <span className="text-[#023046] font-extrabold">Monetize</span>{" "}
+                <span className="text-[#023046] font-extrabold">Monetize</span>{' '}
                 By Embedding
                 <br /> Brands Within Your Site
               </span>

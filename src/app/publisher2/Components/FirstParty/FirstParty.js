@@ -1,16 +1,18 @@
-import React from "react";
-import DPVideo from "../DPVideo/DPVideo";
-import HighlightedText from "../HighlightedText/HighlightedText";
+'use client';
+import { useRef } from 'react';
+import DPVideo from '../DPVideo/DPVideo';
+import HighlightedText from '../HighlightedText/HighlightedText';
 
 export default function FirstParty() {
-  const listItems = ["Brand & User Relationships", "Unmatched Personalisation"];
+  const sectionRef = useRef(null);
+  const listItems = ['Brand & User Relationships', 'Unmatched Personalisation'];
 
   return (
     <section className="sec-container lg:h-screen sm:pb-5 sm:h-fit relative flex  lg:flex-row sm:flex-col-reverse  w-full">
       <div className="lg:w-[65%] h-[50vh] sm:w-full flex gap-x-3">
         <div className="lg:h-screen sm:h-full bg-[#EEF0F8] sm:rounded-t-3xl lg:rounded-none overflow-hidden w-[50%]">
           <div className="flex h-full  justify-center flex-col">
-            <DPVideo className="h-fit" src={"/fl.mp4"} />
+            <DPVideo className="h-fit" src={'/fl.mp4'} />
             <p className="text-center text-[#254652] text-lg font-medium 2xl:text-2xl">
               Data Blackbox
             </p>
@@ -18,7 +20,7 @@ export default function FirstParty() {
         </div>
         <div className="lg:h-screen sm:h-full bg-[#FEF4D3] sm:rounded-t-3xl lg:rounded-none overflow-hidden w-[50%]">
           <div className="flex h-full  justify-center flex-col">
-            <DPVideo className="h-fit" src={"/fr.mp4"} />
+            <DPVideo className="h-fit" src={'/fr.mp4'} />
             <p className="text-center text-[#254652] text-lg font-medium 2xl:text-2xl">
               Full Data Access
             </p>
@@ -31,7 +33,7 @@ export default function FirstParty() {
         </h1>
         <div>
           <h1 className="title text-[#1D234E] font-medium sm:leading-[2rem] lg:leading-[3rem] xxl:leading-[5rem]">
-            <HighlightedText text="Better" wrapperClass="bottom-2 h-[30%]" />{" "}
+            <HighlightedText text="Better" wrapperClass="bottom-2 h-[30%]" />{' '}
             <br /> First-Party Data
           </h1>
           <p className="custom-text-sm text-[#505C6E] 2xl:text-2xl">

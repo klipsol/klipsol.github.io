@@ -1,10 +1,11 @@
-import React, { useEffect, useRef } from "react";
+'use client';
+import { useEffect, useRef } from 'react';
 
 const DPVideo = ({
   src,
-  type = "video/mp4",
-  className = "",
-  fallbackText = "Your browser does not support the video tag.",
+  type = 'video/mp4',
+  className = '',
+  fallbackText = 'Your browser does not support the video tag.',
 }) => {
   const videoRef = useRef(null);
   const observerRef = useRef(null);
@@ -14,7 +15,7 @@ const DPVideo = ({
 
     const options = {
       root: null,
-      rootMargin: "0px",
+      rootMargin: '0px',
       threshold: 0.4, // 40% visibility threshold
     };
 
@@ -25,7 +26,7 @@ const DPVideo = ({
           //   console.log("] visible---", videoRef.current);
           //   setTimeout(() => {
           videoRef.current?.play().catch((error) => {
-            console.warn("Video autoplay failed:", error);
+            console.warn('Video autoplay failed:', error);
           });
           //   }, 1000);
         } else {

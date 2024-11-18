@@ -1,8 +1,7 @@
-import gsap from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-import React, { useEffect, useRef } from "react";
-import { Chip } from "../UI/Chip/Chip";
-import HighlightedText from "../HighlightedText/HighlightedText";
+'use client';
+import { useRef } from 'react';
+import HighlightedText from '../HighlightedText/HighlightedText';
+import { Chip } from '../UI/Chip/Chip';
 
 export default function Technology() {
   const sectionRef = useRef(null);
@@ -46,84 +45,84 @@ export default function Technology() {
 
   const leftPhoneChipData = [
     {
-      icon: "/end-to-end-tech.png",
+      icon: '/end-to-end-tech.png',
       label: (
         <>
           End-to-End <br /> Technology
         </>
       ),
-      className: "absolute top-[15%] -left-[115px] 2xl:-left-[120px]",
+      className: 'absolute top-[15%] -left-[115px] 2xl:-left-[120px]',
     },
     {
-      icon: "/data_and_analytics.png",
+      icon: '/data_and_analytics.png',
       label: (
         <>
           Data & <br />
           Analytics
         </>
       ),
-      className: "absolute bottom-[25%] -left-[100px] 2xl:-left-[110px]",
+      className: 'absolute bottom-[25%] -left-[100px] 2xl:-left-[110px]',
     },
     {
-      icon: "/ai.png",
+      icon: '/ai.png',
       label: (
         <>
           AI Based <br /> Recommendation
         </>
       ),
-      className: "absolute top-[15%] -right-[140px] 2xl:-right-[170px]",
+      className: 'absolute top-[15%] -right-[140px] 2xl:-right-[170px]',
     },
     {
-      icon: "/retargeting.png",
+      icon: '/retargeting.png',
       label: (
         <>
           Retargeting & <br /> Loyalty
         </>
       ),
-      className: "absolute bottom-[35%] -right-[120px] 2xl:-right-[140px]",
+      className: 'absolute bottom-[35%] -right-[120px] 2xl:-right-[140px]',
     },
   ];
 
   const rightPhoneChipData = [
     {
-      icon: "/brand.png",
+      icon: '/brand.png',
       label: (
         <>
           Brand <br /> Supply
         </>
       ),
       className:
-        "absolute top-[15%] -left-[80px] bg-[#033046] text-white 2xl:-left-[100px]",
+        'absolute top-[15%] -left-[80px] bg-[#033046] text-white 2xl:-left-[100px]',
     },
     {
-      icon: "/payment.png",
+      icon: '/payment.png',
       label: (
         <>
           Payments & <br /> Settlements
         </>
       ),
       className:
-        "absolute bottom-[25%] -left-[100px] bg-[#033046] 2xl:-left-[130px] text-white",
+        'absolute bottom-[25%] -left-[100px] bg-[#033046] 2xl:-left-[130px] text-white',
     },
     {
-      icon: "/cata.png",
+      icon: '/cata.png',
       label: (
         <>
           Catalogue & <br /> Pricing
         </>
       ),
       className:
-        "absolute top-[15%] -right-[120px] bg-[#033046] 2xl:-right-[120px] text-white",
+        'absolute top-[15%] -right-[120px] bg-[#033046] 2xl:-right-[120px] text-white',
     },
     {
-      icon: "/cust.png",
+      icon: '/cust.png',
       label: (
         <>
           Customer <br /> Service
         </>
       ),
       className:
-        "absolute bottom-[35%] -right-[100px] bg-[#033046] 2xl:-right-[130px] text-white",
+        'absolute bottom-[35%] -right-[100px] bg-[#033046] 2xl:-right-[130px] text-white',
     },
   ];
 
@@ -137,11 +136,11 @@ export default function Technology() {
       <div className="absolute inset-0 sec-container">
         <div className="h-[15%] relative my-5 xxl:mt-[5%]">
           <h1 className="text-[#1D234E] title text-center font-medium absolute top-1/2 left-1/2 -translate-x-1/2 whitespace-nowrap -translate-y-1/2">
-            Everything To{" "}
+            Everything To{' '}
             <HighlightedText
               text="Embed Brands"
               wrapperClass="bg-[#ffdf74] bottom-2 h-[35%]"
-            />{" "}
+            />{' '}
             <br /> On Your Site
           </h1>
         </div>
