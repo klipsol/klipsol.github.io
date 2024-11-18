@@ -145,8 +145,8 @@ export default function Technology() {
             <br /> On Your Site
           </h1>
         </div>
-        <div className="h-[70%] flex justify-around">
-          <div className="w-fit h-[80%] xxl:h-[70%] flex flex-col items-center relative ">
+        <div className="h-[70%] flex justify-around sm:flex-col lg:flex-row">
+          <div className="w-fit lg:h-[80%] sm:h-[50%] xxl:h-[70%] flex flex-col items-center relative ">
             <h1 className="subtitle mb-[8%] text-[#1D234E] font-medium">
               Technology
             </h1>

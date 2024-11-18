@@ -8,7 +8,7 @@ export default function FirstParty() {
   return (
     <section className="sec-container lg:h-screen sm:pb-5 sm:h-fit relative flex  lg:flex-row sm:flex-col-reverse  w-full">
       <div className="lg:w-[65%] h-[50vh] sm:w-full flex gap-x-3">
-        <div className="lg:h-screen sm:h-full bg-[#EEF0F8] rounded-t-3xl overflow-hidden w-[50%]">
+        <div className="lg:h-screen sm:h-full bg-[#EEF0F8] sm:rounded-t-3xl lg:rounded-none overflow-hidden w-[50%]">
           <div className="flex h-full  justify-center flex-col">
             <DPVideo className="h-fit" src={"/fl.mp4"} />
             <p className="text-center text-[#254652] text-lg font-medium 2xl:text-2xl">
@@ -16,7 +16,7 @@ export default function FirstParty() {
             </p>
           </div>
         </div>
-        <div className="lg:h-screen sm:h-full bg-[#FEF4D3] rounded-t-3xl overflow-hidden w-[50%]">
+        <div className="lg:h-screen sm:h-full bg-[#FEF4D3] sm:rounded-t-3xl lg:rounded-none overflow-hidden w-[50%]">
           <div className="flex h-full  justify-center flex-col">
             <DPVideo className="h-fit" src={"/fr.mp4"} />
             <p className="text-center text-[#254652] text-lg font-medium 2xl:text-2xl">
