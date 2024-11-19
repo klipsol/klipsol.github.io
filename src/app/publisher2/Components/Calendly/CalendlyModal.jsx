@@ -59,7 +59,7 @@ const CalendlyModal = ({ isOpen, onClose }) => {
       />
       {/* Modal Overlay */}
       {isOpen && (
-        <div className="absolute min-h-screen min-w-full inset-0 z-50 overflow-auto bg-black bg-opacity-50 flex items-center justify-center p-4">
+        <div className="absolute min-h-screen min-w-full inset-0 z-50 overflow-auto bg-black bg-opacity-50 flex justify-center p-4">
           {/* Modal Content */}
           <div className="relative min-h-[600px] max-h-[600px] overflow-auto bg-white rounded-lg w-full max-w-5xl mx-auto">
             {/* Close Button */}
@@ -81,7 +81,7 @@ const CalendlyModal = ({ isOpen, onClose }) => {
             </button>
 
             <ContactForm />
-            <h2 className="my-4 sm:mt-12 sm:mb-0 text-2xl font-bold text-center text-gray-800">
+            <h2 className="my-4 sm:mt-10 sm:mb-2 text-2xl font-bold text-center text-gray-800">
               Or schedule a meeting
             </h2>
             {/* Calendly Widget Container */}

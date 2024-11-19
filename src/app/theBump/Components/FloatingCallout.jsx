@@ -55,9 +55,9 @@ const FloatingCallout = () => {
     <>
       {/* Above the Fold Button */}
       <div className="relative section mt-8" id="above-the-fold">
-        <span className="hidden md:block absolute -left-28 top-16">
-          <img src="https://imagekit.dpanda.in/publisher-banner/1731332697_arrow2.png" />
-          <span className="absolute font-semibold -top-8 -left-24 w-40">
+        <span className="hidden md:block absolute -right-20 -top-12">
+          <img src="/arrow-white.svg" />
+          <span className="absolute text-white font-semibold top-12 left-16 w-40">
             5. Floating Callouts
           </span>
         </span>
