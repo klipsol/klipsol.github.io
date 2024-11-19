@@ -3,16 +3,16 @@ import React from "react";
 
 export default function Footer() {
   return (
-    <>
-      <div className="bg-[#013046] lg:h-[116px] w-full text-white sm:py-4 lg:p-0">
+    <footer>
+      <div className="bg-[#013046] lg:h-[116px] w-full text-white sm:py-8 lg:p-0">
         <div className="w-full h-full sec-container mx-auto flex justify-between lg:items-center box-border sm:flex-col lg:flex-row">
           <div className="custom-text-xs h-full lg:justify-center w-fit flex flex-col">
             <img className="h-12 w-fit" src="/panda.png" alt="panda" />
-            <p className="mt-2 sm:text-2xl lg:custom-text-xs">
+            <p className="lg:mt-2 sm:text-2xl sm:mt-3 lg:custom-text-xs">
               Democratising Digital Commerce
             </p>
           </div>
-          <div className="grid grid-cols-2 gap-x-10 lg:gap-y-2 gap-y-4 text-left text-[0.9em] 2xl:text-[1em] mt-5 lg:mt-0">
+          <div className="grid grid-cols-2 gap-x-10 lg:gap-y-2 gap-y-6 text-left text-[0.9em] 2xl:text-[1em] mt-5 lg:mt-0">
             <Link href="" className="hover:underline transition-colors ">
               Privacy Policy
             </Link>
@@ -34,9 +34,9 @@ export default function Footer() {
           </div>
         </div>
       </div>
-      <div className="bg-[#EEF0F8] w-full flex justify-center py-3 text-[#013046] lg:text-[0.8em]">
+      <div className="bg-[#EEF0F8] w-full flex justify-center py-3 text-[#013046] text-[0.8em]">
         © Klip Solutions Pvt. Ltd., All rights reserved.
       </div>
-    </>
+    </footer>
   );
 }

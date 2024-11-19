@@ -44,7 +44,7 @@ export default function EveryThingFree() {
   return (
     <section
       ref={sectionRef}
-      className="lg:h-screen sm:h-[150vh] flex relative sm:flex-col lg:flex-row bg-white"
+      className="h-screen flex relative sm:flex-col lg:flex-row bg-white"
     >
       {/* background */}
       {/* <div className="h-full lg:w-[60%] sm:w-full bg-[#FEF4D4]"></div>
