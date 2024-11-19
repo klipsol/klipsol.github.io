@@ -1,7 +1,7 @@
-'use client';
-import { gsap } from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import { useEffect, useRef } from 'react';
+"use client";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { useEffect, useRef } from "react";
 
 const SmoothScroll = ({ children }) => {
   const rootRef = useRef(null);
@@ -26,8 +26,8 @@ const SmoothScroll = ({ children }) => {
 
       gsap.to(scroll, {
         y: -currentScroll,
-        duration: 1.5,
-        ease: 'power2.out',
+        duration: 1,
+        ease: "power2.out",
       });
     };
 
@@ -39,12 +39,12 @@ const SmoothScroll = ({ children }) => {
     ScrollTrigger.refresh();
 
     // Event listeners
-    window.addEventListener('scroll', smoothScroll);
-    window.addEventListener('resize', setHeight);
+    window.addEventListener("scroll", smoothScroll);
+    window.addEventListener("resize", setHeight);
 
     return () => {
-      window.removeEventListener('scroll', smoothScroll);
-      window.removeEventListener('resize', setHeight);
+      window.removeEventListener("scroll", smoothScroll);
+      window.removeEventListener("resize", setHeight);
     };
   }, []);
 
@@ -52,10 +52,10 @@ const SmoothScroll = ({ children }) => {
     <div
       ref={rootRef}
       style={{
-        overflow: 'hidden',
-        position: 'fixed',
-        width: '100%',
-        height: '100vh',
+        overflow: "hidden",
+        position: "fixed",
+        width: "100%",
+        height: "100vh",
         top: 0,
         left: 0,
       }}

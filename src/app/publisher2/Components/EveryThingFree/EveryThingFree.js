@@ -1,6 +1,6 @@
-'use client';
-import { useRef } from 'react';
-import HighlightedText from '../HighlightedText/HighlightedText';
+"use client";
+import { useRef } from "react";
+import HighlightedText from "../HighlightedText/HighlightedText";
 
 export default function EveryThingFree() {
   const sectionRef = useRef(null);
@@ -42,15 +42,18 @@ export default function EveryThingFree() {
   //   };
   // }, []);
   return (
-    <section ref={sectionRef} className="h-screen flex relative">
+    <section
+      ref={sectionRef}
+      className="lg:h-screen sm:h-[150vh] flex relative sm:flex-col lg:flex-row bg-white"
+    >
       {/* background */}
-      <div className="h-full w-[60%] bg-[#FEF4D4]"></div>
-      <div className="h-full w-[40%] bg-[#EEF0F8]"></div>
+      {/* <div className="h-full lg:w-[60%] sm:w-full bg-[#FEF4D4]"></div>
+      <div className="h-full lg:w-[40%] sm:w-full bg-[#EEF0F8]"></div> */}
 
       {/* actual content begins here */}
 
-      <div className="absolute inset-0 sec-container flex">
-        <div className="w-[60%] h-full flex-col flex items-center">
+      <div className="absolute inset-0 sec-container flex sm:flex-col lg:flex-row">
+        <div className="lg:w-[60%] sm:w-full lg:h-full sm:h-1/2 flex-col flex items-center">
           <div className="flex flex-col items-center h-[80%]">
             <div>
               <h1 className="title text-[#1D234E] my-[10%] text-center font-medium">
@@ -58,7 +61,7 @@ export default function EveryThingFree() {
                 <HighlightedText
                   text=" When You"
                   wrapperClass="bottom-2 h-[35%]"
-                />{' '}
+                />{" "}
                 Do
               </h1>
             </div>
@@ -70,17 +73,17 @@ export default function EveryThingFree() {
             No Upfront Costs. You win, we win.
           </p>
         </div>
-        <div className="w-[40%] h-full flex-col flex items-center">
+        <div className="lg:w-[40%] sm:w-full lg:h-full sm:h-1/2 flex-col flex items-center">
           <div className="flex flex-col items-center h-[80%]">
             <div>
               <h1 className="title text-[#1D234E] my-[10%] text-center font-medium">
-                Go{' '}
-                <HighlightedText wrapperClass="bottom-2 h-[30%]" text="Live" />{' '}
+                Go{" "}
+                <HighlightedText wrapperClass="bottom-2 h-[30%]" text="Live" />{" "}
                 Within <br /> <span className="font-bold">1-5 Days</span>
               </h1>
             </div>
             <div className="h-[70%]">
-              <img src="/phone3.png" className="h-[90%]" alt="laptop" />
+              <img src="/golive.png" className="h-[90%]" alt="laptop" />
             </div>
           </div>
           <p className="text-[#505C6E] text-center max-w-[60%] custom-text-sm 2xl:text-2xl">
