@@ -12,16 +12,16 @@ const ContactForm = () => {
   }
 
   return (
-    <div className="max-w-3xl mt-8 mx-auto p-4 sm:p-8 sm:border rounded-xl sm:shadow-lg bg-white">
+    <div className="mx-auto p-4 sm:p-4 bg-white">
       <h2 className="text-2xl font-bold mb-6 text-center text-gray-800">
         Contact Us
       </h2>
-      <form className="space-y-2" onSubmit={handleSubmit}>
-        <div className="flex flex-col">
-          <label
-            htmlFor="email"
-            className="text-sm font-medium text-gray-600 mb-2"
-          >
+      <form
+        className="space-y-2 lg:flex lg:space-y-0 gap-4 justify-center items-center"
+        onSubmit={handleSubmit}
+      >
+        <div className="flex flex-col m-0">
+          <label htmlFor="email" className="text-sm font-medium text-gray-600">
             Email Address
           </label>
           <input
@@ -34,18 +34,19 @@ const ContactForm = () => {
           <ValidationError prefix="Email" field="email" errors={state.errors} />
         </div>
 
-        <div className="flex flex-col">
+        <div className="flex flex-col m-0">
           <label
             htmlFor="message"
-            className="text-sm font-medium text-gray-600 mb-2"
+            className="text-sm font-medium text-gray-600"
           >
             Message
           </label>
-          <textarea
+          <input
             id="message"
             name="message"
             className="px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500"
-            rows="5"
+            rows="1"
+            min-rows="1"
             required
           />
           <ValidationError
@@ -55,15 +56,13 @@ const ContactForm = () => {
           />
         </div>
 
-        <div className="flex justify-center">
-          <button
-            type="submit"
-            disabled={state.submitting}
-            className="px-6 py-2 text-white bg-indigo-600 rounded-md hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-opacity-50 disabled:bg-gray-400"
-          >
-            {state.submitting ? 'Submitting...' : 'Submit'}
-          </button>
-        </div>
+        <button
+          type="submit"
+          disabled={state.submitting}
+          className="px-6 py-2 w-full md:w-auto lg:self-end text-white bg-indigo-600 rounded-md hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-opacity-50 disabled:bg-gray-400"
+        >
+          {state.submitting ? 'Submitting...' : 'Submit'}
+        </button>
       </form>
     </div>
   );

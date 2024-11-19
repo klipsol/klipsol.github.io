@@ -23,7 +23,7 @@ export default function Navbar() {
               className="max-h-10 mt-6 mb-4"
             />
           </Link>
-          <div className="p-4 md:px-4 md:pt-6 md:pb-4 bg-[#043045] rounded-b-2xl hidden sm:block">
+          <div className="p-4 md:px-4 md:pt-6 md:pb-4 bg-[#043045] rounded-b-2xl hidden lg:block">
             <div className="md:gap-x-6 gap-y-2 items-center pt-0 md:pt-4 w-full md:w-fit justify-between hidden sm:flex sm:flex-col md:flex-row lg:flex">
               {/* <LivePreviewLinks /> */}
               <a href="/theBump" className="flex flex-col cursor-pointer">

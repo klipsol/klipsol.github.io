@@ -21,9 +21,9 @@ const CTAsSection = () => {
           src="https://publisher-banner.dpanda.in/1726056945_Belavita.png"
           alt="bellavita-banner"
         />
-        <span className="hidden md:block absolute -left-24 top-16">
-          <img src="https://imagekit.dpanda.in/publisher-banner/1731332697_arrow2.png" />
-          <span className="absolute font-semibold -top-10 -left-20 w-40">
+        <span className="hidden md:block absolute -right-20 top-16">
+          <img src="/arrow-white.svg" />
+          <span className="absolute font-semibold text-white top-12 -right-32 w-40">
             3. Targetted Banners
           </span>
         </span>
