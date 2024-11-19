@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import { useState } from 'react';
 import CalendlyModal from '../Calendly/CalendlyModal';
 
@@ -27,12 +28,13 @@ export default function Navbar() {
                 for pinterest
               </p>
             </a>
-            <button
+            <Link
+              href="/roi-calculator"
               className="rounded-[24px] bg-secondaryBg px-4 py-1 text-white font-medium"
               variant="primary"
             >
               ROI Calculator
-            </button>
+            </Link>
             <button
               onClick={openModal}
               className="rounded-[24px] bg-primaryBg px-4 py-1 text-primaryTextColor font-medium"
