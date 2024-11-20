@@ -63,7 +63,7 @@ export default function Technology() {
         </>
       ),
       className:
-        "absolute sm:bottom-[15%] bottom-[25%] -left-[100px] 2xl:-left-[110px]",
+        "absolute sm:bottom-[10%] bottom-[25%] -left-[100px] 2xl:-left-[110px]",
     },
     {
       icon: "/ai.png",
@@ -102,7 +102,7 @@ export default function Technology() {
         </>
       ),
       className:
-        "absolute sm:bottom-[15%] bottom-[25%] -right-[100px] bg-[#033046] 2xl:-right-[130px] text-white",
+        "absolute sm:bottom-[10%] bottom-[25%] -right-[100px] bg-[#033046] 2xl:-right-[130px] text-white",
     },
   ];
 
