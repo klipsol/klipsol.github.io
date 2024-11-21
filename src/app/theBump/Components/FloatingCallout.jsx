@@ -72,7 +72,12 @@ const FloatingCallout = () => {
         </div>
       </div>
       <div className="section mt-8" id="above-the-fold" ref={sectionRef}>
-        <div ref={buttonRef} onClick={() => console.log('Toggle Shop Story')}>
+        <div
+          ref={buttonRef}
+          onClick={() => {
+            window.DPWidget.toggleProductList();
+          }}
+        >
           <img
             src="https://imagekit.dpanda.in/publisher-banner/1719488194_Practic-b1.gif"
             alt="Blog"

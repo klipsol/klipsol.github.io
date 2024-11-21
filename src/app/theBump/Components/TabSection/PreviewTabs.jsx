@@ -18,7 +18,7 @@ const PreviewTabs = () => {
   ];
 
   return (
-    <div className="mx-auto mt-4">
+    <div className="mx-2 md:mx-auto mt-4">
       <div className="mx-auto max-w-3xl flex mb-4">
         {tabData.map((tab, index) => (
           <button

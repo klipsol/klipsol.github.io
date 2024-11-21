@@ -1,10 +1,13 @@
 import Script from 'next/script';
+import Navbar from '../roi-calculator/Components/Navbar';
 import PreviewTabs from './Components/TabSection/PreviewTabs';
 
 const Page = () => {
   return (
-    <main className="bg-[#09133A] text-white pb-10">
-      {/* <Script id="theBump-widget" strategy="afterInteractive">
+    <>
+      <Navbar />
+      <main className="bg-[#09133A] text-white pb-10">
+        {/* <Script id="theBump-widget" strategy="afterInteractive">
           {`(function (d, s, id) {
              const js = d.createElement(s);
              const fjs = d.getElementsByTagName(s)[0];
@@ -22,8 +25,8 @@ const Page = () => {
              };
          }(document, 'script', 'dpanda-widget'));`}
         </Script> */}
-      <Script id="" strategy="afterInteractive">
-        {`
+        <Script id="" strategy="afterInteractive">
+          {`
             (async () => {
               // Fetch the product text on the page from the server
               const fetchProductsOnPagePerWidget = async () => {
@@ -128,26 +131,27 @@ const Page = () => {
               }(document, 'script', 'dpanda-widget'));
             })()
           `}
-      </Script>
-      <div>
-        {/* Header Section */}
-        <header className="bg-[#fdfcfa] shadow-md">
-          <div className="max-w-screen-xl mx-auto p-5">
-            <img
-              src="https://imagekit.dpanda.in/publisher-banner/1730186061_logo1.png"
-              alt="Dpanda Logo"
-              className="w-32"
-            />
-          </div>
-        </header>
+        </Script>
+        <div>
+          {/* Header Section */}
+          {/* <header className="bg-[#fdfcfa] shadow-md">
+            <div className="max-w-screen-xl mx-auto p-5">
+              <img
+                src="https://imagekit.dpanda.in/publisher-banner/1730186061_logo1.png"
+                alt="Dpanda Logo"
+                className="w-32"
+              />
+            </div>
+          </header> */}
 
-        {/* Main Content Section */}
-        {/* <h1 className="text-center text-lg mt-10">
+          {/* Main Content Section */}
+          {/* <h1 className="text-center text-lg mt-10">
             Click To Experience Yourself
           </h1> */}
-        <PreviewTabs />
-      </div>
-    </main>
+          <PreviewTabs />
+        </div>
+      </main>
+    </>
   );
 };
 

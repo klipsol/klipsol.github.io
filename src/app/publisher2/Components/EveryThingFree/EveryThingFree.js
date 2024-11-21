@@ -1,6 +1,6 @@
-"use client";
-import { useRef } from "react";
-import HighlightedText from "../HighlightedText/HighlightedText";
+'use client';
+import { useRef } from 'react';
+import HighlightedText from '../HighlightedText/HighlightedText';
 
 export default function EveryThingFree() {
   const sectionRef = useRef(null);
@@ -52,16 +52,16 @@ export default function EveryThingFree() {
 
       {/* actual content begins here */}
 
-      <div className="absolute inset-0 sec-container flex sm:flex-col lg:flex-row">
-        <div className="lg:w-[60%] sm:w-full lg:h-full sm:h-1/2 flex-col flex items-center">
+      <div className="absolute inset-0 md:sec-container flex sm:flex-col lg:flex-row">
+        <div className="lg:w-[60%] bg-[#FEF4D4] sm:w-full lg:h-full sm:h-1/2 flex-col flex items-center">
           <div className="flex flex-col items-center h-[80%]">
             <div>
               <h1 className="title text-[#1D234E] my-[10%] text-center font-medium">
                 Zero Cost. We Earn <br />
                 <HighlightedText
                   text=" When You"
-                  wrapperClass="bottom-2 h-[35%]"
-                />{" "}
+                  wrapperClass="bottom-1 h-[35%]"
+                />{' '}
                 Do
               </h1>
             </div>
@@ -73,12 +73,12 @@ export default function EveryThingFree() {
             No Upfront Costs. You win, we win.
           </p>
         </div>
-        <div className="lg:w-[40%] sm:w-full lg:h-full sm:h-1/2 flex-col flex items-center">
+        <div className="lg:w-[40%] bg-[#EEF0F8] sm:w-full lg:h-full sm:h-1/2 flex-col flex items-center">
           <div className="flex flex-col items-center h-[80%]">
             <div>
               <h1 className="title text-[#1D234E] my-[10%] text-center font-medium">
-                Go{" "}
-                <HighlightedText wrapperClass="bottom-2 h-[30%]" text="Live" />{" "}
+                Go{' '}
+                <HighlightedText wrapperClass="bottom-2 h-[30%]" text="Live" />{' '}
                 Within <br /> <span className="font-bold">1-5 Days</span>
               </h1>
             </div>
