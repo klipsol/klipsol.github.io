@@ -1,111 +1,71 @@
-import { Poppins } from "next/font/google";
-import "./globals.css";
+import { Inter_Tight } from 'next/font/google';
+import './globals.css';
 
-const poppins = Poppins({
-  subsets: ["latin"],
-  variable: "--font-poppins",
-  display: "swap",
-  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+const inter = Inter_Tight({
+  subsets: ['latin'],
+  variable: '--font-inter',
+  display: 'swap',
+  weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'],
 });
 
 export const metadata = {
-  title: "Dpanda | Direct from brands",
+  title: 'Dpanda | Direct from brands',
   description:
-    "Dpanda offer Your Gateway to E-Commerce. Enable contextual E-commerce everywhere, within minutes. Publisher can turn their site into a micro-ecommerce site.",
+    'Dpanda offer Your Gateway to E-Commerce. Enable contextual E-commerce everywhere, within minutes. Publisher can turn their site into a micro-ecommerce site.',
+  metadataBase: new URL('https://test-dpanda.pages.dev'),
+  charset: 'UTF-8',
+  viewport: 'width=device-width, initial-scale=1.0',
+  keywords: ['brand', 'monetization', 'publisher', 'site'],
+  authors: [{ name: 'Your Name' }],
+
+  openGraph: {
+    title: 'Everything To Transact Brands On Your Site',
+    description: 'Monetize By Embedding Brands Within Your Site',
+    url: '/publisher2',
+    siteName: 'Dpanda',
+    images: [
+      {
+        url: 'https://imagekit.dpanda.in/publisher-banner/1731586986_image.png',
+      },
+    ],
+    type: 'website',
+  },
+
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Everything To Transact Brands On Your Site',
+    description: 'Monetize By Embedding Brands Within Your Site',
+    images: [
+      'https://imagekit.dpanda.in/publisher-banner/1731586986_image.png',
+    ],
+    site: '@yourtwitterhandle',
+    creator: '@yourtwitterhandle',
+  },
+
+  other: {
+    'linkedin:title': 'Everything To Transact Brands On Your Site',
+    'linkedin:description': 'Monetize By Embedding Brands Within Your Site',
+    'linkedin:image':
+      'https://imagekit.dpanda.in/publisher-banner/1731586986_image.png',
+
+    'whatsapp:title': 'Everything To Transact Brands On Your Site',
+    'whatsapp:description': 'Monetize By Embedding Brands Within Your Site',
+    'whatsapp:image':
+      'https://imagekit.dpanda.in/publisher-banner/1731586986_image.png',
+
+    'slack:title': 'Everything To Transact Brands On Your Site',
+    'slack:description': 'Monetize By Embedding Brands Within Your Site',
+    'slack:image':
+      'https://imagekit.dpanda.in/publisher-banner/1731586986_image.png',
+  },
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <head>
-        <meta charSet="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta
-          name="description"
-          content="Monetize By Embedding Brands Within Your Site"
-        />
-        <meta name="keywords" content="brand, monetization, publisher, site" />
-        <meta name="author" content="Your Name" />
-
-        <meta
-          property="og:title"
-          content="Everything To Transact Brands On Your Site"
-        />
-        <meta
-          property="og:description"
-          content="Monetize By Embedding Brands Within Your Site"
-        />
-        <meta
-          property="og:image"
-          content="https://imagekit.dpanda.in/publisher-banner/1731586986_image.png"
-        />
-        <meta
-          property="og:url"
-          content="https://test-dpanda.pages.dev/publisher2"
-        />
-        <meta property="og:type" content="website" />
-        <meta property="og:site_name" content="Dpanda" />
-
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta
-          name="twitter:title"
-          content="Everything To Transact Brands On Your Site"
-        />
-        <meta
-          name="twitter:description"
-          content="Monetize By Embedding Brands Within Your Site"
-        />
-        <meta
-          name="twitter:image"
-          content="https://imagekit.dpanda.in/publisher-banner/1731586986_image.png"
-        />
-        <meta name="twitter:site" content="@yourtwitterhandle" />
-        <meta name="twitter:creator" content="@yourtwitterhandle" />
-
-        <meta
-          name="linkedin:title"
-          content="Everything To Transact Brands On Your Site"
-        />
-        <meta
-          name="linkedin:description"
-          content="Monetize By Embedding Brands Within Your Site"
-        />
-        <meta
-          name="linkedin:image"
-          content="https://imagekit.dpanda.in/publisher-banner/1731586986_image.png"
-        />
-
-        <meta
-          name="whatsapp:title"
-          content="Everything To Transact Brands On Your Site"
-        />
-        <meta
-          name="whatsapp:description"
-          content="Monetize By Embedding Brands Within Your Site"
-        />
-        <meta
-          name="whatsapp:image"
-          content="https://imagekit.dpanda.in/publisher-banner/1731586986_image.png"
-        />
-
-        <meta
-          name="slack:title"
-          content="Everything To Transact Brands On Your Site"
-        />
-        <meta
-          name="slack:description"
-          content="Monetize By Embedding Brands Within Your Site"
-        />
-        <meta
-          name="slack:image"
-          content="https://imagekit.dpanda.in/publisher-banner/1731586986_image.png"
-        />
-
-        <title>Dpanda</title>
-      </head>
       <body
         className={` bg-white
-        ${poppins.className}
+        ${inter.className}
          antialiased`}
       >
         {children}

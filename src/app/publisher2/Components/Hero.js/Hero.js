@@ -75,7 +75,7 @@ export default function Hero() {
 
   return (
     <>
-      <section className="h-screen relative overflow-hidden bg-white">
+      <section className="hidden md:block h-screen md:relative overflow-hidden bg-white">
         <Navbar />
         {/* yellow image layout  */}
 

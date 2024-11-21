@@ -1,13 +1,12 @@
-import React from "react";
-import HighlightedText from "../HighlightedText/HighlightedText";
+import HighlightedText from '../HighlightedText/HighlightedText';
 
 export default function Final() {
   return (
     <section className="pb-16 bg-white flex flex-col relative overflow-hidden ">
       <div className="sec-container w-full  h-full">
         <h1 className="title font-medium text-[#1D234E] mt-[4%] w-[60%] ">
-          Built on{" "}
-          <HighlightedText wrapperClass="bottom-2 h-[35%]" text="Trust" />{" "}
+          Built on{' '}
+          <HighlightedText wrapperClass="bottom-1 h-[35%]" text="Trust" />{' '}
         </h1>
         <div className="flex lg:justify-around sm:justify-between text-[#013046] mt-[5%]">
           <div className="flex items-center  gap-x-8 sm:flex-col lg:flex-row">
