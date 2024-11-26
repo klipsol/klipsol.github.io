@@ -4,7 +4,7 @@ const CTAsSection = () => {
     document.getElementById('dpw-recipe-btn').click();
   };
   const togglePDP = () => {
-    window.DPWidget.togglePDP();
+    window.DPWidget.togglePDP('201415');
   };
   const toggleProductsSheet = () => {
     window.DPWidget.toggleProductList();
