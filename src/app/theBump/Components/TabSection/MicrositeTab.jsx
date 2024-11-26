@@ -10,7 +10,7 @@ const MicrositeTab = ({ selectedTab }) => {
         Experience the microsite by clicking on the button bellow:
       </p>
       <a
-        href="https://yourstore.dpanda.online/"
+        href="https://yourstore.dpanda.online/?user_id=1234567899"
         target="_blank"
         className="bg-blue-500 text-white rounded-md p-2 hover:underline"
       >
