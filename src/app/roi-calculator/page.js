@@ -77,7 +77,7 @@ export default function ROICalculator() {
 									<li className="text-[#003046] text-base lg:text-xl font-semibold mb-4 md:mb-6">
 										Impressions-per-month
 									</li>
-									<li className="text-[#003046]">User Conversion</li>
+									<li className="text-[#003046]">User Conversion*</li>
 									<li className="text-[#003046]">Margin-per-conversion</li>
 									<li className="text-[#003046]">AOV</li>
 								</ul>
@@ -92,7 +92,9 @@ export default function ROICalculator() {
 							</div>
 							<div className="relative pt-6 rounded-2xl z-10 -mt-3 flex rounded-t-none bg-[#F7BC31] p-4">
 								<ul className="flex-1 text-sm lg:text-lg text-start lg:text-center space-y-2 lg:space-y-4">
-									<li className="text-[#1D234E] text-base lg:text-xl font-bold">Profit-per-month</li>
+									<li className="text-[#1D234E] text-base lg:text-xl font-bold">
+										Profit-per-month**
+									</li>
 									<li className="text-base lg:text-xl font-medium">Effective CPM</li>
 								</ul>
 								<ul className="w-1/3 lg:w-1/2 text-end lg:text-center text-sm lg:text-lg flex-1 space-y-2 lg:space-y-4">
