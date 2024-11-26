@@ -5,104 +5,130 @@ import HighlightedText from "../HighlightedText/HighlightedText";
 const CoreFeatures = () => {
   return (
     <div className="bg-[#FFFAEA] pb-10 flex ">
-      <div className="sec-container">
-        <h1 className="text-[#1D234E] font-semibold title text-center my-10">
+      <div className="lg:sec-container w-full">
+        <h1 className="text-[#1D234E] font-semibold title lg:text-center my-8 lg:my-10 px-2 lg:py-0">
           <HighlightedText
             wrapperClass="bottom-[10%]"
             text="Full-Stack"
           ></HighlightedText>{" "}
           eCommerce Over SAAS
         </h1>
-        <div className="flex justify-between">
-          <div>
-            <h2 className="text-[#505C6E] font-semibold custom-text-base mb-4 py-2">
-              Core Features
-            </h2>
-            <ul className="space-y-4 text-[#505C6E] lg:text-[1.125em] 2xl:text-[1.6em] ">
-              <li>Seamless Integration</li>
-              <li>Brand Enablement</li>
-              <li>Smart Cart</li>
-              <li>Shopper Marketing</li>
-              <li>Operations (team)</li>
-              <li>AI Intelligence</li>
-              <li>Advance Analytics</li>
-              <li>Marketplace Features</li>
-            </ul>
+        <div className="flex justify-between sm:gap-x-1 px-1">
+          <div className="flex justify-between sm:gap-x-1 px-1">
+            <div className="bg-[#EEF0F8] sm:rounded-t-2xl lg:rounded-t-3xl overflow-hidden border-[3px] border-[#FFFAEA]">
+              <h2 className="text-[#505C6E] font-semibold custom-text-base mb-4 bg-[#C4C7D5] text-center py-1 lg:py-2">
+                Core <br className="lg:hidden" /> Features
+              </h2>
+              <div className="grid gap-4 text-[#505C6E] lg:px-5 pb-4 lg:text-[1.125em] 2xl:text-[1.6em]">
+                <div className="flex flex-col items-center lg:flex-row lg:items-center sm:text-center lg:text-left border-t-[3px] border-[#FFFAEA] px-3 py-2">
+                  <CheckIcon className="text-green-500 mr-2 mb-2 lg:mb-0" />
+                  <span>Seamless Integration</span>
+                </div>
+                <div className="flex flex-col items-center lg:flex-row lg:items-center sm:text-center lg:text-left border-b-[3px] border-[#FFFAEA] px-3 py-2">
+                  <CheckIcon className="text-green-500 mr-2 mb-2 lg:mb-0" />
+                  <span>Brand Enablement</span>
+                </div>
+                <div className="flex flex-col items-center lg:flex-row lg:items-center sm:text-center lg:text-left border-b-[3px] border-[#FFFAEA] px-3 py-2">
+                  <CheckIcon className="text-green-500 mr-2 mb-2 lg:mb-0" />
+                  <span>Smart Cart</span>
+                </div>
+                <div className="flex flex-col items-center lg:flex-row lg:items-center sm:text-center lg:text-left border-b-[3px] border-[#FFFAEA] px-3 py-2">
+                  <CheckIcon className="text-green-500 mr-2 mb-2 lg:mb-0" />
+                  <span>Shopper Marketing</span>
+                </div>
+                <div className="flex flex-col items-center lg:flex-row lg:items-center sm:text-center lg:text-left border-b-[3px] border-[#FFFAEA] px-3 py-2">
+                  <CheckIcon className="text-green-500 mr-2 mb-2 lg:mb-0" />
+                  <span>Operations (team)</span>
+                </div>
+                <div className="flex flex-col items-center lg:flex-row lg:items-center sm:text-center lg:text-left border-b-[3px] border-[#FFFAEA] px-3 py-2">
+                  <CheckIcon className="text-green-500 mr-2 mb-2 lg:mb-0" />
+                  <span>AI Intelligence</span>
+                </div>
+                <div className="flex flex-col items-center lg:flex-row lg:items-center sm:text-center lg:text-left border-b-[3px] border-[#FFFAEA] px-3 py-2">
+                  <CheckIcon className="text-green-500 mr-2 mb-2 lg:mb-0" />
+                  <span>Advance Analytics</span>
+                </div>
+                <div className="flex flex-col items-center lg:flex-row lg:items-center sm:text-center lg:text-left border-b-[3px] border-[#FFFAEA] px-3 py-2">
+                  <CheckIcon className="text-green-500 mr-2 mb-2 lg:mb-0" />
+                  <span>Marketplace Features</span>
+                </div>
+              </div>
+            </div>
           </div>
-          <div className="bg-[#EEF0F8] rounded-t-3xl overflow-hidden">
-            <h2 className="text-[#505C6E] font-semibold custom-text-base mb-4 bg-[#C4C7D5] text-center py-2">
-              Checkout SAAS
+          <div className="bg-[#EEF0F8] sm:rounded-t-2xl lg:rounded-t-3xl overflow-hidden">
+            <h2 className="text-[#505C6E] font-semibold custom-text-base mb-4 bg-[#C4C7D5] text-center py-1 lg:py-2">
+              Checkout <br className="lg:hidden" /> SAAS
             </h2>
-            <div className="grid gap-4 text-[#505C6E] px-5 pb-4 lg:text-[1.125em] 2xl:text-[1.6em]">
-              <div className="flex items-center">
-                <XIcon className="text-red-500 mr-2" />
+            <div className="grid gap-4 text-[#505C6E] lg:px-5 pb-4 lg:text-[1.125em] 2xl:text-[1.6em]">
+              <div className="flex flex-col items-center lg:flex-row lg:items-center sm:text-center lg:text-left border border-[#FFFAEA] px-3 py-2 ">
+                <XIcon className="text-red-500 mr-2 mb-2 lg:mb-0" />
                 <span>Manual, link by Link</span>
               </div>
-              <div className="flex items-center">
-                <XIcon className="text-red-500 mr-2" />
+              <div className="flex flex-col items-center lg:flex-row lg:items-center sm:text-center lg:text-left border border-[#FFFAEA] px-3 py-2 ">
+                <XIcon className="text-red-500 mr-2 mb-2 lg:mb-0" />
                 <span>Limited, no personalisation</span>
               </div>
-              <div className="flex items-center">
-                <XIcon className="text-red-500 mr-2" />
+              <div className="flex flex-col items-center lg:flex-row lg:items-center sm:text-center lg:text-left border border-[#FFFAEA] px-3 py-2 ">
+                <XIcon className="text-red-500 mr-2 mb-2 lg:mb-0" />
                 <span>Manual cart creation</span>
               </div>
-              <div className="flex items-center">
-                <XIcon className="text-red-500 mr-2" />
+              <div className="flex flex-col items-center lg:flex-row lg:items-center sm:text-center lg:text-left border border-[#FFFAEA] px-3 py-2 ">
+                <XIcon className="text-red-500 mr-2 mb-2 lg:mb-0" />
                 <span>Minimal tools</span>
               </div>
-              <div className="flex items-center">
-                <XIcon className="text-red-500 mr-2" />
+              <div className="flex flex-col items-center lg:flex-row lg:items-center sm:text-center lg:text-left border border-[#FFFAEA] px-3 py-2 ">
+                <XIcon className="text-red-500 mr-2 mb-2 lg:mb-0" />
                 <span>Not included</span>
               </div>
-              <div className="flex items-center">
-                <XIcon className="text-red-500 mr-2" />
+              <div className="flex flex-col items-center lg:flex-row lg:items-center sm:text-center lg:text-left border border-[#FFFAEA] px-3 py-2 ">
+                <XIcon className="text-red-500 mr-2 mb-2 lg:mb-0" />
                 <span>Not included</span>
               </div>
-              <div className="flex items-center">
-                <XIcon className="text-red-500 mr-2" />
+              <div className="flex flex-col items-center lg:flex-row lg:items-center sm:text-center lg:text-left border border-[#FFFAEA] px-3 py-2 ">
+                <XIcon className="text-red-500 mr-2 mb-2 lg:mb-0" />
                 <span>Limited reporting</span>
               </div>
-              <div className="flex items-center">
-                <XIcon className="text-red-500 mr-2" />
+              <div className="flex flex-col items-center lg:flex-row lg:items-center sm:text-center lg:text-left border border-[#FFFAEA] px-3 py-2 ">
+                <XIcon className="text-red-500 mr-2 mb-2 lg:mb-0" />
                 <span>Not included</span>
               </div>
             </div>
           </div>
-          <div className="bg-[#FEF4D3] rounded-t-3xl overflow-hidden">
-            <h2 className="text-[#505C6E] font-semibold custom-text-base mb-4 bg-[#F7BB30] text-center  py-2 px-4">
-              Dpanda: Full Stack eCommerce
+          <div className="bg-[#FEF4D3] sm:rounded-t-2xl lg:rounded-t-3xl overflow-hidden">
+            <h2 className="text-[#505C6E] font-semibold custom-text-base mb-4 bg-[#F7BB30] text-center py-1 lg:py-2">
+              Dpanda: Full Stack <br className="lg:hidden" /> eCommerce
             </h2>
-            <div className="space-y-4 px-5 pb-4 text-[#505C6E] lg:text-[1.125em] 2xl:text-[1.6em]">
-              <div className="flex items-center">
-                <CheckIcon className="text-green-500 mr-2" />
+            <div className="grid gap-4 text-[#505C6E] lg:px-5 pb-4 lg:text-[1.125em] 2xl:text-[1.6em]">
+              <div className="flex flex-col items-center lg:flex-row lg:items-center sm:text-center lg:text-left border-2 border-[#FFFAEA] px-3 py-2 ">
+                <CheckIcon className="text-green-500 mr-2 mb-2 lg:mb-0" />
                 <span>Effortless, one-time</span>
               </div>
-              <div className="flex items-center">
-                <CheckIcon className="text-green-500 mr-2" />
+              <div className="flex flex-col items-center lg:flex-row lg:items-center sm:text-center lg:text-left border-2 border-[#FFFAEA] px-3 py-2 ">
+                <CheckIcon className="text-green-500 mr-2 mb-2 lg:mb-0" />
                 <span>Bidding & personalisation</span>
               </div>
-              <div className="flex items-center">
-                <CheckIcon className="text-green-500 mr-2" />
+              <div className="flex flex-col items-center lg:flex-row lg:items-center sm:text-center lg:text-left border-2 border-[#FFFAEA] px-3 py-2 ">
+                <CheckIcon className="text-green-500 mr-2 mb-2 lg:mb-0" />
                 <span>Unified, feature-rich</span>
               </div>
-              <div className="flex items-center">
-                <CheckIcon className="text-green-500 mr-2" />
+              <div className="flex flex-col items-center lg:flex-row lg:items-center sm:text-center lg:text-left border-2 border-[#FFFAEA] px-3 py-2 ">
+                <CheckIcon className="text-green-500 mr-2 mb-2 lg:mb-0" />
                 <span>Integrated optimization</span>
               </div>
-              <div className="flex items-center">
-                <CheckIcon className="text-green-500 mr-2" />
+              <div className="flex flex-col items-center lg:flex-row lg:items-center sm:text-center lg:text-left border-2 border-[#FFFAEA] px-3 py-2 ">
+                <CheckIcon className="text-green-500 mr-2 mb-2 lg:mb-0" />
                 <span>Marketing, customer ops & more</span>
               </div>
-              <div className="flex items-center">
-                <CheckIcon className="text-green-500 mr-2" />
+              <div className="flex flex-col items-center lg:flex-row lg:items-center sm:text-center lg:text-left border-2 border-[#FFFAEA] px-3 py-2 ">
+                <CheckIcon className="text-green-500 mr-2 mb-2 lg:mb-0" />
                 <span>Personalized & adaptive</span>
               </div>
-              <div className="flex items-center">
-                <CheckIcon className="text-green-500 mr-2" />
+              <div className="flex flex-col items-center lg:flex-row lg:items-center sm:text-center lg:text-left border-2 border-[#FFFAEA] px-3 py-2 ">
+                <CheckIcon className="text-green-500 mr-2 mb-2 lg:mb-0" />
                 <span>Integrated & network level</span>
               </div>
-              <div className="flex items-center">
-                <CheckIcon className="text-green-500 mr-2" />
+              <div className="flex flex-col items-center lg:flex-row lg:items-center sm:text-center lg:text-left border-2 border-[#FFFAEA] px-3 py-2 ">
+                <CheckIcon className="text-green-500 mr-2 mb-2 lg:mb-0" />
                 <span>Mini-marketplace ecosystem</span>
               </div>
             </div>
