@@ -4,7 +4,7 @@ const CTAsSection = () => {
     document.getElementById('dpw-recipe-btn').click();
   };
   const togglePDP = () => {
-    window.DPWidget.togglePDP();
+    window.DPWidget.togglePDP('201415');
   };
   const toggleProductsSheet = () => {
     window.DPWidget.toggleProductList();
@@ -84,7 +84,7 @@ const CTAsSection = () => {
       <div className="mt-4">
         <p className="mb-2">3.5: Brands Toggle</p>
         <div
-          class="dpanda-ad dpanda-product dpandacommerce-catalog-widget dpwc-pf-sty"
+          className="dpanda-ad dpanda-product dpandacommerce-catalog-widget dpwc-pf-sty"
           data-dpa-layout="imagesWithLabels"
           data-dpa-widget-type="brands"
           data-dpa-widget-theme="theme1"
