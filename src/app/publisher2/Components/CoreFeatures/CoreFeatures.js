@@ -95,7 +95,9 @@ const CoreFeatures = () => {
               </div>
               <div className="flex flex-col items-center lg:flex-row lg:items-center sm:text-center lg:text-left border-t-[3px] lg:border-none px-2 border-[#FFFAEA]  py-2 ">
                 <XIcon className="text-red-500 mr-2 mb-2 lg:mb-0" />
-                <span>Limited reporting</span>
+                <span>
+                  Limited <br className="lg:hidden" /> reporting
+                </span>
               </div>
               <div className="flex flex-col items-center lg:flex-row lg:items-center sm:text-center lg:text-left border-t-[3px] lg:border-none px-2 border-[#FFFAEA]  py-2 ">
                 <XIcon className="text-red-500 mr-2 mb-2 lg:mb-0" />
@@ -130,7 +132,9 @@ const CoreFeatures = () => {
               </div>
               <div className="flex flex-col items-center lg:flex-row lg:items-center sm:text-center lg:text-left border-t-[3px] lg:border-none border-[#FFFAEA] px-1 py-2 ">
                 <CheckIcon className="text-green-500 mr-2 mb-2 lg:mb-0" />
-                <span>Integrated optimization</span>
+                <span>
+                  Integrated <br className="lg:hidden" /> optimization
+                </span>
               </div>
               <div className="flex flex-col items-center lg:flex-row lg:items-center sm:text-center lg:text-left border-t-[3px] lg:border-none border-[#FFFAEA] px-1 py-2 ">
                 <CheckIcon className="text-green-500 mr-2 mb-2 lg:mb-0" />
