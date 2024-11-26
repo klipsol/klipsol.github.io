@@ -15,6 +15,7 @@ import SmoothScroll from "./Components/SmoothScroll/SmoothScroll";
 import Technology from "./Components/Technology/Technology";
 import { Testimonial } from "./Components/Testimonial/Testimonial";
 import CoreFeatures from "./Components/CoreFeatures/CoreFeatures";
+import HigherMonitization from "./Components/HigherMonitization/HigherMonitization";
 
 export const metadata = {
   title: "Your Page Title",
@@ -74,6 +75,7 @@ export default function Publisher2() {
         <Hero />
         <HeroMobile />
         <BrandList />
+        <HigherMonitization />
         <Feature />
         <LifeTimeValue />
         <FirstParty />
