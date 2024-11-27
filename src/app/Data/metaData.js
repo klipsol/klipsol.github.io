@@ -1,25 +1,25 @@
 export const publisherMetaData = {
   pinterest: {
-    title: "Innovative Digital Solutions for Modern Businesses",
+    title: "Seamless Integration for Monetization and E-Commerce",
     description:
-      "Transforming digital landscapes with cutting-edge technology and strategic insights across multiple domains.",
+      "Empowering businesses with seamless integrations to monetize platforms and scale e-commerce operations effortlessly.",
     openGraph: {
-      title: "Innovative Digital Solutions for Modern Businesses",
+      title: "Seamless Integration for Monetization and E-Commerce",
       description:
-        "Transforming digital landscapes with cutting-edge technology and strategic insights across multiple domains.",
+        "Empowering businesses with seamless integrations to monetize platforms and scale e-commerce operations effortlessly.",
       images: [
         "https://images.ctfassets.net/h67z7i6sbjau/1BagIfaFzctcYiDizhJLOy/847c970a21517eb1c0f49425c8401769/Logo_primary_2x.jpg?fm=webp&q=85",
       ],
     },
   },
   theBump: {
-    title: "Innovative Digital Solutions for Modern Businesses",
+    title: "Streamlined Solutions for App Monetization and Growth",
     description:
-      "Transforming digital landscapes with cutting-edge technology and strategic insights across multiple domains.",
+      "Unlock the potential of your app with tailored solutions for monetization, user engagement, and enhanced e-commerce capabilities.",
     openGraph: {
-      title: "Innovative Digital Solutions for Modern Businesses",
+      title: "Streamlined Solutions for App Monetization and Growth",
       description:
-        "Transforming digital landscapes with cutting-edge technology and strategic insights across multiple domains.",
+        "Unlock the potential of your app with tailored solutions for monetization, user engagement, and enhanced e-commerce capabilities.",
       images: ["https://www.dummyimage.com/1200x630/"],
     },
   },
