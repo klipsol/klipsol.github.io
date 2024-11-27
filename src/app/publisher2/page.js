@@ -17,23 +17,6 @@ import { Testimonial } from "./Components/Testimonial/Testimonial";
 import CoreFeatures from "./Components/CoreFeatures/CoreFeatures";
 import HigherMonitization from "./Components/HigherMonitization/HigherMonitization";
 
-export async function generateMetadata({ params }) {
-  // Get the path from params
-  const path = params.slug ? params.slug.join("/") : "/";
-
-  return {
-    title: "Innovative Digital Solutions for Modern Businesses",
-    description:
-      "Transforming digital landscapes with cutting-edge technology and strategic insights across multiple domains.",
-    openGraph: {
-      title: "Innovative Digital Solutions for Modern Businesses",
-      description:
-        "Transforming digital landscapes with cutting-edge technology and strategic insights across multiple domains.",
-      images: ["https://www.dummyimage.com/1200x630/"],
-    },
-  };
-}
-
 export default function Publisher2() {
   return (
     <main>
