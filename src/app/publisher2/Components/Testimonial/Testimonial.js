@@ -1,7 +1,7 @@
-import { brands, brands2, news } from '@/app/Data/brandsData';
+import { brands, brands2, news } from "@/app/Data/brandsData";
 // import Marquee from "../Marquee/Marquee";
-import Marquee from 'react-fast-marquee';
-import HighlightedText from '../HighlightedText/HighlightedText';
+import Marquee from "react-fast-marquee";
+import HighlightedText from "../HighlightedText/HighlightedText";
 export const Testimonial = () => (
   <section className="w-full pb-10 ">
     <div className=" flex flex-col items-center h-full justify-evenly">
@@ -44,13 +44,13 @@ export const Testimonial = () => (
       <hr className="w-full border border-gray-300" />
       <div className="sec-container w-full py-10">
         <h1 className="mb-[3%] text-center md:text-start sec-container text-[#013046] title font-bold">
-          Dpanda in the{' '}
+          Dpanda in the{" "}
           <HighlightedText text="news" wrapperClass="bottom-1 h-[30%]" />
         </h1>
         <div className="flex flex-wrap gap-4 lg:justify-between">
           {news.map((newshouse) => (
             <a
-              className="bg-white h-fit rounded-3xl px-5 py-5 basis-[calc(50%-0.5rem)] lg:basis-auto mx-0 transition-shadow"
+              className="bg-[#EEF0F8] lg:bg-white h-fit rounded-3xl px-5 py-5 basis-[calc(50%-0.5rem)] lg:basis-auto mx-0 transition-shadow"
               key={newshouse.name}
               href={newshouse.href}
               target="_blank"

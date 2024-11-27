@@ -1,11 +1,11 @@
-'use client';
-import { useRef } from 'react';
-import DPVideo from '../DPVideo/DPVideo';
-import HighlightedText from '../HighlightedText/HighlightedText';
+"use client";
+import { useRef } from "react";
+import DPVideo from "../DPVideo/DPVideo";
+import HighlightedText from "../HighlightedText/HighlightedText";
 
 export default function Feature() {
   const sectionRef = useRef(null);
-  const listItems = ['Higher Conversion'];
+  const listItems = ["Higher Conversion"];
 
   return (
     <section className="sec-container h-fit lg:h-screen sm:pb-10 relative flex  lg:flex-row sm:flex-col-reverse  w-full">
@@ -16,7 +16,7 @@ export default function Feature() {
           </div>
           <div className="h-[80%] flex justify-center flex-col items-center">
             <div className="flex h-[80%] items-center justify-center">
-              <DPVideo className="h-[90%]" src={'/left.mp4'} />
+              <DPVideo className="h-[90%]" src={"/left.mp4"} />
             </div>
             <p className="text-center text-[#254652] sm:w-[80%] lg:w-full text-lg font-medium 2xl:text-2xl">
               Click & <br className="lg:hidden" />
@@ -30,16 +30,16 @@ export default function Feature() {
           </div>
           <div className="h-[80%] flex justify-center flex-col items-center">
             <div className="flex h-[80%] items-center justify-center">
-              <DPVideo className="h-[90%]" src={'/right.mp4'} />
+              <DPVideo className="h-[90%]" src={"/right.mp4"} />
             </div>
             <p className="text-center text-[#254652] subtitle sm:w-[80%] lg:w-full text-lg font-medium 2xl:text-2xl">
-              Click & <br className="lg:hidden" />{' '}
+              Click & <br className="lg:hidden" />{" "}
               <span className="font-semibold">Convert</span>
             </p>
           </div>
         </div>
       </div>
-      <div className="lg:w-[35%] flex lg:flex-col sm:my-4 lg:my-0 sm:flex-row sm:gap-x-2 lg:justify-center lg:px-8 gap-y-3 sm:p-0 sm:w-full">
+      <div className="lg:w-[35%] flex lg:flex-col sm:my-4 sm:mt-8 lg:my-0 sm:flex-row sm:gap-x-2 lg:justify-center lg:px-8 gap-y-3 sm:p-0 sm:w-full">
         <h1 className="text-[#023046]/20 title font-semibold leading-[1] sm:mt-1 lg:m-0 ">
           01
         </h1>
@@ -48,7 +48,7 @@ export default function Feature() {
             <HighlightedText
               text="Better"
               wrapperClass="bottom-1 h-[30%] font-semibold"
-            />{' '}
+            />{" "}
             <br />
             <span className="font-medium">User Experience</span>
           </h1>
