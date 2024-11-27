@@ -77,8 +77,10 @@ const FloatingCallout = () => {
           onClick={() => {
             window.DPWidget.toggleProductList();
           }}
+          className="w-full px-8"
         >
           <img
+            className=""
             src="https://imagekit.dpanda.in/publisher-banner/1719488194_Practic-b1.gif"
             alt="Blog"
           />

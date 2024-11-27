@@ -26,7 +26,7 @@ export default function Navbar({ customBg }) {
         )}
         id="nav"
       >
-        <div className="lg:flex gap-4 relative pl-4 justify-between items-center flex flex-row md:flex-row bg-transparent rounded-3xl relative md:custom-text-base text-xs">
+        <div className="lg:flex gap-4 relative pl-4 justify-between items-center flex flex-row md:flex-row bg-transparent rounded-3xl md:custom-text-base">
           <Link href="/publisher2">
             <img
               src="/dpandaLogo2.png"
@@ -40,7 +40,7 @@ export default function Navbar({ customBg }) {
             />
           </Link>
           <div className="p-2 md:px-8 md:pt-6 md:pb-4 bg-[#043045] rounded-b-2xl lg:block">
-            <div className="md:gap-x-6 gap-y-2 items-center pt-0 md:pt-4 w-full md:w-fit justify-between hidden sm:flex sm:flex-row md:flex-row lg:flex">
+            <div className="text-sm md:gap-x-6 gap-y-2 items-center pt-0 md:pt-4 w-full md:w-fit justify-between hidden sm:flex sm:flex-row md:flex-row lg:flex">
               {/* <LivePreviewLinks /> */}
               <a href="/theBump" className="flex flex-col cursor-pointer">
                 <div className="flex gap-x-2 items-center relative">
