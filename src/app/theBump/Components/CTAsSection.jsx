@@ -15,8 +15,9 @@ const CTAsSection = () => {
   return (
     <>
       <div className="relative">
-        <p className="mt-4 mb-6">
-          3. Banner click can be customised to tigger multiple variations of the
+        <p className="mb-6">
+          <span className="font-bold">03. </span>
+          Banner click can be customised to tigger multiple variations of the
           widget
         </p>
         <p className="my-2">3.1: Category or Collection of Products</p>

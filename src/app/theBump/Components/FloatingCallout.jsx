@@ -80,7 +80,7 @@ const FloatingCallout = () => {
           className="w-full px-8"
         >
           <img
-            className=""
+            className="m-auto"
             src="https://imagekit.dpanda.in/publisher-banner/1719488194_Practic-b1.gif"
             alt="Blog"
           />
