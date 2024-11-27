@@ -1,19 +1,19 @@
-import { brands } from '@/app/Data/brandsData';
+import { brands } from "@/app/Data/brandsData";
 
 export const BrandList = () => {
   const allBrands = [
     ...brands,
-    { name: 'lightspeed', img: '/lightspeed.png' },
+    { name: "lightspeed", img: "/lightspeed.png" },
     // { name: "accel", img: "/accel.png" },
   ];
 
   return (
-    <div className="text-[#1D234E] py-4 lg:py-0 my-14 mt-8 sm:bg-[#EEF0F8] sm:pb-5 lg:bg-white lg:pb-12">
+    <div className="text-[#1D234E] py-4  mt-8 sm:bg-[#EEF0F8] sm:py-10 lg:bg-[#FFF9E6] lg:py-12">
       <h1 className="custom-text-sm-medium font-normal text-center mb-7 sec-container">
         Trusted by <span className="font-semibold">1500+ Brands</span>,
         <br className="lg:hidden" />
         Publishers with <span className="font-semibold">
-          200M+ Users{' '}
+          200M+ Users{" "}
         </span> and <br className="lg:hidden" />
         <span className="font-semibold"> Marquee Investors</span>
       </h1>

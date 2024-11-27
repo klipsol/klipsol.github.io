@@ -59,20 +59,20 @@ const LivePreviewLinks = () => {
         >
           <a
             className="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors"
-            href={'https://yourstore.dpanda.online/'}
+            href={'https://yourstore.dpanda.online/?user_id=1234567899'}
             target="_blank"
             rel="noopener noreferrer"
           >
             Microsite
           </a>
           {/* <button
-            onClick={() => openModal('https://yourstore.dpanda.online/')}
+            onClick={() => openModal('https://yourstore.dpanda.online/?user_id=1234567899')}
             className="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors"
           >
             Microsite
           </button> */}
           {/* <button
-            onClick={() => openModal('https://yourstore.dpanda.online/')}
+            onClick={() => openModal('https://yourstore.dpanda.online/?user_id=1234567899')}
             className="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors"
           >
             Microsite

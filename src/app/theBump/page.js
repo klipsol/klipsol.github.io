@@ -18,7 +18,7 @@ const Page = () => {
    
              js.onload = function () {
              if (typeof DPWidget !== 'undefined') {
-                 DPWidget.render({key: "VkxHbFJoa2lQVmIvdjRaRjgrQ25LZz09"});
+                 DPWidget.render({key: "VTZIajBSKzVQTnJ4dTZMOUV4bmJKdz09"});
              } else {
                  console.error('DPWidget is not available.');
              }
@@ -112,7 +112,7 @@ const Page = () => {
                     productIds: productIdsArr || undefined,
                     cartToggleType: "floating",
                     cartType: "bottomsheet",
-                    key: 'VkxHbFJoa2lQVmIvdjRaRjgrQ25LZz09',
+                    key: 'VTZIajBSKzVQTnJ4dTZMOUV4bmJKdz09',
                   });
                 }
               };

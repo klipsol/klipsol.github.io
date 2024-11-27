@@ -1,7 +1,7 @@
-'use client';
-import Link from 'next/link';
-import { useState } from 'react';
-import CalendlyModal from '../Calendly/CalendlyModal';
+"use client";
+import Link from "next/link";
+import { useState } from "react";
+import CalendlyModal from "../Calendly/CalendlyModal";
 
 export default function Navbar({ background }) {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -12,10 +12,10 @@ export default function Navbar({ background }) {
   return (
     <>
       <div
-        className={'sec-container opacity-1 mt-6 relative z-50 lg:pr-10 '}
+        className={"sec-container opacity-1 mt-6 relative z-50 lg:pr-10 "}
         id="nav"
       >
-        <div className="flex justify-between items-center flex-row bg-transparent rounded-3xl relative text-sm sm:custom-text-base">
+        <div className="flex justify-between items-center flex-row bg-transparent rounded-3xl relative sm:text-sm  2xl:text-lg xxl:text-2xl">
           <img
             src="/dpandaLogo2.png"
             alt="logo"

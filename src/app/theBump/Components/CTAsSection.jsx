@@ -4,7 +4,7 @@ const CTAsSection = () => {
 		document.getElementById('dpw-recipe-btn').click();
 	};
 	const togglePDP = () => {
-		window.DPWidget.togglePDP();
+		window.DPWidget.togglePDP('201415');
 	};
 	const toggleProductsSheet = () => {
 		window.DPWidget.toggleProductList();
@@ -15,8 +15,9 @@ const CTAsSection = () => {
 	return (
 		<>
 			<div className="relative">
-				<p className="mt-4 mb-6">
-					3. Banner click can be customised to trigger multiple variations of the widget
+				<p className="mb-6">
+					<span className="font-bold">03. </span>
+					Banner click can be customised to trigger multiple variations of the widget
 				</p>
 				<p className="my-2">3.1: Category or Collection of Products</p>
 				<img
@@ -78,6 +79,17 @@ const CTAsSection = () => {
 				>
 					Category Hierarchy
 				</button> */}
+			</div>
+
+			<div className="mt-4">
+				<p className="mb-2">3.5: Brands Toggle</p>
+				<div
+					className="dpanda-ad dpanda-product dpandacommerce-catalog-widget dpwc-pf-sty"
+					data-dpa-layout="imagesWithLabels"
+					data-dpa-widget-type="brands"
+					data-dpa-widget-theme="theme1"
+					dpw-commerce=""
+				></div>
 			</div>
 
 			{/* Group Purchase Section */}
