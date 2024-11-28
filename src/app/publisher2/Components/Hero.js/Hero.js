@@ -1,9 +1,9 @@
-'use client';
-import { useScrollTo } from '@/app/hooks/useSmoothScroll';
-import { useRef } from 'react';
-import DPVideo from '../DPVideo/DPVideo';
-import HighlightedText from '../HighlightedText/HighlightedText';
-import Navbar from '../Nav/Navbar';
+"use client";
+import { useScrollTo } from "@/app/hooks/useSmoothScroll";
+import { useRef } from "react";
+import DPVideo from "../DPVideo/DPVideo";
+import HighlightedText from "../HighlightedText/HighlightedText";
+import Navbar from "../Nav/Navbar";
 
 export default function Hero() {
   const scroll = useScrollTo();
@@ -81,7 +81,7 @@ export default function Hero() {
 
         <img
           src="/yellow-layout.svg"
-          className="absolute -top-[10%] 2xl:-top-[9%] w-full  z-10 lg:block sm:hidden"
+          className="absolute -top-[12%] 2xl:-top-[9%] w-full  z-10 lg:block sm:hidden"
           alt="bg"
         />
         <svg
@@ -99,11 +99,29 @@ export default function Hero() {
             fill="#f7ba30"
           />
         </svg>
+        <div className="top-[61%] h-fit xxl:top-[70%] 2xl:top-[54%] z-50 pointer-events-none w-full sec-container absolute xxl:text-[1.4em] inset-0">
+          <a
+            href="/theBump"
+            className="flex flex-col cursor-pointer bg-[#023046] rounded-[46px] py-2 xxl:py-3 xxl:rounded-[50px] w-fit px-10  "
+          >
+            <div className="flex gap-x-2 items-center relative">
+              {/* <span className="bg-[#F7BA30]/80 w-2 h-2 rounded-full "></span> */}
+              <span className="bg-[#F7BA30] w-2 h-2 xxl:w-2.5 xxl:h-2.5 rounded-full animate-ping [animation-duration:0.9s] absolute top-2 md:top-2 md:-left-4"></span>
+              <span className="bg-[#F7BA30] w-2 h-2 xxl:w-2.5 xxl:h-2.5 rounded-full  absolute top-2 md:top-2 md:-left-4"></span>
+              <span className="text-white text-center font-medium ml-3 xxl:ml-3.5 md:m-auto ">
+                Live Preview
+              </span>
+            </div>
+            <p className="text-[#F7BA30] text-[10px] xxl:text-[0.7em] text-center ml-3 md:m-auto">
+              for pinterest
+            </p>
+          </a>
+        </div>
         <div className="absolute inset-0 bg-transparent h-full w-full z-10 sec-container">
           <div className="lg:h-[90%] sm:h-full 2xl:h-[95%] w-1/2 sm:w-full relative ">
             <div className="text-primaryTextColor absolute bottom-0 ">
               <h1 className="py-4 custom-text-sm-medium xxl:text-3xl sm:text-xl ">
-                <HighlightedText text={'Everything'} /> To Transact Brands On
+                <HighlightedText text={"Everything"} /> To Transact Brands On
                 Your Site Site
               </h1>
               <div className="flex gap-x-3 custom-text-xs ">
@@ -130,15 +148,20 @@ export default function Hero() {
           {/* left section */}
           <div className="lg:z-10 sm:z-30">
             <h2 className="text-white lg:mt-[20%] 2xl:mt-[15%] sm:mt-[85px] ">
-              <span className="text-white title pt-3">
-                <span className="text-[#023046] font-extrabold">Monetize</span>{' '}
-                By Embedding
-                <br /> Brands Within Your Site
+              <span className="text-white lg:text-[3.8em] 2xl:text-[4.5em] xxl:text-[5em] leading-[1.2em] pt-3">
+                <span className="text-[#023046] font-extrabold">Discovery</span>{" "}
+                Meets
+                <br /> Commerce
               </span>
             </h2>
 
+            <p className="text-black mt-4 w-[80%] font-medium custom-text-sm-medium">
+              Power of discovery and commerce, as championed by Google, Amazon,
+              TikTok, and Meta
+            </p>
+
             {/* description */}
-            <h2 className="custom-text-sm-medium text-[#023046] font-extrabold mt-[3%] sm:mt-5">
+            {/* <h2 className="custom-text-sm-medium text-[#023046] font-extrabold mt-[3%] sm:mt-5">
               <HighlightedText
                 text="Drive"
                 wrapperClass="bg-[#FEF4D4] bottom-1"
@@ -172,7 +195,7 @@ export default function Hero() {
                   Data
                 </h1>
               </div>
-            </div>
+            </div> */}
           </div>
 
           {/* right section */}
