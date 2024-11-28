@@ -1,7 +1,7 @@
-'use client';
-import { useRef } from 'react';
-import HighlightedText from '../HighlightedText/HighlightedText';
-import { Chip } from '../UI/Chip/Chip';
+"use client";
+import { useRef } from "react";
+import HighlightedText from "../HighlightedText/HighlightedText";
+import { Chip } from "../UI/Chip/Chip";
 
 export default function Technology() {
   const sectionRef = useRef(null);
@@ -45,16 +45,17 @@ export default function Technology() {
 
   const leftPhoneChipData = [
     {
-      icon: '/end-to-end-tech.png',
+      icon: "/end-to-end-tech.png",
       label: (
         <>
           End-to-End <br /> Technology
         </>
       ),
-      className: 'absolute top-[15%] -left-[115px] 2xl:-left-[120px]',
+      className:
+        "absolute top-[15%] -left-[100px]  lg:-left-[115px] 2xl:-left-[120px]",
     },
     {
-      icon: '/data_and_analytics.png',
+      icon: "/data_and_analytics.png",
       label: (
         <>
           Data & <br />
@@ -62,46 +63,47 @@ export default function Technology() {
         </>
       ),
       className:
-        'absolute sm:bottom-[10%] bottom-[25%] -left-[100px] 2xl:-left-[110px]',
+        "absolute sm:bottom-[10%] bottom-[25%] -left-[90px] lg:-left-[100px] 2xl:-left-[110px]",
     },
     {
-      icon: '/ai.png',
+      icon: "/ai.png",
       label: (
         <>
           AI Based <br /> Recommendation
         </>
       ),
-      className: 'absolute top-[40%] -left-[150px] 2xl:-right-[170px]',
+      className:
+        "absolute top-[40%] -left-[110px] lg:-left-[150px] 2xl:-right-[170px]",
     },
     {
-      icon: '/payment.png',
+      icon: "/payment.png",
       label: (
         <>
           Payments & <br /> Settlements
         </>
       ),
       className:
-        'absolute top-[15%] -right-[120px] bg-[#033046] 2xl:-left-[130px] text-white',
+        "absolute top-[15%] lg:lg:-right-[120px] -right-[100px] bg-[#033046] 2xl:-left-[130px] text-white",
     },
     {
-      icon: '/cata.png',
+      icon: "/cata.png",
       label: (
         <>
           Catalogue & <br /> Pricing
         </>
       ),
       className:
-        'absolute  top-[40%] -right-[120px] bg-[#033046] 2xl:-right-[120px] text-white',
+        "absolute  top-[40%] lg:-right-[120px] -right-[110px] bg-[#033046] 2xl:-right-[120px] text-white",
     },
     {
-      icon: '/cust.png',
+      icon: "/cust.png",
       label: (
         <>
           Customer <br /> Escalations
         </>
       ),
       className:
-        'absolute sm:bottom-[10%] bottom-[25%] -right-[100px] bg-[#033046] 2xl:-right-[130px] text-white',
+        "absolute sm:bottom-[10%] bottom-[25%] -right-[100px] bg-[#033046] 2xl:-right-[130px] text-white",
     },
   ];
 
@@ -109,21 +111,21 @@ export default function Technology() {
     <section className="md:h-screen relative w-full">
       {/* bg */}
       <div className="lg:h-[50vh] sm:h-[30vh] bg-[#F7BB30] w-full"></div>
-      <div className="h-[50vh] bg-transparent w-full"></div>
+      <div className="sm:h-[750px] lg:h-[50vh] bg-transparent w-full"></div>
 
       {/* actual content starts here */}
       <div className="absolute inset-0 sec-container">
         <div className="lg:h-[15%] sm:h-[10%] relative lg:my-5 sm:my-2 xxl:mt-[5%]">
           <h1 className="text-[#1D234E] title text-center font-medium absolute top-1/2 left-1/2 -translate-x-1/2 whitespace-nowrap -translate-y-1/2">
-            Everything To{' '}
+            Everything To{" "}
             <HighlightedText
               text="Embed Brands"
               wrapperClass="bg-[#ffdf74] bottom-2 h-[35%]"
-            />{' '}
+            />{" "}
             <br /> On Your Site
           </h1>
         </div>
-        <div className=" h-full w-full lg:h-[70%] flex sm:justify-start lg:justify-around sm:flex-col lg:flex-row">
+        <div className="h-fit w-full lg:h-[65%] flex sm:justify-start lg:justify-around sm:flex-col lg:flex-row">
           <div className="lg:w-[50%]  h-[40%] lg:h-[80%] xxl:h-[70%] flex flex-col items-center relative ">
             <h1 className="subtitle mb-[8%] text-[#1D234E] font-medium">
               Technology & Operations Support
@@ -132,7 +134,7 @@ export default function Technology() {
               {leftPhoneChipData.map((data) => (
                 <Chip key={data.icon} {...data} />
               ))}
-              <img className="h-full" src="/phone2.png" alt="phone" />
+              <img className="h-60 lg:h-full" src="/phone2.png" alt="phone" />
             </div>
             <p className="text-center max-w-[60%] custom-text-sm text-[#505C6E] mt-4">
               Highly configurable and White-labelled.

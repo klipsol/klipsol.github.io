@@ -20,39 +20,39 @@ const CoreFeatures = () => {
             </h2>
             <div className="grid gap-4 text-[#505C6E] lg:px-5 pb-4 text-sm font-medium lg:text-[1.125em] 2xl:text-[1.6em]">
               <div className="flex flex-col items-center lg:flex-row lg:items-center sm:text-center lg:text-left border-t-[3px] lg:border-none border-[#FFFAEA] px-1 py-2">
-                <CheckIcon className="text-green-500 mr-2 mb-2 lg:mb-0 invisible lg:hidden" />
+                <CheckIcon className="text-green-500 mr-2 mb-2 lg:mb-0 invisible" />
                 <span>Seamless Integration</span>
               </div>
               <div className="flex flex-col items-center lg:flex-row lg:items-center sm:text-center lg:text-left border-t-[3px] lg:border-none border-[#FFFAEA] px-1 py-2">
-                <CheckIcon className="text-green-500 mr-2 mb-2 lg:mb-0 invisible lg:hidden" />
+                <CheckIcon className="text-green-500 mr-2 mb-2 lg:mb-0 invisible" />
                 <span>Brand Enablement</span>
               </div>
               <div className="flex flex-col items-center lg:flex-row lg:items-center sm:text-center lg:text-left border-t-[3px] lg:border-none border-[#FFFAEA] px-1 py-2">
-                <CheckIcon className="text-green-500 mr-2 mb-2 lg:mb-0 invisible lg:hidden" />
+                <CheckIcon className="text-green-500 mr-2 mb-2 lg:mb-0 invisible" />
                 <span>
                   Smart <br className="lg:hidden" /> Cart
                 </span>
               </div>
               <div className="flex flex-col items-center lg:flex-row lg:items-center sm:text-center lg:text-left border-t-[3px] lg:border-none border-[#FFFAEA] px-1 py-2">
-                <CheckIcon className="text-green-500 mr-2 mb-2 lg:mb-0 invisible lg:hidden" />
+                <CheckIcon className="text-green-500 mr-2 mb-2 lg:mb-0 invisible" />
                 <span>Shopper Marketing</span>
               </div>
               <div className="flex flex-col items-center lg:flex-row lg:items-center sm:text-center lg:text-left border-t-[3px] lg:border-none border-[#FFFAEA] px-1 py-2">
-                <CheckIcon className="text-green-500 mr-2 mb-2 lg:mb-0 invisible lg:hidden" />
+                <CheckIcon className="text-green-500 mr-2 mb-2 lg:mb-0 invisible" />
                 <span>Operations (team)</span>
               </div>
               <div className="flex flex-col items-center lg:flex-row lg:items-center sm:text-center lg:text-left border-t-[3px] lg:border-none border-[#FFFAEA] px-1 py-2">
-                <CheckIcon className="text-green-500 mr-2 mb-2 lg:mb-0 invisible lg:hidden" />
+                <CheckIcon className="text-green-500 mr-2 mb-2 lg:mb-0 invisible" />
                 <span>
                   AI <br className="lg:hidden" /> Intelligence
                 </span>
               </div>
               <div className="flex flex-col items-center lg:flex-row lg:items-center sm:text-center lg:text-left border-t-[3px] lg:border-none border-[#FFFAEA] px-1 py-2">
-                <CheckIcon className="text-green-500 mr-2 mb-2 lg:mb-0 invisible lg:hidden" />
+                <CheckIcon className="text-green-500 mr-2 mb-2 lg:mb-0 invisible" />
                 <span>Advance Analytics</span>
               </div>
               <div className="flex flex-col items-center lg:flex-row lg:items-center sm:text-center lg:text-left border-t-[3px] lg:border-none border-[#FFFAEA] px-1 py-2">
-                <CheckIcon className="text-green-500 mr-2 mb-2 lg:mb-0 invisible lg:hidden" />
+                <CheckIcon className="text-green-500 mr-2 mb-2 lg:mb-0 invisible" />
                 <span>Marketplace Features</span>
               </div>
             </div>
