@@ -6,7 +6,7 @@ export function middleware(req) {
 
 	if (subdomain && subdomain !== 'dpanda' && subdomain !== 'www') {
 		const url = req.nextUrl.clone();
-		url.pathname = `/${subdomain}${url.pathname}`;
+		url.pathname = `/publisher/${subdomain}${url.pathname}`;
 		return NextResponse.rewrite(url);
 	}
 
