@@ -25,7 +25,7 @@ body {
     @apply sm:max-w-[90%] lg:max-w-[1150px] mx-auto w-full 2xl:max-w-7xl xxl:max-w-[1640px];
   }
   .title {
-    @apply sm:text-[1.5em] md:text-[2.2em] 2xl:text-[45px]  xxl:text-[3.875em];
+    @apply sm:text-[1.7em] md:text-[2.2em] 2xl:text-[45px]  xxl:text-[3.875em];
   }
   .subtitle {
     @apply text-[1.125em] md:text-[1.8em] 2xl:text-[2em]  xxl:text-[2.625em];
