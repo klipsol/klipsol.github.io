@@ -31,6 +31,25 @@ const HeroMobile = () => {
             src="/HeroVideo2.mp4"
           />
         </div>
+        <div className="top-[280px]  pointer-events-auto text-sm z-30 w-full sec-container absolute  inset-0">
+          <a
+            href="/theBump"
+            className="flex flex-col z-[9999] cursor-pointer bg-[#023046] rounded-[46px] py-2 xxl:py-3 xxl:rounded-[50px] w-fit px-6 "
+            style={{ lineHeight: "1.5" }}
+          >
+            <div className="flex gap-x-2 items-center relative">
+              {/* <span className="bg-[#F7BA30]/80 w-2 h-2 rounded-full "></span> */}
+              <span className="bg-[#F7BA30] w-2 h-2 xxl:w-2.5 xxl:h-2.5 rounded-full animate-ping [animation-duration:0.9s] absolute top-2 md:top-2 md:-left-4"></span>
+              <span className="bg-[#F7BA30] w-2 h-2 xxl:w-2.5 xxl:h-2.5 rounded-full  absolute top-2 md:top-2 md:-left-4"></span>
+              <span className="text-white text-center font-medium ml-4 xxl:ml-3.5 md:m-auto ">
+                Live Preview
+              </span>
+            </div>
+            <p className="text-[#F7BA30] text-[10px] xxl:text-[0.7em] text-center ml-3 md:m-auto">
+              for pinterest
+            </p>
+          </a>
+        </div>
       </div>
       <div className="text-primaryTextColor p-4 pb-0 mb-10">
         <p className="text-[#000000] w-[60%] text-lg font-medium mt-5">
