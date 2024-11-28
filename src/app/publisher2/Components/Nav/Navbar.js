@@ -2,8 +2,12 @@
 import Link from "next/link";
 import { useState } from "react";
 import CalendlyModal from "../Calendly/CalendlyModal";
+import { useParams } from "next/navigation";
 
 export default function Navbar({ background }) {
+  const params = useParams();
+  const publisher = params?.publisherId?.[0];
+  console.log({ slug: "" }, publisher);
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   const openModal = () => setIsModalOpen(true);
@@ -34,13 +38,15 @@ export default function Navbar({ background }) {
             >
               <div className="flex gap-x-2 items-center relative">
                 {/* <span className="bg-[#F7BA30]/80 w-2 h-2 rounded-full "></span> */}
-                <span className="bg-[#F7BA30] w-2 h-2 rounded-full animate-ping [animation-duration:0.9s] absolute top-2 md:top-2 md:-left-4"></span>
+                {publisher && (
+                  <span className="bg-[#F7BA30] w-2 h-2 rounded-full animate-ping [animation-duration:0.9s] absolute top-2 md:top-2 md:-left-4"></span>
+                )}
                 <span className="text-white font-medium ml-3 md:m-auto">
                   Live Preview
                 </span>
               </div>
               <p className="text-[#F7BA30] text-[10px] text-center ml-3 md:m-auto">
-                for pinterest
+                {publisher && `for ${publisher}`}
               </p>
             </a>
             <Link

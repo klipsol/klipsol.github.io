@@ -1,5 +1,6 @@
 'use client';
 import { useState } from 'react';
+import { twMerge } from 'tailwind-merge';
 import MicrositeTab from './MicrositeTab';
 import WidgetTab from './WidgetTab';
 
@@ -34,10 +35,13 @@ const PreviewTabs = () => {
           </button>
         ))}
       </div>
-      {/* Tab Content */}
-      {/* <div className="max-w-6xl m-auto bg-gray-50 p-6 rounded-lg shadow-md transition-all duration-300 ease-in-out"> */}
-      {tabData[selectedTab].content} {/* Render the selected tab's content */}
-      {/* </div> */}
+
+      <div className={twMerge('', selectedTab === 1 && 'hidden')}>
+        {tabData[0].content}
+      </div>
+      <div className={twMerge('', selectedTab === 0 && 'hidden')}>
+        {tabData[1].content}
+      </div>
     </div>
   );
 };

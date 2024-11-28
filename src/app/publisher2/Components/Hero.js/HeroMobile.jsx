@@ -19,7 +19,7 @@ const HeroMobile = () => {
             Meets <br /> Commerce
           </span>
         </h2>
-        <p className="font-medium w-1/2 mt-5">
+        <p className="font-medium w-1/2 mt-5 leading-5">
           Benefits of Discovery +{" "}
           <span className="font-semibold">Commerce </span> on TikTok, Meta,
           Google & Amazon To You
@@ -37,22 +37,22 @@ const HeroMobile = () => {
           Big Tech is Transforming Discovery to Commerce
         </p>
         <h1 className="custom-text-sm-medium mt-5 font-medium xxl:text-3xl sm:text-2xl">
-          <HighlightedText text={"Bringing"} /> All That Power To You
+          <HighlightedText text={"Bringing"} /> That Power To You
         </h1>
         <div className="mt-4 grid grid-cols-2 gap-3 max-w-[80%] font-semibold">
-          <div className="text-base py-4 p-2 bg-[#FEF4D3] sm:text-center lg:p-5 lg:py-1.5 rounded-lg 2xl:py-2 relative">
+          <div className="text-base py-4 p-2 bg-[#FEF4D3] sm:text-center lg:p-5 lg:py-1.5 rounded-lg 2xl:py-2 relative rounded-b-xl">
             Technology
             <div className="absolute lg:h-full bg-[#F7BB30] sm:p 2xl:py-2 lg:w-1.5 sm:w-full sm:h-1.5 left-0 top-0"></div>
           </div>
-          <div className="text-base py-4 p-2 bg-[#FEF4D3] sm:text-center lg:p-5 lg:py-1.5 rounded-lg 2xl:py-2 relative">
+          <div className="text-base py-4 p-2 bg-[#FEF4D3] sm:text-center lg:p-5 lg:py-1.5 rounded-lg 2xl:py-2 relative rounded-b-xl">
             Operations
             <div className="absolute lg:h-full bg-[#F7BB30] sm:p 2xl:py-2 lg:w-1.5 sm:w-full sm:h-1.5 left-0 top-0"></div>
           </div>
-          <div className="text-base py-4 p-2 bg-[#FEF4D3] sm:text-center lg:p-5 lg:py-1.5 rounded-lg 2xl:py-2 relative">
+          <div className="text-base py-4 p-2 bg-[#FEF4D3] sm:text-center lg:p-5 lg:py-1.5 rounded-lg 2xl:py-2 relative rounded-b-xl">
             Brand Supply
             <div className="absolute lg:h-full bg-[#F7BB30] sm:p 2xl:py-2 lg:w-1.5 sm:w-full sm:h-1.5 left-0 top-0"></div>
           </div>
-          <div className="text-base py-4 p-2 bg-[#FEF4D3] sm:text-center lg:p-5 lg:py-1.5 rounded-lg 2xl:py-2 relative">
+          <div className="text-base py-4 p-2 bg-[#FEF4D3] sm:text-center lg:p-5 lg:py-1.5 rounded-lg 2xl:py-2 relative rounded-b-xl">
             Intelligence
             <div className="absolute lg:h-full bg-[#F7BB30] sm:p 2xl:py-2 lg:w-1.5 sm:w-full sm:h-1.5 left-0 top-0"></div>
           </div>
