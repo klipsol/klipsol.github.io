@@ -100,7 +100,7 @@ const FeatureCards = () => {
 			features: [
 				'AI-driven Pricing Recommendations',
 				'Marketing APIs for Acquiring External CTAs',
-				'APIs & Web Hooks for Order Status &  Order Rifills',
+				'APIs & Web Hooks for Order Status &  Order Refills',
 				'Third Party Integrations',
 				'Abandoned Cart APIs',
 				'Remarketing & Retargeting APIs',
