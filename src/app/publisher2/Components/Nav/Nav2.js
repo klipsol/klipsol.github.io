@@ -24,7 +24,7 @@ const ScrollableNavbar = ({ customBg }) => {
   console.log({ isVisible }, window.scrollY, window.innerHeight);
   return (
     <nav
-      className={`fixed top-0 w-full z-10 text-white py-2 px-3 transition-opacity duration-300 p-2 md:px-8 md:pt-6 md:pb-4 bg-[#043045e0] rounded-b-2xl lg:block ${
+      className={`fixed top-0 w-full z-10 text-white py-2 px-3 transition-opacity duration-300 p-2 md:px-8 lg:hidden md:pt-6 md:pb-4 bg-[#043045e0] rounded-b-2xl lg:block ${
         isVisible ? "opacity-100" : "opacity-0 pointer-events-none"
       }`}
     >

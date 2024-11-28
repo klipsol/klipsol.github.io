@@ -22,24 +22,24 @@ export default function Publisher2() {
   return (
     <main>
       <ScrollableNavbar />
-      <SmoothScroll>
-        <Hero />
-        <HeroMobile />
-        <BrandList />
-        <HigherMonitization />
-        <Feature />
-        <LifeTimeValue />
-        <FirstParty />
-        <InstantRoi />
-        <CoreFeatures />
-        <Technology />
-        {/* <Operations /> */}
-        {/* <DirectRelationShip /> */}
-        <EveryThingFree />
-        <Final />
-        <Testimonial />
-        <Footer />
-      </SmoothScroll>
+      {/* <SmoothScroll> */}
+      <Hero />
+      <HeroMobile />
+      <BrandList />
+      <HigherMonitization />
+      <Feature />
+      <LifeTimeValue />
+      <FirstParty />
+      <InstantRoi />
+      <CoreFeatures />
+      <Technology />
+      {/* <Operations /> */}
+      {/* <DirectRelationShip /> */}
+      <EveryThingFree />
+      <Final />
+      <Testimonial />
+      <Footer />
+      {/* </SmoothScroll> */}
     </main>
   );
 }
