@@ -14,7 +14,7 @@ export const BrandList = () => {
         <br className="lg:hidden" />
         Publishers with <span className="font-semibold">
           200M+ Users{" "}
-        </span> and <br className="lg:hidden" />
+        </span> & <br className="lg:hidden" />
         <span className="font-semibold"> Marquee Investors</span>
       </h1>
 

@@ -1,8 +1,8 @@
-import HighlightedText from '../HighlightedText/HighlightedText';
+import HighlightedText from "../HighlightedText/HighlightedText";
 
 export default function InstantRoi() {
   return (
-    <section className="sec-container lg:h-screen sm:h-fit  pb-10 pt-5 lg:p-0  relative flex lg:flex-row sm:flex-col-reverse  w-full">
+    <section className="sec-container lg:h-screen sm:h-fit pt-5 lg:p-0  relative flex lg:flex-row sm:flex-col-reverse  w-full">
       <div className="lg:w-[65%] h-[50vh] sm:w-full flex gap-x-3">
         <div className="lg:h-screen sm:h-full bg-[#EEF0F8] sm:rounded-t-3xl lg:rounded-none overflow-hidden w-[50%]">
           <div className=" bg-[#C4C7D5] h-[10%] text-[#234651] rounded-t-3xl sm:mt-0 lg:mt-10 items-center subtitle font-semibold flex justify-center">
@@ -36,7 +36,7 @@ export default function InstantRoi() {
           </div>
         </div>
         <div className="lg:h-screen sm:h-full bg-[#FEF4D3] sm:rounded-t-3xl lg:rounded-none overflow-hidden w-[50%]">
-          {' '}
+          {" "}
           <div className=" bg-[#FFE89B] h-[10%] text-[#234651] rounded-t-3xl sm:mt-0 lg:mt-10   items-center  subtitle font-semibold flex justify-center">
             Conventional
           </div>
@@ -48,14 +48,14 @@ export default function InstantRoi() {
               </div>
             </div>
             <div className="flex justify-start sm:flex-col lg:flex-row w-[90%] gap-x-10 items-center">
-              {' '}
+              {" "}
               <br className="lg:hidden" />
               <div className="text-center font-bold sm:text-sm lg:text-base text-[#1d234e] 2xl:py-10 2xl:rounded-r-[45px] custom-text-sm-medium h-10 justify-center inline-flex items-center w-full   bg-[#FFE89C] rounded-r-3xl   ">
-                {'< 5 Days'}
+                {"< 5 Days"}
               </div>
             </div>
             <div className="flex justify-start sm:flex-col lg:flex-row w-[90%] gap-x-10 items-center">
-              {' '}
+              {" "}
               <br className="lg:hidden" />
               <div className="text-center font-bold sm:text-sm lg:text-base text-[#1d234e] 2xl:py-10 2xl:rounded-r-[45px] custom-text-sm-medium h-10 justify-center inline-flex items-center w-full    bg-[#FFE89C] rounded-r-3xl   ">
                 Delivered Upfront
@@ -74,7 +74,7 @@ export default function InstantRoi() {
             <HighlightedText
               text="Instant ROI"
               wrapperClass="bottom-2 h-[30%] bottom-1"
-            />{' '}
+            />{" "}
           </h1>
           <p className="2xl:text-2xl text-[#505C6E]">
             Product delivered upfront.
