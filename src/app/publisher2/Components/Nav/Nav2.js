@@ -1,6 +1,7 @@
 "use client";
 import Link from "next/link";
 import React, { useState, useEffect } from "react";
+import CalendlyModal from "../Calendly/CalendlyModal";
 
 const ScrollableNavbar = ({ customBg }) => {
   const [isVisible, setIsVisible] = useState(false);
@@ -21,7 +22,7 @@ const ScrollableNavbar = ({ customBg }) => {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
-  console.log({ isVisible }, window.scrollY, window.innerHeight);
+
   return (
     <nav
       className={`fixed top-0 w-full z-10 text-white py-2 px-3 transition-opacity duration-300 p-2 md:px-8 lg:hidden md:pt-6 md:pb-4 bg-[#043045e0] rounded-b-2xl lg:block ${
@@ -60,13 +61,11 @@ const ScrollableNavbar = ({ customBg }) => {
           Talk <br className="lg:hidden" /> to us
         </button>
         <div className="bg-[#004A6C] h-7 w-0.5"></div>
-        <button
-          onClick={openModal}
-          className="rounded-[24px] text-white md:bg-primaryBg px-4 py-1 md:text-primaryTextColor font-medium"
-        >
+        <button className="rounded-[24px] text-white md:bg-primaryBg px-4 py-1 md:text-primaryTextColor font-medium">
           All <br className="lg:hidden" /> Features
         </button>
-      </div>
+      </div>{" "}
+      <CalendlyModal isOpen={isModalOpen} onClose={closeModal} />
     </nav>
   );
 };

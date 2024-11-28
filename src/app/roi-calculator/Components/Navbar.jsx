@@ -40,7 +40,7 @@ export default function Navbar({ customBg }) {
             />
           </Link>
           <div className="p-2 md:px-8 md:pt-6 md:pb-4 bg-[#043045] rounded-b-2xl lg:block">
-            <div className="text-sm md:gap-x-6 gap-y-2 items-center pt-0 md:pt-4 w-full md:w-fit justify-between hidden sm:flex sm:flex-row md:flex-row lg:flex">
+            <div className="text-sm md:gap-x-6 text-center gap-y-2 items-center pt-0 md:pt-4 w-full md:w-fit justify-between hidden sm:flex sm:flex-row md:flex-row lg:flex">
               {/* <LivePreviewLinks /> */}
               <Link
                 href="/roi-calculator"
@@ -48,21 +48,22 @@ export default function Navbar({ customBg }) {
                 className="rounded-[24px] bg-secondaryBg px-4 py-1 text-white font-medium"
                 // variant="primary"
               >
-                ROI Calculator
+                ROI <br className="lg:hidden" /> Calculator
               </Link>{" "}
               <div className="bg-[#004A6C] h-5 w-0.5"></div>
               <button
                 onClick={openModal}
                 className="rounded-[24px] text-white md:bg-primaryBg px-4 py-1 md:text-primaryTextColor font-medium"
               >
-                Talk to us
+                Talk
+                <br className="lg:hidden" /> to us
               </button>
               <div className="bg-[#004A6C] h-5 w-0.5"></div>
               <button
                 onClick={openModal}
                 className="rounded-[24px] text-white md:bg-primaryBg px-4 py-1 md:text-primaryTextColor font-medium"
               >
-                All Features
+                All <br className="lg:hidden" /> Features
               </button>
             </div>
           </div>
