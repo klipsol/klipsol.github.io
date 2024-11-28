@@ -10,7 +10,7 @@ export default function Footer() {
 						<p className="lg:mt-2 sm:text-2xl sm:mt-3 lg:custom-text-xs">Democratising Digital Commerce</p>
 					</div>
 					<div className="grid grid-cols-2 gap-x-10 lg:gap-y-2 gap-y-6 text-left text-[0.9em] 2xl:text-[1em] mt-5 lg:mt-0">
-						<Link href="" className="hover:underline transition-colors ">
+						<Link href="/policies/privacy-policy" className="hover:underline transition-colors ">
 							Privacy Policy
 						</Link>
 						{/* <Link href="" className="hover:underline transition-colors">
@@ -19,8 +19,8 @@ export default function Footer() {
 						{/* <Link href="" className="hover:underline transition-colors">
               Refund Policy
             </Link> */}
-						<Link href="" className="hover:underline transition-colors">
-							Terms-of Service
+						<Link href="/policies/terms-and-conditions" className="hover:underline transition-colors">
+							Terms-of-Service
 						</Link>
 						<Link href="" className="col-span-2 hover:underline transition-colors">
 							support@dpanda.ai
