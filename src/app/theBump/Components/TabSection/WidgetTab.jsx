@@ -122,21 +122,21 @@ const WidgetTab = ({ selectedTab }) => {
           {/* <!-- Recipe Header --> */}
           <header className="text-center mb-8">
             <h2 className="text-2xl font-bold text-purple-600 mb-2">
-              Crunchy Spiderweb Treats
+              No-Bake Honey Nut Clusters
             </h2>
             <p className="text-sm text-gray-700">
-              Crunchy, sweet, and salty, these spiderwebs do it all. See how to
-              make them!
+              Crunchy, sweet, and healthy, these nut clusters do it all. See how
+              to make them!
             </p>
           </header>
 
           {/* <!-- Yield and Time --> */}
           <div className="flex justify-between items-center mb-6">
             <div className="text-sm text-gray-500">
-              <strong>Yield:</strong> 4 spiderwebs
+              <strong>Yield:</strong> 8 clusters
             </div>
             <div className="text-sm text-gray-500">
-              <strong>Total Time:</strong> 30 minutes
+              <strong>Total Time:</strong> 15 minutes
             </div>
           </div>
 
@@ -146,9 +146,10 @@ const WidgetTab = ({ selectedTab }) => {
               Ingredients
             </h2>
             <ul className="list-disc pl-5 space-y-2">
-              <li>32 pretzel sticks</li>
-              <li>1 cup white chocolate chips</li>
-              <li>1-2 lollipops or sprinkles (optional)</li>
+              <li>1 cup oats (rolled or quick)</li>
+              <li>1/3 cup almonds (chopped)</li>
+              <li>1/3 cup cashews (chopped)</li>
+              <li>1/4 cup honey</li>
             </ul>
             <span className="hidden md:block absolute -right-28 -top-24">
               <img src="/arrow-white.svg" />
