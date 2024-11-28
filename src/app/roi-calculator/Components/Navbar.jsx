@@ -1,8 +1,8 @@
-'use client';
-import CalendlyModal from '@/app/publisher2/Components/Calendly/CalendlyModal';
-import Link from 'next/link';
-import { useState } from 'react';
-import { twMerge } from 'tailwind-merge';
+"use client";
+import CalendlyModal from "@/app/publisher2/Components/Calendly/CalendlyModal";
+import Link from "next/link";
+import { useState } from "react";
+import { twMerge } from "tailwind-merge";
 
 export default function Navbar({ customBg }) {
   // const router = useRouter();
@@ -21,8 +21,8 @@ export default function Navbar({ customBg }) {
     <>
       <div
         className={twMerge(
-          'lg:sec-container opacity-1 mt-0 relative z-50 lg:pr-10 mx-0',
-          customBg && 'bg-[#eebe50]'
+          "lg:sec-container opacity-1 mt-0 relative z-50 lg:pr-10 mx-0",
+          customBg && "bg-[#eebe50]"
         )}
         id="nav"
       >
@@ -42,18 +42,6 @@ export default function Navbar({ customBg }) {
           <div className="p-2 md:px-8 md:pt-6 md:pb-4 bg-[#043045] rounded-b-2xl lg:block">
             <div className="text-sm md:gap-x-6 gap-y-2 items-center pt-0 md:pt-4 w-full md:w-fit justify-between hidden sm:flex sm:flex-row md:flex-row lg:flex">
               {/* <LivePreviewLinks /> */}
-              <a href="/theBump" className="flex flex-col cursor-pointer">
-                <div className="flex gap-x-2 items-center relative">
-                  {/* <span className="bg-[#F7BA30]/80 w-2 h-2 rounded-full "></span> */}
-                  <span className="bg-[#F7BA30] w-2 h-2 rounded-full animate-ping [animation-duration:0.9s] absolute top-2 md:top-2 md:-left-4"></span>
-                  <span className="text-white text-center font-medium ml-3 md:m-auto">
-                    Live Preview
-                  </span>
-                </div>
-                <p className="text-[#F7BA30] text-[10px] text-center ml-3 md:m-auto">
-                  for pinterest
-                </p>
-              </a>
               <Link
                 href="/roi-calculator"
                 // onClick={handleRoiRedirect}
@@ -61,12 +49,20 @@ export default function Navbar({ customBg }) {
                 // variant="primary"
               >
                 ROI Calculator
-              </Link>
+              </Link>{" "}
+              <div className="bg-[#004A6C] h-5 w-0.5"></div>
               <button
                 onClick={openModal}
                 className="rounded-[24px] text-white md:bg-primaryBg px-4 py-1 md:text-primaryTextColor font-medium"
               >
                 Talk to us
+              </button>
+              <div className="bg-[#004A6C] h-5 w-0.5"></div>
+              <button
+                onClick={openModal}
+                className="rounded-[24px] text-white md:bg-primaryBg px-4 py-1 md:text-primaryTextColor font-medium"
+              >
+                All Features
               </button>
             </div>
           </div>
