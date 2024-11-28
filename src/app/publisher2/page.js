@@ -16,28 +16,30 @@ import Technology from "./Components/Technology/Technology";
 import { Testimonial } from "./Components/Testimonial/Testimonial";
 import CoreFeatures from "./Components/CoreFeatures/CoreFeatures";
 import HigherMonitization from "./Components/HigherMonitization/HigherMonitization";
+import ScrollableNavbar from "./Components/Nav/Nav2";
 
 export default function Publisher2() {
   return (
     <main>
-      <SmoothScroll>
-        <Hero />
-        <HeroMobile />
-        <BrandList />
-        <HigherMonitization />
-        <Feature />
-        <LifeTimeValue />
-        <FirstParty />
-        <InstantRoi />
-        <CoreFeatures />
-        <Technology />
-        {/* <Operations /> */}
-        {/* <DirectRelationShip /> */}
-        <EveryThingFree />
-        <Final />
-        <Testimonial />
-        <Footer />
-      </SmoothScroll>
+      <ScrollableNavbar />
+      {/* <SmoothScroll> */}
+      <Hero />
+      <HeroMobile />
+      <BrandList />
+      <HigherMonitization />
+      <Feature />
+      <LifeTimeValue />
+      <FirstParty />
+      <InstantRoi />
+      <CoreFeatures />
+      <Technology />
+      {/* <Operations /> */}
+      {/* <DirectRelationShip /> */}
+      <EveryThingFree />
+      <Final />
+      <Testimonial />
+      <Footer />
+      {/* </SmoothScroll> */}
     </main>
   );
 }
