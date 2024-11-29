@@ -1,7 +1,7 @@
 'use client';
 const WidgetSummaryTable = () => {
   const togglePDP = () => {
-    window.DPWidget.togglePDP();
+    window.DPWidget.togglePDP('144359');
   };
   const toggleProductsSheet = () => {
     window.DPWidget.toggleProductList();
