@@ -4,7 +4,7 @@ export default function page() {
   return (
     <>
       <Navbar />
-      <div className="mx-auto max-w-4xl p-6">
+      <div className="mx-auto max-w-4xl p-6 text-black">
         <h1 className="mb-4 mt-8 text-2xl font-bold">
           Accessibility Statement
         </h1>

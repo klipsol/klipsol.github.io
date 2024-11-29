@@ -4,7 +4,7 @@ export default function page() {
   return (
     <>
       <Navbar />
-      <div className="mx-auto max-w-4xl p-6">
+      <div className="mx-auto max-w-4xl p-6 text-black">
         <h1 className="mb-4 mt-8 text-2xl font-bold">Shipping Policy</h1>
         <section className="mb-8">
           <h2 className="text-xl font-semibold">1. Processing Time</h2>

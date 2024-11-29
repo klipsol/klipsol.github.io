@@ -37,7 +37,7 @@ const CTAsSection = () => {
         <span className="hidden md:block absolute -right-20 top-16">
           <img src="/arrow-white.svg" />
           <span className="absolute font-semibold text-white top-12 -right-32 w-40">
-            3. Targetted Banners
+            3. Targeted Banners
           </span>
         </span>
       </div>
