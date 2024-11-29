@@ -9,7 +9,6 @@ export default function Navbar({ background }) {
   const pathname = usePathname();
   const publisher = params?.publisherId?.[0];
   const [isModalOpen, setIsModalOpen] = useState(false);
-  console.log({ pathname });
   const openModal = () => setIsModalOpen(true);
   const closeModal = () => setIsModalOpen(false);
 
@@ -46,10 +45,10 @@ export default function Navbar({ background }) {
             >
               All Features
             </Link>
-            {!publisher && pathname !== "/" && (
+            {!publisher && !pathname.includes("/", "publisher2", "demo") && (
               <div className="bg-[#004A6C] h-6 w-0.5"></div>
             )}
-            {!publisher && pathname !== "/" && (
+            {!publisher && !pathname.includes("/", "publisher2", "demo") && (
               <button
                 onClick={openModal}
                 className="rounded-[24px] text-white md:bg-primaryBg px-4 text-center py-1 md:text-primaryTextColor font-medium"

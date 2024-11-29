@@ -2,9 +2,10 @@
 import Link from "next/link";
 import React, { useState, useEffect } from "react";
 import CalendlyModal from "../Calendly/CalendlyModal";
-import { useParams } from "next/navigation";
+import { useParams, usePathname } from "next/navigation";
 
 const ScrollableNavbar = ({ customBg }) => {
+  const pathname = usePathname();
   const [isVisible, setIsVisible] = useState(false);
   const [isModalOpen, setIsModalOpen] = useState(false);
   const params = useParams();
@@ -59,8 +60,10 @@ const ScrollableNavbar = ({ customBg }) => {
         >
           ROI <br className="lg:hidden" /> Calculator
         </Link>{" "}
-        <div className="bg-[#004A6C] h-7 w-0.5 lg:hidden"></div>
-        {!publisher && pathname !== "/" && (
+        {!publisher && !pathname.includes("/", "publisher2", "demo") && (
+          <div className="bg-[#004A6C] h-7 w-0.5 lg:hidden"></div>
+        )}
+        {!publisher && !pathname.includes("/", "publisher2", "demo") && (
           <button
             onClick={openModal}
             className="rounded-[24px]  px-4 py-1 md:text-primaryTextColor font-medium"
