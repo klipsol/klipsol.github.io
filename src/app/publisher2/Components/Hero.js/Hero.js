@@ -33,7 +33,7 @@ const Hero = () => {
 						fill="#f7ba30"
 					/>
 				</svg>
-				<div className="top-[61%] h-fit xxl:top-[64%] 2xl:top-[54%] z-50 pointer-events-none w-full sec-container absolute xxl:text-[1.4em] inset-0">
+				<div className="top-[61%] h-fit xxl:top-[64%] 2xl:top-[54%] z-50 w-full sec-container absolute xxl:text-[1.4em] inset-0">
 					<a
 						href="/theBump"
 						className="flex flex-col cursor-pointer bg-[#023046] rounded-[46px] py-2 xxl:py-3 xxl:rounded-[50px] w-fit px-10"
