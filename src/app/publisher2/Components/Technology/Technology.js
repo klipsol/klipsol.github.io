@@ -52,7 +52,7 @@ export default function Technology() {
         </>
       ),
       className:
-        "absolute top-[15%] -left-[100px]  lg:-left-[115px] 2xl:-left-[120px]",
+        "absolute top-[15%] -left-[100px]  lg:-left-[115px] 2xl:-left-[120px] w-fit",
     },
     {
       icon: "/data_and_analytics.png",
@@ -63,7 +63,7 @@ export default function Technology() {
         </>
       ),
       className:
-        "absolute sm:bottom-[10%] bottom-[25%] -left-[90px] lg:-left-[100px] 2xl:-left-[110px]",
+        "absolute sm:bottom-[10%] bottom-[25%] -left-[90px] lg:-left-[100px] 2xl:-left-[110px] w-fit",
     },
     {
       icon: "/ai.png",
@@ -73,7 +73,7 @@ export default function Technology() {
         </>
       ),
       className:
-        "absolute top-[40%] -left-[110px] lg:-left-[150px] 2xl:-right-[170px]",
+        "absolute top-[40%] -left-[110px] lg:-left-[150px] 2xl:-right-[170px] w-fit",
     },
     {
       icon: "/payment.png",
@@ -83,7 +83,7 @@ export default function Technology() {
         </>
       ),
       className:
-        "absolute top-[15%] lg:lg:-right-[120px] -right-[100px] bg-[#033046] 2xl:-left-[130px] text-white",
+        "absolute top-[15%] lg:lg:-right-[120px] -right-[100px] bg-[#033046]  text-white w-fit",
     },
     {
       icon: "/cata.png",
@@ -93,7 +93,7 @@ export default function Technology() {
         </>
       ),
       className:
-        "absolute  top-[40%] lg:-right-[120px] -right-[110px] bg-[#033046] 2xl:-right-[120px] text-white",
+        "absolute  top-[40%] lg:-right-[120px] -right-[110px] bg-[#033046] 2xl:-right-[120px] text-white w-fit",
     },
     {
       icon: "/cust.png",
@@ -103,7 +103,7 @@ export default function Technology() {
         </>
       ),
       className:
-        "absolute sm:bottom-[10%] bottom-[25%] -right-[100px] bg-[#033046] 2xl:-right-[130px] text-white",
+        "absolute sm:bottom-[10%] bottom-[25%] -right-[100px] bg-[#033046] 2xl:-right-[130px] text-white w-fit",
     },
   ];
 
