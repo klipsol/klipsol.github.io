@@ -53,10 +53,10 @@ export default function Navbar({ customBg }) {
               >
                 ROI <br className="lg:hidden" /> Calculator
               </Link>{" "}
-              {!publisher && !pathname.includes("/", "publisher2", "demo") && (
+              {pathname !== "/" && (
                 <div className="bg-[#004A6C] h-5 w-0.5"></div>
               )}
-              {!publisher && !pathname.includes("/", "publisher2", "demo") && (
+              {pathname !== "/" && (
                 <button
                   onClick={openModal}
                   className="rounded-[24px] text-white md:bg-primaryBg px-4 py-1 md:text-primaryTextColor font-medium"
