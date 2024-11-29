@@ -1,13 +1,16 @@
 "use client";
 import CalendlyModal from "@/app/publisher2/Components/Calendly/CalendlyModal";
 import Link from "next/link";
+import { useParams, usePathname } from "next/navigation";
 import { useState } from "react";
 import { twMerge } from "tailwind-merge";
 
 export default function Navbar({ customBg }) {
   // const router = useRouter();
+  const pathname = usePathname();
   const [isModalOpen, setIsModalOpen] = useState(false);
-
+  const params = useParams();
+  const publisher = params?.publisherId?.[0];
   const openModal = () => setIsModalOpen(true);
   const closeModal = () => setIsModalOpen(false);
 
@@ -50,14 +53,18 @@ export default function Navbar({ customBg }) {
               >
                 ROI <br className="lg:hidden" /> Calculator
               </Link>{" "}
-              <div className="bg-[#004A6C] h-5 w-0.5"></div>
-              <button
-                onClick={openModal}
-                className="rounded-[24px] text-white md:bg-primaryBg px-4 py-1 md:text-primaryTextColor font-medium"
-              >
-                Talk
-                <br className="lg:hidden" /> to us
-              </button>
+              {!publisher && !pathname.includes("/", "publisher2", "demo") && (
+                <div className="bg-[#004A6C] h-5 w-0.5"></div>
+              )}
+              {!publisher && !pathname.includes("/", "publisher2", "demo") && (
+                <button
+                  onClick={openModal}
+                  className="rounded-[24px] text-white md:bg-primaryBg px-4 py-1 md:text-primaryTextColor font-medium"
+                >
+                  Talk
+                  <br className="lg:hidden" /> to us
+                </button>
+              )}
               <div className="bg-[#004A6C] h-5 w-0.5"></div>
               <button
                 onClick={openModal}

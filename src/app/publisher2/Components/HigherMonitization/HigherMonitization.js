@@ -1,80 +1,81 @@
-import HighlightedText from '../HighlightedText/HighlightedText';
+import HighlightedText from "../HighlightedText/HighlightedText";
 
 export default function HigherMonitization() {
-	return (
-		<section className="bg-[#FEF4D4] lg:bg-white py-10 ">
-			<div className="sec-container flex flex-col lg:flex-row lg:justify-between">
-				{' '}
-				<div>
-					<h1 className="title text-[#1D234E] font-medium leading-tight">
-						<HighlightedText text="Higher" /> <br className="" /> Monetization{' '}
-					</h1>
-					<div className="flex gap-x-4 mt-10 xxl:mt-[7%] justify-start text-primaryTextColor ">
-						<div className="bg-[#FFF9E6] flex items-center leading-tight rounded-2xl lg:p-3 2xl:p-4 xxl:pt-8 lg:pt-4 whitespace-nowrap custom-text-sm relative 2xl:min-w-[188px] lg:w-[120px] sm:rounded-xl sm:w-[110px] sm:px-2 sm:pb-2 sm:pt-[15px]">
-							<h1 className="absolute lg:-top-[35%] xxl:top-[-50%] leading-tight font-medium title left-4 text-[#9E8637] sm:-top-[30%] ">
-								01
-							</h1>
-							<h1 className="font-normal custom-text-sm leading-tight">
-								User <br />
-								Experience
-							</h1>
-						</div>
-						<div className="bg-[#FFF9E6] flex items-center leading-tight rounded-2xl font-medium lg:p-3 lg:pt-4 2xl:p-4 xxl:pt-8 whitespace-nowrap custom-text-sm 2xl:min-w-[188px] relative h-fit lg:w-[120px] sm:rounded-xl sm:w-[110px] sm:px-2 sm:pb-2 sm:pt-[15px]">
-							<h1 className="absolute lg:-top-[35%] xxl:top-[-50%] leading-tight title left-4 text-[#9E8637] sm:-top-[30%]">
-								02
-							</h1>
-							<h1 className="font-normal custom-text-sm leading-tight ">
-								Lifetime <br />
-								Value
-							</h1>
-						</div>
-						<div className="bg-[#FFF9E6] flex items-center leading-tight rounded-2xl lg:p-3 2xl:p-4  xxl:pt-8 lg:pt-4 whitespace-nowrap custom-text-sm 2xl:min-w-[188px] relative w-fit h-fit lg:w-[120px] sm:rounded-xl sm:w-[110px] sm:px-2 sm:pb-2 sm:pt-[15px]">
-							<h1 className="absolute lg:-top-[35%] leading-tight xxl:top-[-50%] font-medium title left-4 text-[#9E8637] sm:-top-[30%]">
-								03
-							</h1>
-							<h1 className="font-normal leading-tight custom-text-sm">
-								First-Party <br />
-								Data
-							</h1>
-						</div>
-					</div>
-				</div>
-				<div className=""></div>
-				<hr className="w-full my-8 border-gray-400/50 lg:hidden" />
-				<div className="w-0.5 bg-gray-300"></div>
-				<div>
-					<h1 className="title text-[#1D234E] font-medium leading-tight">
-						<span className="font-semibold">At </span> <HighlightedText text="Zero" /> <br className="" />
-						Upfront Cost{' '}
-					</h1>
-					<div className="flex gap-x-4 mt-10 xxl:mt-[7%] justify-start text-primaryTextColor">
-						<div className="bg-[#FFF9E6] flex items-center leading-tight rounded-2xl lg:p-3 2xl:p-4 xxl:pt-8 lg:pt-4 whitespace-nowrap custom-text-sm relative 2xl:min-w-[188px] lg:w-[120px] sm:rounded-xl sm:w-[110px] sm:px-2 sm:pb-2 sm:pt-[15px]">
-							<h1 className="absolute leading-tight lg:-top-[35%] xxl:top-[-50%] font-medium title left-4 text-[#9E8637] sm:-top-[30%] ">
-								01
-							</h1>
-							<h1 className="font-normal leading-tight custom-text-sm">
-								One Time <br /> Plugins
-							</h1>
-						</div>
-						<div className="bg-[#FFF9E6] flex items-center leading-tight rounded-2xl font-medium lg:p-3 lg:pt-4 2xl:p-4 xxl:pt-8 whitespace-nowrap custom-text-sm 2xl:min-w-[188px] relative h-fit lg:w-[120px] sm:rounded-xl sm:w-[110px] sm:px-2 sm:pb-2 sm:pt-[15px]">
-							<h1 className="absolute leading-tight lg:-top-[35%] xxl:top-[-50%] title left-4 text-[#9E8637] sm:-top-[30%]">
-								02
-							</h1>
-							<h1 className="font-normal leading-tight custom-text-sm ">
-								Everything <br /> Commerce
-							</h1>
-						</div>
-						<div className="bg-[#FFF9E6] flex items-center leading-tight rounded-2xl lg:p-3 2xl:p-4 xxl:pt-8 lg:pt-4 whitespace-nowrap custom-text-sm 2xl:min-w-[188px] relative w-fit h-fit lg:w-[120px] sm:rounded-xl sm:w-[110px] sm:px-2 sm:pb-2 sm:pt-[15px]">
-							<h1 className="absolute leading-tight lg:-top-[35%] xxl:top-[-50%] font-medium title left-4 text-[#9E8637] sm:-top-[30%]">
-								03
-							</h1>
-							<h1 className="font-normal leading-tight custom-text-sm">
-								Direct From <br /> Brands
-							</h1>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-	);
+  return (
+    <section className="bg-[#FEF4D4] lg:bg-white py-10 ">
+      <div className="sec-container flex flex-col lg:flex-row lg:justify-between">
+        {" "}
+        <div>
+          <h1 className="title text-[#1D234E] font-medium">
+            <HighlightedText text="Higher" /> <br className="" /> Monetization{" "}
+          </h1>
+          <div className="flex gap-x-4 mt-10 xxl:mt-[7%] justify-start text-primaryTextColor ">
+            <div className="bg-[#FFF9E6] rounded-2xl lg:p-3 2xl:p-4 xxl:pt-8 lg:pt-4 whitespace-nowrap custom-text-sm relative 2xl:min-w-[188px] lg:w-[120px] sm:rounded-xl sm:w-[110px] sm:px-2 sm:py-2">
+              <h1 className="absolute lg:-top-[40%] xxl:top-[-50%] font-medium title left-2 lg:left-3 text-[#9E8637] sm:-top-[43%] ">
+                01
+              </h1>
+              <h1 className="font-medium custom-text-sm sm:leading-[1.2em]">
+                User <br />
+                Experience
+              </h1>
+            </div>
+            <div className="bg-[#FFF9E6] rounded-2xl font-medium lg:p-3 lg:pt-4 2xl:p-4 xxl:pt-8 whitespace-nowrap custom-text-sm 2xl:min-w-[188px] relative h-fit lg:w-[120px] sm:rounded-xl sm:w-[110px] sm:px-2 sm:py-2">
+              <h1 className="absolute lg:-top-[40%] xxl:top-[-50%] title left-2 lg:left-3 text-[#9E8637] sm:-top-[43%]">
+                02
+              </h1>
+              <h1 className="font-medium custom-text-sm sm:leading-[1.2em] ">
+                Lifetime <br />
+                Value
+              </h1>
+            </div>
+            <div className="bg-[#FFF9E6] rounded-2xl lg:p-3 2xl:p-4  xxl:pt-8 lg:pt-4 whitespace-nowrap custom-text-sm 2xl:min-w-[188px] relative w-fit h-fit lg:w-[120px] sm:rounded-xl sm:w-[110px] sm:px-2 sm:py-2">
+              <h1 className="absolute lg:-top-[40%] xxl:top-[-50%] font-medium title left-2 lg:left-3 text-[#9E8637] sm:-top-[43%]">
+                03
+              </h1>
+              <h1 className="font-medium custom-text-sm sm:leading-[1.2em]">
+                First-Party <br />
+                Data
+              </h1>
+            </div>
+          </div>
+        </div>
+        <div className=""></div>
+        <hr className="w-full my-8 border-gray-400/50 lg:hidden " />
+        <div className="w-0.5 bg-gray-300"></div>
+        <div>
+          <h1 className="title text-[#1D234E] font-medium">
+            <span className="font-semibold">At </span>{" "}
+            <HighlightedText text="Zero" /> <br className="" />
+            Upfront Cost{" "}
+          </h1>
+          <div className="flex gap-x-4 mt-10 xxl:mt-[7%] justify-start text-primaryTextColor">
+            <div className="bg-[#FFF9E6] rounded-2xl lg:p-3 2xl:p-4 xxl:pt-8 lg:pt-4 whitespace-nowrap custom-text-sm relative 2xl:min-w-[188px] lg:w-[120px] sm:rounded-xl sm:w-[110px] sm:px-2 sm:py-2">
+              <h1 className="absolute lg:-top-[40%] xxl:top-[-50%] font-medium title left-2 lg:left-3 text-[#9E8637] sm:-top-[43%] ">
+                01
+              </h1>
+              <h1 className="font-medium custom-text-sm sm:leading-[1.2em]">
+                One Time <br /> Plugins
+              </h1>
+            </div>
+            <div className="bg-[#FFF9E6] rounded-2xl font-medium lg:p-3 lg:pt-4 2xl:p-4 xxl:pt-8 whitespace-nowrap custom-text-sm 2xl:min-w-[188px] relative h-fit lg:w-[120px] sm:rounded-xl sm:w-[110px] sm:px-2 sm:py-2">
+              <h1 className="absolute lg:-top-[40%] xxl:top-[-50%] title left-2 lg:left-3 text-[#9E8637] sm:-top-[43%]">
+                02
+              </h1>
+              <h1 className="font-medium custom-text-sm sm:leading-[1.2em] ">
+                Everything <br /> Commerce
+              </h1>
+            </div>
+            <div className="bg-[#FFF9E6] rounded-2xl lg:p-3 2xl:p-4  xxl:pt-8 lg:pt-4 whitespace-nowrap custom-text-sm 2xl:min-w-[188px] relative w-fit h-fit lg:w-[120px] sm:rounded-xl sm:w-[110px] sm:px-2 sm:py-2">
+              <h1 className="absolute lg:-top-[40%] xxl:top-[-50%] font-medium title left-2 lg:left-3 text-[#9E8637] sm:-top-[43%]">
+                03
+              </h1>
+              <h1 className="font-medium custom-text-sm sm:leading-[1.2em]">
+                Direct From <br /> Brands
+              </h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
 }
