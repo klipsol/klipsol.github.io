@@ -3,7 +3,7 @@ import HighlightedText from '../HighlightedText/HighlightedText';
 export default function HigherMonitization() {
 	return (
 		<section className="bg-[#FEF4D4] lg:bg-white md:py-20 py-10 md:px-10 sm:px-7">
-			<div className="sec-container flex flex-col lg:flex-row">
+			<div className="sec-container flex flex-col lg:flex-row md:justify-between sm:justify-start">
 				{' '}
 				<div className="md:py-10 sm:py-7">
 					<h1 className="title text-[#1D234E] leading-[1.2] font-medium md:text-[40px] sm:text-[28px]">

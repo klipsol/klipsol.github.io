@@ -91,7 +91,7 @@ const Hero = () => {
 						</h2>
 
 						<p className="text-black mt-5 w-[85%] font-medium custom-text-sm-medium">
-							Power of discovery and commerce, as championed by Google, Amazon, TikTok, and Meta
+							Power of Discovery And Commerce, as Championed by Google, Amazon, TikTok and Meta
 						</p>
 					</div>
 

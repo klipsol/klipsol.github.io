@@ -9,28 +9,28 @@ export default function Feature() {
 		<section className="sec-container h-fit lg:h-screen sm:pb-10 relative flex sm:px-[10px] lg:flex-row sm:flex-col-reverse  w-full">
 			<div className="lg:w-[65%] h-[50vh] sm:w-full flex gap-x-3 mt-4 lg:mt-0">
 				<div className="lg:h-screen sm:h-full bg-[#EEF0F8] rounded-t-3xl overflow-hidden w-[50%]">
-					<div className="lg:hidden bg-[#C4C7D5] h-[10%] text-[#234651] lg:py-3 items-center subtitle font-bold flex justify-center">
+					<div className="bg-[#C4C7D5] h-[90px] text-[#234651] lg:py-3 items-center subtitle font-bold flex justify-center">
 						Conventional
 					</div>
 					<div className="h-[80%] flex justify-center flex-col items-center">
 						<div className="flex h-[80%] items-center justify-center">
 							<DPVideo className="h-[90%]" src={'/left.mp4'} />
 						</div>
-						<p className="text-center text-[#254652] sm:w-[80%] lg:w-full text-lg font-medium 2xl:text-2xl">
+						<p className="text-center text-[#254652] sm:w-[80%] lg:w-full lg:text-[24px] text-lg font-medium 2xl:text-2xl">
 							Click & <br className="lg:hidden" />
 							<span className="font-bold"> Redirect </span>
 						</p>
 					</div>
 				</div>
 				<div className="lg:h-screen sm:h-full bg-[#FEF4D3] rounded-t-3xl overflow-hidden w-[50%] ">
-					<div className="lg:hidden bg-[#FFE89B] h-[10%] text-[#234651] py-3 subtitle items-center font-bold flex justify-center">
+					<div className="bg-[#FFE89B] h-[90px] text-[#234651] py-3 subtitle items-center font-bold flex justify-center">
 						Dpanda
 					</div>
 					<div className="h-[80%] flex justify-center flex-col items-center">
 						<div className="flex h-[80%] items-center justify-center">
 							<DPVideo className="h-[90%]" src={'/right.mp4'} />
 						</div>
-						<p className="text-center text-[#254652] subtitle sm:w-[80%] lg:w-full text-lg font-medium 2xl:text-2xl">
+						<p className="text-center text-[#254652] subtitle sm:w-[80%] lg:text-[24px] lg:w-full text-lg font-medium 2xl:text-2xl">
 							Click & <br className="lg:hidden" /> <span className="font-bold">Convert</span>
 						</p>
 					</div>
@@ -38,7 +38,7 @@ export default function Feature() {
 			</div>
 			<div className="lg:w-[35%] flex lg:flex-col sm:my-4 sm:mt-8 lg:my-0 sm:flex-row sm:gap-x-2 lg:justify-center lg:px-8 gap-y-3 sm:p-0 sm:w-full">
 				<h1 className="text-[#023046]/20 title font-bold leading-[1] sm:mt-1 lg:m-0 ">01</h1>
-				<div className="sm:pl-[12px]">
+				<div className="sm:pl-[12px] md:pl-0">
 					<h1 className="title text-[#1D234E] font-medium leading-[1.2] mb-[15px]">
 						<HighlightedText text="Better" wrapperClass="bottom-1 h-[30%] font-bold" /> <br />
 						<span className="font-medium">User Experience</span>

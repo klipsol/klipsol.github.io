@@ -14,7 +14,10 @@ export default function FirstParty() {
 					</div>
 					<div className="flex h-full  justify-center flex-col">
 						<DPVideo className="h-fit" src={'/fl.mp4'} />
-						<p className="text-center text-[#254652] text-lg font-medium 2xl:text-2xl">Data Blackbox</p>
+						<p className="text-center text-[#254652] sm:w-[80%] lg:w-full lg:text-[24px] text-lg font-medium 2xl:text-2xl">
+							Data
+							<span className="font-bold"> Blackbox </span>
+						</p>
 					</div>
 				</div>
 				<div className="lg:h-screen sm:h-full bg-[#FEF4D3] sm:rounded-t-3xl lg:rounded-none overflow-hidden w-[50%]">
@@ -23,13 +26,16 @@ export default function FirstParty() {
 					</div>
 					<div className="flex h-full  justify-center flex-col">
 						<DPVideo className="h-fit" src={'/fr.mp4'} />
-						<p className="text-center text-[#254652] text-lg font-medium 2xl:text-2xl">Full Data Access</p>
+						<p className="text-center text-[#254652] sm:w-[80%] lg:w-full lg:text-[24px] text-lg font-medium 2xl:text-2xl">
+							<span className="font-bold">Full Data </span>
+							Access
+						</p>
 					</div>
 				</div>
 			</div>
 			<div className="lg:w-[35%] flex lg:flex-col sm:my-4 lg:my-0 sm:flex-row sm:gap-x-2 lg:justify-center lg:px-8 gap-y-3 sm:p-0 sm:w-full">
 				<h1 className="text-[#023046]/20 title font-semibold leading-[1] sm:mt-1 lg:m-0">03</h1>
-				<div className="sm:pl-[12px]">
+				<div className="sm:pl-[12px] md:pl-0">
 					<h1 className="title text-[#1D234E] font-medium leading-[1.2] mb-[15px]">
 						<HighlightedText text="Access To" wrapperClass="bottom-1 h-[30%] font-semibold" /> <br />{' '}
 						<span className="font-normal">First-Party Insights</span>

@@ -14,8 +14,11 @@ export default function LifeTimeValue() {
 					</div>
 					<div className="flex h-full justify-center items-center flex-col">
 						<DPVideo className="h-fit sm:mt-[-20px] sm:mb-[15px]" src={'/vid2.mp4'} />
-						<p className="text-center sm:w-[60%] md:w-full text-wrap text-[#254652] text-lg font-medium 2xl:text-2xl">
+						{/* <p className="text-center sm:w-[60%] md:w-full text-wrap text-[#254652] text-lg font-medium 2xl:text-2xl">
 							Third Party User Control
+						</p> */}
+						<p className="text-center text-[#254652] subtitle sm:w-[80%] lg:text-[24px] lg:w-full text-lg font-medium 2xl:text-2xl">
+							<span className="font-bold">Third Party</span> User Control
 						</p>
 					</div>
 				</div>
@@ -25,15 +28,15 @@ export default function LifeTimeValue() {
 					</div>
 					<div className="flex h-full justify-center items-center flex-col">
 						<DPVideo className="h-fit sm:mt-[-20px] sm:mb-[15px]" src={'/vid3.mp4'} />
-						<p className="text-center sm:w-[60%] md:w-full text-wrap text-[#254652] text-lg font-medium 2xl:text-2xl">
-							Full User Control
+						<p className="text-center text-[#254652] subtitle sm:w-[80%] lg:text-[24px] lg:w-full text-lg font-medium 2xl:text-2xl">
+							<span className="font-bold">Your Own</span> User Ecosystem
 						</p>
 					</div>
 				</div>
 			</div>
 			<div className="lg:w-[35%] flex lg:flex-col sm:my-4 lg:my-0 sm:flex-row sm:gap-x-2 lg:justify-center lg:px-8 gap-y-3 sm:p-0 sm:w-full">
 				<h1 className="text-[#023046]/20 title font-semibold leading-[1] sm:mt-1 lg:m-0">02</h1>
-				<div className="sm:pl-[12px]">
+				<div className="sm:pl-[12px] md:pl-0">
 					<h1 className="title text-[#1D234E] font-medium leading-[1.2] mb-[15px]">
 						<HighlightedText text="Higher" wrapperClass="bottom-1 h-[30%] font-semibold" /> <br />
 						<span className="font-normal">Lifetime Value</span>
