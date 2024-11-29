@@ -1,4 +1,3 @@
-import React from "react";
 import HighlightedText from "../HighlightedText/HighlightedText";
 
 export default function HigherMonitization() {

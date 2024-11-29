@@ -2,11 +2,8 @@
 import Navbar from "@/app/roi-calculator/Components/Navbar";
 import DPVideo from "../DPVideo/DPVideo";
 import HighlightedText from "../HighlightedText/HighlightedText";
-import { useParams } from "next/navigation";
 
 const HeroMobile = () => {
-  const params = useParams();
-  const publisher = params?.publisherId?.[0];
   return (
     <div className="block md:hidden ">
       <Navbar customBg="#eebe50" />
@@ -15,22 +12,24 @@ const HeroMobile = () => {
         style={{ clipPath: "polygon(0 0, 100% 0, 100% 100%, 0 85%)" }}
       ></div>
 
-      <div className="text-primaryTextColor p-4 relative min-h-[400px]">
-        <h2 className="text-white mt-6 text-xl leading-8 w-1/2">
-          <span className="text-white title">
-            <span className="text-[#023046] font-extrabold">Discovery</span>{" "}
-            Meets <br /> Commerce
-          </span>
-        </h2>
-        <p className="font-medium w-1/2 mt-5 leading-5">
-          Benefits of Discovery +{" "}
-          <span className="font-semibold">Commerce </span> on TikTok, Meta,
-          Google & Amazon To You
-        </p>
-        <div className="flex gap-4 justify-between my-8 mt-0">
+      <div className="text-primaryTextColor p-4 relative min-h-[400px] flex">
+        <div>
+          <h2 className="text-white mt-6 text-xl leading-8">
+            <span className="text-white title">
+              <span className="text-[#023046] font-extrabold">Discovery</span>{" "}
+              Meets <br /> Commerce
+            </span>
+          </h2>
+          <p className="font-medium mt-5 leading-5">
+            Benefits of Discovery +{" "}
+            <span className="font-semibold">Commerce </span> on TikTok, Meta,
+            Google & Amazon To You
+          </p>
+        </div>
+        <div className="relative mt-0">
           <DPVideo
             id="videoDiv"
-            className="absolute right-4 bottom-0 max-w-[180px] border-4 border-[#023046] rounded-xl"
+            className="max-w-[180px] sm:max-w-[150px] p-[4px] bg-[#023046] rounded-xl"
             src="/HeroVideo2.mp4"
           />
         </div>
@@ -48,11 +47,9 @@ const HeroMobile = () => {
                 Live Preview
               </span>
             </div>
-            {publisher && (
-              <p className="text-[#F7BA30] text-[10px] xxl:text-[0.7em] text-center ml-3 md:m-auto">
-                {publisher && `for ${publisher}`}
-              </p>
-            )}
+            <p className="text-[#F7BA30] text-[10px] xxl:text-[0.7em] text-center ml-3 md:m-auto">
+              for pinterest
+            </p>
           </a>
         </div>
       </div>

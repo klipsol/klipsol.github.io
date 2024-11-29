@@ -6,81 +6,17 @@ import HighlightedText from "../HighlightedText/HighlightedText";
 import Navbar from "../Nav/Navbar";
 import { useParams } from "next/navigation";
 
-export default function Hero() {
+const Hero = () => {
   const scroll = useScrollTo();
   const secondSectionRef = useRef(null);
   const logoRef = useRef(null);
   const params = useParams();
   const publisher = params?.publisherId?.[0];
 
-  // const heroAnimation = () => {
-  //   const tl = gsap.timeline({
-  //     defaults: { duration: 2, ease: "power3.out" },
-  //   });
-
-  //   tl.fromTo(
-  //     ["#left", "#right", "#switch", "#videoDiv"],
-  //     {
-  //       opacity: 0,
-  //       x: function (index) {
-  //         // Left element moves from left, right from right, switch no horizontal movement
-  //         if (index === 0) return -500;
-  //         if (index === 1) return 500;
-  //         if (index === 3) return 1000;
-  //         return 0;
-  //       },
-  //       y: function (index) {
-  //         // Only switch moves vertically
-  //         return index === 2 ? 100 : 0;
-  //       },
-  //     },
-  //     {
-  //       opacity: 1,
-  //       x: 0,
-  //       y: 0,
-  //     },
-  //     "<" // This makes all animations start at the same time
-  //   );
-  // };
-
-  // useGSAP(() => {
-  //   gsap.registerPlugin(ScrollTrigger);
-
-  //   const featureElement = document.getElementById("feature");
-  //   const calculateEndPosition = () => {
-  //     if (featureElement) {
-  //       const featurePosition =
-  //         featureElement.getBoundingClientRect().top + window.scrollY; // Get absolute position in the DOM
-  //       return featurePosition + 100; // Add 100 pixels to the position
-  //     }
-  //     return 420; // Fallback value in case the feature element is not found
-  //   };
-
-  //   const logoPin = gsap.to(logoRef.current, {
-  //     y: 320,
-  //     x: -100,
-  //     scrollTrigger: {
-  //       pin: true,
-  //       trigger: logoRef.current,
-  //       start: "top 53%",
-  //       end: calculateEndPosition(),
-  //       scrub: true,
-  //       onLeave: () => {},
-  //     },
-  //   });
-
-  //   heroAnimation();
-
-  //   return () => {
-  //     logoPin.kill();
-  //   };
-  // });
-
   return (
     <>
       <section className="hidden md:block h-screen md:relative overflow-hidden bg-white">
         <Navbar />
-        {/* yellow image layout  */}
 
         <img
           src="/yellow-layout.svg"
@@ -88,7 +24,7 @@ export default function Hero() {
           alt="bg"
         />
         <svg
-          className=" sm:top-[-10%] absolute lg:hidden sm:z-10"
+          className="sm:top-[-10%] absolute lg:hidden sm:z-10"
           xmlns="http://www.w3.org/2000/svg"
           width="1078.713"
           height="416.878"
@@ -105,13 +41,12 @@ export default function Hero() {
         <div className="top-[61%] h-fit xxl:top-[64%] 2xl:top-[54%] z-50 pointer-events-none w-full sec-container absolute xxl:text-[1.4em] inset-0">
           <a
             href="/theBump"
-            className="flex flex-col cursor-pointer bg-[#023046] rounded-[46px] py-2 xxl:py-3 xxl:rounded-[50px] w-fit px-10  "
+            className="flex flex-col cursor-pointer bg-[#023046] rounded-[46px] py-2 xxl:py-3 xxl:rounded-[50px] w-fit px-10"
           >
             <div className="flex gap-x-2 items-center relative">
-              {/* <span className="bg-[#F7BA30]/80 w-2 h-2 rounded-full "></span> */}
               <span className="bg-[#F7BA30] w-2 h-2 xxl:w-2.5 xxl:h-2.5 rounded-full animate-ping [animation-duration:0.9s] absolute top-2 md:top-2 md:-left-4"></span>
               <span className="bg-[#F7BA30] w-2 h-2 xxl:w-2.5 xxl:h-2.5 rounded-full  absolute top-2 md:top-2 md:-left-4"></span>
-              <span className="text-white text-center font-medium ml-3 xxl:ml-1 md:m-auto ">
+              <span className="text-white text-center font-medium ml-3 xxl:ml-1 md:m-auto">
                 Live Preview
               </span>
             </div>
@@ -121,30 +56,30 @@ export default function Hero() {
           </a>
         </div>
         <div className="absolute inset-0 bg-transparent h-full w-full z-10 sec-container">
-          <div className="lg:h-[95%] sm:h-full 2xl:h-[95%] w-1/2 sm:w-full relative ">
-            <div className="text-primaryTextColor absolute bottom-0 ">
+          <div className="lg:h-[95%] sm:h-full 2xl:h-[95%] w-1/2 sm:w-full relative">
+            <div className="text-primaryTextColor absolute bottom-0">
               <p className="font-medium lg:text-xl 2xl:text-3xl xxl:text-4xl">
                 Big Tech Is Transforming Discovery To Commerce
               </p>
-              <h1 className="py-4 custom-text-sm-medium xxl:text-3xl sm:text-xl ">
+              <h1 className="py-4 custom-text-sm-medium xxl:text-3xl sm:text-xl">
                 <HighlightedText text={"Bringing"} /> That Power To You
               </h1>
               <div className="flex gap-x-3 custom-text-xs font-medium">
                 <div className="bg-[#FEF4D3] sm:text-center sm:py-2 sm:px-1 lg:p-5 lg:py-2.5 rounded-lg 2xl:py-2 relative">
                   Technology
-                  <div className="absolute lg:h-full bg-[#F7BB30]  sm:p 2xl:py-2 lg:w-1.5 sm:w-full sm:h-1.5 left-0 top-0"></div>
+                  <div className="absolute lg:h-full bg-[#F7BB30] sm:p 2xl:py-2 lg:w-1.5 sm:w-full sm:h-1.5 left-0 top-0"></div>
                 </div>
                 <div className="bg-[#FEF4D3] sm:text-center sm:py-2 sm:px-1 lg:p-5 lg:py-2.5 rounded-lg 2xl:py-2 relative">
                   Operations
-                  <div className="absolute lg:h-full bg-[#F7BB30]  sm:p 2xl:py-2 lg:w-1.5 sm:w-full sm:h-1.5 left-0 top-0"></div>
+                  <div className="absolute lg:h-full bg-[#F7BB30] sm:p 2xl:py-2 lg:w-1.5 sm:w-full sm:h-1.5 left-0 top-0"></div>
                 </div>
                 <div className="bg-[#FEF4D3] sm:text-center sm:py-2 sm:px-1 lg:p-5 lg:py-2.5 rounded-lg 2xl:py-2 relative">
                   Brand Supply
-                  <div className="absolute lg:h-full bg-[#F7BB30]  sm:p 2xl:py-2 lg:w-1.5 sm:w-full sm:h-1.5 left-0 top-0"></div>
+                  <div className="absolute lg:h-full bg-[#F7BB30] sm:p 2xl:py-2 lg:w-1.5 sm:w-full sm:h-1.5 left-0 top-0"></div>
                 </div>
                 <div className="bg-[#FEF4D3] sm:text-center sm:py-2 sm:px-1 lg:p-5 lg:py-2.5 rounded-lg 2xl:py-2 relative">
                   Intelligence
-                  <div className="absolute lg:h-full bg-[#F7BB30]  sm:p 2xl:py-2 lg:w-1.5 sm:w-full sm:h-1.5 left-0 top-0"></div>
+                  <div className="absolute lg:h-full bg-[#F7BB30] sm:p 2xl:py-2 lg:w-1.5 sm:w-full sm:h-1.5 left-0 top-0"></div>
                 </div>
               </div>
             </div>
@@ -152,9 +87,8 @@ export default function Hero() {
         </div>
 
         <div className="absolute inset-0 sec-container lg:flex justify-between sm:z-20">
-          {/* left section */}
           <div className="lg:z-10 sm:z-30">
-            <h2 className="text-white lg:mt-[20%] 2xl:mt-[15%] sm:mt-[85px] ">
+            <h2 className="text-white lg:mt-[20%] 2xl:mt-[15%] sm:mt-[85px]">
               <span className="text-white lg:text-[3.4em] 2xl:text-[4.5em] xxl:text-[4.9em] leading-[1.2em] pt-3">
                 <span className="text-[#023046] font-extrabold">Discovery</span>{" "}
                 Meets
@@ -162,50 +96,12 @@ export default function Hero() {
               </span>
             </h2>
 
-            <p className="text-black mt-4 w-[80%] font-medium custom-text-sm-medium">
+            <p className="text-black mt-5 w-[85%] font-medium custom-text-sm-medium">
               Power of discovery and commerce, as championed by Google, Amazon,
               TikTok, and Meta
             </p>
-
-            {/* description */}
-            {/* <h2 className="custom-text-sm-medium text-[#023046] font-extrabold mt-[3%] sm:mt-5">
-              <HighlightedText
-                text="Drive"
-                wrapperClass="bg-[#FEF4D4] bottom-1"
-              />
-            </h2>
-            <div className="flex gap-x-4 mt-[5%] xxl:mt-[7%] justify-start text-primaryTextColor">
-              <div className="bg-[#FFF9E6] rounded-2xl lg:p-3 2xl:p-4 xxl:pt-8 lg:pt-4 whitespace-nowrap custom-text-sm relative 2xl:min-w-[188px] lg:w-[120px] sm:rounded-xl sm:w-[110px] sm:px-2 sm:py-2">
-                <h1 className="absolute lg:-top-[35%] xxl:top-[-50%] font-medium title left-4 text-[#9E8637] sm:-top-[30%] ">
-                  01
-                </h1>
-                <h1 className="font-medium custom-text-sm">
-                  User <br />
-                  Experience
-                </h1>
-              </div>
-              <div className="bg-[#FFF9E6] rounded-2xl font-medium lg:p-3 lg:pt-4 2xl:p-4 xxl:pt-8 whitespace-nowrap custom-text-sm 2xl:min-w-[188px] relative h-fit lg:w-[120px] sm:rounded-xl sm:w-[110px] sm:px-2 sm:py-2">
-                <h1 className="absolute lg:-top-[35%] xxl:top-[-50%] title left-4 text-[#9E8637] sm:-top-[30%]">
-                  02
-                </h1>
-                <h1 className="font-medium custom-text-sm ">
-                  Lifetime <br />
-                  Value
-                </h1>
-              </div>
-              <div className="bg-[#FFF9E6] rounded-2xl lg:p-3 2xl:p-4  xxl:pt-8 lg:pt-4 whitespace-nowrap custom-text-sm 2xl:min-w-[188px] relative w-fit h-fit lg:w-[120px] sm:rounded-xl sm:w-[110px] sm:px-2 sm:py-2">
-                <h1 className="absolute lg:-top-[35%] xxl:top-[-50%] font-medium title left-4 text-[#9E8637] sm:-top-[30%]">
-                  03
-                </h1>
-                <h1 className="font-medium custom-text-sm">
-                  First-Party <br />
-                  Data
-                </h1>
-              </div>
-            </div> */}
           </div>
 
-          {/* right section */}
           <div className="lg:h-[95%] xxl:h-[95%] rounded-b-full  lg:w-[45%] bg-[#003045] sm:hidden lg:block">
             <div className="flex justify-center items-center h-full">
               <DPVideo
@@ -220,7 +116,7 @@ export default function Hero() {
           <div className="flex justify-center items-end  h-full">
             <DPVideo
               id="videoDiv"
-              className="lg:h-[60%] sm:h-[60%] w-fit "
+              className="lg:h-[60%] sm:h-[60%] w-fit"
               src="/HeroVideo.mp4"
             />
           </div>
@@ -228,4 +124,6 @@ export default function Hero() {
       </section>
     </>
   );
-}
+};
+
+export default Hero;
