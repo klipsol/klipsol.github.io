@@ -9,6 +9,7 @@ import EveryThingFree from './Components/EveryThingFree/EveryThingFree';
 import Final from './Components/Final/Final';
 import FirstParty from './Components/FirstParty/FirstParty';
 import Footer from './Components/Footer/Footer';
+import Hero1 from './Components/Hero.js/Hero1';
 import HeroMobile from './Components/Hero.js/HeroMobile';
 import HigherMonitization from './Components/HigherMonitization/HigherMonitization';
 import InstantRoi from './Components/InstantRoi/InstantRoi';
@@ -21,6 +22,7 @@ export default function Publisher2() {
 		<main>
 			{/* <SmoothScroll> */}
 			<Hero />
+			<Hero1 />
 			<HeroMobile />
 			<BrandList />
 			<HigherMonitization />
