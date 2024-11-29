@@ -21,7 +21,6 @@ import ScrollableNavbar from "./Components/Nav/Nav2";
 export default function Publisher2() {
   return (
     <main>
-      <ScrollableNavbar />
       {/* <SmoothScroll> */}
       <Hero />
       <HeroMobile />
