@@ -11,10 +11,10 @@ export const brands = [
 		name: 'Vahdam',
 		img: '/vahdam.png',
 	},
-	{
-		name: 'GlobalBees',
-		img: '/global.png',
-	},
+	// {
+	// 	name: 'GlobalBees',
+	// 	img: '/global.png',
+	// },
 	{
 		name: 'Times Group',
 		img: '/toi.png',
