@@ -14,7 +14,7 @@ export default function Feature() {
 					</div>
 					<div className="h-[80%] flex justify-center flex-col items-center">
 						<div className="flex h-[80%] items-center justify-center">
-							<DPVideo className="h-[90%]" src={'/left.mp4'} />
+							<DPVideo className="h-[90%]" src={'/thebump-2a.mp4'} />
 						</div>
 						<p className="text-center text-[#254652] sm:w-[80%] lg:w-full lg:text-[24px] text-lg font-medium 2xl:text-2xl">
 							Click & <br className="lg:hidden" />
@@ -28,7 +28,7 @@ export default function Feature() {
 					</div>
 					<div className="h-[80%] flex justify-center flex-col items-center">
 						<div className="flex h-[80%] items-center justify-center">
-							<DPVideo className="h-[90%]" src={'/right.mp4'} />
+							<DPVideo className="h-[90%]" src={'/thebump-2b.mp4'} />
 						</div>
 						<p className="text-center text-[#254652] subtitle sm:w-[80%] lg:text-[24px] lg:w-full text-lg font-medium 2xl:text-2xl">
 							Click & <br className="lg:hidden" /> <span className="font-bold">Convert</span>

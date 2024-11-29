@@ -25,7 +25,7 @@ export default function FirstParty() {
 						Dpanda
 					</div>
 					<div className="flex h-full  justify-center flex-col">
-						<DPVideo className="h-fit" src={'/fr.mp4'} />
+						<DPVideo className="h-fit" src={'/thebump-4b.mp4'} />
 						<p className="text-center text-[#254652] sm:w-[80%] lg:w-full lg:text-[24px] text-lg font-medium 2xl:text-2xl">
 							<span className="font-bold">Full Data </span>
 							Access

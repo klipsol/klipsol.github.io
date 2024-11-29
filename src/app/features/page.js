@@ -1,5 +1,5 @@
-import HighlightedText from '../publisher2/Components/HighlightedText/HighlightedText';
 import Navbar from '../roi-calculator/Components/Navbar';
+import HighlightedText from '../the-bump/Components/HighlightedText/HighlightedText';
 import FeatureCards from './Components/FeatureCard';
 
 export default function features(params) {

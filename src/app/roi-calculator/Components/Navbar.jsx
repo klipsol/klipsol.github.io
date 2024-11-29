@@ -1,5 +1,5 @@
 'use client';
-import CalendlyModal from '@/app/publisher2/Components/Calendly/CalendlyModal';
+import CalendlyModal from '@/app/the-bump/Components/Calendly/CalendlyModal';
 import Link from 'next/link';
 import { useParams, usePathname } from 'next/navigation';
 import { useState } from 'react';

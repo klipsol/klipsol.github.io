@@ -27,7 +27,7 @@ export default function LifeTimeValue() {
 						Dpanda
 					</div>
 					<div className="flex h-full justify-center items-center flex-col">
-						<DPVideo className="h-fit sm:mt-[-20px] sm:mb-[15px]" src={'/vid3.mp4'} />
+						<DPVideo className="h-fit sm:mt-[-20px] sm:mb-[15px]" src={'/thebump-3b.mp4'} />
 						<p className="text-center text-[#254652] subtitle sm:w-[80%] lg:text-[24px] lg:w-full text-lg font-medium 2xl:text-2xl">
 							<span className="font-bold">Your Own</span> User Ecosystem
 						</p>

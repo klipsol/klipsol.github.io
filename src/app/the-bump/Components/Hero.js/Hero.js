@@ -97,7 +97,7 @@ const Hero = () => {
 
 					<div className="h-[90%] rounded-b-full  w-[45vw] bg-[#003045] sm:hidden lg:block">
 						<div className="flex justify-center items-center h-full">
-							<DPVideo id="videoDiv" className="h-[60%] w-fit object-cover" src="/HeroVideo.mp4" />
+							<DPVideo id="videoDiv" className="h-[60%] w-fit object-cover" src="/thebump-1.mp4" />
 						</div>
 					</div>
 				</div>
