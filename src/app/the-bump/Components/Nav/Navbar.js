@@ -14,10 +14,7 @@ export default function Navbar({ background }) {
   console.log({ pathname }, !pathname === "/", pathname);
   return (
     <>
-      <div
-        className={"sec-container opacity-1 mt-6 relative z-50 lg:pr-10 "}
-        id="nav"
-      >
+      <div className={"sec-container opacity-1 mt-6 relative z-50 "} id="nav">
         <div className="flex justify-between items-center flex-row bg-transparent rounded-3xl relative sm:text-sm  2xl:text-lg xxl:text-2xl">
           <img
             src="/dpandaLogo2.png"
@@ -29,7 +26,7 @@ export default function Navbar({ background }) {
             alt="logo"
             className="hidden md:block max-h-10"
           />
-          <div className="absolute w-4/5 md:relative md:top-auto md:left-auto lg:right-0 -right-6 -top-6 md:gap-x-6 items-center flex-1 md:flex-none md:w-fit justify-between flex bg-[#023046] p-2 md:px-6 rounded-2xl rounded-t-none md:rounded-t-2xl">
+          <div className="absolute w-4/5 md:relative md:top-auto md:left-auto lg:right-0 -right-6 -top-6 md:gap-x-6 2xl:gap-x-3 items-center flex-1 md:flex-none md:w-fit justify-between flex bg-[#023046]  p-2  rounded-2xl rounded-t-none md:rounded-t-2xl">
             <Link
               href="/roi-calculator"
               className="rounded-[24px] text-center bg-secondaryBg px-4 py-1 text-white font-medium"

@@ -20,7 +20,9 @@ export const publisherMetaData = {
       title: "Streamlined Solutions for App Monetization and Growth",
       description:
         "Unlock the potential of your app with tailored solutions for monetization, user engagement, and enhanced e-commerce capabilities.",
-      images: ["https://www.dummyimage.com/1200x630/"],
+      images: [
+        "https://imagekit.dpanda.in/publisher-banner/1732890136_TheBUMP-perview.png",
+      ],
     },
   },
 };
