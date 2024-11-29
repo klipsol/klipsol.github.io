@@ -3,10 +3,10 @@ import DPVideo from '../DPVideo/DPVideo';
 import HighlightedText from '../HighlightedText/HighlightedText';
 import Navbar from '../Nav/Navbar';
 
-export default function Hero() {
+export default function Hero1() {
 	return (
 		<>
-			<section className="hidden md:block h-screen md:relative overflow-hidden bg-white">
+			<section className="hidden lg:block h-screen md:relative overflow-hidden bg-white">
 				<Navbar />
 				{/* yellow image layout  */}
 
@@ -35,7 +35,7 @@ export default function Hero() {
 					{/* left section */}
 					<div className="lg:z-10 sm:z-30 relative">
 						<h2 className="text-white sm:mt-[25%] ">
-							<span className="text-white lg:text-[60px] leading-[1.1] pt-3">
+							<span className="text-white lg:text-[80px] leading-[1.1] pt-3">
 								<span className="text-[#023046] font-bold">Discovery</span> Meets
 								<br /> Commerce
 							</span>

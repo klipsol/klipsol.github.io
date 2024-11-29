@@ -84,7 +84,7 @@ const Hero = () => {
 				<div className="absolute inset-0 sec-container lg:flex justify-between sm:z-20">
 					<div className="lg:z-10 sm:z-30">
 						<h2 className="text-white lg:mt-[20%] 2xl:mt-[15%] sm:mt-[85px]">
-							<span className="text-white lg:text-[3.4em] 2xl:text-[4.5em] xxl:text-[4.9em] leading-[1.2em] pt-3">
+							<span className="text-white lg:text-[3.4em] 2xl:text-[4.5em] xxl:text-[4.9em] leading-[1.2] pt-3">
 								<span className="text-[#023046] font-extrabold">Discovery</span> Meets
 								<br /> Commerce
 							</span>
