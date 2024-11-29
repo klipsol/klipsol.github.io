@@ -46,7 +46,7 @@ const Hero = () => {
 							</span>
 						</div>
 						<p className="text-[#F7BA30] text-[10px] xxl:text-[0.7em] text-center ml-3 md:m-auto">
-							{publisher && `for ${publisher}`}
+							for The Bump
 						</p>
 					</a>
 				</div>
