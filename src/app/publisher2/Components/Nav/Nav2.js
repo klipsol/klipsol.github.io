@@ -60,10 +60,10 @@ const ScrollableNavbar = ({ customBg }) => {
         >
           ROI <br className="lg:hidden" /> Calculator
         </Link>{" "}
-        {!publisher && !pathname.includes("/", "publisher2", "demo") && (
+        {pathname !== "/" && (
           <div className="bg-[#004A6C] h-7 w-0.5 lg:hidden"></div>
         )}
-        {!publisher && !pathname.includes("/", "publisher2", "demo") && (
+        {pathname !== "/" && (
           <button
             onClick={openModal}
             className="rounded-[24px]  px-4 py-1 md:text-primaryTextColor font-medium"

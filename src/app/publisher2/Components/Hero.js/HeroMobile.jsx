@@ -2,8 +2,11 @@
 import Navbar from "@/app/roi-calculator/Components/Navbar";
 import DPVideo from "../DPVideo/DPVideo";
 import HighlightedText from "../HighlightedText/HighlightedText";
+import { useParams } from "next/navigation";
 
 const HeroMobile = () => {
+  const params = useParams();
+  const publisher = params?.publisherId?.[0];
   return (
     <div className="block md:hidden ">
       <Navbar customBg="#eebe50" />
@@ -20,7 +23,7 @@ const HeroMobile = () => {
               Meets <br /> Commerce
             </span>
           </h2>
-          <p className="font-medium mt-5 leading-5">
+          <p className="font-medium mt-5 leading-5 lg:w-full sm:w-[95%]">
             Benefits of Discovery +{" "}
             <span className="font-semibold">Commerce </span> on TikTok, Meta,
             Google & Amazon To You
@@ -48,7 +51,7 @@ const HeroMobile = () => {
               </span>
             </div>
             <p className="text-[#F7BA30] text-[10px] xxl:text-[0.7em] text-center ml-3 md:m-auto">
-              for pinterest
+              {publisher && `for ${publisher}`}
             </p>
           </a>
         </div>

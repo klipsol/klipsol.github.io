@@ -1,5 +1,6 @@
 import { Inter_Tight } from "next/font/google";
 import "./globals.css";
+import ScrollableNavbar from "./publisher2/Components/Nav/Nav2";
 
 const inter = Inter_Tight({
   subsets: ["latin"],
@@ -16,6 +17,8 @@ export default function RootLayout({ children }) {
         ${inter.className}
          antialiased`}
       >
+        {" "}
+        <ScrollableNavbar />
         {children}
       </body>
     </html>
