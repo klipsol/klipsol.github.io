@@ -2,8 +2,11 @@
 import Navbar from "@/app/roi-calculator/Components/Navbar";
 import DPVideo from "../DPVideo/DPVideo";
 import HighlightedText from "../HighlightedText/HighlightedText";
+import { useParams } from "next/navigation";
 
 const HeroMobile = () => {
+  const params = useParams();
+  const publisher = params?.publisherId?.[0];
   return (
     <div className="block md:hidden ">
       <Navbar customBg="#eebe50" />
@@ -45,9 +48,11 @@ const HeroMobile = () => {
                 Live Preview
               </span>
             </div>
-            <p className="text-[#F7BA30] text-[10px] xxl:text-[0.7em] text-center ml-3 md:m-auto">
-              for pinterest
-            </p>
+            {publisher && (
+              <p className="text-[#F7BA30] text-[10px] xxl:text-[0.7em] text-center ml-3 md:m-auto">
+                {publisher && `for ${publisher}`}
+              </p>
+            )}
           </a>
         </div>
       </div>

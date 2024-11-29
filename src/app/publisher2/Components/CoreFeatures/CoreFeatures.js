@@ -1,6 +1,7 @@
 import React from "react";
 import { ArrowBigRight, CheckIcon, MoveRight, XIcon } from "lucide-react";
 import HighlightedText from "../HighlightedText/HighlightedText";
+import Link from "next/link";
 
 const CoreFeatures = () => {
   return (
@@ -164,12 +165,14 @@ const CoreFeatures = () => {
             </div>
           </div>
         </div>
-        <div className="sm:hidden lg:flex justify-end">
-          <div className="text-[#505C6E] hover:underline cursor-pointer flex gap-x-1 items-center custom-text-xs mt-4">
-            <span className="">See all features</span>
-            <MoveRight color="#505C6E" className="size-4" />
+        <Link href={"/features"}>
+          <div className="sm:hidden lg:flex justify-end">
+            <div className="text-[#505C6E] hover:underline cursor-pointer flex gap-x-1 items-center custom-text-xs mt-4">
+              <span className="">See all features</span>
+              <MoveRight color="#505C6E" className="size-4" />
+            </div>
           </div>
-        </div>
+        </Link>
       </div>
     </div>
   );
