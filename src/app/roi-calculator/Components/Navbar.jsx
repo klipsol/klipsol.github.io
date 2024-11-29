@@ -54,7 +54,7 @@ export default function Navbar({ customBg }) {
                 ROI <br className="lg:hidden" /> Calculator
               </Link>{" "}
               {pathname !== "/" && (
-                <div className="bg-[#004A6C] h-5 w-0.5"></div>
+                <div className="bg-[#004A6C] lg:h-6 h-8 w-0.5"></div>
               )}
               {pathname !== "/" && (
                 <button
@@ -65,7 +65,7 @@ export default function Navbar({ customBg }) {
                   <br className="lg:hidden" /> to us
                 </button>
               )}
-              <div className="bg-[#004A6C] h-5 w-0.5"></div>
+              <div className="bg-[#004A6C] lg:h-6 h-8 w-0.5"></div>
               <button
                 onClick={openModal}
                 className="rounded-[24px] text-white md:bg-primaryBg px-4 py-1 md:text-primaryTextColor font-medium"

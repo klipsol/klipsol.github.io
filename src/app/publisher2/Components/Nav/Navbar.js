@@ -35,25 +35,28 @@ export default function Navbar({ background }) {
               className="rounded-[24px] text-center bg-secondaryBg px-4 py-1 text-white font-medium"
               variant="primary"
             >
-              ROI Calculator
-            </Link>
+              ROI <br /> Calculator
+            </Link>{" "}
+            {pathname !== "/" && <div className="bg-[#004A6C] h-6 w-0.5"></div>}
+            {pathname !== "/" && (
+              <div
+                onClick={openModal}
+                className="rounded-[24px] text-white px-4 text-center py-1  font-medium"
+              >
+                <p>Talk to us</p>
+                <p className="text-[10px] text-[#F7BA30]">
+                  {publisher && `for ${publisher}`}
+                </p>
+              </div>
+            )}
             <div className="bg-[#004A6C] h-6 w-0.5"></div>
             <Link
               href="/features"
               className="rounded-[24px] text-center bg-secondaryBg px-4 py-1 text-white font-medium"
               variant="primary"
             >
-              All Features
+              All <br /> Features
             </Link>
-            {pathname !== "/" && <div className="bg-[#004A6C] h-6 w-0.5"></div>}
-            {pathname !== "/" && (
-              <button
-                onClick={openModal}
-                className="rounded-[24px] text-white md:bg-primaryBg px-4 text-center py-1 md:text-primaryTextColor font-medium"
-              >
-                Talk to us
-              </button>
-            )}
           </div>
         </div>
       </div>
