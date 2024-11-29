@@ -1,9 +1,31 @@
-// 'use client';
+"use client";
 
+import { useState } from "react";
 import SmoothScroll from "../publisher2/Components/SmoothScroll/SmoothScroll";
 import Navbar from "./Components/Navbar";
+import { getProfit } from "../utils/roiUtils";
 
 export default function ROICalculator() {
+  const [inputValue, setInputValue] = useState(100000);
+  const [min, setMin] = useState(getProfit(inputValue, 0.1));
+  const [max, setMax] = useState(getProfit(inputValue, 1.5));
+  const handleInputChange = (event) => {
+    const inputValue = event.target.value;
+
+    if (
+      (inputValue === "" || /^[1-9]\d*$/.test(inputValue)) &&
+      inputValue <= 10000000000
+    ) {
+      setInputValue(inputValue);
+      if (inputValue !== "") {
+        setMin(getProfit(inputValue, 0.1));
+        setMax(getProfit(inputValue, 1.5));
+      } else {
+        setMax(0);
+        setMin(0);
+      }
+    }
+  };
   return (
     <main className="my-12">
       <SmoothScroll>
@@ -40,9 +62,12 @@ export default function ROICalculator() {
                   <li className="text-[#003046]">AOV</li>
                 </ul>
                 <ul className="w-1/3 lg:w-1/2 text-sm lg:text-lg text-center space-y-2">
-                  <li className="text-[#003046] text-base lg:text-xl font-semibold rounded-xl px-4 py-1 md:px-6 md:py-2 w-fit m-auto bg-white border border-[#003046]">
-                    100,000
-                  </li>
+                  <input
+                    className="text-[#003046] text-base lg:text-xl font-semibold rounded-xl px-4 py-1 md:px-6 md:py-2 w-fit m-auto bg-white border border-[#003046]"
+                    value={inputValue}
+                    onChange={handleInputChange}
+                  />
+
                   <li className="text-[#003046]">0.1 - 1.5%</li>
                   <li className="text-[#003046]">10 - 25%</li>
                   <li className="text-[#003046]">$60</li>
@@ -59,10 +84,10 @@ export default function ROICalculator() {
                 </ul>
                 <ul className="w-1/3 lg:w-1/2 text-end lg:text-center text-sm lg:text-lg flex-1 space-y-2 lg:space-y-4">
                   <li className="text-[#1D234E] text-base lg:text-xl font-bold">
-                    $1,000 - $16,000
+                    {`$${min.toFixed(2)} - $${max.toFixed(2)}`}
                   </li>
                   <li className="text-base lg:text-xl font-medium text-[#1D234E]">
-                    $10 - $160
+                    {`$${(min / 100).toFixed(2)} - $${(max / 100).toFixed(2)}`}
                   </li>
                 </ul>
               </div>
@@ -121,10 +146,13 @@ export default function ROICalculator() {
             </ul>
             <ul className="text-end text-sm lg:text-lg lg:text-center flex-1 space-y-7 md:space-y-2 lg:space-y-4">
               <li className="text-[#1D234E] font-bold lg:text-xl text-base">
-                $4,300 - $69,000
+                {`$${(min * 4).toFixed(2)} - $${(max * 4).toFixed(2)}`}
               </li>
               <li className="text-[#1D234E] lg:text-xl font-medium">
-                $45 - $690
+                {`$${((min / 100) * 4).toFixed(2)} - $${(
+                  (max / 100) *
+                  4
+                ).toFixed(2)}`}
               </li>
             </ul>
           </div>
