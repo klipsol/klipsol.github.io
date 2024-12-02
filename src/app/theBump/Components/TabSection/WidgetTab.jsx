@@ -13,7 +13,7 @@ const WidgetTab = ({ selectedTab }) => {
 				<div>
 					<p>
 						<span className="font-bold">01. </span>
-						Seamlessly embed AI-driven "Buy Now" buttons on any product review.{' '}
+						{`Seamlessly embed AI-driven 'Buy Now' buttons on any product review.`}{' '}
 					</p>
 					<span
 						className="relative flex justify-start mt-2"
