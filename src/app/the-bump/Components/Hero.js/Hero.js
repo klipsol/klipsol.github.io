@@ -24,13 +24,13 @@ const Hero = () => {
 					<div className="lg:z-10 sm:z-30 flex flex-col pl-[10%]">
 						<div className="flex-1 justify-end flex flex-col">
 							<h2 className="text-white">
-								<span className="text-white sm:text-[60px] xl:text-[72px] 2xl:text-[4.5em] xxl:text-[4.9em] leading-[1.2]">
+								<span className="text-white sm:text-[60px] 2xl:text-[72px] xxl:text-[4.9em] leading-[1.2]">
 									<span className="text-secondary font-extrabold">Discovery</span> Meets
 									<br /> Commerce
 								</span>
 							</h2>
 
-							<p className="md:mt-[15px] text-secondary w-[85%] font-medium xl:text-[24px] sm:text-[18px] custom-text-sm-medium">
+							<p className="md:mt-[15px] text-secondary w-[85%] font-medium 2xl:text-[24px] sm:text-[18px] custom-text-sm-medium">
 								<span className="font-bold">
 									From a <span className="line-through text-[16px]">medium</span> to Destination for
 									Discovery
