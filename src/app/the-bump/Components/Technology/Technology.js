@@ -11,7 +11,16 @@ export default function Technology() {
 					End-to-End <br /> Technology
 				</>
 			),
-			className: 'absolute top-[15%] -left-[100px]  lg:-left-[115px] 2xl:-left-[120px]',
+			className: 'featurechips-l featurechips absolute right-[70%] top-[20%] w-[150px]',
+		},
+		{
+			icon: '/ai.png',
+			label: (
+				<>
+					AI Based <br /> Recommendation
+				</>
+			),
+			className: 'featurechips-l featurechips absolute right-[70%] top-[45%] w-[150px]',
 		},
 		{
 			icon: '/data_and_analytics.png',
@@ -21,16 +30,7 @@ export default function Technology() {
 					Analytics
 				</>
 			),
-			className: 'absolute sm:bottom-[10%] bottom-[25%] -left-[90px] lg:-left-[100px] 2xl:-left-[110px]',
-		},
-		{
-			icon: '/ai.png',
-			label: (
-				<>
-					AI Based <br /> Recommendation
-				</>
-			),
-			className: 'absolute top-[40%] -left-[110px] lg:-left-[150px] 2xl:-right-[170px]',
+			className: 'featurechips-l featurechips absolute right-[70%] top-[70%] w-[150px]',
 		},
 		{
 			icon: '/payment.png',
@@ -39,8 +39,7 @@ export default function Technology() {
 					Payments & <br /> Settlements
 				</>
 			),
-			className:
-				'absolute top-[15%] lg:lg:-right-[120px] -right-[100px] bg-[#033046] 2xl:-left-[130px] text-white',
+			className: 'featurechips-r featurechips absolute left-[70%] top-[20%] bg-[#033046] text-white w-[150px]',
 		},
 		{
 			icon: '/cata.png',
@@ -49,8 +48,7 @@ export default function Technology() {
 					Catalogue & <br /> Pricing
 				</>
 			),
-			className:
-				'absolute  top-[40%] lg:-right-[120px] -right-[110px] bg-[#033046] 2xl:-right-[120px] text-white',
+			className: 'featurechips-r featurechips absolute left-[70%] top-[45%] bg-[#033046] text-white w-[150px]',
 		},
 		{
 			icon: '/cust.png',
@@ -59,8 +57,7 @@ export default function Technology() {
 					Customer <br /> Escalations
 				</>
 			),
-			className:
-				'absolute sm:bottom-[10%] bottom-[25%] -right-[100px] bg-[#033046] 2xl:-right-[130px] text-white',
+			className: 'featurechips-r featurechips absolute left-[70%] top-[70%] bg-[#033046] text-white w-[150px]',
 		},
 	];
 
@@ -72,7 +69,7 @@ export default function Technology() {
 
 			{/* actual content starts here */}
 			<div className="absolute inset-0 sec-container lg:pt-[60px]">
-				<div className="lg:h-[15%] sm:h-[10%] relative lg:my-5 sm:my-2 xxl:mt-[5%]">
+				<div className="lg:h-[15%] sm:h-[10%] relative lg:my-5 sm:my-2 xxl:mt-[5%] mx-auto md:w-[60%]">
 					<h1 className="text-[#1D234E] font-semibold title lg:text-center my-8 lg:my-10 px-2 lg:py-0">
 						Everything To{' '}
 						<HighlightedText wrapperClass="bottom-[10%]" text="Embed Brands"></HighlightedText> On Your Site
@@ -97,14 +94,14 @@ export default function Technology() {
 					<div className="custom-vr sm:hidden lg:block"></div>
 					<div className="custom-hr mt-4 lg:hidden"></div>
 
-					<div className="sm:w-full lg:w-[50%] h-[40%] lg:h-[80%] xxl:h-[70%]   flex flex-col items-center relative ">
+					<div className="sm:w-full lg:w-[50%] h-[40%] lg:h-[80%] xxl:h-[70%] sm:pb-[10px] md:pb-0  flex flex-col items-center relative ">
 						<h1 className="subtitle mb-[8%] text-[#1D234E] font-medium sm:mt-6 lg:mt-0 lg:text[36px]">
 							Brand Supply & Integrations
 						</h1>
-						<div className="relative sm:h-[60%] lg:h-full w-fit">
+						<div className="relative sm:h-[60%] lg:h-full sm:w-[60%] md:w-fit">
 							<img className="h-full" src="/brandonboard.png" alt="phone" />
 						</div>
-						<p className="text-center custom custom-text-sm lg:text-[24px]  text-[#505C6E] mt-5 lg:max-w-[300px] lg:font-normal">
+						<p className="text-center custom custom-text-sm lg:text-[24px]  text-[#505C6E] mt-5 max-w-[60%] lg:max-w-[300px] lg:font-normal">
 							Apps, Plugins & Dashboards to Sync You with Brands.
 						</p>
 					</div>
