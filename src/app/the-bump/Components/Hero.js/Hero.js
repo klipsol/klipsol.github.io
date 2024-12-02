@@ -11,10 +11,11 @@ const Hero = () => {
 	return (
 		<>
 			<section className="hidden md:block h-screen md:relative overflow-hidden bg-white">
-				<Navbar />
 				<div className="absolute top-0 h-[50vh] bg-[#F7BA30] w-full"></div>
 
 				<div className="absolute inset-0 mr-[80px] lg:flex justify-between sm:z-20">
+					<Navbar />
+					<div></div>
 					<div className="lg:z-10 sm:z-30 flex flex-col pl-[10%]">
 						<div className="flex-1 justify-end flex flex-col">
 							<h2 className="text-white">
@@ -78,7 +79,7 @@ const Hero = () => {
 						</div>
 					</div>
 
-					<div className="h-[90%] rounded-b-full  w-[55%] bg-[#003045] sm:hidden lg:block">
+					<div className="h-[90%] rounded-b-full min-w-[40%] bg-[#003045] sm:hidden lg:block">
 						<div className="flex justify-center items-center h-full">
 							<DPVideo id="videoDiv" className="h-[60%] w-fit object-cover" src="/thebump-1.mp4" />
 						</div>
