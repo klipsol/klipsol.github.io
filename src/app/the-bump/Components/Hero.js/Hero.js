@@ -19,13 +19,13 @@ const Hero = () => {
 					<div className="lg:z-10 sm:z-30 flex flex-col pl-[10%]">
 						<div className="flex-1 justify-end flex flex-col">
 							<h2 className="text-white">
-								<span className="text-white lg:text-[72px] 2xl:text-[4.5em] xxl:text-[4.9em] leading-[1.2]">
+								<span className="text-white sm:text-[60px] lg:text-[72px] 2xl:text-[4.5em] xxl:text-[4.9em] leading-[1.2]">
 									<span className="text-[#023046] font-extrabold">Discovery</span> Meets
 									<br /> Commerce
 								</span>
 							</h2>
 
-							<p className="md:mt-[15px] text-black w-[85%] font-medium md:text-[26px] custom-text-sm-medium">
+							<p className="md:mt-[15px] text-black w-[85%] font-medium lg:text-[26px] sm:text-[18px] custom-text-sm-medium">
 								Power of Discovery And Commerce, as championed by Google, Amazon, TikTok and Meta
 							</p>
 						</div>
