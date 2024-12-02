@@ -64,13 +64,13 @@ export default function Technology() {
 	return (
 		<section className="md:h-screen relative w-full">
 			{/* bg */}
-			<div className="lg:h-[50vh] sm:h-[30vh] bg-[#F7BB30] w-full"></div>
+			<div className="lg:h-[50vh] sm:h-[40vh] md:h-[30vh] bg-[#F7BB30] w-full"></div>
 			<div className="sm:h-[750px] lg:h-[50vh] bg-transparent w-full"></div>
 
 			{/* actual content starts here */}
 			<div className="absolute inset-0 sec-container lg:pt-[60px]">
-				<div className="lg:h-[15%] sm:h-[10%] relative lg:my-5 sm:my-2 xxl:mt-[5%] mx-auto md:w-[60%]">
-					<h1 className="text-[#1D234E] font-semibold title lg:text-center my-8 lg:my-10 px-2 lg:py-0">
+				<div className="relative lg:my-5 sm:my-2 xxl:mt-[5%] mx-auto md:w-[60%]">
+					<h1 className="text-[#1D234E] font-semibold title sm:text-center px-2 lg:py-0">
 						Everything To{' '}
 						<HighlightedText wrapperClass="bottom-[10%]" text="Embed Brands"></HighlightedText> On Your Site
 					</h1>

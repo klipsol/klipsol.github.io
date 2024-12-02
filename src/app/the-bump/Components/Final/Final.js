@@ -4,7 +4,7 @@ export default function Final() {
 	return (
 		<section className="pb-16 bg-white sm:px-[10px] md:px-0 flex flex-col relative overflow-hidden ">
 			<div className="sec-container w-full  h-full">
-				<h1 className="title font-medium text-[#1D234E] mt-[4%] w-[60%] ">
+				<h1 className="title font-medium text-[#1D234E] sm:my-[60px] w-[60%] ">
 					Built on <HighlightedText wrapperClass="bottom-1 h-[35%]" text="Trust" />{' '}
 				</h1>
 				<div className="flex lg:justify-around sm:justify-between text-[#013046] mt-[5%]">

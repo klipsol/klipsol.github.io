@@ -9,25 +9,27 @@ export default function LifeTimeValue() {
 		<section className="sec-container h-fit lg:h-screen sm:pb-10 relative flex sm:px-[10px] lg:flex-row sm:flex-col-reverse  w-full">
 			<div className="lg:w-[65%] md:h-[50vh] sm:w-full flex gap-x-3 mt-4 lg:mt-0">
 				<div className="lg:h-screen sm:h-full bg-[#EEF0F8] sm:rounded-t-3xl lg:rounded-none overflow-hidden w-[50%]">
-					<div className="lg:hidden bg-[#C4C7D5] h-[10%] text-[#234651] lg:py-3 items-center subtitle font-semibold flex justify-center">
+					<div className="lg:hidden bg-[#C4C7D5] text-[#234651] py-3 items-center subtitle font-semibold flex justify-center">
 						Conventional
 					</div>
 					<div className="flex h-full justify-center items-center flex-col">
-						<DPVideo className="h-fit sm:mt-[-20px] sm:mb-[15px]" src={'/vid2.mp4'} />
-						{/* <p className="text-center sm:w-[60%] md:w-full text-wrap text-[#254652] text-lg font-medium 2xl:text-2xl">
-							Third Party User Control
-						</p> */}
+						{/* <DPVideo className="h-fit sm:mt-[-20px] sm:mb-[15px]" src={'/vid2.mp4'} /> */}
+						<div className="flex h-[80%] sm:mb-[15px] md:mb-0 items-center justify-center">
+							<DPVideo className="h-[90%]" src={'/vid2.mp4'} />
+						</div>
 						<p className="text-center text-[#254652] subtitle sm:w-[80%] lg:text-[24px] lg:w-full text-lg font-medium 2xl:text-2xl">
 							<span className="font-bold">Third Party</span> User Control
 						</p>
 					</div>
 				</div>
 				<div className="lg:h-screen sm:h-full bg-[#FEF4D3] sm:rounded-t-3xl lg:rounded-none overflow-hidden w-[50%]">
-					<div className="lg:hidden bg-[#FFE89B] h-[10%] text-[#234651] py-3 subtitle items-center font-semibold flex justify-center">
+					<div className="lg:hidden bg-[#FFE89B] text-[#234651] py-3 subtitle items-center font-semibold flex justify-center">
 						Dpanda
 					</div>
 					<div className="flex h-full justify-center items-center flex-col">
-						<DPVideo className="h-fit sm:mt-[-20px] sm:mb-[15px]" src={'/thebump-3b.mp4'} />
+						<div className="flex h-[80%] sm:mb-[15px] md:mb-0 items-center justify-center">
+							<DPVideo className="h-[90%]" src={'/thebump-3b.mp4'} />
+						</div>
 						<p className="text-center text-[#254652] subtitle sm:w-[80%] lg:text-[24px] lg:w-full text-lg font-medium 2xl:text-2xl">
 							<span className="font-bold">Your Own</span> User Ecosystem
 						</p>

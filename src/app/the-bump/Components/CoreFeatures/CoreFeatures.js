@@ -6,7 +6,7 @@ const CoreFeatures = () => {
 	return (
 		<div className="bg-[#FFFAEA] pb-10 flex ">
 			<div className="lg:sec-container w-full">
-				<h1 className="text-[#1D234E] font-semibold title lg:text-center my-8 lg:my-10 px-2 lg:py-0">
+				<h1 className="text-[#1D234E] font-semibold title lg:text-center my-8 lg:mt-[60px] lg:mb-[60px] px-2 lg:py-0">
 					<HighlightedText wrapperClass="bottom-[10%]" text="Full-Stack"></HighlightedText> eCommerce Over
 					SAAS
 				</h1>
