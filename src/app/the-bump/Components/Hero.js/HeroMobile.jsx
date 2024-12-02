@@ -34,7 +34,7 @@ const HeroMobile = () => {
 						src="/HeroVideo2.mp4"
 					/>
 				</div>
-				<div className="top-[280px]  pointer-events-auto text-sm z-30 w-full sec-container absolute  inset-0">
+				<div className="top-[280px] px-4 pointer-events-auto text-sm z-30 w-full sec-container absolute  inset-0">
 					<a
 						href="/theBump"
 						className="flex flex-col z-[9999] cursor-pointer bg-[#023046] rounded-[46px] py-2 xxl:py-3 xxl:rounded-[50px] w-fit px-6 "
