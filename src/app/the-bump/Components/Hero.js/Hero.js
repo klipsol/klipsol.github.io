@@ -25,7 +25,7 @@ const Hero = () => {
 								</span>
 							</h2>
 
-							<p className="md:mt-[15px] text-black w-[85%] font-medium lg:text-[26px] sm:text-[18px] custom-text-sm-medium">
+							<p className="md:mt-[15px] text-black w-[85%] font-medium lg:text-[24px] sm:text-[18px] custom-text-sm-medium">
 								Power of Discovery And Commerce, as championed by Google, Amazon, TikTok and Meta
 							</p>
 						</div>
