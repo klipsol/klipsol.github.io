@@ -110,10 +110,14 @@ export default function Technology() {
 			{/* actual content starts here */}
 			<div className="absolute inset-0 sec-container lg:pt-[60px]">
 				<div className="lg:h-[15%] sm:h-[10%] relative lg:my-5 sm:my-2 xxl:mt-[5%]">
-					<h1 className="text-[#1D234E] text-[60px] leading-tight title text-center font-medium absolute lg:pb-[35px] top-1/2 left-1/2 -translate-x-1/2 whitespace-nowrap -translate-y-1/2">
+					{/* <h1 className="text-[#1D234E] text-[60px] leading-tight title text-center font-medium absolute lg:pb-[35px] top-1/2 left-1/2 -translate-x-1/2 whitespace-nowrap -translate-y-1/2">
 						Everything To{' '}
 						<HighlightedText text="Embed Brands" wrapperClass="bg-[#ffdf74] bottom-2 h-[35%]" /> <br /> On
 						Your Site
+					</h1> */}
+					<h1 className="text-[#1D234E] font-semibold title lg:text-center my-8 lg:my-10 px-2 lg:py-0">
+						Everything To{' '}
+						<HighlightedText wrapperClass="bottom-[10%]" text="Embed Brands"></HighlightedText> On Your Site
 					</h1>
 				</div>
 				<div className="h-fit w-full lg:h-[65%] flex sm:justify-start lg:justify-around sm:flex-col lg:flex-row">
