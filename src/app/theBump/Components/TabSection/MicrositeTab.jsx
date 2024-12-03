@@ -20,7 +20,10 @@ const MicrositeTab = ({ selectedTab }) => {
         Shop
       </a>
       <div>
-        <FeaturesTable features={featuresData} title="" />
+        <FeaturesTable
+          features={featuresData}
+          title="AI-Powered Mobile-First Microsite with Native Personalization"
+        />
       </div>
     </div>
   );
