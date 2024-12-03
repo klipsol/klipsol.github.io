@@ -1,11 +1,12 @@
 "use client";
 
-import { useState } from "react";
+import { useRef, useState } from "react";
 import SmoothScroll from "../the-bump/Components/SmoothScroll/SmoothScroll";
 import Navbar from "./Components/Navbar";
 import { getProfit } from "../utils/roiUtils";
 
 export default function ROICalculator() {
+  const inputRef = useRef(null);
   const [inputValue, setInputValue] = useState(100000);
   const [min, setMin] = useState(getProfit(inputValue, 0.1));
   const [max, setMax] = useState(getProfit(inputValue, 1.5));
@@ -24,6 +25,14 @@ export default function ROICalculator() {
         setMax(0);
         setMin(0);
       }
+    }
+  };
+  const handleClick = () => {
+    if (inputRef?.current) {
+      const input = inputRef.current;
+      const length = input.value.length;
+      input.focus();
+      input.setSelectionRange(length, length);
     }
   };
   return (
@@ -62,11 +71,20 @@ export default function ROICalculator() {
                   <li className="text-[#003046]">AOV</li>
                 </ul>
                 <ul className="w-1/3 lg:w-1/2 text-sm lg:text-lg text-center space-y-2">
-                  <input
-                    className="text-[#003046] text-base lg:text-xl font-semibold rounded-xl px-4 py-1 md:px-6 md:py-2 w-fit m-auto bg-white border border-[#003046]"
-                    value={inputValue}
-                    onChange={handleInputChange}
-                  />
+                  <div className="max-w-32 sm:w-[90%] flex gap-x-2 bg-white border px-2 py-1 items-center md:py-2 border-[#003046]  rounded-xl overflow-hidden mx-auto">
+                    <input
+                      ref={inputRef}
+                      className="text-[#003046] text-base lg:text-xl font-semibold px-0.5 outline-none w-[75%] lg:w-[70%] "
+                      value={inputValue}
+                      onChange={handleInputChange}
+                    />
+                    <img
+                      onClick={handleClick}
+                      src="/edit.png"
+                      className="sm:size-3 lg:size-4"
+                      alt="edit"
+                    />
+                  </div>
 
                   <li className="text-[#003046]">0.1 - 1.5%</li>
                   <li className="text-[#003046]">10 - 25%</li>
@@ -87,7 +105,19 @@ export default function ROICalculator() {
                     {`$${min.toFixed(2)} - $${max.toFixed(2)}`}
                   </li>
                   <li className="text-base lg:text-xl font-medium text-[#1D234E]">
-                    {`$${(min / 100).toFixed(2)} - $${(max / 100).toFixed(2)}`}
+                    {`$${
+                      inputValue === ""
+                        ? "0"
+                        : (
+                            (min / inputValue).toFixed(2) * 1000
+                          ).toLocaleString()
+                    } - $${
+                      inputValue === ""
+                        ? "0"
+                        : (
+                            (max / inputValue).toFixed(2) * 1000
+                          ).toLocaleString()
+                    }`}
                   </li>
                 </ul>
               </div>
