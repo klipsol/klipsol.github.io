@@ -13,10 +13,10 @@ export default function EveryThingFree() {
 			{/* actual content begins here */}
 
 			<div className="inset-0 md:sec-container md:max-w-full flex sm:flex-col lg:flex-row">
-				<div className="lg:w-[60%] p-[10px] bg-[#FEF4D4] sm:w-full lg:h-full flex-col flex items-center">
+				<div className="lg:w-[60%] p-[10px] bg-action/20 sm:w-full lg:h-full flex-col flex items-center">
 					<div className="flex flex-col items-center justify-around md:h-[80%]">
 						<div>
-							<h1 className="title text-[#1D234E] my-[10%] text-center font-medium">
+							<h1 className="title text-secondary my-[10%] text-center font-medium">
 								Zero Cost. We Earn <br />
 								<HighlightedText text=" When You" wrapperClass="bottom-1 h-[35%]" /> Do
 							</h1>
@@ -30,10 +30,10 @@ export default function EveryThingFree() {
 						<br className="hidden lg:block" /> You Win, We Win.
 					</p>
 				</div>
-				<div className="lg:w-[40%] p-[10px] bg-[#EEF0F8] sm:w-full lg:h-full flex-col flex items-center">
+				<div className="lg:w-[40%] p-[10px] bg-brand/20 sm:w-full lg:h-full flex-col flex items-center">
 					<div className="flex flex-col items-center justify-around md:h-[80%]">
 						<div>
-							<h1 className="title text-[#1D234E] my-[10%] text-center font-medium">
+							<h1 className="title text-secondary my-[10%] text-center font-medium">
 								Go <HighlightedText wrapperClass="bottom-2 h-[30%]" text="Live" /> Within <br />{' '}
 								<span className="font-bold">1-5 Days</span>
 							</h1>

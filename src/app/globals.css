@@ -5,9 +5,9 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
-  --primary-color: #f7ba30;
-  --secondary-color: #003045;
-  --action-color: #003045;
+  --primary-color: 247 186 48;
+  --secondary-color: 0 48 69;
+  --action-color: 0 48 69;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -24,6 +24,11 @@ body {
 }
 
 @layer base {
+  :root {
+    --primary-color: 247 186 48;
+    --secondary-color: 0 48 69;
+    --action-color: 0 48 69;
+  }
   .sec-container {
     @apply lg:max-w-[1150px] mx-auto w-full 2xl:max-w-7xl xxl:max-w-[1640px];
   }

@@ -22,14 +22,12 @@ const Hero = () => {
 
         <div className="absolute inset-0 mr-[80px] lg:flex justify-between sm:z-20">
           <Navbar publisher={pubName} />
-          {/* <div></div> */}
+          <div></div>
           <div className="lg:z-10 sm:z-30 flex flex-col pl-[10%]">
             <div className="flex-1 justify-end flex flex-col">
-              <h2 className="text-white mt-16 2xl:mt-0">
-                <span className="text-white sm:text-[45px]  2xl:text-[72px] xxl:text-[4.9em] leading-[1.2]">
-                  <span className="text-secondary font-extrabold">
-                    Discovery
-                  </span>{" "}
+              <h2 className="text-white">
+                <span className="text-secondary sm:text-[60px] 2xl:text-[72px] xxl:text-[4.9em] leading-[1.2]">
+                  <span className="text-action font-extrabold">Discovery</span>{" "}
                   Meets
                   <br /> Commerce
                 </span>
@@ -40,11 +38,12 @@ const Hero = () => {
                   From <span className="line-through"> Medium</span> to
                   Destination for Discovery,
                 </span>
+                <br />
                 as mastered by Google, Amazon, TikTok and Meta
               </p>
             </div>
 
-            <div className="z-50 sec-container xxl:text-[1.4em] inset-0 my-[30px] 2xl:my-[50px]">
+            <div className="z-50 sec-container xxl:text-[1.4em] inset-0 md:my-[50px]">
               <a
                 href="/theBump"
                 className="flex flex-col cursor-pointer bg-action rounded-[46px] py-2 xxl:py-3 xxl:rounded-[50px] w-[240px] px-10"
@@ -56,7 +55,7 @@ const Hero = () => {
                     Live Preview
                   </span>
                 </div>
-                <p className="text-secondary text-[14px] xxl:text-[0.7em] text-left ml-3 md:m-auto">
+                <p className="text-primary text-[14px] xxl:text-[0.7em] text-left ml-3 md:m-auto">
                   for{pubName && <span className="capitalize"> {pubName}</span>}
                 </p>
               </a>
@@ -67,26 +66,26 @@ const Hero = () => {
                   {/* <p className="font-medium lg:text-[28px]">
 										Big Tech Is Transforming Discovery To Commerce
 									</p> */}
-                  <h1 className="py-4 custom-text-sm-medium text-[24px] 2xl:text-[32px] md:mt-[5%] md:mb-[20px] md:w-[95%]">
-                    <HighlightedText text={"Everything"} /> to Drive In-app
-                    Commerce For Higher User Engagement and Growth
+                  <h1 className="py-4 custom-text-sm-medium md:text-[32px] md:mt-[5%] md:mb-[20px] md:w-[95%]">
+                    <HighlightedText text={"Everything"} /> to Drive On-Site
+                    User Conversion and Monetization
                   </h1>
                   <div className="flex gap-x-3 custom-text-xs font-medium">
-                    <div className="bg-[#fff9e6] sm:text-center lg:p-5 rounded-lg relative">
+                    <div className="bg-brand/20 sm:text-center lg:p-5 rounded-lg relative">
                       Technology
-                      <div className="absolute lg:h-full bg-secondary 2xl:py-2 lg:w-1.5 sm:w-full sm:h-1.5 left-0 top-0"></div>
+                      <div className="absolute lg:h-full bg-brand 2xl:py-2 lg:w-1.5 sm:w-full sm:h-1.5 left-0 top-0"></div>
                     </div>
-                    <div className="bg-[#fff9e6] sm:text-center lg:p-5 rounded-lg relative">
+                    <div className="bg-brand/20 sm:text-center lg:p-5 rounded-lg relative">
                       Operations
-                      <div className="absolute lg:h-full bg-secondary 2xl:py-2 lg:w-1.5 sm:w-full sm:h-1.5 left-0 top-0"></div>
+                      <div className="absolute lg:h-full bg-brand 2xl:py-2 lg:w-1.5 sm:w-full sm:h-1.5 left-0 top-0"></div>
                     </div>
-                    <div className="bg-[#fff9e6] sm:text-center lg:p-5 rounded-lg relative">
+                    <div className="bg-brand/20 sm:text-center lg:p-5 rounded-lg relative">
                       Brand Supply
-                      <div className="absolute lg:h-full bg-secondary 2xl:py-2 lg:w-1.5 sm:w-full sm:h-1.5 left-0 top-0"></div>
+                      <div className="absolute lg:h-full bg-brand 2xl:py-2 lg:w-1.5 sm:w-full sm:h-1.5 left-0 top-0"></div>
                     </div>
-                    <div className="bg-[#fff9e6] sm:text-center lg:p-5 rounded-lg relative">
+                    <div className="bg-brand/20 sm:text-center lg:p-5 rounded-lg relative">
                       Intelligence
-                      <div className="absolute lg:h-full bg-secondary 2xl:py-2 lg:w-1.5 sm:w-full sm:h-1.5 left-0 top-0"></div>
+                      <div className="absolute lg:h-full bg-brand 2xl:py-2 lg:w-1.5 sm:w-full sm:h-1.5 left-0 top-0"></div>
                     </div>
                   </div>
                 </div>

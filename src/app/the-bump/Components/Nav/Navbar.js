@@ -9,6 +9,7 @@ export default function Navbar({ publisher }) {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const openModal = () => setIsModalOpen(true);
   const closeModal = () => setIsModalOpen(false);
+  console.log({ pathname }, !pathname === "/", pathname);
   return (
     <>
       <div
@@ -38,7 +39,9 @@ export default function Navbar({ publisher }) {
             >
               ROI Calculator
             </Link>{" "}
-            {pathname !== "/" && <div className="bg-[#004A6C] h-6 w-0.5"></div>}
+            {pathname !== "/" && (
+              <div className="bg-secondary/70 h-6 w-0.5"></div>
+            )}
             {pathname !== "/" && (
               <div
                 onClick={openModal}
@@ -52,7 +55,7 @@ export default function Navbar({ publisher }) {
                 )}
               </div>
             )}
-            <div className="bg-[#004A6C] h-6 w-0.5"></div>
+            <div className="bg-secondary/70 h-6 w-0.5"></div>
             <Link
               href="/features"
               className="rounded-[24px] text-[16px] text-center bg-secondary px-4 py-1 text-white font-medium"

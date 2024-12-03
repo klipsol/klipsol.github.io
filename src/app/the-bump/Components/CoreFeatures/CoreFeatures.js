@@ -4,14 +4,14 @@ import HighlightedText from '../HighlightedText/HighlightedText';
 
 const CoreFeatures = () => {
 	return (
-		<div className="bg-[#FFFAEA] pb-10 flex ">
+		<div className="bg-brand/15 pb-10 flex ">
 			<div className="lg:sec-container w-full">
-				<h1 className="text-[#1D234E] font-semibold title lg:text-center my-8 lg:mt-[60px] lg:mb-[60px] px-2 lg:py-0">
+				<h1 className="text-secondary font-semibold title lg:text-center my-8 lg:mt-[60px] lg:mb-[60px] px-2 lg:py-0">
 					<HighlightedText wrapperClass="bottom-[10%]" text="Full-Stack"></HighlightedText> eCommerce Over
 					SAAS
 				</h1>
 				<div className="flex justify-between sm:gap-x-1 px-1">
-					<div className="bg-white lg:bg-transparent sm:rounded-t-2xl lg:rounded-t-3xl overflow-hidden border-[3px] border-[#FFFAEA]">
+					<div className="bg-white lg:bg-transparent sm:rounded-t-2xl lg:rounded-t-3xl overflow-hidden">
 						<h2 className="text-[#505C6E] font-semibold custom-text-base lg:mb-4 bg-[#C4C7D5] lg:bg-transparent md:text-left sm:text-center py-1 lg:py-2">
 							Core <br className="lg:hidden" /> Features
 						</h2>

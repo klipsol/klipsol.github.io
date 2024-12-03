@@ -51,20 +51,20 @@ export default function Final() {
 						Backed <span className="font-medium">By</span>
 					</div>
 					<div className="grid grid-cols-2 gap-4 lg:flex lg:flex-nowrap">
-						<div className="bg-[#FEF4D4] h-fit rounded-3xl 2xl:rounded-[35px] px-5 py-4 2xl:py-5 2xl:px-7 shadow-sm transition-shadow">
+						<div className="bg-brand/20 h-fit rounded-3xl 2xl:rounded-[35px] px-5 py-4 2xl:py-5 2xl:px-7 shadow-sm transition-shadow">
 							<img src="/accel.png" alt="accel" className="h-5 2xl:h-10 object-contain mx-auto" />
 						</div>
-						<div className="bg-[#FEF4D4] h-fit rounded-3xl 2xl:rounded-[35px] px-5 py-4 2xl:py-5 2xl:px-7 shadow-sm transition-shadow">
+						<div className="bg-brand/20 h-fit rounded-3xl 2xl:rounded-[35px] px-5 py-4 2xl:py-5 2xl:px-7 shadow-sm transition-shadow">
 							<img
 								src="/lightspeed.png"
 								alt="lightspeed"
 								className="h-5 2xl:h-10 object-contain mx-auto"
 							/>
 						</div>
-						<div className="bg-[#FEF4D4] h-fit rounded-3xl 2xl:rounded-[35px] px-5 py-4 2xl:py-5 2xl:px-7 shadow-sm transition-shadow">
+						<div className="bg-brand/20 h-fit rounded-3xl 2xl:rounded-[35px] px-5 py-4 2xl:py-5 2xl:px-7 shadow-sm transition-shadow">
 							<img src="/sauce.png" alt="sauce" className="h-5 2xl:h-10 object-contain mx-auto" />
 						</div>
-						<div className="bg-[#FEF4D4] h-fit rounded-3xl 2xl:rounded-[35px] px-5 py-4 2xl:py-5 2xl:px-7 shadow-sm transition-shadow">
+						<div className="bg-brand/20 h-fit rounded-3xl 2xl:rounded-[35px] px-5 py-4 2xl:py-5 2xl:px-7 shadow-sm transition-shadow">
 							<img
 								src="/whiteboard2.png"
 								alt="whiteboard2"
