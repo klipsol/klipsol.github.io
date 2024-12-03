@@ -249,103 +249,110 @@ const WidgetTab = ({ selectedTab }) => {
 				</table>
 			</div>
 			<div className="max-w-3xl mx-auto p-6 border-2 border-gray-500 rounded-2xl bg-white my-10">
-				<h4 className="text-2xl font-semibold">The Ultimate Destination for Trusted Discovery & Purchase</h4>
+				<h4 className="text-2xl font-semibold text-center sm:text-left">
+					The Ultimate Destination for Trusted Discovery & Purchase
+				</h4>
 				<div className="bg-[#04133a] h-[1px] mt-1 mb-4"></div>
-				<table className="table-auto w-full my-4 border-collapse border border-spacing-0 rounded-lg overflow-hidden shadow-lg">
-					<thead className="bg-gray-100">
-						<tr>
-							<th className="text-left text-sm font-semibold text-gray-700 py-3 px-6">Metric</th>
-							<th className="text-left text-sm font-semibold text-gray-700 py-3 px-6">
-								Traditional Methods
-							</th>
-							<th className="text-left text-sm font-semibold text-gray-700 py-3 px-6">With Dpanda</th>
-						</tr>
-					</thead>
-					<tbody>
-						<tr className="bg-white hover:bg-gray-50 transition-colors duration-300">
-							<td className="text-left text-sm text-gray-600 py-3 px-6 border border-gray-200">
-								User Engagement
-							</td>
-							<td className="gap-4 justify-center items-center text-left py-3 px-6 border border-gray-200">
-								Limited personalization and static designs
-							</td>
-							<td className="gap-4 justify-center items-center text-left py-3 px-6 border border-gray-200">
-								AI-driven personalization with intelligent layouts optimized for discovery and purchase.
-							</td>
-						</tr>
-						<tr className="bg-white hover:bg-gray-50 transition-colors duration-300">
-							<td className="text-left text-sm text-gray-600 py-3 px-6 border border-gray-200">
-								Conversion Rates
-							</td>
-							<td className="gap-4 justify-center items-center text-left py-3 px-6 border border-gray-200">
-								Relies on generic discounts or limited campaigns
-							</td>
-							<td className="gap-4 justify-center items-center text-left py-3 px-6 border border-gray-200">
-								Targeted features like Price Alerts, Flash Sales, and Recommendations boost conversions.
-							</td>
-						</tr>
-						<tr className="bg-white hover:bg-gray-50 transition-colors duration-300">
-							<td className="text-left text-sm text-gray-600 py-3 px-6 border border-gray-200">
-								Revenue Potential
-							</td>
-							<td className="gap-4 justify-center items-center text-left py-3 px-6 border border-gray-200">
-								Missed opportunities with static monetization
-							</td>
-							<td className="gap-4 justify-center items-center text-left py-3 px-6 border border-gray-200">
-								Unlock higher revenue through multi-brand checkout, exclusive site promotions, and
-								maximized ROI.
-							</td>
-						</tr>
-						<tr className="bg-white hover:bg-gray-50 transition-colors duration-300">
-							<td className="text-left text-sm text-gray-600 py-3 px-6 border border-gray-200">
-								Operational Effort
-							</td>
-							<td className="gap-4 justify-center items-center text-left py-3 px-6 border border-gray-200">
-								High manual effort for integration and updates
-							</td>
-							<td className="gap-4 justify-center items-center text-left py-3 px-6 border border-gray-200">
-								Seamless integration with automated updates and AI-powered insights.
-							</td>
-						</tr>
-						<tr className="bg-white hover:bg-gray-50 transition-colors duration-300">
-							<td className="text-left text-sm text-gray-600 py-3 px-6 border border-gray-200">
-								Brand Partnerships
-							</td>
-							<td className="gap-4 justify-center items-center text-left py-3 px-6 border border-gray-200">
-								Limited collaboration opportunities
-							</td>
-							<td className="gap-4 justify-center items-center text-left py-3 px-6 border border-gray-200">
-								Stronger relationships through exclusive launches and tailored promotions with real-time
-								fulfillment.
-							</td>
-						</tr>
-						<tr className="bg-white hover:bg-gray-50 transition-colors duration-300">
-							<td className="text-left text-sm text-gray-600 py-3 px-6 border border-gray-200">
-								Content Monetization
-							</td>
-							<td className="gap-4 justify-center items-center text-left py-3 px-6 border border-gray-200">
-								Limited to static ads or links
-							</td>
-							<td className="gap-4 justify-center items-center text-left py-3 px-6 border border-gray-200">
-								Turns banners, reviews, and content into intuitive, shoppable experiences with seamless
-								eCommerce.
-							</td>
-						</tr>
-						<tr className="bg-white hover:bg-gray-50 transition-colors duration-300">
-							<td className="text-left text-sm text-gray-600 py-3 px-6 border border-gray-200">
-								Customer Retention
-							</td>
-							<td className="gap-4 justify-center items-center text-left py-3 px-6 border border-gray-200">
-								Users drop off after completing isolated actions
-							</td>
-							<td className="gap-4 justify-center items-center text-left py-3 px-6 border border-gray-200">
-								Persistent carts, price alerts, and exclusive offers encourage loyalty and repeat
-								engagement.
-							</td>
-						</tr>
-					</tbody>
-				</table>
+				<div className="overflow-x-auto">
+					<table className="table-auto w-full my-4 border-collapse border border-spacing-0 rounded-lg overflow-hidden shadow-lg">
+						<thead className="bg-gray-100">
+							<tr>
+								<th className="text-left text-sm font-semibold text-gray-700 py-3 px-6">Metric</th>
+								<th className="text-left text-sm font-semibold text-gray-700 py-3 px-6">
+									Traditional Methods
+								</th>
+								<th className="text-left text-sm font-semibold text-gray-700 py-3 px-6">With Dpanda</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr className="bg-white hover:bg-gray-50 transition-colors duration-300">
+								<td className="text-left text-sm text-gray-600 py-3 px-6 border border-gray-200">
+									User Engagement
+								</td>
+								<td className="text-sm text-gray-600 py-3 px-6 border border-gray-200">
+									Limited personalization and static designs
+								</td>
+								<td className="text-sm text-gray-600 py-3 px-6 border border-gray-200">
+									AI-driven personalization with intelligent layouts optimized for discovery and
+									purchase.
+								</td>
+							</tr>
+							<tr className="bg-white hover:bg-gray-50 transition-colors duration-300">
+								<td className="text-left text-sm text-gray-600 py-3 px-6 border border-gray-200">
+									Conversion Rates
+								</td>
+								<td className="text-sm text-gray-600 py-3 px-6 border border-gray-200">
+									Relies on generic discounts or limited campaigns
+								</td>
+								<td className="text-sm text-gray-600 py-3 px-6 border border-gray-200">
+									Targeted features like Price Alerts, Flash Sales, and Recommendations boost
+									conversions.
+								</td>
+							</tr>
+							<tr className="bg-white hover:bg-gray-50 transition-colors duration-300">
+								<td className="text-left text-sm text-gray-600 py-3 px-6 border border-gray-200">
+									Revenue Potential
+								</td>
+								<td className="text-sm text-gray-600 py-3 px-6 border border-gray-200">
+									Missed opportunities with static monetization
+								</td>
+								<td className="text-sm text-gray-600 py-3 px-6 border border-gray-200">
+									Unlock higher revenue through multi-brand checkout, exclusive site promotions, and
+									maximized ROI.
+								</td>
+							</tr>
+							<tr className="bg-white hover:bg-gray-50 transition-colors duration-300">
+								<td className="text-left text-sm text-gray-600 py-3 px-6 border border-gray-200">
+									Operational Effort
+								</td>
+								<td className="text-sm text-gray-600 py-3 px-6 border border-gray-200">
+									High manual effort for integration and updates
+								</td>
+								<td className="text-sm text-gray-600 py-3 px-6 border border-gray-200">
+									Seamless integration with automated updates and AI-powered insights.
+								</td>
+							</tr>
+							<tr className="bg-white hover:bg-gray-50 transition-colors duration-300">
+								<td className="text-left text-sm text-gray-600 py-3 px-6 border border-gray-200">
+									Brand Partnerships
+								</td>
+								<td className="text-sm text-gray-600 py-3 px-6 border border-gray-200">
+									Limited collaboration opportunities
+								</td>
+								<td className="text-sm text-gray-600 py-3 px-6 border border-gray-200">
+									Stronger relationships through exclusive launches and tailored promotions with
+									real-time fulfillment.
+								</td>
+							</tr>
+							<tr className="bg-white hover:bg-gray-50 transition-colors duration-300">
+								<td className="text-left text-sm text-gray-600 py-3 px-6 border border-gray-200">
+									Content Monetization
+								</td>
+								<td className="text-sm text-gray-600 py-3 px-6 border border-gray-200">
+									Limited to static ads or links
+								</td>
+								<td className="text-sm text-gray-600 py-3 px-6 border border-gray-200">
+									Turns banners, reviews, and content into intuitive, shoppable experiences with
+									seamless eCommerce.
+								</td>
+							</tr>
+							<tr className="bg-white hover:bg-gray-50 transition-colors duration-300">
+								<td className="text-left text-sm text-gray-600 py-3 px-6 border border-gray-200">
+									Customer Retention
+								</td>
+								<td className="text-sm text-gray-600 py-3 px-6 border border-gray-200">
+									Users drop off after completing isolated actions
+								</td>
+								<td className="text-sm text-gray-600 py-3 px-6 border border-gray-200">
+									Persistent carts, price alerts, and exclusive offers encourage loyalty and repeat
+									engagement.
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
 			</div>
+
 			<div className="max-w-3xl mx-auto p-6 border-2 border-gray-500 rounded-2xl bg-white my-10">
 				<h4 className="text-2xl font-semibold">Widget Integration Summary</h4>
 				<div className="bg-[#04133a] h-[1px] mt-1 mb-4"></div>

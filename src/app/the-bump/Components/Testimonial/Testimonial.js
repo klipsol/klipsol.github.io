@@ -34,7 +34,7 @@ export const Testimonial = () => (
 				</div>
 			</div>
 			<hr className="w-full border border-gray-300" />
-			<div className="sec-container w-full py-10 sm:px-[15px]">
+			<div className="sec-container w-full py-10 sm:px-[15px] md:px-0">
 				<h1 className="mb-[3%] text-center md:text-start sec-container text-[#013046] title font-bold">
 					Dpanda in the <HighlightedText text="News" wrapperClass="bottom-1 h-[30%]" />
 				</h1>
