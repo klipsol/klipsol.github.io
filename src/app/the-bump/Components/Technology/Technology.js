@@ -11,8 +11,7 @@ export default function Technology() {
 					End-to-End <br /> Technology
 				</>
 			),
-			className:
-				'featurechips-l featurechips absolute bg-action/70 saturate-150 brightness-100 right-[70%] top-[20%] w-[160px]',
+			className: 'featurechips-l featurechips absolute bg-action/70 right-[70%] top-[20%] w-[150px] text-primary',
 		},
 		{
 			icon: '/ai.png',
@@ -21,8 +20,7 @@ export default function Technology() {
 					AI Based <br /> Recommendation
 				</>
 			),
-			className:
-				'featurechips-l featurechips absolute bg-action/70 saturate-150 brightness-100 right-[70%] top-[45%] w-[160px]',
+			className: 'featurechips-l featurechips absolute bg-action/70 right-[70%] top-[45%] w-[150px] text-primary',
 		},
 		{
 			icon: '/data_and_analytics.png',
@@ -32,8 +30,7 @@ export default function Technology() {
 					Analytics
 				</>
 			),
-			className:
-				'featurechips-l featurechips absolute bg-action/70 saturate-150 brightness-100 right-[70%] top-[70%] w-[160px]',
+			className: 'featurechips-l featurechips absolute bg-action/70 right-[70%] top-[70%] w-[150px] text-primary',
 		},
 		{
 			icon: '/payment.png',
@@ -42,7 +39,7 @@ export default function Technology() {
 					Payments & <br /> Settlements
 				</>
 			),
-			className: 'featurechips-r featurechips absolute left-[70%] top-[20%] bg-brand/70 text-white w-[160px]',
+			className: 'featurechips-r featurechips absolute left-[70%] top-[20%] bg-brand/70 text-white w-[150px]',
 		},
 		{
 			icon: '/cata.png',
@@ -51,7 +48,7 @@ export default function Technology() {
 					Catalogue & <br /> Pricing
 				</>
 			),
-			className: 'featurechips-r featurechips absolute left-[70%] top-[45%] bg-brand/70 text-white w-[160px]',
+			className: 'featurechips-r featurechips absolute left-[70%] top-[45%] bg-brand/70 text-white w-[150px]',
 		},
 		{
 			icon: '/cust.png',
@@ -60,7 +57,7 @@ export default function Technology() {
 					Customer <br /> Escalations
 				</>
 			),
-			className: 'featurechips-r featurechips absolute left-[70%] top-[70%] bg-brand/70 text-white w-[160px]',
+			className: 'featurechips-r featurechips absolute left-[70%] top-[70%] bg-brand/70 text-white w-[150px]',
 		},
 	];
 
