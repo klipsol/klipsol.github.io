@@ -179,10 +179,23 @@ export default function ROICalculator() {
                 {`$${(min * 4).toFixed(2)} - $${(max * 4).toFixed(2)}`}
               </li>
               <li className="text-[#1D234E] lg:text-xl font-medium">
-                {`$${((min / 100) * 4).toFixed(2)} - $${(
-                  (max / 100) *
-                  4
-                ).toFixed(2)}`}
+                {`$${
+                  inputValue === ""
+                    ? "0"
+                    : (
+                        (min / inputValue).toFixed(2) *
+                        1000 *
+                        4
+                      ).toLocaleString()
+                } - $${
+                  inputValue === ""
+                    ? "0"
+                    : (
+                        (max / inputValue).toFixed(2) *
+                        1000 *
+                        4
+                      ).toLocaleString()
+                }`}
               </li>
             </ul>
           </div>
