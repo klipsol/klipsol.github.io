@@ -9,7 +9,6 @@ export default function Navbar({ publisher }) {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const openModal = () => setIsModalOpen(true);
   const closeModal = () => setIsModalOpen(false);
-  console.log({ pathname }, !pathname === "/", pathname);
   return (
     <>
       <div
