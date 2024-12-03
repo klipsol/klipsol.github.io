@@ -39,3 +39,50 @@ export const featuresData = [
     benefit: "Go live with your native looking microsite in record time.",
   },
 ];
+
+export const subscriberBenefitsData = [
+  {
+    feature: "Exclusive Sales",
+    benefit:
+      "Subscribers gain priority access to curated, high-demand sales before anyone else.",
+  },
+  {
+    feature: "Extra Cashback",
+    benefit:
+      "Earn elevated loyalty points or cashback on purchases from our recommended products.",
+  },
+  {
+    feature: "Subscriber-Only Discounts",
+    benefit:
+      "Unlock exclusive deals and savings from our trusted brand partners.",
+  },
+];
+
+export const subscriptionRewardsData = [
+  {
+    feature: "Future Savings",
+    benefit: "Redeem points for discounts on future purchases.",
+  },
+  {
+    feature: "Subscription Renewal Rebates",
+    benefit: "Use rewards to lower your renewal costs.",
+  },
+  {
+    feature: "Exclusive Perks",
+    benefit:
+      "Access limited-edition content, giveaways, and other premium benefits.",
+  },
+];
+
+export const shoppingRewardsData = [
+  {
+    feature: "Shop What You Love",
+    benefit:
+      "Found a favorite review? Buy the product now with exclusive subscriber discounts.",
+  },
+  {
+    feature: "Earn While You Discover",
+    benefit:
+      "Enjoy cashback and loyalty points on all top-rated product purchases.",
+  },
+];
