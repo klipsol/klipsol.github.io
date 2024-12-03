@@ -6,7 +6,7 @@ export default function features(params) {
 	return (
 		<main>
 			<Navbar />
-			<div className="relative sec-container flex flex-col lg:flex-row gap-y-4 mb-4">
+			<div className="relative sec-container flex flex-col lg:flex-row gap-y-4 mb-4 sm:px-[15px] lg:px-0">
 				<div className="mt-6 lg:mt-0 lg:min-h-screen lg:w-1/2 lg:fixed lg:top-0 lg:left-0">
 					<div className="text-[#1D234E] lg:absolute lg:top-1/2 lg:-translate-y-1/2 lg:left-1/2 lg:-translate-x-1/2">
 						<h1 className="lg:mb-10 mb-4 text-4xl lg:text-6xl title whitespace-nowrap">
