@@ -25,7 +25,7 @@ export default function Navbar({ customBg }) {
 			<div
 				className={twMerge(
 					'lg:sec-container opacity-1 mt-0 relative z-50 lg:pr-10 mx-0',
-					customBg && 'bg-[#eebe50]'
+					customBg && 'bg-primary'
 				)}
 				id="nav"
 			>
