@@ -51,7 +51,7 @@ const Hero = () => {
 										Live Preview
 									</span>
 								</div>
-								<p className="text-secondary text-[14px] xxl:text-[0.7em] text-left ml-3 md:m-auto">
+								<p className="text-primary text-[14px] xxl:text-[0.7em] text-left ml-3 md:m-auto">
 									for{pubName && <span className="capitalize"> {pubName}</span>}
 								</p>
 							</a>
