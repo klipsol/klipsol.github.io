@@ -32,17 +32,16 @@ const Hero = () => {
 
 							<p className="md:mt-[15px] text-secondary w-[85%] font-medium 2xl:text-[24px] sm:text-[18px] custom-text-sm-medium">
 								<span className="font-bold">
-									From a <span className="line-through text-[16px]">medium</span> to Destination for
-									Discovery
+									From <span className="line-through"> Medium</span> to Destination for Discovery,
 								</span>
-								, as mastered by Google, Amazon, TikTok and Meta
+								as mastered by Google, Amazon, TikTok and Meta
 							</p>
 						</div>
 
 						<div className="z-50 sec-container xxl:text-[1.4em] inset-0 md:my-[50px]">
 							<a
 								href="/theBump"
-								className="flex flex-col cursor-pointer bg-secondary rounded-[46px] py-2 xxl:py-3 xxl:rounded-[50px] w-[240px] px-10"
+								className="flex flex-col cursor-pointer bg-action rounded-[46px] py-2 xxl:py-3 xxl:rounded-[50px] w-[240px] px-10"
 							>
 								<div className="flex gap-x-2 items-center relative">
 									<span className="bg-primary w-2 h-2 xxl:w-2.5 xxl:h-2.5 rounded-full animate-ping [animation-duration:0.9s] absolute top-2 md:top-2 md:-left-4"></span>
@@ -51,7 +50,7 @@ const Hero = () => {
 										Live Preview
 									</span>
 								</div>
-								<p className="text-primary text-[14px] xxl:text-[0.7em] text-left ml-3 md:m-auto">
+								<p className="text-secondary text-[14px] xxl:text-[0.7em] text-left ml-3 md:m-auto">
 									for{pubName && <span className="capitalize"> {pubName}</span>}
 								</p>
 							</a>
@@ -69,19 +68,19 @@ const Hero = () => {
 									<div className="flex gap-x-3 custom-text-xs font-medium">
 										<div className="bg-[#fff9e6] sm:text-center lg:p-5 rounded-lg relative">
 											Technology
-											<div className="absolute lg:h-full bg-primary 2xl:py-2 lg:w-1.5 sm:w-full sm:h-1.5 left-0 top-0"></div>
+											<div className="absolute lg:h-full bg-secondary 2xl:py-2 lg:w-1.5 sm:w-full sm:h-1.5 left-0 top-0"></div>
 										</div>
 										<div className="bg-[#fff9e6] sm:text-center lg:p-5 rounded-lg relative">
 											Operations
-											<div className="absolute lg:h-full bg-primary 2xl:py-2 lg:w-1.5 sm:w-full sm:h-1.5 left-0 top-0"></div>
+											<div className="absolute lg:h-full bg-secondary 2xl:py-2 lg:w-1.5 sm:w-full sm:h-1.5 left-0 top-0"></div>
 										</div>
 										<div className="bg-[#fff9e6] sm:text-center lg:p-5 rounded-lg relative">
 											Brand Supply
-											<div className="absolute lg:h-full bg-primary 2xl:py-2 lg:w-1.5 sm:w-full sm:h-1.5 left-0 top-0"></div>
+											<div className="absolute lg:h-full bg-secondary 2xl:py-2 lg:w-1.5 sm:w-full sm:h-1.5 left-0 top-0"></div>
 										</div>
 										<div className="bg-[#fff9e6] sm:text-center lg:p-5 rounded-lg relative">
 											Intelligence
-											<div className="absolute lg:h-full bg-primary 2xl:py-2 lg:w-1.5 sm:w-full sm:h-1.5 left-0 top-0"></div>
+											<div className="absolute lg:h-full bg-secondary 2xl:py-2 lg:w-1.5 sm:w-full sm:h-1.5 left-0 top-0"></div>
 										</div>
 									</div>
 								</div>
