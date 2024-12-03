@@ -5,6 +5,9 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --primary-color: #f7ba30;
+  --secondary-color: #003045;
+  --action-color: #003045;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -54,6 +57,7 @@ body {
     background-size: 12px 1.5px; /* Adjust this for dash size and spacing */
     background-repeat: repeat-x;
     border: none; /* Remove default border */
+    width: 97% !important;
   }
 
   .custom-vr {

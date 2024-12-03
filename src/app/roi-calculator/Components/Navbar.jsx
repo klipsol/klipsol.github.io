@@ -30,7 +30,7 @@ export default function Navbar({ customBg }) {
 				id="nav"
 			>
 				<div className="lg:flex gap-4 relative pl-4 justify-between items-center flex flex-row md:flex-row bg-transparent rounded-3xl md:custom-text-base">
-					<Link href="/publisher2">
+					<Link href="/the-bump">
 						<img src="/dpandaLogo2.png" alt="logo" className="md:hidden block w-10 absolute top-2" />
 						<img src="/DpandaLogo.png" alt="logo" className="max-h-10 mt-6 mb-4 hidden md:block" />
 					</Link>

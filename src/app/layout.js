@@ -1,6 +1,7 @@
 import { Inter_Tight } from 'next/font/google';
 import './globals.css';
 import ScrollableNavbar from './the-bump/Components/Nav/Nav2';
+import ThemeProvider from './ThemeProvider';
 
 const inter = Inter_Tight({
 	subsets: ['latin'],
@@ -17,8 +18,7 @@ export default function RootLayout({ children }) {
         ${inter.className}
          antialiased`}
 			>
-				{' '}
-				<ScrollableNavbar />
+				<ThemeProvider /> <ScrollableNavbar />
 				{children}
 			</body>
 		</html>
