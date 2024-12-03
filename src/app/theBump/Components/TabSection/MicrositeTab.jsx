@@ -1,3 +1,6 @@
+import { featuresData } from "@/app/Data/FeatureData";
+import FeaturesTable from "../FeatureTable";
+
 const MicrositeTab = ({ selectedTab }) => {
   return (
     <div className="max-w-3xl text-black mx-auto p-6 border-2 border-gray-500 rounded-2xl bg-white my-10">
@@ -16,6 +19,9 @@ const MicrositeTab = ({ selectedTab }) => {
       >
         Shop
       </a>
+      <div>
+        <FeaturesTable features={featuresData} title="" />
+      </div>
     </div>
   );
 };
