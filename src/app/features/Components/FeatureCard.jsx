@@ -47,13 +47,13 @@ const FeatureCards = () => {
 			iconSrc: '/key.svg',
 			features: [
 				'Customization & Widget Integration',
-				'AI Ratings',
+				'AI Features',
 				'Catalog (Category + Brands)',
 				'Inventory Management',
 				'Order Tracking',
 				'Customer Operations',
 				'Accounting & Settlement',
-				'Shipping Brand Selection',
+				'Shipping (Managed by Brand)',
 			],
 		},
 		{
@@ -63,7 +63,7 @@ const FeatureCards = () => {
 			features: [
 				'Cloud Hosting',
 				'SSL Certificate',
-				'Whitelisted UI + Own Domain Pointing',
+				'Whitelabeled UI + Own Domain Pointing',
 				'Data Encryption and Security',
 			],
 		},
@@ -82,7 +82,7 @@ const FeatureCards = () => {
 		},
 		{
 			index: 4,
-			title: 'Front-end Responsive-ness',
+			title: 'Front-end Responsiveness',
 			iconSrc: '',
 			features: [
 				'AI-driven Auto-Population',
@@ -99,7 +99,7 @@ const FeatureCards = () => {
 			iconSrc: '',
 			features: [
 				'AI-driven Pricing Recommendations',
-				'Marketing APIs for Acquiring External CTAs',
+				'Marketing APIs for Ad Serving & Other CTAs',
 				'APIs & Web Hooks for Order Status &  Order Refills',
 				'Third Party Integrations',
 				'Abandoned Cart APIs',
@@ -112,7 +112,7 @@ const FeatureCards = () => {
 			index: 6,
 			title: 'Delivery Intelligence',
 			iconSrc: '',
-			features: ['AI-based Supply Connection', 'Fill-rate Data', 'Fill-rate Corrective Actions'],
+			features: ['AI-based Supply Correction', 'Fill Rate Risks', 'Fill Rate Corrective Actions'],
 		},
 		{
 			index: 7,
@@ -128,7 +128,7 @@ const FeatureCards = () => {
 				'AI-driven Brand & Category Management',
 				'Deal-of-the-Day',
 				'Special Brand Deals',
-				'Discover Coupons',
+				'Discount Coupons',
 				'High Discount + High Margin Deals',
 				'Brand Launches',
 				'Branding Budgets from Network',
