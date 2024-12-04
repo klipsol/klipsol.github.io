@@ -1,9 +1,9 @@
 "use client";
 import { useState } from "react";
 import { twMerge } from "tailwind-merge";
+import Incentive from "./IncentiveTab";
 import MicrositeTab from "./MicrositeTab";
 import WidgetTab from "./WidgetTab";
-import Incentive from "./IncentiveTab";
 
 const PreviewTabs = () => {
   const [selectedTab, setSelectedTab] = useState(0);
@@ -18,7 +18,7 @@ const PreviewTabs = () => {
       content: <MicrositeTab selectedTab={selectedTab} />,
     },
     {
-      title: "Incentivize Your Subscription",
+      title: "Bundle Your Subscription",
       content: <Incentive selectedTab={selectedTab} />,
     },
   ];
@@ -29,7 +29,7 @@ const PreviewTabs = () => {
         {tabData.map((tab, index) => (
           <button
             key={index}
-            className={`flex-1 text-center py-2 px-4 text-lg font-semibold transition-colors duration-300 ease-in-out ${
+            className={`flex-1 text-center py-2 px-4 text-xs lg:text-lg font-semibold transition-colors duration-300 ease-in-out ${
               selectedTab === index
                 ? "border-b-4 border-blue-500 text-blue-600"
                 : "text-gray-400 hover:text-gray-300"
@@ -40,6 +40,7 @@ const PreviewTabs = () => {
           </button>
         ))}
       </div>
+
       <div className={twMerge("", selectedTab !== 0 && "hidden")}>
         {tabData[0].content}
       </div>

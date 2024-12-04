@@ -3,7 +3,7 @@ import DPVideo from '../DPVideo/DPVideo';
 import HighlightedText from '../HighlightedText/HighlightedText';
 
 export default function LifeTimeValue() {
-	const listItems = ['Higher Engagement', 'Higher Retention'];
+	const listItems = ['Higher Engagement', 'Bundle Subscriptions'];
 
 	return (
 		<section className="sec-container h-fit lg:h-screen sm:pb-10 relative flex sm:px-[10px] lg:flex-row sm:flex-col-reverse  w-full">

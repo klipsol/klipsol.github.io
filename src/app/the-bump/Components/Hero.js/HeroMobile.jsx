@@ -17,7 +17,7 @@ const HeroMobile = () => {
 
 			<div className="text-primaryTextColor p-4 relative min-h-[400px] flex">
 				<div>
-					<h2 className="text-white mt-6 text-xl leading-8">
+					<h2 className="text-white text-xl leading-8">
 						<span className="text-secondary title">
 							<span className="text-action font-extrabold">Discovery</span> Meets <br /> Commerce
 						</span>
@@ -40,14 +40,14 @@ const HeroMobile = () => {
 				<div className="top-[280px] px-4 pointer-events-auto text-sm z-30 w-full sec-container absolute  inset-0">
 					<a
 						href="/theBump"
-						className="flex flex-col z-[9999] cursor-pointer bg-[#023046] rounded-[46px] py-2 xxl:py-3 xxl:rounded-[50px] w-fit px-6 "
+						className="flex flex-col z-[9999] cursor-pointer bg-action rounded-[46px] py-2 xxl:py-3 xxl:rounded-[50px] w-fit px-6 "
 						style={{ lineHeight: '1.5' }}
 					>
 						<div className="flex gap-x-2 items-center relative">
 							{/* <span className="bg-[#F7BA30]/80 w-2 h-2 rounded-full "></span> */}
 							<span className="bg-primary w-2 h-2 xxl:w-2.5 xxl:h-2.5 rounded-full animate-ping [animation-duration:0.9s] absolute top-2 md:top-2 md:-left-4"></span>
 							<span className="bg-primary w-2 h-2 xxl:w-2.5 xxl:h-2.5 rounded-full  absolute top-2 md:top-2 md:-left-4"></span>
-							<span className="text-white text-center font-medium ml-4 xxl:ml-3.5 md:m-auto ">
+							<span className="text-primary text-center font-medium ml-4 xxl:ml-3.5 md:m-auto ">
 								Live Preview
 							</span>
 						</div>

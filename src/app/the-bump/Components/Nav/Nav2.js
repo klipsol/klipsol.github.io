@@ -1,8 +1,8 @@
 "use client";
 import Link from "next/link";
-import React, { useState, useEffect } from "react";
-import CalendlyModal from "../Calendly/CalendlyModal";
 import { useParams, usePathname } from "next/navigation";
+import { useEffect, useState } from "react";
+import CalendlyModal from "../Calendly/CalendlyModal";
 
 const ScrollableNavbar = ({ customBg }) => {
   const pathname = usePathname();
@@ -68,7 +68,7 @@ const ScrollableNavbar = ({ customBg }) => {
             onClick={openModal}
             className="rounded-[24px]  px-4 py-1 md:text-primaryTextColor font-medium"
           >
-            Talk <br className="lg:hidden" /> to us
+            Talk to us
           </button>
         )}
         <div className="bg-[#004A6C] h-7 w-0.5 lg:hidden"></div>

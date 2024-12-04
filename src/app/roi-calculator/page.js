@@ -226,6 +226,12 @@ export default function ROICalculator() {
               </div>
             </div>
           </div>
+          <div className="p-4 text-center">
+            <p className="text-[#1D234E]">
+              Bundle Other Offering like you Subscription
+            </p>
+            <span className="text-[#1D234E]">Know More</span>
+          </div>
         </section>
       </SmoothScroll>
     </main>
