@@ -38,7 +38,7 @@ export const Testimonial = () => (
 				<h1 className="mb-[3%] text-center md:text-start sec-container text-[#013046] title font-bold">
 					Dpanda in the <HighlightedText text="News" wrapperClass="bottom-1 h-[30%]" />
 				</h1>
-				<div className="flex flex-wrap gap-4 lg:justify-between">
+				<div className="flex sm:flex-wrap lg:flex-nowrap gap-2 2xl:justify-between">
 					{news.map((newshouse) => (
 						<a
 							className="bg-[#EEF0F8] lg:bg-white h-fit rounded-3xl px-5 py-5 basis-[calc(50%-0.5rem)] lg:basis-auto mx-0 transition-shadow"
