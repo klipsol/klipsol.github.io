@@ -86,13 +86,13 @@ export default function Technology() {
 						<h1 className="subtitle mb-[8%] text-primary font-medium lg:text[36px]">
 							Technology & Operations Support
 						</h1>
-						<div className="relative sm:w-[40%] ">
+						<div className="relative sm:w-[40%] xl:w-[30%]">
 							{leftPhoneChipData.map((data) => (
 								<Chip key={data.icon} {...data} />
 							))}
 							<img src="/phone2.png" alt="phone" />
 						</div>
-						<p className="text-center max-w-[60%] lg:max-w-[300px] custom-text-sm lg:text-[24px] text-[#505C6E] mt-5 lg:font-normal">
+						<p className="text-center max-w-[60%] lg:max-w-[300px] custom-text-sm lg:text-[24px] text-[#505C6E] sm:mt-5 xl:mt-10 lg:font-normal">
 							Highly Configurable and White-labelled.
 						</p>
 					</div>
@@ -104,10 +104,10 @@ export default function Technology() {
 						<h1 className="subtitle mb-[8%] sm:text-[#1D234E] lg:text-primary font-medium sm:mt-6 lg:mt-0 lg:text[36px]">
 							Brand Supply & Integrations
 						</h1>
-						<div className="relative sm:w-[60%] flex-1">
+						<div className="relative sm:w-[60%] xl:w-[65%] flex-1">
 							<img src="/brandonboard.png" alt="phone" />
 						</div>
-						<p className="text-center custom custom-text-sm lg:text-[24px]  text-[#505C6E] mt-5 max-w-[60%] lg:max-w-[300px] lg:font-normal">
+						<p className="text-center custom custom-text-sm lg:text-[24px]  text-[#505C6E] sm:mt-5 xl:mt-10 max-w-[60%] lg:max-w-[300px] lg:font-normal">
 							Apps, Plugins & Dashboards to Sync You with Brands.
 						</p>
 					</div>
