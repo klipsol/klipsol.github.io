@@ -65,7 +65,7 @@ const ThemeProvider = () => {
         root.style.setProperty("--brand-color", "229 49 94"); // RGB for #8a317d
         break;
       case "/publisher/techradar":
-        root.style.setProperty("--primary-color", "245 195 221"); // RGB for #fff
+        root.style.setProperty("--primary-color", "255 240 249"); // RGB for #fff
         root.style.setProperty("--secondary-color", "0 0 0"); // RGB for #081338
         root.style.setProperty("--action-color", "10 14 32"); // RGB for #8a317d
         root.style.setProperty("--brand-color", "10 14 32"); // RGB for #8a317d
