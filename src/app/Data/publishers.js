@@ -8,6 +8,14 @@ const buyWidgetSites = [
   { name: "tmb", url: "https://tmb.dpanda-buy-widget.pages.dev/" },
   { name: "theBump", url: "https://thrivemarket.dpanda-buy-widget.pages.dev" },
   { name: "the-bump", url: "https://thrivemarket.dpanda-buy-widget.pages.dev" },
+  {
+    name: "foodnetwork",
+    url: "https://thrivemarket.dpanda-buy-widget.pages.dev",
+  },
+  {
+    name: "bestproducts",
+    url: "https://hearst.dpanda-buy-widget.pages.dev/",
+  },
 ];
 
 export const getWidgetUrl = (siteName) => {

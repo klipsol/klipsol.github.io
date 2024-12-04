@@ -27,7 +27,7 @@ export const publisherConfig = {
     "3b": "https://imagekit.dpanda.in/publisher-banner/1733317936_Fandom-3b.mp4",
     "4b": "https://imagekit.dpanda.in/publisher-banner/1733317947_Fandom-4b.mp4",
   },
-  future: {
+  techradar: {
     1: "https://imagekit.dpanda.in/publisher-banner/1733317987_Future-1.mp4",
     "2a": "https://imagekit.dpanda.in/publisher-banner/1733317998_Future-2a.mp4",
     "2b": "https://imagekit.dpanda.in/publisher-banner/1733318010_Future-2b.mp4",
@@ -41,7 +41,7 @@ export const publisherConfig = {
     "3b": "https://imagekit.dpanda.in/publisher-banner/1733318096_Healthline-3b.mp4",
     "4b": "https://imagekit.dpanda.in/publisher-banner/1733318105_Healthline-4b.mp4",
   },
-  hearst: {
+  bestproducts: {
     1: "https://imagekit.dpanda.in/publisher-banner/1733318127_Hearst-1.mp4",
     "2a": "https://imagekit.dpanda.in/publisher-banner/1733318138_Hearst-2a.mp4",
     "2b": "https://imagekit.dpanda.in/publisher-banner/1733318156_Hearst-2b.mp4",
@@ -76,7 +76,7 @@ export const publisherConfig = {
     "3b": "https://imagekit.dpanda.in/publisher-banner/1733318482_thebump-3b.mp4",
     "4b": "https://imagekit.dpanda.in/publisher-banner/1733318491_thebump-4b.mp4",
   },
-  tmb: {
+  "readers-digest": {
     1: "https://imagekit.dpanda.in/publisher-banner/1733318549_TMB-1.mp4",
     "2a": "https://imagekit.dpanda.in/publisher-banner/1733318559_TMB-2a.mp4",
     "2b": "https://imagekit.dpanda.in/publisher-banner/1733318577_TMB-2b.mp4",
@@ -90,7 +90,7 @@ export const publisherConfig = {
     "3b": "https://imagekit.dpanda.in/publisher-banner/1733318650_nymag-3b.mp4",
     "4b": "https://imagekit.dpanda.in/publisher-banner/1733318666_nymag-4b.mp4",
   },
-  warnerBros: {
+  foodnetwork: {
     1: "https://imagekit.dpanda.in/publisher-banner/1733318706_Warner_Bros-1.mp4",
     "2a": "https://imagekit.dpanda.in/publisher-banner/1733318718_Warner_Bros-2a.mp4",
     "2b": "https://imagekit.dpanda.in/publisher-banner/1733318732_Warner_Bros-2b.mp4",
