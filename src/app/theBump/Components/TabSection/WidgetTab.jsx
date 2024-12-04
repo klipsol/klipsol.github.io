@@ -92,7 +92,7 @@ const WidgetTab = ({ selectedTab }) => {
 						Embed a full-featured shopping site directly within your page using our shop CTA.
 					</p>
 				</div>
-				<div>
+				<div className="sm:mt-4 md:mt-0">
 					<p className="ml-auto relative w-fit">
 						<a
 							href="https://yourstore.dpanda.online/?user_id=1234567899"

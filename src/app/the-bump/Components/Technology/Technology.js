@@ -95,7 +95,7 @@ export default function Technology() {
 					<div className="custom-hr mt-4 lg:hidden"></div>
 
 					<div className="sm:w-full lg:w-[50%] h-[40%] lg:h-[80%] xxl:h-[70%] sm:pb-[10px] md:pb-0  flex flex-col items-center relative ">
-						<h1 className="subtitle mb-[8%] text-primary font-medium sm:mt-6 lg:mt-0 lg:text[36px]">
+						<h1 className="subtitle mb-[8%] text-[#1D234E] font-medium sm:mt-6 lg:mt-0 lg:text[36px]">
 							Brand Supply & Integrations
 						</h1>
 						<div className="relative lg:h-full sm:w-[60%] md:w-fit">

@@ -23,8 +23,11 @@ const HeroMobile = () => {
 						</span>
 					</h2>
 					<p className="font-medium mt-5 leading-5 lg:w-full sm:w-[95%]">
-						Benefits of Discovery + <span className="font-semibold">Commerce </span> on TikTok, Meta, Google
-						& Amazon To You
+						<span className="font-bold">
+							From <span className="line-through"> Medium</span> to Destination for Discovery,
+						</span>
+						<br />
+						as mastered by Google, Amazon, TikTok and Meta
 					</p>
 				</div>
 				<div className="relative mt-0">
