@@ -8,7 +8,7 @@ import { getWidgetUrl } from "@/app/Data/publishers";
 const Page = () => {
   const params = useParams();
   const publisher = params?.publisherId?.[0];
-  const siteUrl = getWidgetUrl(publisher).url;
+  const siteUrl = getWidgetUrl(publisher)?.url;
   return (
     <>
       <Navbar />

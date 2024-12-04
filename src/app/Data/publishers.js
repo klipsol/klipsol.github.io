@@ -16,5 +16,5 @@ export const getWidgetUrl = (siteName) => {
   const site = buyWidgetSites.find(
     (s) => s.name.toLowerCase() === normalizedName
   );
-  return site ? site : null;
+  return site ? site : buyWidgetSites[0];
 };
