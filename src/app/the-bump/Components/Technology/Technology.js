@@ -70,7 +70,7 @@ export default function Technology() {
 	return (
 		<section className="relative w-full">
 			{/* bg */}
-			<div className="absolute sm:h-[50%] bg-brand/10 w-full"></div>
+			<div className="absolute sm:h-[35vh] xl:h-[50%] bg-brand/10 w-full"></div>
 
 			{/* actual content starts here */}
 			<div className="inset-0 sec-container lg:py-[40px]">
