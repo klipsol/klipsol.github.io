@@ -69,7 +69,7 @@ export default function Technology() {
 
 			{/* actual content starts here */}
 			<div className="absolute inset-0 sec-container lg:pt-[60px]">
-				<div className="relative lg:my-5 sm:my-2 xxl:mt-[5%] mx-auto md:w-[60%]">
+				<div className="relative lg:my-5 sm:my-4 xxl:mt-[5%] mx-auto md:w-[60%]">
 					<h1 className="text-primary font-semibold title sm:text-center px-2 lg:py-0">
 						Everything To{' '}
 						<HighlightedText wrapperClass="bottom-[10%]" text="Embed Brands"></HighlightedText> On Your Site

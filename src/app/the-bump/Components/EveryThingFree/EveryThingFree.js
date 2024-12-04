@@ -22,7 +22,7 @@ export default function EveryThingFree() {
 							</h1>
 						</div>
 						<div className="lg:pl-10 lg:pr-6">
-							<img src="/laptop.png" className="h-[90%]" alt="laptop" />
+							<img src="/laptop.png" alt="laptop" />
 						</div>
 					</div>
 					<p className="text-[#505C6E] text-center max-w-[60%] mt-[10px] lg:text-[24px] custom-text-sm 2xl:text-2xl">
@@ -39,7 +39,7 @@ export default function EveryThingFree() {
 							</h1>
 						</div>
 						<div className="lg:pl-10 lg:pr-6">
-							<img src="/golive.png" className="h-[90%]" alt="laptop" />
+							<img src="/golive.png" alt="laptop" />
 						</div>
 					</div>
 					<p className="text-[#505C6E] text-center max-w-[60%] mt-[10px] lg:text-[24px] custom-text-sm 2xl:text-2xl">
