@@ -1,40 +1,41 @@
-import Script from 'next/script';
-import Navbar from '../roi-calculator/Components/Navbar';
-import PreviewTabs from './Components/TabSection/PreviewTabs';
+"use client";
+import Script from "next/script";
+import { useParams } from "next/navigation";
+import Navbar from "@/app/roi-calculator/Components/Navbar";
+import PreviewTabs from "../Components/TabSection/PreviewTabs";
+import { getWidgetUrl } from "@/app/Data/publishers";
 
 const Page = () => {
+  const params = useParams();
+  const publisher = params?.publisherId?.[0];
+  const siteUrl = getWidgetUrl(publisher).url;
+  console.log({ publisher, params, siteUrl });
   return (
     <>
       <Navbar />
       <main className="bg-[#09133A] text-white pb-10">
-        {/* <Script id="theBump-widget" strategy="afterInteractive">
-          {`(function (d, s, id) {
-             const js = d.createElement(s);
-             const fjs = d.getElementsByTagName(s)[0];
-             if (d.getElementById(id)) { return; }
-             js.id = id;
-             js.src = "https://the-bump.dpanda-buy-widget.pages.dev/widget.js";
-             fjs.parentNode.insertBefore(js, fjs);
-   
-             js.onload = function () {
-             if (typeof DPWidget !== 'undefined') {
-                 DPWidget.render({key: "VTZIajBSKzVQTnJ4dTZMOUV4bmJKdz09"});
-             } else {
-                 console.error('DPWidget is not available.');
-             }
-             };
-         }(document, 'script', 'dpanda-widget'));`}
-        </Script> */}
         <Script id="" strategy="afterInteractive">
           {`
             (async () => {
               // Fetch the product text on the page from the server
               const fetchProductsOnPagePerWidget = async () => {
-                const url = \`https://brand-images-dpanda.s3.ap-south-1.amazonaws.com/widget/shop_dpanda_in.json\`;
-                const currentPageUrl = 'https://thrivemarket.dpanda-buy-widget.pages.dev';
-                const response = await fetch(url);
-                const data = await response.json();
-                return data[currentPageUrl] || [];
+                try {
+                  const url = \`https://brand-images-dpanda.s3.ap-south-1.amazonaws.com/widget/shop_dpanda_in.json\`;
+                  const currentPageUrl = '${siteUrl}';
+                  console.log('Fetching products for URL:', currentPageUrl);
+                  
+                  const response = await fetch(url);
+                  const data = await response.json();
+                  console.log('Fetched data:', data);
+                  
+                  const productsForPage = data[currentPageUrl];
+                  console.log('Products for page:', productsForPage);
+                  
+                  return productsForPage || { inline: {}, dynamic: [] };
+                } catch (error) {
+                  console.error('Error fetching products:', error);
+                  return { inline: {}, dynamic: [] };
+                }
               };
           
               // Recursive function to find text nodes
@@ -84,36 +85,55 @@ const Page = () => {
           
               // Replace product names with widget placeholders
               const replaceProductNamesWithWidgetPlaceholders = async () => {
-                const productsArray = await fetchProductsOnPagePerWidget();
-                Object.entries(productsArray.inline).forEach(([ key, value ]) => {
-                  const regex = new RegExp(key, 'g');
-                  findTextNodes(document.body, (node) => {
-                    const parent = node.parentNode;
-          
-                    if (regex.test(node.textContent)) {
-                      if (parent.tagName === 'A') {
-                        replaceAnchorWithSpan(parent, key, value[0]);
-                      } else {
-                        wrapWithSpan(node, key, value[0]);
-                      }
-                    }
-                  });
-                });
-                return productsArray;
+                try {
+                  const productsArray = await fetchProductsOnPagePerWidget();
+                  console.log('Processing products:', productsArray);
+                  
+                  // Ensure inline exists and is an object before calling entries
+                  if (productsArray.inline && typeof productsArray.inline === 'object') {
+                    Object.entries(productsArray.inline).forEach(([ key, value ]) => {
+                      const regex = new RegExp(key, 'g');
+                      findTextNodes(document.body, (node) => {
+                        const parent = node.parentNode;
+            
+                        if (regex.test(node.textContent)) {
+                          if (parent.tagName === 'A') {
+                            replaceAnchorWithSpan(parent, key, value[0]);
+                          } else {
+                            wrapWithSpan(node, key, value[0]);
+                          }
+                        }
+                      });
+                    });
+                  } else {
+                    console.warn('No inline products found');
+                  }
+                  
+                  return productsArray;
+                } catch (error) {
+                  console.error('Error replacing product names:', error);
+                  return { inline: {}, dynamic: [] };
+                }
               };
           
               // Initialize the widget
               const initDPWidget = async () => {
-                const productsArray = await replaceProductNamesWithWidgetPlaceholders();
-                const productIdsArr = productsArray?.dynamic || []        
-                if (typeof DPWidget === 'object' && typeof DPWidget.render === 'function') {
-                  DPWidget.render({
-                    categoryToggle: true,
-                    productIds: productIdsArr || undefined,
-                    cartToggleType: "floating",
-                    cartType: "bottomsheet",
-                    key: 'VTZIajBSKzVQTnJ4dTZMOUV4bmJKdz09',
-                  });
+                try {
+                  const productsArray = await replaceProductNamesWithWidgetPlaceholders();
+                  const productIdsArr = productsArray?.dynamic || []        
+                  if (typeof DPWidget === 'object' && typeof DPWidget.render === 'function') {
+                    DPWidget.render({
+                      categoryToggle: true,
+                      productIds: productIdsArr || undefined,
+                      cartToggleType: "floating",
+                      cartType: "bottomsheet",
+                      key: 'VTZIajBSKzVQTnJ4dTZMOUV4bmJKdz09',
+                    });
+                  } else {
+                    console.warn('DPWidget not found or render method missing');
+                  }
+                } catch (error) {
+                  console.error('Error initializing widget:', error);
                 }
               };
           
@@ -133,21 +153,6 @@ const Page = () => {
           `}
         </Script>
         <div>
-          {/* Header Section */}
-          {/* <header className="bg-[#fdfcfa] shadow-md">
-            <div className="max-w-screen-xl mx-auto p-5">
-              <img
-                src="https://imagekit.dpanda.in/publisher-banner/1730186061_logo1.png"
-                alt="Dpanda Logo"
-                className="w-32"
-              />
-            </div>
-          </header> */}
-
-          {/* Main Content Section */}
-          {/* <h1 className="text-center text-lg mt-10">
-            Click To Experience Yourself
-          </h1> */}
           <PreviewTabs />
         </div>
       </main>
