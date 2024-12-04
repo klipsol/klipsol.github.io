@@ -16,7 +16,7 @@ const ScrollableNavbar = ({ customBg }) => {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY >= window.innerHeight) {
+      if (window.scrollY >= 50) {
         setIsVisible(true);
       } else {
         setIsVisible(false);
