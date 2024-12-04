@@ -43,7 +43,7 @@ export default function ROICalculator() {
 
         <section
           id="roi-calc"
-          className="my-8  m-auto px-2 lg:flex-row lg:flex lg:items-center sec-container"
+          className="my-8 max-w-2xl m-auto px-2 lg:flex-row lg:flex lg:max-w-[1280px] lg:items-center "
         >
           <div className="lg:max-w-xs lg:mr-10">
             <h1 className="text-4xl lg:text-5xl text-center lg:text-start text-[#1D234E] m-auto my-8 font-extrabold">
@@ -75,7 +75,7 @@ export default function ROICalculator() {
                   <div className="max-w-32 sm:w-[90%] flex gap-x-2 bg-white border px-2 py-1 items-center md:py-2 border-[#003046]  rounded-xl overflow-hidden mx-auto">
                     <input
                       ref={inputRef}
-                      className="text-[#003046] text-base lg:text-xl font-semibold px-0.5 outline-none w-[75%] lg:w-[70%] "
+                      className="text-[#003046] text-sm lg:text-xl font-semibold px-0.5 outline-none w-[75%] lg:w-[70%] "
                       value={inputValue}
                       onChange={handleInputChange}
                     />

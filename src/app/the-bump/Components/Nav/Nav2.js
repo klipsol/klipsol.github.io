@@ -36,7 +36,7 @@ const ScrollableNavbar = ({ customBg }) => {
       <div className="text-sm text-center md:gap-x-6 gap-y-2 items-center pt-0  w-full md:w-fit justify-between lg:justify-center hidden sm:flex sm:flex-row md:flex-row lg:flex">
         {/* <LivePreviewLinks /> */}
         <a
-          href="/theBump"
+          href={"/widget/" + publisher}
           className="flex flex-col cursor-pointer lg:bg-black lg:rounded-3xl lg:px-7 lg:leading-[1.3] py-1"
         >
           <div className="flex gap-x-2 items-center relative">

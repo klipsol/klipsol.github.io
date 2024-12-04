@@ -25,4 +25,15 @@ export const publisherMetaData = {
       ],
     },
   },
+  "the-bump": {
+    title: "Streamlined Solutions for App Monetization and Growth",
+    description:
+      "Unlock the potential of your app with tailored solutions for monetization, user engagement, and enhanced e-commerce capabilities.",
+    openGraph: {
+      title: "Streamlined Solutions for App Monetization and Growth",
+      description:
+        "Unlock the potential of your app with tailored solutions for monetization, user engagement, and enhanced e-commerce capabilities.",
+      images: ["https://i.ibb.co/fdNjqjJ/The-BUMP-perview.png"],
+    },
+  },
 };
