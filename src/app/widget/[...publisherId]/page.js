@@ -1,12 +1,13 @@
 "use client";
 import Script from "next/script";
-import { useParams } from "next/navigation";
+import { useParams, useSearchParams } from "next/navigation";
 import Navbar from "@/app/roi-calculator/Components/Navbar";
 import PreviewTabs from "../Components/TabSection/PreviewTabs";
 import { getWidgetUrl } from "@/app/Data/publishers";
 
 const Page = () => {
   const params = useParams();
+
   const publisher = params?.publisherId?.[0];
   const siteUrl = getWidgetUrl(publisher)?.url;
   return (

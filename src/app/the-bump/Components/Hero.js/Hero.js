@@ -4,17 +4,20 @@ import DPVideo from "../DPVideo/DPVideo";
 import HighlightedText from "../HighlightedText/HighlightedText";
 import Navbar from "../Nav/Navbar";
 import useAssets from "@/app/hooks/useAssets";
+import { useParams } from "next/navigation";
 
 const Hero = () => {
   const [pubName, setPubName] = useState("");
   const assets = useAssets();
-
+  const params = useParams();
+  const publisher = params?.publisherId?.[0];
   useEffect(() => {
     if (location.pathname.includes("/publisher/")) {
       setPubName(
         location.pathname.replace("/publisher/", "").replace("-", " ")
       );
     }
+    localStorage.setItem("publisher", publisher);
   }, []);
 
   return (
