@@ -84,7 +84,7 @@ export default function Technology() {
 							{leftPhoneChipData.map((data) => (
 								<Chip key={data.icon} {...data} />
 							))}
-							<img className="h-full" src="/phone2.png" alt="phone" />
+							<img src="/phone2.png" alt="phone" />
 						</div>
 						<p className="text-center max-w-[60%] lg:max-w-[300px] custom-text-sm lg:text-[24px] text-[#505C6E] mt-5 lg:font-normal">
 							Highly Configurable and White-labelled.
@@ -98,8 +98,8 @@ export default function Technology() {
 						<h1 className="subtitle mb-[8%] text-primary font-medium sm:mt-6 lg:mt-0 lg:text[36px]">
 							Brand Supply & Integrations
 						</h1>
-						<div className="relative sm:h-[60%] lg:h-full sm:w-[60%] md:w-fit">
-							<img className="h-full" src="/brandonboard.png" alt="phone" />
+						<div className="relative lg:h-full sm:w-[60%] md:w-fit">
+							<img src="/brandonboard.png" alt="phone" />
 						</div>
 						<p className="text-center custom custom-text-sm lg:text-[24px]  text-[#505C6E] mt-5 max-w-[60%] lg:max-w-[300px] lg:font-normal">
 							Apps, Plugins & Dashboards to Sync You with Brands.
