@@ -86,25 +86,29 @@ const WidgetTab = ({ selectedTab }) => {
 				<FloatingCallout />
 			</div>
 			<div className="max-w-3xl mx-auto p-6 border-2 border-gray-500 rounded-2xl bg-white my-10">
-				<p className="">
-					<span className="font-bold">06. </span>
-					Embed a full-featured shopping site directly within your page using our shop CTA.
-				</p>
-				<p className="ml-auto relative w-fit">
-					<a
-						href="https://yourstore.dpanda.online/?user_id=1234567899"
-						target="_blank"
-						className="bg-blue-500 text-white rounded-md p-2 hover:underline"
-					>
-						Shop
-					</a>
-					<span className="hidden md:block absolute -right-20 -top-16">
-						<img src="/arrow-white.svg" />
-						<span className="absolute font-semibold text-white top-12 -right-32 w-40">
-							6. Dedicated microsite for you
+				<div>
+					<p className="">
+						<span className="font-bold">06. </span>
+						Embed a full-featured shopping site directly within your page using our shop CTA.
+					</p>
+				</div>
+				<div>
+					<p className="ml-auto relative w-fit">
+						<a
+							href="https://yourstore.dpanda.online/?user_id=1234567899"
+							target="_blank"
+							className="bg-blue-500 text-white rounded-md p-2 hover:underline"
+						>
+							Shop
+						</a>
+						<span className="hidden md:block absolute -right-20 -top-16">
+							<img src="/arrow-white.svg" />
+							<span className="absolute font-semibold text-white top-12 -right-32 w-40">
+								6. Dedicated microsite for you
+							</span>
 						</span>
-					</span>
-				</p>
+					</p>
+				</div>
 			</div>
 			<div className="max-w-3xl mx-auto p-6 border-2 border-gray-500 rounded-2xl bg-white my-10">
 				<p>
