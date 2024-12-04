@@ -142,7 +142,7 @@ const Page = () => {
                 const fjs = d.getElementsByTagName(s)[0];
                 if (d.getElementById(id)) { return; }
                 js.id = id;
-                js.src =  '${siteUrl}';
+                js.src =  '${siteUrl}/widget.js';
                 fjs.parentNode.insertBefore(js, fjs);
           
                 // Add the 'onload' event listener to the script element

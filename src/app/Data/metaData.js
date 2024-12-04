@@ -33,7 +33,51 @@ export const publisherMetaData = {
       title: "Streamlined Solutions for App Monetization and Growth",
       description:
         "Unlock the potential of your app with tailored solutions for monetization, user engagement, and enhanced e-commerce capabilities.",
+      images: "https://i.ibb.co/Z1vwhKQ/The-Bump-perview-1.png",
+    },
+  },
+  buzzfeed: {
+    title: "Streamlined Solutions for App Monetization and Growth",
+    description:
+      "Unlock the potential of your app with tailored solutions for monetization, user engagement, and enhanced e-commerce capabilities.",
+    openGraph: {
+      title: "Streamlined Solutions for App Monetization and Growth",
+      description:
+        "Unlock the potential of your app with tailored solutions for monetization, user engagement, and enhanced e-commerce capabilities.",
+      images: ["https://i.ibb.co/Fwgp0xH/The-Buzzfeed-perview.png"],
+    },
+  },
+  "readers-digest": {
+    title: "Streamlined Solutions for App Monetization and Growth",
+    description:
+      "Unlock the potential of your app with tailored solutions for monetization, user engagement, and enhanced e-commerce capabilities.",
+    openGraph: {
+      title: "Streamlined Solutions for App Monetization and Growth",
+      description:
+        "Unlock the potential of your app with tailored solutions for monetization, user engagement, and enhanced e-commerce capabilities.",
       images: ["https://i.ibb.co/fdNjqjJ/The-BUMP-perview.png"],
+    },
+  },
+  gq: {
+    title: "Streamlined Solutions for App Monetization and Growth",
+    description:
+      "Unlock the potential of your app with tailored solutions for monetization, user engagement, and enhanced e-commerce capabilities.",
+    openGraph: {
+      title: "Streamlined Solutions for App Monetization and Growth",
+      description:
+        "Unlock the potential of your app with tailored solutions for monetization, user engagement, and enhanced e-commerce capabilities.",
+      images: ["https://i.ibb.co/1Lg7RLB/GQ-perview.png"],
+    },
+  },
+  fandom: {
+    title: "Streamlined Solutions for App Monetization and Growth",
+    description:
+      "Unlock the potential of your app with tailored solutions for monetization, user engagement, and enhanced e-commerce capabilities.",
+    openGraph: {
+      title: "Streamlined Solutions for App Monetization and Growth",
+      description:
+        "Unlock the potential of your app with tailored solutions for monetization, user engagement, and enhanced e-commerce capabilities.",
+      images: ["https://i.ibb.co/h9HqbSG/Fandom-Perview.png"],
     },
   },
 };
