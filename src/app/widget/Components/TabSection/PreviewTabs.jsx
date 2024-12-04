@@ -29,7 +29,7 @@ const PreviewTabs = () => {
         {tabData.map((tab, index) => (
           <button
             key={index}
-            className={`flex-1 text-white text-center py-2 px-4 text-xs lg:text-base 2xl:text-lg font-medium transition-colors duration-300 ease-in-out rounded-3xl 
+            className={`flex-1 text-white text-center py-1 lg:py-2 px-4 text-xs lg:text-base 2xl:text-lg font-medium transition-colors duration-300 ease-in-out rounded-3xl 
     ${
       selectedTab === index
         ? "bg-[#3B81F6] hover:bg-[#4A8EF7]"
