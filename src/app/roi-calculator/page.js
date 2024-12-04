@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useRef, useState } from "react";
 import SmoothScroll from "../the-bump/Components/SmoothScroll/SmoothScroll";
 import { getProfit } from "../utils/roiUtils";
@@ -230,7 +231,9 @@ export default function ROICalculator() {
             <p className="text-[#1D234E]">
               Bundle Other Offering like you Subscription
             </p>
-            <span className="text-[#1D234E]">Know More</span>
+            <Link href="/theBump#bundle" className="text-[12px] text-[#1D234E]">
+              Know More
+            </Link>
           </div>
         </section>
       </SmoothScroll>
