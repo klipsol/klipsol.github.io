@@ -4,7 +4,7 @@ import HighlightedText from '../HighlightedText/HighlightedText';
 
 const CoreFeatures = () => {
 	return (
-		<div className="bg-brand/15 pb-10 flex ">
+		<div className="bg-secondary/10 pb-10 flex ">
 			<div className="lg:sec-container w-full">
 				<h1 className="text-secondary font-semibold title text-center my-8 lg:mt-[60px] lg:mb-[60px] px-2 lg:py-0">
 					<HighlightedText wrapperClass="bottom-[10%]" text="Full-Stack"></HighlightedText> eCommerce Over

@@ -9,7 +9,7 @@ export const BrandList = () => {
 	];
 
 	return (
-		<div className="text-secondary py-4  mt-8 sm:bg-brand/10 lg:bg-brand/20 sm:py-10 lg:py-12">
+		<div className="text-secondary py-4  mt-8 sm:bg-secondary/5 sm:py-10 lg:py-20">
 			<h1 className="custom-text-sm-medium font-normal text-center mb-7 sec-container text-secondary">
 				Trusted by <span className="font-semibold">1500+ Brands</span>,
 				<br className="lg:hidden" />

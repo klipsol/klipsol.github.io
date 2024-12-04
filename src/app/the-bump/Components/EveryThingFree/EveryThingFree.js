@@ -30,7 +30,7 @@ export default function EveryThingFree() {
 						<br className="hidden lg:block" /> You Win, We Win.
 					</p>
 				</div>
-				<div className="lg:w-[40%] p-[10px] bg-brand/20 sm:w-full lg:h-full flex-col flex items-center">
+				<div className="lg:w-[40%] p-[10px] bg-secondary/10 sm:w-full lg:h-full flex-col flex items-center">
 					<div className="flex flex-col items-center justify-around md:h-[80%]">
 						<div>
 							<h1 className="title text-secondary my-[10%] text-center font-medium">
