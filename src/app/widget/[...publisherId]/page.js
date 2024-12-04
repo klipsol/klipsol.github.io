@@ -1,12 +1,13 @@
 "use client";
 import Script from "next/script";
-import { useParams } from "next/navigation";
+import { useParams, useSearchParams } from "next/navigation";
 import Navbar from "@/app/roi-calculator/Components/Navbar";
 import PreviewTabs from "../Components/TabSection/PreviewTabs";
 import { getWidgetUrl } from "@/app/Data/publishers";
 
 const Page = () => {
   const params = useParams();
+
   const publisher = params?.publisherId?.[0];
   const siteUrl = getWidgetUrl(publisher)?.url;
   return (
@@ -20,7 +21,7 @@ const Page = () => {
               const fetchProductsOnPagePerWidget = async () => {
                 try {
                   const url = \`https://brand-images-dpanda.s3.ap-south-1.amazonaws.com/widget/shop_dpanda_in.json\`;
-                  const currentPageUrl = '${siteUrl}';
+                  const currentPageUrl = 'https://thrivemarket.dpanda-buy-widget.pages.dev';
                   console.log('Fetching products for URL:', currentPageUrl);
                   
                   const response = await fetch(url);
@@ -142,7 +143,7 @@ const Page = () => {
                 const fjs = d.getElementsByTagName(s)[0];
                 if (d.getElementById(id)) { return; }
                 js.id = id;
-                js.src = "https://the-bump.dpanda-buy-widget.pages.dev/widget.js";
+                js.src =  '${siteUrl}/widget.js';
                 fjs.parentNode.insertBefore(js, fjs);
           
                 // Add the 'onload' event listener to the script element

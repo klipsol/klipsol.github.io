@@ -4,9 +4,11 @@ import { twMerge } from "tailwind-merge";
 import Incentive from "./IncentiveTab";
 import MicrositeTab from "./MicrositeTab";
 import WidgetTab from "./WidgetTab";
+import { useSearchParams } from "next/navigation";
 
 const PreviewTabs = () => {
-  const [selectedTab, setSelectedTab] = useState(0);
+  const search = useSearchParams();
+  const [selectedTab, setSelectedTab] = useState(+search.get("tab") ?? 0);
 
   const tabData = [
     {

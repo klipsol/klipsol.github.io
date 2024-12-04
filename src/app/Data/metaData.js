@@ -13,27 +13,71 @@ export const publisherMetaData = {
     },
   },
   theBump: {
-    title: "Streamlined Solutions for App Monetization and Growth",
+    title: "Discovery Meets Commerce",
     description:
-      "Unlock the potential of your app with tailored solutions for monetization, user engagement, and enhanced e-commerce capabilities.",
+      "From Medium to Destination for Discovery, as mastered by Google, Amazon, TikTok and Meta",
     openGraph: {
-      title: "Streamlined Solutions for App Monetization and Growth",
+      title: "Discovery Meets Commerce",
       description:
-        "Unlock the potential of your app with tailored solutions for monetization, user engagement, and enhanced e-commerce capabilities.",
+        "From Medium to Destination for Discovery, as mastered by Google, Amazon, TikTok and Meta",
       images: [
         "https://imagekit.dpanda.in/publisher-banner/1732890136_TheBUMP-perview.png",
       ],
     },
   },
   "the-bump": {
-    title: "Streamlined Solutions for App Monetization and Growth",
+    title: "Discovery Meets Commerce",
     description:
-      "Unlock the potential of your app with tailored solutions for monetization, user engagement, and enhanced e-commerce capabilities.",
+      "From Medium to Destination for Discovery, as mastered by Google, Amazon, TikTok and Meta",
     openGraph: {
-      title: "Streamlined Solutions for App Monetization and Growth",
+      title: "Discovery Meets Commerce",
       description:
-        "Unlock the potential of your app with tailored solutions for monetization, user engagement, and enhanced e-commerce capabilities.",
+        "From Medium to Destination for Discovery, as mastered by Google, Amazon, TikTok and Meta",
+      images: "https://i.ibb.co/Z1vwhKQ/The-Bump-perview-1.png",
+    },
+  },
+  buzzfeed: {
+    title: "Discovery Meets Commerce",
+    description:
+      "From Medium to Destination for Discovery, as mastered by Google, Amazon, TikTok and Meta",
+    openGraph: {
+      title: "Discovery Meets Commerce",
+      description:
+        "From Medium to Destination for Discovery, as mastered by Google, Amazon, TikTok and Meta",
+      images: ["https://i.ibb.co/Fwgp0xH/The-Buzzfeed-perview.png"],
+    },
+  },
+  "readers-digest": {
+    title: "Discovery Meets Commerce",
+    description:
+      "From Medium to Destination for Discovery, as mastered by Google, Amazon, TikTok and Meta",
+    openGraph: {
+      title: "Discovery Meets Commerce",
+      description:
+        "From Medium to Destination for Discovery, as mastered by Google, Amazon, TikTok and Meta",
       images: ["https://i.ibb.co/fdNjqjJ/The-BUMP-perview.png"],
+    },
+  },
+  gq: {
+    title: "Discovery Meets Commerce",
+    description:
+      "From Medium to Destination for Discovery, as mastered by Google, Amazon, TikTok and Meta",
+    openGraph: {
+      title: "Discovery Meets Commerce",
+      description:
+        "From Medium to Destination for Discovery, as mastered by Google, Amazon, TikTok and Meta",
+      images: ["https://i.ibb.co/1Lg7RLB/GQ-perview.png"],
+    },
+  },
+  fandom: {
+    title: "Discovery Meets Commerce",
+    description:
+      "From Medium to Destination for Discovery, as mastered by Google, Amazon, TikTok and Meta",
+    openGraph: {
+      title: "Discovery Meets Commerce",
+      description:
+        "From Medium to Destination for Discovery, as mastered by Google, Amazon, TikTok and Meta",
+      images: ["https://i.ibb.co/h9HqbSG/Fandom-Perview.png"],
     },
   },
 };
