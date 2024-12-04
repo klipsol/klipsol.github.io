@@ -75,7 +75,7 @@ export default function ROICalculator() {
                   <div className="max-w-32 sm:w-[90%] flex gap-x-2 bg-white border px-2 py-1 items-center md:py-2 border-[#003046]  rounded-xl overflow-hidden mx-auto">
                     <input
                       ref={inputRef}
-                      className="text-[#003046] text-base lg:text-xl font-semibold px-0.5 outline-none w-[75%] lg:w-[70%] "
+                      className="text-[#003046] text-sm lg:text-xl font-semibold px-0.5 outline-none w-[75%] lg:w-[70%] "
                       value={inputValue}
                       onChange={handleInputChange}
                     />
