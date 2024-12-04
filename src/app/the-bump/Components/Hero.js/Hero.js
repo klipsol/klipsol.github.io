@@ -45,7 +45,7 @@ const Hero = () => {
 
             <div className="z-50 sec-container xxl:text-[1.4em] inset-0 md:my-[50px]">
               <a
-                href={"/widget/" + pubName}
+                href={"/widget/" + pubName.split(" ").join("-")}
                 className="flex flex-col cursor-pointer bg-action rounded-[46px] py-2 xxl:py-3 xxl:rounded-[50px] w-[240px] px-10"
               >
                 <div className="flex gap-x-2 items-center relative">

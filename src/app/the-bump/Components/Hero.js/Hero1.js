@@ -49,7 +49,7 @@ export default function Hero1() {
 
             <div className="z-[99999] mt-[9.5%] mb-[60px] w-full sec-container relative xxl:text-[1.4em] inset-0">
               <a
-                href={"/widget/" + pubName}
+                href={"/widget/" + pubName.split(" ").join("-")}
                 className="flex relative flex-col cursor-pointer bg-[#023046] rounded-[46px] py-2 xxl:py-3 xxl:rounded-[50px] w-fit px-10  "
               >
                 <div className="absolute left-[35px] top-[15px]">
