@@ -20,6 +20,9 @@ export default function features(params) {
 				</div>
 				<div className="lg:w-1/2 lg:ml-auto p-0 lg:p-4">
 					<FeatureCards />
+					<p className="text-[#1D234E]">
+						*features are can be updated or changed. These are for representation purpose only
+					</p>
 				</div>
 			</div>
 		</main>
