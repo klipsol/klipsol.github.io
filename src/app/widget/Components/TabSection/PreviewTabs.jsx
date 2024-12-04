@@ -25,15 +25,17 @@ const PreviewTabs = () => {
 
   return (
     <div className="mx-2 md:mx-auto mt-4">
-      <div className="mx-auto max-w-3xl flex mb-4">
+      <div className="mx-auto max-w-3xl flex mb-4 gap-x-3 lg:gap-x-5 pt-4 text-center">
         {tabData.map((tab, index) => (
           <button
             key={index}
-            className={`flex-1 text-center py-2 px-4 text-xs lg:text-lg font-semibold transition-colors duration-300 ease-in-out ${
-              selectedTab === index
-                ? "border-b-4 border-blue-500 text-blue-600"
-                : "text-gray-400 hover:text-gray-300"
-            }`}
+            className={`flex-1 text-white text-center py-1 lg:py-2 px-4 text-xs lg:text-base 2xl:text-lg font-medium transition-colors duration-300 ease-in-out rounded-3xl 
+    ${
+      selectedTab === index
+        ? "bg-[#3B81F6] hover:bg-[#4A8EF7]"
+        : "bg-[#0C1D5F] hover:bg-[#1C2D7F]"
+    } 
+    hover:scale-103 active:scale-100 transform transition-all`}
             onClick={() => setSelectedTab(index)}
           >
             {tab.title}
