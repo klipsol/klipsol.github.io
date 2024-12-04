@@ -3,10 +3,12 @@ import Navbar from "@/app/roi-calculator/Components/Navbar";
 import { useParams } from "next/navigation";
 import DPVideo from "../DPVideo/DPVideo";
 import HighlightedText from "../HighlightedText/HighlightedText";
+import useAssets from "@/app/hooks/useAssets";
 
 const HeroMobile = () => {
   const params = useParams();
   const publisher = params?.publisherId?.[0];
+  const assets = useAssets();
   return (
     <div className="block lg:hidden ">
       <Navbar customBg="#eebe50" />
@@ -36,7 +38,7 @@ const HeroMobile = () => {
           <DPVideo
             id="videoDiv"
             className="max-w-[180px] sm:max-w-[150px] p-[4px] bg-[#023046] rounded-xl"
-            src="/HeroVideo2.mp4"
+            src={assets.heroVideo}
           />
         </div>
         <div className="top-[280px] px-4 pointer-events-auto text-sm z-30 w-full sec-container absolute  inset-0">

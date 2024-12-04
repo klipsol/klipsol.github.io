@@ -3,9 +3,11 @@ import { useEffect, useState } from "react";
 import DPVideo from "../DPVideo/DPVideo";
 import HighlightedText from "../HighlightedText/HighlightedText";
 import Navbar from "../Nav/Navbar";
+import useAssets from "@/app/hooks/useAssets";
 
 const Hero = () => {
   const [pubName, setPubName] = useState("");
+  const assets = useAssets();
 
   useEffect(() => {
     if (location.pathname.includes("/publisher/")) {
@@ -98,7 +100,7 @@ const Hero = () => {
               <DPVideo
                 id="videoDiv"
                 className="h-[60%] bg-secondary w-fit object-cover"
-                src="/thebump-1.mp4"
+                src={assets.heroVideo}
               />
             </div>
           </div>
