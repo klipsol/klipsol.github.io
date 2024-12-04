@@ -11,7 +11,8 @@ export default function Technology() {
 					End-to-End <br /> Technology
 				</>
 			),
-			className: 'featurechips-l featurechips absolute bg-action/70 right-[70%] top-[20%] w-[150px] text-primary',
+			className:
+				'featurechips-l featurechips absolute bg-action/70 right-[70%] top-[20%] sm:w-[150px] lg:w-[180px] text-primary',
 		},
 		{
 			icon: '/ai.png',
@@ -20,7 +21,8 @@ export default function Technology() {
 					AI Based <br /> Recommendation
 				</>
 			),
-			className: 'featurechips-l featurechips absolute bg-action/70 right-[70%] top-[45%] w-[150px] text-primary',
+			className:
+				'featurechips-l featurechips absolute bg-action/70 right-[70%] top-[45%] sm:w-[150px] lg:w-[180px] text-primary',
 		},
 		{
 			icon: '/data_and_analytics.png',
@@ -30,7 +32,8 @@ export default function Technology() {
 					Analytics
 				</>
 			),
-			className: 'featurechips-l featurechips absolute bg-action/70 right-[70%] top-[70%] w-[150px] text-primary',
+			className:
+				'featurechips-l featurechips absolute bg-action/70 right-[70%] top-[70%] sm:w-[150px] lg:w-[180px] text-primary',
 		},
 		{
 			icon: '/payment.png',
@@ -39,7 +42,8 @@ export default function Technology() {
 					Payments & <br /> Settlements
 				</>
 			),
-			className: 'featurechips-r featurechips absolute left-[70%] top-[20%] bg-brand/70 text-white w-[150px]',
+			className:
+				'featurechips-r featurechips absolute left-[70%] top-[20%] bg-brand/70 text-white sm:w-[150px] lg:w-[180px]',
 		},
 		{
 			icon: '/cata.png',
@@ -48,7 +52,8 @@ export default function Technology() {
 					Catalogue & <br /> Pricing
 				</>
 			),
-			className: 'featurechips-r featurechips absolute left-[70%] top-[45%] bg-brand/70 text-white w-[150px]',
+			className:
+				'featurechips-r featurechips absolute left-[70%] top-[45%] bg-brand/70 text-white sm:w-[150px] lg:w-[180px]',
 		},
 		{
 			icon: '/cust.png',
@@ -57,7 +62,8 @@ export default function Technology() {
 					Customer <br /> Escalations
 				</>
 			),
-			className: 'featurechips-r featurechips absolute left-[70%] top-[70%] bg-brand/70 text-white w-[150px]',
+			className:
+				'featurechips-r featurechips absolute left-[70%] top-[70%] bg-brand/70 text-white sm:w-[150px] lg:w-[180px]',
 		},
 	];
 
@@ -69,18 +75,18 @@ export default function Technology() {
 
 			{/* actual content starts here */}
 			<div className="absolute inset-0 sec-container lg:pt-[60px]">
-				<div className="relative lg:my-5 sm:my-4 xxl:mt-[5%] mx-auto md:w-[60%]">
+				<div className="relative lg:my-5 sm:my-4 xxl:my-[5%] mx-auto md:w-[60%]">
 					<h1 className="text-primary font-semibold title sm:text-center px-2 lg:py-0">
 						Everything To{' '}
 						<HighlightedText wrapperClass="bottom-[10%]" text="Embed Brands"></HighlightedText> On Your Site
 					</h1>
 				</div>
-				<div className="h-fit w-full lg:h-[65%] flex sm:justify-start lg:justify-around sm:flex-col lg:flex-row">
-					<div className="lg:w-[50%]  h-[40%] lg:h-[80%] xxl:h-[70%] flex flex-col items-center relative ">
+				<div className="w-full flex sm:justify-start lg:justify-around sm:flex-col lg:flex-row">
+					<div className="lg:w-[50%] flex flex-col items-center relative ">
 						<h1 className="subtitle mb-[8%] text-primary font-medium lg:text[36px]">
 							Technology & Operations Support
 						</h1>
-						<div className="relative h-[60%] lg:h-full sm:w-[40%] md:w-fit ">
+						<div className="relative sm:w-[40%] ">
 							{leftPhoneChipData.map((data) => (
 								<Chip key={data.icon} {...data} />
 							))}
@@ -94,11 +100,11 @@ export default function Technology() {
 					<div className="custom-vr sm:hidden lg:block"></div>
 					<div className="custom-hr mt-4 lg:hidden"></div>
 
-					<div className="sm:w-full lg:w-[50%] h-[40%] lg:h-[80%] xxl:h-[70%] sm:pb-[10px] md:pb-0  flex flex-col items-center relative ">
-						<h1 className="subtitle mb-[8%] text-[#1D234E] font-medium sm:mt-6 lg:mt-0 lg:text[36px]">
+					<div className="sm:w-full lg:w-[50%] sm:pb-[10px] md:pb-0 flex flex-col items-center relative ">
+						<h1 className="subtitle mb-[8%] sm:text-[#1D234E] lg:text-primary font-medium sm:mt-6 lg:mt-0 lg:text[36px]">
 							Brand Supply & Integrations
 						</h1>
-						<div className="relative lg:h-full sm:w-[60%] md:w-fit">
+						<div className="relative sm:w-[60%] flex-1">
 							<img src="/brandonboard.png" alt="phone" />
 						</div>
 						<p className="text-center custom custom-text-sm lg:text-[24px]  text-[#505C6E] mt-5 max-w-[60%] lg:max-w-[300px] lg:font-normal">
