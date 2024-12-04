@@ -9,7 +9,6 @@ const Page = () => {
   const params = useParams();
   const publisher = params?.publisherId?.[0];
   const siteUrl = getWidgetUrl(publisher).url;
-  console.log({ publisher, params, siteUrl });
   return (
     <>
       <Navbar />
