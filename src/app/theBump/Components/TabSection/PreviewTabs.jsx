@@ -40,8 +40,15 @@ const PreviewTabs = () => {
           </button>
         ))}
       </div>
-
-      <div className={twMerge("")}>{tabData[selectedTab].content}</div>
+      <div className={twMerge("", selectedTab !== 0 && "hidden")}>
+        {tabData[0].content}
+      </div>
+      <div className={twMerge("", selectedTab !== 1 && "hidden")}>
+        {tabData[1].content}
+      </div>
+      <div className={twMerge("", selectedTab !== 2 && "hidden")}>
+        {tabData[2].content}
+      </div>
     </div>
   );
 };
