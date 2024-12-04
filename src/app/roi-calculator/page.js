@@ -43,7 +43,7 @@ export default function ROICalculator() {
 
         <section
           id="roi-calc"
-          className="my-8  m-auto px-2 lg:flex-row lg:flex lg:items-center sec-container"
+          className="my-8 max-w-2xl m-auto px-2 lg:flex-row lg:flex lg:max-w-[1280px] lg:items-center "
         >
           <div className="lg:max-w-xs lg:mr-10">
             <h1 className="text-4xl lg:text-5xl text-center lg:text-start text-[#1D234E] m-auto my-8 font-extrabold">
