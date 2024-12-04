@@ -26,7 +26,7 @@ const HeroMobile = () => {
 						<span className="font-bold">
 							From <span className="line-through"> Medium</span> to Destination for Discovery,
 						</span>
-						<br />
+						<br className="hidden lg:block" />
 						as mastered by Google, Amazon, TikTok and Meta
 					</p>
 				</div>
