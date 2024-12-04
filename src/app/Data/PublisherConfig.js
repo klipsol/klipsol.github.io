@@ -1,10 +1,148 @@
-export const publisherconfig = {
-  "the-bump": {
-    heroVideo:
-      "https://imagekit.dpanda.in/publisher-banner/1733312634_thebump-1.mp4",
+// export const publisherconfig = {
+//   "the-bump": {
+//     heroVideo:
+//       "https://imagekit.dpanda.in/publisher-banner/1733312634_thebump-1.mp4",
+//   },
+//   buzzFeed: {
+//     heroVideo:
+//       "https://ik.imagekit.io/dpanda/publisher-banner/1733311818_TMB-1.mp4",
+//   },
+// };
+
+export const publisherconfig = [
+  {
+    Buzzfeed: {
+      1: "https://imagekit.dpanda.in/publisher-banner/1733317667_Buzzfeed-1.mp4",
+      "2a": "https://imagekit.dpanda.in/publisher-banner/1733317682_Buzzfeed-2a.mp4",
+      "2b": "https://imagekit.dpanda.in/publisher-banner/1733317692_Buzzfedd-2b.mp4",
+      "3b": "https://imagekit.dpanda.in/publisher-banner/1733317703_Buzzfeed-3b.mp4",
+      "4b": "https://imagekit.dpanda.in/publisher-banner/1733317717_buzzfeed-4b.mp4",
+    },
   },
-  buzzFeed: {
-    heroVideo:
-      "https://ik.imagekit.io/dpanda/publisher-banner/1733311818_TMB-1.mp4",
+  {
+    GQ: {
+      1: "https://imagekit.dpanda.in/publisher-banner/1733317759_GQ-1.mp4",
+      "2a": "https://imagekit.dpanda.in/publisher-banner/1733317773_GQ-2a.mp4",
+      "2b": "https://imagekit.dpanda.in/publisher-banner/1733317787_GQ-2b.mp4",
+      "3b": "https://imagekit.dpanda.in/publisher-banner/1733317799_GQ-3b.mp4",
+      "4b": "https://imagekit.dpanda.in/publisher-banner/1733317809_GQ-4b.mp4",
+    },
   },
-};
+  {
+    People: {
+      1: "https://imagekit.dpanda.in/publisher-banner/1733317827_people-1.mp4",
+      "2a": "https://imagekit.dpanda.in/publisher-banner/1733317847_people-2a.mp4",
+      "2b": "https://imagekit.dpanda.in/publisher-banner/1733317859_people-2b.mp4",
+      "3b": "https://imagekit.dpanda.in/publisher-banner/1733317869_people-3b.mp4",
+      "4b": "https://imagekit.dpanda.in/publisher-banner/1733317879_people-4b.mp4",
+    },
+  },
+  {
+    Fandom: {
+      1: "https://imagekit.dpanda.in/publisher-banner/1733317900_Fandom-1.mp4",
+      "2a": "https://imagekit.dpanda.in/publisher-banner/1733317911_Fandom-2a.mp4",
+      "2b": "https://imagekit.dpanda.in/publisher-banner/1733317923_Fandom-2b.mp4",
+      "3b": "https://imagekit.dpanda.in/publisher-banner/1733317936_Fandom-3b.mp4",
+      "4b": "https://imagekit.dpanda.in/publisher-banner/1733317947_Fandom-4b.mp4",
+    },
+  },
+  {
+    Future: {
+      1: "https://imagekit.dpanda.in/publisher-banner/1733317987_Future-1.mp4",
+      "2a": "https://imagekit.dpanda.in/publisher-banner/1733317998_Future-2a.mp4",
+      "2b": "https://imagekit.dpanda.in/publisher-banner/1733318010_Future-2b.mp4",
+      "3b": "https://imagekit.dpanda.in/publisher-banner/1733318027_Future-3b.mp4",
+      "4b": "https://imagekit.dpanda.in/publisher-banner/1733318036_Future-4b.mp4",
+    },
+  },
+  {
+    Healthline: {
+      1: "https://imagekit.dpanda.in/publisher-banner/1733318051_Healthline-1.mp4",
+      "2a": "https://imagekit.dpanda.in/publisher-banner/1733318073_Healthline-2a.mp4",
+      "2b": "https://imagekit.dpanda.in/publisher-banner/1733318086_Healthline-2b.mp4",
+      "3b": "https://imagekit.dpanda.in/publisher-banner/1733318096_Healthline-3b.mp4",
+      "4b": "https://imagekit.dpanda.in/publisher-banner/1733318105_Healthline-4b.mp4",
+    },
+  },
+  {
+    Hearst: {
+      1: "https://imagekit.dpanda.in/publisher-banner/1733318127_Hearst-1.mp4",
+      "2a": "https://imagekit.dpanda.in/publisher-banner/1733318138_Hearst-2a.mp4",
+      "2b": "https://imagekit.dpanda.in/publisher-banner/1733318156_Hearst-2b.mp4",
+      "3b": "https://imagekit.dpanda.in/publisher-banner/1733318167_Hearst-3b.mp4",
+      "4b": "https://imagekit.dpanda.in/publisher-banner/1733318177_Hearst-4b.mp4",
+    },
+  },
+  {
+    MyFitnessPal: {
+      1: "https://imagekit.dpanda.in/publisher-banner/1733318225_myfitnesspal-1.mp4",
+      "2a": "https://imagekit.dpanda.in/publisher-banner/1733318244_myfitnesspal-2a.mp4",
+      "2b": "https://imagekit.dpanda.in/publisher-banner/1733318254_myfitnesspal-2b.mp4",
+      "3b": "https://imagekit.dpanda.in/publisher-banner/1733318268_myfitnesspal-3b.mp4",
+      "4b": "https://imagekit.dpanda.in/publisher-banner/1733318277_myfitnesspal-4b.mp4",
+    },
+  },
+  {
+    Pinterest: {
+      1: "https://imagekit.dpanda.in/publisher-banner/1733318300_Pintrest-1.mp4",
+      "2a": "https://imagekit.dpanda.in/publisher-banner/1733318317_Pintrest-2a.mp4",
+      "2b": "https://imagekit.dpanda.in/publisher-banner/1733318327_Pintrest-2b.mp4",
+      "3b": "https://imagekit.dpanda.in/publisher-banner/1733318399_Pintrest-3b.mp4",
+      "4b": "https://imagekit.dpanda.in/publisher-banner/1733318408_Pintrest-4b.mp4",
+    },
+  },
+  {
+    TheBump: {
+      1: "https://imagekit.dpanda.in/publisher-banner/1733318431_thebump-1.mp4",
+      "2a": "https://imagekit.dpanda.in/publisher-banner/1733318445_thebump-2a.mp4",
+      "2b": "https://imagekit.dpanda.in/publisher-banner/1733318459_thebump-2b.mp4",
+      "3b": "https://imagekit.dpanda.in/publisher-banner/1733318482_thebump-3b.mp4",
+      "4b": "https://imagekit.dpanda.in/publisher-banner/1733318491_thebump-4b.mp4",
+    },
+  },
+  {
+    TMB: {
+      1: "https://imagekit.dpanda.in/publisher-banner/1733318549_TMB-1.mp4",
+      "2a": "https://imagekit.dpanda.in/publisher-banner/1733318559_TMB-2a.mp4",
+      "2b": "https://imagekit.dpanda.in/publisher-banner/1733318577_TMB-2b.mp4",
+      "3b": "https://imagekit.dpanda.in/publisher-banner/1733318589_TMB-3b.mp4",
+      "4b": "https://imagekit.dpanda.in/publisher-banner/1733318598_TMB-4b.mp4",
+    },
+  },
+  {
+    NYMag: {
+      1: "https://imagekit.dpanda.in/publisher-banner/1733318619_nymag-1.mp4",
+      "2a": "https://imagekit.dpanda.in/publisher-banner/1733318629_nymag-2a.mp4",
+      "2b": "https://imagekit.dpanda.in/publisher-banner/1733318639_nymag-2b.mp4",
+      "3b": "https://imagekit.dpanda.in/publisher-banner/1733318650_nymag-3b.mp4",
+      "4b": "https://imagekit.dpanda.in/publisher-banner/1733318666_nymag-4b.mp4",
+    },
+  },
+  {
+    WarnerBros: {
+      1: "https://imagekit.dpanda.in/publisher-banner/1733318706_Warner_Bros-1.mp4",
+      "2a": "https://imagekit.dpanda.in/publisher-banner/1733318718_Warner_Bros-2a.mp4",
+      "2b": "https://imagekit.dpanda.in/publisher-banner/1733318732_Warner_Bros-2b.mp4",
+      "3b": "https://imagekit.dpanda.in/publisher-banner/1733318744_Warner_Bros-3b.mp4",
+      "4b": "https://imagekit.dpanda.in/publisher-banner/1733318766_Warner_Bros-4b.mp4",
+    },
+  },
+  {
+    Yahoo: {
+      1: "https://imagekit.dpanda.in/publisher-banner/1733318789_yahoo-1.mp4",
+      "2a": "https://imagekit.dpanda.in/publisher-banner/1733318798_yahoo-2a.mp4",
+      "2b": "https://imagekit.dpanda.in/publisher-banner/1733318807_yahoo-2b.mp4",
+      "3b": "https://imagekit.dpanda.in/publisher-banner/1733318820_yahoo-3b.mp4",
+      "4b": "https://imagekit.dpanda.in/publisher-banner/1733318829_yahoo-4b.mp4",
+    },
+  },
+  {
+    CNET: {
+      1: "https://imagekit.dpanda.in/publisher-banner/1733318846_Cnet-1.mp4",
+      "2a": "https://imagekit.dpanda.in/publisher-banner/1733318856_Cnet-2a.mp4",
+      "2b": "https://imagekit.dpanda.in/publisher-banner/1733318868_Cnet-2b.mp4",
+      "3b": "https://imagekit.dpanda.in/publisher-banner/1733318878_Cnet-3b.mp4",
+      "4b": "https://imagekit.dpanda.in/publisher-banner/1733318887_Cnet-4b.mp4",
+    },
+  },
+];
