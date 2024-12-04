@@ -47,9 +47,9 @@ const ScrollableNavbar = ({ customBg }) => {
               Live Preview
             </span>
           </div>
-          <p className="text-[#F7BA30] text-[10px] text-center ml-3 md:m-auto">
+          {/* <p className="text-[#F7BA30] text-[10px] text-center ml-3 md:m-auto">
             {publisher && `for ${publisher}`}
-          </p>
+          </p> */}
         </a>
         <div className="bg-[#004A6C] h-7 w-0.5 lg:hidden"></div>
         <Link

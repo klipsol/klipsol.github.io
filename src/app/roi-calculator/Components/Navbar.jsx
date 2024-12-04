@@ -2,7 +2,7 @@
 import CalendlyModal from "@/app/the-bump/Components/Calendly/CalendlyModal";
 import Link from "next/link";
 import { useParams, usePathname } from "next/navigation";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { twMerge } from "tailwind-merge";
 
 export default function Navbar({ customBg }) {
@@ -10,9 +10,14 @@ export default function Navbar({ customBg }) {
   const pathname = usePathname();
   const [isModalOpen, setIsModalOpen] = useState(false);
   const params = useParams();
-  const publisher = params?.publisherId?.[0];
+  // const publisher = params?.publisherId?.[0];
   const openModal = () => setIsModalOpen(true);
   const closeModal = () => setIsModalOpen(false);
+  const [publisher, setPublisher] = useState();
+
+  useEffect(() => {
+    setPublisher(localStorage.getItem("publisher"));
+  }, []);
 
   // const handleRoiRedirect = () => {
   //   if (location.pathname !== '/roi-calculator') {
@@ -30,7 +35,7 @@ export default function Navbar({ customBg }) {
         id="nav"
       >
         <div className="lg:flex gap-4 relative pl-4 justify-between items-start flex flex-row md:flex-row bg-transparent rounded-3xl md:custom-text-base">
-          <Link href={"/publisher/" + localStorage.getItem("publisher")}>
+          <Link href={"/publisher/" + publisher}>
             <img
               src="/dpandaLogo2.png"
               alt="logo"
