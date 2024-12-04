@@ -48,16 +48,20 @@ const Hero = () => {
             <div className="z-50 sec-container xxl:text-[1.4em] inset-0 md:my-[50px]">
               <a
                 href={"/widget/" + pubName}
-                className="flex flex-col cursor-pointer bg-action rounded-[46px] py-2 xxl:py-3 xxl:rounded-[50px] w-[240px] px-10"
+                className="relative flex flex-col cursor-pointer bg-action rounded-[46px] py-2 xxl:py-3 xxl:rounded-[50px] w-[210px] px-10"
               >
-                <div className="flex gap-x-2 items-center relative">
-                  <span className="bg-primary w-2 h-2 xxl:w-2.5 xxl:h-2.5 rounded-full animate-ping [animation-duration:0.9s] absolute top-2 md:top-2 md:-left-4"></span>
-                  <span className="bg-primary w-2 h-2 xxl:w-2.5 xxl:h-2.5 rounded-full  absolute top-2 md:top-2 md:-left-4"></span>
-                  <span className="text-white text-center text-[18px] font-normal ml-3 xxl:ml-1 md:m-auto">
+                <div className="absolute  left-[20px] top-[45%]">
+                  <div className="relative">
+                    <span className="bg-primary w-2 h-2 xxl:w-2.5 xxl:h-2.5 rounded-full animate-ping [animation-duration:0.9s] absolute"></span>
+                    <span className="bg-primary w-2 h-2 xxl:w-2.5 xxl:h-2.5 rounded-full  absolute"></span>
+                  </div>
+                </div>
+                <div className="flex gap-x-2 items-start relative ml-[10px]">
+                  <span className="text-white text-left text-[18px] font-normal">
                     Live Preview
                   </span>
                 </div>
-                <p className="text-primary text-[14px] xxl:text-[0.7em] text-left ml-3 md:m-auto">
+                <p className="text-primary text-[14px] xxl:text-[0.7em] text-left ml-[10px]">
                   for{pubName && <span className="capitalize"> {pubName}</span>}
                 </p>
               </a>

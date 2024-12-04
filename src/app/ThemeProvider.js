@@ -34,6 +34,12 @@ const ThemeProvider = () => {
 				root.style.setProperty('--action-color', '205 52 55'); // RGB for #8a317d
 				root.style.setProperty('--brand-color', '205 52 55'); // RGB for #8a317d
 				break;
+			case '/publisher/gq':
+				root.style.setProperty('--primary-color', '249 245 236'); // RGB for #fff
+				root.style.setProperty('--secondary-color', '0 0 0'); // RGB for #081338
+				root.style.setProperty('--action-color', '198 161 73'); // RGB for #8a317d
+				root.style.setProperty('--brand-color', '198 161 73'); // RGB for #8a317d
+				break;
 			default:
 				root.style.setProperty('--primary-color', '247 186 48'); // RGB for #f7ba30
 				root.style.setProperty('--secondary-color', '0 48 69'); // RGB for #003045
