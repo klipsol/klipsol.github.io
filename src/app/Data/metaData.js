@@ -55,7 +55,7 @@ export const publisherMetaData = {
       title: "Discovery Meets Commerce",
       description:
         "From Medium to Destination for Discovery, as mastered by Google, Amazon, TikTok and Meta",
-      images: ["https://i.ibb.co/18VV9CS/The-RD-perview.png"],
+      images: ["https://i.ibb.co/tPXFYkB/The-RD-perview-01.png"],
     },
   },
   gq: {
