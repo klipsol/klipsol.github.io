@@ -237,7 +237,7 @@ export default function ROICalculator() {
           </div>
           <div className="p-4 text-center">
             <p className="text-[#1D234E]">
-              Bundle Other Offering like you Subscription
+              Bundle Other Offering Like Subscription
             </p>
             <Link
               href={"/widget/" + publisher + "?tab=2"}
