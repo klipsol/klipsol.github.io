@@ -21,7 +21,7 @@ export default function features(params) {
 				<div className="lg:w-1/2 lg:ml-auto p-0 lg:p-4">
 					<FeatureCards />
 					<p className="text-[#1D234E]">
-						*features are can be updated or changed. These are for representation purpose only
+						*The features are subject to updates or changes and are for representational purposes only.
 					</p>
 				</div>
 			</div>
