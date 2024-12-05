@@ -80,4 +80,59 @@ export const publisherMetaData = {
       images: ["https://i.ibb.co/h9HqbSG/Fandom-Perview.png"],
     },
   },
+  nymag: {
+    title: "Discovery Meets Commerce",
+    description:
+      "From Medium to Destination for Discovery, as mastered by Google, Amazon, TikTok and Meta",
+    openGraph: {
+      title: "Discovery Meets Commerce",
+      description:
+        "From Medium to Destination for Discovery, as mastered by Google, Amazon, TikTok and Meta",
+      images: ["https://i.ibb.co/9rnhG9q/New-York-Perview.png"],
+    },
+  },
+  foodnetwork: {
+    title: "Discovery Meets Commerce",
+    description:
+      "From Medium to Destination for Discovery, as mastered by Google, Amazon, TikTok and Meta",
+    openGraph: {
+      title: "Discovery Meets Commerce",
+      description:
+        "From Medium to Destination for Discovery, as mastered by Google, Amazon, TikTok and Meta",
+      images: ["https://i.ibb.co/BgkGfSm/foodnetwork-Perview.png"],
+    },
+  },
+  people: {
+    title: "Discovery Meets Commerce",
+    description:
+      "From Medium to Destination for Discovery, as mastered by Google, Amazon, TikTok and Meta",
+    openGraph: {
+      title: "Discovery Meets Commerce",
+      description:
+        "From Medium to Destination for Discovery, as mastered by Google, Amazon, TikTok and Meta",
+      images: ["https://i.ibb.co/CsBSNLZ/people-Perview.png"],
+    },
+  },
+  techradar: {
+    title: "Discovery Meets Commerce",
+    description:
+      "From Medium to Destination for Discovery, as mastered by Google, Amazon, TikTok and Meta",
+    openGraph: {
+      title: "Discovery Meets Commerce",
+      description:
+        "From Medium to Destination for Discovery, as mastered by Google, Amazon, TikTok and Meta",
+      images: ["https://i.ibb.co/4MP5QTB/Techradar-Perview.png"],
+    },
+  },
+  bestproducts: {
+    title: "Discovery Meets Commerce",
+    description:
+      "From Medium to Destination for Discovery, as mastered by Google, Amazon, TikTok and Meta",
+    openGraph: {
+      title: "Discovery Meets Commerce",
+      description:
+        "From Medium to Destination for Discovery, as mastered by Google, Amazon, TikTok and Meta",
+      images: ["https://i.ibb.co/gwt4TFc/Best-product-Perview.png"],
+    },
+  },
 };
