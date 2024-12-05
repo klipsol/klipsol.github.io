@@ -3,15 +3,18 @@ import { PopupButton } from "react-calendly";
 
 const Calendly = () => {
   return (
-    <div className="App">
+    <div>
+      <style jsx global>{`
+        .calendly-popup-overlay {
+          backdrop-filter: blur(5px) !important;
+          background-color: rgba(0, 0, 0, 0.5) !important;
+        }
+      `}</style>
       <PopupButton
-        url="https://calendly.com/your_scheduling_page"
-        /*
-         * react-calendly uses React's Portal feature (https://reactjs.org/docs/portals.html) to render the popup modal. As a result, you'll need to
-         * specify the rootElement property to ensure that the modal is inserted into the correct domNode.
-         */
+        styles={{ backdropFilter: "blur(5px)" }}
+        url="https://calendly.com/rajat-dpanda/connect-with-rajat-ceo-dpanda"
         rootElement={document.getElementById("root")}
-        text="Click here to schedule!"
+        text="Talk to us"
       />
     </div>
   );

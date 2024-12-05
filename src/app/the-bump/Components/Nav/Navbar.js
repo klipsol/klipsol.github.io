@@ -4,6 +4,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
 import CalendlyModal from "../Calendly/CalendlyModal";
+import Calendly from "../Calendly/Calendly";
 
 export default function Navbar({ publisher }) {
   const pathname = usePathname();
@@ -48,7 +49,7 @@ export default function Navbar({ publisher }) {
                 onClick={openModal}
                 className="rounded-[24px] text-[16px] text-white px-4 text-center py-1 font-medium"
               >
-                <p>Talk to us</p>
+                <Calendly />
                 {/* {publisher && (
 									<p className="text-[12px] text-primary">
 										for <span className="capitalize">{publisher}</span>
@@ -67,7 +68,8 @@ export default function Navbar({ publisher }) {
           </div>
         </div>
       </div>
-      <CalendlyModal isOpen={isModalOpen} onClose={closeModal} />
+
+      {/* <CalendlyModal isOpen={isModalOpen} onClose={closeModal} /> */}
     </>
   );
 }

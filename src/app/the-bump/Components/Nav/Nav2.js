@@ -2,7 +2,7 @@
 import Link from "next/link";
 import { useParams, usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
-import CalendlyModal from "../Calendly/CalendlyModal";
+import Calendly from "../Calendly/Calendly";
 
 const ScrollableNavbar = ({ customBg }) => {
   const pathname = usePathname();
@@ -64,12 +64,12 @@ const ScrollableNavbar = ({ customBg }) => {
           <div className="bg-[#004A6C] h-7 w-0.5 lg:hidden"></div>
         )}
         {pathname !== "/" && (
-          <button
-            onClick={openModal}
+          <div
+            // onClick={openModal}
             className="rounded-[24px]  px-4 py-1 md:text-white font-medium"
           >
-            Talk to us
-          </button>
+            <Calendly />
+          </div>
         )}
         <div className="bg-[#004A6C] h-7 w-0.5 lg:hidden"></div>
         <Link
@@ -79,7 +79,7 @@ const ScrollableNavbar = ({ customBg }) => {
           All <br className="lg:hidden" /> Features
         </Link>
       </div>{" "}
-      <CalendlyModal isOpen={isModalOpen} onClose={closeModal} />
+      {/* <CalendlyModal isOpen={isModalOpen} onClose={closeModal} /> */}
     </nav>
   );
 };

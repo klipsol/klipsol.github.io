@@ -1,4 +1,5 @@
 "use client";
+import Calendly from "@/app/the-bump/Components/Calendly/Calendly";
 import CalendlyModal from "@/app/the-bump/Components/Calendly/CalendlyModal";
 import Link from "next/link";
 import { useParams, usePathname } from "next/navigation";
@@ -62,13 +63,9 @@ export default function Navbar({ customBg }) {
                 <div className="bg-[#004A6C] lg:h-6 h-8 w-0.5"></div>
               )}
               {pathname !== "/" && (
-                <button
-                  onClick={openModal}
-                  className="rounded-[24px] text-white  px-4 py-1  font-medium"
-                >
-                  Talk
-                  <br className="lg:hidden" /> to us
-                </button>
+                <div className="rounded-[24px] text-white  px-4 py-1  font-medium">
+                  <Calendly />
+                </div>
               )}
               <div className="bg-[#004A6C] lg:h-6 h-8 w-0.5"></div>
               <Link
@@ -81,7 +78,8 @@ export default function Navbar({ customBg }) {
           </div>
         </div>
       </div>
-      <CalendlyModal isOpen={isModalOpen} onClose={closeModal} />
+      {/* <Calendly /> */}
+      {/* <CalendlyModal isOpen={isModalOpen} onClose={closeModal} /> */}
     </>
   );
 }
