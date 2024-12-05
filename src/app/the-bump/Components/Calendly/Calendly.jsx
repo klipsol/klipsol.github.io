@@ -1,7 +1,15 @@
-import React from "react";
+"use client"; // Important: This makes the component client-side rendered
+
+import React, { useEffect, useState } from "react";
 import { PopupButton } from "react-calendly";
 
 const Calendly = () => {
+  const [rootElement, setRootElement] = useState(null);
+
+  useEffect(() => {
+    setRootElement(document.getElementById("__next") || document.body);
+  }, []);
+
   return (
     <div>
       <style jsx global>{`
@@ -10,12 +18,13 @@ const Calendly = () => {
           background-color: rgba(0, 0, 0, 0.5) !important;
         }
       `}</style>
-      <PopupButton
-        styles={{ backdropFilter: "blur(5px)" }}
-        url="https://calendly.com/rajat-dpanda/connect-with-rajat-ceo-dpanda"
-        rootElement={document.getElementById("root")}
-        text="Talk to us"
-      />
+      {rootElement && (
+        <PopupButton
+          url="https://calendly.com/rajat-dpanda/connect-with-rajat-ceo-dpanda"
+          rootElement={rootElement}
+          text="Talk to us"
+        />
+      )}
     </div>
   );
 };
