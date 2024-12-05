@@ -7,7 +7,7 @@ const Calendly = () => {
   const [rootElement, setRootElement] = useState(null);
 
   useEffect(() => {
-    setRootElement(document.getElementById("__next") || document.body);
+    setRootElement(document.body);
   }, []);
 
   return (
