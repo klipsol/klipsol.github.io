@@ -4,6 +4,7 @@ import { useParams } from "next/navigation";
 import DPVideo from "../DPVideo/DPVideo";
 import HighlightedText from "../HighlightedText/HighlightedText";
 import useAssets from "@/app/hooks/useAssets";
+import Link from "next/link";
 
 const HeroMobile = () => {
   const params = useParams();
@@ -42,7 +43,7 @@ const HeroMobile = () => {
           />
         </div>
         <div className="top-[280px] px-4 pointer-events-auto text-sm z-30 w-full sec-container absolute  inset-0">
-          <a
+          <Link
             href={"/widget/" + publisher}
             className="flex flex-col z-[9999] cursor-pointer bg-action rounded-[46px] py-2 xxl:py-3 xxl:rounded-[50px] w-fit px-6 "
             style={{ lineHeight: "1.5" }}
@@ -58,7 +59,7 @@ const HeroMobile = () => {
             <p className="text-primary text-[10px] xxl:text-[0.7em] text-center ml-3 md:m-auto">
               {publisher && `for ${publisher}`}
             </p>
-          </a>
+          </Link>
         </div>
       </div>
       <div className="text-primaryTextColor p-4 pb-0 mb-10">
