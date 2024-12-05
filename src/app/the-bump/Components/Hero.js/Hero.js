@@ -50,7 +50,7 @@ const Hero = () => {
             </div>
 
             <div className="z-50 sec-container xxl:text-[1.4em] inset-0 md:my-[50px]">
-              <Link
+              <a
                 href={"/widget/" + pubName.split(" ").join("-")}
                 className="relative flex flex-col cursor-pointer bg-action rounded-[46px] py-2 xxl:py-3 xxl:rounded-[50px] sm:w-[225px] 2xl:w-[235px] px-10"
               >
@@ -68,7 +68,7 @@ const Hero = () => {
                 <p className="text-primary text-[14px] xxl:text-[0.7em] text-left ml-[10px]">
                   for{pubName && <span className="capitalize"> {pubName}</span>}
                 </p>
-              </Link>
+              </a>
             </div>
             <div className="inset-0 bg-transparent z-10 sec-container flex flex-1 items-start">
               <div className="relative">

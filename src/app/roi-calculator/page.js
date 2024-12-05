@@ -239,12 +239,12 @@ export default function ROICalculator() {
             <p className="text-[#1D234E]">
               Bundle Other Offering like you Subscription
             </p>
-            <Link
+            <a
               href={"/widget/" + publisher + "?tab=2"}
               className="text-[12px] text-[#1D234E]"
             >
               Know More
-            </Link>
+            </a>
           </div>
         </section>
       </SmoothScroll>
