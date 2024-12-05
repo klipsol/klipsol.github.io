@@ -52,7 +52,7 @@ const Hero = () => {
             <div className="z-50 sec-container xxl:text-[1.4em] inset-0 md:my-[50px]">
               <Link
                 href={"/widget/" + pubName.split(" ").join("-")}
-                className="relative flex flex-col cursor-pointer bg-action rounded-[46px] py-2 xxl:py-3 xxl:rounded-[50px] sm:w-[210px] 2xl:w-[230px] px-10"
+                className="relative flex flex-col cursor-pointer bg-action rounded-[46px] py-2 xxl:py-3 xxl:rounded-[50px] sm:w-[225px] 2xl:w-[235px] px-10"
               >
                 <div className="absolute  left-[20px] top-[45%]">
                   <div className="relative">
@@ -62,7 +62,7 @@ const Hero = () => {
                 </div>
                 <div className="flex gap-x-2 items-start relative ml-[10px]">
                   <span className="text-white text-left text-[18px] font-normal">
-                    Live Preview
+                    Interactive Demo
                   </span>
                 </div>
                 <p className="text-primary text-[14px] xxl:text-[0.7em] text-left ml-[10px]">
