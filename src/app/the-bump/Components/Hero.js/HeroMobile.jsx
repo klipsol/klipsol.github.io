@@ -53,7 +53,7 @@ const HeroMobile = () => {
               <span className="bg-primary w-2 h-2 xxl:w-2.5 xxl:h-2.5 rounded-full animate-ping [animation-duration:0.9s] absolute top-2 md:top-2 md:-left-4"></span>
               <span className="bg-primary w-2 h-2 xxl:w-2.5 xxl:h-2.5 rounded-full  absolute top-2 md:top-2 md:-left-4"></span>
               <span className="text-primary text-center font-medium ml-4 xxl:ml-3.5 md:m-auto ">
-                Live Preview
+                Interactive Demo
               </span>
             </div>
             <p className="text-primary text-[10px] xxl:text-[0.7em] text-center ml-3 md:m-auto">
