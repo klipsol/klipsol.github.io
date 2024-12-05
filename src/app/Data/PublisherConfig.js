@@ -91,11 +91,11 @@ export const publisherConfig = {
 		'4b': '/nymag-4b.mp4',
 	},
 	foodnetwork: {
-		1: '/Warner_Bros-1.mp4',
-		'2a': '/Warner_Bros-2a.mp4',
-		'2b': '/Warner_Bros-2b.mp4',
-		'3b': '/Warner_Bros-3b.mp4',
-		'4b': '/Warner_Bros-4b.mp4',
+		1: '/WarnerBros-1.mp4',
+		'2a': '/WarnerBros-2a.mp4',
+		'2b': '/WarnerBros-2b.mp4',
+		'3b': '/WarnerBros-3b.mp4',
+		'4b': '/WarnerBros-4b.mp4',
 	},
 	yahoo: {
 		1: '/yahoo-1.mp4',
