@@ -1,23 +1,24 @@
-'use client';
-import useAssets from '@/app/hooks/useAssets';
-import { useParams } from 'next/navigation';
-import { useEffect, useState } from 'react';
-import DPVideo from '../DPVideo/DPVideo';
-import HighlightedText from '../HighlightedText/HighlightedText';
-import Navbar from '../Nav/Navbar';
+"use client";
+import useAssets from "@/app/hooks/useAssets";
+import { useParams } from "next/navigation";
+import { useEffect, useState } from "react";
+import DPVideo from "../DPVideo/DPVideo";
+import HighlightedText from "../HighlightedText/HighlightedText";
+import Navbar from "../Nav/Navbar";
+import Link from "next/link";
 
 const Hero = () => {
-  const [pubName, setPubName] = useState('');
+  const [pubName, setPubName] = useState("");
   const assets = useAssets();
   const params = useParams();
   const publisher = params?.publisherId?.[0];
   useEffect(() => {
-    if (location.pathname.includes('/publisher/')) {
+    if (location.pathname.includes("/publisher/")) {
       setPubName(
-        location.pathname.replace('/publisher/', '').replace('-', ' ')
+        location.pathname.replace("/publisher/", "").replace("-", " ")
       );
     }
-    localStorage.setItem('publisher', publisher);
+    localStorage.setItem("publisher", publisher);
   }, []);
 
   return (
@@ -32,7 +33,7 @@ const Hero = () => {
             <div className="flex-1 justify-end flex flex-col">
               <h2 className="text-white">
                 <span className="text-secondary sm:text-[54px] 2xl:text-[72px] xxl:text-[72px] leading-[1.1]">
-                  <span className="text-action font-extrabold">Discovery</span>{' '}
+                  <span className="text-action font-extrabold">Discovery</span>{" "}
                   Meets
                   <br /> Commerce
                 </span>
@@ -49,8 +50,8 @@ const Hero = () => {
             </div>
 
             <div className="z-50 sec-container xxl:text-[1.4em] inset-0 md:my-[50px]">
-              <a
-                href={'/widget/' + pubName.split(' ').join('-')}
+              <Link
+                href={"/widget/" + pubName.split(" ").join("-")}
                 className="relative flex flex-col cursor-pointer bg-action rounded-[46px] py-2 xxl:py-3 xxl:rounded-[50px] sm:w-[210px] 2xl:w-[230px] px-10"
               >
                 <div className="absolute  left-[20px] top-[45%]">
@@ -67,7 +68,7 @@ const Hero = () => {
                 <p className="text-primary text-[14px] xxl:text-[0.7em] text-left ml-[10px]">
                   for{pubName && <span className="capitalize"> {pubName}</span>}
                 </p>
-              </a>
+              </Link>
             </div>
             <div className="inset-0 bg-transparent z-10 sec-container flex flex-1 items-start">
               <div className="relative">
@@ -76,7 +77,7 @@ const Hero = () => {
 										Big Tech Is Transforming Discovery To Commerce
 									</p> */}
                   <h1 className="py-4 custom-text-sm-medium md:text-[32px] md:mt-[5%] md:mb-[20px] md:w-[95%]">
-                    <HighlightedText text={'Everything'} /> to Drive On-Site
+                    <HighlightedText text={"Everything"} /> to Drive On-Site
                     User Conversion and Monetization
                   </h1>
                   <div className="flex gap-x-3 custom-text-xs font-medium">
