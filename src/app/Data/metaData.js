@@ -20,9 +20,7 @@ export const publisherMetaData = {
       title: "Discovery Meets Commerce",
       description:
         "From Medium to Destination for Discovery, as mastered by Google, Amazon, TikTok and Meta",
-      images: [
-        "https://imagekit.dpanda.in/publisher-banner/1732890136_TheBUMP-perview.png",
-      ],
+      images: ["https://i.ibb.co/SJQB5yC/The-Bump-perview-01.png"],
     },
   },
   "the-bump": {
@@ -33,7 +31,7 @@ export const publisherMetaData = {
       title: "Discovery Meets Commerce",
       description:
         "From Medium to Destination for Discovery, as mastered by Google, Amazon, TikTok and Meta",
-      images: "https://i.ibb.co/Z1vwhKQ/The-Bump-perview-1.png",
+      images: "https://i.ibb.co/SJQB5yC/The-Bump-perview-01.png",
     },
   },
   buzzfeed: {
@@ -44,7 +42,7 @@ export const publisherMetaData = {
       title: "Discovery Meets Commerce",
       description:
         "From Medium to Destination for Discovery, as mastered by Google, Amazon, TikTok and Meta",
-      images: ["https://i.ibb.co/Fwgp0xH/The-Buzzfeed-perview.png"],
+      images: ["https://i.ibb.co/qCVtsH5/Buzzfeed-perview-01.png"],
     },
   },
   "readers-digest": {
@@ -66,7 +64,7 @@ export const publisherMetaData = {
       title: "Discovery Meets Commerce",
       description:
         "From Medium to Destination for Discovery, as mastered by Google, Amazon, TikTok and Meta",
-      images: ["https://i.ibb.co/1Lg7RLB/GQ-perview.png"],
+      images: ["https://i.ibb.co/88qKj5L/The-RD-perview-01-1.png"],
     },
   },
   fandom: {
@@ -88,7 +86,7 @@ export const publisherMetaData = {
       title: "Discovery Meets Commerce",
       description:
         "From Medium to Destination for Discovery, as mastered by Google, Amazon, TikTok and Meta",
-      images: ["https://i.ibb.co/9rnhG9q/New-York-Perview.png"],
+      images: ["https://i.ibb.co/m6XT1yb/Voxmedia-perview-01.png"],
     },
   },
   foodnetwork: {
