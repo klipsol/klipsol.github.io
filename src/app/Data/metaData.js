@@ -75,7 +75,7 @@ export const publisherMetaData = {
       title: "Discovery Meets Commerce",
       description:
         "From Medium to Destination for Discovery, as mastered by Google, Amazon, TikTok and Meta",
-      images: ["https://i.ibb.co/h9HqbSG/Fandom-Perview.png"],
+      images: ["https://i.ibb.co/gdz4B0S/Fandom-perview-01.png"],
     },
   },
   nymag: {
@@ -97,7 +97,7 @@ export const publisherMetaData = {
       title: "Discovery Meets Commerce",
       description:
         "From Medium to Destination for Discovery, as mastered by Google, Amazon, TikTok and Meta",
-      images: ["https://i.ibb.co/BgkGfSm/foodnetwork-Perview.png"],
+      images: ["https://i.ibb.co/DMrQXvw/Food-network-Perview-01.png"],
     },
   },
   people: {
@@ -108,7 +108,7 @@ export const publisherMetaData = {
       title: "Discovery Meets Commerce",
       description:
         "From Medium to Destination for Discovery, as mastered by Google, Amazon, TikTok and Meta",
-      images: ["https://i.ibb.co/CsBSNLZ/people-Perview.png"],
+      images: ["https://i.ibb.co/WDfYjyG/People-preview-01.png"],
     },
   },
   techradar: {
@@ -119,7 +119,7 @@ export const publisherMetaData = {
       title: "Discovery Meets Commerce",
       description:
         "From Medium to Destination for Discovery, as mastered by Google, Amazon, TikTok and Meta",
-      images: ["https://i.ibb.co/4MP5QTB/Techradar-Perview.png"],
+      images: ["https://i.ibb.co/MNJ0VFD/Techradar-perview-01.png"],
     },
   },
   bestproducts: {
@@ -130,7 +130,7 @@ export const publisherMetaData = {
       title: "Discovery Meets Commerce",
       description:
         "From Medium to Destination for Discovery, as mastered by Google, Amazon, TikTok and Meta",
-      images: ["https://i.ibb.co/gwt4TFc/Best-product-Perview.png"],
+      images: ["https://i.ibb.co/c3Dh81P/The-best-perview-01.png"],
     },
   },
 };
