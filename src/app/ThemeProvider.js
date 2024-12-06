@@ -76,6 +76,24 @@ const ThemeProvider = () => {
         root.style.setProperty("--action-color", "0 0 0"); // RGB for #8a317d
         root.style.setProperty("--brand-color", "0 0 0"); // RGB for #8a317d
         break;
+      case "/publisher/reddit":
+        root.style.setProperty("--primary-color", "0 0 0"); // RGB for #fff
+        root.style.setProperty("--secondary-color", "228 194 183"); // RGB for #081338
+        root.style.setProperty("--action-color", "217 57 0"); // RGB for #8a317d
+        root.style.setProperty("--brand-color", "0 0 0"); // RGB for #8a317d
+        break;
+      case "/publisher/pinterest":
+        root.style.setProperty("--primary-color", "0 0 0"); // RGB for #fff
+        root.style.setProperty("--secondary-color", "250 244 242"); // RGB for #081338
+        root.style.setProperty("--action-color", "230 0 35"); // RGB for #8a317d
+        root.style.setProperty("--brand-color", "0 0 0"); // RGB for #8a317d
+        break;
+      case "/publisher/myfitnesspal":
+        root.style.setProperty("--primary-color", "0 0 0"); // RGB for #fff
+        root.style.setProperty("--secondary-color", "203 223 251"); // RGB for #081338
+        root.style.setProperty("--action-color", "0 102 238"); // RGB for #8a317d
+        root.style.setProperty("--brand-color", "0 0 0"); // RGB for #8a317d
+        break;
       default:
         root.style.setProperty("--primary-color", "247 186 48"); // RGB for #f7ba30
         root.style.setProperty("--secondary-color", "0 48 69"); // RGB for #003045
