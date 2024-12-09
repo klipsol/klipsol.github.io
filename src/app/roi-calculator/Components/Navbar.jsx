@@ -1,10 +1,9 @@
-"use client";
-import Calendly from "@/app/the-bump/Components/Calendly/Calendly";
-import CalendlyModal from "@/app/the-bump/Components/Calendly/CalendlyModal";
-import Link from "next/link";
-import { useParams, usePathname } from "next/navigation";
-import { useEffect, useState } from "react";
-import { twMerge } from "tailwind-merge";
+'use client';
+import Calendly from '@/app/the-bump/Components/Calendly/Calendly';
+import Link from 'next/link';
+import { useParams, usePathname } from 'next/navigation';
+import { useEffect, useState } from 'react';
+import { twMerge } from 'tailwind-merge';
 
 export default function Navbar({ customBg }) {
   // const router = useRouter();
@@ -17,7 +16,7 @@ export default function Navbar({ customBg }) {
   const [publisher, setPublisher] = useState();
 
   useEffect(() => {
-    setPublisher(localStorage.getItem("publisher"));
+    setPublisher(localStorage.getItem('publisher'));
   }, []);
 
   // const handleRoiRedirect = () => {
@@ -29,14 +28,17 @@ export default function Navbar({ customBg }) {
   return (
     <>
       <div
+        style={{
+          background: customBg && customBg,
+        }}
         className={twMerge(
-          "lg:sec-container opacity-1 mt-0 relative z-50 lg:pr-10 mx-0",
-          customBg && "bg-primary"
+          'lg:sec-container opacity-1 mt-0 relative z-50 lg:pr-10 mx-0',
+          customBg && 'bg-primary'
         )}
         id="nav"
       >
         <div className="lg:flex gap-4 relative pl-4 justify-between items-start flex flex-row md:flex-row bg-transparent rounded-3xl md:custom-text-base">
-          <Link href={"/publisher/" + publisher}>
+          <Link href={'/publisher/' + publisher}>
             <img
               src="/dpandaLogo2.png"
               alt="logo"
@@ -58,11 +60,11 @@ export default function Navbar({ customBg }) {
                 // variant="primary"
               >
                 ROI <br className="lg:hidden" /> Calculator
-              </Link>{" "}
-              {pathname !== "/" && (
+              </Link>{' '}
+              {pathname !== '/' && (
                 <div className="bg-[#004A6C] lg:h-6 h-8 w-0.5"></div>
               )}
-              {pathname !== "/" && (
+              {pathname !== '/' && (
                 <div className="rounded-[24px] text-white  px-4 py-1  font-medium">
                   <Calendly />
                 </div>

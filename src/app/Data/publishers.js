@@ -6,6 +6,7 @@ const buyWidgetSites = [
   { name: 'techradar', url: 'https://techradar.dpanda-buy-widget.pages.dev/' },
   { name: 'people', url: 'https://people.dpanda-buy-widget.pages.dev/' },
   { name: 'tmb', url: 'https://tmb.dpanda-buy-widget.pages.dev/' },
+  { name: 'dpanda', url: 'https://dpanda-us.dpanda-buy-widget.pages.dev/' },
   { name: 'theBump', url: 'https://the-bump.dpanda-buy-widget.pages.dev' },
   { name: 'the-bump', url: 'https://the-bump.dpanda-buy-widget.pages.dev' },
   {

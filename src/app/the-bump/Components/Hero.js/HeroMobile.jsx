@@ -1,32 +1,52 @@
-"use client";
-import Navbar from "@/app/roi-calculator/Components/Navbar";
-import { useParams } from "next/navigation";
-import DPVideo from "../DPVideo/DPVideo";
-import HighlightedText from "../HighlightedText/HighlightedText";
-import useAssets from "@/app/hooks/useAssets";
-import Link from "next/link";
+'use client';
+import useAssets from '@/app/hooks/useAssets';
+import Navbar from '@/app/roi-calculator/Components/Navbar';
+import { useParams } from 'next/navigation';
+import { twMerge } from 'tailwind-merge';
+import DPVideo from '../DPVideo/DPVideo';
+import HighlightedText from '../HighlightedText/HighlightedText';
 
 const HeroMobile = () => {
   const params = useParams();
-  const publisher = params?.publisherId?.[0];
+  const publisher = params?.publisherId?.[0] || 'dpanda';
   const assets = useAssets();
   return (
     <div className="block lg:hidden ">
-      <Navbar customBg="#eebe50" />
+      <Navbar customBg={!publisher ? '#eebe50' : 'bg-primary'} />
       <div
-        className="absolute bg-primary w-full min-h-[400px] top-2"
-        style={{ clipPath: "polygon(0 0, 100% 0, 100% 100%, 0 85%)" }}
+        className={twMerge(
+          'absolute bg-primary w-full min-h-[400px] top-2',
+          !publisher && 'bg-action'
+        )}
+        style={{ clipPath: 'polygon(0 0, 100% 0, 100% 100%, 0 85%)' }}
       ></div>
 
-      <div className="text-primaryTextColor p-4 relative min-h-[400px] flex">
+      <div className="text-action p-4 relative min-h-[400px] flex">
         <div>
-          <h2 className="text-white text-xl leading-8">
-            <span className="text-secondary title">
-              <span className="text-action font-extrabold">Discovery</span>{" "}
+          <h2
+            className={twMerge(
+              'text-secondary text-xl leading-8',
+              !publisher && 'text-white'
+            )}
+          >
+            <span className="title">
+              <span
+                className={twMerge(
+                  'text-action font-extrabold',
+                  !publisher && 'text-primary'
+                )}
+              >
+                Discovery
+              </span>{' '}
               Meets <br /> Commerce
             </span>
           </h2>
-          <p className="font-medium mt-5 leading-5 lg:w-full sm:w-[95%]">
+          <p
+            className={twMerge(
+              'font-medium mt-5 leading-5 lg:w-full sm:w-[95%]',
+              !publisher && 'text-primary'
+            )}
+          >
             <span className="font-bold">
               From <span className="line-through"> Medium</span> to Destination
               for Discovery,
@@ -44,15 +64,33 @@ const HeroMobile = () => {
         </div>
         <div className="top-[280px] px-4 pointer-events-auto text-sm z-30 w-full sec-container absolute  inset-0">
           <a
-            href={"/widget/" + publisher}
-            className="flex flex-col z-[9999] cursor-pointer bg-action rounded-[46px] py-2 xxl:py-3 xxl:rounded-[50px] w-fit px-6 "
-            style={{ lineHeight: "1.5" }}
+            href={'/widget/' + publisher}
+            className={twMerge(
+              'flex flex-col z-[9999] cursor-pointer bg-action rounded-[46px] py-2 xxl:py-3 xxl:rounded-[50px] w-fit px-6',
+              !publisher && 'bg-primary'
+            )}
+            style={{ lineHeight: '1.5' }}
           >
             <div className="flex gap-x-2 items-center relative">
               {/* <span className="bg-[#F7BA30]/80 w-2 h-2 rounded-full "></span> */}
-              <span className="bg-primary w-2 h-2 xxl:w-2.5 xxl:h-2.5 rounded-full animate-ping [animation-duration:0.9s] absolute top-2 md:top-2 md:-left-4"></span>
-              <span className="bg-primary w-2 h-2 xxl:w-2.5 xxl:h-2.5 rounded-full  absolute top-2 md:top-2 md:-left-4"></span>
-              <span className="text-primary text-center font-medium ml-4 xxl:ml-3.5 md:m-auto ">
+              <span
+                className={twMerge(
+                  'bg-primary w-2 h-2 xxl:w-2.5 xxl:h-2.5 rounded-full animate-ping [animation-duration:0.9s] absolute top-2 md:top-2 md:-left-4',
+                  !publisher && 'bg-action'
+                )}
+              ></span>
+              <span
+                className={twMerge(
+                  'bg-primary w-2 h-2 xxl:w-2.5 xxl:h-2.5 rounded-full  absolute top-2 md:top-2 md:-left-4',
+                  !publisher && 'bg-action'
+                )}
+              ></span>
+              <span
+                className={twMerge(
+                  'text-primary text-center font-medium ml-4 xxl:ml-3.5 md:m-auto',
+                  !publisher && 'text-action'
+                )}
+              >
                 Interactive Demo
               </span>
             </div>
@@ -64,7 +102,7 @@ const HeroMobile = () => {
       </div>
       <div className="text-primaryTextColor p-4 pb-0 mb-10">
         <h1 className="custom-text-sm-medium mt-5 font-medium xxl:text-3xl sm:text-2xl">
-          <HighlightedText text={"Everything"} /> to Drive On-Site User
+          <HighlightedText text={'Everything'} /> to Drive On-Site User
           Conversion and Monetization
         </h1>
         <div className="mt-4 grid grid-cols-2 gap-3 max-w-[80%] font-semibold">
