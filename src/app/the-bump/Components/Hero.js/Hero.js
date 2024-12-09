@@ -8,10 +8,10 @@ import HighlightedText from '../HighlightedText/HighlightedText';
 import Navbar from '../Nav/Navbar';
 
 const Hero = () => {
-  const [pubName, setPubName] = useState('');
+  const [pubName, setPubName] = useState('dpanda');
   const assets = useAssets();
   const params = useParams();
-  const publisher = params?.publisherId?.[0];
+  const publisher = params?.publisherId?.[0] || 'dpanda';
   useEffect(() => {
     if (location.pathname.includes('/publisher/')) {
       setPubName(
@@ -27,7 +27,7 @@ const Hero = () => {
         <div
           className={twMerge(
             'absolute top-0 h-[50vh] bg-primary w-full',
-            !publisher && 'bg-action'
+            publisher === 'dpanda' && 'bg-action'
           )}
         ></div>
 
@@ -40,13 +40,13 @@ const Hero = () => {
                 <span
                   className={twMerge(
                     'text-secondary sm:text-[54px] 2xl:text-[72px] xxl:text-[72px] leading-[1.1]',
-                    !publisher && 'text-white'
+                    publisher === 'dpanda' && 'text-white'
                   )}
                 >
                   <span
                     className={twMerge(
                       'text-action font-extrabold',
-                      !publisher && 'text-primary'
+                      publisher === 'dpanda' && 'text-primary'
                     )}
                   >
                     Discovery
@@ -59,7 +59,7 @@ const Hero = () => {
               <p
                 className={twMerge(
                   'md:mt-[15px] text-secondary w-[85%] font-medium sm:text-[18px] 2xl:text-[24px] custom-text-sm-medium'
-                  // !publisher && 'text-action'
+                  // publisher === 'dpanda' && 'text-action'
                 )}
               >
                 <span className="font-bold">
@@ -76,7 +76,7 @@ const Hero = () => {
                 href={'/widget/' + pubName.split(' ').join('-')}
                 className={twMerge(
                   'relative flex flex-col cursor-pointer bg-action rounded-[46px] py-2 xxl:py-3 xxl:rounded-[50px] sm:w-[225px] 2xl:w-[235px] px-10',
-                  !publisher && 'bg-primary'
+                  publisher === 'dpanda' && 'bg-primary'
                 )}
               >
                 <div className="absolute  left-[20px] top-[45%]">
@@ -84,13 +84,13 @@ const Hero = () => {
                     <span
                       className={twMerge(
                         'bg-primary w-2 h-2 xxl:w-2.5 xxl:h-2.5 rounded-full animate-ping [animation-duration:0.9s] absolute',
-                        !publisher && 'bg-action'
+                        publisher === 'dpanda' && 'bg-action'
                       )}
                     ></span>
                     <span
                       className={twMerge(
                         'bg-primary w-2 h-2 xxl:w-2.5 xxl:h-2.5 rounded-full absolute',
-                        !publisher && 'bg-action'
+                        publisher === 'dpanda' && 'bg-action'
                       )}
                     ></span>
                   </div>
@@ -101,9 +101,14 @@ const Hero = () => {
                   </span>
                 </div>
                 {pubName && (
-                  <p className="text-primary text-[14px] xxl:text-[0.7em] text-left ml-[10px]">
-                    for
-                    {pubName && <span className="capitalize"> {pubName}</span>}
+                  <p
+                    className={twMerge(
+                      'text-primary text-[14px] xxl:text-[0.7em] text-left ml-[10px]',
+                      pubName === 'dpanda' && 'text-action'
+                    )}
+                  >
+                    for{' '}
+                    {pubName && <span className="capitalize">{pubName}</span>}
                   </p>
                 )}
               </a>
