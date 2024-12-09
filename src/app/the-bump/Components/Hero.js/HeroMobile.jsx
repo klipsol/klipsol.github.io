@@ -8,7 +8,7 @@ import HighlightedText from '../HighlightedText/HighlightedText';
 
 const HeroMobile = () => {
   const params = useParams();
-  const publisher = params?.publisherId?.[0];
+  const publisher = params?.publisherId?.[0] || 'dpanda';
   const assets = useAssets();
   return (
     <div className="block lg:hidden ">
