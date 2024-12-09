@@ -63,11 +63,11 @@ export const publisherConfig = {
 		'4b': 'https://publisher-banner.dpanda.in/myfitnesspal-4b.mp4',
 	},
 	pinterest: {
-		1: 'https://publisher-banner.dpanda.in/pinterest-1.mp4',
-		'2a': 'https://publisher-banner.dpanda.in/pinterest-2a.mp4',
-		'2b': 'https://publisher-banner.dpanda.in/pinterest-2b.mp4',
-		'3b': 'https://publisher-banner.dpanda.in/pinterest-3b.mp4',
-		'4b': 'https://publisher-banner.dpanda.in/pinterest-4b.mp4',
+		1: 'https://publisher-banner.dpanda.in/Pintrest-1.mp4',
+		'2a': 'https://publisher-banner.dpanda.in/Pintrest-2a.mp4',
+		'2b': 'https://publisher-banner.dpanda.in/Pintrest-2b.mp4',
+		'3b': 'https://publisher-banner.dpanda.in/Pintrest-3b.mp4',
+		'4b': 'https://publisher-banner.dpanda.in/Pintrest-4b.mp4',
 	},
 	reddit: {
 		1: 'https://publisher-banner.dpanda.in/reddit-1.mp4',
