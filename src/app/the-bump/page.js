@@ -17,27 +17,22 @@ import Technology from './Components/Technology/Technology';
 import { Testimonial } from './Components/Testimonial/Testimonial';
 
 export default function Publisher2() {
-	return (
-		<main>
-			{/* <SmoothScroll> */}
-			<Hero />
-			{/* <Hero1 /> */}
-			<HeroMobile />
-			<BrandList />
-			<HigherMonitization />
-			<Feature />
-			<LifeTimeValue />
-			<FirstParty />
-			<InstantRoi />
-			<CoreFeatures />
-			<Technology />
-			{/* <Operations /> */}
-			{/* <DirectRelationShip /> */}
-			<EveryThingFree />
-			<Final />
-			<Testimonial />
-			<Footer />
-			{/* </SmoothScroll> */}
-		</main>
-	);
+  return (
+    <main>
+      <Hero />
+      <HeroMobile />
+      <BrandList />
+      <HigherMonitization />
+      <Feature />
+      <LifeTimeValue />
+      <FirstParty />
+      <InstantRoi />
+      <CoreFeatures />
+      <Technology />
+      <EveryThingFree />
+      <Final />
+      <Testimonial />
+      <Footer />
+    </main>
+  );
 }

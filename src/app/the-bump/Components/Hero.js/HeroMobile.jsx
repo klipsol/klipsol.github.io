@@ -12,11 +12,11 @@ const HeroMobile = () => {
   const assets = useAssets();
   return (
     <div className="block lg:hidden ">
-      <Navbar customBg={!publisher ? '#eebe50' : 'bg-primary'} />
+      <Navbar customBg={publisher === 'dpanda' ? '#eebe50' : 'bg-primary'} />
       <div
         className={twMerge(
           'absolute bg-primary w-full min-h-[400px] top-2',
-          !publisher && 'bg-action'
+          publisher === 'dpanda' && 'bg-action'
         )}
         style={{ clipPath: 'polygon(0 0, 100% 0, 100% 100%, 0 85%)' }}
       ></div>
@@ -26,14 +26,14 @@ const HeroMobile = () => {
           <h2
             className={twMerge(
               'text-secondary text-xl leading-8',
-              !publisher && 'text-white'
+              publisher === 'dpanda' && 'text-white'
             )}
           >
             <span className="title">
               <span
                 className={twMerge(
                   'text-action font-extrabold',
-                  !publisher && 'text-primary'
+                  publisher === 'dpanda' && 'text-primary'
                 )}
               >
                 Discovery
@@ -44,7 +44,7 @@ const HeroMobile = () => {
           <p
             className={twMerge(
               'font-medium mt-5 leading-5 lg:w-full sm:w-[95%]',
-              !publisher && 'text-primary'
+              publisher === 'dpanda' && 'text-primary'
             )}
           >
             <span className="font-bold">
@@ -67,7 +67,7 @@ const HeroMobile = () => {
             href={'/widget/' + publisher}
             className={twMerge(
               'flex flex-col z-[9999] cursor-pointer bg-action rounded-[46px] py-2 xxl:py-3 xxl:rounded-[50px] w-fit px-6',
-              !publisher && 'bg-primary'
+              publisher === 'dpanda' && 'bg-primary'
             )}
             style={{ lineHeight: '1.5' }}
           >
@@ -76,25 +76,30 @@ const HeroMobile = () => {
               <span
                 className={twMerge(
                   'bg-primary w-2 h-2 xxl:w-2.5 xxl:h-2.5 rounded-full animate-ping [animation-duration:0.9s] absolute top-2 md:top-2 md:-left-4',
-                  !publisher && 'bg-action'
+                  publisher === 'dpanda' && 'bg-action'
                 )}
               ></span>
               <span
                 className={twMerge(
                   'bg-primary w-2 h-2 xxl:w-2.5 xxl:h-2.5 rounded-full  absolute top-2 md:top-2 md:-left-4',
-                  !publisher && 'bg-action'
+                  publisher === 'dpanda' && 'bg-action'
                 )}
               ></span>
               <span
                 className={twMerge(
                   'text-primary text-center font-medium ml-4 xxl:ml-3.5 md:m-auto',
-                  !publisher && 'text-action'
+                  publisher === 'dpanda' && 'text-action'
                 )}
               >
                 Interactive Demo
               </span>
             </div>
-            <p className="text-primary text-[10px] xxl:text-[0.7em] text-center ml-3 md:m-auto">
+            <p
+              className={twMerge(
+                'text-primary text-[10px] capitalize xxl:text-[0.7em] text-center ml-3 md:m-auto',
+                publisher === 'dpanda' && 'text-action'
+              )}
+            >
               {publisher && `for ${publisher}`}
             </p>
           </a>
