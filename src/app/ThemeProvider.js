@@ -77,10 +77,10 @@ const ThemeProvider = () => {
 				root.style.setProperty('--brand-color', '0 0 0'); // RGB for #8a317d
 				break;
 			case '/publisher/reddit':
-				root.style.setProperty('--primary-color', '0 0 0'); // RGB for #fff
-				root.style.setProperty('--secondary-color', '228 194 183'); // RGB for #081338
+				root.style.setProperty('--primary-color', '228 194 183'); // RGB for #fff
+				root.style.setProperty('--secondary-color', '0 0 0'); // RGB for #081338
 				root.style.setProperty('--action-color', '217 57 0'); // RGB for #8a317d
-				root.style.setProperty('--brand-color', '0 0 0'); // RGB for #8a317d
+				root.style.setProperty('--brand-color', '217 57 0'); // RGB for #8a317d
 				break;
 			case '/publisher/pinterest':
 				root.style.setProperty('--primary-color', '250 244 242'); // RGB for #fff
