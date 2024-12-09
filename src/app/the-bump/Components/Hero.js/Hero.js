@@ -1,30 +1,35 @@
-"use client";
-import useAssets from "@/app/hooks/useAssets";
-import { useParams } from "next/navigation";
-import { useEffect, useState } from "react";
-import DPVideo from "../DPVideo/DPVideo";
-import HighlightedText from "../HighlightedText/HighlightedText";
-import Navbar from "../Nav/Navbar";
-import Link from "next/link";
+'use client';
+import useAssets from '@/app/hooks/useAssets';
+import { useParams } from 'next/navigation';
+import { useEffect, useState } from 'react';
+import { twMerge } from 'tailwind-merge';
+import DPVideo from '../DPVideo/DPVideo';
+import HighlightedText from '../HighlightedText/HighlightedText';
+import Navbar from '../Nav/Navbar';
 
 const Hero = () => {
-  const [pubName, setPubName] = useState("");
+  const [pubName, setPubName] = useState('');
   const assets = useAssets();
   const params = useParams();
   const publisher = params?.publisherId?.[0];
   useEffect(() => {
-    if (location.pathname.includes("/publisher/")) {
+    if (location.pathname.includes('/publisher/')) {
       setPubName(
-        location.pathname.replace("/publisher/", "").replace("-", " ")
+        location.pathname.replace('/publisher/', '').replace('-', ' ')
       );
     }
-    localStorage.setItem("publisher", publisher);
+    localStorage.setItem('publisher', publisher);
   }, []);
 
   return (
     <>
       <section className="hidden md:block h-screen md:relative overflow-hidden bg-white">
-        <div className="absolute top-0 h-[50vh] bg-primary w-full"></div>
+        <div
+          className={twMerge(
+            'absolute top-0 h-[50vh] bg-primary w-full',
+            !publisher && 'bg-action'
+          )}
+        ></div>
 
         <div className="absolute inset-0 mr-[80px] lg:flex justify-between sm:z-20">
           <Navbar publisher={pubName} />
@@ -32,14 +37,31 @@ const Hero = () => {
           <div className="lg:z-10 sm:z-30 flex flex-col pl-[10%]">
             <div className="flex-1 justify-end flex flex-col">
               <h2 className="text-white">
-                <span className="text-secondary sm:text-[54px] 2xl:text-[72px] xxl:text-[72px] leading-[1.1]">
-                  <span className="text-action font-extrabold">Discovery</span>{" "}
+                <span
+                  className={twMerge(
+                    'text-secondary sm:text-[54px] 2xl:text-[72px] xxl:text-[72px] leading-[1.1]',
+                    !publisher && 'text-white'
+                  )}
+                >
+                  <span
+                    className={twMerge(
+                      'text-action font-extrabold',
+                      !publisher && 'text-primary'
+                    )}
+                  >
+                    Discovery
+                  </span>{' '}
                   Meets
                   <br /> Commerce
                 </span>
               </h2>
 
-              <p className="md:mt-[15px] text-secondary w-[85%] font-medium sm:text-[18px] 2xl:text-[24px] custom-text-sm-medium">
+              <p
+                className={twMerge(
+                  'md:mt-[15px] text-secondary w-[85%] font-medium sm:text-[18px] 2xl:text-[24px] custom-text-sm-medium'
+                  // !publisher && 'text-action'
+                )}
+              >
                 <span className="font-bold">
                   From <span className="line-through"> Medium</span> to
                   Destination for Discovery,
@@ -51,13 +73,26 @@ const Hero = () => {
 
             <div className="z-50 sec-container xxl:text-[1.4em] inset-0 md:my-[50px]">
               <a
-                href={"/widget/" + pubName.split(" ").join("-")}
-                className="relative flex flex-col cursor-pointer bg-action rounded-[46px] py-2 xxl:py-3 xxl:rounded-[50px] sm:w-[225px] 2xl:w-[235px] px-10"
+                href={'/widget/' + pubName.split(' ').join('-')}
+                className={twMerge(
+                  'relative flex flex-col cursor-pointer bg-action rounded-[46px] py-2 xxl:py-3 xxl:rounded-[50px] sm:w-[225px] 2xl:w-[235px] px-10',
+                  !publisher && 'bg-primary'
+                )}
               >
                 <div className="absolute  left-[20px] top-[45%]">
                   <div className="relative">
-                    <span className="bg-primary w-2 h-2 xxl:w-2.5 xxl:h-2.5 rounded-full animate-ping [animation-duration:0.9s] absolute"></span>
-                    <span className="bg-primary w-2 h-2 xxl:w-2.5 xxl:h-2.5 rounded-full  absolute"></span>
+                    <span
+                      className={twMerge(
+                        'bg-primary w-2 h-2 xxl:w-2.5 xxl:h-2.5 rounded-full animate-ping [animation-duration:0.9s] absolute',
+                        !publisher && 'bg-action'
+                      )}
+                    ></span>
+                    <span
+                      className={twMerge(
+                        'bg-primary w-2 h-2 xxl:w-2.5 xxl:h-2.5 rounded-full absolute',
+                        !publisher && 'bg-action'
+                      )}
+                    ></span>
                   </div>
                 </div>
                 <div className="flex gap-x-2 items-start relative ml-[10px]">
@@ -65,9 +100,12 @@ const Hero = () => {
                     Interactive Demo
                   </span>
                 </div>
-                <p className="text-primary text-[14px] xxl:text-[0.7em] text-left ml-[10px]">
-                  for{pubName && <span className="capitalize"> {pubName}</span>}
-                </p>
+                {pubName && (
+                  <p className="text-primary text-[14px] xxl:text-[0.7em] text-left ml-[10px]">
+                    for
+                    {pubName && <span className="capitalize"> {pubName}</span>}
+                  </p>
+                )}
               </a>
             </div>
             <div className="inset-0 bg-transparent z-10 sec-container flex flex-1 items-start">
@@ -77,7 +115,7 @@ const Hero = () => {
 										Big Tech Is Transforming Discovery To Commerce
 									</p> */}
                   <h1 className="py-4 custom-text-sm-medium md:text-[32px] md:mt-[5%] md:mb-[20px] md:w-[95%]">
-                    <HighlightedText text={"Everything"} /> to Drive On-Site
+                    <HighlightedText text={'Everything'} /> to Drive On-Site
                     User Conversion and Monetization
                   </h1>
                   <div className="flex gap-x-3 custom-text-xs font-medium">
@@ -103,7 +141,11 @@ const Hero = () => {
             </div>
           </div>
 
-          <div className="h-[90%] rounded-b-full min-w-[40%] bg-secondary sm:hidden lg:block">
+          <div
+            className={
+              'h-[90%] rounded-b-full min-w-[40%] bg-secondary sm:hidden lg:block'
+            }
+          >
             <div className="flex justify-center items-center h-full">
               <DPVideo
                 id="videoDiv"

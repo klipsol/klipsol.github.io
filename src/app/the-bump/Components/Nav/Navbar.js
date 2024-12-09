@@ -1,22 +1,21 @@
-"use client";
+'use client';
 
-import Link from "next/link";
-import { usePathname } from "next/navigation";
-import { useState } from "react";
-import CalendlyModal from "../Calendly/CalendlyModal";
-import Calendly from "../Calendly/Calendly";
+import Link from 'next/link';
+import { usePathname } from 'next/navigation';
+import { useState } from 'react';
+import Calendly from '../Calendly/Calendly';
 
 export default function Navbar({ publisher }) {
   const pathname = usePathname();
   const [isModalOpen, setIsModalOpen] = useState(false);
   const openModal = () => setIsModalOpen(true);
   const closeModal = () => setIsModalOpen(false);
-  console.log({ pathname }, !pathname === "/", pathname);
+  // console.log({ pathname }, !pathname === "/", pathname);
   return (
     <>
       <div
         className={
-          "md:mr-[80px] opacity-1 md:absolute md:w-full mt-6 relative z-50"
+          'md:mr-[80px] opacity-1 md:absolute md:w-full mt-6 relative z-50'
         }
         id="nav"
       >
@@ -40,11 +39,11 @@ export default function Navbar({ publisher }) {
               variant="primary"
             >
               ROI Calculator
-            </Link>{" "}
-            {pathname !== "/" && (
+            </Link>{' '}
+            {pathname !== '/' && (
               <div className="bg-secondary/70 h-6 w-0.5"></div>
             )}
-            {pathname !== "/" && (
+            {pathname !== '/' && (
               <div
                 onClick={openModal}
                 className="rounded-[24px] text-[16px] text-white px-4 text-center py-1 font-medium"
