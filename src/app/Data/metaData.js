@@ -1,17 +1,4 @@
 export const publisherMetaData = {
-  pinterest: {
-    title: "Seamless Integration for Monetization and E-Commerce",
-    description:
-      "Empowering businesses with seamless integrations to monetize platforms and scale e-commerce operations effortlessly.",
-    openGraph: {
-      title: "Seamless Integration for Monetization and E-Commerce",
-      description:
-        "Empowering businesses with seamless integrations to monetize platforms and scale e-commerce operations effortlessly.",
-      images: [
-        "https://images.ctfassets.net/h67z7i6sbjau/1BagIfaFzctcYiDizhJLOy/847c970a21517eb1c0f49425c8401769/Logo_primary_2x.jpg?fm=webp&q=85",
-      ],
-    },
-  },
   theBump: {
     title: "Discovery Meets Commerce",
     description:
@@ -20,9 +7,7 @@ export const publisherMetaData = {
       title: "Discovery Meets Commerce",
       description:
         "From Medium to Destination for Discovery, as mastered by Google, Amazon, TikTok and Meta",
-      images: [
-        "https://imagekit.dpanda.in/publisher-banner/1732890136_TheBUMP-perview.png",
-      ],
+      images: ["https://i.ibb.co/SJQB5yC/The-Bump-perview-01.png"],
     },
   },
   "the-bump": {
@@ -33,7 +18,7 @@ export const publisherMetaData = {
       title: "Discovery Meets Commerce",
       description:
         "From Medium to Destination for Discovery, as mastered by Google, Amazon, TikTok and Meta",
-      images: "https://i.ibb.co/Z1vwhKQ/The-Bump-perview-1.png",
+      images: "https://i.ibb.co/SJQB5yC/The-Bump-perview-01.png",
     },
   },
   buzzfeed: {
@@ -44,7 +29,7 @@ export const publisherMetaData = {
       title: "Discovery Meets Commerce",
       description:
         "From Medium to Destination for Discovery, as mastered by Google, Amazon, TikTok and Meta",
-      images: ["https://i.ibb.co/Fwgp0xH/The-Buzzfeed-perview.png"],
+      images: ["https://i.ibb.co/qCVtsH5/Buzzfeed-perview-01.png"],
     },
   },
   "readers-digest": {
@@ -66,7 +51,7 @@ export const publisherMetaData = {
       title: "Discovery Meets Commerce",
       description:
         "From Medium to Destination for Discovery, as mastered by Google, Amazon, TikTok and Meta",
-      images: ["https://i.ibb.co/1Lg7RLB/GQ-perview.png"],
+      images: ["https://i.ibb.co/88qKj5L/The-RD-perview-01-1.png"],
     },
   },
   fandom: {
@@ -77,7 +62,7 @@ export const publisherMetaData = {
       title: "Discovery Meets Commerce",
       description:
         "From Medium to Destination for Discovery, as mastered by Google, Amazon, TikTok and Meta",
-      images: ["https://i.ibb.co/h9HqbSG/Fandom-Perview.png"],
+      images: ["https://i.ibb.co/gdz4B0S/Fandom-perview-01.png"],
     },
   },
   nymag: {
@@ -88,7 +73,7 @@ export const publisherMetaData = {
       title: "Discovery Meets Commerce",
       description:
         "From Medium to Destination for Discovery, as mastered by Google, Amazon, TikTok and Meta",
-      images: ["https://i.ibb.co/9rnhG9q/New-York-Perview.png"],
+      images: ["https://i.ibb.co/m6XT1yb/Voxmedia-perview-01.png"],
     },
   },
   foodnetwork: {
@@ -99,7 +84,7 @@ export const publisherMetaData = {
       title: "Discovery Meets Commerce",
       description:
         "From Medium to Destination for Discovery, as mastered by Google, Amazon, TikTok and Meta",
-      images: ["https://i.ibb.co/BgkGfSm/foodnetwork-Perview.png"],
+      images: ["https://i.ibb.co/DMrQXvw/Food-network-Perview-01.png"],
     },
   },
   people: {
@@ -110,7 +95,7 @@ export const publisherMetaData = {
       title: "Discovery Meets Commerce",
       description:
         "From Medium to Destination for Discovery, as mastered by Google, Amazon, TikTok and Meta",
-      images: ["https://i.ibb.co/CsBSNLZ/people-Perview.png"],
+      images: ["https://i.ibb.co/WDfYjyG/People-preview-01.png"],
     },
   },
   techradar: {
@@ -121,7 +106,7 @@ export const publisherMetaData = {
       title: "Discovery Meets Commerce",
       description:
         "From Medium to Destination for Discovery, as mastered by Google, Amazon, TikTok and Meta",
-      images: ["https://i.ibb.co/4MP5QTB/Techradar-Perview.png"],
+      images: ["https://i.ibb.co/MNJ0VFD/Techradar-perview-01.png"],
     },
   },
   bestproducts: {
@@ -132,7 +117,40 @@ export const publisherMetaData = {
       title: "Discovery Meets Commerce",
       description:
         "From Medium to Destination for Discovery, as mastered by Google, Amazon, TikTok and Meta",
-      images: ["https://i.ibb.co/gwt4TFc/Best-product-Perview.png"],
+      images: ["https://i.ibb.co/c3Dh81P/The-best-perview-01.png"],
+    },
+  },
+  reddit: {
+    title: "Discovery Meets Commerce",
+    description:
+      "From Medium to Destination for Discovery, as mastered by Google, Amazon, TikTok and Meta",
+    openGraph: {
+      title: "Discovery Meets Commerce",
+      description:
+        "From Medium to Destination for Discovery, as mastered by Google, Amazon, TikTok and Meta",
+      images: ["https://i.ibb.co/yyz3mm0/Reddit-preview-01-1.png"],
+    },
+  },
+  myfitnesspal: {
+    title: "Discovery Meets Commerce",
+    description:
+      "From Medium to Destination for Discovery, as mastered by Google, Amazon, TikTok and Meta",
+    openGraph: {
+      title: "Discovery Meets Commerce",
+      description:
+        "From Medium to Destination for Discovery, as mastered by Google, Amazon, TikTok and Meta",
+      images: ["https://i.ibb.co/425rs0H/My-Fitness-Pal-preview-01.png"],
+    },
+  },
+  pinterest: {
+    title: "Discovery Meets Commerce",
+    description:
+      "From Medium to Destination for Discovery, as mastered by Google, Amazon, TikTok and Meta",
+    openGraph: {
+      title: "Discovery Meets Commerce",
+      description:
+        "From Medium to Destination for Discovery, as mastered by Google, Amazon, TikTok and Meta",
+      images: ["https://i.ibb.co/ZdyVR06/Pinterest-preview-01.png"],
     },
   },
 };
