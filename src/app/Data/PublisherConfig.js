@@ -1,10 +1,10 @@
 export const publisherConfig = {
   dpanda: {
-    1: '/Dpanda-1.mp4',
-    '2a': '/Dpanda-2a.mp4',
-    '2b': '/Dpanda-2b.mp4',
-    '3b': '/Dpanda-3b.mp4',
-    '4b': '/Dpanda-4b.mp4',
+    1: 'https://publisher-banner.dpanda.in/Dpanda-1.mp4',
+    '2a': 'https://publisher-banner.dpanda.in/Dpanda-2a.mp4',
+    '2b': 'https://publisher-banner.dpanda.in/Dpanda-2b.mp4',
+    '3b': 'https://publisher-banner.dpanda.in/Dpanda-3b.mp4',
+    '4b': 'https://publisher-banner.dpanda.in/Dpanda-4b.mp4',
   },
   buzzfeed: {
     1: 'https://publisher-banner.dpanda.in/Buzzfeed-1.mp4',
