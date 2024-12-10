@@ -7,6 +7,8 @@ const buyWidgetSites = [
   { name: 'people', url: 'https://people.dpanda-buy-widget.pages.dev/' },
   { name: 'tmb', url: 'https://tmb.dpanda-buy-widget.pages.dev/' },
   { name: 'dpanda', url: 'https://dpanda-us.dpanda-buy-widget.pages.dev/' },
+  { name: 'reddit', url: 'https://reddit.dpanda-buy-widget.pages.dev/' },
+  { name: 'pinterest', url: 'https://pinterest.dpanda-buy-widget.pages.dev/' },
   { name: 'theBump', url: 'https://the-bump.dpanda-buy-widget.pages.dev' },
   { name: 'the-bump', url: 'https://the-bump.dpanda-buy-widget.pages.dev' },
   {
