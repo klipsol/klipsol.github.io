@@ -125,4 +125,18 @@ export const publisherConfig = {
 		'3b': 'https://publisher-banner.dpanda.in/Cnet-3b.mp4',
 		'4b': 'https://publisher-banner.dpanda.in/Cnet-4b.mp4',
 	},
+	tumblr: {
+		1: 'https://publisher-banner.dpanda.in/Tumblr-1.mp4',
+		'2a': 'https://publisher-banner.dpanda.in/Tumblr-2a.mp4',
+		'2b': 'https://publisher-banner.dpanda.in/Tumblr-2b.mp4',
+		'3b': 'https://publisher-banner.dpanda.in/Tumblr-3b.mp4',
+		'4b': 'https://publisher-banner.dpanda.in/Tumblr-4b.mp4',
+	},
+	webmd: {
+		1: 'https://publisher-banner.dpanda.in/WebMD-1.mp4',
+		'2a': 'https://publisher-banner.dpanda.in/WebMD-2a.mp4',
+		'2b': 'https://publisher-banner.dpanda.in/WebMD-2b.mp4',
+		'3b': 'https://publisher-banner.dpanda.in/WebMD-3b.mp4',
+		'4b': 'https://publisher-banner.dpanda.in/WebMD-4b.mp4',
+	},
 };
