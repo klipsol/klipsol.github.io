@@ -17,6 +17,7 @@ import metadata from "../../../app/Data/metadata.json";
 import themeconfig from "../../../app/Data/themeconfig.json";
 import { RGBColorInput } from "./Components/RGBColorInput";
 import { MediaPreview } from "./Components/MediaPreview";
+import { useRouter } from "next/navigation";
 
 export default function SiteConfigurationPage() {
   const [siteName, setSiteName] = useState("");
@@ -27,7 +28,8 @@ export default function SiteConfigurationPage() {
     "action-color": "239 68 68",
     "brand-color": "16 185 196",
   });
-  const [previewConfig, setPreviewConfig] = useState(null);
+
+  const router = useRouter();
 
   const search = useSearchParams();
 
@@ -108,6 +110,9 @@ export default function SiteConfigurationPage() {
       .then((response) => response.text())
       .then((result) => console.log(result))
       .catch((error) => console.error(error));
+
+    alert("Configuration saved");
+    router.push("/edit-publisher-site");
   };
 
   //
@@ -138,7 +143,7 @@ export default function SiteConfigurationPage() {
 
                 {/* <div className="space-y-2 w-1/2"> */}
                 <label className="text-lg font-semibold text-gray-800 flex items-center">
-                  <Upload className="mr-2 text-green-600" /> Logo URL
+                  <Upload className="mr-2 text-green-600" /> Preview Image URL
                 </label>
                 <input
                   type="url"
