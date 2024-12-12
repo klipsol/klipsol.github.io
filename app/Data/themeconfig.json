@@ -1,3 +1,128 @@
 {
-  "sdfsdf": "sdfsd"
+  "the-bump": {
+    "primary-color": "255 255 255",
+    "secondary-color": "8 19 56",
+    "action-color": "142 45 129",
+    "brand-color": "142 45 129"
+  },
+  "theBump": {
+    "primary-color": "255 255 255",
+    "secondary-color": "8 19 56",
+    "action-color": "142 45 129",
+    "brand-color": "8 19 56"
+  },
+  "buzzfeed": {
+    "primary-color": "250 233 234",
+    "secondary-color": "0 0 0",
+    "action-color": "205 52 55",
+    "brand-color": "205 52 55"
+  },
+  "readers-digest": {
+    "primary-color": "255 255 255",
+    "secondary-color": "0 0 0",
+    "action-color": "205 52 55",
+    "brand-color": "205 52 55"
+  },
+  "gq": {
+    "primary-color": "249 245 236",
+    "secondary-color": "0 0 0",
+    "action-color": "198 161 73",
+    "brand-color": "198 161 73"
+  },
+  "people": {
+    "primary-color": "198 241 255",
+    "secondary-color": "0 0 0",
+    "action-color": "0 180 236",
+    "brand-color": "0 180 236"
+  },
+  "bestproducts": {
+    "primary-color": "198 241 255",
+    "secondary-color": "0 0 0",
+    "action-color": "28 28 156",
+    "brand-color": "28 28 156"
+  },
+  "foodnetwork": {
+    "primary-color": "250 191 194",
+    "secondary-color": "0 0 0",
+    "action-color": "216 33 44",
+    "brand-color": "216 33 44"
+  },
+  "fandom": {
+    "primary-color": "245 217 255",
+    "secondary-color": "0 0 0",
+    "action-color": "229 49 94",
+    "brand-color": "229 49 94"
+  },
+  "techradar": {
+    "primary-color": "255 240 249",
+    "secondary-color": "0 0 0",
+    "action-color": "10 14 32",
+    "brand-color": "10 14 32"
+  },
+  "nymag": {
+    "primary-color": "255 255 255",
+    "secondary-color": "0 0 0",
+    "action-color": "0 0 0",
+    "brand-color": "0 0 0"
+  },
+  "reddit": {
+    "primary-color": "228 194 183",
+    "secondary-color": "0 0 0",
+    "action-color": "217 57 0",
+    "brand-color": "217 57 0"
+  },
+  "pinterest": {
+    "primary-color": "250 244 242",
+    "secondary-color": "0 0 0",
+    "action-color": "230 0 35",
+    "brand-color": "230 0 35"
+  },
+  "myfitnesspal": {
+    "primary-color": "203 223 251",
+    "secondary-color": "0 0 0",
+    "action-color": "0 102 238",
+    "brand-color": "0 102 238"
+  },
+  "tumblr": {
+    "primary-color": "229 249 255",
+    "secondary-color": "0 0 0",
+    "action-color": "0 184 255",
+    "brand-color": "0 184 255"
+  },
+  "webmd": {
+    "primary-color": "229 231 243",
+    "secondary-color": "0 0 0",
+    "action-color": "0 21 124",
+    "brand-color": "0 21 124"
+  },
+  "default": {
+    "primary-color": "247 186 48",
+    "secondary-color": "0 48 69",
+    "action-color": "0 48 69",
+    "brand-color": "247 186 48"
+  },
+  "abcd": {
+    "primary-color": "59 130 246",
+    "secondary-color": "16 185 129",
+    "action-color": " 239 68 68",
+    "brand-color": "247 186 48"
+  },
+  "dav": {
+    "primary-color": "59 130 246",
+    "secondary-color": "16 185 129",
+    "action-color": "239 68 68",
+    "brand-color": "247 186 48"
+  },
+  "davooo": {
+    "primary-color": "255 255 215",
+    "secondary-color": "1 87 113",
+    "action-color": "23 136 163",
+    "brand-color": "27 139 148"
+  },
+  "alpha009": {
+    "primary-color": "255 255 215",
+    "secondary-color": "1 87 212",
+    "action-color": "23 136 163",
+    "brand-color": "27 139 148"
+  }
 }

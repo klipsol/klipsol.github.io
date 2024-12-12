@@ -3,6 +3,18 @@ import { NextResponse } from "next/server";
 import fs from "fs/promises";
 import path from "path";
 
+// Helper function to safely read JSON file
+async function readJsonFile(filePath) {
+  try {
+    const fileContents = await fs.readFile(filePath, "utf8");
+    return JSON.parse(fileContents);
+  } catch (error) {
+    // If file doesn't exist or is invalid, return an empty object
+    console.warn(`Error reading file ${filePath}:`, error);
+    return {};
+  }
+}
+
 // Helper function to write JSON file safely
 async function writeJsonFile(filePath, data) {
   try {
@@ -18,6 +30,21 @@ async function writeJsonFile(filePath, data) {
   }
 }
 
+// Deep merge function
+function deepMerge(target, source) {
+  for (const key in source) {
+    if (source.hasOwnProperty(key)) {
+      if (source[key] instanceof Object) {
+        if (!target[key]) Object.assign(target, { [key]: {} });
+        deepMerge(target[key], source[key]);
+      } else {
+        Object.assign(target, { [key]: source[key] });
+      }
+    }
+  }
+  return target;
+}
+
 // POST request handler
 export async function POST(request) {
   try {
@@ -25,41 +52,55 @@ export async function POST(request) {
     const body = await request.json();
 
     // Validate incoming data
-    if (!body.metadata || !body.videoconfig || !body.themeconfig) {
+    if (!body.metadata && !body.videoconfig && !body.themeconfig) {
       return NextResponse.json(
-        { error: "Missing required configuration data" },
+        { error: "No configuration data provided" },
         { status: 400 }
       );
     }
 
+    // Define file paths
     const metadataPath = path.resolve("./app/Data/metaData.json");
     const videoConfigPath = path.resolve("./app/Data/videoconfig.json");
     const themeConfigPath = path.resolve("./app/Data/themeconfig.json");
 
-    // Write each configuration file
-    const metadataWrite = await writeJsonFile(metadataPath, body.metadata);
-    const videoConfigWrite = await writeJsonFile(
-      videoConfigPath,
-      body.videoconfig
-    );
-    const themeConfigWrite = await writeJsonFile(
-      themeConfigPath,
-      body.themeconfig
-    );
+    // Prepare update results
+    const updateResults = {};
 
-    if (!metadataWrite || !videoConfigWrite || !themeConfigWrite) {
-      return NextResponse.json(
-        { error: "Failed to write one or more configuration files" },
-        { status: 500 }
+    // Update metadata if provided
+    if (body.metadata) {
+      const existingMetadata = await readJsonFile(metadataPath);
+      const updatedMetadata = deepMerge(existingMetadata, body.metadata);
+      await writeJsonFile(metadataPath, updatedMetadata);
+      updateResults.metadata = updatedMetadata;
+    }
+
+    // Update video config if provided
+    if (body.videoconfig) {
+      const existingVideoConfig = await readJsonFile(videoConfigPath);
+      const updatedVideoConfig = deepMerge(
+        existingVideoConfig,
+        body.videoconfig
       );
+      await writeJsonFile(videoConfigPath, updatedVideoConfig);
+      updateResults.videoconfig = updatedVideoConfig;
+    }
+
+    // Update theme config if provided
+    if (body.themeconfig) {
+      const existingThemeConfig = await readJsonFile(themeConfigPath);
+      const updatedThemeConfig = deepMerge(
+        existingThemeConfig,
+        body.themeconfig
+      );
+      await writeJsonFile(themeConfigPath, updatedThemeConfig);
+      updateResults.themeconfig = updatedThemeConfig;
     }
 
     // Prepare response with confirmation
     const response = {
       message: "Configurations updated successfully",
-      metadata: body.metadata,
-      videoconfig: body.videoconfig,
-      themeconfig: body.themeconfig,
+      ...updateResults,
     };
 
     return NextResponse.json(response, { status: 201 });

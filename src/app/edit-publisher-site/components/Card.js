@@ -1,3 +1,4 @@
+import { useRouter } from "next/navigation";
 import React from "react";
 
 export default function Card({
@@ -9,6 +10,7 @@ export default function Card({
   onclick,
   indx,
 }) {
+  const router = useRouter();
   return (
     <div
       className="w-full max-w-4xl mx-auto bg-gray-700 rounded-2xl shadow-md overflow-hidden transition-all duration-300 ease-in-out hover:shadow-lg group sticky border-white/50 border"
@@ -44,7 +46,9 @@ export default function Card({
                          focus:ring-2 
                          focus:ring-gray-500 
                          focus:ring-opacity-50"
-              onClick={onclick}
+              onClick={() =>
+                router.push("/create-publisher-site?publisher=" + name)
+              }
             >
               {label}
             </button>

@@ -1,11 +1,10 @@
 "use client";
 
 import React, { useEffect, useState } from "react";
-import { publisherMetaData } from "../Data/metaData";
-import { publisherConfig } from "../Data/PublisherConfig";
 import Search from "./components/Search";
 import { transformPublisherMetadata } from "../utils/editUtils";
 import Card from "./components/Card";
+import publisherMetaData from "../../../app/Data/metadata";
 
 export default function page() {
   const [searchtext, setSearchtext] = useState("");
