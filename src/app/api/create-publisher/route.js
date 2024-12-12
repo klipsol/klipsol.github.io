@@ -34,9 +34,11 @@ async function writeJsonFile(filePath, data) {
 function deepMerge(target, source) {
   for (const key in source) {
     if (source.hasOwnProperty(key)) {
-      if (source[key] instanceof Object) {
+      if (source[key] instanceof Object && !(source[key] instanceof Array)) {
         if (!target[key]) Object.assign(target, { [key]: {} });
         deepMerge(target[key], source[key]);
+      } else if (source[key] instanceof Array) {
+        Object.assign(target, { [key]: source[key] });
       } else {
         Object.assign(target, { [key]: source[key] });
       }

@@ -13,7 +13,7 @@ import {
 import { useSearchParams } from "next/navigation";
 
 import videoconfig from "../../../app/Data/videoconfig.json";
-import metadata from "../../../app/Data/metadata.json";
+import metadata from "../../../app/Data/metaData.json";
 import themeconfig from "../../../app/Data/themeconfig.json";
 import { RGBColorInput } from "./Components/RGBColorInput";
 import { MediaPreview } from "./Components/MediaPreview";
@@ -49,7 +49,6 @@ export default function SiteConfigurationPage() {
     setLoading(true);
     if (publisher) {
       setSiteName(publisher);
-      console.log("sdfs", { ...videoconfig[publisher] });
       if (videoconfig[publisher]) {
         setVideoUrls({ ...videoconfig[publisher] });
       }
