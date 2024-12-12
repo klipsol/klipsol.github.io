@@ -11,6 +11,7 @@
 	"dependencies": {
 		"@formspree/react": "^2.5.1",
 		"@gsap/react": "^2.1.1",
+		"axios": "^1.7.9",
 		"clsx": "^2.1.1",
 		"gsap": "^3.12.5",
 		"lucide-react": "^0.461.0",
@@ -22,6 +23,8 @@
 		"tailwind-merge": "^2.5.4"
 	},
 	"devDependencies": {
+		"@types/node": "22.10.2",
+		"@types/react": "19.0.1",
 		"eslint": "^8",
 		"eslint-config-next": "15.0.1",
 		"postcss": "^8",

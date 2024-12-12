@@ -1,0 +1,16 @@
+import { publisherMetaData } from '@/app/Data/metaData';
+import Publisher2 from '@/app/the-bump/page';
+import type { Metadata } from 'next';
+
+export async function generateMetadata({ params }): Promise<Metadata> {
+  const publisher = await params;
+  const publisherName = publisher['publisherId'][0];
+  const metaData = publisherMetaData[publisherName] ?? {};
+  return {
+    ...metaData,
+  };
+}
+
+export default function page() {
+  return <Publisher2 />;
+}
