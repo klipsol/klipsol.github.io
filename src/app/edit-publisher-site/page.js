@@ -4,12 +4,15 @@ import React, { useEffect, useState } from "react";
 import Search from "./components/Search";
 import { transformPublisherMetadata } from "../utils/editUtils";
 import Card from "./components/Card";
-import publisherMetaData from "../../../app/Data/metadata";
+import publisherMetaData from "../../../app/Data/metaData.json";
+import { useRouter } from "next/navigation";
 
 export default function page() {
   const [searchtext, setSearchtext] = useState("");
   const allSites = transformPublisherMetadata(publisherMetaData);
   const [siteList, setSiteList] = useState(allSites);
+
+  const router = useRouter();
 
   const updateSearchTxt = (e) => setSearchtext(e.target.value);
 
@@ -23,7 +26,10 @@ export default function page() {
     <main className="bg-white h-screen pt-3">
       <nav className="sec-container w-full rounded-3xl p-3 flex justify-around bg-gray-700  shadow-xl ">
         <Search value={searchtext} updateSearchTxt={updateSearchTxt} />
-        <button className="bg-white px-3 py-1 font-medium rounded-3xl text-gray-700">
+        <button
+          className="bg-white px-3 py-1 font-medium rounded-3xl text-gray-700"
+          onClick={() => router.push("/create-publisher-site")}
+        >
           Create New Site
         </button>
       </nav>
