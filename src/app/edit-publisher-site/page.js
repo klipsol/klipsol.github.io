@@ -7,7 +7,7 @@ import Card from "./components/Card";
 import publisherMetaData from "../../../Data/metaData.json";
 import { useRouter } from "next/navigation";
 
-export default function page() {
+export default function SiteList() {
   const [searchtext, setSearchtext] = useState("");
   const allSites = transformPublisherMetadata(publisherMetaData);
   const [siteList, setSiteList] = useState(allSites);
