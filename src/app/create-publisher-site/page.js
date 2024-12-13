@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useEffect, useRef, useState } from "react";
+import React, { Suspense, useEffect, useRef, useState } from "react";
 import {
   ChevronRight,
   Upload,
@@ -18,7 +18,7 @@ import themeconfig from "../../../Data/themeconfig.json";
 import { RGBColorInput } from "./Components/RGBColorInput";
 import { MediaPreview } from "./Components/MediaPreview";
 import { useRouter } from "next/navigation";
-export default function SiteConfigurationPage() {
+function SiteConfigurationPageContent() {
   const [siteName, setSiteName] = useState("");
   const [logoUrl, setLogoUrl] = useState("");
   const [colors, setColors] = useState({
@@ -225,5 +225,13 @@ export default function SiteConfigurationPage() {
         </div>
       </div>
     </div>
+  );
+}
+
+export default function SiteConfigurationPage() {
+  return (
+    <Suspense fallback={<div>Loading...</div>}>
+      <SiteConfigurationPageContent />
+    </Suspense>
   );
 }

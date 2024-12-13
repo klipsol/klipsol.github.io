@@ -12,6 +12,7 @@ export default function ROICalculator() {
   const [inputValue, setInputValue] = useState(100000);
   const [min, setMin] = useState(getProfit(inputValue, 0.1));
   const [max, setMax] = useState(getProfit(inputValue, 1.5));
+  const inputRef = useRef(null);
 
   useEffect(() => {
     setPublisher(localStorage.getItem("publisher"));
