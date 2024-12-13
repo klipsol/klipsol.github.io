@@ -1,9 +1,9 @@
-"use client";
-import Script from "next/script";
-import { useParams, useSearchParams } from "next/navigation";
-import Navbar from "@/app/roi-calculator/Components/Navbar";
-import PreviewTabs from "../Components/TabSection/PreviewTabs";
-import { getWidgetUrl } from "@/app/Data/publishers";
+'use client';
+import { getWidgetUrl } from '@/app/Data/publishers';
+import Navbar from '@/app/roi-calculator/Components/Navbar';
+import { useParams } from 'next/navigation';
+import Script from 'next/script';
+import PreviewTabs from '../Components/TabSection/PreviewTabs';
 
 const Page = () => {
   const params = useParams();
@@ -26,10 +26,8 @@ const Page = () => {
                   
                   const response = await fetch(url);
                   const data = await response.json();
-                  console.log('Fetched data:', data);
                   
                   const productsForPage = data[currentPageUrl];
-                  console.log('Products for page:', productsForPage);
                   
                   return productsForPage || { inline: {}, dynamic: [] };
                 } catch (error) {
