@@ -1,12 +1,11 @@
-'use client';
+"use client";
 
-import { useParams, usePathname } from 'next/navigation';
-import { useEffect, useRef, useState } from 'react';
-import { getProfit } from '../utils/roiUtils';
-import Navbar from './Components/Navbar';
+import { useParams, usePathname } from "next/navigation";
+import { useEffect, useRef, useState } from "react";
+import { getProfit } from "../utils/roiUtils";
+import Navbar from "./Components/Navbar";
 
 export default function ROICalculator() {
-  const inputRef = useRef(null);
   const pathname = usePathname();
   const params = useParams();
   const [publisher, setPublisher] = useState();
@@ -15,17 +14,17 @@ export default function ROICalculator() {
   const [max, setMax] = useState(getProfit(inputValue, 1.5));
 
   useEffect(() => {
-    setPublisher(localStorage.getItem('publisher'));
+    setPublisher(localStorage.getItem("publisher"));
   }, []);
   const handleInputChange = (event) => {
     const inputValue = event.target.value;
 
     if (
-      (inputValue === '' || /^[1-9]\d*$/.test(inputValue)) &&
+      (inputValue === "" || /^[1-9]\d*$/.test(inputValue)) &&
       inputValue <= 10000000000
     ) {
       setInputValue(inputValue);
-      if (inputValue !== '') {
+      if (inputValue !== "") {
         setMin(getProfit(inputValue, 0.1));
         setMax(getProfit(inputValue, 1.5));
       } else {
@@ -108,12 +107,12 @@ export default function ROICalculator() {
                 </li>
                 <li className="text-base lg:text-xl font-medium text-[#1D234E]">
                   {`$${
-                    inputValue === ''
-                      ? '0'
+                    inputValue === ""
+                      ? "0"
                       : ((min / inputValue).toFixed(2) * 1000).toLocaleString()
                   } - $${
-                    inputValue === ''
-                      ? '0'
+                    inputValue === ""
+                      ? "0"
                       : ((max / inputValue).toFixed(2) * 1000).toLocaleString()
                   }`}
                 </li>
@@ -174,12 +173,12 @@ export default function ROICalculator() {
             </li>
             <li className="text-[#1D234E] lg:text-xl font-medium">
               {`$${
-                inputValue === ''
-                  ? '0'
+                inputValue === ""
+                  ? "0"
                   : ((min / inputValue).toFixed(2) * 1000 * 4).toLocaleString()
               } - $${
-                inputValue === ''
-                  ? '0'
+                inputValue === ""
+                  ? "0"
                   : ((max / inputValue).toFixed(2) * 1000 * 4).toLocaleString()
               }`}
             </li>
@@ -217,7 +216,7 @@ export default function ROICalculator() {
             Bundle Other Offering Like Subscription
           </p>
           <a
-            href={'/widget/' + publisher + '?tab=2'}
+            href={"/widget/" + publisher + "?tab=2"}
             className="text-[12px] text-[#1D234E]"
           >
             Know More
