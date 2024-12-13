@@ -104,7 +104,7 @@ function SiteConfigurationPageContent() {
       redirect: "follow",
     };
 
-    fetch("http://localhost:3000/api/create-publisher", requestOptions)
+    fetch(location.origin, requestOptions)
       .then((response) => response.text())
       .then((result) => console.log(result))
       .catch((error) => console.error(error));
