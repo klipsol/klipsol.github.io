@@ -74,7 +74,7 @@ const fireEvents = (eventName, eventPayload) => {
   if (!isDemoOrStaging) {
     fireBeacon(eventData);
   } else if (/^localhost$/i.test(window.location.hostname)) {
-    console.log('fired event', JSON.stringify(eventData));
+    console.log('fired event', eventData);
   }
 };
 

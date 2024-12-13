@@ -54,10 +54,10 @@ export default function Navbar({ customBg }) {
   };
 
   const handleEvent = () => {
-    console.log('Beacon event triggered!');
-    console.log('Scroll Position:', scrollPosition);
-    console.log('Visible Component:', visibleComponent);
-
+    beaconEvents.fireEvents('page-scroll', {
+      'scroll-position-y': scrollPosition,
+      component: visibleComponent,
+    });
     // Additional beacon event logic can go here
   };
 
