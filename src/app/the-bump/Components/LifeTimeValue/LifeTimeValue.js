@@ -1,13 +1,16 @@
-"use client";
-import useAssets from "@/app/hooks/useAssets";
-import DPVideo from "../DPVideo/DPVideo";
-import HighlightedText from "../HighlightedText/HighlightedText";
+'use client';
+import useAssets from '@/app/hooks/useAssets';
+import DPVideo from '../DPVideo/DPVideo';
+import HighlightedText from '../HighlightedText/HighlightedText';
 
 export default function LifeTimeValue() {
-  const listItems = ["Higher Engagement", "Bundle Subscriptions"];
+  const listItems = ['Higher Engagement', 'Bundle Subscriptions'];
   const { c } = useAssets();
   return (
-    <section className="sec-container h-fit lg:h-screen sm:pb-10 relative flex sm:px-[10px] lg:flex-row sm:flex-col-reverse  w-full">
+    <section
+      id="heigher-lifetime-value"
+      className="scrollable-component sec-container h-fit lg:h-screen sm:pb-10 relative flex sm:px-[10px] lg:flex-row sm:flex-col-reverse  w-full"
+    >
       <div className="lg:w-[65%] md:h-[50vh] sm:w-full flex gap-x-3 mt-4 lg:mt-0">
         <div className="lg:h-screen sm:h-full bg-[#EEF0F8] sm:rounded-t-3xl lg:rounded-none overflow-hidden w-[50%]">
           <div className="lg:hidden bg-[#C4C7D5] text-[#234651] py-3 items-center subtitle font-semibold flex justify-center">
@@ -16,7 +19,7 @@ export default function LifeTimeValue() {
           <div className="flex h-full justify-center items-center flex-col">
             {/* <DPVideo className="h-fit sm:mt-[-20px] sm:mb-[15px]" src={'/vid2.mp4'} /> */}
             <div className="flex h-[80%] sm:mb-[15px] md:mb-0 items-center justify-center">
-              <DPVideo className="h-[90%]" src={"/vid2.mp4"} />
+              <DPVideo className="h-[90%]" src={'/vid2.mp4'} />
             </div>
             <p className="text-center text-[#254652] subtitle sm:w-[80%] lg:text-[24px] lg:w-full text-lg font-medium 2xl:text-2xl">
               <span className="font-bold">Third Party</span> User Control
@@ -46,7 +49,7 @@ export default function LifeTimeValue() {
             <HighlightedText
               text="Higher"
               wrapperClass="bottom-1 h-[30%] font-semibold"
-            />{" "}
+            />{' '}
             <br />
             <span className="font-normal">Lifetime Value</span>
           </h1>

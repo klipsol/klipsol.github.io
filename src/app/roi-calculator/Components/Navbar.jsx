@@ -1,8 +1,9 @@
 'use client';
 import Calendly from '@/app/the-bump/Components/Calendly/Calendly';
+import { beaconEvents } from '@/app/utils/events';
 import Link from 'next/link';
 import { useParams, usePathname } from 'next/navigation';
-import { useEffect, useState } from 'react';
+import { useCallback, useEffect, useState } from 'react';
 import { twMerge } from 'tailwind-merge';
 
 export default function Navbar({ customBg }) {
@@ -14,16 +15,100 @@ export default function Navbar({ customBg }) {
   const openModal = () => setIsModalOpen(true);
   const closeModal = () => setIsModalOpen(false);
   const [publisher, setPublisher] = useState();
+  const [scrollTimeout, setScrollTimeout] = useState(null);
+  const [visibleComponent, setVisibleComponent] = useState(null);
+  const [scrollPosition, setScrollPosition] = useState(0);
 
   useEffect(() => {
     setPublisher(localStorage.getItem('publisher'));
   }, []);
 
-  // const handleRoiRedirect = () => {
-  //   if (location.pathname !== '/roi-calculator') {
-  //     router.push('/roi-calculator');
-  //   }
-  // };
+  // Track the visible component and current scroll position
+
+  // Function to find the visible component based on scroll position
+  const findVisibleComponent = () => {
+    const elements = document.querySelectorAll('.scrollable-component'); // Update this selector based on your component class or id
+    let found = null;
+    const viewportHeight = window.innerHeight;
+
+    elements.forEach((element) => {
+      const rect = element.getBoundingClientRect();
+      // Element is considered visible if it's partially in the viewport
+      // We add a buffer zone (e.g., 100px) to make detection more forgiving
+      const buffer = 100;
+      const isVisible =
+        (rect.top >= -buffer && rect.top <= viewportHeight) || // Top edge is in view (with buffer)
+        (rect.bottom >= 0 && rect.bottom <= viewportHeight + buffer) || // Bottom edge is in view (with buffer)
+        (rect.top <= 0 && rect.bottom >= viewportHeight); // Element spans the viewport
+
+      if (isVisible) {
+        found = element;
+      }
+    });
+
+    if (found) {
+      setVisibleComponent(found.id || found.getAttribute('name') || 'Unknown');
+    } else {
+      setVisibleComponent('None');
+    }
+  };
+
+  const handleEvent = () => {
+    console.log('Beacon event triggered!');
+    console.log('Scroll Position:', scrollPosition);
+    console.log('Visible Component:', visibleComponent);
+
+    // Additional beacon event logic can go here
+  };
+
+  const onScroll = useCallback(
+    (event) => {
+      const currentScrollPosition = window.scrollY;
+
+      // Update the current scroll position
+      setScrollPosition(currentScrollPosition);
+
+      // Clear the previous timeout when a new scroll happens
+      if (scrollTimeout) {
+        clearTimeout(scrollTimeout);
+      }
+
+      // Find the visible component
+      findVisibleComponent();
+
+      // Set a new timeout to trigger the beacon event after 500ms of inactivity
+      const newTimeout = setTimeout(() => {
+        handleEvent(); // Trigger beacon event after scroll stops
+      }, 500);
+
+      // Update the timeout state
+      setScrollTimeout(newTimeout);
+    },
+    [scrollTimeout]
+  );
+
+  useEffect(() => {
+    // Add scroll event listener
+    window.addEventListener('scroll', onScroll, { passive: true });
+
+    return () => {
+      // Clean up the event listener on unmount
+      window.removeEventListener('scroll', onScroll, { passive: true });
+
+      // Clear any existing timeout if the component unmounts
+      if (scrollTimeout) {
+        clearTimeout(scrollTimeout);
+      }
+    };
+  }, [onScroll, scrollTimeout]);
+
+  const handleBeaconEvent = (e) => {
+    let elementId = e.target.id || e.currentTarget.id || '';
+    if (e.target.nodeName === 'BUTTON') {
+      elementId = 'calendly-button';
+    }
+    beaconEvents.fireEvents(`nav-item-click`, { item_name: elementId });
+  };
 
   return (
     <>
@@ -54,8 +139,9 @@ export default function Navbar({ customBg }) {
             <div className="text-sm md:gap-x-6 text-center gap-y-2 items-center pt-0 w-full md:w-fit justify-between hidden sm:flex sm:flex-row md:flex-row lg:flex">
               {/* <LivePreviewLinks /> */}
               <Link
+                onClick={handleBeaconEvent}
+                id="roi-calculator"
                 href="/roi-calculator"
-                // onClick={handleRoiRedirect}
                 className="rounded-[24px] bg-secondaryBg px-4 py-1 text-white font-medium"
                 // variant="primary"
               >
@@ -65,12 +151,17 @@ export default function Navbar({ customBg }) {
                 <div className="bg-[#004A6C] lg:h-6 h-8 w-0.5"></div>
               )}
               {pathname !== '/' && (
-                <div className="rounded-[24px] text-white  px-4 py-1  font-medium">
-                  <Calendly />
+                <div
+                  onClick={handleBeaconEvent}
+                  className="rounded-[24px] text-white  px-4 py-1  font-medium"
+                >
+                  <Calendly handleBeaconEvent={handleBeaconEvent} />
                 </div>
               )}
               <div className="bg-[#004A6C] lg:h-6 h-8 w-0.5"></div>
               <Link
+                onClick={handleBeaconEvent}
+                id="all-features"
                 href="/features"
                 className="rounded-[24px] text-white px-4 py-1 md:text-white font-medium"
               >

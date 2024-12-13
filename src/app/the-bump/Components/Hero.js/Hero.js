@@ -1,5 +1,6 @@
 'use client';
 import useAssets from '@/app/hooks/useAssets';
+import { beaconEvents } from '@/app/utils/events';
 import { useParams } from 'next/navigation';
 import { useEffect, useState } from 'react';
 import { twMerge } from 'tailwind-merge';
@@ -20,6 +21,11 @@ const Hero = () => {
     }
     localStorage.setItem('publisher', publisher);
   }, []);
+
+  const handleBeaconEvent = (e) => {
+    let elementId = e.target.id || e.currentTarget.id || '';
+    beaconEvents.fireEvents(`widget-demo-click`, { item_name: elementId });
+  };
 
   return (
     <>
@@ -73,7 +79,9 @@ const Hero = () => {
 
             <div className="z-50 sec-container xxl:text-[1.4em] inset-0 md:my-[50px]">
               <a
+                id="live-preview-desktop"
                 href={'/widget/' + pubName.split(' ').join('-')}
+                onClick={handleBeaconEvent}
                 className={twMerge(
                   'relative flex flex-col cursor-pointer bg-action rounded-[46px] py-2 xxl:py-3 xxl:rounded-[50px] sm:w-[225px] 2xl:w-[235px] px-10',
                   publisher === 'dpanda' && 'bg-primary'

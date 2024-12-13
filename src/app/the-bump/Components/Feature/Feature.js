@@ -1,14 +1,17 @@
-"use client";
-import useAssets from "@/app/hooks/useAssets";
-import DPVideo from "../DPVideo/DPVideo";
-import HighlightedText from "../HighlightedText/HighlightedText";
+'use client';
+import useAssets from '@/app/hooks/useAssets';
+import DPVideo from '../DPVideo/DPVideo';
+import HighlightedText from '../HighlightedText/HighlightedText';
 
 export default function Feature() {
-  const listItems = ["Higher Conversion"];
+  const listItems = ['Higher Conversion'];
   const { a2, b2 } = useAssets();
 
   return (
-    <section className="sec-container h-fit lg:h-screen sm:pb-10 relative flex sm:px-[10px] lg:flex-row sm:flex-col-reverse  w-full">
+    <section
+      id="better-user-experience"
+      className="scrollable-component sec-container h-fit lg:h-screen sm:pb-10 relative flex sm:px-[10px] lg:flex-row sm:flex-col-reverse  w-full"
+    >
       <div className="lg:w-[65%] md:h-[50vh] sm:w-full flex gap-x-3 mt-4 lg:mt-0">
         <div className="lg:h-screen sm:h-full bg-[#EEF0F8] rounded-t-3xl overflow-hidden w-[50%]">
           <div className="bg-[#C4C7D5] text-[#234651] py-2 items-center subtitle font-bold flex justify-center">
@@ -33,7 +36,7 @@ export default function Feature() {
               <DPVideo className="h-[90%]" src={b2} />
             </div>
             <p className="text-center text-[#254652] subtitle sm:w-[80%] lg:text-[24px] lg:w-full text-lg font-medium 2xl:text-2xl">
-              Click & <br className="lg:hidden" />{" "}
+              Click & <br className="lg:hidden" />{' '}
               <span className="font-bold">Convert</span>
             </p>
           </div>
@@ -48,7 +51,7 @@ export default function Feature() {
             <HighlightedText
               text="Better"
               wrapperClass="bottom-1 h-[30%] font-bold"
-            />{" "}
+            />{' '}
             <br />
             <span className="font-medium">User Experience</span>
           </h1>

@@ -2,7 +2,7 @@ import Link from 'next/link';
 
 export default function Footer() {
   return (
-    <footer>
+    <footer id="footer" className="scrollable-component">
       <div className="bg-[#013046] lg:h-[116px] w-full text-white sm:py-8 sm:px-[15px] lg:p-0">
         <div className="w-full h-full sec-container mx-auto flex justify-between lg:items-center box-border sm:flex-col lg:flex-row">
           <div className="custom-text-xs h-full lg:justify-center w-fit flex flex-col">

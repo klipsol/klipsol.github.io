@@ -18,14 +18,11 @@ export default function ROICalculator() {
     setPublisher(localStorage.getItem('publisher'));
   }, []);
   const handleInputChange = (event) => {
-    const inputValue = event.target.value;
+    const inputValue = Number(event.target.value);
 
-    if (
-      (inputValue === '' || /^[1-9]\d*$/.test(inputValue)) &&
-      inputValue <= 10000000000
-    ) {
+    if (inputValue <= 10000000000) {
       setInputValue(inputValue);
-      if (inputValue !== '') {
+      if (inputValue) {
         setMin(getProfit(inputValue, 0.1));
         setMax(getProfit(inputValue, 1.5));
       } else {
@@ -43,12 +40,12 @@ export default function ROICalculator() {
     }
   };
   return (
-    <main className="my-12">
+    <main className="mb-12">
       <Navbar />
 
       <section
-        id="roi-calc"
-        className="my-8 max-w-2xl m-auto px-2 lg:flex-row lg:flex lg:max-w-[1280px] lg:items-center "
+        id="roi-calculator"
+        className="scrollable-component my-8 max-w-2xl m-auto px-2 lg:flex-row lg:flex lg:max-w-[1280px] lg:items-center "
       >
         <div className="lg:max-w-xs lg:mr-10">
           <h1 className="text-4xl lg:text-5xl text-center lg:text-start text-[#1D234E] m-auto my-8 font-extrabold">
@@ -108,13 +105,17 @@ export default function ROICalculator() {
                 </li>
                 <li className="text-base lg:text-xl font-medium text-[#1D234E]">
                   {`$${
-                    inputValue === ''
-                      ? '0'
-                      : ((min / inputValue).toFixed(2) * 1000).toLocaleString()
+                    inputValue
+                      ? (
+                          Number(min / inputValue).toFixed(2) * 1000
+                        ).toLocaleString()
+                      : 0
                   } - $${
-                    inputValue === ''
-                      ? '0'
-                      : ((max / inputValue).toFixed(2) * 1000).toLocaleString()
+                    inputValue
+                      ? (
+                          Number(max / inputValue).toFixed(2) * 1000
+                        ).toLocaleString()
+                      : 0
                   }`}
                 </li>
               </ul>
@@ -131,7 +132,10 @@ export default function ROICalculator() {
         </div>
       </section>
 
-      <section id="compounding" className="my-8 max-w-2xl m-auto">
+      <section
+        id="compounding-effect"
+        className="scrollable-component my-8 max-w-2xl m-auto"
+      >
         <div className="text-[#1D234E] text-center my-8">
           <h2 className="font-bold text-3xl lg:text-4xl">Compounding Effect</h2>
           <p className="lg:mt-2 text-sm">
@@ -174,20 +178,31 @@ export default function ROICalculator() {
             </li>
             <li className="text-[#1D234E] lg:text-xl font-medium">
               {`$${
-                inputValue === ''
-                  ? '0'
-                  : ((min / inputValue).toFixed(2) * 1000 * 4).toLocaleString()
+                inputValue
+                  ? (
+                      Number(min / inputValue).toFixed(2) *
+                      1000 *
+                      4
+                    ).toLocaleString()
+                  : 0
               } - $${
-                inputValue === ''
-                  ? '0'
-                  : ((max / inputValue).toFixed(2) * 1000 * 4).toLocaleString()
+                inputValue
+                  ? (
+                      Number(max / inputValue).toFixed(2) *
+                      1000 *
+                      4
+                    ).toLocaleString()
+                  : 0
               }`}
             </li>
           </ul>
         </div>
       </section>
 
-      <section id="compounding" className="my-8 max-w-2xl m-auto">
+      <section
+        id="cac-reduction"
+        className="scrollable-component my-8 max-w-2xl m-auto"
+      >
         <div className="text-[#1D234E] text-center my-8">
           <h2 className="font-bold text-3xl">CAC Reduction</h2>
           <p className="lg:mt-1 text-sm">

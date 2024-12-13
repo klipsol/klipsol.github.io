@@ -1,9 +1,9 @@
-"use client"; // Important: This makes the component client-side rendered
+'use client'; // Important: This makes the component client-side rendered
 
-import React, { useEffect, useState } from "react";
-import { PopupButton } from "react-calendly";
+import { useEffect, useState } from 'react';
+import { PopupButton } from 'react-calendly';
 
-const Calendly = () => {
+const Calendly = ({ handleBeaconEvent }) => {
   const [rootElement, setRootElement] = useState(null);
 
   useEffect(() => {
@@ -18,12 +18,15 @@ const Calendly = () => {
           background-color: rgba(0, 0, 0, 0.5) !important;
         }
       `}</style>
-      {rootElement && (
+      {rootElement ? (
         <PopupButton
+          onClick={() => console.log('child')}
           url="https://calendly.com/rajat-dpanda/connect-with-rajat-ceo-dpanda"
           rootElement={rootElement}
           text="Talk to us"
         />
+      ) : (
+        <div id="error-calendly">Talk to us</div>
       )}
     </div>
   );
