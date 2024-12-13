@@ -130,5 +130,11 @@
     "secondary-color": "16 185 12",
     "action-color": "239 68 168",
     "brand-color": "16 185 126"
+  },
+  "askme": {
+    "primary-color": "255 255 15",
+    "secondary-color": "1 87 13",
+    "action-color": "130 36 119",
+    "brand-color": "27 139 15"
   }
 }

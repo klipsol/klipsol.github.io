@@ -4,7 +4,7 @@ import React, { useEffect, useState } from "react";
 import Search from "./components/Search";
 import { transformPublisherMetadata } from "../utils/editUtils";
 import Card from "./components/Card";
-import publisherMetaData from "../../../app/Data/metaData.json";
+import publisherMetaData from "../../../Data/metaData.json";
 import { useRouter } from "next/navigation";
 
 export default function page() {

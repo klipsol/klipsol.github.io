@@ -12,13 +12,12 @@ import {
 } from "lucide-react";
 import { useSearchParams } from "next/navigation";
 
-import videoconfig from "../../../app/Data/videoconfig.json";
-import metadata from "../../../app/Data/metaData.json";
-import themeconfig from "../../../app/Data/themeconfig.json";
+import videoconfig from "../../../Data/videoconfig.json";
+import metadata from "../../../Data/metaData.json";
+import themeconfig from "../../../Data/themeconfig.json";
 import { RGBColorInput } from "./Components/RGBColorInput";
 import { MediaPreview } from "./Components/MediaPreview";
 import { useRouter } from "next/navigation";
-
 export default function SiteConfigurationPage() {
   const [siteName, setSiteName] = useState("");
   const [logoUrl, setLogoUrl] = useState("");

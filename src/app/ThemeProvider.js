@@ -3,7 +3,7 @@
 import { useParams, usePathname } from "next/navigation";
 import { useEffect } from "react";
 
-import themeconfig from "../../app/Data/themeconfig.json";
+import themeconfig from "../../Data/themeconfig.json";
 
 const ThemeProvider = () => {
   const params = useParams();

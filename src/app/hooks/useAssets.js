@@ -1,7 +1,7 @@
 import { useParams } from "next/navigation";
 // import { publisherConfig } from '../Data/PublisherConfig';
 
-import publisherConfig from "../../../app/Data/videoconfig.json";
+import publisherConfig from "../../../Data/videoconfig.json";
 
 export default function useAssets() {
   const params = useParams();

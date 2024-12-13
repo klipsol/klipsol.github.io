@@ -62,9 +62,9 @@ export async function POST(request) {
     }
 
     // Define file paths
-    const metadataPath = path.resolve("./app/Data/metaData.json");
-    const videoConfigPath = path.resolve("./app/Data/videoconfig.json");
-    const themeConfigPath = path.resolve("./app/Data/themeconfig.json");
+    const metadataPath = path.resolve("./Data/metaData.json");
+    const videoConfigPath = path.resolve("./Data/videoconfig.json");
+    const themeConfigPath = path.resolve("./Data/themeconfig.json");
 
     // Prepare update results
     const updateResults = {};
