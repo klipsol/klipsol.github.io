@@ -1,6 +1,6 @@
 import React from "react";
 
-import themeconfig from "../Data/themeconfig.json";
+import themeconfig from "../../../Data/themeconfig.json";
 export default function ThemeWrapper({ children, className = "", publisher }) {
   const publisherTheme = themeconfig[publisher] ?? themeconfig.default;
   return (

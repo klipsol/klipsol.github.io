@@ -1,4 +1,4 @@
-import { publisherMetaData } from "@/app/Data/metaData";
+import publisherMetaData from "../../../../Data/metaData.json";
 import Publisher2 from "@/app/the-bump/page";
 
 export async function generateMetadata({ params, headers }) {

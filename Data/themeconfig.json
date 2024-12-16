@@ -100,41 +100,5 @@
     "secondary-color": "0 48 69",
     "action-color": "0 48 69",
     "brand-color": "247 186 48"
-  },
-  "abcd": {
-    "primary-color": "59 130 246",
-    "secondary-color": "16 185 129",
-    "action-color": " 239 68 68",
-    "brand-color": "247 186 48"
-  },
-  "dav": {
-    "primary-color": "59 130 246",
-    "secondary-color": "16 185 129",
-    "action-color": "239 68 68",
-    "brand-color": "247 186 48"
-  },
-  "davooo": {
-    "primary-color": "255 255 215",
-    "secondary-color": "1 87 113",
-    "action-color": "130 136 119",
-    "brand-color": "27 139 148"
-  },
-  "alpha009": {
-    "primary-color": "255 255 215",
-    "secondary-color": "1 87 212",
-    "action-color": "23 136 163",
-    "brand-color": "27 139 148"
-  },
-  "asitis": {
-    "primary-color": "59 130 24",
-    "secondary-color": "16 185 12",
-    "action-color": "239 68 168",
-    "brand-color": "16 185 126"
-  },
-  "askme": {
-    "primary-color": "255 55 15",
-    "secondary-color": "1 87 13",
-    "action-color": "130 138 19",
-    "brand-color": "27 139 150"
   }
 }
