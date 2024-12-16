@@ -6,7 +6,7 @@ import ScrollableNavbar from "../the-bump/Components/Nav/Nav2";
 import ThemeWrapper from "../Theme/ThemeWrapper";
 import FeatureCards from "./Components/FeatureCard";
 
-export default function features(params) {
+export default function Features(params) {
   const [publisher, setPublisher] = useState("");
   useEffect(() => {
     setPublisher(localStorage.getItem("publisher"));
