@@ -1,17 +1,36 @@
 import { useParams } from "next/navigation";
-// import { publisherConfig } from '../Data/PublisherConfig';
-
-import publisherConfig from "../../../Data/videoconfig.json";
+import { useEffect, useState } from "react";
+import { getSiteData } from "../utils/editUtils";
 
 export default function useAssets() {
   const params = useParams();
   const publisher = params?.publisherId?.[0] || "dpanda";
+  const [assets, setAssets] = useState({
+    heroVideo: null,
+    a2: null,
+    b2: null,
+    c: null,
+    d: null,
+  });
+  const [loading, setLoading] = useState(true);
 
-  const heroVideo = publisherConfig[publisher]?.["1"];
-  const a2 = publisherConfig[publisher]?.["2a"];
-  const b2 = publisherConfig[publisher]?.["2b"];
-  const c = publisherConfig[publisher]?.["3b"];
-  const d = publisherConfig[publisher]?.["4b"];
+  useEffect(() => {
+    (async () => {
+      const videoConfig = await getSiteData({
+        publisher,
+        configName: "videoconfig",
+      });
+      // Update the state with the fetched values
+      setAssets({
+        heroVideo: videoConfig?.["1"],
+        a2: videoConfig?.["2a"],
+        b2: videoConfig?.["2b"],
+        c: videoConfig?.["3b"],
+        d: videoConfig?.["4b"],
+      });
+      setLoading(false);
+    })();
+  }, [publisher]);
 
-  return { heroVideo, a2, b2, c, d };
+  return { ...assets, loading }; // Return the state object
 }

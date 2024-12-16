@@ -1,7 +1,14 @@
 import { NextResponse } from "next/server";
 import fs from "fs/promises";
 import path from "path";
-// GET request handler
+import os from "os";
+
+function getTempFilePath(filename) {
+  return path.join(os.tmpdir(), filename);
+}
+const tempMetaData = getTempFilePath("metaData.json");
+const tempVideoconfig = getTempFilePath("videoconfig.json");
+const tempThemeconfig = getTempFilePath("themeconfig.json");
 
 async function readJsonFile(filePath) {
   try {
@@ -13,27 +20,50 @@ async function readJsonFile(filePath) {
     return {};
   }
 }
-export async function GET() {
+export async function GET(request) {
   try {
     // Define file paths
-    const metadataPath = path.resolve("./Data/metaData.json");
-    const videoConfigPath = path.resolve("./Data/videoconfig.json");
-    const themeConfigPath = path.resolve("./Data/themeconfig.json");
+    const { searchParams } = request.nextUrl;
+    const publisher = searchParams.get("publisher");
+    const configName = searchParams.get("configName");
 
-    // Read all configuration files
+    let metadataPath;
+    let videoConfigPath;
+    let themeConfigPath;
+    const temp = await readJsonFile(tempMetaData);
+    if (Object.keys(temp).length > 0) {
+      metadataPath = tempMetaData;
+      videoConfigPath = tempVideoconfig;
+      themeConfigPath = tempThemeconfig;
+    } else {
+      metadataPath = path.resolve("./Data/metaData.json");
+      videoConfigPath = path.resolve("./Data/videoconfig.json");
+      themeConfigPath = path.resolve("./Data/themeconfig.json");
+    }
+
     const metadata = await readJsonFile(metadataPath);
     const videoConfig = await readJsonFile(videoConfigPath);
     const themeConfig = await readJsonFile(themeConfigPath);
 
-    // Prepare response object
-    const response = {
-      metadata,
-      videoconfig: videoConfig,
-      themeconfig: themeConfig,
-    };
+    let response = {};
+    if (publisher) {
+      response = {
+        metadata: metadata[publisher],
+        videoconfig: videoConfig[publisher],
+        themeconfig: themeConfig[publisher],
+      };
+    } else {
+      response = {
+        metadata,
+        videoconfig: videoConfig,
+        themeconfig: themeConfig,
+      };
+    }
 
     // Return the configurations
-    return NextResponse.json(response, { status: 200 });
+    return NextResponse.json(configName ? response[configName] : response, {
+      status: 200,
+    });
   } catch (error) {
     console.error("Configuration retrieval error:", error);
 

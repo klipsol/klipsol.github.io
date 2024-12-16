@@ -2,6 +2,15 @@
 import { NextResponse } from "next/server";
 import fs from "fs/promises";
 import path from "path";
+import os from "os";
+
+function getTempFilePath(filename) {
+  return path.join(os.tmpdir(), filename);
+}
+
+const tempMetaData = getTempFilePath("metaData.json");
+const tempVideoconfig = getTempFilePath("videoconfig.json");
+const tempThemeconfig = getTempFilePath("themeconfig.json");
 
 // Helper function to safely read JSON file
 async function readJsonFile(filePath) {
@@ -9,7 +18,6 @@ async function readJsonFile(filePath) {
     const fileContents = await fs.readFile(filePath, "utf8");
     return JSON.parse(fileContents);
   } catch (error) {
-    // If file doesn't exist or is invalid, return an empty object
     console.warn(`Error reading file ${filePath}:`, error);
     return {};
   }
@@ -61,10 +69,19 @@ export async function POST(request) {
       );
     }
 
-    // Define file paths
-    const metadataPath = path.resolve("./Data/metaData.json");
-    const videoConfigPath = path.resolve("./Data/videoconfig.json");
-    const themeConfigPath = path.resolve("./Data/themeconfig.json");
+    let metadataPath;
+    let videoConfigPath;
+    let themeConfigPath;
+    const temp = await readJsonFile(tempMetaData);
+    if (Object.keys(temp).length > 0) {
+      metadataPath = tempMetaData;
+      videoConfigPath = tempVideoconfig;
+      themeConfigPath = tempThemeconfig;
+    } else {
+      metadataPath = path.resolve("./Data/metaData.json");
+      videoConfigPath = path.resolve("./Data/videoconfig.json");
+      themeConfigPath = path.resolve("./Data/themeconfig.json");
+    }
 
     // Prepare update results
     const updateResults = {};
@@ -73,7 +90,8 @@ export async function POST(request) {
     if (body.metadata) {
       const existingMetadata = await readJsonFile(metadataPath);
       const updatedMetadata = deepMerge(existingMetadata, body.metadata);
-      await writeJsonFile(metadataPath, updatedMetadata);
+      console.log(">>>>>>>>>>>>>>> file path >>>>>>>>>>>>>>>>>>", tempMetaData);
+      await writeJsonFile(tempMetaData, updatedMetadata);
       updateResults.metadata = updatedMetadata;
     }
 
@@ -84,7 +102,7 @@ export async function POST(request) {
         existingVideoConfig,
         body.videoconfig
       );
-      await writeJsonFile(videoConfigPath, updatedVideoConfig);
+      await writeJsonFile(tempVideoconfig, updatedVideoConfig);
       updateResults.videoconfig = updatedVideoConfig;
     }
 
@@ -95,7 +113,7 @@ export async function POST(request) {
         existingThemeConfig,
         body.themeconfig
       );
-      await writeJsonFile(themeConfigPath, updatedThemeConfig);
+      await writeJsonFile(tempThemeconfig, updatedThemeConfig);
       updateResults.themeconfig = updatedThemeConfig;
     }
 
@@ -121,3 +139,106 @@ export async function POST(request) {
     );
   }
 }
+
+// import fs from "fs/promises";
+// import path from "path";
+// import os from "os";
+// import { NextResponse } from "next/server";
+
+// // Utility function to get a file path in the system's temp directory
+// function getTempFilePath(filename) {
+//   return path.join(os.tmpdir(), filename);
+// }
+
+// // Async function to read JSON file with error handling
+// async function readJsonFile(filePath) {
+//   try {
+//     const fileContents = await fs.readFile(filePath, "utf8");
+//     return JSON.parse(fileContents);
+//   } catch (error) {
+//     // If file doesn't exist or is invalid, return an empty object
+//     console.warn(`Error reading file ${filePath}:`, error);
+//     return {};
+//   }
+// }
+
+// // Async function to write JSON file
+// async function writeJsonFile(filePath, data) {
+//   try {
+//     await fs.writeFile(filePath, JSON.stringify(data, null, 2), "utf8");
+//     console.log(`Successfully wrote file: ${filePath}`);
+//   } catch (error) {
+//     console.error(`Error writing file ${filePath}:`, error);
+//     throw error;
+//   }
+// }
+
+// export async function GET() {
+//   try {
+//     // Define file paths in the system's temp directory
+//     const metadataPath = getTempFilePath("metaData.json");
+//     const videoConfigPath = getTempFilePath("videoconfig.json");
+//     const themeConfigPath = getTempFilePath("themeconfig.json");
+
+//     // Read all configuration files
+//     const metadata = await readJsonFile(metadataPath);
+//     const videoConfig = await readJsonFile(videoConfigPath);
+//     const themeConfig = await readJsonFile(themeConfigPath);
+
+//     // Prepare response object
+//     const response = {
+//       metadata,
+//       videoconfig: videoConfig,
+//       themeconfig: themeConfig,
+//     };
+
+//     // Return the configurations
+//     return NextResponse.json(response, { status: 200 });
+//   } catch (error) {
+//     console.error("Configuration retrieval error:", error);
+
+//     // Handle server errors
+//     return NextResponse.json(
+//       { error: "Unable to retrieve configurations" },
+//       { status: 500 }
+//     );
+//   }
+// }
+
+// // Optional: Export a POST method for updating configurations
+// export async function POST(request) {
+//   try {
+//     // Parse the incoming JSON data
+//     const data = await request.json();
+
+//     // Write files to temp directory
+//     if (data.metadata) {
+//       await writeJsonFile(getTempFilePath("metaData.json"), data.metadata);
+//     }
+
+//     if (data.videoconfig) {
+//       await writeJsonFile(
+//         getTempFilePath("videoconfig.json"),
+//         data.videoconfig
+//       );
+//     }
+
+//     if (data.themeconfig) {
+//       await writeJsonFile(
+//         getTempFilePath("themeconfig.json"),
+//         data.themeconfig
+//       );
+//     }
+
+//     return NextResponse.json(
+//       { message: "Configurations updated successfully" },
+//       { status: 200 }
+//     );
+//   } catch (error) {
+//     console.error("Configuration update error:", error);
+//     return NextResponse.json(
+//       { error: "Unable to update configurations" },
+//       { status: 500 }
+//     );
+//   }
+// }
