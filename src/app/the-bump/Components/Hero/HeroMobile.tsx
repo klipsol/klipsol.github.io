@@ -1,6 +1,7 @@
 'use client';
 import useAssets from '@/app/hooks/useAssets';
 import Navbar from '@/app/roi-calculator/Components/Navbar';
+import { beaconEvents } from '@/app/utils/events';
 import { useParams } from 'next/navigation';
 import { twMerge } from 'tailwind-merge';
 import DPVideo from '../DPVideo/DPVideo';
@@ -10,8 +11,14 @@ const HeroMobile = () => {
   const params = useParams();
   const publisher = params?.publisherId?.[0] || 'dpanda';
   const assets = useAssets();
+
+  const handleBeaconEvent = (e) => {
+    let elementId = e.target.id || e.currentTarget.id || '';
+    beaconEvents.fireEvents(`widget-demo-click`, { item_name: elementId });
+  };
+
   return (
-    <div className="block lg:hidden ">
+    <div id="hero-mobile" className="block lg:hidden scrollable-component">
       <Navbar customBg={publisher === 'dpanda' ? '#eebe50' : 'bg-primary'} />
       <div
         className={twMerge(
@@ -65,6 +72,8 @@ const HeroMobile = () => {
         <div className="top-[280px] px-4 pointer-events-auto text-sm z-30 w-full sec-container absolute  inset-0">
           <a
             href={'/widget/' + publisher}
+            id="live-preview-mobile"
+            onClick={handleBeaconEvent}
             className={twMerge(
               'flex flex-col z-[9999] cursor-pointer bg-action rounded-[46px] py-2 xxl:py-3 xxl:rounded-[50px] w-fit px-6',
               publisher === 'dpanda' && 'bg-primary'

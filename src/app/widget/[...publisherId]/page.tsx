@@ -26,10 +26,8 @@ const Page = () => {
                   
                   const response = await fetch(url);
                   const data = await response.json();
-                  console.log('Fetched data:', data);
                   
                   const productsForPage = data[currentPageUrl];
-                  console.log('Products for page:', productsForPage);
                   
                   return productsForPage || { inline: {}, dynamic: [] };
                 } catch (error) {

@@ -9,7 +9,7 @@ const FloatingCallout = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      const sectionPosition = sectionRef.current.getBoundingClientRect().top;
+      const sectionPosition = sectionRef.current?.getBoundingClientRect().top;
       const button = buttonRef.current;
       const image = imageRef.current;
       const windowHeight = window.innerHeight;

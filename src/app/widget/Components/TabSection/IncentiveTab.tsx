@@ -12,6 +12,7 @@ const Incentive = ({ selectedTab }) => {
         title="Enhanced Subscription Offering"
         subtitle="Turn your subscription into a powerhouse of value and exclusivity:"
         features={subscriberBenefitsData}
+        className="mt-0"
       />
       <FeaturesTable
         title="Loyalty That Rewards Your Choices"
@@ -22,6 +23,7 @@ const Incentive = ({ selectedTab }) => {
         title="Discovery That Rewards"
         subtitle="Combine exploration with rewards for a seamless, satisfying journey:"
         features={shoppingRewardsData}
+        className="mb-0"
       />
     </div>
   );

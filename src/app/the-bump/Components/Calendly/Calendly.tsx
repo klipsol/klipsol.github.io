@@ -24,7 +24,10 @@ const Calendly = () => {
           text="Talk to us"
         />
       ) : (
-        <div onClick={() => window.alert('Something went wrong!')}>
+        <div
+          onClick={() => window.alert('Something went wrong!')}
+          id="error-calendly"
+        >
           Talk to us
         </div>
       )}

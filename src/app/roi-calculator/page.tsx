@@ -6,13 +6,13 @@ import { getProfit } from '../utils/roiUtils';
 import Navbar from './Components/Navbar';
 
 export default function ROICalculator() {
-  const inputRef = useRef(null);
   const pathname = usePathname();
   const params = useParams();
   const [publisher, setPublisher] = useState('');
   const [inputValue, setInputValue] = useState(100000);
   const [min, setMin] = useState(getProfit(inputValue, 0.1));
   const [max, setMax] = useState(getProfit(inputValue, 1.5));
+  const inputRef = useRef(null);
 
   useEffect(() => {
     setPublisher(localStorage.getItem('publisher'));
@@ -44,8 +44,8 @@ export default function ROICalculator() {
       <Navbar customBg={null} />
 
       <section
-        id="roi-calc"
-        className="my-8 max-w-2xl m-auto px-2 lg:flex-row lg:flex lg:max-w-[1280px] lg:items-center "
+        id="roi-calculator"
+        className="scrollable-component my-8 max-w-2xl m-auto px-2 lg:flex-row lg:flex lg:max-w-[1280px] lg:items-center "
       >
         <div className="lg:max-w-xs lg:mr-10">
           <h1 className="text-4xl lg:text-5xl text-center lg:text-start text-[#1D234E] m-auto my-8 font-extrabold">
@@ -132,7 +132,10 @@ export default function ROICalculator() {
         </div>
       </section>
 
-      <section id="compounding" className="my-8 max-w-2xl m-auto">
+      <section
+        id="compounding-effect"
+        className="scrollable-component my-8 max-w-2xl m-auto"
+      >
         <div className="text-[#1D234E] text-center my-8">
           <h2 className="font-bold text-3xl lg:text-4xl">Compounding Effect</h2>
           <p className="lg:mt-2 text-sm">
@@ -196,7 +199,10 @@ export default function ROICalculator() {
         </div>
       </section>
 
-      <section id="compounding" className="my-8 max-w-2xl m-auto">
+      <section
+        id="cac-reduction"
+        className="scrollable-component my-8 max-w-2xl m-auto"
+      >
         <div className="text-[#1D234E] text-center my-8">
           <h2 className="font-bold text-3xl">CAC Reduction</h2>
           <p className="lg:mt-1 text-sm">

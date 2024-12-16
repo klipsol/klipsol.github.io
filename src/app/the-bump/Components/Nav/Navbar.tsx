@@ -1,15 +1,20 @@
 'use client';
 
+import { beaconEvents } from '@/app/utils/events';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { useState } from 'react';
 import Calendly from '../Calendly/Calendly';
 
 export default function Navbar() {
   const pathname = usePathname();
-  const [isModalOpen, setIsModalOpen] = useState(false);
-  const openModal = () => setIsModalOpen(true);
-  const closeModal = () => setIsModalOpen(false);
+
+  const handleBeaconEvent = (e) => {
+    let elementId = e.target.id || e.currentTarget.id || '';
+    if (e.target.nodeName === 'BUTTON') {
+      elementId = 'calendly-button';
+    }
+    beaconEvents.fireEvents(`nav-item-click`, { item_name: elementId });
+  };
   return (
     <>
       <div
@@ -33,6 +38,8 @@ export default function Navbar() {
           </div>
           <div className="min-w-[40%] md:relative md:gap-x-2 items-center flex-1 md:flex-none justify-around flex bg-secondary p-2 md:px-4 rounded-2xl rounded-t-none md:rounded-t-2xl">
             <Link
+              onClick={handleBeaconEvent}
+              id="roi-calculator"
               href="/roi-calculator"
               className="rounded-[24px] text-[16px] text-center bg-secondary/70 px-4 py-1 text-white font-medium"
             >
@@ -43,7 +50,7 @@ export default function Navbar() {
             )}
             {pathname !== '/' && (
               <div
-                onClick={openModal}
+                onClick={handleBeaconEvent}
                 className="rounded-[24px] text-[16px] text-white px-4 text-center py-1 font-medium"
               >
                 <Calendly />
@@ -56,6 +63,8 @@ export default function Navbar() {
             )}
             <div className="bg-secondary/70 h-6 w-0.5"></div>
             <Link
+              onClick={handleBeaconEvent}
+              id="all-features"
               href="/features"
               className="rounded-[24px] text-[16px] text-center bg-secondary px-4 py-1 text-white font-medium"
             >
@@ -64,8 +73,6 @@ export default function Navbar() {
           </div>
         </div>
       </div>
-
-      {/* <CalendlyModal isOpen={isModalOpen} onClose={closeModal} /> */}
     </>
   );
 }

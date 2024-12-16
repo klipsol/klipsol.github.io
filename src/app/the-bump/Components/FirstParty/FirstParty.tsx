@@ -7,7 +7,10 @@ export default function FirstParty() {
   const listItems = ['Brand & User Relationships', 'Unmatched Personalisation'];
   const { d } = useAssets();
   return (
-    <section className="sec-container h-fit lg:h-screen sm:pb-10 relative flex sm:px-[10px] lg:flex-row sm:flex-col-reverse  w-full">
+    <section
+      id="first-party-insights"
+      className="scrollable-component sec-container h-fit lg:h-screen sm:pb-10 relative flex sm:px-[10px] lg:flex-row sm:flex-col-reverse  w-full"
+    >
       <div className="lg:w-[65%] md:h-[50vh] sm:w-full flex gap-x-3 mt-4 lg:mt-0">
         <div className="lg:h-screen sm:h-full bg-[#EEF0F8] sm:rounded-t-3xl lg:rounded-none overflow-hidden w-[50%]">
           <div className="lg:hidden bg-[#C4C7D5] text-[#234651] py-3 items-center subtitle font-semibold flex justify-center">

@@ -1,4 +1,5 @@
 'use client';
+import { beaconEvents } from '@/app/utils/events';
 import Link from 'next/link';
 import { useParams, usePathname } from 'next/navigation';
 import { useEffect, useState } from 'react';
@@ -27,6 +28,15 @@ const ScrollableNavbar = ({ customBg }) => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  const handleBeaconEvent = (e) => {
+    let elementId = e.target.id || e.currentTarget.id || '';
+
+    if (e.target.nodeName === 'BUTTON') {
+      elementId = 'calendly-button';
+    }
+    beaconEvents.fireEvents(`nav-item-click`, { item_name: elementId });
+  };
+
   return (
     <nav
       className={`fixed top-0 w-full lg:shadow-lg text-white py-2 px-3 transition-opacity duration-300 p-2 md:px-8  bg-secondary rounded-b-2xl lg:py-1 lg:flex justify-center z-[100] ${
@@ -39,7 +49,11 @@ const ScrollableNavbar = ({ customBg }) => {
           href={'/widget/' + publisher}
           className="flex flex-col cursor-pointer lg:bg-black lg:rounded-3xl lg:px-7 lg:leading-[1.3] py-1"
         >
-          <div className="flex gap-x-2 items-center relative">
+          <div
+            id="live-preview-nav"
+            onClick={handleBeaconEvent}
+            className="flex gap-x-2 items-center relative"
+          >
             {/* <span className="bg-[#F7BA30]/80 w-2 h-2 rounded-full "></span> */}
             <span className="bg-[#F7BA30] w-2 h-2 rounded-full animate-ping [animation-duration:0.9s] absolute top-[30%] md:-left-3.5"></span>
             <span className="bg-[#F7BA30] w-2 h-2 rounded-full absolute top-[30%]  md:-left-3.5"></span>
@@ -53,6 +67,8 @@ const ScrollableNavbar = ({ customBg }) => {
         </a>
         <div className="bg-[#004A6C] h-7 w-0.5 lg:hidden"></div>
         <Link
+          onClick={handleBeaconEvent}
+          id="roi-calculator"
           href="/roi-calculator"
           // onClick={handleRoiRedirect}
           className="rounded-[24px]  px-4 py-1  font-medium"
@@ -65,7 +81,7 @@ const ScrollableNavbar = ({ customBg }) => {
         )}
         {pathname !== '/' && (
           <div
-            // onClick={openModal}
+            onClick={handleBeaconEvent}
             className="rounded-[24px]  px-4 py-1 md:text-white font-medium"
           >
             <Calendly />
@@ -73,7 +89,9 @@ const ScrollableNavbar = ({ customBg }) => {
         )}
         <div className="bg-[#004A6C] h-7 w-0.5 lg:hidden"></div>
         <Link
-          href={'/features'}
+          onClick={handleBeaconEvent}
+          id="all-features"
+          href="/features"
           className="rounded-[24px]  px-4 py-1 md:text-white font-medium"
         >
           All <br className="lg:hidden" /> Features
