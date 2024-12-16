@@ -1,15 +1,6 @@
-import { useRouter } from "next/navigation";
-import React from "react";
+import { useRouter } from 'next/navigation';
 
-export default function Card({
-  title,
-  name,
-  description,
-  image,
-  label,
-  onclick,
-  indx,
-}) {
+export default function Card({ title, name, description, image, label, indx }) {
   const router = useRouter();
   return (
     <div
@@ -47,7 +38,7 @@ export default function Card({
                          focus:ring-gray-500 
                          focus:ring-opacity-50"
               onClick={() =>
-                router.push("/create-publisher-site?publisher=" + name)
+                router.push('/create-publisher-site?publisher=' + name)
               }
             >
               {label}

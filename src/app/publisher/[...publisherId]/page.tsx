@@ -1,6 +1,6 @@
-import { publisherMetaData } from '@/app/Data/metaData';
 import Publisher2 from '@/app/the-bump/page';
 import type { Metadata } from 'next';
+import publisherMetaData from '../../../../Data/metaData.json';
 
 export async function generateMetadata({ params }): Promise<Metadata> {
   const publisher = await params;

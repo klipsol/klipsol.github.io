@@ -1,7 +1,14 @@
 // app/api/posts/route.js
-import { NextResponse } from "next/server";
 import fs from "fs/promises";
+import { NextResponse } from "next/server";
 import path from "path";
+
+interface UpdateResponse {
+  message: string;
+  metadata?: Metadata;
+  videoconfig?: VideoConfig;
+  themeconfig?: ThemeConfig;
+}
 
 // Helper function to safely read JSON file
 async function readJsonFile(filePath) {
@@ -67,7 +74,9 @@ export async function POST(request) {
     const themeConfigPath = path.resolve("./Data/themeconfig.json");
 
     // Prepare update results
-    const updateResults = {};
+    const updateResults:UpdateResponse = {
+      message: "Configurations updated successfully",
+    };
 
     // Update metadata if provided
     if (body.metadata) {
@@ -101,7 +110,7 @@ export async function POST(request) {
 
     // Prepare response with confirmation
     const response = {
-      message: "Configurations updated successfully",
+      
       ...updateResults,
     };
 

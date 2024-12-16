@@ -1,15 +1,15 @@
-"use client";
+'use client';
 
-import React, { useEffect, useState } from "react";
-import Search from "./components/Search";
+import { useEffect, useState } from 'react';
+import Search from './components/Search';
 // import { transformPublisherMetadata } from "../utils/editUtils";
-import Card from "./components/Card";
-import publisherMetaData from "../../../Data/metaData.json";
-import { useRouter } from "next/navigation";
-import { transformPublisherMetadata } from "../utils/editUtils";
+import { useRouter } from 'next/navigation';
+import publisherMetaData from '../../../Data/metaData.json';
+import { transformPublisherMetadata } from '../utils/editUtils';
+import Card from './components/Card';
 
 export default function SiteList() {
-  const [searchtext, setSearchtext] = useState("");
+  const [searchtext, setSearchtext] = useState('');
   const allSites = transformPublisherMetadata(publisherMetaData);
   const [siteList, setSiteList] = useState(allSites);
 
@@ -29,7 +29,7 @@ export default function SiteList() {
         <Search value={searchtext} updateSearchTxt={updateSearchTxt} />
         <button
           className="bg-white px-3 py-1 font-medium rounded-3xl text-gray-700"
-          onClick={() => router.push("/create-publisher-site")}
+          onClick={() => router.push('/create-publisher-site')}
         >
           Create New Site
         </button>
@@ -44,7 +44,7 @@ export default function SiteList() {
             description={description}
             image={openGraph?.images[0]}
             label="Edit"
-            onClick={() => {}}
+            // onClick={() => {}}
           />
         ))}
       </section>

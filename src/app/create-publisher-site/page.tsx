@@ -1,45 +1,37 @@
-"use client";
+'use client';
 
-import React, { Suspense, useEffect, useRef, useState } from "react";
-import {
-  ChevronRight,
-  Upload,
-  Palette,
-  Globe,
-  Video,
-  Eye,
-  ImageIcon,
-} from "lucide-react";
-import { useSearchParams } from "next/navigation";
+import { ChevronRight, Globe, Palette, Upload, Video } from 'lucide-react';
+import { useSearchParams } from 'next/navigation';
+import { Suspense, useEffect, useState } from 'react';
 
-import videoconfig from "../../../Data/videoconfig.json";
-import metadata from "../../../Data/metaData.json";
-import themeconfig from "../../../Data/themeconfig.json";
-import { RGBColorInput } from "./Components/RGBColorInput";
-import { MediaPreview } from "./Components/MediaPreview";
-import { useRouter } from "next/navigation";
+import { useRouter } from 'next/navigation';
+import metadata from '../../../Data/metaData.json';
+import themeconfig from '../../../Data/themeconfig.json';
+import videoconfig from '../../../Data/videoconfig.json';
+import { MediaPreview } from './Components/MediaPreview';
+import { RGBColorInput } from './Components/RGBColorInput';
 function SiteConfigurationPageContent() {
-  const [siteName, setSiteName] = useState("");
-  const [logoUrl, setLogoUrl] = useState("");
+  const [siteName, setSiteName] = useState('');
+  const [logoUrl, setLogoUrl] = useState('');
   const [colors, setColors] = useState({
-    "primary-color": "59 130 246",
-    "secondary-color": "16 185 129",
-    "action-color": "239 68 68",
-    "brand-color": "16 185 196",
+    'primary-color': '59 130 246',
+    'secondary-color': '16 185 129',
+    'action-color': '239 68 68',
+    'brand-color': '16 185 196',
   });
 
   const router = useRouter();
 
   const search = useSearchParams();
 
-  const publisher = search.get("publisher");
+  const publisher = search.get('publisher');
 
   const [videoUrls, setVideoUrls] = useState({
-    1: "",
-    "2a": "",
-    "2b": "",
-    "3b": "",
-    "4b": "",
+    1: '',
+    '2a': '',
+    '2b': '',
+    '3b': '',
+    '4b': '',
   });
 
   const [loading, setLoading] = useState(false);
@@ -73,19 +65,19 @@ function SiteConfigurationPageContent() {
     e.preventDefault();
 
     const metadata = {
-      title: "Discovery Meets Commerce",
+      title: 'Discovery Meets Commerce',
       description:
-        "From Medium to Destination for Discovery, as mastered by Google, Amazon, TikTok and Meta",
+        'From Medium to Destination for Discovery, as mastered by Google, Amazon, TikTok and Meta',
       openGraph: {
-        title: "Discovery Meets Commerce",
+        title: 'Discovery Meets Commerce',
         description:
-          "From Medium to Destination for Discovery, as mastered by Google, Amazon, TikTok and Meta",
+          'From Medium to Destination for Discovery, as mastered by Google, Amazon, TikTok and Meta',
         images: [logoUrl],
       },
     };
 
     const myHeaders = new Headers();
-    myHeaders.append("Content-Type", "application/json");
+    myHeaders.append('Content-Type', 'application/json');
 
     const raw = JSON.stringify({
       videoconfig: {
@@ -98,19 +90,19 @@ function SiteConfigurationPageContent() {
     });
 
     const requestOptions = {
-      method: "POST",
+      method: 'POST',
       headers: myHeaders,
       body: raw,
-      redirect: "follow",
+      redirect: 'follow' as RequestRedirect,
     };
 
-    fetch(location.origin + "/api/create-publisher", requestOptions)
+    fetch(location.origin + '/api/create-publisher', requestOptions)
       .then((response) => response.text())
       .then((result) => console.log(result))
       .catch((error) => console.error(error));
 
-    alert("Configuration saved");
-    router.push("/edit-publisher-site");
+    alert('Configuration saved');
+    router.push('/edit-publisher-site');
   };
 
   //
@@ -167,8 +159,8 @@ function SiteConfigurationPageContent() {
                   <RGBColorInput
                     key={colorKey}
                     label={
-                      colorKey.replace("-color", "").charAt(0).toUpperCase() +
-                      colorKey.replace("-color", "").slice(1)
+                      colorKey.replace('-color', '').charAt(0).toUpperCase() +
+                      colorKey.replace('-color', '').slice(1)
                     }
                     value={colors[colorKey]}
                     onChange={(newColor) =>
@@ -190,11 +182,11 @@ function SiteConfigurationPageContent() {
 
               <div className="space-y-2 flex flex-wrap gap-x-4  items-center">
                 {[
-                  { key: "1", label: " 1" },
-                  { key: "2a", label: " 2a" },
-                  { key: "2b", label: " 2b" },
-                  { key: "3b", label: " 3b" },
-                  { key: "4b", label: " 4b" },
+                  { key: '1', label: ' 1' },
+                  { key: '2a', label: ' 2a' },
+                  { key: '2b', label: ' 2b' },
+                  { key: '3b', label: ' 3b' },
+                  { key: '4b', label: ' 4b' },
                 ].map(({ key, label }) => (
                   <div key={key} className="space-y-1">
                     <label className="text-sm font-medium text-gray-700">
@@ -202,7 +194,7 @@ function SiteConfigurationPageContent() {
                     </label>
                     <input
                       type="url"
-                      value={videoUrls[key] || ""}
+                      value={videoUrls[key] || ''}
                       onChange={(e) =>
                         handleVideoUrlChange(key, e.target.value)
                       }
