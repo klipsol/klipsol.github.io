@@ -4,6 +4,20 @@ import fs from "fs/promises";
 import path from "path";
 
 // Helper function to safely read JSON file
+
+async function ensureFileWritable(filePath) {
+  try {
+    // Ensure directory exists
+    await fs.mkdir(path.dirname(filePath), { recursive: true });
+
+    // Set file permissions to allow reading and writing
+    await fs.chmod(path.dirname(filePath), 0o755); // Directory permissions
+    await fs.chmod(filePath, 0o644); // File permissions
+  } catch (error) {
+    console.error("Permission setup error:", error);
+  }
+}
+
 async function readJsonFile(filePath) {
   try {
     const fileContents = await fs.readFile(filePath, "utf8");
@@ -18,11 +32,14 @@ async function readJsonFile(filePath) {
 // Helper function to write JSON file safely
 async function writeJsonFile(filePath, data) {
   try {
-    // Ensure the directory exists
-    await fs.mkdir(path.dirname(filePath), { recursive: true });
+    // Ensure directory and file are writable
+    await ensureFileWritable(filePath);
 
-    // Write the file with proper formatting
-    await fs.writeFile(filePath, JSON.stringify(data, null, 2), "utf8");
+    // Write the file
+    await fs.writeFile(filePath, JSON.stringify(data, null, 2), {
+      encoding: "utf8",
+      flag: "w", // Overwrite existing file
+    });
     return true;
   } catch (error) {
     console.error(`Error writing file ${filePath}:`, error);
