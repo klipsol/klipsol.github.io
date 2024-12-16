@@ -9,7 +9,7 @@ import WidgetTab from './WidgetTab';
 
 const PreviewTabs = () => {
   const search = useSearchParams();
-  const [selectedTab, setSelectedTab] = useState(+search.get('tab') ?? 0);
+  const [selectedTab, setSelectedTab] = useState(+search.get('tab'));
 
   const tabData = [
     {
