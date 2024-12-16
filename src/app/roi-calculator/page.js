@@ -1,9 +1,11 @@
-'use client';
+"use client";
 
-import { useParams, usePathname } from 'next/navigation';
-import { useEffect, useRef, useState } from 'react';
-import { getProfit } from '../utils/roiUtils';
-import Navbar from './Components/Navbar';
+import { useParams, usePathname } from "next/navigation";
+import { useEffect, useRef, useState } from "react";
+import { getProfit } from "../utils/roiUtils";
+import Navbar from "./Components/Navbar";
+import ThemeWrapper from "../Theme/ThemeWrapper";
+import ScrollableNavbar from "../the-bump/Components/Nav/Nav2";
 
 export default function ROICalculator() {
   const pathname = usePathname();
@@ -15,7 +17,7 @@ export default function ROICalculator() {
   const inputRef = useRef(null);
 
   useEffect(() => {
-    setPublisher(localStorage.getItem('publisher'));
+    setPublisher(localStorage.getItem("publisher"));
   }, []);
   const handleInputChange = (event) => {
     const inputValue = Number(event.target.value);
@@ -40,7 +42,7 @@ export default function ROICalculator() {
     }
   };
   return (
-    <main className="mb-12">
+    <ThemeWrapper className="mb-12" publisher={publisher}>
       <Navbar />
 
       <section
@@ -232,13 +234,14 @@ export default function ROICalculator() {
             Bundle Other Offering Like Subscription
           </p>
           <a
-            href={'/widget/' + publisher + '?tab=2'}
+            href={"/widget/" + publisher + "?tab=2"}
             className="text-[12px] text-[#1D234E]"
           >
             Know More
           </a>
         </div>
       </section>
-    </main>
+      <ScrollableNavbar />
+    </ThemeWrapper>
   );
 }

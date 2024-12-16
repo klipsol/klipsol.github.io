@@ -1,9 +1,9 @@
-'use client';
-import { beaconEvents } from '@/app/utils/events';
-import Link from 'next/link';
-import { useParams, usePathname } from 'next/navigation';
-import { useEffect, useState } from 'react';
-import Calendly from '../Calendly/Calendly';
+"use client";
+import { beaconEvents } from "@/app/utils/events";
+import Link from "next/link";
+import { useParams, usePathname } from "next/navigation";
+import { useEffect, useState } from "react";
+import Calendly from "../Calendly/Calendly";
 
 const ScrollableNavbar = ({ customBg }) => {
   const pathname = usePathname();
@@ -24,15 +24,15 @@ const ScrollableNavbar = ({ customBg }) => {
       }
     };
 
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   const handleBeaconEvent = (e) => {
-    let elementId = e.target.id || e.currentTarget.id || '';
+    let elementId = e.target.id || e.currentTarget.id || "";
 
-    if (e.target.nodeName === 'BUTTON') {
-      elementId = 'calendly-button';
+    if (e.target.nodeName === "BUTTON") {
+      elementId = "calendly-button";
     }
     beaconEvents.fireEvents(`nav-item-click`, { item_name: elementId });
   };
@@ -40,13 +40,13 @@ const ScrollableNavbar = ({ customBg }) => {
   return (
     <nav
       className={`fixed top-0 w-full lg:shadow-lg text-white py-2 px-3 transition-opacity duration-300 p-2 md:px-8  bg-secondary rounded-b-2xl lg:py-1 lg:flex justify-center z-[100] ${
-        isVisible ? 'opacity-100' : 'opacity-0 pointer-events-none'
+        isVisible ? "opacity-100" : "opacity-0 pointer-events-none"
       }`}
     >
       <div className="text-sm text-center md:gap-x-6 gap-y-2 items-center pt-0  w-full md:w-fit justify-between lg:justify-center hidden sm:flex sm:flex-row md:flex-row lg:flex">
         {/* <LivePreviewLinks /> */}
         <a
-          href={'/widget/' + publisher}
+          href={"/widget/" + publisher}
           className="flex flex-col cursor-pointer lg:bg-black lg:rounded-3xl lg:px-7 lg:leading-[1.3] py-1"
         >
           <div
@@ -75,11 +75,11 @@ const ScrollableNavbar = ({ customBg }) => {
           // variant="primary"
         >
           ROI <br className="lg:hidden" /> Calculator
-        </Link>{' '}
-        {pathname !== '/' && (
+        </Link>{" "}
+        {pathname !== "/" && (
           <div className="bg-[#004A6C] h-7 w-0.5 lg:hidden"></div>
         )}
-        {pathname !== '/' && (
+        {pathname !== "/" && (
           <div
             onClick={handleBeaconEvent}
             className="rounded-[24px]  px-4 py-1 md:text-white font-medium"
@@ -96,7 +96,7 @@ const ScrollableNavbar = ({ customBg }) => {
         >
           All <br className="lg:hidden" /> Features
         </Link>
-      </div>{' '}
+      </div>{" "}
       {/* <CalendlyModal isOpen={isModalOpen} onClose={closeModal} /> */}
     </nav>
   );

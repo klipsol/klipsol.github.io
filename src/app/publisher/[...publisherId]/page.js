@@ -10,6 +10,8 @@ export async function generateMetadata({ params, headers }) {
   };
 }
 
-export default function page() {
-  return <Publisher2 />;
+export default async function page({ params }) {
+  const publisher = await params;
+  const publisherName = publisher["publisherId"][0];
+  return <Publisher2 publisher={publisherName} />;
 }
