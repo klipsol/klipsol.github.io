@@ -9,7 +9,7 @@ export default function ThemeWrapper({ children, className = "", publisher }) {
         "--primary-color": publisherTheme["primary-color"],
         "--secondary-color": publisherTheme["secondary-color"],
         "--action-color": publisherTheme["action-color"],
-        "--brand-color": publisherTheme["8 19 56"],
+        "--brand-color": publisherTheme["brand-color"],
       }}
     >
       {children}
