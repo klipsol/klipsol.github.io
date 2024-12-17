@@ -12,5 +12,5 @@ export async function generateMetadata({ params }): Promise<Metadata> {
 }
 
 export default function page() {
-  return <Publisher2 />;
+  return <Publisher2 publisher="" />;
 }

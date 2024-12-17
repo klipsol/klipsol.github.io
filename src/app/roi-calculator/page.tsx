@@ -2,6 +2,8 @@
 
 import { useParams, usePathname } from 'next/navigation';
 import { useEffect, useRef, useState } from 'react';
+import ThemeWrapper from '../Theme/ThemeWrapper';
+import ScrollableNavbar from '../the-bump/Components/Nav/Nav2';
 import { getProfit } from '../utils/roiUtils';
 import Navbar from './Components/Navbar';
 
@@ -40,7 +42,7 @@ export default function ROICalculator() {
     }
   };
   return (
-    <main className="mb-12">
+    <ThemeWrapper className="mb-12" publisher={publisher}>
       <Navbar customBg={null} />
 
       <section
@@ -239,6 +241,7 @@ export default function ROICalculator() {
           </a>
         </div>
       </section>
-    </main>
+      <ScrollableNavbar customBg={null} />
+    </ThemeWrapper>
   );
 }
