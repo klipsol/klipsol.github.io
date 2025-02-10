@@ -1,4 +1,5 @@
 'use client';
+import AdEngineWidgetTab from '@/_components/AdEngine/AdEngineWidgetTab';
 import { beaconEvents } from '@/app/utils/events';
 import { useSearchParams } from 'next/navigation';
 import { useState } from 'react';
@@ -13,11 +14,15 @@ const PreviewTabs = () => {
 
   const tabData = [
     {
-      title: 'Website - Widget',
+      title: 'Ad-Engine',
+      content: <AdEngineWidgetTab selectedTab={selectedTab} />,
+    },
+    {
+      title: 'Website-Widget',
       content: <WidgetTab selectedTab={selectedTab} />,
     },
     {
-      title: 'App - mWeb',
+      title: 'App-mWeb',
       content: <MicrositeTab selectedTab={selectedTab} />,
     },
     {
@@ -63,6 +68,9 @@ const PreviewTabs = () => {
       </div>
       <div className={twMerge('', selectedTab !== 2 && 'hidden')}>
         {tabData[2].content}
+      </div>
+      <div className={twMerge('', selectedTab !== 3 && 'hidden')}>
+        {tabData[3].content}
       </div>
     </div>
   );
