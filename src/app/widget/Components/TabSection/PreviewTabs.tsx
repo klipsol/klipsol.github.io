@@ -14,10 +14,6 @@ const PreviewTabs = () => {
 
   const tabData = [
     {
-      title: 'Ad-Engine',
-      content: <AdEngineWidgetTab selectedTab={selectedTab} />,
-    },
-    {
       title: 'Website-Widget',
       content: <WidgetTab selectedTab={selectedTab} />,
     },
@@ -28,6 +24,10 @@ const PreviewTabs = () => {
     {
       title: 'Bundle Your Subscription',
       content: <Incentive selectedTab={selectedTab} />,
+    },
+    {
+      title: 'Ad-Engine',
+      content: <AdEngineWidgetTab selectedTab={selectedTab} />,
     },
   ];
 
