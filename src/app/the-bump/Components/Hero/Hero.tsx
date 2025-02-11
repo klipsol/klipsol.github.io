@@ -9,10 +9,10 @@ import HighlightedText from '../HighlightedText/HighlightedText';
 import Navbar from '../Nav/Navbar';
 
 const Hero = () => {
-  const [pubName, setPubName] = useState('dpanda');
+  const [pubName, setPubName] = useState('dpanda-in');
   const assets = useAssets();
   const params = useParams();
-  const publisher = params?.publisherId?.[0] || 'dpanda';
+  const publisher = params?.publisherId?.[0] || 'dpanda-in';
   useEffect(() => {
     if (location.pathname.includes('/publisher/')) {
       setPubName(

@@ -5,7 +5,7 @@ import publisherConfig from "../../../Data/videoconfig.json";
 
 export default function useAssets() {
   const params = useParams();
-  const publisher = params?.publisherId?.[0] || "dpanda";
+  const publisher = params?.publisherId?.[0] || "dpanda-in";
 
   const heroVideo = publisherConfig[publisher]?.["1"];
   const a2 = publisherConfig[publisher]?.["2a"];
