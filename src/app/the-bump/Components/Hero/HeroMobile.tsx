@@ -9,7 +9,7 @@ import HighlightedText from '../HighlightedText/HighlightedText';
 
 const HeroMobile = () => {
   const params = useParams();
-  const publisher = params?.publisherId?.[0] || 'dpanda';
+  const publisher = params?.publisherId?.[0] || 'dpanda-in';
   const assets = useAssets();
 
   const handleBeaconEvent = (e) => {
