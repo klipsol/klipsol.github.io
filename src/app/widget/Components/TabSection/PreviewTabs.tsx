@@ -1,8 +1,8 @@
 'use client';
 import AdEngineWidgetTab from '@/_components/AdEngine/AdEngineWidgetTab';
 import { beaconEvents } from '@/app/utils/events';
-import { useSearchParams } from 'next/navigation';
-import { useState } from 'react';
+import { useRouter, useSearchParams } from 'next/navigation';
+import { useEffect, useState } from 'react';
 import { twMerge } from 'tailwind-merge';
 import Incentive from './IncentiveTab';
 import MicrositeTab from './MicrositeTab';
@@ -10,7 +10,11 @@ import WidgetTab from './WidgetTab';
 
 const PreviewTabs = () => {
   const search = useSearchParams();
+  const router = useRouter();
   const [selectedTab, setSelectedTab] = useState(+search.get('tab'));
+  useEffect(() => {
+    setSelectedTab(+search.get('tab'));
+  }, [search]);
 
   const tabData = [
     {
@@ -55,7 +59,12 @@ const PreviewTabs = () => {
             )}
             onClick={(e) => {
               handleBeaconEvent(e);
-              setSelectedTab(index);
+              window.history.replaceState(
+                {},
+                '',
+                `${window.location.pathname}?tab=${index}`
+              );
+              // setSelectedTab(index);
             }}
           >
             {tab.title}
