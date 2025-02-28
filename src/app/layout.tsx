@@ -8,6 +8,12 @@ const inter = Inter_Tight({
   weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'],
 });
 
+export const metadata = {
+  title: 'Dpanda - plug n play white label e-commerce distribution platform',
+  description:
+    'Dpanda is a distribution platform for d2c brands, offers plug n play white label e-commerce solutions for audience monetisation of websites and mobile apps',
+};
+
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
