@@ -23,6 +23,7 @@ const AdEngineWidgetTab = ({ selectedTab }) => {
             dpw-commerce=""
             data-dpa-widget-type="dpw_ad_engine"
             data-dpa-widget-theme="coupons"
+            data-dpa-widget-page-name="thankyou"
           ></span>
         </div>
       </div>
@@ -42,6 +43,7 @@ const AdEngineWidgetTab = ({ selectedTab }) => {
             dpw-commerce=""
             data-dpa-widget-type="dpw_ad_engine"
             data-dpa-widget-theme="banners"
+            data-dpa-widget-page-name="thankyou"
           ></span>
         </div>
       </div>
@@ -61,6 +63,7 @@ const AdEngineWidgetTab = ({ selectedTab }) => {
             dpw-commerce=""
             data-dpa-widget-type="dpw_ad_engine"
             data-dpa-widget-theme="products"
+            data-dpa-widget-page-name="thankyou"
           ></span>
         </div>
       </div>
