@@ -12,26 +12,26 @@ export default function Footer() {
             </p>
           </div>
           <div className="custom-text-xs h-full lg:justify-center w-fit flex flex-col">
-            <p className='lg:mt-2 sm:text-2xl sm:mt-3 lg:custom-text-xs'>
-              Office Address:<br/>
+            <p className='lg:mt-2 sm:text-[0.9rem] sm:mt-3 lg:text-[1rem]'>
+              <strong>Office Address:</strong><br/>
               KLIP SOLUTIONS PRIVATE LIMITED (Dpanda),<br/>
               204-205, 2nd Floor, Plot No. 250,<br/>
               Phase IV, Udyog Vihar, Sector-18,<br/>
               Gurugram, Haryana, 122015.
             </p>
           </div>
-          <div className="grid grid-cols-2 gap-x-10 lg:gap-y-2 gap-y-6 text-left text-[0.9em] 2xl:text-[1em] mt-5 lg:mt-0">
-          <Link
-              href="mailto:support@dpanda.in"
-              className="hover:underline transition-colors"
-            >
-              support@dpanda.in
-            </Link>
+          <div className="grid grid-cols-[auto_auto] justify-start gap-x-4 lg:gap-y-2 gap-y-2 text-left text-[0.9em] 2xl:text-[1em] mt-5 lg:mt-0">
             <Link
               href="tel:9582215864"
               className="hover:underline transition-colors"
             >
               9582215864
+            </Link>
+            <Link
+              href="mailto:support@dpanda.in"
+              className="hover:underline transition-colors"
+            >
+              support@dpanda.in
             </Link>
             <Link
               href="/policies/privacy-policy"
