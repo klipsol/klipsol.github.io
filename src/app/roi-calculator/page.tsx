@@ -6,6 +6,7 @@ import ThemeWrapper from '../Theme/ThemeWrapper';
 import ScrollableNavbar from '../the-bump/Components/Nav/Nav2';
 import { getProfit } from '../utils/roiUtils';
 import Navbar from './Components/Navbar';
+import Footer from '../the-bump/Components/Footer/Footer';
 
 export default function ROICalculator() {
   const pathname = usePathname();
@@ -242,6 +243,7 @@ export default function ROICalculator() {
         </div>
       </section>
       <ScrollableNavbar customBg={null} />
+      <Footer/>
     </ThemeWrapper>
   );
 }

@@ -79,14 +79,14 @@ const ScrollableNavbar = ({ customBg }) => {
         {pathname !== "/" && (
           <div className="bg-[#004A6C] h-7 w-0.5 lg:hidden"></div>
         )}
-        {pathname !== "/" && (
+        {/* {pathname !== "/" && ( */}
           <div
             onClick={handleBeaconEvent}
             className="rounded-[24px]  px-4 py-1 md:text-white font-medium"
           >
             <Calendly />
           </div>
-        )}
+        {/* )} */}
         <div className="bg-[#004A6C] h-7 w-0.5 lg:hidden"></div>
         <Link
           onClick={handleBeaconEvent}
