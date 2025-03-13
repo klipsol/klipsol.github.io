@@ -146,14 +146,14 @@ export default function Navbar({ customBg }) {
               {pathname !== '/' && (
                 <div className="bg-[#004A6C] lg:h-6 h-8 w-0.5"></div>
               )}
-              {pathname !== '/' && (
+              {/* {pathname !== '/' && ( */}
                 <div
                   onClick={handleBeaconEvent}
                   className="rounded-[24px] text-white  px-4 py-1  font-medium"
                 >
                   <Calendly />
                 </div>
-              )}
+              {/* )} */}
               <div className="bg-[#004A6C] lg:h-6 h-8 w-0.5"></div>
               <Link
                 onClick={handleBeaconEvent}

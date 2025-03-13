@@ -5,6 +5,7 @@ import HighlightedText from '../the-bump/Components/HighlightedText/HighlightedT
 import ScrollableNavbar from '../the-bump/Components/Nav/Nav2';
 import ThemeWrapper from '../Theme/ThemeWrapper';
 import FeatureCards from './Components/FeatureCard';
+import Footer from '../the-bump/Components/Footer/Footer';
 
 export default function Features(params) {
   const [publisher, setPublisher] = useState('');
@@ -41,6 +42,7 @@ export default function Features(params) {
         </div>
       </div>
       <ScrollableNavbar customBg={null} />
+      <Footer/>
     </ThemeWrapper>
   );
 }

@@ -4,6 +4,7 @@ import Navbar from '@/app/roi-calculator/Components/Navbar';
 import { useParams } from 'next/navigation';
 import Script from 'next/script';
 import PreviewTabs from '../Components/TabSection/PreviewTabs';
+import Footer from '@/app/the-bump/Components/Footer/Footer';
 
 const Page = () => {
   const params = useParams();
@@ -154,6 +155,7 @@ const Page = () => {
           <PreviewTabs />
         </div>
       </main>
+      <Footer/>
     </>
   );
 };

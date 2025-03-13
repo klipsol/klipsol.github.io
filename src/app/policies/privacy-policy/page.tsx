@@ -1,4 +1,5 @@
 import Navbar from '@/app/roi-calculator/Components/Navbar';
+import Footer from '@/app/the-bump/Components/Footer/Footer';
 
 export default function page() {
   return (
@@ -325,6 +326,7 @@ export default function page() {
           </p>
         </section>
       </div>
+      <Footer/>
     </>
   );
 }

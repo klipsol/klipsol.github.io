@@ -48,7 +48,7 @@ export default function Navbar() {
             {pathname !== '/' && (
               <div className="bg-secondary/70 h-6 w-0.5"></div>
             )}
-            {pathname !== '/' && (
+            {/* {pathname !== '/' && ( */}
               <div
                 onClick={handleBeaconEvent}
                 className="rounded-[24px] text-[16px] text-white px-4 text-center py-1 font-medium"
@@ -60,7 +60,7 @@ export default function Navbar() {
 									</p>
 								)} */}
               </div>
-            )}
+            {/* )} */}
             <div className="bg-secondary/70 h-6 w-0.5"></div>
             <Link
               onClick={handleBeaconEvent}
