@@ -4,6 +4,7 @@ import { beaconEvents } from '@/app/utils/events';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import Calendly from '../Calendly/Calendly';
+import Dropdown from '../Dropdown/Dropdown';
 
 export default function Navbar() {
   const pathname = usePathname();
@@ -36,41 +37,42 @@ export default function Navbar() {
               className="hidden md:block max-h-10"
             />
           </div>
-          <div className="min-w-[40%] md:relative md:gap-x-2 items-center flex-1 md:flex-none justify-around flex bg-secondary p-2 md:px-4 rounded-2xl rounded-t-none md:rounded-t-2xl">
-            <Link
+          <Dropdown />
+          {/* <div className="min-w-[40%] md:relative md:gap-x-2 items-center flex-1 md:flex-none justify-around flex bg-secondary p-2 md:px-4 rounded-2xl rounded-t-none md:rounded-t-2xl"> */}
+            {/* <Link
               onClick={handleBeaconEvent}
               id="roi-calculator"
               href="/roi-calculator"
               className="rounded-[24px] text-[16px] text-center bg-secondary/70 px-4 py-1 text-white font-medium"
             >
-              ROI Calculator
+              ROI Calculator kuioo
             </Link>{' '}
             {pathname !== '/' && (
               <div className="bg-secondary/70 h-6 w-0.5"></div>
-            )}
+            )} */}
             {/* {pathname !== '/' && ( */}
-              <div
+              {/* <div
                 onClick={handleBeaconEvent}
                 className="rounded-[24px] text-[16px] text-white px-4 text-center py-1 font-medium"
               >
-                <Calendly />
+                <Calendly /> */}
                 {/* {publisher && (
 									<p className="text-[12px] text-primary">
 										for <span className="capitalize">{publisher}</span>
 									</p>
 								)} */}
-              </div>
+              {/* </div> */}
             {/* )} */}
-            <div className="bg-secondary/70 h-6 w-0.5"></div>
-            <Link
+            {/* <div className="bg-secondary/70 h-6 w-0.5"></div> */}
+            {/* <Link
               onClick={handleBeaconEvent}
               id="all-features"
               href="/features"
               className="rounded-[24px] text-[16px] text-center bg-secondary px-4 py-1 text-white font-medium"
             >
               All Features
-            </Link>
-          </div>
+            </Link> */}
+          {/* </div> */}
         </div>
       </div>
     </>

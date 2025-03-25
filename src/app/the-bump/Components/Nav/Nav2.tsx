@@ -39,8 +39,8 @@ const ScrollableNavbar = ({ customBg }) => {
 
   return (
     <nav
-      className={`fixed top-0 w-full lg:shadow-lg text-white py-2 px-3 transition-opacity duration-300 p-2 md:px-8  bg-secondary rounded-b-2xl lg:py-1 lg:flex justify-center z-[100] ${
-        isVisible ? "opacity-100" : "opacity-0 pointer-events-none"
+      className={`fixed bottom-0 w-full lg:shadow-lg text-white py-2 px-3 transition-opacity duration-300 p-2 md:px-8  bg-secondary rounded-t-2xl lg:py-1 lg:flex justify-center z-[100] ${
+        isVisible ? "opacity-100" : ""
       }`}
     >
       <div className="text-sm text-center md:gap-x-6 gap-y-2 items-center pt-0  w-full md:w-fit justify-between lg:justify-center hidden sm:flex sm:flex-row md:flex-row lg:flex">
