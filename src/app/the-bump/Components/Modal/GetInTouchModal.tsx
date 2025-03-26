@@ -3,7 +3,6 @@ import Link from "next/link";
 import { useForm, Controller } from "react-hook-form";
 import axios from "axios";
 import { beaconEvents } from "@/app/utils/events";
-// import { trackEvent, conversionEvent } from "@/app/libs/gtag";
 
 const GetInTouchModal = ({ url, onClose }) => {
   const API_BASE_URL = process.env.NEXT_PUBLIC_API_BASE_URL;
@@ -74,7 +73,7 @@ const GetInTouchModal = ({ url, onClose }) => {
       setSuccessMessage(true);
       setErrorMessage("");
 
-      // // Fire Google Analytics Event
+      // Fire Google Analytics Event
       beaconEvents.fireEvents(`Tracking Event`, {
         action: "submit_form",
         category: "Get in Touch",
@@ -82,10 +81,10 @@ const GetInTouchModal = ({ url, onClose }) => {
         value: 1,
       });
 
-      // // Fire Google Ads Conversion Tracking
+      // Fire Google Ads Conversion Tracking
       beaconEvents.fireEvents(`Tracking Conversion:`, {
         action: "conversion",
-        send_to: "AW-16859127026/Br5ACKvA2poaEPK5h-c-",
+        send_to: "",
         value: 1.0,
         currency: "INR",
       });

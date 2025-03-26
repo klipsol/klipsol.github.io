@@ -119,7 +119,7 @@ export default function Navbar({ customBg }) {
         )}
         id="nav"
       >
-        <div className="lg:flex gap-4 relative px-4 pt-2 justify-between items-start flex flex-row md:flex-row bg-transparent rounded-3xl md:custom-text-base">
+        <div className="lg:flex gap-4 relative px-4 pt-2 justify-between items-center flex flex-row md:flex-row bg-transparent rounded-3xl md:custom-text-base">
           <Link href={'/publisher/' + publisher}>
             <img
               src="/dpandaLogo2.png"
@@ -133,10 +133,10 @@ export default function Navbar({ customBg }) {
             />
           </Link>
           <Dropdown />
-          {/* <div className="p-2 md:px-8 md:pt-6 md:pb-4 bg-[#043045] rounded-b-2xl lg:block"> */}
-            {/* <div className="text-sm md:gap-x-6 text-center gap-y-2 items-center pt-0 w-full md:w-fit justify-between hidden sm:flex sm:flex-row md:flex-row lg:flex"> */}
-              {/* <LivePreviewLinks /> */}
-              {/* <Link
+          {/* <div className="p-2 md:px-8 md:pt-6 md:pb-4 bg-[#043045] rounded-b-2xl lg:block">
+            <div className="text-sm md:gap-x-6 text-center gap-y-2 items-center pt-0 w-full md:w-fit justify-between hidden sm:flex sm:flex-row md:flex-row lg:flex">
+              {/* <LivePreviewLinks /> *
+              <Link
                 onClick={handleBeaconEvent}
                 id="roi-calculator"
                 href="/roi-calculator"
@@ -147,16 +147,16 @@ export default function Navbar({ customBg }) {
               </Link>{' '}
               {pathname !== '/' && (
                 <div className="bg-[#004A6C] lg:h-6 h-8 w-0.5"></div>
-              )} */}
-              {/* {pathname !== '/' && ( */}
-                {/* <div
+              )}
+              {/* {pathname !== '/' && ( *
+                <div
                   onClick={handleBeaconEvent}
                   className="rounded-[24px] text-white  px-4 py-1  font-medium"
                 >
                   <Calendly />
-                </div> */}
-              {/* )} */}
-              {/* <div className="bg-[#004A6C] lg:h-6 h-8 w-0.5"></div>
+                </div>
+              {/* )} *
+              <div className="bg-[#004A6C] lg:h-6 h-8 w-0.5"></div>
               <Link
                 onClick={handleBeaconEvent}
                 id="all-features"
@@ -164,9 +164,9 @@ export default function Navbar({ customBg }) {
                 className="rounded-[24px] text-white px-4 py-1 md:text-white font-medium"
               >
                 All <br className="lg:hidden" /> Features
-              </Link> */}
-            {/* </div> */}
-          {/* </div> */}
+              </Link>
+            </div>
+          </div> */}
         </div>
       </div>
       {/* <CalendlyModal isOpen={isModalOpen} onClose={closeModal} /> */}

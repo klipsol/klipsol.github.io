@@ -37,42 +37,42 @@ export default function Navbar() {
               className="hidden md:block max-h-10"
             />
           </div>
-          <Dropdown />
-          {/* <div className="min-w-[40%] md:relative md:gap-x-2 items-center flex-1 md:flex-none justify-around flex bg-secondary p-2 md:px-4 rounded-2xl rounded-t-none md:rounded-t-2xl"> */}
-            {/* <Link
+          <Dropdown offeringsButtonWrap="mr-[1rem]" offeringsButton="bg-[#ffffff] text-[#063750]" offeringsButtonIcon="border-t-[#063750]" />
+          {/* <div className="min-w-[40%] md:relative md:gap-x-2 items-center flex-1 md:flex-none justify-around flex bg-secondary p-2 md:px-4 rounded-2xl rounded-t-none md:rounded-t-2xl">
+            <Link
               onClick={handleBeaconEvent}
               id="roi-calculator"
               href="/roi-calculator"
               className="rounded-[24px] text-[16px] text-center bg-secondary/70 px-4 py-1 text-white font-medium"
             >
-              ROI Calculator kuioo
+              ROI Calculator
             </Link>{' '}
             {pathname !== '/' && (
               <div className="bg-secondary/70 h-6 w-0.5"></div>
-            )} */}
-            {/* {pathname !== '/' && ( */}
-              {/* <div
+            )}
+            {/* {pathname !== '/' && ( *
+              <div
                 onClick={handleBeaconEvent}
                 className="rounded-[24px] text-[16px] text-white px-4 text-center py-1 font-medium"
               >
-                <Calendly /> */}
+                <Calendly />
                 {/* {publisher && (
 									<p className="text-[12px] text-primary">
 										for <span className="capitalize">{publisher}</span>
 									</p>
-								)} */}
-              {/* </div> */}
-            {/* )} */}
-            {/* <div className="bg-secondary/70 h-6 w-0.5"></div> */}
-            {/* <Link
+								)} *
+              </div>
+            {/* )} *
+            <div className="bg-secondary/70 h-6 w-0.5"></div>
+            <Link
               onClick={handleBeaconEvent}
               id="all-features"
               href="/features"
               className="rounded-[24px] text-[16px] text-center bg-secondary px-4 py-1 text-white font-medium"
             >
               All Features
-            </Link> */}
-          {/* </div> */}
+            </Link>
+          </div> */}
         </div>
       </div>
     </>
