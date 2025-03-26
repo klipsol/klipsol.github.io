@@ -65,7 +65,8 @@ const GetInTouchModal = ({ url, onClose }) => {
 
     try {
       const response = await axios.post(
-        `${API_BASE_URL}/index.php?route=api/publisher/contact_us`,
+        `https://staging.app.dpanda.in/index.php?route=api/publisher/contact_us`,
+        // `${API_BASE_URL}/index.php?route=api/publisher/contact_us`,
         formData,
         { headers: { "Content-Type": "multipart/form-data" } }
       );

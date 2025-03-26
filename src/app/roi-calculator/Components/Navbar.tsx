@@ -132,7 +132,7 @@ export default function Navbar({ customBg }) {
               className="max-h-10 mt-6 mb-4 hidden md:block"
             />
           </Link>
-          <Dropdown offeringsButtonWrap="mr-[1rem]" offeringsButton="bg-[#063750] text-[#ffffff]" offeringsButtonIcon="border-t-[#ffffff]" />
+          <Dropdown offeringsButtonWrap="lg:mr-[1rem]" offeringsButton="bg-[#063750] text-[#ffffff]" offeringsButtonIcon="border-t-[#ffffff]" />
           {/* <div className="p-2 md:px-8 md:pt-6 md:pb-4 bg-[#043045] rounded-b-2xl lg:block">
             <div className="text-sm md:gap-x-6 text-center gap-y-2 items-center pt-0 w-full md:w-fit justify-between hidden sm:flex sm:flex-row md:flex-row lg:flex">
               {/* <LivePreviewLinks /> *
