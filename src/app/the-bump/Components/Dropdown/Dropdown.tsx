@@ -12,9 +12,9 @@ const Dropdown = ({ offeringsButtonWrap, offeringsButton, offeringsButtonIcon })
     <div className={` relative inline-block ${offeringsButtonWrap}`}>
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className={`${isOpen ? 'rounded-b-none' : ''} ${offeringsButton} bg-[#063750] text-white text-[16px] font-medium px-[1rem] py-[0.3rem] flex items-center rounded-[1rem]`}>
+        className={`${isOpen ? 'rounded-b-none' : ''} ${offeringsButton} text-[16px] font-medium px-[1rem] py-[0.3rem] flex items-center rounded-[1rem]`}>
         Offerings
-        <span className={`${isOpen ? 'rotate-180' : ''} ${offeringsButtonIcon} ml-2 triangle w-[0rem] h-[0rem] border-solid border-transparent border-l-[6px] border-r-[6px] border-t-[6px] border-t-white`}></span>
+        <span className={`${isOpen ? 'rotate-180' : ''} ${offeringsButtonIcon} ml-2 triangle w-[0rem] h-[0rem] border-solid border-transparent border-l-[6px] border-r-[6px] border-t-[6px]`}></span>
       </button>
 
       {isOpen && (
