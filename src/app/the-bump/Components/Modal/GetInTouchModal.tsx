@@ -53,15 +53,33 @@ const GetInTouchModal = ({ url, onClose }) => {
     return true;
   };
 
+  const getCookie = (name) => {
+    const cookies = document.cookie.split("; ");
+    const cookie = cookies.find((row) => row.startsWith(`${name}=`));
+    return cookie ? JSON.parse(decodeURIComponent(cookie.split("=")[1])) : {};
+  };
+
   const onSubmit = async (data) => {
     setIsSubmitting(true);
 
+    // Extract UTM params from cookies
+    const utmParams = getCookie("utm-params");
+
+    // Merge form data with UTM params
+    const payload = {
+      ...data,
+      ...utmParams,
+    };
+
     const formData = new FormData();
-    formData.append("name", data.name);
-    formData.append("email", data.email);
-    formData.append("phone_number", data.phone_number);
-    formData.append("company", data.company);
-    formData.append("brand", data.brand);
+    Object.entries(payload).forEach(([key, value]) => {
+      formData.append(key, value);
+    });
+    // formData.append("name", data.name);
+    // formData.append("email", data.email);
+    // formData.append("phone_number", data.phone_number);
+    // formData.append("company", data.company);
+    // formData.append("brand", data.brand);
 
     try {
       const response = await axios.post(
@@ -88,6 +106,8 @@ const GetInTouchModal = ({ url, onClose }) => {
         value: 1.0,
         currency: "INR",
       });
+
+      console.log("UTM Parameters:", utmParams);
   
       setTimeout(() => {
         setSuccessMessage(false);
