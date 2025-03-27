@@ -73,7 +73,11 @@ const GetInTouchModal = ({ url, onClose }) => {
 
     const formData = new FormData();
     Object.entries(payload).forEach(([key, value]) => {
-      formData.append(key, value);
+      if (typeof value === "string" || value instanceof Blob) {
+        formData.append(key, value);
+      } else {
+        formData.append(key, JSON.stringify(value));
+      }
     });
     // formData.append("name", data.name);
     // formData.append("email", data.email);
