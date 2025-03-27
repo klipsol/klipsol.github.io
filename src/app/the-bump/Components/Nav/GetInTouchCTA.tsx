@@ -34,7 +34,7 @@ const GetInTouchCTA = () => {
         openModal('https://test-dpanda.pages.dev/theBump')
       }}
       ref={buttonRef}
-      className="bg-[#f7ba30] bg-[url(/get-in-touch-icon.webp)] bg-no-repeat bg-center bg-auto w-[40px] h-[40px] rounded-full fixed bottom-[5rem] right-[1rem] z-[100]">
+      className="bg-[#f7ba30] bg-[url(/get-in-touch-icon.webp)] bg-no-repeat bg-center bg-auto w-[50px] h-[50px] rounded-full fixed bottom-[5rem] right-[1rem] z-[100]">
     </button>
     {isModalOpen && <GetInTouchModal url={modalUrl} onClose={closeModal} />}
     </>
