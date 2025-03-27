@@ -7,8 +7,10 @@ import { twMerge } from 'tailwind-merge';
 import DPVideo from '../DPVideo/DPVideo';
 import HighlightedText from '../HighlightedText/HighlightedText';
 import Navbar from '../Nav/Navbar';
+import { SetUtmParams } from '@/app/utils/setUtmParams';
 
 const Hero = () => {
+  SetUtmParams()
   const [pubName, setPubName] = useState('dpanda-in');
   const assets = useAssets();
   const params = useParams();
