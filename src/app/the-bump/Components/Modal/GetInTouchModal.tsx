@@ -3,9 +3,9 @@ import Link from "next/link";
 import { useForm, Controller } from "react-hook-form";
 import axios from "axios";
 import { beaconEvents } from "@/app/utils/events";
+import API_BASE_URL from "@/app/config/app.config"
 
 const GetInTouchModal = ({ url, onClose }) => {
-  const API_BASE_URL = process.env.NEXT_PUBLIC_API_BASE_URL;
   const [successMessage, setSuccessMessage] = useState(false);
   const [errorMessage, setErrorMessage] = useState("");
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -65,8 +65,6 @@ const GetInTouchModal = ({ url, onClose }) => {
 
     try {
       const response = await axios.post(
-        // `https://app.dpanda.in/index.php?route=api/publisher/contact_us`,
-        // `https://staging.app.dpanda.in/index.php?route=api/publisher/contact_us`,
         `${API_BASE_URL}/index.php?route=api/publisher/contact_us`,
         formData,
         { headers: { "Content-Type": "multipart/form-data" } }
