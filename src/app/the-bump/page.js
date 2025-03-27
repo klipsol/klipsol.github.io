@@ -17,6 +17,7 @@ import LifeTimeValue from './Components/LifeTimeValue/LifeTimeValue';
 import ScrollableNavbar from './Components/Nav/Nav2';
 import Technology from './Components/Technology/Technology';
 import { Testimonial } from './Components/Testimonial/Testimonial';
+import GetInTouchCTA from './Components/Nav/GetInTouchCTA';
 
 export default function Publisher2({ publisher }) {
   return (
@@ -36,6 +37,7 @@ export default function Publisher2({ publisher }) {
       <Testimonial />
       <Footer />
       <ScrollableNavbar />
+      <GetInTouchCTA />
     </ThemeWrapper>
   );
 }

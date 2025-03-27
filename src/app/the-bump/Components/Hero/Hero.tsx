@@ -29,7 +29,7 @@ const Hero = () => {
 
   return (
     <>
-      <section className="hidden md:block h-screen md:relative overflow-hidden bg-white">
+      <section className="hidden lg:block h-screen lg:relative overflow-hidden bg-white">
         <div
           className={twMerge(
             'absolute top-0 h-[50vh] bg-primary w-full',
@@ -77,7 +77,7 @@ const Hero = () => {
               </p>
             </div>
 
-            <div className="z-50 sec-container xxl:text-[1.4em] inset-0 md:my-[50px]">
+            <div className="z-50 sec-container xxl:text-[1.4em] inset-0 md:my-[20px]">
               <a
                 id="live-preview-desktop"
                 href={'/widget/' + pubName.split(' ').join('-')}
