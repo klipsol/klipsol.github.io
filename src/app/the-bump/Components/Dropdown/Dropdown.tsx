@@ -100,13 +100,13 @@ const Dropdown = ({
       url: 'https://discover.dpanda.in',
     },
     {
-      label: 'Employee Rewards',
-      url: 'https://employee-rewards.dpanda.in',
-    },
-    {
       label:
         'Post Checkout Monetisation',
       url: 'https://www.postsell.in',
+    },
+    {
+      label: 'Employee Rewards',
+      url: 'https://employee-rewards.dpanda.in',
     },
   ];
 

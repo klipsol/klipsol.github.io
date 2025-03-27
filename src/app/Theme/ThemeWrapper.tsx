@@ -5,7 +5,7 @@ export default function ThemeWrapper({ children, className = "", publisher }) {
 
   console.log({ publisher });
   return (
-    <main
+    <main className="pb-[4rem] lg:pb-[2.5rem]"
       style={
         {
           "--primary-color": publisherTheme["primary-color"],

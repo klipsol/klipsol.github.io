@@ -65,8 +65,9 @@ const GetInTouchModal = ({ url, onClose }) => {
 
     try {
       const response = await axios.post(
-        `https://staging.app.dpanda.in/index.php?route=api/publisher/contact_us`,
-        // `${API_BASE_URL}/index.php?route=api/publisher/contact_us`,
+        // `https://app.dpanda.in/index.php?route=api/publisher/contact_us`,
+        // `https://staging.app.dpanda.in/index.php?route=api/publisher/contact_us`,
+        `${API_BASE_URL}/index.php?route=api/publisher/contact_us`,
         formData,
         { headers: { "Content-Type": "multipart/form-data" } }
       );
@@ -124,7 +125,7 @@ const GetInTouchModal = ({ url, onClose }) => {
           </svg>
         </button>
 
-        <h2 className="font-[600] text-[1.375rem] xl:text-[1.375rem] leading-[1.6875rem] xl:leading-[2rem] text-[#1D234E] text-center py-[2.5rem]">
+        <h2 className="font-[600] text-[1.375rem] xl:text-[1.375rem] leading-[1.6875rem] xl:leading-[2rem] text-[#1D234E] text-center py-[1.3rem]">
           Get in Touch
         </h2>
 
@@ -132,7 +133,7 @@ const GetInTouchModal = ({ url, onClose }) => {
           <div className="fixed z-10 inset-0 flex items-center justify-center bg-black bg-opacity-50" onClick={() => setSuccessMessage(false)}>
             <div className="bg-white rounded-lg shadow-lg p-6 w-80 text-center">
               <h3 className="text-lg font-semibold text-green-600">
-                Submission Successful!
+                Submission Successfull!
               </h3>
               <p className="text-gray-700 mt-2">
                 Thanks for sharing your details. Our onboarding team will get back to you in 2-3 business days.
@@ -332,7 +333,7 @@ const GetInTouchModal = ({ url, onClose }) => {
           {isSubmitting ? "Submitting..." : "Submit"}
         </button>
 
-        <p className="font-[500] text-[.5rem] xl:text-[.75rem] leading-[.5rem] xl:leading-[.75rem] text-[#000000] text-center mx-[1.875rem] mb-[.625rem] sm:mb-[1.5rem] pb-2">By signing up, you agree to our <Link href="/policies/terms-and-conditions" target="_blank" className="text-[#003045] hover:text-[#f7ba30]">Terms and Conditions</Link>.</p>
+        <p className="font-[500] text-[.5rem] xl:text-[.75rem] leading-[.5rem] xl:leading-[.75rem] text-[#000000] text-center mx-[1.875rem] mb-[.625rem] sm:mb-[1.5rem] pb-2">By signing up, you agree to our <Link href="/policies/terms-and-conditions" target="_blank" className="text-[#f7ba30] hover:text-[#003045]">Terms and Conditions</Link>.</p>
       </form>
     </div>
   );
