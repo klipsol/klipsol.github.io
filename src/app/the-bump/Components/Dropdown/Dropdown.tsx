@@ -62,7 +62,8 @@ const Dropdown = ({
 
   const renderDropdownMenu = (
     dropdown,
-    items
+    items, 
+    width
   ) =>
     openDropdown === dropdown && (
       <div
@@ -71,6 +72,7 @@ const Dropdown = ({
             ? 'rounded-tr-none'
             : ''
         }`}
+        style={{ width }}
       >
         <ul className='py-2 text-gray-700'>
           {items.map((item, index) => (
@@ -120,7 +122,7 @@ const Dropdown = ({
     <div
       className={`relative ${offeringsButtonWrap}`}
     >
-      <div className='flex space-x-2'>
+      <div className='flex space-x-4'>
         <div className='relative'>
           {renderDropdownButton(
             'Solutions',
@@ -128,7 +130,8 @@ const Dropdown = ({
           )}
           {renderDropdownMenu(
             'solutions',
-            solutionsItems
+            solutionsItems, 
+            '12rem'
           )}
         </div>
 
@@ -139,7 +142,8 @@ const Dropdown = ({
           )}
           {renderDropdownMenu(
             'publishers',
-            publishersItems
+            publishersItems,
+            '9.7rem'
           )}
         </div>
       </div>

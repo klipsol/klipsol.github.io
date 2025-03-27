@@ -89,8 +89,11 @@ const GetInTouchModal = ({ url, onClose }) => {
         value: 1.0,
         currency: "INR",
       });
-
-      setTimeout(() => setSuccessMessage(false), 10000);
+  
+      setTimeout(() => {
+        setSuccessMessage(false);
+        onClose();
+      }, 3000);
       reset();
     } catch (error) {
       console.error("Error submitting form:", error);
