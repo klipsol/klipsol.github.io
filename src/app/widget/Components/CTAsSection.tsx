@@ -1,17 +1,17 @@
-'use client';
+"use client";
 const CTAsSection = () => {
   const groupPurchase = () => {
-    document.getElementById('dpw-recipe-btn').click();
+    document.getElementById("dpw-recipe-btn").click();
   };
   const togglePDP = () => {
-    window.DPWidget.togglePDP('201415');
+    window.DPWidget.togglePDP("201415");
   };
   const toggleProductsSheet = () => {
-    const event = new CustomEvent('openProductListModalEvent', {
+    const event = new CustomEvent("openProductListModalEvent", {
       detail: {
-        productIds: '295417,295225,295262,295241,295232',
-        productName: 'Example Product',
-        additionalInfo: 'Some extra data',
+        productIds: "307029,307036,307037,327699,329701",
+        productName: "Example Product",
+        additionalInfo: "Some extra data",
       },
     });
     window.dispatchEvent(event);
