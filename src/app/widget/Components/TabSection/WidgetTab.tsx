@@ -1,6 +1,6 @@
-import CTAsSection from '../CTAsSection';
-import FloatingCallout from '../FloatingCallout';
-import WidgetSummaryTable from '../WidgetSummaryTable';
+import CTAsSection from "../CTAsSection";
+import FloatingCallout from "../FloatingCallout";
+import WidgetSummaryTable from "../WidgetSummaryTable";
 
 const WidgetTab = ({ selectedTab }) => {
   return (
@@ -13,7 +13,7 @@ const WidgetTab = ({ selectedTab }) => {
         <div>
           <p>
             <span className="font-bold">01. </span>
-            {`Seamlessly embed AI-driven 'Buy Now' buttons on any product review.`}{' '}
+            {`Seamlessly embed AI-driven 'Buy Now' buttons on any product review.`}{" "}
           </p>
           <span
             className="relative flex justify-start mt-2"
@@ -69,7 +69,7 @@ const WidgetTab = ({ selectedTab }) => {
             dpw-commerce="true"
             data-dpa-widget-type="product"
             data-dpa-widget-theme="product-link"
-            data-dpa-product-id="300082"
+            data-dpa-product-id="184728"
             data-dpa-element-text="custom text"
           ></span>
           <span className="hidden md:block absolute -right-20 -top-5">
@@ -244,7 +244,7 @@ const WidgetTab = ({ selectedTab }) => {
                 Price Alerts
               </td>
               <td className="text-left py-3 px-6 border border-gray-200">
-                {' '}
+                {" "}
                 Notify users of price drops on products they’ve viewed or added
                 to their cart. Keeps users engaged and incentivized to buy when
                 prices drop.

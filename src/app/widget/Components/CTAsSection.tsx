@@ -1,17 +1,17 @@
-'use client';
+"use client";
 const CTAsSection = () => {
   const groupPurchase = () => {
-    document.getElementById('dpw-recipe-btn').click();
+    document.getElementById("dpw-recipe-btn").click();
   };
   const togglePDP = () => {
-    window.DPWidget.togglePDP('201415');
+    window.DPWidget.togglePDP("201415");
   };
   const toggleProductsSheet = () => {
-    const event = new CustomEvent('openProductListModalEvent', {
+    const event = new CustomEvent("openProductListModalEvent", {
       detail: {
-        productIds: '295417,295225,295262,295241,295232',
-        productName: 'Example Product',
-        additionalInfo: 'Some extra data',
+        productIds: "307029,307036,307037,327699,329701",
+        productName: "Example Product",
+        additionalInfo: "Some extra data",
       },
     });
     window.dispatchEvent(event);
@@ -48,7 +48,7 @@ const CTAsSection = () => {
 				>
 					Product PDP
 				</button> */}
-        <div className="w-[32%]">
+        {/* <div className="w-[32%]">
           <p className="mb-2">3.2: Product PDP</p>
           <img
             onClick={togglePDP}
@@ -56,9 +56,9 @@ const CTAsSection = () => {
             src="/Artboard_Puresense.png"
             alt="puresense-banner"
           />
-        </div>
+        </div> */}
         <div className="w-[32%]">
-          <p className="mb-2">3.3: Category List</p>
+          <p className="mb-2">3.2: Category List</p>
           <img
             onClick={toggleCategory}
             className="cursor-pointer"
@@ -67,7 +67,7 @@ const CTAsSection = () => {
           />
         </div>
         <div className="w-[32%]">
-          <p className="mb-2">3.4: Group Purchase</p>
+          <p className="mb-2">3.3: Group Purchase</p>
           <img
             onClick={groupPurchase}
             className="cursor-pointer"
