@@ -48,7 +48,7 @@ const CTAsSection = () => {
 				>
 					Product PDP
 				</button> */}
-        <div className="w-[32%]">
+        {/* <div className="w-[32%]">
           <p className="mb-2">3.2: Product PDP</p>
           <img
             onClick={togglePDP}
@@ -56,9 +56,9 @@ const CTAsSection = () => {
             src="/Artboard_Puresense.png"
             alt="puresense-banner"
           />
-        </div>
+        </div> */}
         <div className="w-[32%]">
-          <p className="mb-2">3.3: Category List</p>
+          <p className="mb-2">3.2: Category List</p>
           <img
             onClick={toggleCategory}
             className="cursor-pointer"
@@ -67,7 +67,7 @@ const CTAsSection = () => {
           />
         </div>
         <div className="w-[32%]">
-          <p className="mb-2">3.4: Group Purchase</p>
+          <p className="mb-2">3.3: Group Purchase</p>
           <img
             onClick={groupPurchase}
             className="cursor-pointer"
