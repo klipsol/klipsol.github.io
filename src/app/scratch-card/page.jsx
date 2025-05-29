@@ -110,13 +110,13 @@ const DPandaWidget = () => {
   }, []);
 
   return (
-    <>
+    <div className="h-screen w-full flex justify-center items-center">
       <span
         dpanda-widget="true"
         identifier="dpanda-2"
         id="scratch-container"
       ></span>
-    </>
+    </div>
   );
 };
 
