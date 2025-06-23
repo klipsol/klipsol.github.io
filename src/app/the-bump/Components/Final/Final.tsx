@@ -8,8 +8,8 @@ export default function Final() {
           Built on{' '}
           <HighlightedText wrapperClass="bottom-1 h-[35%]" text="Trust" />{' '}
         </h1>
-        <div className="flex lg:justify-around sm:justify-between text-[#013046] mt-[5%]">
-          <div className="flex items-center  gap-x-8 sm:flex-col lg:flex-row">
+        <div className="flex lg:justify-start sm:justify-start text-[#013046] mt-[5%]">
+          {/* <div className="flex items-center  gap-x-8 sm:flex-col lg:flex-row">
             <img
               className="xl:h-64 sm:h-36  2xl:h-80"
               src="/ceo.png"
@@ -32,10 +32,10 @@ export default function Final() {
                 <img className="lg:h-7 sm:h-5" src="/linkedin-logo.svg" />
               </a>
             </div>
-          </div>
+          </div> */}
           <div className="flex items-center  gap-x-8 sm:flex-col lg:flex-row">
             <img
-              className="xl:h-64 sm:h-36 2xl:h-80 "
+              className="xl:h-64 sm:h-2/3 2xl:h-80 "
               src="/cto.png"
               alt="ceo"
             />
