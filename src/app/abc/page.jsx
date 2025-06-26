@@ -2,26 +2,28 @@ import React from 'react'
 export default function Page() {
 return (
 <div>
-   <section className="flex   justify-center min-h-screen bg-gradient-to-r from-white via-[#fefaf4] to-[#fefaf4] px-4">
-      <div className="container mx-auto grid md:grid-cols-2 gap-8 ">
-         {/* Left Content */}
+   <section className="retail-network flex items-center justify-center min-h-screen bg-gradient-to-r from-white via-[#fefaf4] to-[#fefaf4] px-4">
+      <div className="container max-w-[1200px]  grid md:grid-cols-2 gap-8 items-center">
+         {/* Left Text Content */}
          <div className="space-y-6">
-            <h1 className="text-4xl font-bold leading-tight">
-               Transform Your <span className="text-yellow-500">Retail Network</span> into a Sales Engine
+            <h1 className="text-[#003C63] text-4xl lg:text-5xl">
+               Transform Your <br />
+               <span className="text-[#FFCF3B] font-bold">Retail Network</span> into<br />
+               a Sales Engine
             </h1>
-            <p className="text-gray-600">
-               Seamlessly connect in-store and online journeys with Dpanda's O2O platform—offering instant financing, quick onboarding, and intelligent ecosystem support.
+            <p className="text-gray-600 text-lg">
+               Seamlessly connect in-store and online journeys with Dpanda’s O2O platform—offering instant financing, quick onboarding, and intelligent ecosystem support.
             </p>
-            <button className="bg-yellow-400 hover:bg-yellow-500 text-black font-semibold py-3 px-6 rounded shadow">
+            <button className="rounded-[14px] text-[#003C63] bg-yellow-400 hover:bg-yellow-500 text-black font-semibold py-3 px-6 rounded shadow transition-all duration-300">
             Request Demo
             </button>
          </div>
-         {/* Right Image */}
+         {/* Right Side Image */}
          <div className="flex justify-center">
             <img
                src="/retail-img2.png"
-               alt="retail"
-               className="w-[661px] h-909px"
+               alt="Retail Visual"
+               className="w-[661px] h-[509px] object-contain"
                />
          </div>
       </div>
@@ -119,55 +121,52 @@ return (
             <p className="text-[#003C63] text-[16px]">Sub-2% with predictive analytics</p>
          </li>
       </div>
-      
-<div class="container mx-auto px-4 py-10">
+       <div class="container mx-auto px-4 py-10">
   <div class="grid grid-cols-1 md:grid-cols-3 gap-[60px]">
 
     
-    <div class="bg-[#003A70] rounded-2xl p-6 box-inner ">
-      <div class="flex items-center gap-3 mb-1">
-        <img src="/nbfc1.png" alt="NBFC Icon" class="h-[108px]" />
-        <div>
+    <div class="bg-[#003A70] rounded-2xl p-6 box-inner min-h-[440px] flex flex-col justify-between">
+      <div class="flex flex-col md:flex-row md:items-center gap-3 mb-1">
+        <img src="/nbfc1.png" alt="NBFC Icon" class="h-[108px] mx-auto md:mx-0" />
+        <div class="text-center md:text-left">
           <h2 class="text-2xl font-bold text-yellow-400">NBFCs</h2>
-      <p class="text-[20px] text-white mt-1 leading-[30px] font-normal">
+          <p class="text-[20px] text-white mt-1 leading-[30px] font-normal">
             Grow Your Loan Book, Lower Your Risk
           </p>
         </div>
       </div>
-      <ul class=" pt-[73px] list-disc pl-5 space-y-2 text-white text-sm nbfs-box">
+      <ul class="pt-[73px] list-disc pl-5 space-y-2 text-white text-sm nbfs-box">
         <li>Access 5,000+ retail touch points</li>
         <li>Plug-and-play APIs for underwriting</li>
         <li>Co-lending, co-marketing & real-time dashboards</li>
         <li>85%+ approval, &lt;2% default built-in performance</li>
       </ul>
     </div>
-
-    
-    <div class="bg-[#003A70] rounded-2xl p-6 box-inner ">
-      <div class="flex items-center gap-3 mb-1">
-        <img src="/nbfc1.png" alt="Retailer Icon" class="h-[108px]" />
-        <div>
+ 
+    <div class="bg-[#003A70] rounded-2xl p-6 box-inner min-h-[440px] flex flex-col justify-between">
+      <div class="flex flex-col md:flex-row md:items-center gap-3 mb-1">
+        <img src="/nbfc1.png" alt="Retailer Icon" class="h-[108px] mx-auto md:mx-0" />
+        <div class="text-center md:text-left">
           <h2 class="text-2xl font-bold text-yellow-400">Retailers</h2>
-      <p class="text-[20px] text-white mt-1 leading-[30px] font-normal">
+          <p class="text-[20px] text-white mt-1 leading-[30px] font-normal">
             Sell More with Seamless Finance at Checkout
           </p>
-        </div> 
+        </div>
       </div>
-      <ul class=" pt-[83px] list-disc pl-5 space-y-2 text-white text-sm nbfs-box">
+      <ul class="pt-[83px] list-disc pl-5 space-y-2 text-white text-sm nbfs-box">
         <li>On-the-spot EMIs—no paperwork</li>
         <li>48-hour onboarding via mobile portal</li>
         <li>Unified dashboard to track sales & payouts</li>
         <li>Full support from credit check to EMI recovery</li>
       </ul>
     </div>
-
- 
-    <div class="bg-[#003A70] rounded-2xl p-6 box-inner ">
-      <div class="flex items-center gap-3 mb-1">
-        <img src="/nbfc1.png" alt="OEM Icon" class="h-[108px]" />
-        <div>
+   
+    <div class="bg-[#003A70] rounded-2xl p-6 box-inner min-h-[440px] flex flex-col justify-between">
+      <div class="flex flex-col md:flex-row md:items-center gap-3 mb-1">
+        <img src="/nbfc1.png" alt="OEM Icon" class="h-[108px] mx-auto md:mx-0" />
+        <div class="text-center md:text-left">
           <h2 class="text-2xl font-bold text-yellow-400">Brands & OEMs</h2>
-      <p class="text-[20px] text-white mt-1 leading-[30px] font-normal">
+          <p class="text-[20px] text-white mt-1 leading-[30px] font-normal">
             Scale Smart with Embedded Financing
           </p>
         </div>
@@ -179,13 +178,125 @@ return (
         <li>Full compliance with RBI audit-ready systems</li>
       </ul>
     </div>
+ 
 
   </div>
 </div>
 
-
-
    </section>
+   <section className="bg-[#FFF4D6] py-20 Steps-section">
+      <div className="max-w-7xl mx-auto px-4 text-center">
+         {/* Heading */}
+         <h2 className="text-[#003C63] text-3xl md:text-4xl font-bold mb-2">How It Works</h2>
+         <p className="text-[#003C63] text-lg mb-12">From Signup to Sale in 3 Simple Steps</p>
+         {/* Steps */}
+         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {/* Step 01 */}
+            <div className="flex flex-col items-center relative">
+               <p className="text-[#003C63] mt-3 font-medium pb-[90px]">Step 01</p>
+               <div className="relative bg-white rounded-2xl p-6 shadow-md w-full max-w-[280px] pt-[80px] min-h-[350px] flex flex-col justify-between">
+                  {/* Yellow Circle with Icon */}
+                  <div className="absolute -top-[60px] left-1/2 -translate-x-1/2 bg-[#FFCF3B] w-[200px] h-[200px] rounded-full flex items-center justify-center shadow-md">
+                     <img src="/integration_icon_transparent.png" alt="Integration" className="w-[152px] h-[152px]" />
+                  </div>
+                  <h4 className="text-[32px] text-[#003C63] font-semibold mb-1 pt-[100px] mb-[2px]">Integration</h4>
+                  <p className="text-[#003C63] text-sm">NBFCs connect via API,<br />retailers via portal</p>
+               </div>
+            </div>
+            {/* Step 02 */}
+            <div className="flex flex-col items-center relative">
+               <p className="text-[#003C63] mt-3 font-medium pb-[90px]">Step 03</p>
+               <div className="relative bg-white rounded-2xl p-6 shadow-md w-full max-w-[280px] pt-[80px] min-h-[350px] flex flex-col justify-between">
+                  {/* Yellow Circle with Icon */}
+                  <div className="absolute -top-[60px] left-1/2 -translate-x-1/2 bg-[#FFCF3B] w-[200px] h-[200px] rounded-full flex items-center justify-center shadow-md">
+                     <img src="/emi-img.png" alt="Real-Time Management" className="w-[152px] h-[152px]" />
+                  </div>
+                  <h4 className="text-[32px] text-[#003C63] font-semibold mb-2 pt-[100px] mb-[2px] leading-[35px] ">Purchase <br></br>journey</h4>
+                  <p className="text-[#003C63] text-sm">
+                     (1) In-store/online <br></br>
+                     (2) EMI selected <br></br>
+                     (3) Instant underwriting
+                  </p>
+               </div>
+            </div>
+            {/* Step 03 */}
+            <div className="flex flex-col items-center relative">
+               <p className="text-[#003C63] mt-3 font-medium pb-[90px]">Step 03</p>
+               <div className="relative bg-white rounded-2xl p-6 shadow-md w-full max-w-[280px] pt-[80px] min-h-[350px] flex flex-col justify-between">
+                  {/* Yellow Circle with Icon */}
+                  <div className="absolute -top-[60px] left-1/2 -translate-x-1/2 bg-[#FFCF3B] w-[200px] h-[200px] rounded-full flex items-center justify-center shadow-md">
+                     <img src="/real-time.png" alt="Real-Time Management" className="w-[152px] h-[152px]" />
+                  </div>
+                  <h4 className="text-[32px] text-[#003C63] font-semibold mb-2 pt-[100px] mb-[2px]  leading-[35px]">Real-Time Management</h4>
+                  <p className="text-[#003C63] text-sm">
+                     Dashboards, notifications,<br /> Auto-optimisations
+                  </p>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <section className="bg-[#FFF4D6] py-20 across-the-funnel">
+  <div className="max-w-7xl mx-auto px-4">
+
+    {/* Proven Gains Box */}
+  <div className="bg-[#003C63] text-white rounded-lg p-6 flex flex-wrap md:flex-nowrap justify-between">
+  <div className="flex-1 px-4 py-4 text-center">
+    <p className="text-[60px] text-[#FFCF3B] font-bold leading-tight">40%</p>
+    <p className="text-[24px] leading-[36px]">Increase in<br></br> Ticket Size</p>
+  </div>
+  <div className="flex-1 px-4 py-4 border-l text-center" style={{ borderColor: '#656B6F' }}>
+    <p className="text-[60px] text-[#FFCF3B] font-bold leading-tight">85%</p>
+    <p className="text-[24px] leading-[36px]">+ EMI Approval Rates</p>
+  </div>
+  <div className="flex-1 px-4 py-4 border-l text-center" style={{ borderColor: '#656B6F' }}>
+    <p className="text-[60px] text-[#FFCF3B] font-bold leading-tight">50%</p>
+    <p className="text-[24px] leading-[36px]">Lower Processing Costs</p>
+  </div>
+  <div className="flex-1 px-4 py-4 border-l text-center" style={{ borderColor: '#656B6F' }}>
+    <p className="text-[60px] text-[#FFCF3B] font-bold leading-tight">&lt;2%</p>
+    <p className="text-[24px] leading-[36px]">Default<br></br> Risk</p>
+  </div>
+  <div className="flex-1 px-4 py-4 border-l text-center" style={{ borderColor: '#656B6F' }}>
+    <p className="text-[60px] text-[#FFCF3B] font-bold leading-tight">5,000+</p>
+    <p className="text-[24px] leading-[36px]">integrated POS points</p>
+  </div> 
+</div>
+
+
+
+    {/* CTA with Illustration */}
+    <div className="mt-16 flex flex-col lg:flex-row items-center justify-between gap-8">
+      
+      {/* Left Image */}
+      <div className="w-full lg:w-1/2 flex justify-center">
+        <img src="/request-demo.png" alt="Commerce Illustration" className="max-w-[320px]" />
+      </div>
+
+      {/* Right Content */}
+      <div className="w-full lg:w-1/2 text-center lg:text-left">
+        <h2 className="text-[#003C63] text-2xl md:text-3xl font-semibold mb-4">
+          Let’s Bring Your Commerce Vision to Life
+        </h2>
+        <p className="text-[#003C63] text-base mb-6">
+          Join India’s most innovative lenders, retailers, & OEMs on the future of O2O.
+        </p>
+
+        <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+          <button className="bg-[#FFCF3B] text-[#003C63] font-semibold px-6 py-2 rounded-md shadow hover:bg-yellow-400 transition">
+            Request a Custom Demo
+          </button>
+          <button className="bg-[#FFCF3B] text-[#003C63] font-semibold px-6 py-2 rounded-md shadow hover:bg-yellow-400 transition">
+            Talk to an Expert
+          </button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
 </div>
 )
 }
