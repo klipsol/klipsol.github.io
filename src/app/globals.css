@@ -82,3 +82,55 @@ body {
     border: none;
   }
 }
+
+.scale-box-main {
+  position: relative;
+  overflow-x: hidden;
+}
+
+.scale-box-main:before {
+  position: absolute;
+  top: 160px;
+  left: -680px;
+  height: 1180px;
+  background: url(/nbf-bg.svg) no-repeat center center;
+  transform: rotate(180deg);
+  width: 100%;
+  opacity: 0.2;
+  content: "";
+  background-size: 100%;
+}
+.scale-box-main:after {
+  position: absolute;
+  top: -74px;
+  right: -160px;
+  height: 400px;
+  background: url(/nbf-bg.svg) no-repeat center center;
+  transform: rotate(80deg);
+  width: 380px;
+  opacity: 0.2;
+  content: "";
+  background-size: 100%;
+}
+.nbfs-box {
+  font-size: 20px;
+  line-height: 30px;
+}
+.box-inner {
+  position: relative;
+}
+
+.box-inner:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  content: "";
+  z-index: 0;
+  background: url("/nbf-bg.svg") no-repeat center center;
+  background-size: cover;
+  transform: rotate(130deg);
+  transform-origin: center;
+  opacity: 0.3; /* You can adjust this between 0 (transparent) and 1 (fully visible) */
+}
