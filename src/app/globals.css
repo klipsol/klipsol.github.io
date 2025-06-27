@@ -186,20 +186,6 @@ body {
   width: 100%;
   z-index: -1;
 }
-/* 
-.Steps-section:after {
-  position: absolute;
-  top: 0;
-  left: -850px;
-  height: 100%;
-  background: url(/nbf-bg.svg) no-repeat center center;
-  transform: rotate(180deg);
-  width: 100%;
-  opacity: 0.67;
-  z-index: -1;
-  content: "";
-  background-size: 100%;
-} */
 
 .left-box1:after {
   background: url(/arrow12.png) no-repeat center center;
@@ -245,6 +231,11 @@ body {
   opacity: 0.3;
 }
 
+.nbfs-box li {
+  font-size: 24px;
+  line-height: 42px;
+}
+
 @media (min-width: 320px) and (max-width: 1024px) {
   .box-inner:before {
     display: none;
@@ -276,6 +267,16 @@ body {
 }
 
 @media (min-width: 320px) and (max-width: 566px) {
+  .scale-box-main,
+  .Steps-section {
+    padding-top: 30px;
+    padding-bottom: 20px;
+  }
+  .nationwide-main {
+    padding-top: 10px;
+    padding-bottom: 20px;
+  }
+
   .retail-network-inner h1 {
     line-height: 42px;
     text-align: center;
