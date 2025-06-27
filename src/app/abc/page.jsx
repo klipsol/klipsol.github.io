@@ -75,9 +75,7 @@ return (
          <h2 className="text-[36px] lg:text-[54px] leading-[23px] font-bold text-[#003C63] mb-4"> Built for Scale.</h2>
          <p className="text-[20px] lg:text-[44px] font-medium text-[#003C63]">Optimized for Conversion.</p>
       </div>
-      {/* Cards */}
-
-   
+      {/* Cards */} 
 
       <ul className="max-w-[1200px] mx-auto px-4 pt-[60px] grid gap-x-[1.5rem] lg:gap-x-[1.875rem] gap-y-[4rem] lg:gap-y-[3rem] grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 list-none">
          {/* Card 1 */}
@@ -88,7 +86,7 @@ return (
             <h3 className="text-[20px] lg:text-[22px] font-bold text-[#003C63] mb-2">Integrated NBFC Underwriting</h3>
             <p className="text-[#003C63] text-[16px]">Quick EMI approval at POS</p>
          </li>
-         {/* Card 2 */}
+         {/* Card 2 */} 
          <li className="w-full max-w-[320px] mx-auto relative bg-[#FFF4D1] pt-20 pb-6 px-4 rounded-[14px] flex flex-col items-center text-center mb-[40px]">
             <span className="absolute -top-[50px] bg-[#FFCF3B] w-[100px] h-[100px] lg:w-[120px] lg:h-[120px] rounded-full flex items-center justify-center">
             <img src="/lighting-box.png" alt="Icon 2" className="w-[90px] h-[90px] object-contain" />

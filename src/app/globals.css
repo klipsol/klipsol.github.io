@@ -122,7 +122,7 @@ body {
   overflow-x: hidden;
 }
 
-/* .scale-box-main:before {
+.scale-box-main:before {
   position: absolute;
   top: 160px;
   left: -680px;
@@ -133,7 +133,7 @@ body {
   opacity: 0.2;
   content: "";
   background-size: 100%;
-} */
+}
 .scale-box-main:after {
   position: absolute;
   top: -74px;
@@ -186,7 +186,7 @@ body {
   width: 100%;
   z-index: -1;
 }
-
+/* 
 .Steps-section:after {
   position: absolute;
   top: 0;
@@ -199,7 +199,7 @@ body {
   z-index: -1;
   content: "";
   background-size: 100%;
-}
+} */
 
 .left-box1:after {
   background: url(/arrow12.png) no-repeat center center;
