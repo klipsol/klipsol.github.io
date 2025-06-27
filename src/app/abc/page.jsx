@@ -5,21 +5,21 @@ return (
    <section className="retail-network flex items-center justify-center min-h-screen bg-gradient-to-r from-white via-[#fefaf4] to-[#fefaf4] px-4">
       <div className="container max-w-[1200px]  grid md:grid-cols-2 gap-8 items-center">
          {/* Left Text Content */}
-         <div className="space-y-6">
+         <div className="retail-network-inner space-y-6">
             <h1 className="text-[#003C63] text-4xl lg:text-5xl">
                Transform Your <br />
                <span className="text-[#FFCF3B] font-bold">Retail Network</span> into<br />
                a Sales Engine
             </h1>
-            <p className="text-gray-600 text-lg">
+            <p className=" text-gray-600 text-lg">
                Seamlessly connect in-store and online journeys with Dpanda’s O2O platform—offering instant financing, quick onboarding, and intelligent ecosystem support.
             </p>
-            <button className="rounded-[14px] text-[#003C63] bg-yellow-400 hover:bg-yellow-500 text-black font-semibold py-3 px-6 rounded shadow transition-all duration-300">
+            <button className="request-demo rounded-[14px] text-[#003C63] bg-yellow-400 hover:bg-yellow-500 text-black font-semibold py-3 px-6 rounded shadow transition-all duration-300">
             Request Demo
             </button>
          </div>
          {/* Right Side Image */}
-         <div className="flex justify-center">
+         <div className="retail-img2 flex justify-center">
             <img
                src="/retail-img2.png"
                alt="Retail Visual"
@@ -31,7 +31,7 @@ return (
    <section className="bg-yellow-400 py-16 px-4">
       <div className="max-w-[1200px]  container mx-auto grid md:grid-cols-2 gap-8 items-center">
          {/* Left Image */}
-         <div className="flex">
+         <div className="nationwide-img flex">
             <img
                src="/nationwide.png" // Replace with your correct image path
                alt="Nationwide Reach"
@@ -39,7 +39,7 @@ return (
                />
          </div>
          {/* Right Content */}
-         <div className="space-y-6">
+         <div className="nationwide-box-inner space-y-6">
             <h2 className="text-[56px] leading-tight" style={{ color: '#003C63' }}>
             <span className="font-bold">Nationwide Reach,</span><br />
             <span className="font-normal">Local Impact</span>
@@ -76,6 +76,9 @@ return (
          <p className="text-[20px] lg:text-[44px] font-medium text-[#003C63]">Optimized for Conversion.</p>
       </div>
       {/* Cards */}
+
+   
+
       <ul className="max-w-[1200px] mx-auto px-4 pt-[60px] grid gap-x-[1.5rem] lg:gap-x-[1.875rem] gap-y-[4rem] lg:gap-y-[3rem] grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 list-none">
          {/* Card 1 */}
          <li className="w-full max-w-[320px] mx-auto relative bg-[#FFF4D1] pt-20 pb-6 px-4 rounded-[14px] flex flex-col items-center text-center mb-[40px]">
@@ -101,6 +104,8 @@ return (
             <h3 className="text-[20px] lg:text-[22px] font-bold text-[#003C63] mb-2">Unified<br></br> Communication</h3>
             <p className="text-[#003C63] text-[16px]">Real-time alerts for all parties</p>
          </li>
+
+        
       </ul>
       {/* Last Two Cards Centered */}
       <div className="max-w-[1200px] mx-auto px-4 flex flex-col sm:flex-row justify-center gap-[1.5rem] lg:gap-[1.875rem] mt-[2rem]">
