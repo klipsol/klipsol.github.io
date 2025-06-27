@@ -3,7 +3,7 @@ import Navbar from '../roi-calculator/Components/Navbar'
 export default function Page() {
 return (
 <div>
-   <Navbar> </Navbar>
+   <Navbar/>  
   <section className="retail-network flex items-center justify-center bg-gradient-to-r from-white via-[#fefaf4] to-[#fefaf4] px-4 py-4">
   <div className="container max-w-[1200px] grid md:grid-cols-2 gap-8 items-center">
     {/* Left Text Content */}
