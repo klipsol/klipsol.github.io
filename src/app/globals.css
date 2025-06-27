@@ -170,3 +170,107 @@ body {
   z-index: -2;
   opacity: 0.3; /* You can adjust this between 0 (transparent) and 1 (fully visible) */
 }
+
+.Steps-section {
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+.Steps-section:before {
+  position: absolute;
+  content: "";
+  background: #fff4d1;
+  height: 60%;
+  left: 0;
+  top: 0px;
+  width: 100%;
+  z-index: -1;
+}
+
+.Steps-section:after {
+  position: absolute;
+  top: 0;
+  left: -850px;
+  height: 100%;
+  background: url(/nbf-bg.svg) no-repeat center center;
+  transform: rotate(180deg);
+  width: 100%;
+  opacity: 0.67;
+  z-index: -1;
+  content: "";
+  background-size: 100%;
+}
+
+.left-box1:after {
+  background: url(/arrow12.png) no-repeat center center;
+  position: absolute;
+  content: "";
+  background-size: 100%;
+  left: 120%;
+  width: 50px;
+  height: 50px;
+  top: 30%;
+  transform: translateY(-50%);
+}
+
+.across-the-funnel-main {
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+.across-the-funnel-main:after {
+  background: url(https://imagekit.dpanda.in/publisher-banner/1750996077_nbf-bg.svg)
+    no-repeat center center;
+  background-size: 600px 600px;
+  content: "";
+  right: -560px;
+  height: 100%;
+  width: 90%;
+  top: -140px;
+  z-index: -1;
+  position: absolute;
+}
+
+.across-the-funnel-main:before {
+  background: url(https://imagekit.dpanda.in/publisher-banner/1750996077_nbf-bg.svg)
+    no-repeat center center;
+  /* background-size: 600px 600px; */
+  content: "";
+  left: -500px;
+  height: 100%;
+  width: 100%;
+  top: 60%;
+  z-index: -1;
+  position: absolute;
+  opacity: 0.3;
+}
+
+@media (min-width: 320px) and (max-width: 1024px) {
+  .box-inner:before {
+    display: none;
+  }
+  .left-box1:after {
+    display: none;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 1024px) {
+  .nbfs-box-main .grid.grid-cols-1.md\:grid-cols-3.gap-\[60px\] {
+    gap: 10px;
+  }
+  .nbfs-box-main .flex.flex-col {
+    flex-direction: column;
+  }
+  .nbfs-box {
+    padding-top: 6px;
+  }
+  h2.text-2xl.font-bold.text-yellow-400 ~ p {
+    height: 59px;
+    font-size: 16px;
+    line-height: 22px;
+  }
+  .nbfs-box li {
+    font-size: 14px;
+    line-height: 22px;
+  }
+}
