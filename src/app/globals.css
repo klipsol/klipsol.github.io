@@ -236,6 +236,24 @@ body {
   line-height: 42px;
 }
 
+@media (min-width: 800px) and (max-width: 1024px) {
+  p.text-\[60px\].text-\[\#FFCF3B\].font-bold.leading-tight {
+    font-size: 48px;
+  }
+
+  .retail-network-inner h1 {
+    line-height: 40px !important;
+  }
+  .nationwide-main
+    .max-w-\[1200px\].container.mx-auto.grid.md\:grid-cols-2.gap-4.items-center {
+    grid-template-columns: 30% 70%;
+  }
+  .nationwide-img img {
+    width: auto;
+    height: auto;
+  }
+}
+
 @media (min-width: 320px) and (max-width: 1024px) {
   .box-inner:before {
     display: none;
@@ -246,6 +264,14 @@ body {
 }
 
 @media (min-width: 320px) and (max-width: 1024px) {
+  .across-the-funnel-main {
+    padding-top: 0px !important;
+  }
+
+  .Steps-section {
+    padding-bottom: 40px;
+  }
+
   .nbfs-box-main .grid.grid-cols-1.md\:grid-cols-3.gap-\[60px\] {
     gap: 10px;
   }
@@ -308,5 +334,8 @@ body {
   }
   .nationwide-box-inner p.text-gray-700.mt-\[50px\] {
     margin-top: 29px;
+  }
+  .nbfs-inner-box {
+    min-height: 462px;
   }
 }
