@@ -433,9 +433,9 @@ export default function Page() {
                 future of O2O.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-                <button className="bg-[#FFCF3B] text-[#003C63] font-semibold px-6 py-2 rounded-md shadow hover:bg-yellow-400 transition">
+                {/* <button className="bg-[#FFCF3B] text-[#003C63] font-semibold px-6 py-2 rounded-md shadow hover:bg-yellow-400 transition">
                   Request a Custom Demo
-                </button>
+                </button> */}
                 <button className="bg-[#FFCF3B] text-[#003C63] font-semibold px-6 py-2 rounded-md shadow hover:bg-yellow-400 transition">
                   Talk to an Expert
                 </button>

@@ -30,7 +30,8 @@
     "**/*.tsx",
     "src/app/the-bump/Components/Footer/Footer.js",
     "src/app/the-bump/Components/Hero/HeroMobile.tsx",
-    "src/app/scratch-card/page.jsx"
+    "src/app/scratch-card/page.jsx",
+    "src/app/o2o/page.jsx"
   ],
   "exclude": ["node_modules"]
 }
