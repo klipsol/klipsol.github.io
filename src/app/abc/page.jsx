@@ -246,8 +246,7 @@ return (
   <div className="max-w-7xl mx-auto px-4">
     <h2 className="text-[#003C63] lg:text-[36px] lg:text-[54px] leading-[23px]text-3xl md:text-4xl font-bold mb-[30px] md:mb-[50px] text-center leading-[40px] md:leading-[50px]">
       Proven Gains Across the Funnel
-    </h2>
-
+    </h2> 
     {/* Proven Gains Box */}
     <div className="across-the-funnel bg-[#003C63] text-white rounded-lg p-6 flex flex-wrap justify-center md:justify-between gap-4 md:gap-0">
       <div className="flex-1 min-w-[160px] px-4 py-4 text-center">
