@@ -1,6 +1,7 @@
 import React from "react";
 import Navbar from "../roi-calculator/Components/Navbar";
 import Calendly from "../the-bump/Components/Calendly/Calendly";
+import AnimatedCounter from "../the-bump/Components/AnimatedCounter";
 
 export default function Page() {
   return (
@@ -353,64 +354,8 @@ export default function Page() {
             Proven Gains Across the Funnel
           </h2>
           {/* Proven Gains Box */}
-          <div className="across-the-funnel bg-[#003C63] text-white rounded-lg p-6 flex flex-wrap justify-center md:justify-between gap-4 md:gap-0">
-            <div className="flex-1 min-w-[160px] px-4 py-4 text-center">
-              <p className="text-[60px] text-[#FFCF3B] font-bold leading-tight">
-                40%
-              </p>
-              <p className="text-[24px] leading-[36px]">
-                Increase in
-                <br /> Ticket Size
-              </p>
-            </div>
 
-            <div
-              className="flex-1 min-w-[160px] px-4 py-4 border-t md:border-t-0 md:border-l text-center"
-              style={{ borderColor: "#656B6F" }}
-            >
-              <p className="text-[60px] text-[#FFCF3B] font-bold leading-tight">
-                85%
-              </p>
-              <p className="text-[24px] leading-[36px]">+ EMI Approval Rates</p>
-            </div>
-
-            <div
-              className="flex-1 min-w-[160px] px-4 py-4 border-t md:border-t-0 md:border-l text-center"
-              style={{ borderColor: "#656B6F" }}
-            >
-              <p className="text-[60px] text-[#FFCF3B] font-bold leading-tight">
-                50%
-              </p>
-              <p className="text-[24px] leading-[36px]">
-                Lower Processing Costs
-              </p>
-            </div>
-
-            <div
-              className="flex-1 min-w-[160px] px-4 py-4 border-t md:border-t-0 md:border-l text-center"
-              style={{ borderColor: "#656B6F" }}
-            >
-              <p className="text-[60px] text-[#FFCF3B] font-bold leading-tight">
-                &lt;2%
-              </p>
-              <p className="text-[24px] leading-[36px]">
-                Default
-                <br /> Risk
-              </p>
-            </div>
-
-            <div
-              className="flex-1 min-w-[160px] px-4 py-4 border-t md:border-t-0 md:border-l text-center"
-              style={{ borderColor: "#656B6F" }}
-            >
-              <p className="text-[60px] text-[#FFCF3B] font-bold leading-tight">
-                5,000+
-              </p>
-              <p className="text-[24px] leading-[36px]">
-                integrated POS points
-              </p>
-            </div>
-          </div>
+          <AnimatedCounter />
 
           {/* CTA with Illustration */}
           <div className="mt-8 md:mt-16 flex flex-col lg:flex-row items-center justify-between gap-8">
@@ -433,12 +378,12 @@ export default function Page() {
                 future of O2O.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-                <button className="bg-[#FFCF3B] text-[#003C63] font-semibold px-6 py-2 rounded-md shadow hover:bg-yellow-400 transition">
+                {/* <button className="bg-[#FFCF3B] text-[#003C63] font-semibold px-6 py-2 rounded-md shadow hover:bg-yellow-400 transition">
                   Request a Custom Demo
-                </button>
-                <button className="bg-[#FFCF3B] text-[#003C63] font-semibold px-6 py-2 rounded-md shadow hover:bg-yellow-400 transition">
+                </button> */}
+                <Calendly className="bg-[#FFCF3B] text-[#003C63] font-semibold px-6 py-2 rounded-md shadow hover:bg-yellow-400 transition">
                   Talk to an Expert
-                </button>
+                </Calendly>
               </div>
             </div>
           </div>
