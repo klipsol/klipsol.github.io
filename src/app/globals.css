@@ -264,6 +264,9 @@ body {
 }
 
 @media (min-width: 320px) and (max-width: 1024px) {
+  .retail-network-inner h1 {
+    line-height: 40px !important;
+  }
   .across-the-funnel-main {
     padding-top: 0px !important;
   }
