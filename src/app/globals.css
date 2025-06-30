@@ -291,6 +291,16 @@ body {
   }
 }
 
+@media (min-width: 566px) and (max-width: 768px) {
+  .retail-network-inner h1 {
+    line-height: 42px;
+    text-align: center;
+  }
+  .request-demo {
+    display: block;
+    margin: 0 auto;
+  }
+}
 @media (min-width: 320px) and (max-width: 566px) {
   .scale-box-main,
   .Steps-section {
