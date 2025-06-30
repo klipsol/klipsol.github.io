@@ -289,6 +289,9 @@ body {
 }
 
 @media (min-width: 566px) and (max-width: 768px) {
+  .scale-box-main:after {
+    display: none;
+  }
   .retail-network-inner h1 {
     line-height: 42px;
     text-align: center;
@@ -299,6 +302,9 @@ body {
   }
 }
 @media (min-width: 320px) and (max-width: 566px) {
+  .scale-box-main:after {
+    display: none;
+  }
   .scale-box-main,
   .Steps-section {
     padding-top: 30px;
