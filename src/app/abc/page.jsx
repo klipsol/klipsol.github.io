@@ -127,7 +127,7 @@ return (
          <div class="grid grid-cols-1 md:grid-cols-3 gap-[60px]">
             <div class="nbfs-inner-box bg-[#003A70] rounded-2xl p-6 box-inner min-h-[540px] flex flex-col ">
                <div class="flex flex-col md:flex-row md:items-center gap-3 mb-1">
-                  <img src="/nbfc1.png" alt="NBFC Icon" class="h-[108px] mx-auto md:mx-0" />
+                  <img src="/nbfc1.png" alt="NBFC Icon" class="h-[75px] mx-auto md:mx-0" />
                   <div class="text-center md:text-left">
                      <h2 class="text-3xl font-bold text-yellow-400">NBFCs</h2>
                      <p class="text-[20px] text-white mt-1 leading-[30px] font-normal">
@@ -144,7 +144,7 @@ return (
             </div>
             <div class="nbfs-inner-box bg-[#003A70] rounded-2xl p-6 box-inner min-h-[540px] flex flex-col ">
                <div class="flex flex-col md:flex-row md:items-center gap-3 mb-1">
-                  <img src="/retailers-box.png" alt="Retailer Icon" class="h-[108px] mx-auto md:mx-0" />
+                  <img src="/retailers-box.png" alt="Retailer Icon" class="h-[75px] mx-auto md:mx-0" />
                   <div class="text-center md:text-left">
                      <h2 class="text-3xl font-bold text-yellow-400">Retailers</h2>
                      <p class="text-[20px] text-white mt-1 leading-[30px] font-normal">
@@ -161,7 +161,7 @@ return (
             </div>
             <div class="nbfs-inner-box bg-[#003A70] rounded-2xl p-6 box-inner min-h-[540px] flex flex-col ">
                <div class="flex flex-col md:flex-row md:items-center gap-3 mb-1">
-                  <img src="/oem.png" alt="OEM Icon" class="h-[108px] mx-auto md:mx-0" />
+                  <img src="/oem.png" alt="OEM Icon" class="h-[75px] mx-auto md:mx-0" />
                   <div class="text-center md:text-left">
                      <h2 class="text-3xl font-bold text-yellow-400">Brands & OEMs</h2>
                      <p class="text-[20px] text-white mt-1 leading-[30px] font-normal">
