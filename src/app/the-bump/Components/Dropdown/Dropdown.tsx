@@ -108,6 +108,10 @@ const Dropdown = ({
       label: 'Employee Rewards',
       url: 'https://employee-rewards.dpanda.in',
     },
+      {
+      label: 'Office-to-Office',
+      url: 'https://www.dpanda.ai/',
+    },
   ];
 
   const publishersItems = [
