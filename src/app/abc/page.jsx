@@ -5,7 +5,7 @@ return (
 <div>
    <Navbar/>  
   <section className="retail-network flex items-center justify-center bg-gradient-to-r from-white via-[#fefaf4] to-[#fefaf4] px-4 py-4">
-  <div className="container max-w-[1200px] grid md:grid-cols-2 gap-8 items-center">
+  <div className="lg:sec-container grid md:grid-cols-2 gap-8 items-center">
     {/* Left Text Content */}
     <div className="retail-network-inner space-y-6">
       <h1 className="text-[36px] lg:text-[54px] leading-[23px] text-[#003C63] text-4xl lg:text-5xl">
@@ -83,62 +83,51 @@ return (
       </div>
       {/* Cards */} 
 
-      <ul className="max-w-[1200px] mx-auto px-4 pt-[60px] grid gap-x-[1.5rem] lg:gap-x-[1.875rem] gap-y-[4rem] lg:gap-y-[3rem] grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 list-none">
-         {/* Card 1 */}
-         <li className="w-full max-w-[320px] mx-auto relative bg-[#FFF4D1] pt-20 pb-6 px-4 rounded-[14px] flex flex-col items-center text-center mb-[40px]">
-            <span className="absolute -top-[50px] bg-[#FFCF3B] w-[100px] h-[100px] lg:w-[120px] lg:h-[120px] rounded-full flex items-center justify-center">
-            <img src="/nbfc.png" alt="Icon 1" className="w-[90px] h-[90px] object-contain" />
-            </span>
-            <h3 className="text-[20px] lg:text-[22px] font-bold text-[#003C63] mb-2">Integrated NBFC Underwriting</h3>
-            <p className="text-[#003C63] text-[16px]">Quick EMI approval at POS</p>
-         </li>
-         {/* Card 2 */} 
-         <li className="w-full max-w-[320px] mx-auto relative bg-[#FFF4D1] pt-20 pb-6 px-4 rounded-[14px] flex flex-col items-center text-center mb-[40px]">
-            <span className="absolute -top-[50px] bg-[#FFCF3B] w-[100px] h-[100px] lg:w-[120px] lg:h-[120px] rounded-full flex items-center justify-center">
-            <img src="/lighting-box.png" alt="Icon 2" className="w-[90px] h-[90px] object-contain" />
-            </span>
-            <h3 className="text-[20px] lg:text-[22px] font-bold text-[#003C63] mb-2">Lightning <br></br>Onboarding</h3>
-            <p className="text-[#003C63] text-[16px]">Retailers go live in 48 hours</p>
-         </li>
-         {/* Card 3 */}
-         <li className="w-full max-w-[320px] mx-auto relative bg-[#FFF4D1] pt-20 pb-6 px-4 rounded-[14px] flex flex-col items-center text-center mb-[40px]">
-            <span className="absolute -top-[50px] bg-[#FFCF3B] w-[100px] h-[100px] lg:w-[120px] lg:h-[120px] rounded-full flex items-center justify-center">
-            <img src="/undefine-box.png" alt="Icon 3" className="w-[90px] h-[90px] object-contain" />
-            </span>
-            <h3 className="text-[20px] lg:text-[22px] font-bold text-[#003C63] mb-2">Unified<br></br> Communication</h3>
-            <p className="text-[#003C63] text-[16px]">Real-time alerts for all parties</p>
-         </li>
-  <li className="w-full max-w-[320px] mx-auto relative bg-[#FFF4D1] pt-20 pb-6 px-4 rounded-[14px] flex flex-col items-center text-center mb-[40px]">
-            <span className="absolute -top-[50px] bg-[#FFCF3B] w-[100px] h-[100px] lg:w-[120px] lg:h-[120px] rounded-full flex items-center justify-center">
-            <img src="/approvals-rates.png" alt="Icon 4" className="w-[90px] h-[90px] object-contain" />
-            </span>
-            <h3 className="text-[20px] lg:text-[22px] font-bold text-[#003C63] mb-2">High Approval <br></br>Rates</h3>
-            <p className="text-[#003C63] text-[16px]">Over 85% using AI-based scoring</p>
-         </li>
-         {/* Card 5 */}
-         <li className="w-full max-w-[320px] mx-auto relative bg-[#FFF4D1] pt-20 pb-6 px-4 rounded-[14px] flex flex-col items-center text-center mb-[40px]">
-            <span className="absolute -top-[50px] bg-[#FFCF3B] w-[100px] h-[100px] lg:w-[120px] lg:h-[120px] rounded-full flex items-center justify-center">
-            <img src="/low-default.png" alt="Icon 5" className="w-[90px] h-[90px] object-contain" />
-            </span>
-            <h3 className="text-[20px] lg:text-[22px] font-bold text-[#003C63] mb-2">Low Default<br></br> Rates</h3>
-            <p className="text-[#003C63] text-[16px]">Sub-2% with predictive analytics</p>
-         </li>
+       <ul className="max-w-[1200px] mx-auto px-4 pt-[60px] grid gap-x-[1.5rem] lg:gap-x-[1.875rem] gap-y-[4rem] lg:gap-y-[3rem] grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 list-none">
+   {/* Card 1 */}
+   <li className="w-full max-w-[100%] mx-auto relative bg-[#FFF4D1] pt-20 pb-6 px-4 rounded-[14px] flex flex-col items-center text-center mb-[40px]">
+      <span className="absolute -top-[50px] bg-[#FFCF3B] w-[100px] h-[100px] lg:w-[120px] lg:h-[120px] rounded-full flex items-center justify-center">
+         <img src="/nbfc.png" alt="Icon 1" className="w-[90px] h-[90px] object-contain" />
+      </span>
+      <h3 className="text-[20px] lg:text-[22px] font-bold text-[#003C63] mb-2">Integrated NBFC Underwriting</h3>
+      <p className="text-[#003C63] text-[16px]">Quick EMI approval at POS</p>
+   </li>
 
-            <li className="w-full max-w-[320px] mx-auto relative bg-[#FFF4D1] pt-20 pb-6 px-4 rounded-[14px] flex flex-col items-center text-center mb-[40px]">
-            <span className="absolute -top-[50px] bg-[#FFCF3B] w-[100px] h-[100px] lg:w-[120px] lg:h-[120px] rounded-full flex items-center justify-center">
-            <img src="/low-default.png" alt="Icon 5" className="w-[90px] h-[90px] object-contain" />
-            </span>
-            <h3 className="text-[20px] lg:text-[22px] font-bold text-[#003C63] mb-2">Low Default<br></br> Rates</h3>
-            <p className="text-[#003C63] text-[16px]">Sub-2% with predictive analytics</p>
-         </li>
-      </ul>
+   {/* Card 2 */}
+   <li className="w-full max-w-[100%] mx-auto relative bg-[#FFF4D1] pt-20 pb-6 px-4 rounded-[14px] flex flex-col items-center text-center mb-[40px]">
+      <span className="absolute -top-[50px] bg-[#FFCF3B] w-[100px] h-[100px] lg:w-[120px] lg:h-[120px] rounded-full flex items-center justify-center">
+         <img src="/lighting-box.png" alt="Icon 2" className="w-[90px] h-[90px] object-contain" />
+      </span>
+      <h3 className="text-[20px] lg:text-[22px] font-bold text-[#003C63] mb-2">Lightning <br />Onboarding</h3>
+      <p className="text-[#003C63] text-[16px]">Retailers go live in 48 hours</p>
+   </li>
+
+   {/* Card 3 */}
+   <li className="w-full max-w-[100%] mx-auto relative bg-[#FFF4D1] pt-20 pb-6 px-4 rounded-[14px] flex flex-col items-center text-center mb-[40px]">
+      <span className="absolute -top-[50px] bg-[#FFCF3B] w-[100px] h-[100px] lg:w-[120px] lg:h-[120px] rounded-full flex items-center justify-center">
+         <img src="/approvals-rates.png" alt="Icon 3" className="w-[90px] h-[90px] object-contain" />
+      </span>
+      <h3 className="text-[20px] lg:text-[22px] font-bold text-[#003C63] mb-2">High Approval <br />Rates</h3>
+      <p className="text-[#003C63] text-[16px]">Over 85% using AI-based scoring</p>
+   </li>
+
+   {/* Card 4 */}
+   <li className="w-full max-w-[100%] mx-auto relative bg-[#FFF4D1] pt-20 pb-6 px-4 rounded-[14px] flex flex-col items-center text-center mb-[40px]">
+      <span className="absolute -top-[50px] bg-[#FFCF3B] w-[100px] h-[100px] lg:w-[120px] lg:h-[120px] rounded-full flex items-center justify-center">
+         <img src="/low-default.png" alt="Icon 4" className="w-[90px] h-[90px] object-contain" />
+      </span>
+      <h3 className="text-[20px] lg:text-[22px] font-bold text-[#003C63] mb-2">Low Default<br />Rates</h3>
+      <p className="text-[#003C63] text-[16px]">Sub-2% with predictive analytics</p>
+   </li>
+</ul>
+
       {/* Last Two Cards Centered */}
      
-      <div class="nbfs-box-main container mx-auto px-4 py-10">
+      <div class="max-w-[1200px] nbfs-box-main container mx-auto px-4 py-10">
          <div class="grid grid-cols-1 md:grid-cols-3 gap-[60px]">
-            <div class="bg-[#003A70] rounded-2xl p-6 box-inner min-h-[540px] flex flex-col ">
+            <div class="nbfs-inner-box bg-[#003A70] rounded-2xl p-6 box-inner min-h-[540px] flex flex-col ">
                <div class="flex flex-col md:flex-row md:items-center gap-3 mb-1">
-                  <img src="/nbfc1.png" alt="NBFC Icon" class="h-[108px] mx-auto md:mx-0" />
+                  <img src="/nbfc1.png" alt="NBFC Icon" class="h-[75px] mx-auto md:mx-0" />
                   <div class="text-center md:text-left">
                      <h2 class="text-3xl font-bold text-yellow-400">NBFCs</h2>
                      <p class="text-[20px] text-white mt-1 leading-[30px] font-normal">
@@ -153,9 +142,9 @@ return (
                   <li>85%+ approval, &lt;2% default built-in performance</li>
                </ul>
             </div>
-            <div class="bg-[#003A70] rounded-2xl p-6 box-inner min-h-[540px] flex flex-col ">
+            <div class="nbfs-inner-box bg-[#003A70] rounded-2xl p-6 box-inner min-h-[540px] flex flex-col ">
                <div class="flex flex-col md:flex-row md:items-center gap-3 mb-1">
-                  <img src="/retailers-box.png" alt="Retailer Icon" class="h-[108px] mx-auto md:mx-0" />
+                  <img src="/retailers-box.png" alt="Retailer Icon" class="h-[75px] mx-auto md:mx-0" />
                   <div class="text-center md:text-left">
                      <h2 class="text-3xl font-bold text-yellow-400">Retailers</h2>
                      <p class="text-[20px] text-white mt-1 leading-[30px] font-normal">
@@ -170,9 +159,9 @@ return (
                   <li>Full support from credit check to EMI recovery</li>
                </ul>
             </div>
-            <div class="bg-[#003A70] rounded-2xl p-6 box-inner min-h-[540px] flex flex-col ">
+            <div class="nbfs-inner-box bg-[#003A70] rounded-2xl p-6 box-inner min-h-[540px] flex flex-col ">
                <div class="flex flex-col md:flex-row md:items-center gap-3 mb-1">
-                  <img src="/oem.png" alt="OEM Icon" class="h-[108px] mx-auto md:mx-0" />
+                  <img src="/oem.png" alt="OEM Icon" class="h-[75px] mx-auto md:mx-0" />
                   <div class="text-center md:text-left">
                      <h2 class="text-3xl font-bold text-yellow-400">Brands & OEMs</h2>
                      <p class="text-[20px] text-white mt-1 leading-[30px] font-normal">
@@ -246,8 +235,7 @@ return (
   <div className="max-w-7xl mx-auto px-4">
     <h2 className="text-[#003C63] lg:text-[36px] lg:text-[54px] leading-[23px]text-3xl md:text-4xl font-bold mb-[30px] md:mb-[50px] text-center leading-[40px] md:leading-[50px]">
       Proven Gains Across the Funnel
-    </h2>
-
+    </h2> 
     {/* Proven Gains Box */}
     <div className="across-the-funnel bg-[#003C63] text-white rounded-lg p-6 flex flex-wrap justify-center md:justify-between gap-4 md:gap-0">
       <div className="flex-1 min-w-[160px] px-4 py-4 text-center">
