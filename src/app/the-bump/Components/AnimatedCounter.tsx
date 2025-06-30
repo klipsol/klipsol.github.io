@@ -81,18 +81,18 @@ const AnimatedStatsComponent = () => {
     // });
 
     // Animate help text
-    gsap.from(helpTextRef.current, {
-      opacity: 0,
-      duration: 0.6,
-      delay: 1.5,
-      ease: "power2.out",
-    });
+    // gsap.from(helpTextRef.current, {
+    //   opacity: 0,
+    //   duration: 0.6,
+    //   delay: 1.5,
+    //   ease: "power2.out",
+    // });
 
     // Container and cards animation
     const cards = containerRef.current.querySelectorAll(".stat-card");
 
-    gsap.set(containerRef.current, { opacity: 0, y: 50 });
-    gsap.set(cards, { opacity: 0, y: 40, scale: 0.9 });
+    // gsap.set(containerRef.current, { opacity: 0, y: 50 });
+    // gsap.set(cards, { opacity: 0, y: 40, scale: 0.9 });
 
     // Timeline for container and cards
     const tl = gsap.timeline({
@@ -237,10 +237,6 @@ const AnimatedStatsComponent = () => {
             </p>
             <p className="text-[24px] leading-[36px]">integrated POS points</p>
           </div>
-        </div>
-
-        <div ref={helpTextRef} className="mt-8 text-center text-gray-600">
-          <p>Scroll up and down to see the animation trigger again!</p>
         </div>
       </div>
     </div>
