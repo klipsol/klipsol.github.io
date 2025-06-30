@@ -162,13 +162,14 @@ body {
   height: 100%;
   width: 100%;
   content: "";
-  z-index: 0;
-  background: url("/nbf-bg.svg") no-repeat center center;
-  background-size: cover;
-  transform: rotate(130deg);
-  transform-origin: center;
   z-index: -2;
-  opacity: 0.3; /* You can adjust this between 0 (transparent) and 1 (fully visible) */
+  background: url("/nbf-bg.svg") no-repeat center center;
+  background-size: contain; /* change cover to contain to prevent overflow */
+  transform: rotate(130deg) scale(1.2); /* scaling to fit after rotation */
+  transform-origin: center;
+  opacity: 0.3; /* adjust opacity as needed */
+  pointer-events: none; /* optional: so background doesn't block clicks */
+  background-size: 100%;
 }
 
 .Steps-section {
@@ -283,10 +284,6 @@ body {
   h2.text-2xl.font-bold.text-yellow-400 ~ p {
     height: 59px;
     font-size: 16px;
-    line-height: 22px;
-  }
-  .nbfs-box li {
-    font-size: 14px;
     line-height: 22px;
   }
 }
