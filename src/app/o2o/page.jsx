@@ -351,7 +351,7 @@ export default function Page() {
       <section className="bg-[#FFFAF2] opacity-100 py-10 md:py-20 across-the-funnel-main">
         <div className="max-w-7xl mx-auto px-4">
           <h2 className="text-[#003C63] lg:text-[36px] lg:text-[54px] leading-[23px]text-3xl md:text-4xl font-bold mb-[30px] md:mb-[50px] text-center leading-[40px] md:leading-[50px]">
-            Proven Gains Across the Funnel
+            Proven Gains Across the Funnel 
           </h2>
           {/* Proven Gains Box */}
 
