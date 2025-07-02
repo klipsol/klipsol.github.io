@@ -61,21 +61,22 @@ const Dropdown = ({
     );
 
   const solutionsItems = [
-    {
-      label: "For Influencers",
-      url: "https://discover.dpanda.in",
+     {
+      label: "Offline to Online",
+      url: "https://www.dpanda.ai/o2o",
     },
+  
     {
-      label: "Post Checkout Monetisation",
+      label: "Commerce Media",
       url: "https://www.postsell.in",
     },
     {
       label: "Employee Rewards",
       url: "https://employee-rewards.dpanda.in",
     },
-    {
-      label: "Offline to Online",
-      url: "https://www.dpanda.ai/o2o",
+     {
+      label: "For Influencers",
+      url: "https://discover.dpanda.in",
     },
   ];
 
