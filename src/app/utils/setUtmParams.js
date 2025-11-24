@@ -1,13 +1,14 @@
 export const SetUtmParams = (payload = {}) => {
-  if (typeof window === "undefined" || typeof document === "undefined") return;
+  if (typeof window === 'undefined' || typeof document === 'undefined') return;
 
   const utmParams = {};
-  const params = Object.keys(payload).length === 0
-    ? new URLSearchParams(window.location.search)
-    : new Map(Object.entries(payload));
+  const params =
+    Object.keys(payload).length === 0
+      ? new URLSearchParams(window.location.search)
+      : new Map(Object.entries(payload));
 
   params.forEach((value, key) => {
-    if (key.startsWith("utm_")) {
+    if (key.startsWith('utm_')) {
       try {
         utmParams[key] = decodeURIComponent(value);
       } catch (error) {
@@ -20,6 +21,6 @@ export const SetUtmParams = (payload = {}) => {
   if (Object.keys(utmParams).length > 0) {
     const cookieValue = encodeURIComponent(JSON.stringify(utmParams));
     document.cookie = `utm-params=${cookieValue}; max-age=3600; path=/; Secure; SameSite=Lax;`;
-    console.log("UTM Parameters:", utmParams);
+    // console.log("UTM Parameters:", utmParams);
   }
 };
