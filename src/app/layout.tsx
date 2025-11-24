@@ -15,10 +15,10 @@ export const metadata = {
     "Dpanda is a distribution platform for d2c brands, offers plug n play white label e-commerce solutions for audience monetisation of websites and mobile apps",
   keywords:
     "AI-based product recommendations, Seamless e-commerce integration, white label e-commerce solution for websites and apps, d2c distribution platform, monetise website and app traffic, advertising widgets for d2c brands, d2c campaign aggregation",
-  image: "https://www.dpanda.ai/dpandaLogo2.png",
-  url: "https://www.dpanda.ai",
+  image: "https://blue-current.vercel.app/dpandaLogo2.png",
+  url: "https://blue-current.vercel.app/",
   icons: {
-    icon: "https://www.dpanda.ai/dpandaLogo2.png",
+    icon: "https://blue-current.vercel.app/dpandaLogo2.png",
   },
 };
 
