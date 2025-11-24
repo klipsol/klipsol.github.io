@@ -1,28 +1,28 @@
-'use client';
-import Calendly from '@/app/the-bump/Components/Calendly/Calendly';
-import Dropdown from '@/app/the-bump/Components/Dropdown/Dropdown';
-import { beaconEvents } from '@/app/utils/events';
-import Link from 'next/link';
-import { usePathname } from 'next/navigation';
-import { useCallback, useEffect, useState } from 'react';
-import { twMerge } from 'tailwind-merge';
+"use client";
+import Calendly from "@/app/the-bump/Components/Calendly/Calendly";
+import Dropdown from "@/app/the-bump/Components/Dropdown/Dropdown";
+import { beaconEvents } from "@/app/utils/events";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
+import { useCallback, useEffect, useState } from "react";
+import { twMerge } from "tailwind-merge";
 
 export default function Navbar({ customBg }) {
   const pathname = usePathname();
-  const [publisher, setPublisher] = useState('');
+  const [publisher, setPublisher] = useState("");
   const [scrollTimeout, setScrollTimeout] = useState(null);
   const [visibleComponent, setVisibleComponent] = useState(null);
   const [scrollPosition, setScrollPosition] = useState(0);
 
   useEffect(() => {
-    setPublisher(localStorage.getItem('publisher'));
+    setPublisher(localStorage.getItem("publisher"));
   }, []);
 
   // Track the visible component and current scroll position
 
   // Function to find the visible component based on scroll position
   const findVisibleComponent = () => {
-    const elements = document.querySelectorAll('.scrollable-component'); // Update this selector based on your component class or id
+    const elements = document.querySelectorAll(".scrollable-component"); // Update this selector based on your component class or id
     let found = null;
     const viewportHeight = window.innerHeight;
 
@@ -42,15 +42,15 @@ export default function Navbar({ customBg }) {
     });
 
     if (found) {
-      setVisibleComponent(found.id || found.getAttribute('name') || 'Unknown');
+      setVisibleComponent(found.id || found.getAttribute("name") || "Unknown");
     } else {
-      setVisibleComponent('None');
+      setVisibleComponent("None");
     }
   };
 
   const handleEvent = () => {
-    beaconEvents.fireEvents('page-scroll', {
-      'scroll-position-y': scrollPosition,
+    beaconEvents.fireEvents("page-scroll", {
+      "scroll-position-y": scrollPosition,
       component: visibleComponent,
     });
     // Additional beacon event logic can go here
@@ -84,11 +84,11 @@ export default function Navbar({ customBg }) {
 
   useEffect(() => {
     // Add scroll event listener
-    window.addEventListener('scroll', onScroll, { passive: true });
+    window.addEventListener("scroll", onScroll, { passive: true });
 
     return () => {
       // Clean up the event listener on unmount
-      window.removeEventListener('scroll', onScroll, {
+      window.removeEventListener("scroll", onScroll, {
         passive: true,
       } as AddEventListenerOptions);
 
@@ -100,9 +100,9 @@ export default function Navbar({ customBg }) {
   }, [onScroll, scrollTimeout]);
 
   const handleBeaconEvent = (e) => {
-    let elementId = e.target.id || e.currentTarget.id || '';
-    if (e.target.nodeName === 'BUTTON') {
-      elementId = 'calendly-button';
+    let elementId = e.target.id || e.currentTarget.id || "";
+    if (e.target.nodeName === "BUTTON") {
+      elementId = "calendly-button";
     }
     beaconEvents.fireEvents(`nav-item-click`, { item_name: elementId });
   };
@@ -114,25 +114,29 @@ export default function Navbar({ customBg }) {
           background: customBg && customBg,
         }}
         className={twMerge(
-          'lg:sec-container opacity-1 mt-0 relative z-50 lg:pr-10 mx-0',
-          customBg && 'bg-primary'
+          "lg:sec-container opacity-1 mt-0 relative z-50 lg:pr-10 mx-0",
+          customBg && "bg-primary"
         )}
         id="nav"
       >
         <div className="lg:flex gap-4 relative px-4 pt-2 justify-between items-center flex flex-row md:flex-row bg-transparent rounded-3xl md:custom-text-base">
-          <Link href={'/publisher/' + publisher}>
+          <Link href={"/publisher/" + publisher}>
             <img
               src="/dpandaLogo2.png"
               alt="logo"
               className="md:hidden block w-10 absolute top-2"
             />
             <img
-              src="/DpandaLogo.png"
+              src="/dpandaLogo2.png"
               alt="logo"
               className="max-h-10 mt-6 mb-4 hidden md:block"
             />
           </Link>
-          <Dropdown offeringsButtonWrap="lg:mr-[1rem]" offeringsButton="bg-[#063750] text-[#ffffff]" offeringsButtonIcon="border-t-[#ffffff]" />
+          <Dropdown
+            offeringsButtonWrap="lg:mr-[1rem]"
+            offeringsButton="bg-[#063750] text-[#ffffff]"
+            offeringsButtonIcon="border-t-[#ffffff]"
+          />
           {/* <div className="p-2 md:px-8 md:pt-6 md:pb-4 bg-[#043045] rounded-b-2xl lg:block">
             <div className="text-sm md:gap-x-6 text-center gap-y-2 items-center pt-0 w-full md:w-fit justify-between hidden sm:flex sm:flex-row md:flex-row lg:flex">
               {/* <LivePreviewLinks /> *

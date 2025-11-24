@@ -1,7 +1,7 @@
-import { brands, brands2, news } from '@/app/Data/brandsData';
+import { brands, brands2, news } from "@/app/Data/brandsData";
 // import Marquee from "../Marquee/Marquee";
-import Marquee from 'react-fast-marquee';
-import HighlightedText from '../HighlightedText/HighlightedText';
+import Marquee from "react-fast-marquee";
+import HighlightedText from "../HighlightedText/HighlightedText";
 export const Testimonial = () => (
   <section className="w-full pb-10 ">
     <div className=" flex flex-col items-center h-full justify-evenly">
@@ -44,7 +44,7 @@ export const Testimonial = () => (
       <hr className="w-full border border-gray-300" />
       <div className="sec-container w-full py-10 sm:px-[15px] md:px-0">
         <h1 className="mb-[3%] text-center md:text-start sec-container text-[#013046] title font-bold">
-          Dpanda in the{' '}
+          BlueCurrent in the{" "}
           <HighlightedText text="News" wrapperClass="bottom-1 h-[30%]" />
         </h1>
         <div className="flex sm:flex-wrap lg:flex-nowrap gap-2 2xl:justify-between">

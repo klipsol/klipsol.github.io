@@ -1,10 +1,10 @@
-'use client';
-import useAssets from '@/app/hooks/useAssets';
-import DPVideo from '../DPVideo/DPVideo';
-import HighlightedText from '../HighlightedText/HighlightedText';
+"use client";
+import useAssets from "@/app/hooks/useAssets";
+import DPVideo from "../DPVideo/DPVideo";
+import HighlightedText from "../HighlightedText/HighlightedText";
 
 export default function Feature() {
-  const listItems = ['Higher Conversion'];
+  const listItems = ["Higher Conversion"];
   const { a2, b2 } = useAssets();
 
   return (
@@ -29,14 +29,14 @@ export default function Feature() {
         </div>
         <div className="lg:h-screen sm:h-full bg-[#FEF4D3] rounded-t-3xl overflow-hidden w-[50%] ">
           <div className="bg-[#FFE89B] text-[#234651] py-2 subtitle items-center font-bold flex justify-center">
-            Dpanda
+            BlueCurrent
           </div>
           <div className="h-[80%] sm:p-[15px] flex justify-center flex-col items-center">
             <div className="flex h-[80%] sm:mb-[15px] md:mb-0 items-center justify-center">
               <DPVideo className="h-[90%]" src={b2} />
             </div>
             <p className="text-center text-[#254652] subtitle sm:w-[80%] lg:text-[24px] lg:w-full text-lg font-medium 2xl:text-2xl">
-              Click & <br className="lg:hidden" />{' '}
+              Click & <br className="lg:hidden" />{" "}
               <span className="font-bold">Convert</span>
             </p>
           </div>
@@ -51,7 +51,7 @@ export default function Feature() {
             <HighlightedText
               text="Better"
               wrapperClass="bottom-1 h-[30%] font-bold"
-            />{' '}
+            />{" "}
             <br />
             <span className="font-medium">User Experience</span>
           </h1>

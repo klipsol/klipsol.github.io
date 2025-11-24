@@ -1,31 +1,31 @@
-'use client';
-import useAssets from '@/app/hooks/useAssets';
-import { beaconEvents } from '@/app/utils/events';
-import { useParams } from 'next/navigation';
-import { useEffect, useState } from 'react';
-import { twMerge } from 'tailwind-merge';
-import DPVideo from '../DPVideo/DPVideo';
-import HighlightedText from '../HighlightedText/HighlightedText';
-import Navbar from '../Nav/Navbar';
-import { SetUtmParams } from '@/app/utils/setUtmParams';
+"use client";
+import useAssets from "@/app/hooks/useAssets";
+import { beaconEvents } from "@/app/utils/events";
+import { useParams } from "next/navigation";
+import { useEffect, useState } from "react";
+import { twMerge } from "tailwind-merge";
+import DPVideo from "../DPVideo/DPVideo";
+import HighlightedText from "../HighlightedText/HighlightedText";
+import Navbar from "../Nav/Navbar";
+import { SetUtmParams } from "@/app/utils/setUtmParams";
 
 const Hero = () => {
-  SetUtmParams()
-  const [pubName, setPubName] = useState('dpanda-in');
+  SetUtmParams();
+  const [pubName, setPubName] = useState("dpanda-in");
   const assets = useAssets();
   const params = useParams();
-  const publisher = params?.publisherId?.[0] || 'dpanda-in';
+  const publisher = params?.publisherId?.[0] || "dpanda-in";
   useEffect(() => {
-    if (location.pathname.includes('/publisher/')) {
+    if (location.pathname.includes("/publisher/")) {
       setPubName(
-        location.pathname.replace('/publisher/', '').replace('-', ' ')
+        location.pathname.replace("/publisher/", "").replace("-", " ")
       );
     }
-    localStorage.setItem('publisher', publisher);
+    localStorage.setItem("publisher", publisher);
   }, []);
 
   const handleBeaconEvent = (e) => {
-    let elementId = e.target.id || e.currentTarget.id || '';
+    let elementId = e.target.id || e.currentTarget.id || "";
     beaconEvents.fireEvents(`widget-demo-click`, { item_name: elementId });
   };
 
@@ -34,8 +34,8 @@ const Hero = () => {
       <section className="hidden lg:block h-screen lg:relative overflow-hidden bg-white">
         <div
           className={twMerge(
-            'absolute top-0 h-[50vh] bg-primary w-full',
-            publisher === 'dpanda' && 'bg-action'
+            "absolute top-0 h-[50vh] bg-primary w-full",
+            publisher === "dpanda" && "bg-action"
           )}
         ></div>
 
@@ -47,18 +47,18 @@ const Hero = () => {
               <h2 className="text-white">
                 <span
                   className={twMerge(
-                    'text-secondary sm:text-[54px] 2xl:text-[72px] xxl:text-[72px] leading-[1.1]',
-                    publisher === 'dpanda' && 'text-white'
+                    "text-action/80 sm:text-[54px] 2xl:text-[72px] xxl:text-[72px] leading-[1.1]",
+                    publisher === "dpanda" && "text-white"
                   )}
                 >
                   <span
                     className={twMerge(
-                      'text-action font-extrabold',
-                      publisher === 'dpanda' && 'text-primary'
+                      "text-action font-extrabold",
+                      publisher === "dpanda" && "text-primary"
                     )}
                   >
                     Discovery
-                  </span>{' '}
+                  </span>{" "}
                   Meets
                   <br /> Commerce
                 </span>
@@ -66,7 +66,7 @@ const Hero = () => {
 
               <p
                 className={twMerge(
-                  'md:mt-[15px] text-secondary w-[85%] font-medium sm:text-[18px] 2xl:text-[24px] custom-text-sm-medium'
+                  "md:mt-[15px] text-action/80 w-[85%] font-medium sm:text-[18px] 2xl:text-[24px] custom-text-sm-medium"
                   // publisher === 'dpanda' && 'text-action'
                 )}
               >
@@ -82,43 +82,43 @@ const Hero = () => {
             <div className="z-50 sec-container xxl:text-[1.4em] inset-0 md:my-[20px]">
               <a
                 id="live-preview-desktop"
-                href={'/widget/' + pubName.split(' ').join('-')}
+                href={"/widget/" + pubName.split(" ").join("-")}
                 onClick={handleBeaconEvent}
                 className={twMerge(
-                  'relative flex flex-col cursor-pointer bg-action rounded-[46px] py-2 xxl:py-3 xxl:rounded-[50px] sm:w-[225px] 2xl:w-[235px] px-10',
-                  publisher === 'dpanda' && 'bg-primary'
+                  "relative flex text-primary shadow-2xl flex-col cursor-pointer bg-action rounded-[46px] py-2 xxl:py-3 xxl:rounded-[50px] sm:w-[225px] 2xl:w-[235px] px-10",
+                  publisher === "dpanda" && "bg-secondary"
                 )}
               >
-                <div className="absolute  left-[20px] top-[45%]">
+                <div className="absolute  left-[20px] top-[45%] ">
                   <div className="relative">
                     <span
                       className={twMerge(
-                        'bg-primary w-2 h-2 xxl:w-2.5 xxl:h-2.5 rounded-full animate-ping [animation-duration:0.9s] absolute',
-                        publisher === 'dpanda' && 'bg-action'
+                        "bg-primary  w-2 h-2 xxl:w-2.5 xxl:h-2.5 rounded-full animate-ping [animation-duration:0.9s] absolute",
+                        publisher === "dpanda" && "bg-action"
                       )}
                     ></span>
                     <span
                       className={twMerge(
-                        'bg-primary w-2 h-2 xxl:w-2.5 xxl:h-2.5 rounded-full absolute',
-                        publisher === 'dpanda' && 'bg-action'
+                        "bg-primary w-2 h-2 xxl:w-2.5 xxl:h-2.5 rounded-full absolute",
+                        publisher === "dpanda" && "bg-action"
                       )}
                     ></span>
                   </div>
                 </div>
-                <div className="flex gap-x-2 items-start relative ml-[10px]">
-                  <span className="text-white text-left text-[18px] font-normal">
+                <div className="flex gap-x-2 items-start relative ml-[10px] ">
+                  <span className=" text-left text-[18px] font-semibold">
                     Interactive Demo
                   </span>
                 </div>
                 {pubName && (
                   <p
                     className={twMerge(
-                      'text-primary text-[14px] xxl:text-[0.7em] text-left ml-[10px]',
-                      pubName === 'dpanda' && 'text-action'
+                      "text-primary text-[14px] xxl:text-[0.7em] text-left ml-[10px]",
+                      pubName === "dpanda" && "text-action"
                     )}
                   >
-                    for{' '}
-                    {pubName && <span className="capitalize">{pubName}</span>}
+                    for{" "}
+                    {pubName && <span className="capitalize">BlueCurrent</span>}
                   </p>
                 )}
               </a>
@@ -130,7 +130,7 @@ const Hero = () => {
 										Big Tech Is Transforming Discovery To Commerce
 									</p> */}
                   <h1 className="py-4 custom-text-sm-medium md:text-[32px] md:mt-[5%] md:mb-[20px] md:w-[95%]">
-                    <HighlightedText text={'Everything'} /> to Drive On-Site
+                    <HighlightedText text={"Everything"} /> to Drive On-Site
                     User Conversion and Monetization
                   </h1>
                   <div className="flex gap-x-3 custom-text-xs font-medium">
@@ -158,7 +158,7 @@ const Hero = () => {
 
           <div
             className={
-              'h-[90%] rounded-b-full min-w-[40%] bg-secondary sm:hidden lg:block'
+              "h-[90%] rounded-b-full min-w-[40%] bg-secondary sm:hidden lg:block"
             }
           >
             <div className="flex justify-center items-center h-full">

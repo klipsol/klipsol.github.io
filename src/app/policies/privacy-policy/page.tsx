@@ -1,5 +1,5 @@
-import Navbar from '@/app/roi-calculator/Components/Navbar';
-import Footer from '@/app/the-bump/Components/Footer/Footer';
+import Navbar from "@/app/roi-calculator/Components/Navbar";
+import Footer from "@/app/the-bump/Components/Footer/Footer";
 
 export default function page() {
   return (
@@ -11,12 +11,12 @@ export default function page() {
         <section className="mb-8">
           <h2 className="text-xl font-semibold">1. Introduction</h2>
           <p>
-            Welcome to Dpanda! We are committed to safeguarding your privacy and
-            protecting your personal data. This Privacy Policy explains how we
-            collect, use, disclose, and protect your information when you
-            interact with our services. By using our services, you agree to the
-            practices outlined in this Privacy Policy. If you do not agree,
-            please discontinue using our services.
+            Welcome to BlueCurrent! We are committed to safeguarding your
+            privacy and protecting your personal data. This Privacy Policy
+            explains how we collect, use, disclose, and protect your information
+            when you interact with our services. By using our services, you
+            agree to the practices outlined in this Privacy Policy. If you do
+            not agree, please discontinue using our services.
           </p>
         </section>
 
@@ -103,7 +103,8 @@ export default function page() {
             </li>
             <li>
               Brands and Advertisers: If you purchase from a brand through
-              Dpanda, we may share your information to complete the transaction.
+              BlueCurrent, we may share your information to complete the
+              transaction.
             </li>
             <li>
               Legal Obligations: To comply with legal processes such as
@@ -199,8 +200,8 @@ export default function page() {
                 href="mailto:support@dpanda.in"
                 className="text-blue-600 hover:underline"
               >
-                {' '}
-                support@dpanda.in{' '}
+                {" "}
+                support@dpanda.in{" "}
               </a>
             </li>
           </ul>
@@ -217,8 +218,8 @@ export default function page() {
               href="mailto:support@dpanda.in"
               className="text-blue-600 hover:underline"
             >
-              {' '}
-              support@dpanda.in{' '}
+              {" "}
+              support@dpanda.in{" "}
             </a>
           </p>
         </section>
@@ -295,7 +296,7 @@ export default function page() {
             rights, please contact us at:
           </p>
           <p>
-            Email:{' '}
+            Email:{" "}
             <a
               href="mailto:support@dpanda.in"
               className="text-blue-600 hover:underline"
@@ -312,21 +313,21 @@ export default function page() {
         <section className="mb-8">
           <h2 className="text-xl font-semibold">16. Accessibility Statement</h2>
           <p>
-            Dpanda is committed to making our website accessible to all,
+            BlueCurrent is committed to making our website accessible to all,
             including individuals with disabilities. If you have difficulty
             accessing any part of our website, please contact us at
             <a
               href="mailto:support@dpanda.in"
               className="text-blue-600 hover:underline"
             >
-              {' '}
-              support@dpanda.in{' '}
-            </a>{' '}
+              {" "}
+              support@dpanda.in{" "}
+            </a>{" "}
             , and we will assist you.
           </p>
         </section>
       </div>
-      <Footer/>
+      <Footer />
     </>
   );
 }

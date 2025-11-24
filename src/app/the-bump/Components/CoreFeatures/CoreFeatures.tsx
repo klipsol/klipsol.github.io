@@ -1,6 +1,6 @@
-import { CheckIcon, MoveRight, XIcon } from 'lucide-react';
-import Link from 'next/link';
-import HighlightedText from '../HighlightedText/HighlightedText';
+import { CheckIcon, MoveRight, XIcon } from "lucide-react";
+import Link from "next/link";
+import HighlightedText from "../HighlightedText/HighlightedText";
 
 const CoreFeatures = () => {
   return (
@@ -10,7 +10,7 @@ const CoreFeatures = () => {
           <HighlightedText
             wrapperClass="bottom-[10%]"
             text="Full-Stack"
-          ></HighlightedText>{' '}
+          ></HighlightedText>{" "}
           eCommerce Over SAAS
         </h1>
         <div className="flex justify-between sm:gap-x-1 px-1">
@@ -112,7 +112,7 @@ const CoreFeatures = () => {
           </div>
           <div className="bg-[#FEF4D3] sm:rounded-t-2xl lg:rounded-t-3xl overflow-hidden">
             <h2 className="text-[#505C6E] font-semibold custom-text-base lg:mb-4 bg-[#F7BB30] text-center py-1 lg:py-2">
-              Dpanda: Full Stack <br className="lg:hidden" /> eCommerce
+              BlueCurrent: Full Stack <br className="lg:hidden" /> eCommerce
             </h2>
             <div className="grid gap-4 text-[#505C6E] lg:px-5 pb-4 text-sm font-medium lg:text-[1.125em] 2xl:text-[1.6em]">
               <div className="flex flex-col items-center lg:flex-row lg:items-center sm:text-center lg:text-left border-t-[3px] lg:border-none border-[#FFFAEA] px-1 py-2 ">
@@ -164,7 +164,7 @@ const CoreFeatures = () => {
             </div>
           </div>
         </div>
-        <Link href={'/features'}>
+        <Link href={"/features"}>
           <div className="sm:hidden lg:flex justify-end">
             <div className="text-[#505C6E] hover:underline cursor-pointer flex gap-x-1 items-center custom-text-xs mt-4">
               <span className="">See all features</span>

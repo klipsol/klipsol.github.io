@@ -287,7 +287,7 @@ const WidgetTab = ({ selectedTab }) => {
                   Traditional Methods
                 </th>
                 <th className="text-left text-sm font-semibold text-gray-700 py-3 px-6">
-                  With Dpanda
+                  With BlueCurrent
                 </th>
               </tr>
             </thead>

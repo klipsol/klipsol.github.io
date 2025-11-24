@@ -1,5 +1,5 @@
-import Navbar from '@/app/roi-calculator/Components/Navbar';
-import Footer from '@/app/the-bump/Components/Footer/Footer';
+import Navbar from "@/app/roi-calculator/Components/Navbar";
+import Footer from "@/app/the-bump/Components/Footer/Footer";
 
 export default function page() {
   return (
@@ -9,7 +9,7 @@ export default function page() {
         <h1 className="mb-4 text-2xl font-bold">Terms and Conditions</h1>
 
         <p className="mb-8">
-          Welcome to Dpanda! These Terms and Conditions (&quot;Terms&quot;)
+          Welcome to BlueCurrent! These Terms and Conditions (&quot;Terms&quot;)
           govern your use of our website, services, and any transactions made
           through our platform. By accessing or using our services, you agree to
           comply with these Terms. If you do not agree with any part of the
@@ -19,9 +19,9 @@ export default function page() {
         <section className="mb-8">
           <h2 className="text-xl font-semibold">1. Acceptance of Terms</h2>
           <p>
-            By accessing or using any part of Dpanda’s services, you agree to be
-            bound by these Terms, as well as our Privacy Policy and any other
-            policies referenced within.
+            By accessing or using any part of BlueCurrent’s services, you agree
+            to be bound by these Terms, as well as our Privacy Policy and any
+            other policies referenced within.
           </p>
         </section>
 
@@ -54,8 +54,8 @@ export default function page() {
         <section className="mb-8">
           <h2 className="text-xl font-semibold">4. Use of Services</h2>
           <p>
-            You agree to use Dpanda’s services solely for lawful purposes and in
-            compliance with all applicable laws. You are prohibited from:
+            You agree to use BlueCurrent’s services solely for lawful purposes
+            and in compliance with all applicable laws. You are prohibited from:
           </p>
           <ul className="list-inside list-disc">
             <li>Engaging in any fraudulent, harmful, or malicious activity.</li>
@@ -74,10 +74,10 @@ export default function page() {
             5. Intellectual Property Rights
           </h2>
           <p>
-            All content on Dpanda, including but not limited to text, images,
-            software, and trademarks, is owned by Dpanda or our licensors. You
-            may not reproduce, distribute, or modify any content without written
-            consent from Dpanda.
+            All content on BlueCurrent, including but not limited to text,
+            images, software, and trademarks, is owned by BlueCurrent or our
+            licensors. You may not reproduce, distribute, or modify any content
+            without written consent from BlueCurrent.
           </p>
         </section>
 
@@ -125,7 +125,7 @@ export default function page() {
         <section className="mb-8">
           <h2 className="text-xl font-semibold">9. Disclaimer of Warranties</h2>
           <p>
-            Dpanda provides services &quot;as is&quot; and &quot;as
+            BlueCurrent provides services &quot;as is&quot; and &quot;as
             available&quot; without any warranties, express or implied. We do
             not guarantee uninterrupted, error-free access or availability of
             our services.
@@ -135,20 +135,20 @@ export default function page() {
         <section className="mb-8">
           <h2 className="text-xl font-semibold">10. Limitation of Liability</h2>
           <p>
-            To the fullest extent allowed by law, Dpanda will not be liable for
-            any indirect, incidental, special, or consequential damages arising
-            from your use of our services. Our liability to you is limited to
-            the total amount paid by you for services during the 6-month period
-            preceding the claim.
+            To the fullest extent allowed by law, BlueCurrent will not be liable
+            for any indirect, incidental, special, or consequential damages
+            arising from your use of our services. Our liability to you is
+            limited to the total amount paid by you for services during the
+            6-month period preceding the claim.
           </p>
         </section>
 
         <section className="mb-8">
           <h2 className="text-xl font-semibold">11. Indemnification</h2>
           <p>
-            You agree to indemnify and hold Dpanda harmless from any claims,
-            liabilities, damages, or expenses arising out of your use of our
-            services or violation of these Terms.
+            You agree to indemnify and hold BlueCurrent harmless from any
+            claims, liabilities, damages, or expenses arising out of your use of
+            our services or violation of these Terms.
           </p>
         </section>
 
@@ -158,8 +158,8 @@ export default function page() {
           </h2>
           <p>
             Our platform may include links to third-party websites or services.
-            Dpanda is not responsible for the content, practices, or privacy
-            policies of these third-party services.
+            BlueCurrent is not responsible for the content, practices, or
+            privacy policies of these third-party services.
           </p>
         </section>
 
@@ -183,10 +183,10 @@ export default function page() {
         <section className="mb-8">
           <h2 className="text-xl font-semibold">15. Changes to Terms</h2>
           <p>
-            Dpanda reserves the right to modify these Terms at any time. Any
-            changes will be posted on this page with an updated &quot;Effective
-            Date.&quot; Continued use of the services after such changes
-            constitutes acceptance of the new Terms.
+            BlueCurrent reserves the right to modify these Terms at any time.
+            Any changes will be posted on this page with an updated
+            &quot;Effective Date.&quot; Continued use of the services after such
+            changes constitutes acceptance of the new Terms.
           </p>
         </section>
 
@@ -197,12 +197,12 @@ export default function page() {
             contact us at:
           </p>
           <p>
-            Email:{' '}
+            Email:{" "}
             <a
-              href="mailto:support@dpanda.in"
+              href="mailto:support@BlueCurrent.in"
               className="text-blue-600 hover:underline"
             >
-              support@dpanda.in
+              support@BlueCurrent.in
             </a>
           </p>
           <p>
@@ -211,7 +211,7 @@ export default function page() {
           </p>
         </section>
       </div>
-      <Footer/>
+      <Footer />
     </>
   );
 }

@@ -1,4 +1,4 @@
-import Navbar from '@/app/roi-calculator/Components/Navbar';
+import Navbar from "@/app/roi-calculator/Components/Navbar";
 
 export default function page() {
   return (
@@ -9,10 +9,11 @@ export default function page() {
         <section className="mb-8">
           <h2 className="text-xl font-semibold">1. Introduction</h2>
           <p>
-            Dpanda uses cookies and similar tracking technologies to provide you
-            with an enhanced user experience, improve our services, and deliver
-            personalized content. This policy explains what cookies are, how we
-            use them, and how you can manage your cookie preferences.
+            BlueCurrent uses cookies and similar tracking technologies to
+            provide you with an enhanced user experience, improve our services,
+            and deliver personalized content. This policy explains what cookies
+            are, how we use them, and how you can manage your cookie
+            preferences.
           </p>
         </section>
 
@@ -56,7 +57,7 @@ export default function page() {
             <li>
               <strong>Analytics Cookies: </strong>These cookies help us gather
               data on site performance and user engagement to improve our
-              services.{' '}
+              services.{" "}
             </li>
           </ul>
         </section>
@@ -87,26 +88,26 @@ export default function page() {
             <li>
               Clarity:
               <a href="https://learn.microsoft.com/en-us/clarity/setup-and-installation/clarity-data">
-                https://learn.microsoft.com/en-us/clarity/setup-and-installation/clarity-data{' '}
+                https://learn.microsoft.com/en-us/clarity/setup-and-installation/clarity-data{" "}
               </a>
             </li>
             <li>
-              Vercel:{' '}
+              Vercel:{" "}
               <a href="https://vercel.com/legal/cookie-policy">
-                {' '}
-                https://vercel.com/legal/cookie-policy{' '}
+                {" "}
+                https://vercel.com/legal/cookie-policy{" "}
               </a>
             </li>
             <li>
-              Hotjar:{' '}
+              Hotjar:{" "}
               <a href="https://help.hotjar.com/hc/en-us/articles/115011789248-Cookies-on-hotjar-com">
-                https://help.hotjar.com/hc/en-us/articles/115011789248-Cookies-on-hotjar-com{' '}
+                https://help.hotjar.com/hc/en-us/articles/115011789248-Cookies-on-hotjar-com{" "}
               </a>
             </li>
             <li>
-              Google:{' '}
+              Google:{" "}
               <a href="https://learn.microsoft.com/en-us/clarity/setup-and-installation/clarity-data">
-                https://policies.google.com/technologies/cookies?hl=en-US{' '}
+                https://policies.google.com/technologies/cookies?hl=en-US{" "}
               </a>
             </li>
           </ul>

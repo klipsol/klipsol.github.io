@@ -1,4 +1,4 @@
-import HighlightedText from '../HighlightedText/HighlightedText';
+import HighlightedText from "../HighlightedText/HighlightedText";
 
 export default function InstantRoi() {
   return (
@@ -39,9 +39,9 @@ export default function InstantRoi() {
           </div>
         </div>
         <div className="bg-[#FEF4D3] sm:rounded-t-3xl lg:rounded-none flex flex-col justify-center overflow-hidden w-[50%]">
-          {' '}
+          {" "}
           <div className="bg-[#FFE89B] text-[#234651] py-3 subtitle items-center font-semibold flex justify-center">
-            Dpanda
+            BlueCurrent
           </div>
           <div className="lg:mt-[30%] sm:mt-[20%] flex flex-col w-full pb-4 gap-y-10 2xl:gap-y-14 items-start text-[#505C6E] sm:h-full md:h-auto">
             <div className="flex justify-start sm:flex-col lg:flex-row w-[90%] gap-x-10 items-center">
@@ -51,14 +51,14 @@ export default function InstantRoi() {
               </div>
             </div>
             <div className="flex justify-start sm:flex-col lg:flex-row w-[90%] gap-x-10 items-center">
-              {' '}
+              {" "}
               <br className="lg:hidden" />
               <div className="text-center font-bold sm:text-sm lg:text-base text-[#1d234e] 2xl:py-10 2xl:rounded-r-[45px] custom-text-sm-medium px-4 py-2 max-h-[55px] justify-center inline-flex items-center w-full   bg-[#FFE89C] rounded-r-3xl   ">
-                {'< 5 Days'}
+                {"< 5 Days"}
               </div>
             </div>
             <div className="flex justify-start sm:flex-col lg:flex-row w-[90%] gap-x-10 items-center">
-              {' '}
+              {" "}
               <br className="lg:hidden" />
               <div className="text-center font-bold sm:text-sm lg:text-base text-[#1d234e] 2xl:py-10 2xl:rounded-r-[45px] custom-text-sm-medium px-4 max-h-[55px] h-[55px] py-2 justify-center inline-flex items-center w-full    bg-[#FFE89C] rounded-r-3xl   ">
                 Delivered Upfront
@@ -76,7 +76,7 @@ export default function InstantRoi() {
             <HighlightedText
               text="Instant ROI"
               wrapperClass="bottom-2 h-[30%] bottom-1"
-            />{' '}
+            />{" "}
           </h1>
           <p className="2xl:text-2xl text-[#505C6E]">
             Product delivered upfront.

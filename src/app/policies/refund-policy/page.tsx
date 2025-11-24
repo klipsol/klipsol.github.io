@@ -1,4 +1,4 @@
-import Navbar from '@/app/roi-calculator/Components/Navbar';
+import Navbar from "@/app/roi-calculator/Components/Navbar";
 
 export default function page() {
   return (
@@ -8,9 +8,9 @@ export default function page() {
         <h1 className="mb-4 text-2xl font-bold">Refund Policy</h1>
 
         <p className="mb-8">
-          At Dpanda, we strive to ensure a smooth shopping experience. However,
-          if you need to request a refund, the following outlines our refund
-          policy:
+          At BlueCurrent, we strive to ensure a smooth shopping experience.
+          However, if you need to request a refund, the following outlines our
+          refund policy:
         </p>
 
         <section className="mb-8">
@@ -58,13 +58,13 @@ export default function page() {
           <ol className="list-inside list-decimal">
             <li>To request a refund, follow these steps:</li>
             <li>
-              <strong>Contact Us:</strong> Email our customer service team at{' '}
+              <strong>Contact Us:</strong> Email our customer service team at{" "}
               <a
                 href="mailto:support@dpanda.in"
                 className="text-blue-600 hover:underline"
               >
                 support@dpanda.in
-              </a>{' '}
+              </a>{" "}
               with details about your order and the reason for the refund
               request.
             </li>
@@ -123,7 +123,7 @@ export default function page() {
             </li>
             <li>
               If you’ve followed the above steps and still haven’t received your
-              refund, contact us at{' '}
+              refund, contact us at{" "}
               <a
                 href="mailto:support@dpanda.in"
                 className="text-blue-600 hover:underline"

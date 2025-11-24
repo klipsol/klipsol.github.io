@@ -1,10 +1,10 @@
-'use client';
-import useAssets from '@/app/hooks/useAssets';
-import DPVideo from '../DPVideo/DPVideo';
-import HighlightedText from '../HighlightedText/HighlightedText';
+"use client";
+import useAssets from "@/app/hooks/useAssets";
+import DPVideo from "../DPVideo/DPVideo";
+import HighlightedText from "../HighlightedText/HighlightedText";
 
 export default function FirstParty() {
-  const listItems = ['Brand & User Relationships', 'Unmatched Personalisation'];
+  const listItems = ["Brand & User Relationships", "Unmatched Personalisation"];
   const { d } = useAssets();
   return (
     <section
@@ -17,7 +17,7 @@ export default function FirstParty() {
             Conventional
           </div>
           <div className="flex h-full  justify-center flex-col">
-            <DPVideo className="h-fit" src={'/fl.mp4'} />
+            <DPVideo className="h-fit" src={"/fl.mp4"} />
             <p className="text-center text-[#254652] sm:w-[80%] lg:w-full lg:text-[24px] text-lg font-medium 2xl:text-2xl">
               Data
               <span className="font-bold"> Blackbox </span>
@@ -26,7 +26,7 @@ export default function FirstParty() {
         </div>
         <div className="lg:h-screen sm:h-full bg-[#FEF4D3] sm:rounded-t-3xl lg:rounded-none overflow-hidden w-[50%]">
           <div className="lg:hidden bg-[#FFE89B] text-[#234651] py-3 subtitle items-center font-semibold flex justify-center">
-            Dpanda
+            BlueCurrent
           </div>
           <div className="flex h-full  justify-center flex-col">
             <DPVideo className="h-fit" src={d} />
@@ -46,7 +46,7 @@ export default function FirstParty() {
             <HighlightedText
               text="Access To"
               wrapperClass="bottom-1 h-[30%] font-semibold"
-            />{' '}
+            />{" "}
             <br /> <span className="font-normal">First-Party Insights</span>
           </h1>
           <p className="custom-text-sm text-[#505C6E] 2xl:text-2xl">

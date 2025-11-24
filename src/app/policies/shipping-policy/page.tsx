@@ -1,4 +1,4 @@
-import Navbar from '@/app/roi-calculator/Components/Navbar';
+import Navbar from "@/app/roi-calculator/Components/Navbar";
 
 export default function page() {
   return (
@@ -34,15 +34,15 @@ export default function page() {
             4. Customs, Duties, and Taxes
           </h2>
           <p>
-            Dpanda is not responsible for any customs fees, duties, or taxes
-            applied to your order. All additional charges incurred during
+            BlueCurrent is not responsible for any customs fees, duties, or
+            taxes applied to your order. All additional charges incurred during
             shipping are the customer’s responsibility.
           </p>
         </section>
         <section className="mb-8">
           <h2 className="text-xl font-semibold">5. Damages</h2>
           <p>
-            Dpanda is not responsible for products damaged or lost during
+            BlueCurrent is not responsible for products damaged or lost during
             shipping. If your item arrives damaged, save all packaging materials
             and report the issue to the carrier to file a claim.
           </p>
@@ -75,13 +75,13 @@ export default function page() {
         <section className="mb-8">
           <h2 className="text-xl font-semibold">4. Return Process</h2>
           <p>
-            Contact Us: Email{' '}
+            Contact Us: Email{" "}
             <a
               href="mailto:support@dpanda.in"
               className="text-blue-600 hover:underline"
             >
               support@dpanda.in
-            </a>{' '}
+            </a>{" "}
             to initiate a return request.
           </p>
           <p>

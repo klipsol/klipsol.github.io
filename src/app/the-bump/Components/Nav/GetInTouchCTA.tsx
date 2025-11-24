@@ -1,11 +1,11 @@
-"use client"
-import { useRef, useState } from 'react';
-import GetInTouchModal from '../Modal/GetInTouchModal';
-import { beaconEvents } from '@/app/utils/events';
+"use client";
+import { useRef, useState } from "react";
+import GetInTouchModal from "../Modal/GetInTouchModal";
+import { beaconEvents } from "@/app/utils/events";
 
 const GetInTouchCTA = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
-  const [modalUrl, setModalUrl] = useState('');
+  const [modalUrl, setModalUrl] = useState("");
   const buttonRef = useRef(null);
 
   const openModal = (url) => {
@@ -15,28 +15,29 @@ const GetInTouchCTA = () => {
 
   const closeModal = () => {
     setIsModalOpen(false);
-    setModalUrl('');
+    setModalUrl("");
   };
 
   const handleBeaconEvent = (e) => {
-    let elementId = e.target.id || e.currentTarget.id || '';
-    if (e.target.nodeName === 'BUTTON') {
-      elementId = 'get-in-touch';
+    let elementId = e.target.id || e.currentTarget.id || "";
+    if (e.target.nodeName === "BUTTON") {
+      elementId = "get-in-touch";
     }
     beaconEvents.fireEvents(`${elementId}-click`, {});
   };
 
   return (
     <>
-    <button id="get-in-touch"
-      onClick={(e) => {
-        handleBeaconEvent(e);
-        openModal('https://test-dpanda.pages.dev/theBump')
-      }}
-      ref={buttonRef}
-      className="bg-[#f7ba30] bg-[url(/get-in-touch-icon.webp)] bg-no-repeat bg-center bg-auto w-[50px] h-[50px] rounded-full fixed bottom-[5rem] right-[1rem] z-[100]">
-    </button>
-    {isModalOpen && <GetInTouchModal url={modalUrl} onClose={closeModal} />}
+      <button
+        id="get-in-touch"
+        onClick={(e) => {
+          handleBeaconEvent(e);
+          openModal("https://test-dpanda.pages.dev/theBump");
+        }}
+        ref={buttonRef}
+        className="bg-blue-400/70 shadow-2xl bg-[url(/get-in-touch-icon.webp)] bg-no-repeat bg-center bg-auto w-[50px] h-[50px] rounded-full fixed bottom-[5rem] right-[1rem] z-[100]"
+      ></button>
+      {isModalOpen && <GetInTouchModal url={modalUrl} onClose={closeModal} />}
     </>
   );
 };

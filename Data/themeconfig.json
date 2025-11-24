@@ -96,9 +96,9 @@
     "brand-color": "0 21 124"
   },
   "default": {
-    "primary-color": "247 186 48",
-    "secondary-color": "0 48 69",
-    "action-color": "0 48 69",
-    "brand-color": "247 186 48"
+    "primary-color": "10 132 255",
+    "secondary-color": "13 95 166",
+    "action-color": "255 255 255",
+    "brand-color": "230 230 230"
   }
 }

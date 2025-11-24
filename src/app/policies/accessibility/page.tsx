@@ -1,4 +1,4 @@
-import Navbar from '@/app/roi-calculator/Components/Navbar';
+import Navbar from "@/app/roi-calculator/Components/Navbar";
 
 export default function page() {
   return (
@@ -9,9 +9,9 @@ export default function page() {
           Accessibility Statement
         </h1>
         <p>
-          Dpanda is committed to making our website accessible to all, including
-          individuals with disabilities. If you have difficulty accessing any
-          part of our website, please contact us at{' '}
+          BlueCurrent is committed to making our website accessible to all,
+          including individuals with disabilities. If you have difficulty
+          accessing any part of our website, please contact us at{" "}
           <a
             href="mailto:support@dpanda.in"
             className="text-blue-600 hover:underline"

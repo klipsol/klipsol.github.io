@@ -1,10 +1,10 @@
-'use client';
-import useAssets from '@/app/hooks/useAssets';
-import DPVideo from '../DPVideo/DPVideo';
-import HighlightedText from '../HighlightedText/HighlightedText';
+"use client";
+import useAssets from "@/app/hooks/useAssets";
+import DPVideo from "../DPVideo/DPVideo";
+import HighlightedText from "../HighlightedText/HighlightedText";
 
 export default function LifeTimeValue() {
-  const listItems = ['Higher Engagement', 'Bundle Subscriptions'];
+  const listItems = ["Higher Engagement", "Bundle Subscriptions"];
   const { c } = useAssets();
   return (
     <section
@@ -19,7 +19,7 @@ export default function LifeTimeValue() {
           <div className="flex h-full justify-center items-center flex-col">
             {/* <DPVideo className="h-fit sm:mt-[-20px] sm:mb-[15px]" src={'/vid2.mp4'} /> */}
             <div className="flex h-[80%] sm:mb-[15px] md:mb-0 items-center justify-center">
-              <DPVideo className="h-[90%]" src={'/vid2.mp4'} />
+              <DPVideo className="h-[90%]" src={"/vid2.mp4"} />
             </div>
             <p className="text-center text-[#254652] subtitle sm:w-[80%] lg:text-[24px] lg:w-full text-lg font-medium 2xl:text-2xl">
               <span className="font-bold">Third Party</span> User Control
@@ -28,7 +28,7 @@ export default function LifeTimeValue() {
         </div>
         <div className="lg:h-screen sm:h-full bg-[#FEF4D3] sm:rounded-t-3xl lg:rounded-none overflow-hidden w-[50%]">
           <div className="lg:hidden bg-[#FFE89B] text-[#234651] py-3 subtitle items-center font-semibold flex justify-center">
-            Dpanda
+            BlueCurrent
           </div>
           <div className="flex h-full justify-center items-center flex-col">
             <div className="flex h-[80%] sm:mb-[15px] md:mb-0 items-center justify-center">
@@ -49,7 +49,7 @@ export default function LifeTimeValue() {
             <HighlightedText
               text="Higher"
               wrapperClass="bottom-1 h-[30%] font-semibold"
-            />{' '}
+            />{" "}
             <br />
             <span className="font-normal">Lifetime Value</span>
           </h1>
