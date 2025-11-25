@@ -17,6 +17,7 @@ const Hero = () => {
   const publisher = params?.publisherId?.[0] || "dpanda-in";
   useEffect(() => {
     if (location.pathname.includes("/publisher/")) {
+      console.log("pathname", location.pathname);
       setPubName(
         location.pathname.replace("/publisher/", "").replace("-", " ")
       );
