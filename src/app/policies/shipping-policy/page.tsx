@@ -72,7 +72,7 @@ export default function page() {
             <li>Downloadable software products</li>
           </ul>
         </section>
-        <section className="mb-8">
+        {/* <section className="mb-8">
           <h2 className="text-xl font-semibold">4. Return Process</h2>
           <p>
             Contact Us: Email{" "}
@@ -88,7 +88,7 @@ export default function page() {
             Shipping: Send the item to [Return Address], including proof of
             purchase in the return package
           </p>
-        </section>
+        </section> */}
         <section className="mb-8">
           <h2 className="text-xl font-semibold">5. Refunds</h2>
           <p>

@@ -61,11 +61,11 @@ const Dropdown = ({
     );
 
   const solutionsItems = [
-     {
+    {
       label: "Offline to Online",
       url: "https://www.dpanda.ai/o2o",
     },
-  
+
     {
       label: "Commerce Media",
       url: "https://www.postsell.in",
@@ -74,7 +74,7 @@ const Dropdown = ({
       label: "Employee Rewards",
       url: "https://employee-rewards.dpanda.in",
     },
-     {
+    {
       label: "For Influencers",
       url: "https://discover.dpanda.in",
     },
@@ -92,7 +92,7 @@ const Dropdown = ({
     <div className={`relative ${offeringsButtonWrap}`}>
       <div className="flex space-x-4">
         <div className="relative">
-          {renderDropdownButton("Solutions", "solutions")}
+          {/* {renderDropdownButton("Solutions", "solutions")} */}
           {renderDropdownMenu("solutions", solutionsItems, "12rem")}
         </div>
 

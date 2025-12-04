@@ -27,16 +27,16 @@ export default function Footer() {
             >
               9582215864
             </Link>
-            <Link
+            {/* <Link
               href="mailto:support@dpanda.in"
               className="hover:underline transition-colors"
             >
               support@dpanda.in
-            </Link>
+            </Link> */}
           </div>
 
-          <div className="grid grid-cols-[auto_auto] justify-start gap-x-4 lg:gap-y-2 gap-y-2 text-left text-[0.9em] 2xl:text-[1em] mt-5 lg:mt-0">
-            <h2 className="col-span-2 sm:text-xl">Usefull Links</h2>
+          {/* <div className="grid grid-cols-[auto_auto] justify-start gap-x-4 lg:gap-y-2 gap-y-2 text-left text-[0.9em] 2xl:text-[1em] mt-5 lg:mt-0"> */}
+          {/* <h2 className="col-span-2 sm:text-xl">Usefull Links</h2>
             <Link
               href="https://discover.dpanda.in/"
               target="_blank"
@@ -57,8 +57,8 @@ export default function Footer() {
               className="hover:underline transition-colors"
             >
               Employee Rewards
-            </Link>
-          </div>
+            </Link> */}
+          {/* </div> */}
 
           <div className="grid grid-cols-[auto_auto] justify-start gap-x-4 lg:gap-y-2 gap-y-2 text-left text-[0.9em] 2xl:text-[1em] mt-5 lg:mt-0">
             <h2 className="col-span-2 sm:text-xl">Others Links</h2>

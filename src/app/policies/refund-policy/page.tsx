@@ -51,7 +51,7 @@ export default function page() {
           </ul>
         </section>
 
-        <section className="mb-8">
+        {/* <section className="mb-8">
           <h2 className="text-xl font-semibold">
             2. Process for Requesting a Refund
           </h2>
@@ -84,7 +84,7 @@ export default function page() {
               approval or denial of your refund.
             </li>
           </ol>
-        </section>
+        </section> */}
 
         <section className="mb-8">
           <h2 className="text-xl font-semibold">3. Refund Methods</h2>
@@ -97,7 +97,8 @@ export default function page() {
             </li>
             <li>
               <strong>Store Credit:</strong> Alternatively, refunds may be
-              issued as store credit, usable for future purchases on Dpanda.
+              issued as store credit, usable for future purchases on
+              BlueCurrent.
             </li>
             <li>
               <strong>Partial Refunds:</strong> Partial refunds may be granted
@@ -121,7 +122,7 @@ export default function page() {
               Contact Your Credit Card Company: Some financial institutions take
               longer to post refunds.
             </li>
-            <li>
+            {/* <li>
               If you’ve followed the above steps and still haven’t received your
               refund, contact us at{" "}
               <a
@@ -131,7 +132,7 @@ export default function page() {
                 support@dpanda.in
               </a>
               .
-            </li>
+            </li> */}
           </ul>
         </section>
 

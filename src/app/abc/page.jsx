@@ -19,8 +19,8 @@ export default function Page() {
               <br />a Sales Engine
             </h1>
             <p className="text-gray-600 text-lg">
-              Seamlessly connect in-store and online journeys with Dpanda’s O2O
-              platform—offering instant financing, quick onboarding, and
+              Seamlessly connect in-store and online journeys with BlueCurrent's
+              O2O platform—offering instant financing, quick onboarding, and
               intelligent ecosystem support.
             </p>
 

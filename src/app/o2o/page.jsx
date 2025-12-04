@@ -20,8 +20,8 @@ export default function Page() {
               <br />a Sales Engine
             </h1>
             <p className="text-gray-600 text-lg">
-              Seamlessly connect in-store and online journeys with Dpanda’s O2O
-              platform—offering instant financing, quick onboarding, and
+              Seamlessly connect in-store and online journeys with BlueCurrent's
+              O2O platform—offering instant financing, quick onboarding, and
               intelligent ecosystem support.
             </p>
 
@@ -351,7 +351,7 @@ export default function Page() {
       <section className="bg-[#FFFAF2] opacity-100 py-10 md:py-20 across-the-funnel-main">
         <div className="max-w-7xl mx-auto px-4">
           <h2 className="text-[#003C63] lg:text-[36px] lg:text-[54px] leading-[23px]text-3xl md:text-4xl font-bold mb-[30px] md:mb-[50px] text-center leading-[40px] md:leading-[50px]">
-            Proven Gains Across the Funnel 
+            Proven Gains Across the Funnel
           </h2>
           {/* Proven Gains Box */}
 

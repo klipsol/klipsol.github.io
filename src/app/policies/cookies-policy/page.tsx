@@ -173,13 +173,13 @@ export default function page() {
             this policy, please contact us at:
           </p>
           <p>
-            Email:
+            {/* Email:
             <a
               href="mailto:support@dpanda.in"
               className="text-blue-600 hover:underline"
             >
               support@dpanda.in
-            </a>
+            </a> */}
             Mailing Address: 2nd Floor, Plot# 250, Phase IV, Udyog Vihar,
             Gurugram, Haryana 122015, India.
           </p>

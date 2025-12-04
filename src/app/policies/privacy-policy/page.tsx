@@ -193,7 +193,7 @@ export default function page() {
               Right to Delete: You can request the deletion of your personal
               data.
             </li>
-            <li>
+            {/* <li>
               Right to Opt-Out of Data Sale: You may opt out of the sale of your
               personal data. To exercise these rights, contact us at
               <a
@@ -203,11 +203,11 @@ export default function page() {
                 {" "}
                 support@dpanda.in{" "}
               </a>
-            </li>
+            </li> */}
           </ul>
         </section>
 
-        <section className="mb-8">
+        {/* <section className="mb-8">
           <h2 className="text-xl font-semibold">8. Children’s Privacy</h2>
           <p>
             We do not knowingly collect personal information from children under
@@ -222,7 +222,7 @@ export default function page() {
               support@dpanda.in{" "}
             </a>
           </p>
-        </section>
+        </section> */}
 
         <section className="mb-8">
           <h2 className="text-xl font-semibold">9. Data Security</h2>
@@ -289,7 +289,7 @@ export default function page() {
           </p>
         </section>
 
-        <section className="mb-8">
+        {/* <section className="mb-8">
           <h2 className="text-xl font-semibold">15. Contact Us</h2>
           <p>
             If you have any questions about this Privacy Policy or your data
@@ -308,9 +308,9 @@ export default function page() {
             Mailing Address: 2nd Floor, Plot# 250, Phase IV, Udyog Vihar,
             Gurugram, Haryana 122015, India
           </p>
-        </section>
+        </section> */}
 
-        <section className="mb-8">
+        {/* <section className="mb-8">
           <h2 className="text-xl font-semibold">16. Accessibility Statement</h2>
           <p>
             BlueCurrent is committed to making our website accessible to all,
@@ -325,7 +325,7 @@ export default function page() {
             </a>{" "}
             , and we will assist you.
           </p>
-        </section>
+        </section> */}
       </div>
       <Footer />
     </>
