@@ -27,12 +27,12 @@ export default function Footer() {
             >
               9582215864
             </Link>
-            {/* <Link
-              href="mailto:support@dpanda.in"
+            <Link
+              href="mailto:bluecurrentlabs@gmail.com"
               className="hover:underline transition-colors"
             >
-              support@dpanda.in
-            </Link> */}
+              bluecurrentlabs@gmail.com
+            </Link>
           </div>
 
           {/* <div className="grid grid-cols-[auto_auto] justify-start gap-x-4 lg:gap-y-2 gap-y-2 text-left text-[0.9em] 2xl:text-[1em] mt-5 lg:mt-0"> */}

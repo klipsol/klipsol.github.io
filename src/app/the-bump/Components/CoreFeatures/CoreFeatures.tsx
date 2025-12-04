@@ -110,8 +110,8 @@ const CoreFeatures = () => {
               </div>
             </div>
           </div>
-          <div className="bg-[#FEF4D3] sm:rounded-t-2xl lg:rounded-t-3xl overflow-hidden">
-            <h2 className="text-[#505C6E] font-semibold custom-text-base lg:mb-4 bg-[#F7BB30] text-center py-1 lg:py-2">
+          <div className="bg-secondary/10 sm:rounded-t-2xl lg:rounded-t-3xl overflow-hidden">
+            <h2 className="text-white font-semibold custom-text-base lg:mb-4 bg-secondary text-center py-1 lg:py-2">
               BlueCurrent: Full Stack <br className="lg:hidden" /> eCommerce
             </h2>
             <div className="grid gap-4 text-[#505C6E] lg:px-5 pb-4 text-sm font-medium lg:text-[1.125em] 2xl:text-[1.6em]">

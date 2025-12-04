@@ -51,7 +51,7 @@ export default function page() {
           </ul>
         </section>
 
-        {/* <section className="mb-8">
+        <section className="mb-8">
           <h2 className="text-xl font-semibold">
             2. Process for Requesting a Refund
           </h2>
@@ -60,10 +60,10 @@ export default function page() {
             <li>
               <strong>Contact Us:</strong> Email our customer service team at{" "}
               <a
-                href="mailto:support@dpanda.in"
+                href="mailto:bluecurrentlabs@gmail.com"
                 className="text-blue-600 hover:underline"
               >
-                support@dpanda.in
+                bluecurrentlabs@gmail.com
               </a>{" "}
               with details about your order and the reason for the refund
               request.
@@ -84,7 +84,7 @@ export default function page() {
               approval or denial of your refund.
             </li>
           </ol>
-        </section> */}
+        </section>
 
         <section className="mb-8">
           <h2 className="text-xl font-semibold">3. Refund Methods</h2>
@@ -126,10 +126,10 @@ export default function page() {
               If you’ve followed the above steps and still haven’t received your
               refund, contact us at{" "}
               <a
-                href="mailto:support@dpanda.in"
+                href="mailto:bluecurrentlabs@gmail.com"
                 className="text-blue-600 hover:underline"
               >
-                support@dpanda.in
+                bluecurrentlabs@gmail.com
               </a>
               .
             </li> */}
