@@ -25,7 +25,7 @@ async function readJsonFile(filePath) {
 // Helper function to write JSON file safely
 async function writeJsonFile(filePath, data) {
   try {
-    // Ensure the directory exists
+    // Ensure the directory exist
     await fs.mkdir(path.dirname(filePath), { recursive: true });
 
     // Write the file with proper formatting
