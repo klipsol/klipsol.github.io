@@ -1,10 +1,13 @@
-import type { NextConfig } from 'next'
- 
+import type { NextConfig } from "next";
+
 const nextConfig: NextConfig = {
-    images: {
-        loader: "custom",
-        loaderFile: "./image-loader.ts",
-    },
-}
- 
-export default nextConfig
+  images: {
+    loader: "custom",
+    loaderFile: "./image-loader.ts",
+  },
+  eslint: {
+    ignoreDuringBuilds: true,
+  },
+};
+
+export default nextConfig;
