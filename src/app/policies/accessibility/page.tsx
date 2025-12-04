@@ -13,10 +13,10 @@ export default function page() {
           including individuals with disabilities. If you have difficulty
           accessing any part of our website, please contact us at{" "}
           <a
-            href="mailto:support@dpanda.in"
+            href="mailto:bluecurrentlabs@gmail.com"
             className="text-blue-600 hover:underline"
           >
-            support@dpanda.in
+            bluecurrentlabs@gmail.com
           </a>
           , and we will assist you.
         </p>
