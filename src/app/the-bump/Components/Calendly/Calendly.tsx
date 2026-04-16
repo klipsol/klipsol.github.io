@@ -1,8 +1,8 @@
-"use client";
-import { useEffect, useState } from "react";
-import { PopupButton } from "react-calendly";
+'use client';
+import { useEffect, useState } from 'react';
+import { PopupButton } from 'react-calendly';
 
-const Calendly = ({ className = "", text = "Talk to us" }) => {
+const Calendly = ({ className = '', text = 'Talk to us' }) => {
   const [rootElement, setRootElement] = useState(null);
 
   useEffect(() => {
@@ -20,13 +20,13 @@ const Calendly = ({ className = "", text = "Talk to us" }) => {
       {rootElement ? (
         <PopupButton
           className={className}
-          url="https://calendly.com/srinand-dpanda/30min"
+          url="https://calendly.com/hamit-chanana-dpanda/30min"
           rootElement={rootElement}
           text={text}
         />
       ) : (
         <div
-          onClick={() => window.alert("Something went wrong!")}
+          onClick={() => window.alert('Something went wrong!')}
           id="error-calendly"
         >
           Talk to us
