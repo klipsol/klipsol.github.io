@@ -2922,7 +2922,7 @@
 
   .dpanda-lp .founder-photo {
     width: 220px;
-    height: 176px;
+    height: 220px;
   }
 
   .dpanda-lp .footer-main-inner {
@@ -3051,10 +3051,9 @@
   }
 
   .dpanda-lp .founder-photo {
-    width: 100%;
-    max-width: 320px;
-    height: 210px;
-    margin: 0 auto;
+    width: 240px;
+    height: 240px;
+    margin: 0 auto 20px;
   }
 
   .dpanda-lp .founder-info {
