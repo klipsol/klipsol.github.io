@@ -17,7 +17,7 @@ const Header = () => {
               <a href="#checkout-recovery">Recovery</a>
               <a href="#commercials">Commercials</a>
             </nav>
-            <a href="https://www.dpanda.ai/discovery" className="btn btn-primary" style={{ fontSize: '13px', padding: '11px 22px' }}>
+            <a href="/discover" className="btn btn-primary" style={{ fontSize: '13px', padding: '11px 22px' }}>
               <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" /></svg>
               Discovery
             </a>
