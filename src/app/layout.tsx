@@ -29,6 +29,10 @@ export default function RootLayout({ children }) {
         <meta name="keywords" content={metadata.keywords} />
         <meta name="description" content={metadata.description} />
         {/* <link rel="icon" href="/favicon.png" /> */}
+        {/* Fonts for DPanda LOMS landing page */}
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700;800&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
 
         <meta property="og:type" content="website" />
         <meta property="og:title" content={metadata.title} />
