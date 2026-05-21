@@ -9,7 +9,7 @@ const LenderBenefits = () => {
     <div className="sec-header" data-anim>
       <div className="eyebrow">Lender Network</div>
       <h2>More Lenders.<br /><span className="underline-yellow">More Approvals.</span></h2>
-      <p>Our intelligent multi-lender routing engine maximises every application's chance of success.</p>
+      <p>Our intelligent multi-lender routing engine maximises every application&apos;s chance of success.</p>
     </div>
 
     <div className="routing-graphic" data-anim>
