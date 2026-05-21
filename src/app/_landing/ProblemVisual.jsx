@@ -8,7 +8,7 @@ const ProblemVisual = () => {
   <div className="container">
     <div className="problem-head sec-header" data-anim>
       <div className="eyebrow">The Problem</div>
-      <h2>Good Intent. <span className="underline-yellow">Lost Sales.</span><br />Don't Let Finance Be the Reason.</h2>
+      <h2>Good Intent. <span className="underline-yellow">Lost Sales.</span><br />Don&apos;t Let Finance Be the Reason.</h2>
       <p>When financing is slow, limited, or unavailable, ready-to-buy customers drop off before the sale is completed.</p>
     </div>
     <div className="problem-inner">
