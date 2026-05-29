@@ -39,9 +39,9 @@ const Footer = () => {
           <div className="footer-bottom">
             <div className="footer-bottom-copy">© {new Date(Date.now()).getFullYear()} DPanda Technologies Pvt. Ltd. All rights reserved.</div>
             <div className="footer-social">
-              <a href="#" className="social-dot">in</a>
-              <a href="#" className="social-dot">x</a>
-              <a href="#" className="social-dot">yt</a>
+              <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/company/dpanda" className="social-dot">in</a>
+              {/* <a href="#" className="social-dot">x</a>
+              <a href="#" className="social-dot">yt</a> */}
             </div>
           </div>
         </div>
